@@ -1,0 +1,9 @@
+.idea/
+venv/
+.vscode/
+allFiles*
+extract.py
+test.txt
+all_questions.txt
+allFilesComments*.txt
+fileList.txt
