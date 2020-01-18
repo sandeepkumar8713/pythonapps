@@ -17,4 +17,4 @@ def reverseWords(inputString):
 
 if __name__ == "__main__":
     inputString = "I AM A GEEK"
-    print reverseWords(inputString)
+    print(reverseWords(inputString))

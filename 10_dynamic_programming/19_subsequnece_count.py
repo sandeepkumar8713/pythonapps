@@ -47,7 +47,7 @@ if __name__ == "__main__":
     inpStr = "abbc"
     inpStr = "abcabc"
     inpStr = "aaabc"
-    print countSubsequences(inpStr)
+    print(countSubsequences(inpStr))
 
 
 

@@ -64,7 +64,7 @@ def longestDupSubstring(inpStr):
     result = 0
     low, high = 0, n
     while low < high:
-        mid = (low + high + 1) / 2
+        mid = (low + high + 1) // 2
         pos = search(mid, a, modulus, n, nums)
         if pos != -1:
             low = mid
@@ -77,4 +77,4 @@ def longestDupSubstring(inpStr):
 
 if __name__ == "__main__":
     inpStr = "banana"
-    print longestDupSubstring(inpStr)
+    print(longestDupSubstring(inpStr))

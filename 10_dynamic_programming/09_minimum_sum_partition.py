@@ -49,9 +49,9 @@ def findMinDiff(arr):
             if arr[i - 1] <= j:
                 dp[i][j] |= dp[i - 1][j - arr[i - 1]]
 
-    diff = sys.maxint
+    diff = sys.maxsize
 
-    for j in range(totalSum/2, -1, -1):
+    for j in range(totalSum // 2, -1, -1):
         if dp[n][j]:
             diff = totalSum - 2 * j
             break
@@ -62,4 +62,4 @@ def findMinDiff(arr):
 if __name__ == "__main__":
     arr = [1, 6, 11, 5]
     # arr = [3, 1, 4, 2, 2, 1]
-    print "Minimum difference between 2 sets:", findMinDiff(arr)
+    print("Minimum difference between 2 sets:", findMinDiff(arr))

@@ -59,5 +59,4 @@ if __name__ == "__main__":
     inpMat = [[1, 1, 1],
               [1, 0, 1],
               [1, 1, 1]]
-    setZero(inpMat)
-    print (inpMat)
+    print(inpMat)
