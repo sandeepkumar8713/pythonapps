@@ -133,4 +133,4 @@ if __name__ == "__main__":
     inpArr = [10, 6, 15, 20, 30, 5, 7]
     # inpArr = [12, 1, 2, 3, 0, 11, 4]
     smallerCountList = smallerCount(inpArr)
-    print smallerCountList
+    print(smallerCountList)

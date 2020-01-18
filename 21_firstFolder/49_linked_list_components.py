@@ -50,4 +50,4 @@ if __name__ == "__main__":
     head.next.next.next = Node(3)
     G = [0, 1, 3]
 
-    print numComponents(head, G)
+    print(numComponents(head, G))

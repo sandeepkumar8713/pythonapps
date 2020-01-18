@@ -27,13 +27,13 @@ class Node:
         self.left = self.right = None
 
 
-def preorder(root):
+def preorder(root, result):
     if root is None:
-        print None,
+        result.append(None)
         return
-    print root.val,
-    preorder(root.left)
-    preorder(root.right)
+    result.append(root.val)
+    preorder(root.left, result)
+    preorder(root.right, result)
 
 
 def recur(N):
@@ -56,6 +56,8 @@ def recur(N):
 
 if __name__ == "__main__":
     N = 4
-    for root in recur(N):
-        preorder(root)
-        print ""
+    trees = recur(N)
+    for root in trees:
+        result = []
+        preorder(root, result)
+        print(result)

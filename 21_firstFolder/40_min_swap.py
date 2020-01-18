@@ -56,12 +56,12 @@ def minimumSwap(s1, s2):
 if __name__ == "__main__":
     s1 = "xy"
     s2 = "yx"
-    print minimumSwap(s1, s2)
+    print(minimumSwap(s1, s2))
 
     s1 = "xxyyxyxyxx"
     s2 = "xyyxyxxxyx"
-    print minimumSwap(s1, s2)
+    print(minimumSwap(s1, s2))
 
     s1 = "xx"
     s2 = "xy"
-    print minimumSwap(s1, s2)
+    print(minimumSwap(s1, s2))
