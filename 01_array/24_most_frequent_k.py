@@ -4,6 +4,7 @@
 # numbers sorted by frequency when input stream has included k distinct elements, else need to print all distinct
 # elements sorted by frequency.
 #
+# Question Type : ShouldSee
 # Used : Make a list topElements of size k+1. set lastIndex=0. It is a marker that tells up to which index data is
 #        filled in topElements. Maintain a dict freqMap which stores frequency of each distinct element.
 #        Now loop over each of the element in input array. Update the freqMap for this element. If ele is not present
@@ -42,7 +43,7 @@ def kTop(arr, n, k):
             else:
                 break
 
-        print topElements[0:min(i, k-1)+1]
+        print(topElements[0:min(i, k-1)+1])
 
 
 if __name__ == "__main__":

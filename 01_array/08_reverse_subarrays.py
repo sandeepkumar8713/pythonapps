@@ -4,6 +4,7 @@
 #        k = 3
 # Output: [3, 2, 1, 6, 5, 4, 9, 8, 7]
 #
+# Question Type : Easy
 # Used : for a given sub array, loop from left and right inward and swap
 # complexity : O(n)
 
@@ -26,4 +27,4 @@ if __name__ == "__main__":
     k = 3
     n = len(arr)
     reverse(arr, n, k)
-    print "Reversed Array:", arr
+    print("Reversed Array:", arr)

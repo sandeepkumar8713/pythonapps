@@ -5,6 +5,7 @@
 # Input : 3 2 4 7 1 -2 8 0 -4 2 1 5 6 -1 , index : 2, 5
 # Output : 10
 #
+# Question Type : Easy
 # Used : Make cumulative sum for given input from length n+1.
 #           such as : cumulativeSumArray[i] = cumulativeSumArray[i-1] + arr[i-1]
 #        To get the required sum do : return cumulativeSumArray[stopIndex + 1] - cumulativeSumArray[startIndex]
@@ -26,6 +27,6 @@ def getSum(cumulativeSumArray, startIndex, stopIndex):
 if __name__ == "__main__":
     arr = [3, 2, 4, 7, 1, -2, 8, 0, -4, 2, 1, 5, 6, -1]
     cumulativeSumArray = makeCumulativeArray(arr)
-    print cumulativeSumArray
-    print getSum(cumulativeSumArray, 2, 5)   # 4,7,1,-2
-    print getSum(cumulativeSumArray, 0, 13)  # All
+    print(cumulativeSumArray)
+    print(getSum(cumulativeSumArray, 2, 5))   # 4,7,1,-2
+    print(getSum(cumulativeSumArray, 0, 13))  # All

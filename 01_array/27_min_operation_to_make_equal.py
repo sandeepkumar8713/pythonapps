@@ -7,6 +7,7 @@
 # Since all elements are different, we need to perform at-least three operations to make them same. For example, we
 # can make them all 1 by doing three subtractions. Or make them all 3 by doing three additions.
 #
+# Question Type : Easy
 # Used : For making all elements equal you can select a target value and then you can make all elements equal to that.
 #        Now, for converting a single element to target value you can perform a single operation only once. In this
 #        manner you can achieve your task in maximum of n operations but you have to minimize this number of operation
@@ -36,4 +37,4 @@ def minOperation(arr, n):
 if __name__ == "__main__":
     arr = [1, 5, 2, 1, 3, 2, 1]
     n = len(arr)
-    print minOperation(arr, n)
+    print(minOperation(arr, n))

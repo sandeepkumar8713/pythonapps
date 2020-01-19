@@ -8,6 +8,7 @@
 # We are allowed to flip maximum 2 zeroes. If we flip arr[5] and arr[7], we get 8 consecutive 1's which is
 # maximum possible under given constraints
 #
+# Question Type : Generic
 # Used : Take a sliding window, traverse over the array and keep track of largest window found yet.
 #        Take two endpoints of window wLeft, wRight as 0. Also keep track of zeroCount in window.
 #        Loop while wRight < n:
@@ -44,11 +45,11 @@ def findZeroes(arr, m):
 
     for i in range(0, bestWindow):
         if arr[bestL + i] == 0:
-            print bestL + i
+            print(bestL + i, end=" ")
 
 
 if __name__ == "__main__":
     arr = [1, 0, 0, 1, 1, 0, 1, 0, 1, 1]
     m = 2
-    print "Indexes of zeroes to be flipped are"
+    print("Indexes of zeroes to be flipped are")
     findZeroes(arr, m)

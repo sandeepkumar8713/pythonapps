@@ -2,6 +2,7 @@
 # Question : Given an array of integers, write a function that returns true if there is a triplet (a, b, c)
 # that satisfies a2 + b2 = c2.
 #
+# Question Type : Easy
 # Used : convert the given array in square, sort it
 #        Fix the last element, find the pair whose sum is equal to last element
 #        if above statement fails, repeat with second last element
@@ -31,4 +32,5 @@ def isTriplet(arr, n):
 if __name__ == "__main__":
     arr = [3, 1, 4, 6, 5]
     arrSize = len(arr)
-    print isTriplet(arr, arrSize)
+    print(isTriplet(arr, arrSize))
+

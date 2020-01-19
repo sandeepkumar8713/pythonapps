@@ -6,6 +6,7 @@
 #         k = 3
 # Output : 3 3 4 5 5 5 6
 #
+# Question Type : ShouldSee
 # Used : deque, push larger element at rear after removing all smaller elements, pop the first element as result
 #        loop for i : 0 to k-1, keep popping smaller(than a[i]) element from last, after that appending(indexof a[i]) in Qi.
 #        loop for i : k to n-1, print arr[Qi[0]]. keep pop element from start while Qi[0] <= i - k.
@@ -23,7 +24,7 @@ def printMax(arr, n, k):
         Qi.append(i)
 
     for i in range(k, n):
-        print str(arr[Qi[0]]),
+        print(str(arr[Qi[0]]))
         while Qi and Qi[0] <= i - k:
             Qi.pop(0)
 
@@ -31,11 +32,11 @@ def printMax(arr, n, k):
             Qi.pop(len(Qi) - 1)
         Qi.append(i)
 
-    print str(arr[Qi[0]])
+    print(str(arr[Qi[0]]))
 
 
 if __name__ == "__main__":
     arr = [12, 1, 78, 90, 57, 89, 56]
     k = 3
-    print "max values:",
+    print("max values:")
     printMax(arr, len(arr), k)

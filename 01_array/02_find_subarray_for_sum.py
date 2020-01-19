@@ -1,6 +1,7 @@
 # Question : Given an unsorted array of integers, find a subarray which adds to a given number. If there are more
 # than one sub arrays with sum as the given number,print any of them
 #
+# Question Type : Generic
 # Used : Do cumulative sum over the array and keep saving in dict as cumuSave and index.
 #        Now while looping check if difference of current cumulative sum and target sum is present in the map
 #        if cumuSum == targetSum: return 0, i
@@ -11,7 +12,7 @@
 def subArraySum(arr,targetSum):
     cumuSum = 0
     cumuSumMap = dict()
-    for i in xrange(len(arr)):
+    for i in range(len(arr)):
         cumuSum += arr[i]
 
         if cumuSum == targetSum:
@@ -28,11 +29,13 @@ def subArraySum(arr,targetSum):
 if __name__ == "__main__":
     arr = [10, 2, -2, -20, 10]
     targetSum = -10
+    print(subArraySum(arr, targetSum))
 
-    # arr = [1, 2, 3, 7, 5]
-    # targetSum = 12
+    arr = [1, 2, 3, 7, 5]
+    targetSum = 12
+    print(subArraySum(arr, targetSum))
 
-    # arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    # targetSum = 15
+    arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    targetSum = 15
+    print(subArraySum(arr, targetSum))
 
-    print subArraySum(arr, targetSum)

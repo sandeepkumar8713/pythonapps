@@ -2,6 +2,7 @@
 # given sequence such that all elements of the sub sequence are sorted in increasing order. For example, the length
 # of LIS for {10, 22, 9, 33, 21, 50, 41, 60, 80} is 6 and LIS is {10, 22, 33, 50, 60, 80}.
 #
+# Question Type : Generic
 # Used : Make a array called tail filled with zeros. Note that we are dealing with end elements only. We need not to
 #        maintain all the lists. We can store the end elements in an array.
 #        Now through the given array.  Also, ensure we have maintained the condition, "end element of smaller list is
@@ -15,7 +16,7 @@
 
 def ceilIndex(arr, left, right, key):
     while right-left > 1:
-        mid = left + (right-left)/2
+        mid = left + (right-left) // 2
         # binary search, return when diff is 1
         if key <= arr[mid]:
             right = mid
@@ -48,10 +49,10 @@ def LIS(arr):
             # and also, arr[i] would have already appeared in one of LIS, identify the location and replace it
             tail[ceilIndex(arr, -1, length-1, arr[i])] = arr[i]
 
-    print tail[:length]
+    print(tail[:length])
     return length
 
 
 if __name__ == "__main__":
     arr = [2, 5, 3, 7, 11, 8, 10, 13, 6]
-    print LIS(arr)
+    print(LIS(arr))

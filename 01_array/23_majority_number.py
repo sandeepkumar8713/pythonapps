@@ -4,6 +4,7 @@
 # "No Majority Element". A majority element in an array A[] of size n is an element that appears more than n/2 times
 # (and hence there is at most one such element).
 #
+# Question Type : Easy
 # Used : Call a function findCandidate(). set maj_index = 0. count = 1.
 #        Run a loop of the input array. If if A[maj_index] == A[i]: count++ else count--.
 #           If count == 0: (take current maj_index)  maj_index = i, count = 1
@@ -49,5 +50,7 @@ def printMajority(A):
 
 if __name__ == "__main__":
     A = [1, 3, 3, 1, 2, 3, 3]
-    # A = [1, 3, 3, 1, 2, 3]
+    printMajority(A)
+
+    A = [1, 3, 3, 1, 2, 3]
     printMajority(A)

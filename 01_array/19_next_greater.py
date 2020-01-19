@@ -3,6 +3,7 @@
 # element x is the first greater element on the right side of x in array. Elements for which no greater element exist,
 # consider next greater element as -1.
 #
+# Question Type : ShouldSee
 # Used : Stack, push the first element to stack
 #        Now loop through the remaining elements, if the current element is larger than top of stack, pop from stack.
 #           print(str(element) + " -- " + str(next)), Keep popping from stack unless current is less than top or empty.

@@ -1,5 +1,6 @@
 # Question : Given a sorted array in which all elements appear twice (one after one) and one element appears only once.
 #
+# # Question Type : ShouldSee, SimilarAdded
 # Used : Do binary search
 #        if low == high:
 #           return arr[low]  (answer)
@@ -15,7 +16,7 @@ def search(arr, low, high):
     if low == high:
         return arr[low]
 
-    mid = low + (high - low) / 2
+    mid = low + (high - low) // 2
     if mid % 2 == 0:
         # if mid is even
         if arr[mid] == arr[mid + 1]:
@@ -33,4 +34,4 @@ def search(arr, low, high):
 
 if __name__ == "__main__":
     arr = [1, 1, 2, 4, 4, 5, 5, 6, 6]
-    print search(arr, 0, len(arr) - 1)
+    print(search(arr, 0, len(arr) - 1))

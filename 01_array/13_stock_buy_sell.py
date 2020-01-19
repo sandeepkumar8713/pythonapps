@@ -4,6 +4,7 @@
 # profit can earned by buying on day 0, selling on day 3. Again buy on day 4 and sell on day 6. If the given
 # array of prices is sorted in decreasing order, then profit cannot be earned at all.
 #
+# Question Type : ShouldSee
 # Used : Run a loop over given array from 0 to n-2.
 #           move ahead i++ while current is higher than next. (let the price fall)
 #           then buy current stock          (buy at the point where price start increasing)
@@ -46,4 +47,5 @@ def stockBuySell(arr):
 
 if __name__ == "__main__":
     arr = [100, 180, 260, 310, 40, 535, 695]
-    print stockBuySell(arr)
+    print(stockBuySell(arr))
+

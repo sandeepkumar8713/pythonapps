@@ -2,6 +2,7 @@
 # Question : Write an algorithm such that if an element in an MxN matrix is 0, its entire row and
 # column are set to 0.
 #
+# Question Type : ShouldSee
 # Used : Check if first row and column has zero, if yes set rowHasZero and colHasZero as true.
 #        Now loop through the matrix, if you find 0, set its cell of first row and col to zero
 #        (corresponding col or row). Make 2 function nullifyRow and nullifyCol which set 0 to given row and col.
@@ -59,4 +60,7 @@ if __name__ == "__main__":
     inpMat = [[1, 1, 1],
               [1, 0, 1],
               [1, 1, 1]]
-    print(inpMat)
+    setZero(inpMat)
+    for row in inpMat:
+        print(row)
+

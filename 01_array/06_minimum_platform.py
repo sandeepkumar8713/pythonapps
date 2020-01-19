@@ -1,6 +1,7 @@
 # Question : Given arrival and departure times of all trains that reach a railway station, find the minimum number
 # of platforms required for the railway station so that no train waits.
 #
+# Question Type : Generic
 # Used : sort the arrival and departure array
 #        now loop through them, if a new bus is arriving in i while another bus is not departed in j then,
 #        add new platform else remove one platform, and keep track of highest platform count till now
@@ -37,7 +38,8 @@ def findPlatform(arr, dep):
 if __name__ == "__main__":
     arr = [900, 940, 950, 1100, 1500, 1800]
     dep = [910, 1200, 1120, 1130, 1900, 2000]
-    # arr = [900, 940, 970]
-    # dep = [910, 950, 980]
-    print "Minimum platfrom required:",
-    print findPlatform(arr, dep)
+    print("Minimum platfrom required:", findPlatform(arr, dep))
+
+    arr = [900, 940, 970]
+    dep = [910, 950, 980]
+    print("Minimum platfrom required:", findPlatform(arr, dep))

@@ -13,6 +13,7 @@
 # Equal distribution of 18 chocolates among 3 students is 6.
 # Note that the selected boxes are in consecutive order with indexes {1, 2, 3, 4}.
 #
+# Question Type : Generic
 # Used : Maintain a cumulative Sum Array for input array. Maintain a dict of remainders.
 #        (Keep in mind that over a cumulative sum array, if the reminder of two elements are same, then sum b/w them
 #         is divisible by k)
@@ -52,5 +53,5 @@ if __name__ == "__main__":
     arr = [2, 7, 6, 1, 4, 5]
     n = len(arr)
     k = 3
+    print("Maximum number of chocolates: ", maxNumOfChocolates(arr, n, k))
 
-    print "Maximum number of chocolates: ", maxNumOfChocolates(arr, n, k)

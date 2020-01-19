@@ -1,5 +1,6 @@
 # Question : Given a 2D array, print it in spiral form.
 #
+# Question Type : ShouldSee, SimilarAdded
 # Used : while thisRow < m and thisCol < n:
 #           print first row, thisRow += 1,
 #           print last col, dec n,
@@ -18,24 +19,24 @@ def printSpiral(mat):
 
         # print first row
         for i in range(thisCol, n):
-            print mat[thisRow][i],
+            print(mat[thisRow][i], end=" ")
         thisRow += 1
 
         # print last column
         for i in range(thisRow, m):
-            print mat[i][n-1],
+            print(mat[i][n-1], end=" ")
         n -= 1
 
         # print last row
         if thisRow < m:
             for i in range(n-1, thisCol-1, -1):
-                print mat[m-1][i],
+                print(mat[m-1][i], end=" ")
             m -= 1
 
         # print first column
         if thisCol < n:
             for i in range(m-1, thisRow-1, -1):
-                print mat[i][thisCol],
+                print(mat[i][thisCol], end=" ")
             thisCol += 1
 
 

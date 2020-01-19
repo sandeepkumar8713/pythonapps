@@ -6,6 +6,7 @@
 # k = 3
 # Output: {_,   _, 10, 11, 20, 40, 50,  50, ...}
 #
+# Question Type : Asked
 # Used : For first k elements make a min heap
 #        Now loop through the remaining elements, if x if greater than top of heap replace and heapify
 #        for each iteration top of the heap is kth largest element till now
@@ -35,9 +36,9 @@ class MinHeap:
 
     def buildHeap(self, arr, n):
         self.size = n
-        for i in xrange(n):
+        for i in range(n):
             self.data.append(arr[i])
-        for i in range(n/2 - 1, -1, -1):
+        for i in range(n//2 - 1, -1, -1):
             self.heapify(i)
 
     def replaceMin(self,x):
@@ -49,25 +50,27 @@ class MinHeap:
 
 
 def kindKthLargest(arr, k):
+    result = []
     i = 0
     while i < k-1:
-        print (-1),
+        result.append(-1)
         i += 1
 
     mh = MinHeap()
     mh.buildHeap(arr, k)
-    print (mh.getMin()),
+    result.append(mh.getMin())
 
     for i in range(k, len(arr)):
         x = arr[i]
         if x > mh.getMin():
             mh.replaceMin(x)
 
-        print (mh.getMin()),
+        result.append(mh.getMin())
+    print(result)
 
 
 if __name__ == "__main__":
     arr = [23, 10, 15, 70, 5, 80, 100]
     k = 3
-    print ("kth largest element in stream:"),
+    print("kth largest element in stream:"),
     kindKthLargest(arr, k)

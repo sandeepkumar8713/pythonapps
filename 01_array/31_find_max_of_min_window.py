@@ -16,6 +16,7 @@
 #
 # Similarly other elements of output are computed.
 #
+# Question Type : OddOne
 # Used : set left = [-1] * (n+1) and right = [n] * (n+1)
 #       1. Find indexes of next smaller and previous smaller for every element. Next smaller is the nearest smallest
 #          element on right side of arr[i]. Similarly, previous smaller element is the nearest smallest element on left
@@ -75,7 +76,7 @@ def printMaxOfMin(inpArr):
     for i in range(n-1, 0, -1):
         ans[i] = max(ans[i], ans[i+1])
 
-    print ans[1:]
+    print(ans[1:])
 
 
 if __name__ == "__main__":

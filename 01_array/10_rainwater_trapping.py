@@ -2,6 +2,7 @@
 # Question : Given n non-negative integers representing an elevation map where the width of each bar is 1,
 # compute how much water it is able to trap after raining.
 #
+# Question Type : ShouldSee
 # Input: arr[] = {3, 0, 0, 2, 0, 4}
 # Output: 10
 # Structure is like below
@@ -36,4 +37,4 @@ def findWater(arr, n):
 if __name__ == "__main__":
     arr = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
     n = len(arr)
-    print ("Maximum water that can be accumulated is: %s" % findWater(arr, n))
+    print("Maximum water that can be accumulated is: %s" % findWater(arr, n))

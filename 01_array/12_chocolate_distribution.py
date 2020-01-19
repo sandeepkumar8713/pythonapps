@@ -4,6 +4,7 @@
 # The difference between the number of chocolates in packet with maximum chocolates and packet with minimum chocolates
 # given to the students is minimum.
 #
+# Question Type : Generic
 # Used : sort the array, run a sliding window of size m and keep checking the minimum difference of each window
 #        while i + m - 1 < n: diff = arr[i+m-1] - arr[i]
 #           keep updating the minDiff
@@ -33,5 +34,5 @@ def findMinDiff(arr, n, m):
 if __name__ == "__main__":
     arr = [12, 4, 7, 9, 2, 23, 25, 41, 30, 40, 28, 42, 30, 44, 48, 43, 50]
     m = 7
-    print ("Minimum difference:"),
-    print (findMinDiff(arr, len(arr), m))
+    print("Minimum difference:"),
+    print(findMinDiff(arr, len(arr), m))
