@@ -4,6 +4,7 @@
 # Input : 1 -> -2 -> -3 -> 4 -> -5
 # output: -5 -> -3 -> -2 -> 1 -> 4
 #
+# Question Type : ShouldSee
 # Used : Lets take 2 pointer prev = self.head and temp = self.head.next and loop till temp is not None
 #        if temp.data < prev.data: Remove temp and place it at head. and update temp : temp = prev
 #           Else update prev = temp
@@ -30,9 +31,9 @@ class LinkedList:
     def printList(self):
         temp = self.head
         while temp:
-            print temp.data,
+            print(temp.data, end=" ")
             temp = temp.next
-        print ""
+        print("")
 
     def sort(self):
         prev = self.head

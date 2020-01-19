@@ -1,6 +1,7 @@
 # CTCI : Q3_04_Queue_via_Stacks
 # Question : Implement a Stack using 2 queue q1 and q2
 #
+# Question Type : Easy
 # Used : In push operation, the new element is always enqueued to q1. In pop() operation, if q2 is empty then all the
 #        elements except the last, are moved to q2. Finally the last element is dequeued from q1 and returned.
 # Complexity : O(2n)
@@ -80,8 +81,8 @@ if __name__ == "__main__":
     arr = [1, 6, 2, 3, 4, 5]
     insertValues(stack, arr)
 
-    print stack.pop(),
-    print stack.pop(),
-    print stack.pop(),
+    print(stack.pop(), end=" ")
+    print(stack.pop(), end=" ")
+    print(stack.pop(), end=" ")
     stack.push(14)
-    print stack.pop(),
+    print(stack.pop(), end=" ")

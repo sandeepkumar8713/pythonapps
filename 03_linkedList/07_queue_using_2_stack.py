@@ -1,5 +1,6 @@
 # Question : Implement a Queue using 2 stacks s1 and s2 .
 #
+# Question Type : Easy
 # Used : In en-queue operation, the new element is entered at the top of stack1. In de-queue operation, if stack2 is
 #        empty then all the elements are moved to stack2 and finally top of stack2 is returned.
 # Complexity : O(2n)
@@ -64,8 +65,8 @@ if __name__ == "__main__":
     arr = [1, 6, 2, 3, 4, 5]
     insertValues(queue, arr)
 
-    print queue.deQueue(),
-    print queue.deQueue(),
-    print queue.deQueue(),
+    print(queue.deQueue(),end = " ")
+    print(queue.deQueue(),end = " ")
+    print(queue.deQueue(),end = " ")
     queue.enQueue(14)
-    print queue.deQueue(),
+    print(queue.deQueue(),end = " ")

@@ -5,6 +5,7 @@
 # Similar Question : Given a circular linked list, implement an algorithm that returns the node at the
 # beginning of the loop(CTCI : Q2_08_Loop_Detection).
 #
+# Question Type : ShouldSee
 # Used : Run a slow and fast pointer, if a loop exist they will be equal at some point
 #        After detecting the loop, if we start slow pointer from head and move both slow and fast pointers at same
 #        speed until fast don't meet, they would meet at the beginning of the loop.
@@ -54,13 +55,13 @@ class LinkedList:
                 fast = fast.next
 
             # Since fast.next is the looping point
-            print "loop at :", fast.data
+            print("loop at :", fast.data)
             fast.next = None  # Remove loop
 
     def printList(self):
         temp = self.head
         while temp:
-            print temp.data,
+            print(temp.data,end=" ")
             temp = temp.next
 
 
@@ -73,5 +74,5 @@ if __name__ == "__main__":
     # Create a loop for testing
     llist.head.next.next.next.next.next = llist.head.next.next
     llist.detectAndRemoveLoop()
-    print ("Linked List after removing loop")
+    print("Linked List after removing loop")
     llist.printList()

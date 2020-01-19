@@ -3,6 +3,7 @@
 # linked list representation of addition of two input numbers. It is not allowed to modify the lists. Also, not
 # allowed to use explicit extra space.
 #
+# Question Type : Generic
 # Used : If the size of two linked list is same then it is easy. Recur till the end and come back adding.
 #        If the size is different, move the current pointer of the larger list to the same size add like above.
 #        Now do recur from head to current for larger list till ens and come back adding carry.
@@ -42,7 +43,7 @@ class LinkedList:
     def printList(self):
         temp = self.head
         while temp:
-            print temp.data,
+            print(temp.data, end=" ")
             temp = temp.next
 
     def getSize(self):
@@ -130,11 +131,11 @@ if __name__ == "__main__":
     arr = [1, 6, 2, 3, 4, 5]
     insertValues(firstList, arr)
 
-    print ''
+    print('')
     secondList = LinkedList()
     arr = [5, 1, 1, 5, 6]
     insertValues(secondList, arr)
-    print ''
+    print('')
 
     sumList = getSum(firstList, secondList)
     sumList.printList()

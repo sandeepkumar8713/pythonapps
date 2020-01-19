@@ -2,6 +2,7 @@
 # positive integer. For example, if the given linked list is 10->20->30->40->50->60 and k is 4, the list should
 # be modified to 50->60->10->20->30->40. Assume that k is smaller than the count of nodes in linked list.
 #
+# Question Type : Easy
 # Used : loop till k-1th node, make last.next to head, head to k-1.next, k-1.next to None
 # Complexity : O(n)
 
@@ -30,7 +31,7 @@ class LinkedList:
     def printList(self):
         temp = self.head
         while temp:
-            print temp.data,
+            print(temp.data, end=" ")
             temp = temp.next
 
     def rotateK(self, k):
@@ -61,7 +62,7 @@ if __name__ == "__main__":
     for item in data:
         linkedList.push(item)
     linkedList.printList()
-    print ''
+    print('')
     linkedList.rotateK(4)
     linkedList.printList()
 

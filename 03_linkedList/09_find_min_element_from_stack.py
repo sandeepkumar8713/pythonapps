@@ -16,6 +16,8 @@
 # 19
 # 18
 # When getMin() is called, it should return 18 which is the minimum in the current stack
+#
+# Question Type : ShouldSee
 # Used : Push()
 #        If stack is not empty, compare x with minEle. Two cases arise:
 #        If x is greater than or equal to minEle, simply insert x.
@@ -34,13 +36,13 @@ class MyStack:
 
     def getMin(self):
         if not self.stack:
-            print "Stack is empty\n"
+            print("Stack is empty")
         else:
-            print "Minimum Element in the stack is: " + str(self.minEle)
+            print("Minimum Element in the stack is: " + str(self.minEle))
 
     def peek(self):
         if not self.stack:
-            print "Stack is empty "
+            print("Stack is empty")
             return None
 
         t = self.stack[-1]
@@ -63,7 +65,7 @@ class MyStack:
 
     def pop(self):
         if not self.stack:
-            print "Stack is empty"
+            print("Stack is empty")
             return None
 
         # t = self.stack[-1]
@@ -79,8 +81,8 @@ class MyStack:
 
     def printAll(self):
         for item in self.stack:
-            print item,
-        print ''
+            print(item, end=" ")
+        print('')
 
 
 if __name__ == "__main__":

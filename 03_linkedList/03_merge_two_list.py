@@ -7,6 +7,7 @@
 # For example if the first linked list a is 5->10->15 and the other linked list b is 2->3->20, then SortedMerge() should
 # return a pointer to the head node of the merged list 2->3->5->10->15->20.
 #
+# Question Type : Generic
 # Used : Take the two lists, compare the data of each, return the lesser node and recursively call and assign its
 #        return value to result->next
 # Complexity : O(n + m)
@@ -36,7 +37,7 @@ class LinkedList:
     def printList(self):
         temp = self.head
         while temp:
-            print temp.data,
+            print(temp.data, end=" ")
             temp = temp.next
 
     def getHead(self):
@@ -72,13 +73,13 @@ if __name__ == "__main__":
     arr = [10, 20, 30, 40, 50]
     insertValues(firstList, arr)
 
-    print ('')
+    print('')
     secondList = LinkedList()
     arr = [5, 15, 18, 35, 60]
     insertValues(secondList, arr)
 
-    print ('')
+    print('')
     result = merge(firstList.getHead(), secondList.getHead())
     while result:
-        print (result.data),
+        print(result.data),
         result = result.next

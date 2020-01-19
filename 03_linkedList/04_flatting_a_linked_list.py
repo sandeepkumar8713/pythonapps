@@ -15,6 +15,7 @@
 #        V                V
 #        30               45
 #
+# Question Type : ShouldSee
 # Used : We use merge() to merge lists one by one. We recursively merge() the current list with already flattened list.
 #        The down pointer is used to link nodes of the flattened list.
 # Complexity : O(kn log n)
@@ -48,7 +49,7 @@ class LinkedList:
     def printList(self):
         temp = self.head
         while temp:
-            print temp.data,
+            print(temp.data, end=" ")
             temp = temp.down
 
     def pushRight(self, linkedList):
@@ -98,26 +99,26 @@ if __name__ == "__main__":
     inp = [5, 7, 8, 30]
     insertValues(rootList, inp)
 
-    print ''
+    print('')
     secondList = LinkedList()
     inp = [10, 20]
     insertValues(secondList, inp)
     rootList.pushRight(secondList)
 
-    print ''
+    print('')
     thirdList = LinkedList()
     inp = [19, 22, 50]
     insertValues(thirdList, inp)
     rootList.pushRight(thirdList)
 
-    print ''
+    print('')
     fourthList = LinkedList()
     inp = [28, 35, 40, 45]
     insertValues(fourthList, inp)
     rootList.pushRight(fourthList)
 
-    print ''
+    print('')
     result = flatten(rootList.getHead())
     while result:
-        print result.data,
+        print(result.data, end=" ")
         result = result.down
