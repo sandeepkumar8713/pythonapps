@@ -4,6 +4,7 @@
 # "compressed" string would not become smaller than the original string, your method should return
 # the original string. You can assume the string has only uppercase and lowercase letters (a - z).
 #
+# Question Type : Generic
 # Used : Keep a counter countConsecutive = 0. Run a loop over given string. Keep incrementing countConsecutive,
 #        If the next char is not equal (or last char), then append the char and its count in the output list.
 #        After the loop, if length of output list is less than length of inpStr, then return outputList.
@@ -32,4 +33,4 @@ def compress(inpStr):
 if __name__ == "__main__":
     inpStr = "aa"
     inpStr = "aabcccccaaa"
-    print compress(inpStr)
+    print(compress(inpStr))

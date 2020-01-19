@@ -3,6 +3,7 @@
 # of the first string, but there is one extra character. Your task to find the extra character in the second
 # string.
 #
+# Question Type : Easy
 # Used : Add the character of both strings. Their difference will give ascii of extra character.
 # Complexity : O(n)
 
@@ -39,4 +40,4 @@ def findExtraChar(s1,s2):
 if __name__ == "__main__":
     s1 = "abcd"
     s2 = "cbdae"
-    print (findExtraChar(s1,s2))
+    print(findExtraChar(s1, s2))

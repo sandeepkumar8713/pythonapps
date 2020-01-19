@@ -1,4 +1,4 @@
 # Python Apps
-This project solves the questions generally asked in interview.
+This project solves the questions generally asked in programming interview.
 
-Question Type : Asked, Generic, ShouldSee, OddOne
+Questions Type : Asked, Generic, ShouldSee, OddOne, SimilarAdded

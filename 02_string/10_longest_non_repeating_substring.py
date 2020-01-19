@@ -2,6 +2,7 @@
 # Given a string, find the length of the longest substring without repeating characters. For example, the longest
 # substrings without repeating characters for "ABDEFGABEF" are "BDEFGA" and "DEFGAB", with length 6.
 #
+# Question Type : Easy
 # Used : Keep looping through the input string and appending value in char map and keep count of running length.
 #        If a duplicate char is found, reset the running length and empty the char map
 # Complexity : O(n + d) where n is length of the input string and d is number of characters in input string
@@ -29,4 +30,4 @@ def nonRepeatSubstr(inpStr):
 
 if __name__ == "__main__":
     inpStr = "ABDEFGABEF"
-    print nonRepeatSubstr(inpStr)
+    print(nonRepeatSubstr(inpStr))

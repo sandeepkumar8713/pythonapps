@@ -1,5 +1,6 @@
 # Question : Python program to check if two strings are anagrams of each other.
 #
+# Question Type : Easy
 # Used : make two list of 256 len, update count of each character in str1 and str2, now compare the two list
 # Complexity : O(n)
 
@@ -20,7 +21,7 @@ def areAnagram(str1, str2):
     if len(str1) != len(str2):
         return 0
 
-    for i in xrange(NO_OF_CHARS):
+    for i in range(NO_OF_CHARS):
         if count1[i] != count2[i]:
             return 0
 
@@ -31,6 +32,6 @@ if __name__ == "__main__":
     str1 = "geeksforgeeks"
     str2 = "forgeeksgeeks"
     if areAnagram(str1, str2):
-        print "The two strings are anagram of each other"
+        print("The two strings are anagram of each other")
     else:
-        print "The two strings are not anagram of each other"
+        print("The two strings are not anagram of each other")

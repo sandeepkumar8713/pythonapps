@@ -3,6 +3,7 @@
 # before longer keys, and then keys of the same length are sorted lexicographically. This coincides with the normal
 # order of integer representations, such as the sequence 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
 #
+# Question Type : Generic
 # Used : Find the max value in the input array. Run a loop while (10 ** index <= maxval). Call function
 #        distributeBasedOnDigit(array, base, index).
 # distributeBasedOnDigit() : Make a list of buckets of size base. Loop over input array and distribute them in buckets.
@@ -44,4 +45,5 @@ def radixSort(array):
 if __name__ == "__main__":
     arr = [170, 45, 75, 90, 802, 24, 2, 66]
     radixSort(arr)
-    print arr
+    print(arr)
+

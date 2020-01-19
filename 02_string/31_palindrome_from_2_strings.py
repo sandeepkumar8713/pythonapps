@@ -5,6 +5,7 @@
 # Extension2. Multiple cuts in the strings (substrings to form a palindrome)? Form a palindrome using a substring
 # from both strings.
 #
+# Question Type : ShouldSee
 # Used : 1st Question : Run a loop while characters match : Start from left of A and right of B.
 #                       We have choose non-matching sub string either from A or B.
 #                       Now check if either of the strings are palindrome.
@@ -160,24 +161,24 @@ if __name__ == "__main__":
              ["ABCTYZFY", "CDEFGCBA"],
              ["ABCTTCBL", "UVXYZCBA"]]
 
-    print ("\n1st Question:")
+    print("\n1st Question:")
     for pair in words:
-        print ("%s %s : %s" % (pair[0], pair[1], firstQuestion(pair[0], pair[1])))
+        print("%s %s : %s" % (pair[0], pair[1], firstQuestion(pair[0], pair[1])))
 
     words = [["ABCTYZFY", "CDEFGCBA"],
              ["ABCTYTZFY", "CDEFGFCBA"],
              ["ABCYYTZFY", "CDETGFCBA"],
              ["ABCYYTZFY", "CDEFGFCBA"]]
 
-    print ("\n2nd Question:")
+    print("\n2nd Question:")
     for pair in words:
-        print ("%s %s : %s" % (pair[0], pair[1], secondQuestion(pair[0], pair[1])))
+        print("%s %s : %s" % (pair[0], pair[1], secondQuestion(pair[0], pair[1])))
 
     words = [["ABCVUXT", "FECBADS"],
              ["VUXTABC", "FECBADS"],
              ["VUXTABC", "CBADSFE"],
              ["WER", "ABC"]]
 
-    print ("\n3rd Question:")
+    print("\n3rd Question:")
     for pair in words:
-        print ("%s %s : %s" % (pair[0], pair[1], thirdQuestion(pair[0], pair[1])))
+        print("%s %s : %s" % (pair[0], pair[1], thirdQuestion(pair[0], pair[1])))

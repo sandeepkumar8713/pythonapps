@@ -3,6 +3,7 @@
 # Input  : {"geeksforgeeks", "geeks", "geek", "geezer"}
 # Output : "gee"
 #
+# Question Type : ShouldSee
 # Used : find the string with minimum length
 #        Do binary search over it. First check if left to mid is present in all the strings in array. If yes and add to
 #        prefix. If not, then make right as mid -1
@@ -33,7 +34,7 @@ def commanPrefix(arr):
     high = minLen
 
     while low <= high:
-        mid = low + (high - low)/2
+        mid = low + (high - low) // 2
         if allContainsPrefix(arr, arr[0], low, mid):
             prefix += arr[0][low:mid+1]
             low = mid + 1
@@ -45,5 +46,7 @@ def commanPrefix(arr):
 
 if __name__ == "__main__":
     arr = ["geeksforgeeks", "geeks", "geek", "geezer"]
-    #arr = ["apple", "ape", "april"]
-    print commanPrefix(arr)
+    print(commanPrefix(arr))
+
+    arr = ["apple", "ape", "april"]
+    print(commanPrefix(arr))

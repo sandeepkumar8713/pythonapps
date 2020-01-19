@@ -3,6 +3,7 @@
 # a palindrome formed by substring in the case when it is not formed by characters of the string. For better
 # understanding look at the example.
 #
+# Question Type : ShouldSee
 # Input : ghiabcdefhelloadamhelloabcdefghi
 # Output : 7
 # (ghi)(abcdef)(hello)(adam)(hello)(abcdef)(ghi)
@@ -28,20 +29,20 @@ def LPCUtil(currStr, chunkCount, processedLength, originalLen):
 
     if len(currStr) == 1:
         if chunkCount != 0 and (originalLen - processedLength) <= 1:
-            print '(' + currStr + ')'
+            print('(' + currStr + ')')
             return chunkCount + 1
         else:
             return 1
 
     n = len(currStr)
-    for i in range(0, n/2):
+    for i in range(0, n // 2):
         leftChunk = currStr[0:i+1]
         rightChunk = currStr[n-1-i:n]
         if leftChunk == rightChunk:
-            print '(' + leftChunk + ')' + ' (' + rightChunk + ')'
+            print ('(' + leftChunk + ')' + ' (' + rightChunk + ')')
             return LPCUtil(currStr[i+1:n-1-i], chunkCount + 2, processedLength + (i+1)*2, originalLen)
 
-    print '(' + currStr + ')'
+    print ('(' + currStr + ')')
     return chunkCount + 1
 
 
@@ -56,4 +57,4 @@ if __name__ == "__main__":
     # word = "merchant"
     word = "ghiabcdefhelloadamhelloabcdefghi"
     # word = "antaprezatepzapreanta"
-    print (LPC(word))
+    print(LPC(word))

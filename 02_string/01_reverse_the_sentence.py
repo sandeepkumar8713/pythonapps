@@ -1,6 +1,7 @@
 # Question : Print words of a string in reverse order.
 # Let there be a string say "I AM A GEEK". So, the output should be "GEEK A AM I" .
 #
+# Question Type : Easy
 # Used : split the string with delimiter, traverse it in reverse and append to new string
 # Complexity : O(n)
 

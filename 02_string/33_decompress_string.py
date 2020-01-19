@@ -5,6 +5,7 @@
 # me 2 or 3 test cases and asked me to dry run my code on these test cases.He was very impressed
 # by my approach.
 #
+# Question Type : Generic
 # Used : The idea is to use two stacks, one for integers and another for characters.
 #        Now, traverse the string,
 #           Whenever we encounter any number, push it into the integer stack and in case of any alphabet (a to z)

@@ -3,8 +3,9 @@
 #
 # Input : s = "abede"
 # Output : 2
-# We can make string palindrome as "abedeba"
-# by adding ba at the end of the string.
+# We can make string palindrome as "abedeba" by adding ba at the end of the string.
+#
+# Question Type : ShouldSee
 # Used : Remove characters from the beginning of the string one by one and check if the string is palindrome or not.
 #        If true the output becomes the number of characters removed from the string.
 # Complexity : O(n ^ 2)
@@ -34,4 +35,4 @@ def getAppendCount(inpStr):
 
 if __name__ == "__main__":
     inpStr = "madam1"
-    print (getAppendCount(inpStr))
+    print(getAppendCount(inpStr))

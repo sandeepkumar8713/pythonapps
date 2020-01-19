@@ -4,6 +4,7 @@
 # Input : Hello World
 # Output : olleH dlroW
 #
+# Question Type : Easy
 # Used : Loop over the input string. If the char is not ' ' push it in stack.
 #           If char is ' ', pop all the elements from the stack and append to new String with space
 # Complexity : O(n)
@@ -22,7 +23,7 @@ def reverseword(inpString):
 
     while len(stack) != 0:
         res += stack.pop()
-    print res
+    print(res)
 
 
 if __name__ == "__main__":

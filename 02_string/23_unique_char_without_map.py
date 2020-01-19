@@ -5,7 +5,7 @@
 # Input: str = "abcde"
 # Output: true
 #
-#
+# Question Type : Easy
 # Used : Take checker = 0, loop over each char: left shift 1 by the ascii value of char. If and operation with checker
 #         is > 0 then return false else do or operation shifted integer with checker.
 # Complexity : O(n)
@@ -28,4 +28,4 @@ if __name__ == "__main__":
     words = ["abcde", "hello", "apple", "kite", "padle"]
 
     for word in words:
-        print (word, isUniqueChars(word))
+        print(word, isUniqueChars(word))

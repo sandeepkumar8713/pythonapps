@@ -3,6 +3,7 @@
 # fixed-length integer representations. A sequence such as "b, c, d, e, f, g, h, i, j, ba" would be
 # lexicographically sorted as "b, ba, c, d, e, f, g, h, i, j".
 #
+# Question Type : Generic
 # Used : Call recursive function radixSort(inpArr, index) with index 0.
 #        Make a list of buckets of size 10. Loop over each of the input element. If index in lesser than size of string
 #           send it to the appropriate bucket using char at index. Else push the string in the inpArr.
@@ -38,7 +39,10 @@ def radixSort(inpArr, index):
 
 
 if __name__ == "__main__":
-    # arr = ["sandeep", "suresh", "rohit", "kamlesh", "bhavin", "rajat"]
+    arr = ["sandeep", "suresh", "rohit", "kamlesh", "bhavin", "rajat"]
+    radixSort(arr, 0)
+    print(arr)
+
     arr = ["b", "c", "d", "e", "h", "g", "b", "f", "i", "j", "bc", "ba", "b"]
     radixSort(arr, 0)
-    print arr
+    print(arr)

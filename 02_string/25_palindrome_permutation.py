@@ -6,13 +6,13 @@
 # Input : rats live on no evil star
 # Output : True
 #
+# Question Type : ShouldSee
 # Used : Here we have to make sure that frequency of each character is even. At most only one character can have odd
 #        frequency. Use a bit vector and keep flipping its bits. At end bit vector must be 0 as bits will be flipped
 #        even number of times. For 1 odd use this logic : (bitVector & (bitVector - 1)) == 0
 # Complexity : O(n)
 
 
-# toggle the bitVector at ith index
 def toggle(bitVector, index):
     if index < 0:
         return bitVector
@@ -45,4 +45,4 @@ def isPermutationOfPalindrome(phrase):
 
 if __name__ == "__main__":
     pali = "rats live on no evil star"
-    print (isPermutationOfPalindrome(pali))
+    print(isPermutationOfPalindrome(pali))

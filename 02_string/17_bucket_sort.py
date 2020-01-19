@@ -3,6 +3,7 @@
 # the following problem. Sort a large set of floating point numbers which are in range from 0.0 to 1.0 and are
 # uniformly distributed across the range. How do we sort the numbers efficiently?
 #
+# Question Type : Generic
 # Used : Make a list of buckets of size 10. Since the input is in range of 0.0 to 1.0, multiplying with 10 would give
 #        values between 0 to 9. Use this value as index and distribute the elements of input array in these 10 buckets.
 #        Sort each of the bucket individually.
@@ -34,4 +35,4 @@ def bucketSort(arr, n):
 if __name__ == "__main__":
     arr = [0.897, 0.565, 0.656, 0.1234, 0.665, 0.3434]
     bucketSort(arr, len(arr))
-    print arr
+    print(arr)

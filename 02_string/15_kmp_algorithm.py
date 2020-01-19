@@ -20,7 +20,8 @@
 # For each sub-pattern pat[0..i] where i = 0 to m-1, lps[i] stores length of the maximum matching proper prefix which
 # is also a suffix of the sub-pattern pat[0..i].
 #
-# Used :
+# Question Type : Generic
+# Used : Logic:
 # computeLPSArray(pat, M, lps) : set i = 1, lps[0] = 0 and length = 0. Run a loop while i < N:
 #                                if pat[i] == pat[length]: (inc length assign it to lps[i] and inc i)
 #                                   length += 1, lps[i] = length i += 1
@@ -40,7 +41,6 @@
 # Complexity : O(n) if input txt is of length n
 
 
-# Python program for KMP Algorithm
 def KMPSearch(pat, txt):
     M = len(pat)
     N = len(txt)

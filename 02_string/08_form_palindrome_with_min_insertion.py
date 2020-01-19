@@ -7,6 +7,7 @@
 # abcda: Number of insertions required is 2. adcbcda which is same as number of insertions in the substring bcd
 # abcde: Number of insertions required is 4. edcbabcde
 #
+# Question Type : Generic
 # Used : If we find out LCS of string and its reverse, we know how many maximum characters can form a palindrome.
 #        We need insert remaining characters. Find lcs length of string and its reverse and subtract it from length of
 #        string
@@ -29,4 +30,4 @@ def minInsertion(inpStr):
 
 if __name__ == "__main__":
     inpStr = "geeks"
-    print minInsertion(inpStr)
+    print(minInsertion(inpStr))

@@ -6,6 +6,7 @@
 # Output: true
 # The given string is 3 times repetition of "abc"
 #
+# Question Type : Generic
 # Used : 1) Find length of the longest proper prefix of 'str' which is also a suffix. Let the length of the longest
 #           proper prefix suffix be 'len'. This can be computed in O(n) time using pre-processing step of KMP
 #           string matching algorithm.
@@ -56,6 +57,6 @@ if __name__ == "__main__":
     for txt in txtList:
         print (txt),
         if isRepeat(txt):
-            print ("True")
+            print("True")
         else:
-            print ("False")
+            print("False")

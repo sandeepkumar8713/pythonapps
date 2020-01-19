@@ -1,8 +1,8 @@
 # Question : Converting Roman Numerals to Decimal lying between 1 to 3999.
 # Given a Roman numeral, find its corresponding decimal value.
 #
-# Used :
-# Split the Roman Numeral string into Roman Symbols (character).
+# Question Type : Easy
+# Used : Split the Roman Numeral string into Roman Symbols (character).
 # Convert each symbol of Roman Numerals into the value it represents.
 # Take symbol one by one from starting from index 0:
 #   If current value of symbol is greater than or equal to the value of next symbol,
@@ -41,4 +41,4 @@ def romanToDecimal(romInp):
 
 if __name__ == "__main__":
     romInp = "MCMIV"
-    print romanToDecimal(romInp)
+    print(romanToDecimal(romInp))

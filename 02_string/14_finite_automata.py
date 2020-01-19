@@ -7,6 +7,7 @@
 #         pat[] = "TEST"
 # Output: Pattern found at index 10
 #
+# Question Type : OddOne
 # Used : TODO :: add used
 # Complexity : computeTF() is O(m^3*NO_OF_CHARS) where m is length of the pattern and NO_OF_CHARS is 256
 #              search(n)
@@ -51,29 +52,6 @@ def computeTF(pat):
     return TF
 
 
-# def computeTF(pat):
-#     # This function builds the TF table which represents Finite Automata for a given pattern
-#     global NO_OF_CHARS
-#
-#     TF = []
-#     for row in range(len(pat) + 1):
-#         TF.append([0] * NO_OF_CHARS)
-#     TF[0][ord(pat[0])] = 1
-#     TF[len(pat)][ord(pat[0])] = 1
-#
-#     # longest prefix suffix
-#     lps = 0
-#     for state in range(1, len(pat)):
-#         for x in range(NO_OF_CHARS):
-#             TF[state][x] = TF[lps][x]
-#
-#         TF[state][ord(pat[state])] = state + 1
-#         if state < len(pat):
-#             lps = TF[lps][ord(pat[state])]
-#
-#     return TF
-
-
 def search(pat, txt):
     M = len(pat)
     N = len(txt)
@@ -86,14 +64,17 @@ def search(pat, txt):
         # if 0 <= i <= 3 or 9 <= i <= 12 or 13 <= i <= 16:
         #     print state
         if state == M:
-            print"Pattern found at index:", str(i - M + 1)
+            print("Pattern found at index:", str(i - M + 1))
 
 
 if __name__ == '__main__':
     txt = "AABAACAADAABAAABAA"
     # txt = "AABAABA"
     pat = "AABA"
+    search(pat, txt)
 
-    # txt = "GEEKSGEEKS"
-    # pat = "GEEKS"
+    print("")
+
+    txt = "GEEKSGEEKS"
+    pat = "GEEKS"
     search(pat, txt)

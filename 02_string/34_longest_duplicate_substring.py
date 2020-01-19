@@ -7,6 +7,7 @@
 # Input: "banana"
 # Output: "ana"
 #
+# Question Type : OddOne
 # Used : We will use Rabin-Karp algorithm to search the pattern. It uses hashing to find an exact match of a
 #        pattern string in a text. It uses a rolling hash to quickly filter out positions of the text that cannot
 #        match the pattern, and then checks for a match at the remaining positions.

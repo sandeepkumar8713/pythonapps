@@ -6,6 +6,7 @@
 # Input : 'Mr John Smith    '
 # Output : Mr%20John%20Smith
 #
+# Question Type : Easy
 # Used : Find true length without trailing space. Find space count within true length. Now calculate newIndex
 #        (trueLength + (spaceCount * 2). Make a empty list listStr of size newIndex. Now start filling the listStr in
 #        reverse. While doing so replace ' ' with %20.

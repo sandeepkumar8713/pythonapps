@@ -2,6 +2,7 @@
 # Question : Given a string you need to print longest possible substring that has exactly M unique characters.
 # If there are more than one substring of longest possible length, then print any one of them.
 #
+# Question Type : Easy
 # Used : Take a sliding window, traverse over the string and keep track of largest window found yet.
 #        Take two endpoints of window wLeft, wRight as 0. Also keep track of uniqueCount in window.
 #        Maintain a dict myMap to keep track of char and their frequency.
@@ -45,7 +46,7 @@ def findLongest(inpStr, m):
             bestWindow = wRight - wLeft
             bestLeft = wLeft
 
-    print inpStr[bestLeft:bestLeft + bestWindow]
+    print(inpStr[bestLeft:bestLeft + bestWindow])
 
 
 if __name__ == "__main__":

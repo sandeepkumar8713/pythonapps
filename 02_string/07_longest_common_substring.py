@@ -4,6 +4,7 @@
 #          Y = "GeeksQuiz"
 # Output : Geeks
 #
+# Question Type : Generic
 # Used : The longest common suffix has following optimal substructure property
 #        LCSuff(X, Y, m, n) = LCSuff(X, Y, m-1, n-1) + 1 if X[m-1] = Y[n-1]
 #                        0  Otherwise (if X[m-1] != Y[n-1])
@@ -43,7 +44,7 @@ def LCSubStr(X, Y, m, n):
         outputstring = X[row-1] + outputstring
         row -= 1
         col -= 1
-    print (outputstring, result)
+    print(outputstring, result)
 
 
 if __name__ == "__main__":
@@ -52,4 +53,3 @@ if __name__ == "__main__":
     m = len(X)
     n = len(Y)
     LCSubStr(X, Y, m, n)
-

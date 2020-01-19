@@ -8,6 +8,7 @@
 #         A BC
 #         A B C
 #
+# Question Type : Easy
 # Used : Given a inpStr of length n, let its index be i. Make a list buff of length 2n and index j.
 #        Set first element of buff : buff[0] = inpStr[0]. Call the recursive function
 #        printPatternUtil(inpStr, buff, i, j, n) with i = 1 and j = 2.
@@ -31,7 +32,7 @@ def toString(List):
 def printPatternUtil(inpStr, buff, i, j, n):
     if i == n:
         buff[j] = '\0'
-        print toString(buff)
+        print(toString(buff))
         return
 
     # Either put the character
