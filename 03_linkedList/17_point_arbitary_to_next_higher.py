@@ -2,6 +2,7 @@
 # Question : Given singly linked list with every node having an additional "arbitrary" pointer that currently points
 # to NULL. Need to make the "arbitrary" pointer point to the next higher value node.
 #
+# Question Type : Asked
 # Used : Traverse input list and copy next pointer to arbitrary pointer for every node.
 #        Do Merge Sort for the linked list formed by arbitrary pointers and update head accordingly.
 # MergeSort() : Call recursive function mergeSort() head = mergeSort(first, n)
@@ -35,7 +36,7 @@ def divideLink(first, n):
     second = first
     count = 0
     prev = None
-    while count < n/2:
+    while count < n//2:
         prev = second
         second = second.arbitrary
         count += 1
@@ -75,10 +76,10 @@ def printAll(head, n):
     temp = head
     count = 0
     while temp and count < n:
-        print temp.data,
+        print(temp.data, end=" ")
         count += 1
         temp = temp.arbitrary
-    print ""
+    print("")
 
 
 # merge sort
@@ -86,11 +87,11 @@ def mergeSort(first, n):
     if n == 1:
         return first
     second = divideLink(first, n)
-    firstLength = n/2
+    firstLength = n//2
     if n % 2 == 0:
-        secondLength = n/2
+        secondLength = n//2
     else:
-        secondLength = n/2 + 1
+        secondLength = n//2 + 1
 
     first = mergeSort(first, firstLength)
     second = mergeSort(second, secondLength)
@@ -109,13 +110,13 @@ class LinkedList:
     def printList(self):
         temp = self.head
         while temp:
-            print temp.data,
+            print(temp.data,end=" ")
             temp = temp.next
 
     def printArbitraryList(self):
         temp = self.head
         while temp:
-            print temp.data,
+            print(temp.data, end=" ")
             temp = temp.arbitrary
 
     def populateArbitrary(self):
@@ -143,8 +144,8 @@ if __name__ == "__main__":
     lList.push(5)
     lList.push(4)
 
-    print "Input:"
+    print("Input:")
     lList.printList()
     lList.populateArbitrary()
-    print "\nOutput:"
+    print("\nOutput:")
     lList.printArbitraryList()

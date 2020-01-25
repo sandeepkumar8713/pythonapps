@@ -2,6 +2,7 @@
 # http://algs4.cs.princeton.edu/92search/QuadTree.java.html
 # Question : Quad Tree ( SW, SE, NE, NW)
 #
+# Question Type : OddOne
 # Used : Quad Tree child : SW, SE, NE, NW
 #        Save few 2D points in quad tree. Print all the points within the given the rectangle.
 # Complexity : O(log n)
@@ -65,7 +66,7 @@ class QuadTree:
         yMax = rect["intervalY"]["yMax"]
 
         if xMin <= root.x < xMax and yMin <= root.y < yMax:
-            print root.x, root.y, root.value
+            print(root.x, root.y, root.value)
             return
 
         if less(xMin, root.x) and less(yMin, root.y):

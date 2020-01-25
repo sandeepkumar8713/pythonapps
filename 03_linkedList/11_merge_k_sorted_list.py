@@ -2,6 +2,7 @@
 # Question : Given K sorted linked lists of size N each, merge them and print the sorted output.
 # merge k sorted list
 #
+# Question Type : Easy
 # Used : We already know that merging of two linked lists can be done in O(n) time and O(1) space (For arrays O(n)
 # space is required). The idea is to pair up K lists and merge each pair in linear time using O(1) space. After first
 # cycle, K/2 lists are left each of size 2*N. After second cycle, K/4 lists are left each of size 4*N and so on.
@@ -33,7 +34,7 @@ class LinkedList:
     def printList(self):
         temp = self.head
         while temp:
-            print temp.data,
+            print(temp.data, end=" ")
             temp = temp.next
 
     def getHead(self):
@@ -92,12 +93,12 @@ if __name__ == "__main__":
     arr = [1, 3, 5, 7]
     insertValues(firstList, arr)
 
-    print ''
+    print('')
     secondList = LinkedList()
     arr = [2, 4, 6, 8]
     insertValues(secondList, arr)
 
-    print ''
+    print('')
     thirdList = LinkedList()
     arr = [0, 9, 10, 11]
     insertValues(thirdList, arr)
@@ -105,8 +106,8 @@ if __name__ == "__main__":
     linkedListArray = [firstList, secondList, thirdList]
     result = mergeKlist(linkedListArray)
 
-    print ''
+    print('')
     # result = merge(firstList.getHead(), secondList.getHead())
     while result:
-        print result.data,
+        print(result.data,end=" ")
         result = result.next

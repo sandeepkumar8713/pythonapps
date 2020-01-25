@@ -3,6 +3,7 @@
 # Question : Given a sorted singly linked list and a value x, the task is to find pair whose sum is equal to x.
 # We are not allowed to use any extra space and expected time complexity is O(n).
 #
+# Question Type : OddOne
 # Used : We need to convert single linked list to double linked list. Loop through the linkedList and replace next value
 #        with XOR(prev, next). Once this is done take two pointer at left and right of linkedList and find pair sum.
 # Complexity : O(n)
@@ -50,12 +51,12 @@ class LinkedList:
         temp = self.head
         prev = id(None)
         while temp:
-            print temp.data,
+            print(temp.data, end=" ")
             xorValue = temp.next ^ prev
 
             prev = id(temp)
             temp = memoryMap[xorValue]
-        print ""
+        print("")
 
     def findPair(self, targetSum):
         left = self.head
@@ -74,7 +75,7 @@ class LinkedList:
         nextNode = id(None)
         while left.data < right.data:
             if left.data + right.data == targetSum:
-                print left.data, right.data
+                print(left.data, right.data)
                 found = True
 
                 # move both left and right forward
@@ -116,4 +117,4 @@ if __name__ == "__main__":
     lList.convertPointer()
     # lList.printUsingXor()
     if not lList.findPair(17):
-        print "not found"
+        print("not found")

@@ -8,6 +8,7 @@
 #         x = 3
 # Output: 1->2->2->3->3->4->5
 #
+# Question Type : Easy
 # Used : We should make 3 queues: first, middle, last. Loop through the given list and push in either of the queue.
 #        Now merge the queue. Note that new nodes are not created. We play with next pointer.
 # Complexity : O(n)
@@ -71,7 +72,7 @@ class LinkedList:
     def printList(self):
         temp = self.head
         while temp:
-            print (temp.data),
+            print(temp.data, end=" ")
             temp = temp.next
 
     def partition(self, xValue):
@@ -108,8 +109,8 @@ if __name__ == "__main__":
     for item in data:
         llist.push(item)
 
-    print ("Before")
+    print("Before")
     llist.printList()
     llist.partition(xValue)
-    print ("\nAfter")
+    print("\nAfter")
     llist.printList()

@@ -4,6 +4,7 @@
 # Eg: 2->3->4->5->7 = > 2->3->(4 + 4)->(5 + 3)->(7 + 2)
 # Eg: 2->3->6->10->5->7  = > 2->3->6->(10 + 6)->(5 + 3)->(7 + 2)
 #
+# Question Type : Easy
 # Used : Find n, size of given linked list
 #        Calculate halfSize. If n is odd: midPoint = halfSize + 1. else : midPoint = halfSize. Also keep a marker for
 #           odd or even.
@@ -32,9 +33,9 @@ class LinkedList:
     def printList(self):
         temp = self.head
         while temp:
-            print temp.data,
+            print(temp.data,end=" ")
             temp = temp.next
-        print ""
+        print("")
 
     def findSize(self):
         count = 0
@@ -82,7 +83,7 @@ class LinkedList:
 
     def addSecondHalf(self):
         n = self.findSize()
-        halfSize = n/2
+        halfSize = n // 2
 
         if n % 2 == 1:
             midPoint = halfSize + 1
@@ -114,8 +115,8 @@ if __name__ == "__main__":
     # lList.push(3)
     # lList.push(2)
 
-    print "Given linked list:"
+    print("Given linked list:")
     lList.printList()
     lList.addSecondHalf()
-    print "Modified:"
+    print("Modified:")
     lList.printList()

@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/
 # Question : Given a linked list, write a function to reverse every k nodes (where k is an input to the function)
 #
+# Question Type : Asked
 # Used : Call a recursive function reverse(head,k).
 #           We need to reverse the k nodes first.
 #           Run a loop while current is not None and count < k:
@@ -51,7 +52,7 @@ class LinkedList:
     def printList(self):
         temp = self.head
         while temp:
-            print temp.data,
+            print(temp.data,end=" ")
             temp = temp.next
 
 
@@ -67,9 +68,9 @@ if __name__ == "__main__":
     lList.push(2)
     lList.push(1)
 
-    print "Given linked list"
+    print("Given linked list")
     lList.printList()
     lList.head = lList.reverse(lList.head, 3)
 
-    print "\nReversed Linked list"
+    print("\nReversed Linked list")
     lList.printList()

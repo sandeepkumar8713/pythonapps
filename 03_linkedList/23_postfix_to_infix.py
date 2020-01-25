@@ -5,6 +5,7 @@
 # Input : abc++
 # Output : (a + (b + c))
 #
+# Question Type : Easy
 # Used : Maintain a stack. Loop over the input expression. If ch is operand push in stack else pop two values from
 #           stack, do the operation over them and push it back to stack:
 #                stack.push('(' + operand1 + ch + operand2 + ')')
@@ -56,4 +57,4 @@ def getInfix(postFixExp):
 if __name__ == "__main__":
     postFixExp = "ab*c+"
     # postFixExp = "abc++"
-    print getInfix(postFixExp)
+    print(getInfix(postFixExp))

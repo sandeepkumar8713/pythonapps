@@ -2,6 +2,7 @@
 # Question : Given a Linked List and a number n, write a function that returns the value at the n'th node from end of
 # the Linked List.
 #
+# Question Type : Easy
 # Used : Maintain two pointers : reference pointer and main pointer. Initialize both reference and main pointers to
 #        head. First move reference pointer to n nodes from head. Now move both pointers one by one until reference
 #        pointer reaches end. Now main pointer will point to nth node from the end. Return main pointer.
@@ -26,9 +27,9 @@ class LinkedList:
     def printList(self):
         temp = self.head
         while temp:
-            print temp.data,
+            print(temp.data,end=" ")
             temp = temp.next
-        print ""
+        print("")
 
     def printNthFromLast(self, n):
         if self.head is None:
@@ -40,7 +41,7 @@ class LinkedList:
         count = 0
         while count < n:
             if refPtr is None:
-                print "%d is greater than the no. pf odes in list" % (n)
+                print("%d is greater than the no. pf odes in list" % (n))
                 return
 
             refPtr = refPtr.next
@@ -50,7 +51,7 @@ class LinkedList:
             mainPtr = mainPtr.next
             refPtr = refPtr.next
 
-        print "Node no. %d from last is %d " % (n, mainPtr.data)
+        print("Node no. %d from last is %d " % (n, mainPtr.data))
 
 
 if __name__ == "__main__":

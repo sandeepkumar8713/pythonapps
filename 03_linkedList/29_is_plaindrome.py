@@ -3,6 +3,7 @@
 # Question : Given a singly linked list of characters, write a function that returns true if the given
 # list is a palindrome, else false.
 #
+# Question Type : ShouldSee
 # Used : Recursion. Call a recursive function isPalindrome(node,len) which returns object Result(node, isEqual).
 #        isEqual is True if next node to second last node is palindrome
 #        node is the last node.
@@ -42,7 +43,7 @@ class LinkedList:
     def printList(self):
         temp = self.head
         while temp:
-            print (temp.data),
+            print(temp.data, end=" ")
             temp = temp.next
 
     def getSize(self):
@@ -81,5 +82,5 @@ if __name__ == "__main__":
 
     llist.printList()
     result = isPalindrome(llist.head, llist.getSize())
-    print ("\nIs palindrome : ")
-    print (result.isEqual)
+    print("\nIs palindrome : ")
+    print(result.isEqual)

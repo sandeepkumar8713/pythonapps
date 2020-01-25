@@ -5,6 +5,7 @@
 # Input:  1 -> 2 -> 3 -> 4
 # Output: 1 -> 4 -> 2 -> 3
 #
+# Question Type : Easy
 # Used : Split the linked list in two halves using found middle point.
 #        Reverse the second half.
 #        Do alternate merge of first and second halves.
@@ -40,9 +41,9 @@ class LinkedList:
     def printList(self):
         temp = self.head
         while temp:
-            print temp.data,
+            print(temp.data,end=" ")
             temp = temp.next
-        print ""
+        print("")
 
     def findSize(self):
         count = 0
@@ -114,8 +115,8 @@ if __name__ == "__main__":
     lList = LinkedList()
     for ele in inpArr:
         lList.push(ele)
-    print "original:"
+    print("original:")
     lList.printList()
     lList.mergeSecondHalf()
-    print "modified:"
+    print("modified:")
     lList.printList()

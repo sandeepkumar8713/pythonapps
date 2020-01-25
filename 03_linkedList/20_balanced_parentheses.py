@@ -4,6 +4,7 @@
 #
 # For example, the program should print true for exp = "[()]{}{[()()]()}" and false for exp = "[(])"
 #
+# Question Type : Generic
 # Used : Declare a character stack S.
 #        Now traverse the expression string exp.
 #        If the current character is a starting bracket (( or { or [) then push it to stack.
@@ -66,4 +67,4 @@ def checkIfBalanced(expression):
 if __name__ == "__main__":
     expression = "[()]{}{[()()]()}"
     # expression = "[(])"
-    print checkIfBalanced(expression)
+    print(checkIfBalanced(expression))

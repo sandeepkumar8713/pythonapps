@@ -5,6 +5,7 @@
 # pump and it has infinite capacity). Expected time complexity is O(n). Assume for 1 litre petrol, the truck can go 1
 # unit of distance.
 #
+# Question Type : Generic
 # Used : We can use a Queue to store the current tour. We first enqueue first petrol pump to the queue, we keep
 # enqueueing petrol pumps till we either complete the tour, or current amount of petrol becomes negative. If the
 # amount becomes negative, then we keep dequeueing petrol pumps till the current amount becomes positive or queue
@@ -48,4 +49,4 @@ if __name__ == "__main__":
     arr = [PetrolPump(6, 4), PetrolPump(3, 6), PetrolPump(7, 3)]
     start = printTour(arr)
 
-    print "No solution" if start == -1 else "start =", start
+    print("No solution" if start == -1 else "start =", start)

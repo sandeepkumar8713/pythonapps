@@ -2,6 +2,7 @@
 # Question : Write code to remove duplicates from an unsorted linked list.
 # How would you solve this problem if a temporary buffer is not allowed?
 #
+# Question Type : Generic
 # Used : Approach 1 : we simply iterate through the linked list, adding each element to a hash table. When
 #        we discover a duplicate element, we remove the element and continue iterating.
 #        Approach 2 : We can iterate with two pointers: current which iterates through the linked list,
@@ -33,7 +34,7 @@ class LinkedList:
     def printList(self):
         temp = self.head
         while temp:
-            print temp.data,
+            print(temp.data,end=" ")
             temp = temp.next
 
     def removeDuplicate(self):

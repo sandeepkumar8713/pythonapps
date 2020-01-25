@@ -7,6 +7,7 @@
 # index [i,j] can rot other fresh orange at indexes [i-1,j], [i+1,j], [i,j-1], [i,j+1] (up, down, left and right). If
 # it is impossible to rot every orange then simply return -1.
 #
+# Question Type : Generic
 # Used : Push all the rotten oranges in the queue with time taken 0. Now loop through the queue and pop 1 element from
 #        rear and check its surrounding if there are fresh oranges make them rotten and push them in queue while
 #        incrementing the time by 1. Also keep track of maxTime taken so far.
@@ -67,5 +68,4 @@ if __name__ == "__main__":
     # matrix = [[2, 1, 0, 2, 1],
     #           [0, 0, 1, 2, 1],
     #           [1, 0, 0, 2, 1]]
-    print rotTheMatrix(matrix)
-
+    print(rotTheMatrix(matrix))

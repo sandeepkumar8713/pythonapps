@@ -16,9 +16,9 @@ def findFirstNonRepeating(stream):
     inDLL = [] * MAX_CHAR
     repeated = [False] * MAX_CHAR
 
-    for i in xrange(len(stream)):
+    for i in range(len(stream)):
         x = stream[i]
-        print "Reading " + x + " from stream"
+        print("Reading " + x + " from stream")
 
         if not repeated[ord(x)]:
 
@@ -31,11 +31,11 @@ def findFirstNonRepeating(stream):
                 repeated[ord(x)] = True
 
         if len(inDLL) != 0:
-            print "First non-repeating character so far is ",
-            print str(inDLL[0])
+            print("First non-repeating character so far is ",end=" ")
+            print(str(inDLL[0]))
         else:
-            print "no non-repeating character",
-            print str(-1)
+            print("no non-repeating character",end=" ")
+            print(str(-1))
 
 
 if __name__ == "__main__":

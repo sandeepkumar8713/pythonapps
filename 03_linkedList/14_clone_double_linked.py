@@ -3,6 +3,7 @@
 # single link list. The second pointer however CAN point to any node in the list and not just the previous node.
 # Now write a program in O(n) time to duplicate(clone) this list.
 #
+# Question Type : Asked
 # Used : Traverse the original linked list and make a copy of nodes.
 #        Make a hash map of key value pair with original linked list node and copied linked list node.
 #        Traverse the original linked list again and using the hash map adjust the next and random reference of
@@ -39,7 +40,7 @@ class LinkedList:
     def printList(self):
         temp = self.head
         while temp:
-            print temp.data,   # temp.random
+            print(temp.data,end=" ")   # temp.random
             temp = temp.next
 
     def clone(self):
@@ -80,8 +81,8 @@ if __name__ == "__main__":
     myList.head.next.next.next.random = myList.head.next.next.next.next.next
     myList.head.next.next.next.next.random = myList.head.next
 
-    print "Original: "
+    print("Original: ")
     myList.printList()
     newList = myList.clone()
-    print "\nCloned: "
+    print("\nCloned: ")
     newList.printList()
