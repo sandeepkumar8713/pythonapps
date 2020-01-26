@@ -4,6 +4,7 @@
 # Note that there can be many possible rearrangements, the output should be one of the possible rearrangements.
 # If no such arrangement is possible, that should also be reported.
 #
+# Question Type : Easy
 # Used : Let the given string be str and size of string be n
 #        Traverse str, store all characters and their frequencies in a Max Heap MH. The value of frequency decides the
 #           order in MH. Heapify the MH.
@@ -50,9 +51,9 @@ class Heap:
 
     def buildHeap(self, arr, n):
         self.size = n
-        for i in xrange(n):
+        for i in range(n):
             self.data.append(arr[i])
-        start = n/2 - 1
+        start = n//2 - 1
         for i in range(start, -1, -1):
             self.heapify(i)
 
@@ -91,7 +92,7 @@ def rearrangeString(inputStr, dDist):
 
     resStr = ['\0'] * n
 
-    for i in xrange(len(inputList)):
+    for i in range(len(inputList)):
         top = maxHeap.removeTop()
 
         # Find the first available position in str[]
@@ -99,7 +100,7 @@ def rearrangeString(inputStr, dDist):
         while resStr[p] != '\0':
             p += 1
 
-        for k in xrange(top.freq):
+        for k in range(top.freq):
             # If the index goes beyond size, then string cannot be rearranged.
             if p + dDist * k >= n:
                 return "Cannot be rearranged"
@@ -111,5 +112,6 @@ def rearrangeString(inputStr, dDist):
 
 
 if __name__ == "__main__":
-    print rearrangeString("aaa", 3)
-    print rearrangeString("aabbcc", 3)
+    print(rearrangeString("aaa", 3))
+    print(rearrangeString("aabbcc", 3))
+

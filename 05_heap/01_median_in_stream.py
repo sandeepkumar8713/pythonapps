@@ -4,6 +4,7 @@
 # input =  5, 15, 1, 3
 # output = 5, 10, 5, 4
 #
+# Question Type : Generic
 # Used : Make a left max heap and right max heap. Iterate over the input elements.
 #       If the left heap has more elements
 #           If new element is less than median then push in left, after moving top element to right
@@ -58,7 +59,7 @@ class Heap:
 
     def buildHeap(self, arr, n):
         self.size = n
-        for i in xrange(n):
+        for i in range(n):
             self.data.append(arr[i])
         for i in range(n/2 - 1, -1, -1):
             self.heapify(i)
@@ -75,7 +76,7 @@ class Heap:
         self.data.append(ele)
         self.size += 1
         n = self.size
-        for i in range(n/2 - 1, -1, -1):
+        for i in range(n//2 - 1, -1, -1):
             self.heapify(i)
 
     def getTop(self):
@@ -124,4 +125,4 @@ if __name__ == "__main__":
     arr = [5, 15, 1, 3, 2, 8, 7, 9, 10, 6, 11, 4]
     for ele in arr:
         getMedian(ele, median, maxHeap, minHeap)
-        print (median[0]),
+        print(median[0], end=" ")

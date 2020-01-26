@@ -44,9 +44,9 @@ class Heap:
 
     def buildHeap(self, arr, n):
         self.size = n
-        for i in xrange(n):
+        for i in range(n):
             self.data.append(arr[i])
-        start = n/2 - 1
+        start = n//2 - 1
         for i in range(start, -1, -1):
             self.heapify(i)
 
@@ -62,7 +62,7 @@ class Heap:
         self.data.append(ele)
         self.size += 1
         n = self.size
-        start = n / 2 - 1
+        start = n // 2 - 1
         for i in range(start, -1, -1):
             self.heapify(i)
 
@@ -92,4 +92,4 @@ if __name__ == "__main__":
               [15, 25, 35, 45],
               [25, 29, 37, 48],
               [32, 33, 39, 50]]
-    print kthSmallest(inpMat, 7)
+    print(kthSmallest(inpMat, 7))

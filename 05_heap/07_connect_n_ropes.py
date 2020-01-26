@@ -9,6 +9,7 @@
 #
 # Total cost for connecting all ropes is 5 + 9 + 15 = 29
 #
+# Question Type : Easy
 # Used : Maintain a minHeap. Insert inpArr and heapify it. set minCost = 0. Run a loop while size(minHeap) > 1:
 #           remove two elements from min heap, add them to minCost and insert the sum of the two elements in minHeap
 #        After the loop, print minCost
@@ -40,9 +41,9 @@ class Heap:
 
     def buildHeap(self, arr, n):
         self.size = n
-        for i in xrange(n):
+        for i in range(n):
             self.data.append(arr[i])
-        start = n/2 - 1
+        start = n//2 - 1
         for i in range(start, -1, -1):
             self.heapify(i)
 
@@ -58,7 +59,7 @@ class Heap:
         self.data.append(ele)
         self.size += 1
         n = self.size
-        start = n / 2 - 1
+        start = n // 2 - 1
         for i in range(start, -1, -1):
             self.heapify(i)
 
@@ -82,4 +83,4 @@ def findMinCost(inpArr):
 
 if __name__ == "__main__":
     inpArr = [4, 3, 2, 6]
-    print findMinCost(inpArr)
+    print(findMinCost(inpArr))

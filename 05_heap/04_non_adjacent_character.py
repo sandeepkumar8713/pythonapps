@@ -10,10 +10,25 @@
 # Input: aaaabc
 # Output: Not Possible
 #
+# Question Type : Generic
 # Used : Make a array of objects whose attributes are char and its frequency. Make a maxHeap(Priority Queue) out of
 #        this array. Loop while maxHeap is not empty. Pop top element from maxHeap, append the char to the result
 #        string. If previous element freq is more 0 again insert it in maxHeap. Make current element as previous after
 #        decrementing its frequency by 1.
+#        Logic :
+#        prev = Key('#', -1)
+#        resStr = ''
+#        while maxHeap.getCount() != 0:
+#           key = maxHeap.removeTop()
+#           resStr = resStr + key.char
+#           if prev.freq > 0:
+#               maxHeap.insert(prev)
+#           key.freq -= 1
+#           prev = key
+#        if len(resStr) == len(inputStr):
+#           print(resStr)
+#        else:
+#           print("not possible")
 # Complexity : insert : (n log n) remove top : (log n) total : n (n log n)
 
 
@@ -49,9 +64,9 @@ class Heap:
 
     def buildHeap(self, arr, n):
         self.size = n
-        for i in xrange(n):
+        for i in range(n):
             self.data.append(arr[i])
-        start = n/2 - 1
+        start = n//2 - 1
         for i in range(start, -1, -1):
             self.heapify(i)
 
@@ -67,7 +82,7 @@ class Heap:
         self.data.append(ele)
         self.size += 1
         n = self.size
-        start = n / 2 - 1
+        start = n // 2 - 1
         for i in range(start, -1, -1):
             self.heapify(i)
 
@@ -105,9 +120,9 @@ def rearrangeString(inputStr):
         prev = key
 
     if len(resStr) == len(inputStr):
-        print resStr
+        print(resStr)
     else:
-        print "not possible"
+        print("not possible")
 
 
 if __name__ == "__main__":

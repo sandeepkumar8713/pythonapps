@@ -1,5 +1,6 @@
 # Question : Do heap sort
 #
+# Question Type : Easy
 # Used : Make a max heap from the input array.
 #        For each element swap top and bottom element of heap. Pop the max element and do heapify
 #        again from top for remaining element. Store the pop element in stack.
@@ -33,9 +34,9 @@ class Heap:
 
     def buildHeap(self, arr, n):
         self.size = n
-        for i in xrange(n):
+        for i in range(n):
             self.data.append(arr[i])
-        start = max(n / 2 - 1, 0)
+        start = max(n // 2 - 1, 0)
         for i in range(start, -1, -1):
             self.heapify(i)
 
@@ -62,5 +63,4 @@ if __name__ == "__main__":
     for i in range(0, len(arr)):
         result.append(maxHeap.removeTop())
     for i in range(0, len(arr)):
-        print result.pop(),
-
+        print(result.pop(),end=" ")

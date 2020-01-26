@@ -2,6 +2,7 @@
 # Decrease by key,value : replace the value at given position
 # Delete by key : delete the element at given position
 #
+# Question Type : ShouldSee
 # Used : Insert : Add the new element at end. Run a loop from n/2 to 0 and call heapify(i)
 #        Remove top : Swap first and last element. Delete last. Call heapify(0). return last
 #        Decrease by key : Replace the new element at k. Run a loop from k/2 to 0 and call heapify(i)
@@ -36,7 +37,7 @@ class Heap:
 
     def buildHeap(self, arr, n):
         self.size = n
-        for i in xrange(n):
+        for i in range(n):
             self.data.append(arr[i])
         start = max(n / 2 - 1, 0)
         for i in range(start, -1, -1):
@@ -79,15 +80,15 @@ if __name__ == "__main__":
     minHeap.insert(11)
     minHeap.insert(3)
     minHeap.insert(2)
-    print minHeap.data
+    print(minHeap.data)
     minHeap.deleteKey(1)
     minHeap.insert(15)
     minHeap.insert(5)
     minHeap.insert(4)
     minHeap.insert(45)
-    print minHeap.data
-    print minHeap.removeTop()
-    print minHeap.getTop()
-    print minHeap.data
+    print(minHeap.data)
+    print(minHeap.removeTop())
+    print(minHeap.getTop())
+    print(minHeap.data)
     minHeap.decreaseKey(2, 1)
-    print minHeap.getTop()
+    print(minHeap.getTop())

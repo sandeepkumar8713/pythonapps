@@ -3,6 +3,7 @@
 # and chop off greater k and smaller k elements from the window w. From the remaining elements,
 # compute the average.
 #
+# Question Type : Generic
 # Used : make use of Min and Max heaps. Similar to find kth largest in stream.
 #       For smaller values use Max Heap, For larger value use Min heap. For middle value, maintain both min and max heap
 # Complexity : insert = (w log w), deleteByKey : (w log w)
@@ -36,9 +37,9 @@ class Heap:
 
     def buildHeap(self, arr, n):
         self.size = n
-        for i in xrange(n):
+        for i in range(n):
             self.data.append(arr[i])
-        for i in range(n/2 - 1, -1, -1):
+        for i in range(n//2 - 1, -1, -1):
             self.heapify(i)
 
     def removeTop(self):
@@ -53,7 +54,7 @@ class Heap:
         self.data.append(ele)
         self.size += 1
         n = self.size
-        for i in range(n/2 - 1, -1, -1):
+        for i in range(n//2 - 1, -1, -1):
             self.heapify(i)
 
     def getTop(self):
@@ -73,9 +74,9 @@ class Heap:
 
     def deleteByKey(self, key):
         if self.op == operator.lt:
-            topValue = -sys.maxint
+            topValue = -sys.maxsize
         else:
-            topValue = sys.maxint
+            topValue = sys.maxsize
         self.decreaseKey(key, topValue)
         self.removeTop()
 
@@ -126,7 +127,7 @@ def showAverage(inpArr, w, k):
 
     i = 0
     while i < k:
-        print None,
+        print(None,end=" ")
         i += 1
 
     rightMinHeap.buildHeap(inpArr, k)
@@ -153,9 +154,9 @@ def showAverage(inpArr, w, k):
             insertInMiddle(x, middleMinHeap, middleMaxHeap)
 
         if totalCount == 0:
-            print None,
+            print(None,end=" ")
         else:
-            print totalSum / float(totalCount),
+            print(totalSum / float(totalCount),end=" ")
 
         endIndex += 1
 
@@ -204,9 +205,9 @@ def showAverage(inpArr, w, k):
             rightMinHeap.insert(ele)
 
         if totalCount == 0:
-            print None,
+            print(None,end=" ")
         else:
-            print totalSum / float(totalCount),
+            print(totalSum / float(totalCount),end=" ")
 
 
 if __name__ == "__main__":

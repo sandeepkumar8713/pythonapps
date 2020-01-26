@@ -11,6 +11,7 @@
 # The smallest range is [6 8]
 # Explanation: Smallest range is formed by number 7 from first list, 8 from second list and 6 from third list.
 #
+# Question Type : Generic
 # Used : Make a structure Node : ele, i, j where ele is the element in array, along with its index in inpLists and next
 #           element index in that array. Make a min heap which would have above mentioned Node as data
 #        Push first element of each array of inpList in the min Heap as Node and keep comparing and updating
@@ -57,9 +58,9 @@ class Heap:
 
     def buildHeap(self, arr, n):
         self.size = n
-        for i in xrange(n):
+        for i in range(n):
             self.data.append(arr[i])
-        start = n/2 - 1
+        start = n//2 - 1
         for i in range(start, -1, -1):
             self.heapify(i)
 
@@ -75,7 +76,7 @@ class Heap:
         self.data.append(ele)
         self.size += 1
         n = self.size
-        start = n / 2 - 1
+        start = n // 2 - 1
         for i in range(start, -1, -1):
             self.heapify(i)
 
@@ -83,9 +84,9 @@ class Heap:
 def findSmallestRange(inpLists):
     k = len(inpLists)
     n = len(inpLists[0])
-    minVal = sys.maxint
-    maxVal = -sys.maxint
-    valRange = sys.maxint
+    minVal = sys.maxsize
+    maxVal = -sys.maxsize
+    valRange = sys.maxsize
 
     startElement = 0
     endElement = 0
@@ -122,7 +123,7 @@ def findSmallestRange(inpLists):
         if ele > maxVal:
             maxVal = ele
 
-    print startElement, endElement
+    print(startElement, endElement)
 
 
 if __name__ == "__main__":
