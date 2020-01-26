@@ -3,6 +3,7 @@
 # i) updateEntry(string name, int score)
 # ii) getEntryFromRank(int rank)
 #
+# Question Type : Easy
 # Used : Use a binary search tree to save data, Here keep track of rightCount of children of each node
 #        It is reverse of question find kth smallest element in bst.
 #        while temp:

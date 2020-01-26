@@ -16,6 +16,7 @@
 #       / \
 #      2   8
 #
+# Question Type : ShouldSee
 # Used : Call a recursive function correctBSTUtil((root, first, middle, last, prev) with
 #        correctBSTUtil((root, [None], [None], [None], [None]). This function should do inorder as it traverses the BST in increasing order.
 #        If root is None: return
@@ -28,6 +29,17 @@
 #
 #        Once we are out of recursive function. If first and last are set: swap them
 #        Else if first and middle are set: swap them
+#        Logic : def correctBSTUtil(root, first, middle, last, prev):
+#        if root is None: return
+#        correctBSTUtil(root.left, first, middle, last, prev)
+#        if prev[0] is not None and root.data < prev[0].data:
+#           if first[0] is None:
+#               first[0] = prev[0]
+#               middle[0] = root
+#           else:
+#               last[0] = root
+#        prev[0] = root
+#        correctBSTUtil(root.right, first, middle, last, prev)
 # Complexity : O(n)
 
 
@@ -43,7 +55,7 @@ def printInOrder(root):
         return
 
     printInOrder(root.left)
-    print root.data,
+    print(root.data, end=" ")
     printInOrder(root.right)
 
 
@@ -103,8 +115,8 @@ if __name__ == "__main__":
     root.left.left = Node(2)
     root.left.right = Node(20)
 
-    print "original:",
+    print("original:", end=" ")
     printInOrder(root)
-    print "\nCorrected:",
+    print("\nCorrected:", end=" ")
     correctBST(root)
     printInOrder(root)

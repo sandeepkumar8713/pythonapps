@@ -7,6 +7,7 @@
 #          /  \    /  \
 #        20   40  60   80
 #
+# Question Type : Generic
 # Used : Call a recursive function deleteNode(root, key): If root is None : return None
 #        if key < root.data: call function over left subtree : root.left = deleteNode(root.left, key)
 #        Else if key > root.data: call function over right subtree
@@ -49,12 +50,12 @@ class BST:
         if root is None:
             return
         self.printInOrderUtil(root.left)
-        print root.data,
+        print(root.data, end=" ")
         self.printInOrderUtil(root.right)
 
     def printInOrder(self):
         self.printInOrderUtil(self.root)
-        print
+        print("")
 
 
 def findMin(node):

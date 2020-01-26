@@ -8,6 +8,7 @@
 #          /  \    /  \
 #        20   40  60   80
 #
+# Question Type : Asked
 # Used : The idea is to do reverse inorder traversal of BST. The reverse inorder traversal traverses all nodes in
 #        decreasing order.
 #        Call a recursive function largestKthNodeUtil(root, k) where k is passed by pointer (list[0])
@@ -53,7 +54,7 @@ class BST:
         k[0] -= 1
 
         if k[0] == 0:
-            print root.data
+            print(root.data)
             return
 
         self.largestKthNodeUtil(root.left, k)

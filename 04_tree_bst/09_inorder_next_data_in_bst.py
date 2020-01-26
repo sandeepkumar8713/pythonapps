@@ -11,6 +11,7 @@
 #           /  \
 #         10   14
 #
+# Question Type : Generic
 # Used : 1) If right subtree of node is not NULL, then nextNode lies in right subtree. Do following.
 #           Go to right subtree and return the node with minimum key value in right subtree. (By looping until
 #           node.left is not null and then return node)
@@ -52,7 +53,7 @@ class BST:
         if root is None:
             return
         self.printInOrderUtil(root.left)
-        print root.data,
+        print(root.data,end=" ")
         self.printInOrderUtil(root.right)
 
     def printInOrder(self):
@@ -104,8 +105,8 @@ if __name__ == "__main__":
     bst.printInOrder()
 
     temp = bst.root.left.right.right
-    print
-    print "node:", temp.data
+    print("")
+    print("node:", temp.data)
     nextNode = bst.findNext(temp)
     if nextNode is not None:
-        print "nextNode:", nextNode.data
+        print("nextNode:", nextNode.data)

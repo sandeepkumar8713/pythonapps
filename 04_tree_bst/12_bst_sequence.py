@@ -4,7 +4,8 @@
 # and inserting each element. Given a binary search tree with distinct elements, print all possible
 # arrays that could have led to this tree.
 #
-# TODO :: go through the code and the one in java, add used explaination
+# Question Type : OddOne
+# TODO :: go through the code and the one in java, add used explanation
 #
 
 import copy
@@ -129,5 +130,5 @@ if __name__ == "__main__":
     tree.insert(15)
     allSeq = allSequences(tree.getRoot())
     for each in allSeq:
-        print (each)
-    print (len(allSeq))
+        print(each)
+    print(len(allSeq))

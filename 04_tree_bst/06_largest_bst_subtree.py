@@ -15,6 +15,7 @@
 #  /  \
 # 1    3
 #
+# Question Type : ShouldSee
 # Used : If we traverse the tree in bottom up manner, then we can pass information about subtrees to the parent. The
 #        passed information can be used by the parent to do BST test (for parent node) only in constant time
 #        (or O(1) time). A left subtree need to tell the parent whether it is BST or not and also need to pass maximum
@@ -56,14 +57,14 @@ def largestBSTUtil(node, minKey, maxKey, maxSize, isBst):
     leftIsBst = False
     rightIsBst = False
 
-    maxKey[0] = -sys.maxint
+    maxKey[0] = -sys.maxsize
     leftSize = largestBSTUtil(node.left, minKey, maxKey, maxSize, isBst)
     if isBst and node.data > maxKey[0]:
         leftIsBst = True
 
     leftMin = minKey[0]
 
-    minKey[0] = sys.maxint
+    minKey[0] = sys.maxsize
     rightSize = largestBSTUtil(node.right, minKey, maxKey, maxSize, isBst)
     if isBst and node.data < minKey[0]:
         rightIsBst = True
@@ -88,7 +89,7 @@ def largestBSTUtil(node, minKey, maxKey, maxSize, isBst):
 
 def largestBST(root):
     maxSize = [0]
-    largestBSTUtil(root, [sys.maxint], [-sys.maxint], maxSize, [False])
+    largestBSTUtil(root, [sys.maxsize], [-sys.maxsize], maxSize, [False])
     return maxSize[0]
 
 
@@ -112,4 +113,4 @@ if __name__ == "__main__":
     root.right.right.left = Node(65)
     root.right.right.right = Node(80)
 
-    print largestBST(root)
+    print(largestBST(root))

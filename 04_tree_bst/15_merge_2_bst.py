@@ -14,6 +14,7 @@
 # 2       6
 # Output: 1 2 3 4 5 6
 #
+# Question Type : ShouldSee
 # Used : If root1 is None do in order of root2, return
 #        If root2 is None do in order of root1, return
 #        while temp1 is not None or temp2 is not None or len(stack1) != 0 or len(stack2) != 0:
@@ -45,7 +46,7 @@ class Node:
 def inOrder(root):
     if root is not None:
         inOrder(root.left)
-        print (root.data),
+        print(root.data, end=" ")
         inOrder(root.right)
 
 
@@ -59,6 +60,7 @@ def pushLeftInStack(temp, stack):
 def popFromStack(stack):
     while len(stack) != 0:
         temp = stack.pop()
+        print(temp.data, end=" ")
         temp.left = None
         inOrder(temp.right)
 
@@ -85,19 +87,19 @@ def merge(root1, root2):
                 return
 
             if len(stack2) == 0:
-                popFromStack(stack2)
+                popFromStack(stack1)
                 return
 
             temp1 = stack1.pop()
             temp2 = stack2.pop()
 
             if temp1.data < temp2.data:
-                print (temp1.data),
+                print(temp1.data, end=" ")
                 temp1 = temp1.right
                 stack2.append(temp2)
                 temp2 = None
             else:
-                print (temp2.data),
+                print(temp2.data, end=" ")
                 temp2 = temp2.right
                 stack1.append(temp1)
                 temp1 = None
@@ -107,9 +109,16 @@ if __name__ == "__main__":
     root1 = Node(3)
     root1.left = Node(1)
     root1.right = Node(5)
+    print("bst1:", end=" ")
+    inOrder(root1)
+    print("")
 
     root2 = Node(4)
     root2.left = Node(2)
     root2.right = Node(6)
+    print("bst2:", end=" ")
+    inOrder(root2)
+    print("")
 
+    print("merged:", end=" ")
     merge(root1, root2)

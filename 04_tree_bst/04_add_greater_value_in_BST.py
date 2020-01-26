@@ -17,6 +17,7 @@
 #         /   \       /  \
 #       350   300    210   80
 #
+# Question Type : Easy
 # Used : The idea is to do reverse inorder traversal of BST. The reverse inorder traversal traverses all nodes in
 #        decreasing order.
 #        Call a recursive function modifyBSTUtil(root, k) where k is passed by pointer (list[0])
@@ -74,7 +75,7 @@ class BST:
         if root is None:
             return
         self.printInOrderUtil(root.left)
-        print root.data
+        print(root.data,end=" ")
         self.printInOrderUtil(root.right)
 
     def printInOrder(self):

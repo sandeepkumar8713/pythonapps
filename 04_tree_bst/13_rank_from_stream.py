@@ -3,6 +3,7 @@
 # "Total number of elements less than or equal to x (not including x)". If element is not found in stream or is
 # smallest in stream, return -1.
 #
+# Question Type : Easy
 # Used : In BST we also add leftSize as a member of node. While inserting elements in BST, we keep updating leftSize
 #        We traverse the tree from root and compare the root values to x.
 #        If root->data == x : return root.leftSize

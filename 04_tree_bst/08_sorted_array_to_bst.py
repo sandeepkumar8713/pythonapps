@@ -10,6 +10,7 @@
 #  /
 # 1
 #
+# Question Type : ShouldSee
 # Used : For the given sorted input array call a recursive function sortedArrayToBst(inpArr, left, right) with input
 #        sortedArrayToBst(inpArr,0,n-1). It is used to do preorder and make BST tree.
 #        if left > right: return None
@@ -32,7 +33,7 @@ def sortedArrayToBst(inpArr, left, right):
     if left > right:
         return None
 
-    mid = (left + right) / 2
+    mid = (left + right) // 2
     root = Node(inpArr[mid])
 
     root.left = sortedArrayToBst(inpArr, left, mid-1)
@@ -45,7 +46,7 @@ def printInOrder(root):
     if root is None:
         return
     printInOrder(root.left)
-    print root.data,
+    print(root.data, end=" ")
     printInOrder(root.right)
 
 
@@ -53,4 +54,4 @@ if __name__ == "__main__":
     inpArr = [1, 2, 3, 4, 5, 6, 7]
     root = sortedArrayToBst(inpArr, 0, len(inpArr) - 1)
     printInOrder(root)
-    print
+    print("")

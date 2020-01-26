@@ -8,6 +8,7 @@
 #          /  \    /  \
 #        20   40  60   80
 #
+# Question Type : Generic
 # This can be solved using inorder traversal, but its complexity will be O(n). (kth largest element in bst)
 # Used : Assume that the root is having N nodes in its left subtree. If K = N + 1, root is K-th node. If K < N, we will
 #        continue our search (recursion) for the Kth smallest element in the left subtree of root. If K > N + 1, we
@@ -80,4 +81,4 @@ if __name__ == "__main__":
     bst.insert(80)
 
     for k in range(1, 8):
-        print (bst.kthSmallestElement(k))
+        print(bst.kthSmallestElement(k))

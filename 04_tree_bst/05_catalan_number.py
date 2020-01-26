@@ -5,6 +5,7 @@
 # For n = 0, 1, 2, 3, ... values of Catalan numbers are 1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862,
 # ...So are numbers of Binary Search Trees.
 #
+# Question Type : ShouldSee
 # Used : Let's say node i is chosen to be the root. Then there are i - 1 nodes smaller than i and n - i nodes bigger
 #        than i. For each of these two sets of nodes, there is a certain number of possible subtrees.
 #        Let t(n) be the total number of BSTs with n nodes. The total number of BSTs with i at the root is
@@ -41,4 +42,4 @@ def catalan(n):
 
 
 if __name__ == "__main__":
-    print catalan(5)
+    print(catalan(5))

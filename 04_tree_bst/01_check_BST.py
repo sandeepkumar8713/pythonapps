@@ -9,15 +9,22 @@
 # From the above properties it naturally follows that:
 # Each node (item in the tree) has a distinct key.
 #
+# Question Type : Easy
 # Used :  The trick is to write a utility helper function isBSTUtil(struct node* node, int min, int max) that traverses
 #         down the tree keeping track of the narrowing min and max allowed values as it goes, looking at each node only
 #         once. The initial values for min and max should be INT_MIN and INT_MAX. Note that empty tree is a BST.
+#         Logic : def isBSTUtil(node, mini, maxi):
+#        if node is None: return True
+#        if node.data < mini or node.data > maxi:
+#           return False
+#        return (isBSTUtil(node.left, mini, node.data - 1) and
+#           isBSTUtil(node.right, node.data + 1, maxi))
 # Complexity : O(n)
 
 import sys
 
-INT_MAX = sys.maxint
-INT_MIN = -sys.maxint
+INT_MAX = sys.maxsize
+INT_MIN = -sys.maxsize
 
 
 class Node:
@@ -51,6 +58,6 @@ if __name__ == "__main__":
     root.left.right = Node(3)
 
     if isBST(root):
-        print "Is BST"
+        print("Is BST")
     else:
-        print "Not a BST"
+        print("Not a BST")

@@ -10,6 +10,7 @@
 #              / \     /  \
 #             8  12   16  25
 #
+# Question Type : OddOne
 # Used : We traverse BST in Normal Inorder and Reverse Inorder simultaneously. In reverse inorder, we start from the
 #        rightmost node which is the maximum value node. In normal inorder, we start from the left most node which is
 #        minimum value node. We add sum of current nodes in both traversals and compare this sum with given target sum.
@@ -91,7 +92,7 @@ def findPair(bst, targetSum):
                     done2 = True
 
         if val1 != val2 and (val1 + val2) == targetSum:
-            print val1, val2
+            print(val1, val2)
             return True
 
         if (val1 + val2) < targetSum:
@@ -115,4 +116,4 @@ if __name__ == "__main__":
     bst.insert(25)
 
     if findPair(bst, 33) is False:
-        print "Pair Not Found"
+        print("Pair Not Found")
