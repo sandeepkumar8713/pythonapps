@@ -10,6 +10,7 @@
 #                       \    /
 #                        7  13
 #
+# Question Type : ShouldSee
 # Used : Maintain a hashDict diagonalPrintMap here key is vertical dist from root and value is list of nodes at that
 #        distance. Call a recursive function which does preOrder diagonalPrintUtil(root, d, diagonalPrintMap) with input
 #        diagonalPrintUtil(root, 0, {}). Insert this node in map :  diagonalPrintMap[d].append(root.data)
@@ -48,7 +49,7 @@ def diagonalPrint(root):
     diagonalPrintUtil(root, 0, diagonalPrintMap)
 
     for d, nodes in diagonalPrintMap.items():
-        print nodes
+        print(nodes)
 
 
 if __name__ == "__main__":

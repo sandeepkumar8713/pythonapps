@@ -11,6 +11,7 @@
 #                     D    E
 # Output : Yes
 #
+# Question Type : Asked
 # Used : We will do post order traversal and keep saving the nodes as string sequence in hash table, and comparing if
 #        already found before.
 #        dupSubUtil(root):
@@ -73,6 +74,6 @@ if __name__ == "__main__":
     root.right.right.left = Node('D')
 
     if dupSubUtil(root) == "":
-        print "yes"
+        print("yes")
     else:
-        print "no"
+        print("no")

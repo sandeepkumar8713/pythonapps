@@ -12,6 +12,8 @@
 #       2   2
 #        \   \
 #        3    3
+#
+# Question Type : ShouldSee
 # Used : We should call isMirror() recursively over the two roots and check following condition :
 #        For two trees to be mirror images, the following three conditions must be true
 #       1. Their root node's key must be same
@@ -51,4 +53,4 @@ if __name__ == "__main__":
     root.left.right = Node(4)
     root.right.left = Node(4)
     root.right.right = Node(3)
-    print isSymmetric(root)
+    print(isSymmetric(root))

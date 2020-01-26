@@ -2,12 +2,20 @@
 # Question : Given a binary tree, we need to find maximum value we can get by subtracting value of node B from value
 # of node A, where A and B are two nodes of the binary tree and A is an ancestor of B. Expected time complexity is O(n).
 #
+# Question Type : ShouldSee
 # Used : Call a recursive function maxDiffUtils(root, res) with input res = [-sys.maxint]
 #        if root is None: return return sys.maxint
 #        If we are at leaf node then just return its value because it can't be ancestor of any node. Then at each
 #        internal node we will try to get minimum value from left subtree and right subtree and calculate the
 #        difference between node value and this minimum value and according to that we will update the result.
 #        Atlast return the min value from this node: return min(minVal, root.data)
+#        Logic : def maxDiffUtils(root, res):
+#        if root is None: return sys.maxint
+#        if root.left is None and root.right is None:
+#           return root.data
+#        minVal = min(maxDiffUtils(root.left, res), maxDiffUtils(root.right, res))
+#        res[0] = max(res[0], root.data - minVal)
+#        return min(minVal, root.data)
 # Complexity : O(n)
 
 import sys
@@ -22,7 +30,7 @@ class Node:
 
 def maxDiffUtils(root, res):
     if root is None:
-        return sys.maxint
+        return sys.maxsize
 
     if root.left is None and root.right is None:
         return root.data
@@ -34,7 +42,7 @@ def maxDiffUtils(root, res):
 
 
 def maxDiff(root):
-    res = [-sys.maxint]
+    res = [-sys.maxsize]
     maxDiffUtils(root, res)
     return res[0]
 
@@ -50,4 +58,4 @@ if __name__ == "__main__":
     root.right.right = Node(14)
     root.right.right.left = Node(13)
 
-    print maxDiff(root)
+    print(maxDiff(root))

@@ -8,6 +8,7 @@
 #       /  \    /
 #     4     5  8
 #
+# Question Type : Easy
 # Used : Do inorder traversal of from the root with value k. If k is 0 print node data else do inorder on left and right
 #        child with input k-1
 # Complexity : O(n)
@@ -25,7 +26,7 @@ def printKDistant(root, k):
     if root is None:
         return
     if k == 0:
-        print root.data,
+        print(root.data, end=" ")
     else:
         printKDistant(root.left, k - 1)
         printKDistant(root.right, k - 1)

@@ -18,6 +18,7 @@
 #         /
 #        9
 #
+# Question Type : ShouldSee
 # Used : Call a recursive function prune(root,sum). Do post order traversal, while subtracting sum with node data.
 #        If both left and right node return None, then this is leaf node. If sum is more than the node data, return
 #        None.
@@ -56,7 +57,7 @@ def inorder(root):
     if root is None:
         return
     inorder(root.left)
-    print(root.data),
+    print(root.data, end=" ")
     inorder(root.right)
 
 

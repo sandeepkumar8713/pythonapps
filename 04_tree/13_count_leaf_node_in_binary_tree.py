@@ -7,6 +7,7 @@
 #       /  \
 #     4     5
 #
+# Question Type : Easy
 # Used : Def getLeafCount() and call recursively.
 #        If given root is none return 0.
 #        If given root has left none and right none return 0 else call getLeafCount() over left and right child and
@@ -37,4 +38,4 @@ if __name__ == "__main__":
     root.left.left = Node(4)
     root.left.right = Node(5)
 
-    print "Leaf count of the tree is:", getLeafCount(root)
+    print("Leaf count of the tree is:", getLeafCount(root))

@@ -13,6 +13,7 @@
 # Input : 2
 # Output : 6
 #
+# Question Type : Easy
 # Used : Do pre order traversal of the given tree. While doing to find the given key, save its level. Next time when you
 #        reach the same, this node is our answer.
 #        Logic : def nextRightNode(root, k, level, valueLevel):

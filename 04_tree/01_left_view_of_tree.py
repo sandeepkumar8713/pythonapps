@@ -7,6 +7,7 @@
 #                       /    \
 #                      25      40
 #
+# Question Type : Asked
 # Used : We can keep track of level of a node by passing a parameter to all recursive calls. The idea is to keep track
 #        of maximum level also. Whenever we see a node whose level is more than maximum level so far, we print the node
 #        because this is the first node in its level. (Preorder)
@@ -26,7 +27,7 @@ def leftViewUtil(root, level, max_level):
         return
 
     if max_level[0] < level:
-        print root.data,
+        print(root.data,end=" ")
         max_level[0] = level
 
     leftViewUtil(root.left, level + 1, max_level)

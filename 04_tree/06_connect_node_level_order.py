@@ -13,8 +13,21 @@
 #                   /        \
 #                  3   -->   90 --> NULL
 #
+# Question Type : Generic, SimilarAdded
 # Used : Do Level order traversal using queue and keeping track of count of elements on each level.
 #        Loop over the count and connect the nodes on same level.
+#        Logic :
+#        while len(queue) > 0:
+#           count = len(queue)
+#           while count > 0:
+#               count -= 1
+#               temp = queue.pop(0)
+#               if count >= 1:
+#                   temp.nextRight = queue[0]
+#               if temp.left:
+#                   queue.append(temp.left)
+#               if temp.right:
+#                   queue.append(temp.right)
 # Complexity : O(n)
 
 
@@ -51,11 +64,11 @@ def connectNodes(root):
 
 
 def printNext(node):
-    print node.data, '->',
+    print(node.data, '->',end=" ")
     if node.nextRight is None:
-        print -1
+        print(-1)
     else:
-        print node.nextRight.data
+        print(node.nextRight.data)
 
 
 if __name__ == "__main__":

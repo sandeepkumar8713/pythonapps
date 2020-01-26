@@ -4,6 +4,7 @@
 # is a tree S consisting of a node in T and all of its descendants in T. The subtree corresponding to the root
 # node is the entire tree; the subtree corresponding to any other node is called a proper subtree.
 #
+# Question Type : Generic
 # Used : Make a func  areIdentical(root1, root2), It checks if the tree starting from root1 and root2 are same or not.
 #        Call a recursive func isSubtree(T, S), If either T or S is None return true
 #        Call areIdentical(T, S) and return True if they are same
@@ -74,6 +75,6 @@ if __name__ == "__main__":
     S.left.right = Node(30)
 
     if isSubtree(T, S):
-        print "Tree 2 is subtree of Tree 1"
+        print("Tree 2 is subtree of Tree 1")
     else:
-        print "Tree 2 is not a subtree of Tree 1"
+        print("Tree 2 is not a subtree of Tree 1")

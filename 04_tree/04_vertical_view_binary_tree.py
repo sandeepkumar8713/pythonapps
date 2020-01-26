@@ -15,6 +15,7 @@
 # 7
 # 9
 #
+# Question Type : Generic
 # Used : Do pre-order traversal while calculating HD for each node and adding the elements in map using hd.
 #        Elements with same HD comes as 1 vertical line.
 #        After traversal, sort the map using keys and print the values
@@ -48,8 +49,8 @@ def printVerticalOrder(root):
 
     for key in sorted(m):
         for item in m[key]:
-            print item,
-        print
+            print(item,end=" ")
+        print("")
 
 
 if __name__ == "__main__":
@@ -62,5 +63,5 @@ if __name__ == "__main__":
     root.right.right = Node(7)
     root.right.left.right = Node(8)
     root.right.right.right = Node(9)
-    print "Vertical order traversal is"
+    print("Vertical order traversal is")
     printVerticalOrder(root)

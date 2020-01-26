@@ -13,6 +13,7 @@
 #        /
 #       7
 #
+# Question Type : ShouldSee
 # Used : Call isBalanced() which returns both result and max height, recursively over left and right child.
 #        If root is None return height as 0 and result true, else call isBalanced() on left and right child
 #        get max height by either : left height + 1 or right height + 1
@@ -55,6 +56,6 @@ if __name__ == "__main__":
     root.left.right = Node(5)
     root.right.left = Node(6)
     root.left.left.left = Node(7)
-    print isBalanced(root, [0])
+    print(isBalanced(root, [0]))
 
 

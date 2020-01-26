@@ -12,6 +12,7 @@
 #         10    14
 # Output : 4, 20
 #
+# Question Type : ShouldSee
 # Used : Here we have to print values below and above at distance k from given target.
 #        Make a function printKDistant(root, k) which print node data at distance k form node k.
 #        Call a recursive function printKDistanceNode(root, target, k). Return of printKDistanceNode is distance
@@ -38,7 +39,7 @@ def printKDistant(root, k):
         return
 
     if k == 0:
-        print root.data
+        print(root.data)
         return
 
     printKDistant(root.left, k - 1)
@@ -56,7 +57,7 @@ def printKDistanceNode(root, target, k):
     dl = printKDistanceNode(root.left, target, k)
     if dl != -1:
         if dl + 1 == k:
-            print root.data
+            print(root.data)
         else:
             printKDistant(root.right, k - dl - 2)
         return 1 + dl
@@ -64,7 +65,7 @@ def printKDistanceNode(root, target, k):
     dr = printKDistanceNode(root.right, target, k)
     if dr != -1:
         if dr + 1 == k:
-            print root.data
+            print(root.data)
         else:
             printKDistant(root.left, k - dr - 2)
         return 1 + dr

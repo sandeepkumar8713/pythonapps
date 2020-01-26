@@ -10,6 +10,7 @@
 #               6   7
 # Output: 17
 #
+# Question Type : Generic
 # Used : Call func maxLevelSum(root). If root is None return 0.
 #        set maxSum = root.data
 #        Do Level order traversal using queue and keep track of count of elements on each level.
@@ -63,4 +64,4 @@ if __name__ == "__main__":
     root.right.right.left = Node(6)
     root.right.right.right = Node(7)
 
-    print maxLevelSum(root)
+    print(maxLevelSum(root))

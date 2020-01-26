@@ -10,6 +10,7 @@
 #                3  4
 # 20 + 2 + 10 + 10 = 42
 #
+# Question Type : Generic
 # Used : Call findMaxUtil() on root recursively for left and right. Store value of left and right max.
 #        Find max single from either : l + root.data or r + root.data or root.data
 #        Find max top from either : max single or l + r + root.data
@@ -55,4 +56,4 @@ if __name__ == "__main__":
     root.right.right = Node(-25)
     root.right.right.left = Node(3)
     root.right.right.right = Node(4)
-    print "Max path sum is", findMaxSum(root)
+    print("Max path sum is", findMaxSum(root))

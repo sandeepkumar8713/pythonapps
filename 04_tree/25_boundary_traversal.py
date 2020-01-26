@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
-# Question : Given a binary tree, print boundary nodes of the binary tree Anti-Clockwise starting from the root. For example,
-# boundary traversal of the following tree is "20 8 4 10 14 25 22"
+# Question : Given a binary tree, print boundary nodes of the binary tree Anti-Clockwise starting from the root.
+# For example, boundary traversal of the following tree is "20 8 4 10 14 25 22"
 #
 #               20
 #            /     \
@@ -10,6 +10,7 @@
 #            /   \
 #           10   14
 #
+# Question Type : ShouldSee
 # Used : We break the problem in 3 parts:
 #        1. Print the left boundary in top-down manner.
 #        2. Print all leaf nodes from left to right, which can again be sub-divided into two sub-parts:
@@ -39,7 +40,7 @@ def printLeaves(root):
     if root:
         printLeaves(root.left)
         if root.left is None and root.right is None:
-            print root.data,
+            print(root.data,end=" ")
         printLeaves(root.right)
 
 
@@ -47,11 +48,11 @@ def printLeaves(root):
 def printBoundaryLeft(root):
     if root:
         if root.left:
-            print root.data,
+            print(root.data,end=" ")
             printBoundaryLeft(root.left)
 
         elif root.right:
-            print root.data,
+            print(root.data,end=" ")
             printBoundaryLeft(root.right)
 
 
@@ -60,17 +61,17 @@ def printBoundaryRight(root):
     if root:
         if root.right:
             printBoundaryRight(root.right)
-            print root.data,
+            print(root.data,end=" ")
 
         elif root.left:
             printBoundaryRight(root.left)
-            print root.data,
+            print(root.data,end=" ")
 
 
 # A function to do boundary traversal of a given binary tree
 def printBoundary(root):
     if root:
-        print root.data,
+        print(root.data, end=" ")
 
         # Print the left boundary in top-down manner
         printBoundaryLeft(root.left)

@@ -12,6 +12,7 @@
 #           /  \                             /   \
 #          7    8                           8    7
 #
+# Question Type : Easy
 # Used : Call a recursive function sIsomorphic(n1, n2). If n1 is None and n2 is None: return True
 #       If n1 is None or n2 is None: return False
 #       If n1.data != n2.data: return False
@@ -64,5 +65,5 @@ if __name__ == "__main__":
     n2.left.right = Node(6)
     n2.right.right.left = Node(8)
     n2.right.right.right = Node(7)
+    print(isIsomorphic(n1, n2))
 
-    print "Yes" if (isIsomorphic(n1, n2) == True) else "No"

@@ -7,6 +7,7 @@
 # Example : Input: root = [1,2,3,4,5,6,7], to_delete = [3,5]
 # Output: [[1,2,null,4],[6],[7]]
 #
+# Question Type : ShouldSee
 # Used : Do post order traversal of the given tree, with a result list. If the current node is present in the
 #        toBeDeleted list, append left and right subtree in the result list and return None else return Node.
 #        Logic : delNodesUtils(root, res, toBeDeleted):
@@ -38,7 +39,7 @@ class Node:
 def preorder(root):
     if root is None:
         return
-    print root.data,
+    print(root.data,end=" ")
     preorder(root.left)
     preorder(root.right)
 
@@ -88,11 +89,11 @@ if __name__ == "__main__":
     root.right.right = Node(7)
     toBeDeleted = [3, 5]
 
-    print "Input Tree : "
+    print("Input Tree : ")
     preorder(root)
-    print ""
-    print "Forest : "
+    print("")
+    print("Forest : ")
     forest = delNodes(root, toBeDeleted)
     for tree in forest:
         preorder(tree)
-        print ""
+        print("")

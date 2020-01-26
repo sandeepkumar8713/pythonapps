@@ -13,6 +13,7 @@
 #     \
 #       8
 #
+# Question Type : ShouldSee
 # Used : Call a recursive function buildUtil(inOrder, postOrder, 0, n-1, [n-1])
 #        if inStart > inEnd: return None
 #        We first find the last node in post[]. The last node is "1", we know this value is root as root always appear
@@ -24,6 +25,16 @@
 #        So we call the above function on right and left subtree with :
 #           inStart and endStart: iIndex + 1, inEnd for right,   inStart and endStart: inStart, iIndex - 1 for left
 #        Note that we are calling right first, because we reading node data from postOrder array.
+#        return node
+#        Logic : def buildUtil(inOrder, postOrder, inStart, inEnd, postIndex):
+#        if inStart > inEnd: return None
+#        node = Node(postOrder[postIndex[0]])
+#        postIndex[0] -= 1
+#        if inStart == inEnd:
+#           return node
+#        iIndex = inOrder.index(node.data)
+#        node.right = buildUtil(inOrder, postOrder, iIndex + 1, inEnd, postIndex)
+#        node.left = buildUtil(inOrder, postOrder, inStart, iIndex - 1, postIndex)
 #        return node
 # Complexity : O(n^2)
 
@@ -62,7 +73,7 @@ def buildTree(inOrder, postOrder):
 def printPreorder(root):
     if root is None:
         return
-    print root.data,
+    print(root.data, end=" ")
     printPreorder(root.left)
     printPreorder(root.right)
 

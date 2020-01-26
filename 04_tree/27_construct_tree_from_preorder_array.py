@@ -13,6 +13,7 @@
 #        /  \
 #       20   5
 #
+# Question Type : ShouldSee
 # Used : Call a recursive function constructTreeUtils((pre, preLN, index, n). If index == n, return None.
 #           Make a newNode for value per[index] and increment index. If this value is non-leaf call the function again
 #           on left and right subtree and update accordingly. Now return this newNode.
@@ -50,7 +51,7 @@ def printInOrder(root):
     if root is None:
         return
     printInOrder(root.left)
-    print root.data
+    print(root.data, end=" ")
     printInOrder(root.right)
 
 

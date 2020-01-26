@@ -9,6 +9,7 @@
 #                     / \
 #                   10    14
 #
+# Question Type : Easy
 # Used : Create an empty queue q
 #        Append root to the queue
 #        Loop while queue is not empty
@@ -35,7 +36,7 @@ def levelOrder(root):
 
     while len(queue) > 0:
         temp = queue.pop(0)
-        print temp.data,
+        print(temp.data,end=" ")
 
         if temp.left:
             queue.append(temp.left)

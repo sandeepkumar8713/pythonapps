@@ -4,6 +4,14 @@
 #
 # Used : we need to (pre-order) traverse both trees simultaneously, and while traversing we need to compare data and
 #        children of the trees.
+#        Logic : def identicalTrees(a, b):
+#        if a is None and b is None:
+#           return True
+#        if a is not None and b is not None:
+#           return ((a.data == b.data) and
+#                 identicalTrees(a.left, b.left) and
+#                 identicalTrees(a.right, b.right))
+#        return False
 # Complexity : O(m) or O(n) (one with smaller tree)
 
 
@@ -40,6 +48,6 @@ if __name__ == "__main__":
     root2.left.right = Node(5)
 
     if identicalTrees(root1, root2):
-        print "Both trees are identical"
+        print("Both trees are identical")
     else:
-        print "Trees are not identical"
+        print("Trees are not identical")

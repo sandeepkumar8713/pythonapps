@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/convert-a-given-tree-to-sum-tree/
 # Question : Given a Binary Tree where each node has positive and negative values. Convert this to a tree where
-# each node contains the sum of the left and right sub trees in the original tree. The values of leaf nodes are changed to 0.
+# each node contains the sum of the left and right sub trees in the original tree. The values of leaf nodes are changed
+# to 0.
 #
 # Input :
 #                   10
@@ -16,6 +17,7 @@
 #            /   \      /  \
 #           0     0    0    0
 #
+# Question Type : Generic
 # Used : Call recursive function toSumTree(root). If root is None: return 0
 #        save current value in oldVal =  root.data
 #        Call toSumTree() on left and right and set its sum to current value.
@@ -44,7 +46,7 @@ def printInOrder(root):
     if root is None:
         return
     printInOrder(root.left)
-    print root.data
+    print(root.data, end=" ")
     printInOrder(root.right)
 
 

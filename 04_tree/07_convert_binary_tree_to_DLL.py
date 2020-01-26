@@ -8,6 +8,7 @@
 #       /  \    /
 #      25  30  36
 #
+# Question Type : Generic, SimilarAdded
 # Used : Do In order traversal and push the node in double linked list.
 # Complexity : O(n)
 
@@ -36,7 +37,7 @@ class doubleLinkedList:
     def printList(self):
         temp = self.head
         while temp is not None:
-            print temp.data,
+            print(temp.data, end=" ")
             temp = temp.next
 
 

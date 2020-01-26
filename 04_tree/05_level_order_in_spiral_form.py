@@ -7,6 +7,7 @@
 #       / \   /   \
 #      7   6  5   4
 #
+# Question Type : ShouldSee
 # Used : Compute height of tree. Assign a bool marker called ltr. Now loop over height of tree.
 #        At each level, invert the ltr i.e. true to false or false to true.
 #        If ltr is true call left then right child else call right then left child.
@@ -15,6 +16,21 @@
 #        use one stack for printing from left to right and other stack for printing from right to left. In every
 #        iteration, we have nodes of one level in one of the stacks. We print the nodes, and push nodes of next level
 #        in other stack.
+#        Logic : def printSpiral(root):
+#        ltr = True
+#        for i in range(0, height(root)+1):
+#           printGivenLevel(root, i, ltr)
+#           ltr = not ltr
+#        def printGivenLevel(root, level, ltr):
+#        if root is None: return
+#        if level is 1: print(root.data,end=" ")
+#        else:
+#           if ltr:
+#             printGivenLevel(root.left, level-1, ltr)
+#             printGivenLevel(root.right, level-1, ltr)
+#           else:
+#             printGivenLevel(root.right, level-1, ltr)
+#             printGivenLevel(root.left, level-1, ltr)
 # Complexity : O(n^2)
 
 
@@ -43,7 +59,7 @@ def printGivenLevel(root, level, ltr):
         return
 
     if level is 1:
-        print root.data,
+        print(root.data,end=" ")
     else:
         if ltr:
             printGivenLevel(root.left, level-1, ltr)
@@ -68,5 +84,5 @@ if __name__ == "__main__":
     root.left.right = Node(6)
     root.right.left = Node(5)
     root.right.right = Node(4)
-    print "Spiral Order traversal of binary tree is \n"
+    print("Spiral Order traversal of binary tree is \n")
     printSpiral(root)

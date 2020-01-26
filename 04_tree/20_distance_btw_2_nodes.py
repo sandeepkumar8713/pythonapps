@@ -11,6 +11,7 @@
 #               \
 #                8
 #
+# Question Type : Generic
 # Used : Here we will be using least common ancestor. From there find the distance to a and b and sum it.
 #        lca = findLCA(root, a , b)
 #        d1 = findLevel(lca, a, 0)
@@ -102,7 +103,7 @@ def findDistance(root, a, b):
     printPath(lca, b, list2)
 
     list1.reverse()
-    print list1 + list2[1:]
+    print(list1 + list2[1:])
 
     return d1 + d2
 
@@ -117,8 +118,8 @@ if __name__ == "__main__":
     root.left.right = Node(5)
     root.right.left.right = Node(8)
 
-    print "path and distance b/w 2 and 3 is:", findDistance(root, 2, 3)
-    print "path and distance b/w 4 and 5 is:", findDistance(root, 4, 5)
-    print "path and distance b/w 4 and 6 is:", findDistance(root, 4, 6)
-    print "path and distance b/w 4 and 6 is:", findDistance(root, 1, 7)
-    print "path and distance b/w 4 and 6 is:", findDistance(root, 7, 1)
+    print("path and distance b/w 2 and 3 is:", findDistance(root, 2, 3))
+    print("path and distance b/w 4 and 5 is:", findDistance(root, 4, 5))
+    print("path and distance b/w 4 and 6 is:", findDistance(root, 4, 6))
+    print("path and distance b/w 4 and 6 is:", findDistance(root, 1, 7))
+    print("path and distance b/w 4 and 6 is:", findDistance(root, 7, 1))

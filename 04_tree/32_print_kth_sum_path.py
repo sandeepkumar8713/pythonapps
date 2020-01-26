@@ -24,10 +24,22 @@
 # 5
 # 1 -1 5
 #
+# Question Type : ShouldSee, SimilarAdded
 # Used : We have to do preOrder traversal and keep pushing node.data into path list.  When reach to the path and then
 #           calculate the pathSum and compare with k one by one over path list moving in reverse i.e. sum += path[len-1]
 #           sum += path[len-2], sum += path[len-3] and so on.... Print path if pathSum == k
 #        At the end pop the element pushed in path
+#        Logic : def printKPathUtil(root, path, k):
+#        if root is None: return
+#        path.append(root.data)
+#        printKPathUtil(root.left, path, k)
+#        printKPathUtil(root.right, path, k)
+#        pathSum = 0
+#        for j in range(len(path)-1, -1, -1):
+#           pathSum += path[j]
+#           if pathSum == k:
+#               print(path[j::])
+#        path.pop()
 # Complexity : O(n log n)
 
 
@@ -53,7 +65,7 @@ def printKPathUtil(root, path, k):
         pathSum += path[j]
 
         if pathSum == k:
-            print path[j::]
+            print(path[j::])
 
     path.pop()
 

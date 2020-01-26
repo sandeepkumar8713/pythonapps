@@ -12,6 +12,7 @@
 #           4   9   5
 # Output : 3
 #
+# Question Type : Generic
 # Used : We have to do post order traversal. We will call a recursive function which takes node and overall ans as
 #        input. It returns the length of path passing through given node. If this length is greater than ans, we update
 #        ans.
@@ -65,4 +66,5 @@ if __name__ == '__main__':
     root.left.left = Node(4)
     root.left.right = Node(9)
     root.right.right = Node(5)
-    print (longestSameValuePath(root))
+    print(longestSameValuePath(root))
+

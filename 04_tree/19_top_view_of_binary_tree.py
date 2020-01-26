@@ -13,6 +13,7 @@
 #                6
 # Top view of the above binary tree is : 2 1 3 6
 #
+# Question Type : Generic
 # Used : Do level order traversal of tree while maintaining Horizontal Distance HD of each node.
 #        Push root element in queue, set its root.HD = 0. Maintain myMap dict, to store visited HD.
 #        Loop until queue is empty
@@ -29,7 +30,7 @@ import sys
 class Node:
     def __init__(self, data):
         self.data = data
-        self.hd = sys.maxint
+        self.hd = sys.maxsize
         self.left = None
         self.right = None
 
@@ -61,7 +62,7 @@ def topView(root):
             queue.append(temp.right)
 
     for key in sorted(myMap):
-        print myMap[key],
+        print(myMap[key], end=" ")
 
 
 if __name__ == "__main__":

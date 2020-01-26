@@ -2,6 +2,7 @@
 # Question : Serialization is to store tree in a file so that it can be later restored. The structure of tree
 # must be maintained. Deserialization is reading tree back from file.
 #
+# Question Type : ShouldSee
 # Used : Logic : def serialize(root, fp):
 #        if root is None:
 #           fp.write(str(MARKER) + " ")

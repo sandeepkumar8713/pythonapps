@@ -3,6 +3,7 @@
 # unsorted array arr[] of distinct integers, construct another array countSmaller[] such that countSmaller[i]
 # contains count of smaller elements on right side of each element arr[i] in array.
 #
+# Question Type : OddOne
 # Used : We have use AVL tree. In Node add one more field as size which stores the count of left, right and this nodes.
 #        Call a recursive function insert(root, key, smallerCount). We traverse the array from right to left and
 #        insert all elements one by one in an AVL tree. While inserting first compare the key with root.

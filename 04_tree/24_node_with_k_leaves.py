@@ -10,6 +10,7 @@
 #       / \     /  \
 #      9  10   11  12
 #
+# Question Type : Easy
 # Used : Here any node having K leaves means sum of leaves in left subtree and in right subtree must be equal to K.
 #        So to solve this problem we use post order traversal of tree. First we calculate leaves in left subtree then
 #        in right subtree and if sum is equal to K, then print current node. In each recursive call we return sum of
@@ -40,7 +41,7 @@ def kLeaves(root, k):
         return 1
 
     if total == k:
-        print root.data,
+        print(root.data, end=" ")
 
     return total
 
@@ -58,7 +59,7 @@ if __name__ == "__main__":
     root.right.left.left = Node(11)
     root.right.left.right = Node(12)
 
-    print "Nodes with 2 leaves:"
+    print("Nodes with 2 leaves:")
     kLeaves(root, 2)
-    print "\nNodes with 3 leaves:"
+    print("\nNodes with 3 leaves:")
     kLeaves(root, 3)

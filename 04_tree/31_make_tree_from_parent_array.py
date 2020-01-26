@@ -14,11 +14,24 @@
 #          /
 #         6
 #
+# Question Type : Easy
 # Used : For the given parent array, convert it into parentChildMap where : key is parentData and value is list of
 #        actual values (index). maintain a queue. Insert the root node whose parent is -1.
 #        Run a loop while queue is not empty. Pop a node from queue, use its value to fetch its children from the
 #           parentChildMap. Make a node out of each child. If node.left is None : node.left = newNode
 #           Else: node.right = newNode. And append the newNode to queue.
+#        return root
+#        Logic :
+#        while len(queue) > 0:
+#           node = queue.pop(0)
+#           parentData = node.data
+#           for data in parentChildMap[parentData]:
+#               newNode = Node(data)
+#               if node.left is None:
+#                   node.left = newNode
+#               else:
+#                   node.right = newNode
+#               queue.append(newNode)
 #        return root
 # Complexity : O(n)
 
@@ -66,7 +79,7 @@ def printInOrder(node):
     if node is None:
         return
     printInOrder(node.left)
-    print node.data,
+    print(node.data, end=" ")
     printInOrder(node.right)
 
 
@@ -75,5 +88,4 @@ if __name__ == "__main__":
     parent = [1, 5, 5, 2, 2, -1, 3]
     root = makeTree(parent)
     printInOrder(root)
-    print
-
+    print("")

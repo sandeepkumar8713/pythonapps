@@ -12,14 +12,28 @@
 #                   10    14
 # For the above tree the output should be 5, 10, 3, 14, 25.
 #
+# Question Type : Generic
 # Used : Do level order traversal of tree while maintaining Horizontal Distance (HD) of each node.
 #        Push root element in queue, loop until queue is empty while pushing left and right nodes in queue.
 #        In each iteration, update the map with HD value and data
 #        After the loop, sort the map based on keys and print its value
+#        Logic :
+#        while len(queue) > 0:
+#           temp = queue.pop(0)
+#           hd = temp.hd
+#           map[hd] = temp.data
+#           if temp.left:
+#               temp.left.hd = hd - 1
+#               queue.append(temp.left)
+#           if temp.right:
+#               temp.right.hd = hd + 1
+#               queue.append(temp.right)
+#        for key in sorted(map):
+#           print(map[key], end=" ")
 # Complexity : O(n)
 
 import sys
-INT_MAX = sys.maxint
+INT_MAX = sys.maxsize
 
 
 class Node:
@@ -56,7 +70,7 @@ def bottomView(root):
             queue.append(temp.right)
 
     for key in sorted(map):
-        print map[key],
+        print(map[key], end=" ")
 
 
 if __name__ == "__main__":
@@ -70,4 +84,3 @@ if __name__ == "__main__":
     root.left.right.left = Node(10)
     root.left.right.right = Node(14)
     bottomView(root)
-

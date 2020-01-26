@@ -4,6 +4,7 @@
 # of nodes in DLL must be same as Inorder of the given Binary Tree. The first node of Inorder traversal
 # (left most node in BT) must be head node of the DLL.
 #
+# Question Type : ShouldSee, SimilarAdded
 # Used : Keep track of previous node while doing inorder traversal.
 #        When this node comes, use previous node to update its right and update left of this node
 #        def BinaryTree2DoubleLinkedList(root, head):
@@ -48,7 +49,7 @@ def BinaryTree2DoubleLinkedList(root, head):
 
 def printList(head):
     while head != None:
-        print (head.data),
+        print(head.data, end=" ")
         head = head.right
 
 
