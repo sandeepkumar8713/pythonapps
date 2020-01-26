@@ -2,6 +2,7 @@
 # Question : You are given a one dimensional array that may contain both positive and negative integers, find the
 # sum of contiguous subarray of numbers which has the largest sum.
 #
+# Question Type : ShouldSee
 # Used : 1) Divide the given array in two halves
 #        2) Return the maximum of following three
 #           a) Maximum subarray sum in left half (Make a recursive call)

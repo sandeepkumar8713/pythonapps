@@ -6,6 +6,7 @@
 # Input: [1,3,2,3,1]
 # Output: 2
 #
+# Question Type : ShouldSee
 # Used : We modify the merge sort and before merging, we check the condition on left and right sub array.
 #        def mergeSortAndCount(inpArr, start, end):
 #           if start < end:
@@ -56,7 +57,7 @@ def merge(arr, left, mid, right):
 
 def mergeSortAndCount(inpArr, start, end):
     if start < end:
-        mid = (start + end) / 2
+        mid = (start + end) // 2
         count = mergeSortAndCount(inpArr, start, mid) + mergeSortAndCount(inpArr, mid + 1, end)
         j = mid + 1
         for i in range(start, mid+1):
@@ -71,4 +72,4 @@ def mergeSortAndCount(inpArr, start, end):
 
 if __name__ == "__main__":
     inpArr = [2, 4, 3, 5, 1]
-    print mergeSortAndCount(inpArr, 0, len(inpArr) - 1)
+    print(mergeSortAndCount(inpArr, 0, len(inpArr) - 1))

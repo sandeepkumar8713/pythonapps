@@ -1,5 +1,6 @@
 # Question : Implement merge Sort
 #
+# Question Type : Easy
 # Used : MergeSort(arr[], l,  r)
 #        If r > l
 #      1. Find the middle point to divide the array into two halves:
@@ -46,7 +47,7 @@ def merge(arr, left, mid, right):
 
 def mergeSort(arr, left, right):
     if left < right:
-        mid = (left + right)/2
+        mid = (left + right)//2
         mergeSort(arr, left, mid)
         mergeSort(arr, mid + 1, right)
         merge(arr, left, mid, right)
@@ -58,4 +59,4 @@ if __name__ == "__main__":
     left = 0
     right = len(arr) - 1
     mergeSort(arr, left, right)
-    print arr
+    print(arr)

@@ -1,6 +1,7 @@
 # Question : Given a sorted array in which all elements appear twice (one after one) and one element appears only once.
 # Find that element in O(log n) complexity.
 #
+# Question Type : SimilarAdded
 # Used : Do a binary search over the elements.
 #       Find the middle index, say 'mid'.
 #        If 'mid' is even, then compare arr[mid] and arr[mid + 1]. If both are same, then the required element after
@@ -20,7 +21,7 @@ def binarySearch(arr, low, high):
     if low == high:
         return arr[low]
 
-    mid = (low + high) / 2
+    mid = (low + high) // 2
     if mid % 2 == 0:
         if arr[mid] == arr[mid + 1]:
             return binarySearch(arr, mid + 2, high)
