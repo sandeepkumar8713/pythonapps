@@ -7,6 +7,7 @@
 # Output: a->Graph
 #         b->Trees
 #
+# Question Type : ShouldSee
 # Used : Make a call to function patternMatch(inpStr, pat, n, m). If n < m: return False
 #        Maintain a map for key : character of pattern, value : subString from inpStr
 #        Make a call to recursive function patternMatchUtil(inpStr, n, i, pat, m, j, myMap). If it returns true, pattern
@@ -57,8 +58,7 @@ def patternMatch(inpStr, pat, n, m):
     res = patternMatchUtil(inpStr, n, 0, pat, m, 0, myMap)
 
     for char, words in myMap.items():
-        print (char),
-        print (words)
+        print(char, words)
 
     return res
 
@@ -75,4 +75,4 @@ if __name__ == "__main__":
 
     n = len(inpStr)
     m = len(pat)
-    print (patternMatch(inpStr, pat, n, m))
+    print(patternMatch(inpStr, pat, n, m))

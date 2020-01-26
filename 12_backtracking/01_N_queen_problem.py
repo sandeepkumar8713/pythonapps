@@ -2,6 +2,7 @@
 # attack each other. Given an integer n, print all distinct solutions to the n-queens puzzle. If queen is placed
 # in a cell, no other queen should be placed in that row,col or diagonal.
 #
+# Question Type : Generic
 # Used : Make a board of size N*N and mark all as 0.
 #        Make a call to recursive function solveNQUtil(board,col=0,N). If col >= N print board and return true.
 #        Run a loop from 0 to n-1 for row, check if placing queen at board[i][col] is safe. (Check that row, col and
@@ -68,7 +69,7 @@ def solveNQ(N):
         board.append([0] * N)
 
     if not solveNQUtil(board, 0, N):
-        print ("Not Possible")
+        print("Not Possible")
 
 
 if __name__ == "__main__":
@@ -76,4 +77,4 @@ if __name__ == "__main__":
     # N = 6 # 4 solution
     # N = 8  # 92 solution
     solveNQ(N)
-    print ("Solution count : " + str(solutionCount))
+    print("Solution count : " + str(solutionCount))

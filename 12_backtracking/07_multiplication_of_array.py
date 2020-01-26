@@ -4,6 +4,7 @@
 #
 # For eg: input=> {{a,b},{c,d}}, output => {{a,c},{a,d},{b,c},{b,d}}
 #
+# Question Type : Easy
 # Used : Call a recursive func multiplyArray(inpArr, outStr, i, rowSize) where i is the row index of input matrix.
 #        If i == rowSize: print outStr, return
 #        Loop over all the character ch in this row. Append ch to outStr. Call multiplyArray again with i+1.
@@ -13,7 +14,7 @@
 
 def multiplyArray(inpArr, outStr, i, rowSize):
     if i == rowSize:
-        print outStr
+        print (outStr)
         return
 
     for ch in inpArr[i]:

@@ -7,6 +7,7 @@
 # Input: n = 3
 # Output: res[] = {3, 1, 2, 1, 3, 2}
 #
+# Question Type : Generic
 # Used : Make a res array with size 2n.
 #        Run a loop i from 0 to 2n-curr-1:
 #           place curr at i and i + curr + 1 and recurr for next curr - 1
@@ -49,7 +50,7 @@ def fill(n):
     res = [0] * (2 * n)
 
     if fillUtil(res, n, n):
-        print res
+        print(res)
     else:
         print("Not Possible")
 

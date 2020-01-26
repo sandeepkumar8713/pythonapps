@@ -2,6 +2,7 @@
 # to the empty cells so that every row, column, and sub grid of size 3*3 contains exactly one instance of the
 # digits from 1 to 9.
 #
+# Question Type : ShouldSee
 # Used : Make call to recursive function solveSudoku(grid).
 #           It finds the first unvisited cell in grid, if not found, print grid and return true.
 #           Else row = unvisitedCell[0] col = unvisitedCell[1]
@@ -56,7 +57,7 @@ def solveSudoku(grid):
     if not find_empty_location(grid, unvisitedCell):
         # If no empty location found print arr
         for item in grid:
-            print item
+            print(item)
         return True
 
     row = unvisitedCell[0]
@@ -87,4 +88,4 @@ if __name__ == "__main__":
             [0, 0, 5, 2, 0, 6, 3, 0, 0]]
 
     if not solveSudoku(grid):
-        print "No solution exists"
+        print("No solution exists")

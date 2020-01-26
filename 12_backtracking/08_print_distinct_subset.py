@@ -6,6 +6,7 @@
 # Input:  S = {1, 2, 2}
 # Output:  {}, {1}, {2}, {1, 2}, {2, 2}, {1, 2, 2}
 #
+# Question Type : ShouldSee
 # Used : Call a recursive function printPowerSetUtil(inpArr, i, subSet, powerSet) with input
 #        printPowerSetUtil(inpArr, 0, [], powerSet). if i == len(inpArr): powerSet.append(subSet[::]) and return
 #           Call printPowerSetUtil() again 2 times, once by ignoring this element and other by including this element.
@@ -13,6 +14,10 @@
 #       PowerSet has all the possible subset but it might contain duplicate subset. Run a 2 loops to find distinct
 #       subset and print them.
 # Complexity : O(2 ^ n * 2 ^ n * 2 ^ n) so O(2 ^ (3n))
+
+
+def cmp(a, b):
+    return (a > b) - (a < b)
 
 
 def printPowerSetUtil(inpArr, i, subSet, powerSet):
@@ -42,7 +47,7 @@ def printPowerSet(inpArr):
             distinctList.append(subSet)
 
     for subSet in distinctList:
-        print subSet
+        print(subSet)
 
 
 if __name__ == "__main__":

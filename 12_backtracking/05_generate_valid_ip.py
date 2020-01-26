@@ -3,6 +3,7 @@
 # A valid IP address must be in the form of A.B.C.D, where A, B, C, and D are numbers from 0-255. The numbers cannot be
 # 0 prefixed unless they are 0.
 #
+# Question Type : Easy
 # Used : Run 3 loops from : 0 to n - 2, i + 1 to n - 1 and j + 1 to n. By running these 3 loops split the given string
 #        into 4 parts that will give you a ip address. Check if ip is valid, if true then print it.
 #        Condition for valid ip: Spilt the ip in 4 parts can check for
@@ -54,6 +55,7 @@ def convert(s):
 
 if __name__ == "__main__":
     A = "25525511135"
-    B = "25505011535"
     print(convert(A))
+
+    B = "25505011535"
     print(convert(B))

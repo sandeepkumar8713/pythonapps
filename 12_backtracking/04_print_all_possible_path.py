@@ -12,6 +12,7 @@
 # Solution : Here call findPath() multiple times considering all the, cell as starting point, and compare path with
 # words in dictionary in each call.
 #
+# Question Type : Asked
 # Used : Make a call to recursive function findPath(grid, visited, path, m, n) with visited matrix of size n*n, path
 #        empty list and start point as 0,0. If m and n reach to target, print path.
 #        Loop over the 4 possible direction. Check if nextI and nextJ are safe. (Within the matrix, path not blocked
@@ -44,7 +45,7 @@ def findPath(grid, visited, path, m, n):
     col = len(grid[0])
 
     if row - 1 == m and col - 1 == n:
-        print ''.join(path)
+        print(''.join(path))
         return True
 
     res = False
@@ -72,7 +73,7 @@ def printAllPossiblePath(grid):
         visited.append([0] * col)
 
     if not findPath(grid, visited, [], 0, 0):
-        print "path not found"
+        print("path not found")
 
 
 if __name__ == "__main__":

@@ -2,6 +2,7 @@
 # Question : Given a maze with obstacles, count number of paths to reach rightmost-bottommost cell from
 # topmost-leftmost cell. A cell in given maze has value -1 if it is a blockage or dead end, else 0.
 #
+# Question Type : Generic, SimilarAdded
 # Used : Now maze will represent number of ways to reach this cell from maze[0][0].
 #        Set 1 for first row and column of maze till you find -1, then break
 #        Run loop from 1 to row-1, 1 to col - 1. if maze[i][j] == -1 : continue, else
@@ -52,4 +53,4 @@ if __name__ == "__main__":
             [0, -1, 0, 0],
             [-1, 0, 0, 0],
             [0,  0, 0, 0]]
-    print "Possible path count:", countPaths(maze)
+    print("Possible path count:", countPaths(maze))
