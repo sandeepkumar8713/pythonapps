@@ -1,6 +1,7 @@
 # Question : Given a 2D screen, location of a pixel in the screen ie(x,y) and a color(K), your task is to replace
 # color of the given pixel and all adjacent(excluding diagonally adjacent) same colored pixels with the given color K.
 #
+# Question Type : Easy
 # Used : Given a matrix, start recursion from the given points, set the new pixel. After that recur for up, down, left,
 #        right. Return condition: posX and posY should be within matrix. If current pixel is not old pixel return.
 #        If new pixel is already set return.
@@ -45,4 +46,4 @@ if __name__ == "__main__":
     oldPixel = inputMat[posX][posY]
     floodFill(inputMat, posX, posY, oldPixel, newPixel)
     for item in inputMat:
-        print item
+        print(item)

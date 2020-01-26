@@ -3,9 +3,10 @@
 # in the array, if there is any Fixed Point present in array, else returns -1. Fixed Point in an array is an index i
 # such that arr[i] is equal to i. Note that integers in array can be negative and elements can be repeated.
 #
-# Example : input : [-40, -20, -1, 1, 2, 3, 5, 7, 9, 12, 13]
+# Example : input : [-40, -20, -1, 1, 2, 3, 5, 7, 9, 12, 13]ll
 #           output : 7
 #
+# Question Type : Generic
 # Used : We used binary search as the input array is already sorted. But here we know that some elements can be
 #       repeated, so mid index calculation has changed. If element is not found in left side we search
 #       in right side.
@@ -18,7 +19,7 @@ def magicIndex(arr, start, end):
     if start > end:
         return -1
 
-    midIndex = (start + end) / 2
+    midIndex = (start + end) // 2
     midValue = arr[midIndex]
 
     if midIndex == midValue:

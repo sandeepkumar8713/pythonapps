@@ -8,6 +8,7 @@
 # josephus(n, k) = (josephus(n - 1, k) + k-1) % n + 1
 # josephus(1, k) = 1
 #
+# Question Type : ShouldSee
 # Used : josephus(n, k) = (josephus(n - 1, k) + k-1) % n + 1
 #        josephus(1, k) = 1
 #        After the first person (kth from beginning) is killed, n-1 persons are left. So we call josephus(n-1,k) to

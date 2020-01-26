@@ -3,6 +3,7 @@
 # Question : Given a string that may contain duplicates, write a function to print all
 # permutations of given string such that no permutation is repeated in output.
 #
+# Question Type : Easy
 # Used : Make a freq map of input string.
 #       Call a recursive function : printPerms(charMap, prefix, remainingLength, resultList)
 #       If remainingLength is 0: append prefix in resultList and return
@@ -45,5 +46,5 @@ if __name__ == "__main__":
     #inpStr = "AAB"
     inpStr = "ABCAA"
     resultList = getAllPermuation(inpStr)
-    print (resultList)
-    print (len(resultList))
+    print(resultList)
+    print(len(resultList))

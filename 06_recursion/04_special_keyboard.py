@@ -9,6 +9,7 @@
 # of A's. That is to say, the input parameter is N (No. of keys that you can press), the output is M (No. of As that
 #  you can produce).
 #
+# Question Type : ShouldSee
 # Used : Level 1: if less than 7 then return same number
 #        Level 2:  Definition of a breakpoint is that instance after which we need to only press Ctrl-A, Ctrl-C once and
 #          the only Ctrl-V's afterwards to generate the optimal length. If we loop from N-3 to 1 and choose each of
@@ -45,4 +46,4 @@ def findOptimal(N):
 if __name__ == "__main__":
     # N = 9
     N = 14
-    print findOptimal(N)
+    print(findOptimal(N))

@@ -1,6 +1,7 @@
 # Question : Given an array of integers A and a sum B, find all unique combinations in A where the sum is equal to B.
 # Such number in A may only be used once in the combination.
 #
+# Question Type : Generic
 # Used : Sort the given input array and call recursive findNumbers()
 #        In findNumbers if sum is -ve return.
 #             If sum is O then add intermediate result in main result(1 possible combination found)
@@ -8,7 +9,7 @@
 #            if given element is less than or equal to sum, then insert the element in intermediate result
 #            call findNumbers() again with (sum - arr[i]) and index i+1. If element is duplicate then i+2.
 #            pop 1 element from intermediate result
-# Complexity : O(n ^ n)
+# Complexity : O(2^n)
 
 
 res = []
@@ -40,6 +41,6 @@ if __name__ == "__main__":
     r = []
     findNumbers(inpArr, 8, r, 0)
     for item in res:
-        print item
+        print(item)
 
 

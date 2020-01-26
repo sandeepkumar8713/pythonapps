@@ -2,6 +2,7 @@
 # https://www.geeksforgeeks.org/print-all-combinations-of-balanced-parentheses/
 # Question : Write a function to generate all possible n pairs of balanced parentheses.
 #
+# Question Type : OddOne
 # Used : Call a function : recur(strList, pos, n, open, close) where strList = [''] * 2n,
 #        pos = 0, open = 0, close = 0
 #           if close == n : print contents of strList and return
@@ -19,7 +20,7 @@ def printParenthesis(strList, n):
 def printParenthesisRecur(strList, pos, n, open, close):
     if close == n:
         result = ""
-        print (result.join(strList))
+        print(result.join(strList))
         return
 
     if open > close:

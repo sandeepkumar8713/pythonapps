@@ -9,6 +9,7 @@
 # countEval("1^0|0|1", False) -> 2
 # countEval("0&0&0&1^1|0", True)-> 10
 #
+# Question Type : ShouldSee
 # Used : Call recursive function : countEval(exp, result)
 #        if len(exp) == 0: return 0
 #        if len(exp) == 1) return stringToBool(exp) == result ? 1 : 0
@@ -89,5 +90,5 @@ if __name__ == "__main__":
     # expression = "0&0&0&0&0&0&0&0&0"  # False
     # expression = "1^0|0|1"    # False
     result = True
-    print (countEval(expression, result))
+    print(countEval(expression, result))
     # print (count)
