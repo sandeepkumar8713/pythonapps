@@ -5,6 +5,7 @@
 # pattern = "tist"
 # Output :  Minimum window is "t stri"
 #
+# Question Type : Generic, SimilarAdded
 # Used : Loop over the pattern and add the elements to hashPatt along with frequency.
 #        hashStr represents the sliding window. Take start as 0.
 #        Loop over the string and add the elements to hashString along with frequency. If ele is present in hashPatt
@@ -33,7 +34,7 @@ def findMinWindow(inpStr, patt):
     start = 0
     count = 0
     j = 0
-    minWindowLen = sys.maxint
+    minWindowLen = sys.maxsize
     minStartIndex = -1
 
     for ele in inpStr:
@@ -58,9 +59,9 @@ def findMinWindow(inpStr, patt):
         j += 1
 
     if minStartIndex is -1:
-        print "Not found"
+        print("Not found")
     else:
-        print inpStr[minStartIndex:minStartIndex + minWindowLen]
+        print(inpStr[minStartIndex:minStartIndex + minWindowLen])
 
 
 if __name__ == "__main__":

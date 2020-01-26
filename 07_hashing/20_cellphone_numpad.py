@@ -4,13 +4,15 @@
 # to return a list of matching words, given a sequence of digits. You are provided a list of valid words
 # (provided in whatever data structure you would like).
 #
-# Used : Make a map of number to words for all the given words in the dictionary
+# Question Type : ShouldSee
+# Used : Make a map of number to words for all the given words in the dictionary. Convert each letter of word to a
+#        digit and make a number. Append that word in map where key is that number. After this pre-processing its easy
+#        give answer.
 # Complexity : O(1) space : O(n) where n is number of total words
 
 
-
-t9Letter = [None,              # 0
-            None,             # 1
+t9Letter = [None,            # 0
+            None,            # 1
             ['a', 'b', 'c'], # 2
             ['d', 'e', 'f'], # 3
             ['g', 'h', 'i'], # 4
@@ -382,4 +384,4 @@ if __name__ == "__main__":
 				"officials", "operator", "Senate", "lend", "hearts", "embers",
                 "abused", "resins", "trendy", "ssdsy"]
     numberToWordMap = initializeDictionary(wordList)
-    print (numberToWordMap["8733"])
+    print(numberToWordMap["8733"])

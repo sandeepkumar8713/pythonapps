@@ -5,6 +5,7 @@
 #         k = 2
 # Output : 7
 #
+# Question Type : Easy
 # Used : Loop over the elements in input array and update its frequency in hashDict.
 #        Loop again over the elements in input array and return element if its frequency equal with k.
 #        If loop got over return -1.
@@ -28,4 +29,4 @@ def findFirstEle(inpArr, k):
 if __name__ == "__main__":
     inpArr = [1, 7, 4, 3, 4, 8, 7]
     k = 2
-    print findFirstEle(inpArr, k)
+    print(findFirstEle(inpArr, k))

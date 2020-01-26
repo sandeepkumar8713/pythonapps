@@ -5,6 +5,7 @@
 # Output: e
 # e is the first element that repeats
 #
+# Question Type : Easy
 # Used : Loop over input string, if char is present in set return char else add char to set.
 # Complexity : O(n)
 
@@ -20,4 +21,4 @@ def findFirstRepeat(inpStr):
 
 if __name__ == "__main__":
     inpStr = "geeksforgeeks"
-    print "first repeated char:", findFirstRepeat(inpStr)
+    print("First repeated char:", findFirstRepeat(inpStr))

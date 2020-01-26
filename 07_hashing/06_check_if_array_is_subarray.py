@@ -5,6 +5,7 @@
 # Input: arr1[] = {11, 1, 13, 21, 3, 7}, arr2[] = {11, 3, 7, 1}
 # Output: arr2[] is a subset of arr1[]
 #
+# Question Type : Easy
 # Used : Python sets are implemented as hash tables.
 #        Make a set of elements in arr1. Loop over elements in
 #           arr2 and check if element is present in set else return false.
@@ -26,4 +27,4 @@ def isSubset(arr1, arr2):
 if __name__ == "__main__":
     arr1 = [11, 1, 13, 21, 3, 7]
     arr2 = [11, 3, 7, 1]
-    print isSubset(arr1, arr2)
+    print(isSubset(arr1, arr2))

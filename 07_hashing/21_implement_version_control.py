@@ -6,6 +6,7 @@
 # getValVersion(version id, key) -> return value of the key of the particular version
 # Implement a SnapshotArray that supports the following interface:
 #
+# Question Type : ShouldSee
 # SnapshotArray(int length) initializes an array-like data structure with the given length. Initially, each element
 # equals 0.
 # void set(index, val) sets the element at the given index to be equal to val.
@@ -79,10 +80,10 @@ class SnapshotArray:
 if __name__ == "__main__":
     repo = Repo()
     repo.put(10,10)
-    print (repo.get(10))
+    print(repo.get(10))
     repo.snapshot()
     repo.put(10, 100)
-    print (repo.get(10))
+    print(repo.get(10))
 
-    print (repo.getValVersion(0, 10))
-    print (repo.getValVersion(1, 10))
+    print(repo.getValVersion(0, 10))
+    print(repo.getValVersion(1, 10))

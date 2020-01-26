@@ -9,6 +9,7 @@
 # Output : Recurring sequence is 27
 # Explanation : 50/22 = 2.272727272.....
 #
+# Question Type : ShouldSee
 # Used : Let us look at the part where we have already figured out the integer part which is
 #        floor(numerator/denominator). Now we are left with ( remainder = numerator%denominator ) / denominator.
 #        At each step we do the following :
@@ -27,15 +28,15 @@ def fractionToDecimal(numerator, denominator):
     while rem != 0 and rem not in hashMap.keys():
         hashMap[rem] = len(res)
         rem = rem*10
-        resPart = rem / denominator
+        resPart = rem // denominator
         res += str(resPart)
         rem = rem % denominator
 
     if rem == 0:
-        print ""
+        print("")
     else:
         startIndex = hashMap[rem]
-        print res[startIndex::]
+        print(res[startIndex::])
 
 
 if __name__ == "__main__":

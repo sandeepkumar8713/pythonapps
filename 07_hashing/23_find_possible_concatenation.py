@@ -3,6 +3,7 @@
 # of the same length). Find the starting indices of the substrings in string S, which contains all the words
 # present in list L.
 #
+# Question Type : ShouldSee
 # Used : 1. Declare a map (hash_map) which stores all words of List L corresponding to their occurrences inside list L.
 #        2. Traverse through all possible substrings in string S which are equal to size_L(total number of characters
 #           produced if all the words in list L are concatenated).

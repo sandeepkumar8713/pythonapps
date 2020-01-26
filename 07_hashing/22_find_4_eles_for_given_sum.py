@@ -2,6 +2,7 @@
 # Question : Given an array of integers, find any one combination of four elements in the array whose sum is
 # equal to a given value X.
 #
+# Question Type : Easy
 # Used : Run 2 loops to make pairs from the given array. Save its sum as ke and indexes as value in map.
 #        Now again run 2 loops to make pair, subtract this pair's sum with target sum, check if other part sum is
 #        present in the map. Check if indexes are repeated, if not return the result.
@@ -30,4 +31,4 @@ def findFourElements(inpArr, targetSum):
 if __name__ == "__main__":
     inpArr = [10, 20, 30, 40, 1, 2]
     targetSum = 91
-    print findFourElements(inpArr, targetSum)
+    print(findFourElements(inpArr, targetSum))

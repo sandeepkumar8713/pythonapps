@@ -9,6 +9,7 @@
 #    Intersection List: 4->10
 #    Union List: 2->8->20->4->15->10
 #
+# Question Type : Easy
 # Used : Union (list1, list2) : Initialize the result list as NULL and create an empty hash table. Traverse both lists
 #        one by one, for each element being visited, look the element in hash table. If the element is not present,
 #        then insert the element to result list. If the element is present, then ignore it.
@@ -37,9 +38,9 @@ class LinkedList:
     def printList(self):
         temp = self.head
         while temp:
-            print temp.data,
+            print(temp.data,end=" ")
             temp = temp.next
-        print ""
+        print("")
 
 
 def getIntersection(lList1, lList2):
@@ -84,7 +85,7 @@ if __name__ == "__main__":
     lList1.push(4)
     lList1.push(15)
     lList1.push(10)
-    print "list 1:",
+    print("list 1:",end=" ")
     lList1.printList()
 
 
@@ -93,14 +94,13 @@ if __name__ == "__main__":
     lList2.push(2)
     lList2.push(4)
     lList2.push(8)
-    print "list 2:",
+    print("list 2:",end=" ")
     lList2.printList()
 
     insersectionLinkedList = getIntersection(lList1, lList2)
-    print "intersection:",
+    print("intersection:",end=" ")
     insersectionLinkedList.printList()
 
     unionLinkedList = getUnion(lList1, lList2)
-    print "union:",
+    print("union:",end=" ")
     unionLinkedList.printList()
-

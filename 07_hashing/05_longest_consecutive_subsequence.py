@@ -5,6 +5,7 @@
 # Output: 4
 # The sub sequence 1, 3, 4, 2 is the longest sub sequence of consecutive elements
 #
+# Question Type : ShouldSee
 # Used : Loop over the elements and add it to the set. So it will have unique values.
 #        Loop over the elements, if its previous element arr[i] - 1 is not present in set, then this might be the first
 #           element in our desired sub sequence. Now keep incrementing this element j and keep checking if incremented
@@ -33,5 +34,4 @@ def findLongestConseqSubseq(arr):
 if __name__ == '__main__':
     arr = [1, 9, 3, 10, 4, 20, 2]
     # arr = [1, 3, 5, 7, 9, 11, 13]
-    print "Length of the Longest contiguous sub sequence is",
-    print findLongestConseqSubseq(arr)
+    print("Length of the Longest contiguous sub sequence is ", findLongestConseqSubseq(arr))

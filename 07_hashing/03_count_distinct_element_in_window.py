@@ -9,6 +9,7 @@
 # 4
 # 3
 #
+# Question Type : Asked
 # Used : Loop over the input array from 0 to k-1 and keep record of elements and there frequency in dict. Print the
 #           length of dict.
 #        Now loop over the input array form k to n-1 and reduce the frequency of last element removed from window and
@@ -24,7 +25,7 @@ def countDistinct(inpArr, k):
             distinctCount[inpArr[i]] += 1
         else:
             distinctCount[inpArr[i]] = 1
-    print len(distinctCount)
+    print(len(distinctCount))
 
     for i in range(k, len(inpArr)):
         if inpArr[i] in distinctCount.keys():
@@ -36,7 +37,7 @@ def countDistinct(inpArr, k):
         if distinctCount[inpArr[i-k]] == 0:
             del distinctCount[inpArr[i-k]]
 
-        print len(distinctCount)
+        print(len(distinctCount))
 
 
 if __name__ == "__main__":

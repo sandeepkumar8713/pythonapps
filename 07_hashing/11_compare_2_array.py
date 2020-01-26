@@ -2,6 +2,7 @@
 # Two arrays are said to be equal if both of them contain same set of elements, arrangements (or permutation)
 # of elements may be different though.
 #
+# Question Type : Easy
 # Used : Loop over the elements of arr1 and make a entry of its frequency in hash dict.
 #        Loop over the elements of arr2 and see if it is present in hash dict and reduce its frequency by 1 else
 #           return False
@@ -31,5 +32,5 @@ def areEqual(arr1, arr2):
 if __name__ == "__main__":
     arr1 = [1, 2, 5, 4, 0, 2, 1]
     arr2 = [2, 4, 5, 0, 1, 1, 2]
-    print areEqual(arr1, arr2)
+    print(areEqual(arr1, arr2))
 

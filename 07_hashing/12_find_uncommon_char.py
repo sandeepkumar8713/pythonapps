@@ -22,7 +22,7 @@ def findUncommon(str1, str2):
 
     for ele,value in hashDict.items():
         if value == 1 or value == 2:
-            print ele,
+            print(ele, end=" ")
 
 
 if __name__ == "__main__":

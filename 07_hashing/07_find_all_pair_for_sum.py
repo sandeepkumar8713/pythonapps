@@ -7,6 +7,7 @@
 # Output : 4 4
 #          5 3
 #
+# Question Type : Easy
 # Used : Loop over the smaller array, add elements to the set.
 #        Loop over the larger array, check if sum - element is present in set. Print if present.
 # Complexity : O(n)
@@ -27,7 +28,7 @@ def findAllPair(arr1, arr2, x):
 
     for ele in largeArr:
         if x - ele in hashSet:
-            print ele, x - ele
+            print(ele, x - ele)
 
 
 if __name__ == "__main__":

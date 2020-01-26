@@ -13,6 +13,7 @@
 #
 # Output: 3(n3,n4,n5)
 #
+# Question Type : Easy
 # Used : For the given input matrix make a map drinkCustMap : key (drink) : value (list of customer who like it)
 #        Run a loop till this map is empty. Find the drink which is most fav to all, serve it.
 #           Remove that drink from map. Remove those customers from the map who are already served.
@@ -55,7 +56,7 @@ def serveDrink(custChoices):
         drinkToBeServed = findMaxFavDrink(drinkCustMap)
         if drinkToBeServed == -1:
             break
-        print drinkToBeServed
+        print(drinkToBeServed)
         custServedList = drinkCustMap[drinkToBeServed]
         del drinkCustMap[drinkToBeServed]
         removeCustServed(drinkCustMap, custServedList)

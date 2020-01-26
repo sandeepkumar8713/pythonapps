@@ -6,6 +6,7 @@
 # Output: True
 # We can divide array into (9, 3) and (7, 5). Sum of both of these pairs is a multiple of 6.
 #
+# Question Type : Generic
 # Used : Loop over the input array and make a dict of remainder(key) with its frequency as value.
 #        If remainder 0 is present in dict, then there should be even(to make pair) number of 0's else return false
 #        If remainder k/2 is is in dict, then there should be even number of k/2's else return false
@@ -46,10 +47,10 @@ def isPairPossible(arr, k):
 
 
 if __name__ == "__main__":
-    # arr = [92, 75, 65, 48, 45, 35]
-    # k = 10
+    arr = [92, 75, 65, 48, 45, 35]
+    k = 10
+    print(isPairPossible(arr, k))
 
     arr = {9, 7, 5, 3}
     k = 6
-    print isPairPossible(arr, k)
-
+    print(isPairPossible(arr, k))

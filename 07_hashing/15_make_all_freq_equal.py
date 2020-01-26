@@ -5,6 +5,7 @@
 # Output : Yes
 # We can remove character 'y' from above string to make the frequency of each character same.
 #
+# Question Type : ShouldSee
 # Used : Loop over the elements in input array and update its frequency in hashDict.
 #        Find the minimum frequency.
 #        Loop over the list of frequencies and find the diff between minValue and current value. If diff is more than 1
@@ -39,7 +40,10 @@ def makeSameFreq(inpStr):
 
 if __name__ == "__main__":
     inpStr = "xyyz"
-    # inpStr = "xyyzz"
-    # inpStr = "xxxxyyzz"
-    print makeSameFreq(inpStr)
+    print(makeSameFreq(inpStr))
 
+    inpStr = "xyyzz"
+    print(makeSameFreq(inpStr))
+
+    inpStr = "xxxxyyzz"
+    print(makeSameFreq(inpStr))

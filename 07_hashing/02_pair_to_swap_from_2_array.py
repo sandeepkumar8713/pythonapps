@@ -6,6 +6,7 @@
 #         B[] = (3, 6, 3, 3)
 # Output : {1, 3}
 #
+# Question Type : ShouldSee
 # Used : Find smaller of the 2 array. Find the value that these 2 sum up using this formula
 #        diff = abs(sum(largeArr) - sum(smallArr)) / 2
 #        Now loop through larger array while checking if (arr[i] + diff or arr[i] - diff) is in smaller array.
@@ -31,10 +32,10 @@ def findPair(arr1, arr2):
             pairs[ele - diff] = ele
 
     for key, value in pairs.items():
-        print ("smaller array: %s larger array: %s" % (key, value))
+        print("smaller array: %s larger array: %s" % (key, value))
 
     if len(pairs) == 0:
-        print ("pair not found")
+        print("pair not found")
 
 
 if __name__ == "__main__":

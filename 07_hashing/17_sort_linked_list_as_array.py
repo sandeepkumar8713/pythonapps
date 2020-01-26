@@ -7,9 +7,10 @@
 #         array : 5, 1, 3, 2, 8
 # Output: Sorted Linked List : 5 5 1 3 2 2 8
 #
+# Question Type : ShouldSee
 # Used : First, make a hash table that stores the frequencies of elements in linked list. Then, simply traverse array
 #        and for each element of arr[i] check the frequency in the has table and modify the data of list by arr[i]
-#        element upto its frequency and at last Print the list.
+#        element up to its frequency and at last Print the list.
 # Complexity : O(n)
 
 
@@ -31,9 +32,9 @@ class LinkedList:
     def printList(self):
         temp = self.head
         while temp:
-            print temp.data,
+            print(temp.data, end=" ")
             temp = temp.next
-        print ""
+        print("")
 
     def sortAsPerArray(self, inpArr):
         freqDict = dict()
