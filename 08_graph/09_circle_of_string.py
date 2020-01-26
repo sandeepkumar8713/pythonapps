@@ -5,6 +5,7 @@
 # Output: Yes, the given strings can be chained.
 # The strings can be chained as "for", "rig", "geek" and "kaf"
 #
+# Question Type : ShouldSee
 # Used : Create a directed graph g with number of vertices equal to the size of alphabet.
 #        Loop over the strings in input array and do this:
 #           Add an edge from first character to last character of the given graph.
@@ -57,7 +58,7 @@ class Graph(object):
         visited = [False] * self.V
 
         n = 0
-        for n in xrange(self.V):
+        for n in range(self.V):
             if len(self.graph[n]) > 0:
                 break
 
@@ -65,19 +66,19 @@ class Graph(object):
         self.DFSUtil(n, visited)
 
         # If DFS traversal doesn't visit all vertices with non zero degree, then return false.
-        for i in xrange(self.V):
+        for i in range(self.V):
             if len(self.graph[i]) > 0 and visited[i] is False:
                 return False
 
         gr = self.getTranspose()
 
-        for i in xrange(self.V):
+        for i in range(self.V):
             visited[i] = False
 
         gr.DFSUtil(n, visited)
 
         # If DFS traversal doesn't visit all vertices of original graph with non zero degree, then return false.
-        for i in xrange(self.V):
+        for i in range(self.V):
             if len(self.graph[i]) > 0 and visited[i] is False:
                 return False
 
@@ -89,7 +90,7 @@ class Graph(object):
             return False
 
         # Check if in degree and out degree of every vertex is same
-        for i in xrange(self.V):
+        for i in range(self.V):
             if len(self.graph[i]) != self.inDegree[i]:
                 return False
 
@@ -109,7 +110,7 @@ if __name__ == "__main__":
     inpArr = ["for", "geek", "rig", "kaf"]
     # inpArr = ["aab", "abb"]
     if canBeChained(inpArr):
-        print ("Can be chained")
+        print("Can be chained")
     else:
-        print ("Can't be chained")
+        print("Can't be chained")
 

@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/minimum-number-swaps-required-sort-array/
 # Question : Given an array of n distinct elements, find the minimum number of swaps required to sort the array.
 #
+# Question Type : ShouldSee
 # Used : Make a indexDict for key(element): value(index) for the input array. Sort the input array. Maintain a boolean
 #        array to take care of visited elements. Maintain a global res to count all the swap.
 #        Loop through the sorted array. If the element is already visited or its index is same as value in
@@ -9,6 +10,22 @@
 #               current element change the value of j to its swapped elements's index j = indexDict[ele]. Count the no.
 #               of times this loop ran. Keep marking element at index as visited.
 #           Add this counter to the global res
+#        return res
+#        Logic :
+#        sortedArr = sorted(inpArr)
+#        visited = [False] * len(inpArr)
+#        for i in range(len(sortedArr)):
+#           ele = sortedArr[i]
+#           if visited[i] or indexDict[ele] is i:
+#               continue
+#           cycleSize = 0
+#           j = i
+#           while visited[j] is False:
+#               visited[j] = True
+#               ele = sortedArr[j]
+#               j = indexDict[ele]
+#               cycleSize += 1
+#           res += cycleSize - 1
 #        return res
 # Complexity : O(n log n)
 
@@ -20,7 +37,7 @@ def minSwaps(inpArr):
         ele = inpArr[i]
         indexDict[ele] = i
     sortedArr = sorted(inpArr)
-    print indexDict
+    print(indexDict)
 
     visited = [False] * len(inpArr)
     for i in range(len(sortedArr)):
@@ -46,5 +63,7 @@ def minSwaps(inpArr):
 
 if __name__ == "__main__":
     inpArr = [1, 5, 4, 3, 2]
-    # inpArr = [2, 4, 5, 1, 3]
-    print minSwaps(inpArr)
+    print(minSwaps(inpArr))
+
+    inpArr = [2, 4, 5, 1, 3]
+    print(minSwaps(inpArr))

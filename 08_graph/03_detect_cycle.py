@@ -2,6 +2,7 @@
 # true if the given graph contains at least one cycle, else return false. For example, the following graph contains
 # three cycles 0->2->0, 0->1->2->0 and 3->3, so your function must return true.
 #
+# Question Type : Generic
 # Used : Recursion stack means the single depth while moving from first vertex to last vertex. While in thi stack if we
 #        get a previously visited vertex then we can say that we a cycle.
 #        Visit the all the vertex of graph using DFS and also keep track of vertex in current recStack. If we find a
@@ -57,4 +58,4 @@ if __name__ == "__main__":
     g.addEdge(2, 3)
     g.addEdge(3, 3)
 
-    print g.isCyclic()
+    print(g.isCyclic())

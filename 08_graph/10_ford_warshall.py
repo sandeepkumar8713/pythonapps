@@ -1,6 +1,7 @@
 # Question : The Floyd Warshall Algorithm is for solving the All Pairs Shortest Path problem. The problem is to
 # find shortest distances between every pair of vertices in a given edge weighted directed Graph.
 #
+# Question Type : Easy
 # Used : For every pair (i, j) of the source and destination vertices respectively, there are two possible cases.
 #       k is not an intermediate vertex in shortest path from i to j. We keep the value of dist[i][j] as it is.
 #       k is an intermediate vertex in shortest path from i to j. We update the value of dist[i][j] as
@@ -9,7 +10,7 @@
 
 
 import sys
-INF = sys.maxint
+INF = sys.maxsize
 
 
 def floydWarshall(mat):
@@ -37,4 +38,4 @@ if __name__ == "__main__":
 
     resultDist = floydWarshall(mat)
     for row in resultDist:
-        print row
+        print(row)

@@ -8,6 +8,7 @@
 # Input : n = 10, m = 15
 # Output : 10, 12
 #
+# Question Type : ShouldSee
 # Used : Loop for i : 0 to 9 and call recursive function dfs(n, m, i).
 #        In dfs(n, m, stepNum). If stepNum is b/w n and m : print stepNum
 #        If stepNum == 0 or stepNum >= m: return
@@ -22,7 +23,7 @@
 
 def dfs(n, m, stepNum):
     if n <= stepNum <= m:
-        print stepNum,
+        print(stepNum, end=" ")
 
     if stepNum == 0 or stepNum >= m:
         return

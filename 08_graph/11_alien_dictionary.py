@@ -6,6 +6,7 @@
 # Input:  words[] = {"baa", "abcd", "abca", "cab", "cad"}
 # Output: Order of characters is 'b', 'd', 'a', 'c'
 #
+# Question Type : Generic
 # Used : Create a graph g with number of vertices equal to the size of alphabet in the given alien language.
 #        Loop over the elements of input array. Such that word1 = inpArr[i] and  word2 = inpArr[i+1]
 #           One by one compare characters of both words and find the first mismatching characters.
@@ -51,7 +52,7 @@ class Graph:
 
         while stack:
             vertex = stack.pop()
-            print (chr(vertex + ord('a'))),
+            print(chr(vertex + ord('a')),end=" ")
 
 
 def getOrder(inpArr, alphaCount):

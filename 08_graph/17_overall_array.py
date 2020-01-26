@@ -5,6 +5,7 @@
 # Input : [1, 3, 5], [1, 3, 9], [9, 5]
 # Output : [1, 3, 9, 5]
 #
+# Question Type : ShouldSee
 # Used : Insert the given arrays into the graph. Make sure it is a Direct Acyclic Graph (DAG).
 #        Now do topological sort on the graph. It is similar to alien dictionary problem.
 # Complexity : O(n)
@@ -47,7 +48,7 @@ class Graph:
 
         while stack:
             vertex = stack.pop()
-            print (vertex),
+            print(vertex, end=" ")
 
 
 if __name__ == "__main__":
@@ -62,5 +63,5 @@ if __name__ == "__main__":
             for i in range(len(array) - 1):
                 g.addEdge(array[i], array[i+1])
 
-    print ("Overall array :"),
+    print("Overall array :"),
     g.topologicalSort()

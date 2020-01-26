@@ -2,6 +2,7 @@
 # Question : Given a graph and a source vertex in the graph, find shortest paths from source to all vertices
 # in the given graph.
 #
+# Question Type : ShouldSee
 # Used : Maintain a minDist array with size v, initialize them with maxInt. Maintain a shortest path tree(SPT) array
 #        with size v, initialize them with False. Initialize minDist[src] as 0.
 #        Loop over the vertices of the graph. Find the index of vertex whose distance from source to vertex is min
@@ -23,12 +24,12 @@ class Graph():
             self.graph.append([])
 
     def printSolution(self, src, dist):
-        print "Vertex t Distance from Source"
+        print("Vertex t Distance from Source")
         for node in range(self.V):
-            print src, "->", node, "distance", dist[node]
+            print(src, "->", node, "distance", dist[node])
 
     def minDistance(self, dist, sptSet):
-        min = sys.maxint
+        min = sys.maxsize
         for v in range(self.V):
             if dist[v] < min and sptSet[v] is False:
                 min = dist[v]
@@ -38,7 +39,7 @@ class Graph():
 
     def dijkstra(self, src):
 
-        dist = [sys.maxint] * self.V
+        dist = [sys.maxsize] * self.V
         dist[src] = 0
         sptSet = [False] * self.V
 

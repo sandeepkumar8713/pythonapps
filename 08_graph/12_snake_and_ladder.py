@@ -2,6 +2,7 @@
 # destination or last cell from source or 1st cell. Basically, the player has total control over outcome of dice
 # throw and wants to find out minimum number of throws required to reach last cell.
 #
+# Question Type : Easy
 # Used : Make a class Cell with attributes : position and diceThrowCount to reach this cell.
 #        Make a list of all possible dice outcome : 1, 2, 3, 4, 5, 6.
 #        Maintain a list of already visited cell.
@@ -70,4 +71,4 @@ if __name__ == "__main__":
     moves[16] = 3
     moves[18] = 6
 
-    print "Min Dice throws required is:", getMinDiceThrows(moves, N)
+    print("Min Dice throws required is:", getMinDiceThrows(moves, N))

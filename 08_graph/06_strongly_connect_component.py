@@ -4,6 +4,7 @@
 # connected if there is a path between all pairs of vertices. A strongly connected component (SCC) of a directed
 # graph is a maximal strongly connected sub graph.
 #
+# Question Type : Generic
 # Used : Kosaraju Algorithm
 #        Create an empty stack 'S' and do DFS traversal of a graph. In DFS traversal, after calling recursive DFSUtils
 #        for adjacent vertices of a vertex, push the vertex to stack.
@@ -27,7 +28,7 @@ class Graph:
 
     def DFSUtil(self, v, visited):
         visited[v] = True
-        print v,
+        print(v, end=" ")
 
         for i in self.graph[v]:
             if visited[i] is False:
@@ -65,9 +66,9 @@ class Graph:
             i = stack.pop()
             if visited[i] is False:
                 gr.DFSUtil(i, visited)
-                print ("")
+                print("")
                 count += 1
-        print ("count of SCCs : %s" % count)
+        print("count of SCCs : %s" % count)
 
 
 if __name__ == "__main__":
@@ -84,5 +85,5 @@ if __name__ == "__main__":
     g.addEdge(2, 0)
     g.addEdge(2, 3)
 
-    print ("Following are strongly connected components in given graph")
+    print("Following are strongly connected components in given graph")
     g.printSCCs()

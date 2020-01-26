@@ -3,6 +3,7 @@
 # We need to find out minimum steps a Knight will take to reach the target position.
 # This is similar (infinite chess with forbidden cells) : https://www.careercup.com/question?id=5711185563877376
 #
+# Question Type : Generic
 # Used : Make a queue Push starting cell(x,y,distance) point in queue
 #        Loop (until queue is empty)
 # 	        Pop one cell from queue
@@ -60,4 +61,4 @@ if __name__ == "__main__":
     knightPos = [0, 0]
     targetPos = [29, 29]
 
-    print "Min steps required is:", getMinStep(N, knightPos, targetPos)
+    print("Min steps required is:", getMinStep(N, knightPos, targetPos))

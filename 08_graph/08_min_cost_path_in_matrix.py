@@ -2,6 +2,7 @@
 # traverse through that cell, we need to find a path from top left cell to bottom right cell by which total cost
 # incurred is minimum.
 #
+# Question Type : Generic, SimilarAdded
 # Used : Make a class of cell with attributes: i and j. Make a dist matrix with all values set as maxInt.
 #        Make a queue and insert the source cell in it. Initialize the source cell in dist with value in grid.
 #        Now loop while the queue is not empty. Pop first cell from queue. Loop over the possible directions it can go
@@ -51,7 +52,7 @@ def shortestPath(grid, src, dest):
 
     dist = []
     for i in range(row):
-        defaultCol = [sys.maxint] * col
+        defaultCol = [sys.maxsize] * col
         dist.append(defaultCol)
     queue = []
     queue.append(Cell(src["i"], src["j"]))
@@ -67,7 +68,7 @@ def shortestPath(grid, src, dest):
             if isSafe(grid, nextI, nextJ):
                 if dist[nextI][nextJ] > dist[cell.i][cell.j] + grid[nextI][nextJ]:
                     # If cell is already there in set, then remove its previous entry, as we got lesser cost
-                    if dist[nextI][nextJ] is not sys.maxint:
+                    if dist[nextI][nextJ] is not sys.maxsize:
                         removePrevious(queue, nextI, nextJ)
 
                     dist[nextI][nextJ] = dist[cell.i][cell.j] + grid[nextI][nextJ]
@@ -90,4 +91,4 @@ if __name__ == "__main__":
 
     # src = {"i": 0, "j": 0}
     # dest = {"i": 0, "j": 0}
-    print shortestPath(grid, src, dest)
+    print(shortestPath(grid, src, dest))

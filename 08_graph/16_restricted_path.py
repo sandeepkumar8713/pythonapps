@@ -7,6 +7,7 @@
 # Example: N = 4; K = {(1, 4)}; M = {(1, 2), (2, 3), (3, 4)}.
 # Here, addition of edge (3, 4) will create a path between 1 and 4. Hence we discard edge (3, 4)
 #
+# Question Type : Generic
 # Used : For the given edgeList, Loop over it.
 #        Add the edge in graph, find connected components,
 #        If restricted path edges are there in connect component, remove the edge from graph
@@ -64,7 +65,7 @@ if __name__ == "__main__":
             for connectedComponent in connectedComponents:
                 if restrictedPath[0] in connectedComponent and restrictedPath[1] in connectedComponent:
                     g.removeEdge(edge[0], edge[1])
-                    print ("Removed this edge : %s, %s " % (edge[0], edge[1]))
+                    print("Removed this edge : %s, %s " % (edge[0], edge[1]))
                     break
 
     cc = g.connectedComponents()

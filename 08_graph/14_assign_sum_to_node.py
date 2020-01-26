@@ -5,6 +5,7 @@
 #
 # Examples : Given a graph with values {1,2,3,4}, find total time it takes, such that all nodes have value as 10.
 #
+# Question Type : OddOne
 # Used : Since the graph is fully connected. The idea is to take a node, iterate over all its adjacent nodes through
 #        recursion and keep adding its sum. Once the end is reached. Rollback while updating the previously travelled
 #        nodes.
@@ -62,6 +63,6 @@ if __name__ == "__main__":
 
     n5.data = distributeSum(n5, n5.data, 0, len(n5.adjacentNodes))
 
-    print n1.data,
+    print(n1.data, end=" ")
     for adjacentNode in n1.adjacentNodes:
-        print adjacentNode.data,
+        print(adjacentNode.data, end=" ")

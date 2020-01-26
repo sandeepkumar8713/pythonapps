@@ -27,7 +27,7 @@ class Graph:
     def BFSUtils(self, queue, visited):
         while len(queue) != 0:
             vertex = queue.pop(0)
-            print vertex,
+            print(vertex,end=" ")
 
             for connectedVertex in self.graph[vertex]:
                 if visited[connectedVertex] is False:
@@ -62,7 +62,11 @@ if __name__ == "__main__":
     g.addEdge(2, 3)
     g.addEdge(3, 3)
 
-    print "Following is Breadth First Traversal"
+    print("Following is Breadth First Traversal")
     g.BFS(2)
-    # g.BFS(4)
-    # g.BFSAll()
+    print("")
+
+    g.BFS(4)
+    print("")
+
+    g.BFSAll()

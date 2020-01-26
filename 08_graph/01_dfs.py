@@ -1,5 +1,6 @@
 # Question : Write a function to print the depth first traversal for a undirected graph from a given source s.
 #
+# Question Type : Easy
 # Used : Make a class whose member graph is a dict of keys(vertices) whose value is list of vertices it is connected to.
 #        Call a DFS(source) function whose input is source vertex. It maintains a list of boolean values to specify
 #           whether the vertices is visited or not. It calls a recursive function DFSUtil which takes source and visited
@@ -24,7 +25,7 @@ class Graph:
 
     def DFSUtil(self, v, visited):
         visited[v] = True
-        print v,
+        print(v, end=" ")
 
         for i in self.graph[v]:
             if visited[i] == False:
@@ -53,8 +54,8 @@ if __name__ == "__main__":
     g.addEdge(2, 3)
     g.addEdge(3, 3)
 
-    print ("Following is Depth First Traversal")
+    print("Following is Depth First Traversal")
     g.DFS(0)
     # g.DFS(4)
-    # g.DFSAll()
-
+    print("")
+    g.DFSAll()
