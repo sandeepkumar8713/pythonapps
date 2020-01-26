@@ -6,6 +6,7 @@
 # Output :  Maximum difference is 5.
 # Explanation : We change 1 to 6, 15 to 9 and 10 to 4. Maximum difference is 5 (between 4 and 9).
 #
+# Question Type : ShouldSee
 # Used : Sort the given input array. Set res as diff of first and last element.
 #        Set largest as a[n] - k and smallest as a[0] + k. Swap if smallest is bigger.
 #        Now loop over the input array from 0 to n-2. Try to choose each element as either as smallest or largest by
@@ -54,4 +55,4 @@ if __name__ == "__main__":
     # k = 3
     # inpArr = [100, 150, 200, 250, 300, 400]
     # k = 4
-    print "Maximum difference is:", getMinDiff(inpArr, k)
+    print("Maximum difference is:", getMinDiff(inpArr, k))

@@ -1,6 +1,7 @@
 # Question : Given two numbers 'N' and 'S' , find the largest number that can be formed with 'N' digits and whose
 # sum of digits should be equals to 'S'.
 #
+# Question Type : Easy
 # Used : First check if is possible to reach the target with given number of digits using this:
 #        targetSum > 9 * digitCount
 #        Make a result array of size digitCount and initialize all with 0
@@ -44,4 +45,4 @@ if __name__ == "__main__":
     number = 0
     for ele in res:
         number = number * 10 + ele
-    print "Largest number is:", number
+    print("Largest number is:", number)

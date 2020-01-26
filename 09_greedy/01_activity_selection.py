@@ -1,6 +1,7 @@
-# Question : Given N activities with their start and finish times. Select the maximum number of activities that can be performed by
-# a single person, assuming that a person can only work on a single activity at a time.
+# Question : Given N activities with their start and finish times. Select the maximum number of activities that
+# can be performed by a single person, assuming that a person can only work on a single activity at a time.
 #
+# Question Type : Generic
 # Used : Given two array start and finish. Sort the finish array and accordingly sort the start array.
 #        Mark the first task as done, now run a loop over remaining tasks.
 #        If this tasks start time is more than previous done task's finish time then mark this as done and update this
@@ -10,7 +11,7 @@
 
 def printMaxActivities(s, f):
     n = len(f)
-    print "The following activities are selected"
+    print("The following activities are selected")
 
     sortedStart = [x for _, x in sorted(zip(f, s))]
     sortedFinish = sorted(f)
@@ -18,12 +19,12 @@ def printMaxActivities(s, f):
     # The first activity is always selected
     # i denotes recently selected job
     i = 0
-    print sortedStart[i], sortedFinish[i]
+    print(sortedStart[i], sortedFinish[i])
 
     # Consider rest of the activities
-    for j in xrange(n):
+    for j in range(n):
         if sortedStart[j] >= sortedFinish[i]:
-            print sortedStart[j], sortedFinish[j]
+            print(sortedStart[j], sortedFinish[j])
             i = j
 
 

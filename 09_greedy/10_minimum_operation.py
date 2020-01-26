@@ -2,6 +2,7 @@
 # 1. Divide by 2, i.e., do m = m / 2
 # 2. Subtract 1, i.e., do m = m - 1
 #
+# Question Type : Easy
 # Used : call a recursive function which convert(start, end) returns min operation count.
 #        If end < 0 return -1
 #        If end > start return -1
@@ -34,4 +35,4 @@ if __name__ == "__main__":
     # start = 10
     # end = 6
 
-    print "Minimum Operations required :", convert(start, end)
+    print("Minimum Operations required :", convert(start, end))

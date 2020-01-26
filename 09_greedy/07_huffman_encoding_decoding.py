@@ -20,6 +20,7 @@
 # Code of 'A' is '00', code of 'C' is '01', ..
 # Decoded Data : AAAAAABCCCCCCDDEEEEE
 #
+# Question Type : ShouldSee
 # Used : From the given input string, make of list of nodes whose fields are : data, freq, left and right
 #        Using this list make a normal min heap.
 #        Loop while min heap has only one element
@@ -72,7 +73,7 @@ class Heap:
     def buildHeap(self, arr):
         n = len(arr)
         self.size = n
-        for i in xrange(n):
+        for i in range(n):
             self.data.append(arr[i])
         start = n/2 - 1
         for i in range(start, -1, -1):
@@ -172,6 +173,6 @@ if __name__ == "__main__":
     encodedString = encodeString(treeRoot, inpStr)
     decodedString = decodeString(treeRoot, encodedString)
 
-    print "inpStr:", inpStr
-    print "encodedString:", encodedString
-    print "decodedString:", decodedString
+    print("inpStr:", inpStr)
+    print("encodedString:", encodedString)
+    print("decodedString:", decodedString)

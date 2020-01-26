@@ -12,6 +12,7 @@
 # In the second case we buy the candy which costs 4 and take candies worth 1 and 2 for
 # free, also We buy candy worth 3 as well. So max cost = 3 + 4 = 7.
 #
+# Question Type : Generic
 # Used : Sort the given array.
 #        To find min, loop while n >= 1. Add arr[i] in sum and reduce n by k (n = n - k)
 #        To find max, set start = 0 and end = 0, loop while end >= start, add arr[end] in sum, reduce end = end - 1 and
@@ -47,4 +48,4 @@ if __name__ == "__main__":
     n = len(arr)
     k = 2
     arr.sort()
-    print findMinimum(arr, n, k), " ", findMaximum(arr, n, k)
+    print(findMinimum(arr, n, k), " ", findMaximum(arr, n, k))

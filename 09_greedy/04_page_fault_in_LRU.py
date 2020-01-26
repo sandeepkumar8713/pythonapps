@@ -2,6 +2,7 @@
 # Question : Given a sequence of pages and memory capacity, your task is to find the number of page faults using
 # Least Recently Used (LRU) Algorithm.
 #
+# Question Type : Generic
 # Used : Make a class LRU cache, whose attributes are: cacheList, capacity. Keep a count of page faults.
 #        Loop over the input pages. If the page is not in cache list increment the page fault. If the cache is not
 #           filled completely, append the page in cache list. If the cache is full, remove the first page from cache

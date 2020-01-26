@@ -3,6 +3,7 @@
 # spanning tree (MST) or minimum weight spanning tree for a weighted, connected and undirected graph is a spanning
 # tree with weight less than or equal to the weight of every other spanning tree.
 #
+# Question Type : Generic
 # Used : Kruskal's Minimum Spanning Tree Algorithm
 #        Sort the given edges. Make a list of result, parent and rank. Result is empty.
 #        set parent as parent[i] = i and rank as rank[1 to n] = 0
@@ -88,4 +89,4 @@ if __name__ == "__main__":
 
     MST = g.KruskalMST()
     for item in MST:
-        print item[0], "->", item[1], " ", item[2]
+        print(item[0], "->", item[1], " ", item[2])
