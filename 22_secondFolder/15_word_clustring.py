@@ -3,7 +3,8 @@
 #
 # https://stackoverflow.com/questions/8196371/how-does-clustering-especially-string-clustering-work
 # read first and second answer Use algo to find minimum distance between 2 strings and use k means to cluster
+#
 # TODO :: add code
-
-
-
+# Question Type : OddOne
+# Used :
+# Complexity :

@@ -5,6 +5,7 @@
 # search(x): Searches an item x in the data structure.
 # getRandom(): Returns a random element from current set of elements
 #
+# Question Type : ShouldSee
 # Used : Its better to use map only.
 # insert(x) : Check if x is already present by doing a hash map lookup.
 #             If not present, then insert it at the end of the array.
@@ -61,8 +62,8 @@ if __name__ == "__main__":
     myStruct.insert(20)
     myStruct.insert(30)
     myStruct.insert(40)
-    print myStruct.search(30)
+    print(myStruct.search(30))
     myStruct.remove(20)
     myStruct.insert(50)
-    print myStruct.search(50)
-    print myStruct.random()
+    print(myStruct.search(50))
+    print(myStruct.random())

@@ -9,6 +9,9 @@
 # a. Show the current usage of each level cache.(Number of elements vs total Capacity of cache)
 # b. Average read time and average write time.
 #
+# Question Type : OddOne
+# Used : TODO :: add used
+# Complexity :
 
 from threading import Thread
 import time
@@ -58,11 +61,11 @@ class LRUCache:
             self.nextCache.write(key)
 
     def display(self):
-        print self.cacheList,
+        print(self.cacheList,end=" ")
         if self.nextCache is not None:
             self.nextCache.display(),
         else:
-            print ''
+            print('')
             
     def getNextCache(self):
         return self.nextCache
@@ -71,11 +74,11 @@ class LRUCache:
         self.nextCache = nextCache
 
     def usage(self):
-        print len(self.cacheList), '/', self.capacity, '|',
+        print(len(self.cacheList), '/', self.capacity, '|',end=" ")
         if self.nextCache is not None:
             self.nextCache.usage(),
         else:
-            print ''
+            print('')
 
 
 def insertCache(rootCache, cacheCapacity):
@@ -141,18 +144,18 @@ if __name__ == "__main__":
     lruManager.write(3)
     lruManager.write(4)
     lruManager.write(5)
-    print ("Usage :"),
+    print("Usage :"),
     lruManager.usage()
     lruManager.write(6)
     lruManager.write(7)
     lruManager.write(8)
     lruManager.write(9)
     lruManager.display()
-    print (lruManager.read(3))
-    print (lruManager.read(2))
+    print(lruManager.read(3))
+    print(lruManager.read(2))
     lruManager.display()
-    print ("Usage :"),
+    print("Usage :"),
     lruManager.usage()
     # print LRUCache.notFoundLevelCount
-    print ("Average Write Time: %s"% lruManager.getAvgWriteTime())
-    print ("Average Read Time: %s" % lruManager.getAvgReadTime())
+    print("Average Write Time: %s"% lruManager.getAvgWriteTime())
+    print("Average Read Time: %s" % lruManager.getAvgReadTime())

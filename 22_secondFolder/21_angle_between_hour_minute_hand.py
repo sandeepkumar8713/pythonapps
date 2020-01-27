@@ -5,6 +5,7 @@
 # Input:  h = 12:00, m = 30.00
 # Output: 165 degree
 #
+# Question Type : ShouldSee
 # Used : Calculate the angles moved by hour and minute hands with reference to 12:00
 #        hour_angle = 0.5 * (h * 60 + m)
 #        minute_angle = 6 * m

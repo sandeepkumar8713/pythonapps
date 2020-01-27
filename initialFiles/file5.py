@@ -5,9 +5,23 @@
 # the 2-D base of the higher box. Of course, you can rotate a box so that any side functions as its base. It is also
 # allowable to use multiple instances of the same type of box. You task is to complete the function
 # maxHeight which returns the height of the highest possible stack so formed.
-
+#
 # longest incraesing subsequence
-# sort based on 2d area in decreasing order and then the problem becomes LIS
+# Question Type : Generic
+# Used : sort based on 2d area in decreasing order and then the problem becomes LIS
+#        Logic : def boxStacking(array):
+#        height, twoDPlane = cubeDimension(array)
+#        height, twoDPlane = sortBasedOnArea(height, twoDPlane)
+#        heightArray = []
+#        for i in range(0, len(height)):
+#           heightArray.append(height[i])
+#        for i in range(0, len(height)):
+#           for j in range(0, i):
+#               if (compareDimension(twoDPlane[i], twoDPlane[j])):
+#                   if heightArray[i] < heightArray[j] + height[i]:
+#                     heightArray[i] = heightArray[j] + height[i]
+#        return max(heightArray)
+# Complexity : O(n^2)
 
 
 def cubeDimension(array):
@@ -65,31 +79,27 @@ def sortBasedOnArea(height,twoDPlane):
 
 
 def boxStacking(array):
-    height,twoDPlane=cubeDimension(array)
-    print twoDPlane
-    height, twoDPlane=sortBasedOnArea(height,twoDPlane)
+    height,twoDPlane = cubeDimension(array)
+    #print(twoDPlane)
+    height, twoDPlane = sortBasedOnArea(height, twoDPlane)
 
-    heightArray = [];
-    for i in range(0,len(height)):
+    heightArray = []
+    for i in range(0, len(height)):
         heightArray.append(height[i])
 
     for i in range(0, len(height)):
         for j in range(0, i):
             if (compareDimension(twoDPlane[i], twoDPlane[j])):
                 if heightArray[i] < heightArray[j] + height[i]:
-                    heightArray[i] = heightArray[j] + height[i];
+                    heightArray[i] = heightArray[j] + height[i]
 
-    maxHeight=0
-    for item in heightArray:
-        if maxHeight < item:
-            maxHeight = item
-
-    # print maxHeight
+    return max(heightArray)
 
 
-#dimension = [1,2,3,4,5,6,3,4,1]
-dimension = [4,6,7,1,2,3,4,5,6,10,12,32]
-#dimension = [1,2,3,4,5,6]
-#dimension = [1,2,3]
-print dimension
-boxStacking(dimension)
+if __name__ == "__main__":
+    #dimension = [1,2,3,4,5,6,3,4,1]
+    dimension = [4,6,7,1,2,3,4,5,6,10,12,32]
+    #dimension = [1,2,3,4,5,6]
+    #dimension = [1,2,3]
+    #print(dimension)
+    print(boxStacking(dimension))

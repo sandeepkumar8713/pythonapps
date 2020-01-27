@@ -1,4 +1,27 @@
 # Question : Given an array arr[], count number of pairs arr[i], arr[j] such that arr[i] + arr[j] is maximum and i < j.
+#
+# Question Type : ShouldSee
+# Used : Logic : def sum(a, n):
+#        maxVal = a[0], maxCount = 1
+#        secondMax = sys.maxsize
+#        for i in range(1, n):
+#           if (a[i] == maxVal):
+#               maxCount += 1
+#           elif (a[i] > maxVal):
+#               secondMax = maxVal
+#               secondMaxCount = maxCount
+#               maxVal = a[i]
+#               maxCount = 1
+#           elif (a[i] == secondMax):
+#               secondMax = a[i]
+#               secondMaxCount += 1
+#           elif (a[i] > secondMax):
+#               secondMax = a[i]
+#               secondMaxCount = 1
+#        if (maxCount > 1):
+#           return maxCount * (maxCount - 1) / 2
+#        return secondMaxCount
+# Complexity : O(n)
 
 import sys
 
@@ -37,7 +60,7 @@ def sum(a, n):
     return secondMaxCount
 
 
-# Driver Code
-array = [1, 1, 1, 2, 2, 2, 3]
-n = len(array)
-print(sum(array, n))
+if __name__ == "__main__":
+    array = [1, 1, 1, 2, 2, 2, 3]
+    n = len(array)
+    print(sum(array, n))

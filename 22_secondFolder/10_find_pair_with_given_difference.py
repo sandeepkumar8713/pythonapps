@@ -2,6 +2,7 @@
 # Question : Given an unsorted array and a number n, find if there exists a pair of elements in the array
 # whose difference is n.
 #
+# Question Type : Easy
 # Input: arr[] = {5, 20, 3, 2, 50, 80}, n = 78
 # Output: Pair Found: (2, 80)
 #
@@ -19,20 +20,21 @@ def findPair(arr, diff):
     j = 1
     while i < n and j < n:
         if i != j and arr[j] - arr[i] == diff:
-            print "Pair found", arr[i], arr[j]
+            print("Pair found", arr[i], arr[j])
             return True
 
         elif arr[j] - arr[i] < diff:
             j += 1
         else:
             i += 1
-    print "No pair found"
+    print("No pair found")
     return False
 
 
 if __name__ == "__main__":
-    # arr = [1, 8, 30, 40, 100]
-    # diff = 60
+    arr = [1, 8, 30, 40, 100]
+    diff = 60
+    findPair(sorted(arr), diff)
 
     arr = [5, 20, 3, 2, 50, 80]
     diff = 78

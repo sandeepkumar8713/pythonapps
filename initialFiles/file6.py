@@ -1,10 +1,13 @@
 # Question : Given a 2D array, the task is to print matrix in anti spiral form:
 #
-# push in stack and print
-# 1.first row
-# 2.last column
-# 3.last row
-# 4.first row
+# Question Type : Easy
+# Used : Push in stack and print
+#        1.first row
+#        2.last column
+#        3.last row
+#        4.first column
+#        Repeat
+# Complexity : O(n*m)
 
 stack = []
 
@@ -38,22 +41,23 @@ def spiralPrint(matrix):
     moveInMatrix(matrix, 0, 0, row, col, (row + 1) * (col + 1))
 
 
-# matrix = [[1,2,3],
-#           [4,5,6],
-#           [7,8,9]]
+if __name__ == "__main__":
+    # matrix = [[1,2,3],
+    #           [4,5,6],
+    #           [7,8,9]]
 
-# matrix = [[1,2,3,4],
-#           [5,6,7,8],
-#           [9,10,11,12]]
+    # matrix = [[1,2,3,4],
+    #           [5,6,7,8],
+    #           [9,10,11,12]]
 
-# matrix = [[1,2,3,4],
-#           [5,6,7,8],
-#           [9,10,11,12],
-#           [13, 14, 15, 16]]
+    # matrix = [[1,2,3,4],
+    #           [5,6,7,8],
+    #           [9,10,11,12],
+    #           [13, 14, 15, 16]]
 
-matrix = [[1, 2, 3, 4, 5, 6],
-          [7, 8, 9, 10, 11, 12],
-          [13, 14, 15, 16, 17, 18]]
+    matrix = [[1, 2, 3, 4, 5, 6],
+              [7, 8, 9, 10, 11, 12],
+              [13, 14, 15, 16, 17, 18]]
 
-spiralPrint(matrix)
-print stack
+    spiralPrint(matrix)
+    print(stack)

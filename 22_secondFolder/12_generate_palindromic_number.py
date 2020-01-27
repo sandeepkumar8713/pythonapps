@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/generate-palindromic-numbers-less-n/
 # Question : Find all numbers less than n, which are palindromic. Numbers can be printed in any order.
 #
+# Question Type : Generic
 # Used : Call createPalindrome(inp,isOdd). It would append the inp in reverse to inp itself. If isOdd that means that
 #           we accepting and output of odd length. In such case, ignore the last digit doing by n = n/10, before
 #           appending the reverse of it. After appending return the palindromic value.
@@ -16,12 +17,12 @@ def createPalindrome(inp, isOdd):
     # if odd then neglect the last digit of input in finding reverse as in case of odd number of digits middle element
     # occur once
     if isOdd:
-        n = n / 10
+        n = n // 10
 
     # Creates palindrome by just appending reverse of number to itself
     while n > 0:
         palin = palin * 10 + (n % 10)
-        n = n / 10
+        n = n // 10
     return palin
 
 
@@ -31,7 +32,7 @@ def generatePaldindromes(n):
         i = 1
         palindromicNum = createPalindrome(i, j % 2)
         while palindromicNum < n:
-            print palindromicNum
+            print(palindromicNum)
             palindromicNum = createPalindrome(i, j % 2)
             i = i + 1
 

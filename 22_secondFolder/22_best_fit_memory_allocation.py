@@ -11,6 +11,7 @@
 #  3        112        3
 #  4        426        5
 #
+# Question Type : ShouldSee
 # Used : Maintain a array allocation of size n(process count) with value -1. It stores block ids for the process
 #        Run 2 loops, First one loops over process and second one loops over blocks.
 #           if blockSize[j] >= processSize[i]: if allocation[i] is -1: assign allocation[i] = j.
@@ -40,9 +41,9 @@ def bestFit(blockSize, processSize):
         if allocation[i] != -1:
             blockSize[allocation[i]] -= processSize[i]
 
-    print "Process Size", "Block Id"
+    print("Process Size", "Block Id")
     for i in range(n):
-        print processSize[i], "         ", allocation[i] + 1
+        print(processSize[i], "         ", allocation[i] + 1)
 
 
 if __name__ == "__main__":

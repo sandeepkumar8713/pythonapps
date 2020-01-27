@@ -6,6 +6,7 @@
 # {1, 4, 2, 4, 2, 4, 1, 2, 4, 1, 2, 2, 2, 2, 4, 1, 4, 4, 4}. If 4 is picked as pivot in Simple QuickSort, we fix
 #  only one 4 and recursively process remaining occurrences.
 #
+# Question Type : Generic
 # Used : In partition function. After finding pivot position. Run a loop from 0 to pivotPosition-1 and keep swapping
 #        pivot to middle. Similarly run a loop from pivotPosition+1 to n-1 and keep swapping pivot to middle. Now
 #        partition would return left and right pivot position. Use these two position to do quicksort further.
@@ -67,6 +68,9 @@ def partition(arr, left, right, pivotLeft, pivotRight):
 
 if __name__ == '__main__':
     array = [1, 4, 45, 6, 10, -8]
+    quickSort(array, 0, len(array) - 1)
+    print(array)
+
     array = [4, 9, 4, 4, 1, 9, 4, 4, 9, 4, 4, 1, 4]
     quickSort(array, 0, len(array) - 1)
-    print array
+    print(array)

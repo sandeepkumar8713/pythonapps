@@ -10,6 +10,7 @@
 #     2     |    1, 2            | 3, 4, 3
 #     3     |    1, 3            | 4, 4, 4
 #
+# Question Type : Easy, SimilarAdded
 # Used :  If we took a closer look at each operation as well problem statement we will find that increasing all n-1
 # element except the largest one is similar to decreasing the largest element only. So, the smallest elements need not
 # to decrease any more and rest of elements will got decremented up to smallest one. In this way the total number of
@@ -29,4 +30,4 @@ def minOp(arr):
 
 if __name__ == "__main__":
     arr = [5, 6, 2, 4, 3]
-    print minOp(arr)
+    print(minOp(arr))

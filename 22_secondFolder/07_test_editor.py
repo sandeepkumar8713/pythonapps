@@ -29,6 +29,10 @@
 # :c 2 4 (copy specified line range to clipboard)
 # :p (paste clipboard lines at end of file)
 # :p 7 (paste clipboard lines at the specified line)
+#
+# Question Type : OddOne
+# Used : TODO :: add code
+# Complexity :
 
 import os
 import sys
@@ -110,12 +114,12 @@ def remove(root, start, end):
     secondNode = root
 
     if start != 1:
-        for i in xrange(start - 2):
+        for i in range(start - 2):
             temp = temp.getNextNode()
         firstNode = temp
         secondNode = firstNode.getNextNode()
 
-    for i in xrange(end - start + 1):
+    for i in range(end - start + 1):
         temp = secondNode.getNextNode()
         del secondNode
         lineCount -= 1
@@ -140,9 +144,9 @@ def processCommands(text):
     texts = text.split(' ')
     command = texts[0]
     if command not in commands:
-        print "**** Not a valid command ****"
+        print("**** Not a valid command ****")
     if (currentMode is not 0) and (command not in ['b', 'q']):
-        print "**** Please enter command mode ****"
+        print("**** Please enter command mode ****")
         return
     if command == 'q':
         fp.close()
@@ -163,12 +167,12 @@ def processCommands(text):
         if insertCursor is None:
             return
         currentMode = 1
-        print "**** Now in Insert Mode ****"
+        print("**** Now in Insert Mode ****")
     elif command == 'b':
         # command
         currentMode = 0
         insertCursor = 0
-        print "**** Now in Command Mode ****"
+        print("**** Now in Command Mode ****")
     elif command == 'd':
         # currentMode = 2
         # insertCursor = 0
@@ -179,7 +183,7 @@ def processCommands(text):
         root = remove(root, start, end)
 
     elif command == 'l':
-        print lineCount
+        print(lineCount)
     elif command == 'c':
         start, end = checkRange(texts)
         if start is None:
@@ -188,7 +192,7 @@ def processCommands(text):
 
     elif command == 'p':
         if len(clipBoard) == 0:
-            print "**** Clipboard is empty ****"
+            print("**** Clipboard is empty ****")
             return
         insertCursor = checkInsertRange(texts)
         if insertCursor is None:
@@ -200,7 +204,7 @@ def processCommands(text):
 
 def checkRange(texts):
     if len(texts) == 1:
-        print "**** Please specify range ****"
+        print("**** Please specify range ****")
         return None, None
     start = int(texts[1])
     end = -1
@@ -210,7 +214,7 @@ def checkRange(texts):
         end = start
 
     if start > end or end > lineCount:
-        print "**** Input range is incorrect ****"
+        print("**** Input range is incorrect ****")
         return None,None
 
     return start,end
@@ -220,7 +224,7 @@ def checkInsertRange(texts):
     if len(texts) == 2:
         currorLine = int(texts[1])
         if currorLine > lineCount:
-            print "**** Cannot insert at specified line ****"
+            print("**** Cannot insert at specified line ****")
             return None
         else:
             insertCursor = currorLine
@@ -236,14 +240,14 @@ def copyToClipBoard(root, start, end, mode):
     secondNode = root
 
     if start != 1:
-        for i in xrange(start - 2):
+        for i in range(start - 2):
             temp = temp.getNextNode()
         secondNode = temp.getNextNode()
 
     if mode == 0:
         clipBoard = []
 
-    for i in xrange(end - start + 1):
+    for i in range(end - start + 1):
         if mode == 0:
             clipBoard.append(secondNode.getLine())
         elif mode == 1:
@@ -287,7 +291,7 @@ def processText(line):
 
 if __name__ == "__main__":
     sp.call('clear', shell=True)
-    print "********** Welcome to new text editor **********"
+    print("********** Welcome to new text editor **********")
     root = Node()
     if len(sys.argv) == 2:
         filename = sys.argv[1]
@@ -295,7 +299,7 @@ if __name__ == "__main__":
 
     while True:
         try:
-            line = raw_input()
+            line = input()
             line = line.rstrip(' ')
             if line[0] == ':':
                 processCommands(line[1:])

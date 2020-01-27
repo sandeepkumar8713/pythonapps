@@ -19,6 +19,7 @@
 #               Array after second update becomes
 #               {2, 2, 2, 5, 5}
 #
+# Question Type : Generic
 # Used : Loop over all the input element and update in BIT(Binary Index Tree) Tree
 # updateBIT() : add 1 to i. Loop while i <= n: add val to BITTree[i]. Add 1 to last set bit of i. i += i & (-i)
 # update() :  call updateBIT twice with : updateBIT(BITTree, n, l, val) and updateBIT(BITTree, n, r+1, -val)
@@ -73,7 +74,7 @@ if __name__ == "__main__":
     update(BITTree, l, r, n, val)
 
     index = 3
-    print getElement(BITTree, index)
+    print(getElement(BITTree, index))
 
     l = 3
     r = 4
@@ -81,4 +82,4 @@ if __name__ == "__main__":
     update(BITTree, l, r, n, val)
 
     index = 3
-    print getElement(BITTree, index)
+    print(getElement(BITTree, index))

@@ -11,7 +11,7 @@
 #
 # For memory deallocation (automatic): Mark and sweep or reference counting.
 #
+# Question Type : OddOne
+# Used :
+# Complexity :
 # TODO :: add code
-
-
-

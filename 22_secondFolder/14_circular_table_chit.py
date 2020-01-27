@@ -1,7 +1,7 @@
-# Question : A group of people are seated in a circular table. After a while , each members takes a chit and writes his name along
-# with the next person name (anticlock wise.)   . If such chits are given , re draw the the table. A optimal approach
-# was expected. eg. A - B - C - D - E - A
-# chits will be written as A-B
+# Question : A group of people are seated in a circular table. After a while , each members takes a chit and writes
+# his name along with the next person name (anticlock wise.)   . If such chits are given , re draw the the table.
+# A optimal approach was expected. eg. A - B - C - D - E - A chits will be written as
+# A-B
 # B-C
 # C-D etc
 #
@@ -17,8 +17,10 @@
 #
 # Instead  of stack make 2 dict, one for left to right and right to left (easier to search)
 #
-#  Same questions as above if each member takes a chit and writes his neighbors name . re draw the table.
+# Same questions as above if each member takes a chit and writes his neighbors name . re draw the table.
 # Unless input sequence is maintained it is difficult
 # TODO :: add code
 #
-#
+# Question Type : ShouldSee
+# Used :
+# Complexity :

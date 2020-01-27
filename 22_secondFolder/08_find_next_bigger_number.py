@@ -2,6 +2,7 @@
 # Question : Given a number n, find the smallest number that has same set of digits as n and is greater
 # than n. If x is the greatest possible number with its set of digits, then print "not possible".
 #
+# Question Type : Asked
 # Used : Convert the given number to list.
 #       1) Traverse the given number from rightmost digit, keep traversing till you find a digit which is smaller than
 #        the previously traversed digit. For example, if the input number is "534976", we stop at 4 because 4 is
@@ -23,7 +24,7 @@ def findNext(number, n):
             break
 
     if i == 0:
-        print "Next number not possible"
+        print("Next number not possible")
         return
 
     # Find the smallest digit on the right side of (i-1)'th digit that is greater than number[i-1]
@@ -49,11 +50,11 @@ def findNext(number, n):
     for j in range(n - i):
         x = x * 10 + number[j]
 
-    print "Next number with set of digits is", x
+    print("Next number with set of digits is", x)
 
 
 if __name__ == "__main__":
     digits = "534976"
     # converting into integer array, number becomes [5,3,4,9,7,6]
-    number = map(int, digits)
+    number = list(map(int, digits))
     findNext(number, len(digits))

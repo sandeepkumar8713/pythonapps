@@ -8,6 +8,7 @@
 # a) countX != countO AND
 # b) countX != countO + 1
 #
+# Question Type : ShouldSee
 # Used : Make a list of list of 8 * 3. Which contains wining position.
 #        Count the number of X and O in the board.
 #        Check if xCount == oCount or xCount == oCount + 1: else return False
@@ -71,4 +72,4 @@ if __name__ == "__main__":
     # board = ['X', 'X', 'X',
     #          'O', 'O', 'O',
     #          'X', 'O', 'X']
-    print isValid(board)
+    print(isValid(board))

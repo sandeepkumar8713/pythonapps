@@ -9,6 +9,7 @@
 # Array of Cell Indexes: {(0, 0), (1, 1), (0, 1)}
 # Output:  15, 10, 16
 #
+# Question Type : Easy
 # Used : Calculate sum of matrix, call it sum.
 #        Calculate sum of individual rows and columns. (row[] and col[])
 #        Loop over each element of input matrix : do this
@@ -31,7 +32,7 @@ def printSums(mat, cells):
 
     for cell in cells:
         res = totalSum - rowSum[cell[0]] - colSum[cell[1]] + mat[cell[0]][cell[1]]
-        print res
+        print(res)
 
 
 if __name__ == "__main__":

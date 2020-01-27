@@ -1,6 +1,7 @@
 # https://stackoverflow.com/questions/5484629/check-if-sudoku-solution-is-valid
 # Question : Write code for Sudoku Validator in most optimal time and space complexity.
 #
+# Question Type : Generic
 # Used : Save sum and product of 1 to 9.
 #        Run a loop over each row, col and sub matrix(3*3) to check that there sum and product are equal as above.
 # Complexity : O(n^2)
@@ -53,4 +54,4 @@ if __name__ == "__main__":
            [1, 3, 8, 9, 4, 7, 2, 5, 6],
            [6, 9, 2, 3, 5, 1, 8, 7, 4],
            [7, 4, 5, 2, 8, 6, 3, 1, 9]]
-    print validateBoard(mat)
+    print(validateBoard(mat))

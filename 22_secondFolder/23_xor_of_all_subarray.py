@@ -11,6 +11,7 @@
 # (3^5^2^4) ^ (5^2^4^6) ^
 # (3^5^2^4^6) = 7
 #
+# Question Type : ShouldSee
 # Used : Remember that xor of same values give 0, So even occurrences will cancel out and we only have to care about odd
 #        occurrences. Number at i-th index will have  (i + 1) * (N - i) frequency.
 #        set res = 0
@@ -36,4 +37,4 @@ def getTotalXorOfSubarrayXors(inpArr):
 
 if __name__ == "__main__":
     inpArr = [3, 5, 2, 4, 6]
-    print getTotalXorOfSubarrayXors(inpArr)
+    print(getTotalXorOfSubarrayXors(inpArr))

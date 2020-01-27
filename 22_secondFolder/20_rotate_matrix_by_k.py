@@ -2,6 +2,7 @@
 # Question : Given a matrix of order M*N and a value K, the task is to rotate each ring of the matrix
 # anticlockwise by K elements. If in any ring elements are less than and equal K then don't rotate it.
 #
+# Question Type : Easy
 # Used : Make an auxiliary array temp[] of size M*N.
 #        Start traversing matrix in spiral form and store elements of current ring in temp[] array. While storing the
 #           elements in temp, keep track of starting and ending positions of current ring.
@@ -107,4 +108,4 @@ if __name__ == "__main__":
            [13, 14, 15, 16]]
     printSpiral(mat)
     for row in mat:
-        print row
+        print(row)

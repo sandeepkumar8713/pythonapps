@@ -4,6 +4,8 @@
 #
 # Input: arr[] = {1, 0, 1, 1, 1, 0, 0}
 # Output: 1 to 6 (Starting and Ending indexes of output sub array)
+#
+# Question Type : Generic
 # Used : Convert all 0 to -1
 #        Run a loop, keep adding elements while looping
 #        Keep checking id sum is zero, if true update max len and end index
