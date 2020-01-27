@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/palindrome-pair-in-an-array-of-words-or-strings/
 # Question : Given a list of words, find if any of the two words can be joined to form a palindrome.
 #
+# Question Type : Generic
 # Used : Insert all the words in reverse in trie. Loop over all input string once again. If fully found return true.
 #        If partially found, check if remaining is palindrome. If yes, return true.
 #        We have to maintain unique id for each word in trie. In trie node add a field ids which is a list of id of word
@@ -82,20 +83,20 @@ class Trie:
             index = charToIndex(inpStr[level])
             # If this word in trie ends here and remaining is palindrome
             if temp.isEndOfWord and isPalindrome(inpStr, level, inpStrLen - 1):
-                print inpStr, inpWords[temp.endingWordID]
+                print(inpStr, inpWords[temp.endingWordID])
                 found = True
             if not temp.children[index]:
                 return found
             temp = temp.children[index]
 
         if temp is not None and temp.isEndOfWord:
-            print inpStr, inpWords[temp.endingWordID]
+            print(inpStr, inpWords[temp.endingWordID])
             found = True
 
         # if inpStr is ended and there are letters in this trie after inpStr, which is palindrome
         if temp is not None and len(temp.palindromeIndex.keys()) > 0:
             for wordId in temp.palindromeIndex.keys():
-                print inpStr, inpWords[wordId]
+                print(inpStr, inpWords[wordId])
                 found = True
 
         return found
@@ -110,7 +111,7 @@ def checkPalindromePair(words):
 
     for word in words:
         if not trie.search(word):
-            print "Can't find word that can be appended to:", word
+            print("Can't find word that can be appended to:", word)
 
 
 if __name__ == '__main__':
@@ -119,4 +120,3 @@ if __name__ == '__main__':
     # inpWords = ['eppeednas', 'sande']
     inpWords = ['dnas', 'sandeeppee', 'eppeednas', 'sande']
     checkPalindromePair(inpWords)
-

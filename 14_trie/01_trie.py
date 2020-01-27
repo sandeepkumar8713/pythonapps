@@ -7,6 +7,7 @@
 # mark the last node of every key as end of word node. A Trie node field isEndOfWord is used to distinguish the node
 # as end of word node
 #
+# Question Type : Easy
 # Used : Here node would have two fields: children (list of length 26) and isEndOfWord (marker to tell if word ends)
 #        Define a func charToIndex(ch), it converts given char to integer b/w 0 to 25. To be used as index in children.
 # Insert : Set temp = root and loop over the character in the inpStr. Call charToIndex(ch) to get its index.

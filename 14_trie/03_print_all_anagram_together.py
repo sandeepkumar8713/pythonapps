@@ -3,6 +3,7 @@
 # Question : Given an array of words, print all anagrams together. For example, if the given array is
 # {"cat", "dog", "tac", "god", "act"}, then output may be "cat tac act dog god".
 #
+# Question Type : ShouldSee
 # Used : In trie Node add two fields : children (list of size 26) and wordEndingID (list of id of words ending at this
 #        node)
 #        Loop over the given list of words. Sort the word and insert it in Trie and also insert its id, where the word

@@ -30,6 +30,7 @@
 #  of time, I think it was average I did solved the primary problem but the extension was tough.
 #
 # TODO :: add code
+# Question Type : OddOne
 
 
 

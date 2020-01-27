@@ -15,6 +15,7 @@
 # 'B' has two children, so 2! permutations possible
 # 'F' has no children, so 0! permutations possible#
 #
+# Question Type : ShouldSee
 # Used : Do level order traversal of the n-ary tree. While traversing, calculate the ways by multiplying the factorial
 #        of number of children of each node.
 #        ways *= factorial(len(temp.children))
@@ -69,4 +70,4 @@ if __name__ == "__main__":
     root.children[0].children[0].children.append(Node('M'))
     root.children[3].children[2].children.append(Node('L'))
 
-    print calculateWays(root)
+    print(calculateWays(root))

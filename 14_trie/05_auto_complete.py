@@ -6,6 +6,7 @@
 # For example if the Trie store {"abc", "abcd", "aa", "abbbaba"} and the User types in "ab" then he must be shown
 # {"abc", "abcd", "abbbaba"}.
 #
+# Question Type : Generic
 # Used : Insert all the words in trie.
 #        Search for given query using standard Trie search algorithm.
 #        If query prefix itself is not present, return -1 to indicate the same.
@@ -21,7 +22,7 @@ def charToIndex(ch):
 
 
 def indexToChar(i):
-    return unichr(i + ord('a'))
+    return chr(i + ord('a'))
 
 
 class TrieNode:
@@ -53,7 +54,7 @@ class Trie:
             temp = temp.children[index]
 
         if temp is not None and temp.isEndOfWord:
-            print insStr
+            print(insStr)
             return True
         elif temp is not None:
             searchFullWord(temp, insStr)
@@ -63,7 +64,7 @@ class Trie:
 
 def searchFullWord(root, resStr):
         if root.isEndOfWord is True:
-                print resStr
+                print(resStr)
 
         for i in range(MAX_CHAR):
             if root.children[i] is not None:
@@ -78,12 +79,12 @@ if __name__ == "__main__":
         t.insert(word)
 
     if not t.search("abc"):
-        print "not found"
+        print("not found")
 
     print
     if not t.search("ab"):
-        print "not found"
+        print("not found")
 
-    print
+    print("")
     if not t.search("ss"):
-        print "not found"
+        print("not found")

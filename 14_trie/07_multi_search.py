@@ -6,6 +6,7 @@
 # T = {"is", "ppi", "hi", "sis", "i", "ssippi"}
 # b = "mississippi"
 #
+# Question Type : Generic
 # Used : Insert the words of the array in trie.
 #        Now loop through each character of big word. Find all the words present in trie which start with this character
 #        Save the words and its is location (in big word) in a map.
@@ -50,10 +51,10 @@ class Trie:
         temp.isEndOfWord = True
 
 
-def createTreeFromStrings(smalls, maxSize):
+def createTreeFromStrings(smalls, big):
     trie = Trie()
     for word in smalls:
-        if len(word) < maxSize:
+        if len(word) < len(big):
             trie.insert(word)
     return trie
 
@@ -90,4 +91,4 @@ if __name__ == "__main__":
     big = "mississippi"
     smalls = ["is", "ppi", "hi", "sis", "i", "mississippi"]
     locations = searchAll(big, smalls)
-    print (locations)
+    print(locations)

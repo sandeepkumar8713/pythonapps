@@ -7,6 +7,7 @@
 #         arr[] = {'e','o','b', 'a','m','g', 'l'}
 # Output : go, me, goal.
 #
+# Question Type : Generic
 # Used : Prepare a trie using given words. Make a hash set of input characters.
 #        Call recursive function searchWord(root, hashSet, resStr)
 #           If root isEndOfWord print resStr
@@ -46,7 +47,7 @@ class Trie:
 
 def searchWord(root, hashSet, resStr):
     if root.isEndOfWord is True:
-        print resStr
+        print(resStr)
 
     # I have got the bag of char, traverse the trie to see if a word can be found using this bag
     for char in hashSet:
