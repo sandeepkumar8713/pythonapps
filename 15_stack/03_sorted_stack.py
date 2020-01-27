@@ -5,6 +5,7 @@
 # (such as an array). The stack supports the following operations: push, pop, peek, and is Empty.
 # Question : Given a stack, sort it using recursion.
 #
+# Question Type : Generic
 # Used : Recursion. Pop top element, call sortStack(), then call sortedInsert(poppedElement)
 #        sortedInsert(stack, item):
 #           if stack.isEmpty() or item < stack.peek():
@@ -56,7 +57,7 @@ class Stack:
     def printList(self):
         temp = self.head
         while temp:
-            print (temp.data),
+            print(temp.data, end=" ")
             temp = temp.next
 
     def peek(self):
@@ -88,8 +89,8 @@ if __name__ == "__main__":
     for item in data:
         stack.push(item)
 
-    print ("Before")
+    print("Before")
     stack.printList()
     sortedStack(stack)
-    print ("\nAfter")
+    print("\nAfter")
     stack.printList()

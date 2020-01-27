@@ -6,6 +6,7 @@
 # operations such as enqueue, dequeueAny, dequeueDog, and dequeueCat. You may use the built-in Linkedlist
 # data structure.
 #
+# Question Type : Generic
 # Used : Simply use separate queues for dogs and cats, and to place them within a wrapper class called AnimalQueue.
 #        We then store some sort of timestamp(or ordernumber) to mark when each animal was enqueued. When we call
 #        dequeueAny, we peek at the heads of both the dog and cat queue and return the oldest.

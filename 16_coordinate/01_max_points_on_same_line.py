@@ -9,6 +9,7 @@
 # Then maximum number of point which lie on same
 # line are 4, those point are {0, 0}, {1, 1}, {2, 2}, {3, 3}
 #
+# Question Type : ShouldSee
 # Used : For each point p, calculate its slope with other points and use a map to record how many points have same
 #        slope, by which we can find out how many points are on same line with p as their one point. For each point
 #        keep doing the same thing and update the maximum number of point count found so far. Make sure to keep
@@ -38,7 +39,7 @@ class Point:
         self.y = y
 
     def show(self):
-        print self.x, self.y
+        print(self.x, self.y)
 
 
 # gcd/hcf
@@ -104,4 +105,4 @@ if __name__ == "__main__":
     for item in inpMat:
         points.append(Point(item[0], item[1]))
 
-    print maxPointOnSameLine(points)
+    print(maxPointOnSameLine(points))

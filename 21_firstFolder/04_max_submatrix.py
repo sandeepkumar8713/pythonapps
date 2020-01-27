@@ -12,6 +12,7 @@
 #             max_so_far = max_ending_here
 # return max_so_far
 #
+# Question Type : Generic
 # Used : for all possible combination of columns for start and end, make a temp array containing sum of all the columns
 #         in between for each row. Send that row to Kadane algorithm, which will return the max sum its corresponding
 #         start and end. Compare it with previously saved max value and update accordingly.
@@ -68,9 +69,9 @@ def findMaxSum(M):
                 finalTop = start
                 finalBottom = end
 
-    print ('sum = %s' % maxSum)
-    print ('start = %s,%s' % (finalLeft, finalTop))
-    print ('end = %s,%s' % (finalRight, finalBottom))
+    print('sum = %s' % maxSum)
+    print('start = %s,%s' % (finalLeft, finalTop))
+    print('end = %s,%s' % (finalRight, finalBottom))
 
 # arr = [-2, -3, 4, -1, -2, 1, 5, -3]
 # print kadane(arr)

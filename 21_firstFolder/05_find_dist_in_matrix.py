@@ -14,6 +14,7 @@
 # 2 1 2
 # https://www.geeksforgeeks.org/distance-nearest-cell-1-binary-matrix/
 #
+# Question Type : Generic, SimilarAdded
 # Used : Represent the matrix as 2 way connected graph. Push the nodes which have 0 in the queue. Do BFS and traverse
 #        the graph and keep updating the distance of all the adjacent nodes for the node which has been popped out
 #        of queue.
@@ -73,7 +74,7 @@ class Graph:
             c += 1
 
             if c % self.m == 0:
-                print resStr
+                print(resStr)
                 c = 0
                 resStr = ''
 

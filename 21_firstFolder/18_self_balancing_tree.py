@@ -8,6 +8,7 @@
 # to be invented. In an AVL tree, the heights of the two child subtrees of any node differ by at most one; if
 # at any time they differ by more than one, re-balancing is done to restore this property.
 #
+# Question Type : OddOne
 # Used : AVL algorithm
 # Complexity : insertion : O(log n) deletion : O(log n) , left and right rotate : O(1)
 
@@ -156,10 +157,10 @@ if __name__== "__main__":
     print("Preorder traversal of the", "constructed AVL tree is")
     result = []
     myTree.preOrder(root, result)
-    print result
+    print(result)
 
     root = myTree.deleteElem(root, 10)
     print("Preorder traversal of the", "after deletion")
     result = []
     myTree.preOrder(root, result)
-    print result
+    print(result)

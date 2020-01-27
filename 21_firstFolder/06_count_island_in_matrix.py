@@ -12,6 +12,7 @@
 #                    {1, 0, 1, 0, 1}
 # Output : 5
 #
+# Question Type : Asked
 # Used : Traverse the matrix as DFS till 1 is found and keep marking them as visited. So keep track of non-visited cells
 #        and do DFS again. In doing so keep the count of DFS called. While doing so also keep count of size of each
 #        island, to find max island size.
@@ -55,7 +56,7 @@ class Graph:
         # Initialize count as 0 and traverse through the all cells of given matrix
         count = 0
 
-        maxNodeCount = -sys.maxint
+        maxNodeCount = -sys.maxsize
         for i in range(self.ROW):
             for j in range(self.COL):
                 # If a cell with value 1 is not visited yet,then new island found
@@ -82,4 +83,4 @@ if __name__ == "__main__":
     col = len(mat[0])
     g = Graph(row, col, mat)
     count, maxNodeCount = g.countIslands()
-    print ("Number of islands is and largest island count : " + str(count) + ", " + str(maxNodeCount))
+    print("Number of islands is and largest island count : " + str(count) + ", " + str(maxNodeCount))

@@ -5,6 +5,7 @@
 # an ascending order sorted array at some pivot unknown to you beforehand. So for instance, 1 2 3 4 5 might become
 # 3 4 5 1 2. Devise a way to find an element in the rotated array in O(log n) time.
 #
+# Question Type : Generic
 # Used : check if key is in mid; if not check if left half is sorted if yes recur in left half, if not found in left
 #        half recur in right half
 #        If right half is sorted recur in right half, if not found in right half recur in left half
@@ -42,6 +43,6 @@ if __name__ == "__main__":
 
     i = search(arr, 0, len(arr) - 1, key)
     if i != -1:
-        print ("Index: " + str(i))
+        print("Index: " + str(i))
     else:
-        print ("Key not found")
+        print("Key not found")

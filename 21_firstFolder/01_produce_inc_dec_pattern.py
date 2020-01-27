@@ -4,7 +4,19 @@
 # Inc = N, Dec = M
 # -1 for not possible
 #
-# Used : stack
+# Question Type : ShouldSee
+# Used : use stack, in case of inc pop else push. At end of loop pop everything
+#        Logic :
+#        for i in range(0, len(pattern)+1):
+#           if i < len(pattern) and not(pattern[i] == 'M' or pattern[i] == 'N'):
+#               return '-1'
+#           stk.append(i+1)
+#           if i == len(pattern) or pattern[i] == 'N':
+#               while len(stk) != 0:
+#                   resStr += str(stk.pop())
+#        if len(resStr) == 0:
+#           return '-1'
+#        return resStr
 # Complexity : O(n)
 
 
@@ -26,7 +38,8 @@ def findPossibleSmallestNumberMatchingPattern(pattern):
     return resStr
 
 
-print (findPossibleSmallestNumberMatchingPattern("N"))
-print (findPossibleSmallestNumberMatchingPattern("MNM"))
-print (findPossibleSmallestNumberMatchingPattern("MOM"))
-print (findPossibleSmallestNumberMatchingPattern("M"))
+if __name__ == "__main__":
+    print(findPossibleSmallestNumberMatchingPattern("N"))
+    print(findPossibleSmallestNumberMatchingPattern("MNM"))
+    print(findPossibleSmallestNumberMatchingPattern("MOM"))
+    print(findPossibleSmallestNumberMatchingPattern("M"))

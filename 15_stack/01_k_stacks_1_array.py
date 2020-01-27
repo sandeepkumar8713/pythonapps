@@ -5,6 +5,7 @@
 # push(int x, int sn) : pushes x to stack number 'sn' where sn is from 0 to k-1
 # pop(int sn) : pops an element from stack number 'sn' where sn is from 0 to k-1
 #
+# Question Type : ShouldSee
 # Used : We use top of size k to save index of top element of each stack
 #        We use one extra array next of size n to save index of next element (next[indexOf1] = indexOf2)
 #        We use free variable which points to first available index for insertion

@@ -3,6 +3,7 @@
 # Question : Write a method to convert a number (range : 0 to 9 billion) to a String literal,
 # e.g. sample input : 12345,  sample output : Twelve Thousand Three Hundred Forty Five.
 #
+# Question Type : Easy
 # Used : Take care to represent values between 0-999. After that break the numbers into hundreds, millions and billions.
 #        Now call the above function again.
 # Complexity : O(n)
@@ -67,4 +68,4 @@ if __name__ == "__main__":
     # inpNum = 9999
     # inpNum = 2222222
     # inpNum = 222222222222
-    print (convertBigNumber(inpNum))
+    print(convertBigNumber(inpNum))

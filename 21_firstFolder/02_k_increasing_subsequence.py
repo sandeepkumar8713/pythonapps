@@ -2,13 +2,23 @@
 # sub sequences of length k(k<=n). for eg array is 1 4 6 2 5 & k=3
 # then the answer is :- 1 4 5, 1 2 5,1 4 6
 #
+# Question Type : Generic
 # Used : backtracking
+#        Logic : def subSequenceInc(a, n, k, v, idx):
+#        if len(v) == k:
+#           print(v)
+#           return
+#        for i in range(idx, n):
+#           if len(v) == 0 or a[i] > v[-1]:
+#               v.append(a[i])
+#               subSequenceInc(a, n, k, v, i+1)
+#               v.pop()
 # Complexity : O(n^2)
 
 
 def subSequenceInc(a, n, k, v, idx):
     if len(v) == k:
-        print v
+        print(v)
         return
     for i in range(idx, n):
         if len(v) == 0 or a[i] > v[-1]:
@@ -19,7 +29,7 @@ def subSequenceInc(a, n, k, v, idx):
 
 def subSequenceDec(a, n, k, v, idx):
     if len(v) == k:
-        print v
+        print(v)
         return
     for i in range(idx, n):
         if len(v) == 0 or a[i] < v[-1]:
@@ -33,8 +43,8 @@ if __name__ == "__main__":
     # a = [1,4,6,2,5]
     k = 3
     v = []
-    print ('increasing :')
+    print('increasing :')
     subSequenceInc(a, len(a), k, v, 0)
-    print ('decreasing :')
+    print('decreasing :')
     v = []
     subSequenceDec(a, len(a), k, v, 0)

@@ -4,6 +4,7 @@
 # Given an int array, arrange the elements in increasing decreasing order i.e.
 # one element bigger than a smaller element then bigger and so on.
 #
+# Question Type : ShouldSee
 # Used : Check only even condition for i-1 > i < i + 1; else swap
 # Complexity : O(n)
 
@@ -24,4 +25,4 @@ def sortInWave(arr, n):
 if __name__ == "__main__":
     arr = [10, 90, 49, 2, 1, 5, 23]
     sortInWave(arr, len(arr))
-    print (arr)
+    print(arr)

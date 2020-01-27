@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/sort-a-linked-list-of-0s-1s-or-2s/
 # Question : Given a linked list of 0s, 1s and 2s, sort it.
 #
+# Question Type : Easy, SimilarAdded
 # Used : Traverse the list and count the number of 0s, 1s and 2s. Let the counts be n1, n2 and n3 respectively.
 #        Traverse the list again, fill the first n1 nodes with 0, then n2 nodes with 1 and finally n3 nodes
 #        with 2.
@@ -42,9 +43,9 @@ class LinkedList(object):
     def printList(self):
         temp = self.head
         while temp is not None:
-            print str(temp.data),
+            print(str(temp.data),end=" ")
             temp = temp.next
-        print ''
+        print('')
 
 
 if __name__ == "__main__":
@@ -60,8 +61,8 @@ if __name__ == "__main__":
     lList.push(1)
     lList.push(2)
 
-    print "Linked List before sorting :"
+    print("Linked List before sorting :")
     lList.printList()
     lList.sortList()
-    print "Linked List after sorting :"
+    print("Linked List after sorting :")
     lList.printList()

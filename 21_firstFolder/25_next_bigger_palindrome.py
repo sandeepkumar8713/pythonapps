@@ -3,6 +3,7 @@
 # input number is "2 3 5 4 5", the output should be "2 3 6 3 2". And if the input number is "9 9 9", the output
 # should be "1 0 0 1".
 #
+# Question Type : Generic
 # Used : If all the digits in number are 9. return 100001
 #        Else call function generateNextPalindromeUtils(num).
 #        In this function place i just before mid and j after mid. If n is odd, ignore mid
@@ -19,7 +20,7 @@
 
 def generateNextPalindromeUtils(num):
     n = len(num)
-    mid = n/2
+    mid = n // 2
     leftSmaller = False
     i = mid - 1
     if n % 2 == 1:
@@ -79,10 +80,10 @@ def generateNextPalindrome(num):
         num = [0] * (len(num) + 1)
         num[0] = 1
         num[-1] = 1
-        print num
+        print(num)
     else:
         generateNextPalindromeUtils(num)
-        print num
+        print(num)
 
 
 if __name__ == "__main__":

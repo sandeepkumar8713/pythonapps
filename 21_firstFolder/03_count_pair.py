@@ -8,6 +8,7 @@
 #           sum = 6
 # Output :  2
 #
+# Question Type : Easy, SimilarAdded
 # Used : map, subtract each value from sum and see if it is present
 # Complexity : O(n)
 
@@ -22,7 +23,7 @@ def getPairsCount(arr,sum):
     twice_count = 0
     for i in range(0, len(arr)):
         if sum-arr[i] in map:
-            print arr[i], sum-arr[i]
+            print(arr[i], sum-arr[i])
             twice_count += map[sum-arr[i]]
         # ignore same value
         if sum-arr[i] == arr[i]:

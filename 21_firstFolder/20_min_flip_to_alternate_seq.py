@@ -8,6 +8,7 @@
 # Minimum number of flips required = 2
 # We can flip 2nd bit from 0 to 1 and 9th bit from 1 to 0 to make alternate string "0101010101"
 #
+# Question Type : Easy
 # Used : Count number of flips required if start with 0 and start with 1. Choose minimum of the two.
 # Complexity : O(n)
 
@@ -31,4 +32,4 @@ def getFlipCount(inpStr,expected):
 
 if __name__ == "__main__":
     inpStr = "0001010111"
-    print "flip count:",min(getFlipCount(inpStr, '0'), getFlipCount(inpStr, '1'))
+    print("flip count:", min(getFlipCount(inpStr, '0'), getFlipCount(inpStr, '1')))

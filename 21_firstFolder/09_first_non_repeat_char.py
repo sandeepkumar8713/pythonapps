@@ -2,6 +2,7 @@
 # Question : Given a string, find the first non-repeating character in it. For example, if the input string is
 # "GeeksforGeeks", then output should be 'f'
 #
+# Question Type : Easy, SimilarAdded
 # Used : Used a map to store each character as key and count & index as its value. Loop again to find the first
 #        character with count 1 and return
 # Complexity : O(n)
@@ -28,4 +29,4 @@ def firstNonRepeat(inpStr):
 
 if __name__ == "__main__":
     inpStr = "geeksforgeeks"
-    print 'First non repeating character =', firstNonRepeat(inpStr)
+    print('First non repeating character =', firstNonRepeat(inpStr))

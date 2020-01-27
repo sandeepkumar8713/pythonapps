@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/count-number-of-occurrences-or-frequency-in-a-sorted-array/
 # Question : Given a sorted array arr[] and a number x, write a function that counts the occurrences of x in arr[].
 #
+# Question Type : Generic
 # Used : Use Binary search to get index of the first occurrence of x in arr. Let the index of the first occurrence be i.
 #        Use Binary search to get index of the last occurrence of x in arr[]. Let the index of the last occurrence be j.
 #        return j - i + 1
@@ -46,4 +47,4 @@ if __name__ == "__main__":
     x = 3
     n = len(arr)
     c = freqCount(arr, x, n)
-    print "frequency :", c
+    print("frequency :", c)

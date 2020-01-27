@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/given-a-binary-tree-print-all-root-to-leaf-paths/
 # Question : Given a binary tree, print all root-to-leaf paths.
 #
+# Question Type : Easy
 # Used : Do pre-order traversal of binary tree and keep pushing elements in the stack. When leaf node is found print
 #        the stack.
 # Complexity : O(n)
@@ -20,7 +21,7 @@ def printPaths(root,path):
         return
 
     if root.left is None and root.right is None:
-        print path
+        print(path)
 
     printPaths(root.left, path)
     printPaths(root.right, path)

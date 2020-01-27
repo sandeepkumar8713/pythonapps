@@ -9,7 +9,10 @@
 # Output : 19
 # Thief will steal 6, 1, 8 and 4 from house.
 #
+# Question Type : Generic
 # Used : Dynamic programming
+#        dp[0] = inp[0]
+#        dp[1] = max(inp[0], inp[1])
 #        dp[i] = max(inp[i]+dp[i-2],dp[i])
 # Complexity : O(n)
 
@@ -36,4 +39,4 @@ if __name__ == "__main__":
     inpArr = [6, 7, 1, 3, 8, 2, 4]
     # inpArr = [30, 15, 60, 75, 45, 15, 15, 45]
     n = len(inpArr)
-    print (maximizeLoot(inpArr, n))
+    print(maximizeLoot(inpArr, n))

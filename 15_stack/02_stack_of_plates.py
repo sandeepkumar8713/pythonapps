@@ -7,6 +7,7 @@
 # to a single stack (that is, pop () should return the same values as it would if there were just a single stack).
 # Implement a function popAt(int index) which performs a pop operation on a specific sub-stack
 #
+# Question Type : ShouldSee
 # Used : Make a class of members : capacity and stacks. where capacity is max size of each sub stack and stacks is a
 #        list of lists.
 #        Push : Find the last list from stack and append data in it. If it is already filled,
@@ -50,7 +51,7 @@ class SetOfStacks:
     def pop(self):
         subtack = self.getLastStack()
         if subtack is None:
-            print "Stack empty"
+            print("Stack empty")
             return
         subtack.pop(-1)
         if len(subtack) == 0:
@@ -58,7 +59,7 @@ class SetOfStacks:
 
     def printAll(self):
         for substack in self.stacks:
-            print substack
+            print(substack)
 
     def popAt(self, index):
         subStackIndex = index // self.capacity

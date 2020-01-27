@@ -4,5 +4,8 @@
 # linked list got linked to the second list, forming an inverted Y shaped list. Write a program to get the point
 # where two linked list merge.
 #
-# TODO :: check if already added
-#
+# TODO :: add code
+# Question Type : Easy
+# Used : count m and n. start from (m-n) in bigger list. Loop and after each iteration check if
+#        left.next == right.next.
+# Complexity : O(n)

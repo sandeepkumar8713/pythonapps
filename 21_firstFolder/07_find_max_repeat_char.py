@@ -7,6 +7,7 @@
 # Input : str = "aaaabbcbbb"
 # Output : a
 #
+# Question Type : Easy
 # Used : Running counter is used since the input string is sorted.
 # Complexity : O(n)
 
@@ -29,4 +30,4 @@ def maxRepeating(inpStr):
 
 if __name__ == "__main__":
     inpStr = "aaaabbaaccde"
-    print "most repeating character :", maxRepeating(inpStr)
+    print("most repeating character :", maxRepeating(inpStr))
