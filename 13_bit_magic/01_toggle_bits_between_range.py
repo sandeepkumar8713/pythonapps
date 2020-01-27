@@ -9,6 +9,7 @@
 # The bits in the range 2 to 3 in the binary
 # representation of 17 are toggled
 #
+# Question Type : Generic
 # XOR: 0 XOR 0 = 0, 0 XOR 1 = 1, 1 XOR 0 = 1 and 1 XOR 1 = 0. For toggle do XOR with 1.
 # Used : Calculate num = ((1 << r) - 1) ^ ((1 << (l-1)) - 1). This will produce a number num having r number of bits
 #        and bits in the range l to r are the only set bits.
@@ -19,8 +20,8 @@
 def toggleBitsFromLToR(n,l,r):
     # ^ = XOR
     num = ((1 << r) - 1) ^ ((1 << (l - 1)) - 1)
-    print ("N : " + bin(n))
-    print ("mask : " + bin(num))
+    print("N : " + bin(n))
+    print("mask : " + bin(num))
     return n ^ num
 
 
@@ -29,6 +30,5 @@ if __name__ == "__main__":
     l = 2
     r = 5
     result = toggleBitsFromLToR(n, l, r)
-    print ("result : " + bin(result))
-    print result
-
+    print("result : " + bin(result))
+    print(result)

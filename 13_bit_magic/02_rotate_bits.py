@@ -3,6 +3,7 @@
 # In left rotation, the bits that fall off at left end are put back at right end.
 # In right rotation, the bits that fall off at right end are put back at left end.
 #
+# Question Type : Easy
 # Used : For right rotate, A = right shift n by d, B = (left shift n by (32 - d)) & 0xFFFFFFFF. Ans = A | B
 #        For left rotate, A = (left shift n by d) & 0xFFFFFFFF, B = right shift n by (32 - d). Ans = A | B
 # Complexity : O(1)

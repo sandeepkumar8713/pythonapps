@@ -4,6 +4,7 @@
 # the * operator (or / operator). You can use addition, subtraction, and bit shifting, but you should
 # minimize the number of those operations.
 #
+# Question Type : ShouldSee
 # Used :  The idea is to double the first number and halve the second number repeatedly till the second number
 #         doesn't become 1. In the process, whenever the second number become odd, we add the first number to
 #         result (result is initialized as 0). The value of a*b is same as (a*2)*(b/2) if b is even, otherwise

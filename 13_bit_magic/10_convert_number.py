@@ -6,6 +6,7 @@
 # Input: 29 (or: 11101), 15 (or: 01111)
 # Output: 2
 #
+# Question Type : Easy
 # Used : Each 1 in the XOR represents a bit that is different between A and B. Therefore, to check the number of bits
 # that are different between A and B, we simply need to count the number of bits in A A B that are 1.
 # Complexity : O(1)
@@ -17,9 +18,9 @@
 def bitSwapRequired(a, b):
     count = 0
     c = a ^ b  # XOR
-    print bin(a)
-    print bin(b)
-    print bin(c)
+    print(bin(a))
+    print(bin(b))
+    print(bin(c))
     binary = bin(c)
 
     # now separate out all 1's from binary string, we need to skip starting two characters

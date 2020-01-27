@@ -3,6 +3,7 @@
 # array may have duplicate entries and you do not know what N is. With only 4 kilobytes of memory
 # available, how would you print all duplicate elements in the array?
 #
+# Question Type : Easy
 # Used : We have to use compact memory. make use of bit vector. 1 int have 32 bits. If there are 32000 integers,
 #        we can use 1000 integers to make a bit map where each bit represents if a number is present.
 #        Make a class which has array of 1000 elements. It should have set and get function.

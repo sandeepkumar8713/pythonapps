@@ -6,6 +6,7 @@
 # it takes seven days to return a result. How would you figure out the poisoned bottle in as few days
 # as possible? Write code to simulate your approach.
 #
+# Question Type : ShouldSee
 # Used : We can take each bottle number and look at its binary representation. If there's a 1 in the ith digit, then
 #        we will add a drop of this bottle's contents to test strip i. We wait seven days, and then read the results.
 #        If test strip i is positive, then set bit i of the result value. So each the strips would set 1 or 0 in the

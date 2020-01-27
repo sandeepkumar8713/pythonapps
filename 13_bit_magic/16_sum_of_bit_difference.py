@@ -14,6 +14,7 @@
 #                           1 + 2 + 0
 #                        = 8
 #
+# Question Type : ShouldSee
 # Used : The idea is to count differences at individual bit positions. We traverse from 0 to 31 and count numbers
 # with i'th bit set. Let this count be 'count'. There would be "n-count" numbers with i'th bit not set. So count of
 # differences at i'th bit would be "count * (n-count) * 2", the reason for this formula is as every pair having one

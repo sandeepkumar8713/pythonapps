@@ -9,6 +9,7 @@
 # Input: N = 10000000001, M = 10011, i = 2, j = 6
 # Output : 10001001101
 #
+# Question Type : Generic
 # Used : Clear the bits j through i in N using a mask
 #        Shift M so that it lines up with bits j through i
 #        Merge M and N.

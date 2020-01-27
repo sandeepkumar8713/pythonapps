@@ -7,6 +7,7 @@
 # Output : 2
 # Binary representation of 6 is 110 and has 2 set bits
 #
+# Question Type : Easy
 # Used : we subtract a number by 1 and do bitwise & with itself (n & (n-1)), we unset the rightmost set bit.
 #        If we do n & (n-1) in a loop and count the no of times loop executes we get the set bit count.
 # Complexity : O(n)

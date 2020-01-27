@@ -7,8 +7,18 @@
 # bit as 32. Reverse of 0....001 is
 # 100....0.
 #
+# Question Type : Easy
 # Used : The idea is to keep putting set bits of the num in reverse_num until num becomes zero. After num becomes zero,
 #        shift the remaining bits of reverse_num.
+#        Logic :
+#        reverseNum = 0
+#        while num != 0:
+#           reverseNum |= num & 1
+#           num >>= 1
+#           count -= 1
+#           reverseNum <<= 1
+#        reverseNum <<= count
+#        return reverseNum
 # Complexity : O(n)
 
 
@@ -31,4 +41,4 @@ def reverseBits(num):
 if __name__ == "__main__":
     x = 1
     # x = 2147483648
-    print reverseBits(x)
+    print(reverseBits(x))

@@ -10,6 +10,7 @@
 # Input : n = 32
 # Output : 32
 #
+# Question Type : Easy
 # Used : Take p = log of n and return pow(2, p)
 # Complexity : O(1)
 
@@ -25,4 +26,4 @@ def highestPowerOf2(n):
 if __name__ == "__main__":
     n = 10
     n = 1164
-    print highestPowerOf2(n)
+    print(highestPowerOf2(n))
