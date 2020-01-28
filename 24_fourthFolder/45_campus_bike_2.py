@@ -8,6 +8,7 @@
 # All worker and bike locations are distinct.
 # 1 <= workers.length <= bikes.length <= 10
 #
+# Question Type : Generic
 # Used : The naive method is that we try all the possible combinations using backtracking, but apparently we
 #        re-calculate a lot of sub-states. In order to better see this, let us consider two cases. One is that we
 #        let worker 1 choose bike 1, and worker 2 pick bike 2, then the rest workers choose the rest bikes
@@ -54,7 +55,7 @@ def dfs(i, workers, workersState, bikes, bikesState, dp):
     if dp[workersState][bikesState] != -1:
         return dp[workersState][bikesState]
 
-    minDis = sys.maxint
+    minDis = sys.maxsize
     for j in range(len(bikes)):     # try all the bikes
         if (bikesState >> j) & 1:   # if the bike is used;
             continue
@@ -70,8 +71,8 @@ def dfs(i, workers, workersState, bikes, bikesState, dp):
 if __name__ == "__main__":
     workers = [[0, 0], [2, 1]]
     bikes = [[1, 2], [3, 3]]
+    print(minManhattanDist(workers, bikes))
 
-    # workers = [[0, 0], [1, 1], [2, 0]]
-    # bikes = [[1, 0], [2, 2], [2, 1]]
-
-    print minManhattanDist(workers, bikes)
+    workers = [[0, 0], [1, 1], [2, 0]]
+    bikes = [[1, 0], [2, 2], [2, 1]]
+    print(minManhattanDist(workers, bikes))

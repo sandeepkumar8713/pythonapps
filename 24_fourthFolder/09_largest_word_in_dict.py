@@ -8,6 +8,7 @@
 #          str = "geeksforgeeks"
 # Output : geeksgeeks
 #
+# Question Type : Generic
 # Used : We traverse all dictionary words and for every word, we check if it is sub sequence
 #        of given string and is largest of all such words. We finally return the longest word with given string
 #        as sub sequence.

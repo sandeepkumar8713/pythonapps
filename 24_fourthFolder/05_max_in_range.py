@@ -4,6 +4,7 @@
 #
 # Used : Make a segment tree of nodes, with min and max
 #        Now find min, max for given range
+#        Logic :
 #        MinMaxUtils(segmentTree, currentStart, currentEnd, queryStart, queryEnd, index):
 #           if queryStart <= currentStart and currentEnd <= queryEnd: return segmentTree.nodeList[index]
 #           temp = Node()
@@ -17,6 +18,20 @@
 #           temp.minimum = min(left.minimum, right.minimum)
 #           temp.maximum = max(left.maximum, right.maximum)
 #           return temp
+#        def constructUtil(self, inpArr, startIndex, endIndex, index):
+#           if startIndex == endIndex:
+#               self.nodeList[index].minimum = inpArr[startIndex]
+#               self.nodeList[index].maximum = inpArr[startIndex]
+#               return
+#           midIndex = getMid(startIndex, endIndex)
+#           leftChildIndex = index * 2 + 1
+#           rightChildIndex = index * 2 + 2
+#           self.constructUtil(inpArr, startIndex, midIndex, leftChildIndex)
+#           self.constructUtil(inpArr, midIndex + 1, endIndex, rightChildIndex)
+#           self.nodeList[index].minimum = min(self.nodeList[leftChildIndex].minimum,
+#               self.nodeList[rightChildIndex].minimum)
+#           self.nodeList[index].maximum = max(self.nodeList[leftChildIndex].maximum,
+#               self.nodeList[rightChildIndex].maximum)
 # Complexity : Tree construction O(n) Search O(log n)
 
 import math
@@ -24,7 +39,7 @@ import sys
 
 
 def getMid(startIndex, endIndex):
-    return startIndex + (endIndex - startIndex)/2
+    return startIndex + (endIndex - startIndex) // 2
 
 
 class Node:
@@ -71,8 +86,8 @@ def MinMaxUtils(segmentTree, currentStart, currentEnd, queryStart, queryEnd, ind
         temp = Node()
         # no overlap
         if currentEnd < queryStart or queryEnd < currentStart:
-            temp.minimum = sys.maxint
-            temp.maximum = -sys.maxint
+            temp.minimum = sys.maxsize
+            temp.maximum = -sys.maxsize
             return temp
 
         midIndex = getMid(currentStart, currentEnd)
@@ -98,4 +113,4 @@ if __name__ == "__main__":
     rangeList = [[0, 4], [3, 7], [1, 6], [2, 5], [0, 8]]
     for item in rangeList:
         resNode = MinMax(segmentTree, len(inpArr), item[0], item[1])
-        print ("Range %s %s : Min %s Max %s" % (item[0], item[1], resNode.minimum, resNode.maximum))
+        print("Range %s %s : Min %s Max %s" % (item[0], item[1], resNode.minimum, resNode.maximum))

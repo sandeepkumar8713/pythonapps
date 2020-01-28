@@ -12,6 +12,7 @@
 # Output: -1
 # Explanation: We can't reach the target (or even the first gas station).
 #
+# Question Type : Generic
 # Used : When driving past a gas station, let's remember the amount of fuel it contained. We don't need to
 #        decide yet whether to fuel up here or not - for example, there could be a bigger gas station up ahead
 #        that we would rather refuel at. When we run out of fuel before reaching the next station, we'll
@@ -56,4 +57,4 @@ if __name__ == "__main__":
     target = 100
     startFuel = 1
     stations = [[10, 100]]
-    print minRefuelStops(target, startFuel, stations)
+    print(minRefuelStops(target, startFuel, stations))

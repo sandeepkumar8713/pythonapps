@@ -9,6 +9,7 @@
 # k = 5
 # return [9, 8, 6, 5, 3]
 #
+# Question Type : ShouldSee
 # Used : First find out the maximum number for each array, and then merge it into a global maximal one.
 #        Run a loop from i : 0 to k
 #           choose max elements from array1 of size i and from array2 of size k - i
@@ -80,7 +81,7 @@ def findMax(inpArr, k):
             result[length] = inpArr[i]
             length += 1
 
-    print result
+    print(result)
     return result
 
 
@@ -109,4 +110,4 @@ if __name__ == "__main__":
 
     #inpArr1 = [6, 7]
     #inpArr2 = [6, 0, 4]
-    print maxNumber(inpArr1, inpArr2, 5)
+    print(maxNumber(inpArr1, inpArr2, 5))

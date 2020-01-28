@@ -10,6 +10,7 @@
 # Output: 5
 # Explanation: You can allocate to the first, second and third child with 2, 1, 2 candies respectively.
 #
+# Question Type : Easy
 # Used : Initially give 1 candy to each child. Make left and right loop, and increase candy count if neighbours have
 #        higher rating.
 #        Logic :
@@ -38,4 +39,4 @@ def minCandy(ratings):
 if __name__ == "__main__":
     # ratings = [1, 0, 2]
     ratings = [1, 2, 2]
-    print minCandy(ratings)
+    print(minCandy(ratings))

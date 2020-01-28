@@ -7,12 +7,37 @@
 # Example : Input: [4,6,15,35]
 # Output: 4
 #
+# Question Type : Generic
 # Used : We are using union and find concept. Run a loop over each element in input array. Find all its
 #        factors and make union from the element to all its factors.
 #        Now run a loop again, find root of each element from union. For connected components all the elements will
 #        have same root. So keep the freq of root. Root with max freq is the answer.
 #        Suppose elements are 15 and 35, then there uf will be : 35 -> 5 -> 7 and 15 -> 3 -> 5 -> 7. So both will have
 #        7 as root.
+#        Logic : def largestComponentSize(inpArr):
+#        if inpArr is None or len(inpArr) == 0:
+#           return 0
+#        maxEle = max(inpArr)
+#        uf = [0] * (maxEle + 1)
+#        for i in range(len(uf)): uf[i] = i
+#        for i in range(len(inpArr)):
+#           j = 2
+#           while j <= math.sqrt(inpArr[i]):
+#               if inpArr[i] % j == 0:
+#                   union(inpArr[i], j, uf)
+#                   union(inpArr[i], inpArr[i] // j, uf)
+#               j += 1
+#        map = dict(), res = 1
+#        for i in range(len(inpArr)):
+#           root = find(inpArr[i], uf)
+#           if root in map.keys():
+#               curr = map[root]
+#           else:
+#               curr = 0
+#           curr += 1
+#           map[root] = curr
+#           res = max(res, curr)
+#        return res
 # Complexity : O(n * sqrt(max))
 
 import math
@@ -44,7 +69,7 @@ def largestComponentSize(inpArr):
         while j <= math.sqrt(inpArr[i]):
             if inpArr[i] % j == 0:
                 union(inpArr[i], j, uf)
-                union(inpArr[i], inpArr[i] / j, uf)
+                union(inpArr[i], inpArr[i] // j, uf)
             j += 1
 
     map = dict()
@@ -64,4 +89,4 @@ def largestComponentSize(inpArr):
 
 if __name__ == "__main__":
     inpArr = [4, 6, 15, 35]
-    print largestComponentSize(inpArr)
+    print(largestComponentSize(inpArr))

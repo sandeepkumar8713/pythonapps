@@ -6,6 +6,7 @@
 # iv) setAllFalse()
 # v) getValue(index)
 #
+# Question Type : Easy
 # Used : Make 2 sets, 1 of true and 1 of false.
 #        When setTrue and setFalse is called insert index into True or False set
 #        When setAllTrue and setAllFalse is called, move the shorter set elements in larger set, and interchange the

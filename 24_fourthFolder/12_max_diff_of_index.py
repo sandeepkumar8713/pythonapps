@@ -5,6 +5,7 @@
 # Input: {34, 8, 10, 3, 2, 80, 30, 33, 1}
 # Output: 6  (j = 7, i = 1)
 #
+# Question Type : Generic
 # Used : Compute leftMin array, i.e. minimum array that starts from 0.
 #        Compute rightMin array, i.e. maximum array that starts from n-1.
 #        Run loop over these two array to find max difference of j-i
@@ -45,4 +46,4 @@ if __name__ == '__main__':
     arr = [9, 2, 3, 4, 5, 6, 7, 8, 18, 0]
     n = len(arr)
     maxDiff = maxIndexDiff(arr, n)
-    print (maxDiff)
+    print(maxDiff)

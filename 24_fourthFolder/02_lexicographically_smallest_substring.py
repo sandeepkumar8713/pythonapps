@@ -4,6 +4,7 @@
 # Lexicography order, also called as alphabetical order or dictionary order
 # A < B <... < Y < Z < a < b <.. < y < z
 #
+# Question Type : ShouldSee
 # Used : Make a running window of size k and make corresponding sub string.
 #           Compare it with min sub string and update if required.
 #     currStr = inpStr[:k]

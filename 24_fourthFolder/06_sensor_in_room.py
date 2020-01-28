@@ -36,7 +36,7 @@ def union(i, j, ids):
 
 
 def find(i, ids):
-    while (i != ids[i]):
+    while i != ids[i]:
         ids[i] = ids[ids[i]]
         i = ids[i]
     return i
@@ -44,7 +44,9 @@ def find(i, ids):
 
 # Assume all sensors are within a room, the actual width of the room does not matter.
 def canGoFromLeftToRight(roomHeight, sensors, r):
-    ids = range(len(sensors))
+    ids = []
+    for i in range(len(sensors)):
+        ids.append(i)
 
     top = []
     bottom = []
@@ -59,21 +61,21 @@ def canGoFromLeftToRight(roomHeight, sensors, r):
 
     # unite all sensors overlapping the top
     for i,j in zip(top, top[1:]):
-        union(j,i, ids)
+        union(j, i, ids)
 
     # unite all sensors overlapping the bottom
     for i,j in zip(bottom, bottom[1:]):
-        union(i,j, ids)
+        union(i, j, ids)
 
     # unite all sensors overlapping each other
     for i,[x,y] in enumerate(sensors):
-        for I,[X,Y] in enumerate(sensors[i+1:],i+1):
+        for I,[X,Y] in enumerate(sensors[i+1:], i+1):
             if (X-x)*(X-x) + (Y-y)*(Y-y) <= 4*r*r:
-                union(i,I, ids)
+                union(i, I, ids)
 
     return find(top[0], ids) != find(bottom[0], ids)
 
 
 if __name__ == "__main__":
-    print canGoFromLeftToRight(1, [(0,0),(0.5,0.2),(0.7,0.4),(0.6,0.6),(1,1)], 0.5) # False
-    print canGoFromLeftToRight(1, [(0,0),(0.5,0.2),(0.7,0.4),(1,1)], 0.5) # True
+    print(canGoFromLeftToRight(1, [(0,0),(0.5,0.2),(0.7,0.4),(0.6,0.6),(1,1)], 0.5))  # False
+    print(canGoFromLeftToRight(1, [(0,0),(0.5,0.2),(0.7,0.4),(1,1)], 0.3))  # True

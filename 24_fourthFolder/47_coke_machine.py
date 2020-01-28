@@ -7,6 +7,7 @@
 # Output: false
 # Explanation: if we press first button it might give us 120 volume of coke, not in the target range.
 #
+# Question Type : ShouldSee
 # Used : We do dfs, we pick each button, press it, then call dfs again, recursively until we hit target.
 #        Logic : def coke_machine(buttons, target, cur_sum=None, memo=None):
 #        if memo is None: memo = set()
@@ -53,16 +54,16 @@ def cokeMachine(buttons, target, cur_sum=None, memo=None):
 if __name__ == "__main__":
     buttons = [[100, 120], [200, 240], [400, 410]]
     target = [100, 110]
-    print cokeMachine(buttons, target)
+    print(cokeMachine(buttons, target))
 
     buttons = [[100, 120], [200, 240], [400, 410]]
     target = [90, 120]
-    print cokeMachine(buttons, target)
+    print(cokeMachine(buttons, target))
 
     buttons = [[100, 120], [200, 240], [400, 410]]
     target = [300, 360]
-    print cokeMachine(buttons, target)
+    print(cokeMachine(buttons, target))
 
     buttons = [[100, 120], [200, 240], [400, 410]]
     target = [310, 360]
-    print cokeMachine(buttons, target)
+    print(cokeMachine(buttons, target))

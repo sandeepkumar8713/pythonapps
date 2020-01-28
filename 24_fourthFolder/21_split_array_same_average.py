@@ -10,6 +10,7 @@
 # [1,2,3,4,5,6,7,8]
 # Output: true
 #
+# Question Type : ShouldSee
 # Used : Make a array of size sum. Bit n of dp[s] tells me whether it's possible to build a subset of size
 #        n with sum s
 #        p = [1] * (totalSum + 1)
@@ -39,7 +40,7 @@ def splitArraySameAverage(inpArr):
             remainderSum -= 1
     i = 1
     while i < n:
-        if (totalSum * i) % n == 0 and p[(totalSum * i) / n] & 1 << i:
+        if (totalSum * i) % n == 0 and p[(totalSum * i) // n] & 1 << i:
             return True
         i += 1
     return False
@@ -63,11 +64,11 @@ def test(inpArr):
         A = inpArr[pair[0]] + inpArr[pair[1]]
         B = totalSum - A
         if A / 2 == B / 6:
-            print pair
+            print(pair)
 
 
 if __name__ == "__main__":
     inpArr = [1, 2, 3, 4, 5, 6, 7, 8]
     #inpArr = [7,8]
-    print splitArraySameAverage(inpArr)
+    print(splitArraySameAverage(inpArr))
     test(inpArr)

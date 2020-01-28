@@ -7,6 +7,7 @@
 # Example : Input: [2,2,3,2]
 # Output: 3
 #
+# Question Type : Easy
 # Used : Make a set of given inpArr. Sum it and multiply by 3. Subtract it with sum of inpArr. We will get the twice of
 #        missing number.
 #        Logic :
@@ -25,4 +26,4 @@ def findSingleNumber(inpArr):
 if __name__ == "__main__":
     # inpArr = [2, 2, 3, 2]
     inpArr = [0, 1, 0, 1, 0, 1, 99]
-    print findSingleNumber(inpArr)
+    print(findSingleNumber(inpArr))

@@ -10,6 +10,7 @@
 # Output: 1
 # Explanation: If you place a black stone on (2, 5) then you capture 1 white stone from the enemy.
 #
+# Question Type : Generic
 # Used : Do BFS, from the adjacent nodes of the given node. Also keep a set of visited whites. While doing BFS, push
 #        only white enemy in nodes, skip the node if it is already visited or black and break BFS if any empty slot
 #        is found. Keep increasing count of white enemy found.
@@ -107,5 +108,5 @@ if __name__ == "__main__":
 
     row = 2
     col = 5
-    print max_capture(board, row, col)
+    print(max_capture(board, row, col))
 

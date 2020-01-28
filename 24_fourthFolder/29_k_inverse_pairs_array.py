@@ -8,6 +8,7 @@
 # Output: 1
 # Explanation: Only the array [1,2,3] which consists of numbers from 1 to 3 has exactly 0 inverse pair.
 #
+# Question Type : ShouldSee
 # Used : count(n,k) = summation 0 : min(k, n-1) of count(n-1,k-i)
 #        Logic :
 #        dp[][] = [0]
@@ -67,6 +68,4 @@ if __name__ == "__main__":
 
     n = 3
     k = 1
-    print kInversePairs(n, k)
-
-
+    print(kInversePairs(n, k))

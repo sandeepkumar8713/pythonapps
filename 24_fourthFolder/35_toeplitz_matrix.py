@@ -11,6 +11,7 @@
 #   [9,5,1,2]]
 # Output: True
 #
+# Question Type : ShouldSee
 # Used : We ask what feature makes two coordinates (r1, c1) and (r2, c2) belong to the same diagonal?
 #        It turns out two coordinates are on the same diagonal if and only if r1 - c1 == r2 - c2.
 #        This leads to the following idea: remember the value of that diagonal as groups[r-c]. If we see a mismatch,
@@ -45,4 +46,4 @@ if __name__ == "__main__":
     inpMat = [[1, 2, 3, 4],
               [5, 1, 2, 3],
               [9, 5, 1, 2]]
-    print isToeplitzMatrix(inpMat)
+    print(isToeplitzMatrix(inpMat))

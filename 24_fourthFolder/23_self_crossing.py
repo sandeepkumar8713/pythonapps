@@ -12,6 +12,7 @@
 #
 # Return true (self crossing)
 #
+# Question Type : ShouldSee
 # Used : The problem is tricky to solve. There are in total three cases to consider if there is no cross
 #        1. Only have internal squirrels. In this case, the length of each step should go smaller and smaller.
 #           So we only need to check if x[i] < x[i - 2].
@@ -63,4 +64,4 @@ def isSelfCrossing(inpArr):
 if __name__ == "__main__":
     inpArr = [2, 1, 1, 2]
     # inpArr = [2, 1, 5, 2]
-    print isSelfCrossing(inpArr)
+    print(isSelfCrossing(inpArr))

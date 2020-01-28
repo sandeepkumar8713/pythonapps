@@ -5,6 +5,7 @@
 # overlap with each other, so they should be merged and become {1, 4}. Similarly {5, 7} and {6, 8} should be
 # merged and become {5, 8}
 #
+# Question Type : Generic
 # Used : Make a class Interval of field start and end. Make a sorted list of intervals based on start time.
 #        Loop over sorted list, if start of index-1 is less than end of index, then merge it by setting max and min of
 #        start and end.
@@ -18,6 +19,8 @@
 #               sortedL[index] = sortedL[i]
 #           index += 1
 # Complexity : O(n log n)
+
+import functools
 
 
 class Interval:
@@ -36,11 +39,11 @@ def compare(A, B):
 
 
 def mergeIntervals(intervalList):
-    sortedL = sorted(intervalList, cmp=compare)
+    sortedL = sorted(intervalList, key=functools.cmp_to_key(compare))
     index = 0
 
     for i in range(len(sortedL)):
-        print sortedL[i].start, sortedL[i].end
+        print(sortedL[i].start, sortedL[i].end)
 
     for i in range(len(sortedL)):
         if index != 0 and sortedL[i].start <= sortedL[index-1].end:
@@ -52,9 +55,9 @@ def mergeIntervals(intervalList):
             sortedL[index] = sortedL[i]
         index += 1
 
-    print "result : "
+    print("result : ")
     for i in range(index):
-        print sortedL[i].start, sortedL[i].end
+        print(sortedL[i].start, sortedL[i].end)
 
 
 if __name__ == "__main__":

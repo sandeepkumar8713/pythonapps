@@ -79,7 +79,7 @@ def minDiffPath(G, path):
             return D, seq
 
         # if the parital path is already not optimal, skip it. Its like reaching the node seq[-1] from a different path.
-        if D > seen.get((seq[-1], L), sys.maxint):
+        if D > seen.get((seq[-1], L), sys.maxsize):
             continue
 
         # otherwise consider all next nodes, push to the heap
@@ -88,7 +88,7 @@ def minDiffPath(G, path):
             # if length-(L + 1) partial path ended with nb
             # has larger or equal diff than previous visited
             # path, ignore it
-            if D + d >= seen.get((nb, L + 1), sys.maxint):
+            if D + d >= seen.get((nb, L + 1), sys.maxsize):
                 continue
 
             # otherwise update the cache, push to the heap

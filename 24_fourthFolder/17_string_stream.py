@@ -12,6 +12,7 @@
 # logger.shouldPrintMessage(10,"foo"); returns false;
 # logger.shouldPrintMessage(11,"foo"); returns true;
 #
+# Question Type : Generic
 # Used : Maintain a map of message : timestamp. When the function is called put if message is not there and return True
 #        If message is there and time difference is 10 or above, update timestamp and return True. Else return False.
 #        Logic : def shouldPrint(self, timestamp, message):
@@ -45,9 +46,9 @@ class Logger:
 
 if __name__ == "__main__":
     logger = Logger()
-    print logger.shouldPrint(1, "foo")
-    print logger.shouldPrint(2, "bar")
-    print logger.shouldPrint(3, "foo")
-    print logger.shouldPrint(8, "bar")
-    print logger.shouldPrint(10, "foo")
-    print logger.shouldPrint(11, "foo")
+    print(logger.shouldPrint(1, "foo"))
+    print(logger.shouldPrint(2, "bar"))
+    print(logger.shouldPrint(3, "foo"))
+    print(logger.shouldPrint(8, "bar"))
+    print(logger.shouldPrint(10, "foo"))
+    print(logger.shouldPrint(11, "foo"))

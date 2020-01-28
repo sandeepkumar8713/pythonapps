@@ -3,6 +3,7 @@
 # difference between them is minimum. Initially, the question was for 3 arrays, I told him the solution
 # quickly then he changed 3 to k.
 #
+# Question Type : Generic
 # Used : Considering the arrays are sorted. We should have current indexes of the array.
 #        Run a loop until all the indexes hve reached their end.
 #           Find max and min among current elements.
@@ -46,7 +47,7 @@ def getMaximum(inpMat, currentIndex):
 
 
 def findClosest(inpMat):
-    diff = sys.maxint
+    diff = sys.maxsize
     k = len(inpMat)
     maxLen = [0] * k
     for i in range(k):

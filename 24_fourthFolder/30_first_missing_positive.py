@@ -4,6 +4,7 @@
 # Example 1: Input: [1,2,0]
 # Output: 3
 #
+# Question Type : Easy
 # Used : Run a loop over the given elements. If this ele is positive and less than count of inpArr. Assign this in
 #        tempArr at same index. Later on run loop for the tempArr, return the index at which its value doesn't match.
 #        Logic :
@@ -37,4 +38,4 @@ def firstMissingPositive(inpArr):
 
 if __name__ == "__main__":
     inpArr = [3, 4, -1, 1]
-    print firstMissingPositive(inpArr)
+    print(firstMissingPositive(inpArr))

@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/find-minimum-element-in-a-sorted-and-rotated-array/
 # Question : A sorted array is rotated at some unknown point, find the minimum element in it
 #
+# Question Type : Easy
 # Used : We need to call a recursive function: findMin(arr, low, high)
 #           if low == high return arr[low]
 #           mid = (low + high) / 2
@@ -20,7 +21,7 @@ def findMin(arr, low, high):
     if high == low:
         return arr[low]
     # Find mid
-    mid = int((low + high) / 2)
+    mid = int((low + high) // 2)
 
     # if mid + 1 is smaller than mid, return mid + 1
     if mid < high and arr[mid + 1] < arr[mid]:

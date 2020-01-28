@@ -2,6 +2,7 @@
 # Question : Given a number of friends who have to give or take some amount of money from one another. Design an
 # algorithm by which the total cash flow among all the friends is minimized.
 #
+# Question Type : ShouldSee
 # Used : Make a array of amount[n], it tells the amount to be paid or received
 #        Now call recursive function, find max debit and credit.
 #        Choose which ever is smaller and add that amount to maxCredit, subtract that amount to maxDebit

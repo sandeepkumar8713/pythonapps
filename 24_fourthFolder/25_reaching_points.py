@@ -11,6 +11,7 @@
 # (1, 2) -> (3, 2)
 # (3, 2) -> (3, 5)
 #
+# Question Type : Generic
 # Used : Run a loop to reduce target to source.
 #           If sx == tx is same, return true if y's difference is divisible by sx
 #           If sy == ty is same, return true if x's difference is divisible by sy
@@ -40,4 +41,4 @@ if __name__ == "__main__":
     sy = 1
     tx = 3
     ty = 5
-    print reachingPoints(sx, sy, tx, ty)
+    print(reachingPoints(sx, sy, tx, ty))

@@ -3,6 +3,7 @@
 # a rectangular region. Each rectangle is represented as a bottom-left point and a top-right point. For example,
 # a unit square is represented as [1,1,2,2]. (coordinate of bottom-left point is (1, 1) and top-right point is (2, 2)).
 #
+# Question Type : ShouldSee
 # Used : From the given rectangles find extreme left, bottom, right and top
 #        Run a loop for each small rectangle:
 #           update height and width map, with coordinates as key
@@ -85,4 +86,4 @@ if __name__ == "__main__":
     #     [1, 3, 2, 4],
     #     [2, 2, 4, 4]
     # ]
-    print isRectangleCover(rectangles)
+    print(isRectangleCover(rectangles))

@@ -21,6 +21,7 @@
 #  ['x', 'o', 'o']]
 # Output: [2, 0]
 #
+# Question Type : ShouldSee
 # Used : We assume size of grid is given. We do binary search for closest row, from first column. Similarly, closest
 #        column, from first row.
 #        Logic : def rowBSearch(self, start, end):

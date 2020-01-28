@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/modular-exponentiation-power-in-modular-arithmetic/
 # Question : Given three numbers x, y and p, compute (xy) % p.
 #
+# Question Type : ShouldSee
 # Used : (50 * 100) mod 13 = ( (50 mod 13) * (100 mod 13) ) mod 13
 #        or (5000) mod 13 = ( 11 * 9 ) mod 13
 #        or 8 = 8

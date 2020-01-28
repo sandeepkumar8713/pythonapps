@@ -14,6 +14,7 @@
 # Explanation: Change (2, 4) and (3, 4) to `0`.
 # Route (0, 0) -> (1, 0) -> (1, 1) -> (1, 2) -> (0, 2) -> (0, 3) -> (0, 4) -> (1, 4) -> (2, 4) -> (3, 4) -> (4, 4)
 #
+# Question Type : Generic, SimilarAdded
 # Used : Do normal bfs, whenever we hit a wall, break it. Keep the count to walls broken and push it along with distance
 #        in queue. Skip the nodes, where wall broken count is more than limit. If we reach target return length.
 #        Logic : def shortestPathBreakWalls(inpMat, K):

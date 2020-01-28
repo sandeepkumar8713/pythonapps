@@ -7,6 +7,7 @@
 # Output: 12
 # Two sub arrays are [-2, -3] and [4, -1, -2, 1, 5]
 #
+# Question Type : Generic
 # Used : Using Kadane algorithm we can find left and right max sub array. We can find min sub array by inverting the
 #        sign of input array. Now use this logic:
 #        for i in range(n - 1):
@@ -66,7 +67,7 @@ def findMaxAbsDiff(arr, n):
     for i in range(n):
         rightMin[i] = -rightMin[i]
 
-    result = -sys.maxint
+    result = -sys.maxsize
     for i in range(n - 1):
         absValue = max(abs(leftMax[i] - rightMin[i + 1]),
                        abs(leftMin[i] - rightMax[i + 1]))

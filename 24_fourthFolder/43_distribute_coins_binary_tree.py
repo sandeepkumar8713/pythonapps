@@ -4,6 +4,7 @@
 # one node to another. (The move may be from parent to child, or from child to parent.)
 # Return the number of moves required to make every node have exactly one coin.
 #
+# Question Type : Easy
 # Used : dfs, We need to take care do distribute excess coins, it can be negative to, if needed.
 #        Let dfs(node) be the excess number of coins in the subtree at or below this node: namely, the number of
 #        coins in the subtree, minus the number of nodes in the subtree. Then, the number of moves we make from
@@ -41,5 +42,4 @@ if __name__ == "__main__":
 
     ans = [0]
     dfs(root, ans)
-    print ans[0]
-
+    print(ans[0])

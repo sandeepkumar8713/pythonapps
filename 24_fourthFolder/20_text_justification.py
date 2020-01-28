@@ -18,6 +18,7 @@
 #    "justification.  "
 # ]
 #
+# Question Type : ShouldSee
 # Used : First calculate how many words with 1 space can be added in a row.
 #        Now calculate average and remainder space to filled in that row.
 #        avg = (constLen - rowLen) / wordCount
@@ -63,7 +64,7 @@ def fullJustify(words, constLen):
         if left:
             avg = 0
         else:
-            avg = (constLen - rowLen) / (i - j)   # spaceCount / wordCount
+            avg = (constLen - rowLen) // (i - j)   # spaceCount / wordCount
         if left:
             rem = 0
         else:
@@ -94,4 +95,4 @@ if __name__ == "__main__":
 
     resList = fullJustify(words, constLen)
     for item in resList:
-        print item
+        print(item)

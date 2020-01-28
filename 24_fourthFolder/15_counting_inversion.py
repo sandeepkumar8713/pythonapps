@@ -6,6 +6,7 @@
 # Example:
 # The sequence 2, 4, 1, 3, 5 has three inversions (2, 1), (4, 1), (4, 3).
 #
+# Question Type : Generic
 # Used : We will do normal merge sort. While doing merge if second array has smaller element, increase invCount by no.
 #        of elements left in first array.
 #        Logic :  while i <= mid and j <= right:

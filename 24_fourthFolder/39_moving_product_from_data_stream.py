@@ -13,6 +13,7 @@
 # window.add(4); // [2, 3, 4]
 # window.getProduct(); // 24
 #
+# Question Type : Generic
 # Used : For simple question, keep a list of window elements, zeroCount and runningProduct.
 #        When a new element comes, insert it in queue, if 0 increment zeroCount else multiply it with runningProduct.
 #        Remove top element from queue, divide product with it if not zero.
@@ -86,8 +87,8 @@ if __name__ == "__main__":
     slidingWindow.add(4)
     slidingWindow.add(5)
 
-    print slidingWindow.getProduct(1)
-    print slidingWindow.getProduct(2)
-    print slidingWindow.getProduct(3)
-    print slidingWindow.getProduct(4)
-    print slidingWindow.getProduct(5)
+    print(slidingWindow.getProduct(1))
+    print(slidingWindow.getProduct(2))
+    print(slidingWindow.getProduct(3))
+    print(slidingWindow.getProduct(4))
+    print(slidingWindow.getProduct(5))

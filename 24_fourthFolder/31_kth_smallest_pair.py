@@ -11,6 +11,7 @@
 # (3,1) -> 2
 # Then the 1st smallest distance pair is (1,1), and its distance is 0.
 #
+# Question Type : ShouldSee
 # Used : Here we find min and max value of inpArr. We do binary search over it, take a mid value, then check if there
 #        are k pairs or more whose distance is less than mid. After the binary search low is our answer.
 #        Let's binary search for the answer. It's definitely in the range [0, W], where W = max(nums) - min(nums)].
@@ -61,4 +62,4 @@ def smallestDistancePair(nums, k):
 if __name__ == "__main__":
     nums = [1, 3, 1]
     k = 1
-    print smallestDistancePair(nums, k)
+    print(smallestDistancePair(nums, k))

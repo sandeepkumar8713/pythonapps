@@ -19,6 +19,7 @@
 # [2, 8] -> 2 + 8 = 10
 # [7, 5] -> 7 + 5 = 12
 #
+# Question Type : Generic
 # Used : We are going to do binary search from 0 to maxInt, to check that each partition have minimum sum of mid.
 #        Do this while low <= high and return high.
 #        Logic : def splitArray(inpArr, k):
@@ -47,9 +48,9 @@ import sys
 
 def splitArray(inpArr, k):
     low = 0
-    high = sys.maxint
+    high = sys.maxsize
     while low <= high:
-        mid = low + (high - low) / 2
+        mid = low + (high - low) // 2
         # We try to increasing this mid as high as possible
         if canSplit(inpArr, k, mid):
             low = mid + 1
@@ -77,12 +78,12 @@ def canSplit(inpArr, k, minSum, maxTotal=None):
 if __name__ == "__main__":
     inpArr = [6, 3, 2, 8, 7, 5]
     k = 3
-    print splitArray(inpArr, k)
+    print(splitArray(inpArr, k))
 
     inpArr = [10, 20, 60, 50, 30, 40]
     k = 3
-    print splitArray(inpArr, k)
+    print(splitArray(inpArr, k))
 
     inpArr = [12, 34, 67, 90]
     k = 2
-    print splitArray(inpArr, k)
+    print(splitArray(inpArr, k))

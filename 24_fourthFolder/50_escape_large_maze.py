@@ -4,6 +4,7 @@
 # adjacent square in the grid that isn't in the given list of blocked squares. Return true if and only if it is
 # possible to reach the target square through a sequence of moves.
 #
+# Question Type : Generic
 # Used : Since we know that at max there can be only 200 blocks in the grid, If the distance between source and target
 #        is more than 20000, we can say loop doesn't exist. If loop doesn't exist around source or target, we can say
 #        that there is path between source and target. (See the figures in link to understand 20000).
@@ -102,9 +103,9 @@ if __name__ == "__main__":
     blocked = [[0, 1], [1, 0]]
     source = [0, 0]
     target = [0, 2]
-    print isEscapePossible(blocked, source, target)
+    print(isEscapePossible(blocked, source, target))
 
     blocked = []
     source = [0, 0]
     target = [999999, 999999]
-    print isEscapePossible(blocked, source, target)
+    print(isEscapePossible(blocked, source, target))

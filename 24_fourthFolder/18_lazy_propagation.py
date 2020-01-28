@@ -11,7 +11,7 @@
 #        3) If current node's range overlaps with update range, follow the same approach as above simple update.
 #               a) Recur for left and right children.
 #               b) Update current node using results of left and right calls.
-#
+#        Logic :
 #        def getSumUtil(self, segStart, segEnd, queryStart, queryEnd, index):
 #           if self.lazy[index] != 0:
 #               self.tree[index] += (segEnd - segStart + 1) * self.lazy[index]
@@ -24,6 +24,25 @@
 #           mid = (segStart + segEnd) / 2
 #           return self.getSumUtil(segStart, mid, queryStart, queryEnd, index * 2 + 1) + \
 #               self.getSumUtil(mid + 1, segEnd, queryStart, queryEnd, index * 2 + 2)
+#        def updateRangeUtil(self, segStart, segEnd, queryStart, queryEnd, index, diff):
+#           if self.lazy[index] != 0:
+#               self.tree[index] += (segEnd - segStart + 1) * self.lazy[index]
+#           if segStart != segEnd:
+#               self.lazy[index * 2 + 1] += self.lazy[index]
+#               self.lazy[index * 2 + 2] += self.lazy[index]
+#           self.lazy[index] = 0
+#           if segStart > segEnd or segStart > queryEnd or segEnd < queryStart:
+#               return 0
+#           if segStart >= queryStart and segEnd <= queryEnd:
+#               self.tree[index] += (segEnd - segStart + 1) * diff
+#               if segStart != segEnd:
+#                   self.lazy[index * 2 + 1] += diff
+#                   self.lazy[index * 2 + 2] += diff
+#           return
+#           mid = (segStart + segEnd) // 2
+#           self.updateRangeUtil(segStart, mid, queryStart, queryEnd, index * 2 + 1, diff)
+#           self.updateRangeUtil(mid + 1, segEnd, queryStart, queryEnd, index * 2 + 2, diff)
+#           self.tree[index] = self.tree[index * 2 + 1] + self.tree[index * 2 + 2]
 # Complexity : Tree construction O(n) Update O(log n) Sum O(log n)
 
 MAX = 1000
@@ -43,7 +62,7 @@ class LazySegmentTree:
             self.tree[index] = inpArr[segStart]
             return
 
-        mid = (segStart + segEnd) / 2
+        mid = (segStart + segEnd) // 2
         self.constructUtil(inpArr, segStart, mid, index * 2 + 1)
         self.constructUtil(inpArr, mid + 1, segEnd, index * 2 + 2)
         self.tree[segStart] = self.tree[segStart * 2 + 1] + self.tree[segStart * 2 + 2]
@@ -68,7 +87,7 @@ class LazySegmentTree:
         if segStart >= queryStart and segEnd <= queryEnd:
             return self.tree[index]
 
-        mid = (segStart + segEnd) / 2
+        mid = (segStart + segEnd) // 2
         return self.getSumUtil(segStart, mid, queryStart, queryEnd, index * 2 + 1) + \
                self.getSumUtil(mid + 1, segEnd, queryStart, queryEnd, index * 2 + 2)
 
@@ -100,7 +119,7 @@ class LazySegmentTree:
                 self.lazy[index * 2 + 2] += diff
             return
 
-        mid = (segStart + segEnd) / 2
+        mid = (segStart + segEnd) // 2
         self.updateRangeUtil(segStart, mid, queryStart, queryEnd, index * 2 + 1, diff)
         self.updateRangeUtil(mid + 1, segEnd, queryStart, queryEnd, index * 2 + 2, diff)
         self.tree[index] = self.tree[index * 2 + 1] + self.tree[index * 2 + 2]
@@ -113,6 +132,6 @@ if __name__ == "__main__":
     arr = [1, 3, 5, 7, 9, 11]
     lazySegmentTree = LazySegmentTree()
     lazySegmentTree.construct(arr)
-    print lazySegmentTree.getSum(1, 3)
+    print(lazySegmentTree.getSum(1, 3))
     lazySegmentTree.updateRange(1, 5, 10)
-    print lazySegmentTree.getSum(1, 3)
+    print(lazySegmentTree.getSum(1, 3))

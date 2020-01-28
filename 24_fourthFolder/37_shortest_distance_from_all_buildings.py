@@ -23,6 +23,7 @@
 # The point (1,2) is an ideal empty land to build a house, as the total travel distance of 3+3+1=7 is minimal.
 # So return 7.
 #
+# Question Type : Generic
 # Used : Do BFS from each building. While doing so, if we find an empty space (x,y), update these two:
 #        distMat[x][y] : distance sum of all building from x,y
 #        reachableBuildingCount[x][y] : how many buildings can be reached from x,y
@@ -108,7 +109,7 @@ def shortestDistance(inpMat):
                 buildingCount += 1
                 bfs(inpMat, distMat, reachableBuildingCount, i, j)
 
-    minDist = sys.maxint
+    minDist = sys.maxsize
     emptySpace = []
     for i in range(row):
         for j in range(col):
@@ -117,7 +118,7 @@ def shortestDistance(inpMat):
                     minDist = distMat[i][j]
                     emptySpace = [i, j]
 
-    if minDist is sys.maxint:
+    if minDist is sys.maxsize:
         return -1, emptySpace
 
     return minDist, emptySpace
@@ -127,4 +128,4 @@ if __name__ == "__main__":
     inpMat = [[1, 0, 2, 0, 1],
               [0, 0, 0, 0, 0],
               [0, 0, 1, 0, 0]]
-    print shortestDistance(inpMat)
+    print(shortestDistance(inpMat))

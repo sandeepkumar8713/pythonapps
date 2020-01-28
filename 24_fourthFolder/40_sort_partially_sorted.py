@@ -5,6 +5,7 @@
 # Example : Input: [0, 15, 12, 17, 18, 19, 33, 32]
 # Output: [0, 12, 15, 17, 18, 19, 32, 33]
 #
+# Question Type : ShouldSee
 # Used : Used bucket sort. Since the array is already sorted, we can just move from left to right as long as the first
 #        28 bits are the same. Once we enter a different 28 bit set, we can dump what we have in our 16 buckets into
 #        the result and reset.
@@ -51,4 +52,4 @@ def sortPartialSorted28B(inpArr):
 
 if __name__ == "__main__":
     nums = [0, 15, 12, 17, 18, 19, 33, 32]
-    print sortPartialSorted28B(nums)
+    print(sortPartialSorted28B(nums))

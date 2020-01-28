@@ -31,4 +31,6 @@
 # fit in memory.
 #
 # TODO : add code
-#
+# Question Type : OddOne
+# Used :
+# Complexity :

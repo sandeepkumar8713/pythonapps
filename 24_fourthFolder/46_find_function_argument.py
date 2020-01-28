@@ -6,6 +6,7 @@
 # f(x, y) < f(x, y + 1)
 # Find all pairs of x and y, where f(x, y) = z.
 #
+# Question Type : ShouldSee
 # Used : Because f is strictly monotonously increasing, we can use binary search to find a suiting y for a given x.
 #        Once I find a y for x=1, I try increasingly larger x=2,3,... using the previously found y as an upper
 #        bound for the binary search.
