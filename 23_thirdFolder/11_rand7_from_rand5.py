@@ -3,6 +3,7 @@
 # generates a random number between O and 4 (inclusive), write a method that generates a random
 # number between O and 6 (inclusive).
 #
+# Question Type : ShouldSee
 # Used : We just need to generate a range of values where each value is equally likely
 #       (and where the range has at least seven elements). If we can do this, then we
 #       can discard the elements greater than 7.
@@ -37,4 +38,4 @@ if __name__ == "__main__":
 
     for i in range(len(arr)):
         percent = 100.0 * arr[i] / testSize
-        print ("%s appeared %s percent of the time." % (i, percent))
+        print("%s appeared %s percent of the time." % (i, percent))

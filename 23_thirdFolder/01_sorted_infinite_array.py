@@ -2,6 +2,7 @@
 # https://www.geeksforgeeks.org/find-position-element-sorted-array-infinite-numbers/
 # Question : Suppose you have a sorted array of infinite numbers, how would you search an element in the array?
 #
+# Question Type : Easy
 # Used : Set values as: l, h, val = 0, 1, arr[0]
 #        while val < key:
 #           l = h
@@ -13,7 +14,7 @@
 
 def binary_search(arr,l,r,x):
     if r >= l:
-        mid = l+(r-l)/2
+        mid = l+(r-l) // 2
         if arr[mid] == x:
             return mid
 

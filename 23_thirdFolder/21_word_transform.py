@@ -12,6 +12,7 @@
 # Output: 7
 # Explanation: TOON - POON - POIN - POIE - PLIE - PLEE - PLEA
 #
+# Question Type : Generic
 # Used : We should do BFS. Insert start word in queue along with distance covered. Loop over the element
 #        in the queue until target is found. Pop the element(temp) from the queue. Find the words which
 #        are 1 distance away from temp. Add these element along with distance in the queue. Remove temp
@@ -76,4 +77,4 @@ if __name__ == "__main__":
 
     start = "toon"
     target = "plea"
-    print ("Length of shortest chain is: %d" % shortestChainLen(start, target, D))
+    print("Length of shortest chain is: %d" % shortestChainLen(start, target, D))

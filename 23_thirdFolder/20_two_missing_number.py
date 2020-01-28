@@ -5,6 +5,7 @@
 # except for one number that is missing. How can you find the missing number in O(N) time and
 # 0(1) space? What if there were two numbers missing?
 #
+# Question Type : ShouldSee
 # Used : Remember that 1+2+3...n = n(n+1)/2 ans 1^2 + 2^2 + 3^2 ... n^2 = n(n+1)(2n+1)/6
 #        Using this find s and t of the missing number.
 #        Let x and y be missing number.
@@ -60,4 +61,4 @@ if __name__ == "__main__":
     for i in range(1,101):
         if i != x and i != y:
             array.append(i)
-    print (findMissingTwo(array))
+    print(findMissingTwo(array))

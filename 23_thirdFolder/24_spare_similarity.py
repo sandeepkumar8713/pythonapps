@@ -9,10 +9,12 @@
 # Empty documents should not be printed at all. For simplicity, you may assume each document is represented
 # as an array of distinct integers.
 #
+# Question Type : Easy
 # Used : Compare each document with other document and calculate similarity.
 #        Their are nC2 pairs for which similarity is to be calculated.
 # Complexity : O(n^2 * m^2) n is count of documents m is size of document
 
+import functools
 
 class Pair:
     def __init__(self, leftId, rightId):
@@ -58,7 +60,7 @@ def computeSimilarities(documents):
     for element in documents:
         element.sort()
         elements.append(element)
-    elements = sorted(elements, cmp=compare)
+    elements = sorted(elements, key=functools.cmp_to_key(compare))
     for element in elements:
         print (element)
     return computeIntersections(elements)

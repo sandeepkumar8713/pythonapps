@@ -3,6 +3,7 @@
 # Question :  Given points A and B corresponding to line AB and points P and Q corresponding to line PQ, find the
 # point of intersection of these lines. The points are given in 2D Plane with their X and Y Coordinates.
 #
+# Question Type : ShouldSee
 # Used : a1 = B.y - A.y; b1 = A.x - B.x
 #        c1 = a1*A.x + b1*A.y
 #        determinant = float(a1*b2 - a2*b1)

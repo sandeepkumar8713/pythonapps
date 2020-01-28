@@ -4,6 +4,7 @@
 # elements m through n , the entire array would be sorted. Minimize n - m (that is, find the smallest
 # such sequence).
 #
+# Question Type : Generic
 # Used : 1) Find the candidate unsorted subarray
 #        a) Scan from left to right and find the first element which is greater than the next element. Let s be the
 #           index of such an element. In the above example 1, s is 3 (index of 30).
@@ -64,8 +65,8 @@ def printUnsorted(arr, n):
         i -= 1
 
     # step 3 of above algo
-    print ("The unsorted subarray which makes the given array")
-    print ("sorted lies between the indexes %d and %d" % (s, e))
+    print("The unsorted subarray which makes the given array")
+    print("sorted lies between the indexes %d and %d" % (s, e))
 
 
 if __name__ == "__main__":

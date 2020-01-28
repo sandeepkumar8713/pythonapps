@@ -3,6 +3,7 @@
 # white. Design an algorithm to find the maximum sub square such that all four borders are filled with
 # black pixels.
 #
+# Question Type : Generic
 # Used : For the given matrix make a processed matrix whose cell contains a object squareCell
 #        whose members are rightZeros and downZeros from the current cell.
 #        Now run one more loop from N to 1 (possible square size) and call findSqaureWithSize() to check if
@@ -87,5 +88,5 @@ if __name__ == "__main__":
     matrix = [[0, 0, 1],
               [0, 0, 1],
               [1, 0, 1]]
-    print ("row, col, length :"),
-    print (findSqaure(matrix))
+    print("row, col, length :"),
+    print(findSqaure(matrix))

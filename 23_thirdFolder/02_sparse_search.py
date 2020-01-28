@@ -3,6 +3,7 @@
 # Question : Given a sorted array of strings which is interspersed with empty strings,
 # write a method to find the location of a given string.
 #
+# Question Type : Easy
 # Used : We will use binary search with one difference. If mid == "", we will move mid closest non empty string which
 #        can either on left or right side.
 # Complexity : O(n) worst case
@@ -12,7 +13,7 @@ def sparseSearch(arr, key, low, high):
     if low > high:
         return -1
 
-    mid = (low + high) / 2
+    mid = (low + high) // 2
     if arr[mid] == '':
         left = mid - 1
         right = mid + 1
@@ -48,4 +49,4 @@ if __name__ == '__main__':
     # key = "ball"
     low = 0
     high = len(arr) - 1
-    print ("Found at : " + str(sparseSearch(arr, key, low, high)))
+    print("Found at : " + str(sparseSearch(arr, key, low, high)))

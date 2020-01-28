@@ -8,6 +8,7 @@
 # {7, 5, 9, 0, 2, 1, 3, 5, 7, 9, 1, 1, 5, 8, 8, 9, 7}
 # Output:[7, 10] (index)
 #
+# Question Type : Generic, SimilarAdded
 # Used : Make a object CountLookup, which keep tracks of weather each element in shorter array has appeared at least
 #        once in larger array. Fields : fulfilledCount and freqMap. Now loop over the larger array, it should be
 #        like a sliding window, where left side moves only once. But right side moves until the CountLookup is fulfilled
@@ -91,4 +92,4 @@ def shortestSuperSequence(largerArr, shorterArr):
 if __name__ == "__main__":
     largerArr = [7, 5, 9, 0, 2, 1, 3, 5, 7, 9, 1, 1, 5, 8, 8, 9, 7]
     shorterArr = [1, 5, 9]
-    print shortestSuperSequence(largerArr, shorterArr)
+    print(shortestSuperSequence(largerArr, shorterArr))

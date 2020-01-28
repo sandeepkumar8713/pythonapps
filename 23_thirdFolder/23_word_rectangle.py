@@ -4,6 +4,7 @@
 # a word (reading top to bottom). The words need not be chosen consecutively from the list, but all
 # rows must be the same length and all columns must be the same height.
 #
+# Question Type : ShouldSee
 # Used : For the given input words make a hash map where key is length its key and value is list of words.
 #        Find the maxlength of longest word.
 #        As the aim to make max rectangle, we will loop from max product to 1
@@ -98,7 +99,7 @@ class Rectangle:
 		return True
 
 	def printMatrix(self):
-		print (self.matrix)
+		print(self.matrix)
 
 def makeTrie(words):
 	trie = Trie()
@@ -178,7 +179,7 @@ def question(wordList):
     wordGroups, maxWordLength = createWordGroups(wordList)
     resultRect = maxRectangle(wordGroups, maxWordLength)
     if resultRect is None:
-        print ("Not Found")
+        print("Not Found")
     else:
         resultRect.printMatrix()
 

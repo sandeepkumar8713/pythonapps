@@ -2,6 +2,7 @@
 # https://www.geeksforgeeks.org/number-of-occurrences-of-2-as-a-digit-in-numbers-from-0-to-n/
 # Question : Count the number of 2s as digit in all numbers from 0 to n
 #
+# Question Type : ShouldSee
 # Used : k = count of digit in number. Now call func k times and add its result, where d is 0...k-1
 #        count2sinRangeAtDigit(number,d):
 #           powerOf10 = pow(10,d)
@@ -42,7 +43,7 @@ def numberOf2sinRange(number):
 
 
 if __name__ == "__main__":
-    print (numberOf2sinRange(20))
-    print (numberOf2sinRange(22))
-    print (numberOf2sinRange(100))
-    print (numberOf2sinRange(130))
+    print(numberOf2sinRange(20))
+    print(numberOf2sinRange(22))
+    print(numberOf2sinRange(100))
+    print(numberOf2sinRange(130))

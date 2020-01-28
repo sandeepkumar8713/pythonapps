@@ -7,6 +7,7 @@
 # Output: Yes
 # If we rotate given number by 180, we get same number
 #
+# Question Type : Generic
 # Used : Make a map of fancy number
 #        Now loop over the input from left and right side
 #        Check left element to in map and it should equal to fancy of right element

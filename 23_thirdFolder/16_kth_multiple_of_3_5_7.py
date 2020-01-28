@@ -3,6 +3,7 @@
 # and 7. Note that 3, 5, and 7 do not have to be factors, but it should not have any other prime factors.
 # For example, the first several multiples would be (in order) 1, 3, 5, 7, 9, 15, 21.
 #
+# Question Type : ShouldSee
 # Used : 1. x = 0 and queues Q3, QS, and Q7
 #        2. Insert 1 into Q3
 #        3. Let x be the minimum element in Q3, QS, and Q7. Append x to magic.
@@ -21,7 +22,7 @@ def getHeadElement(queue):
     if len(queue) > 0:
         v = queue[0]
     else:
-        v = sys.maxint
+        v = sys.maxsize
     return v
 
 
@@ -50,4 +51,4 @@ def getKthMagicNumber(k):
 
 if __name__ == "__main__":
     k = 14
-    print ("kth Element = %s" % getKthMagicNumber(k))
+    print("kth Element = %s" % getKthMagicNumber(k))

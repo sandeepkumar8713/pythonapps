@@ -2,6 +2,7 @@
 # Question : Given a list of words, write a program to find the longest word made of other words
 # in the list.
 #
+# Question Type : Generic
 # Used : Sort the given word list based on length. Make a map and set all the values as true.
 #        This map tells weather the given word is original word or not.
 #        Now call this function over each of the word which tells weather it can be build using other words.
@@ -14,6 +15,8 @@
 #           if not originalWord: map[word] = False
 #           return False
 # Complexity : O(n ^ 2)
+
+import functools
 
 
 def comparator(item1, item2):
@@ -44,7 +47,7 @@ def printLongestWord(wordList):
     map = dict()
     for word in wordList:
         map[word] = True
-    wordList = sorted(wordList, cmp=comparator)
+    wordList = sorted(wordList, key=functools.cmp_to_key(comparator))
     longestWord = ""
     for word in wordList:
         if canBuildWord(word, True, map):

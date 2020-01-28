@@ -5,6 +5,7 @@
 # Example : Input: 2*3+5/6*3+15
 #           Output: 23.5
 #
+# Question Type : Easy
 # Used :
 # Complexity :
 # TODO :: add code from git repo of CTCI

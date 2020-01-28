@@ -8,6 +8,7 @@
 # Johnny are synonyms. (It is both transitive and symmetric.) In the final list, any name can be used
 # as the "real" name.
 #
+# Question Type : Generic
 # Used : Make a class node of name and freq.
 #        Add nodes to the graph
 #        Add edges between the synonym node.
@@ -98,4 +99,4 @@ if __name__ == "__main__":
      ["Brian", "Bryan"]]
 
     graph = makeGraph(names, synonyms)
-    print (getTrueFrequencies(graph))
+    print(getTrueFrequencies(graph))

@@ -3,6 +3,7 @@
 # Question : Given two arrays of integers, compute the pair of values (one value in each array) with the
 # smallest (non-negative) difference. Return the difference.
 #
+# Question Type : Generic
 # Used : A.sort(), B.sort()
 #        while a < m and b < n:
 #        if abs(A[a] - B[b]) < result:

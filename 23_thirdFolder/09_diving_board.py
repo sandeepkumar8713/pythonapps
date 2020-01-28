@@ -3,6 +3,7 @@
 # There are two types of planks, one of length shorter and one of length longer. You must use
 # exactly K planks of wood. Write a method to generate all possible lengths for the diving board.
 #
+# Question Type : Easy
 # Used : We know that k is constant and (smallCount + largerCount) == k. So we will try all combinations of
 #        smallCount and largerCount and save corresponding length in list
 #        for smallCount in range(k+1):

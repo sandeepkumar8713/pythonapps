@@ -3,6 +3,7 @@
 # Question : Given an M x N matrix in which each row and each column is sorted in
 # ascending order, write a method to find an element.
 #
+# Question Type : Generic
 # Used : while i < n and j >= 0:
 #         if mat[i][j] == x: print "found"
 #         if mat[i][j] > x: j -= 1

@@ -3,6 +3,7 @@
 # of the 52! permutations of the deck has to be equally likely. Assume that you are given a random
 # number generator which is perfect. Given an array of size n, randomly output all the elements one by one.
 #
+# Question Type : Easy
 # Used : Run a loop for n.
 #          generate a random number k b/w 0 and n
 #          swap card b/w i and k

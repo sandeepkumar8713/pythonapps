@@ -6,6 +6,7 @@
 #
 # TODO :: add code
 #
+# Question Type : Easy
 # Used : We have to use compact memory. make use of bit vector. 1 int have 32 bits.
 #        If there 4 billion = 2^32 elements, we use 2^27 integers to represent whether
 #        that element is present for not.
