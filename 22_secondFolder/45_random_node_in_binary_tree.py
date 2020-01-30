@@ -2,6 +2,7 @@
 # Question : Given a Binary Tree with children Nodes, Return a random Node with equal Probability of
 # selecting any Node in tree. Consider the given tree with root as 1.
 #
+# Question Type : Easy
 # Used : An alternate solution is to modify tree structure. We store count of children in every node.
 #        Consider the above tree. We use in-order traversal here also. We generate a random number smaller than
 #        or equal count of nodes. We traverse tree and go to the node at that index. We use counts to quickly

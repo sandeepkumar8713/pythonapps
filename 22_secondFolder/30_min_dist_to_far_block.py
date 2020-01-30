@@ -14,6 +14,7 @@
 # The ideal choice would be block 2, such that the distances to the grocery and the nearest school are 1 each.
 # Living on block 1 or 3 would make one of the distances zero, but the other one 2.
 #
+# Question Type : Generic
 # Used : It comes down to sliding window problem, which has all the amenities with shortest length.
 #        Run a loop over the input block, keep adding the blocks to window. Within this loop, run another loop,
 #        i.e. window has all the amenities: keep removing elements from left side and update min window len.
@@ -32,6 +33,13 @@
 #               lo += 1
 #           hi += 1
 #        return block + 1
+#        def addBlockToWindow(block, allAmenities, window):
+#        for amenity in block:
+#           if amenity in allAmenities:
+#               if amenity in window:
+#                   window[amenity] += 1
+#               else:
+#                   window[amenity] = 1
 # Complexity : O(n)
 
 import sys
@@ -39,7 +47,7 @@ import sys
 
 def pickBlock(allAmenities, blocks):
     block = 0
-    minLen = sys.maxint
+    minLen = sys.maxsize
     window = dict()
     lo = 0
     hi = 0
@@ -83,5 +91,5 @@ if __name__ == "__main__":
               [],
               ['school']]
 
-    print pickBlock(allAmenities, blocks)
+    print(pickBlock(allAmenities, blocks))
 

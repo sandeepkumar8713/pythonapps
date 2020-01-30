@@ -12,6 +12,7 @@
 # maximum sum close to given maxValue which is 40.
 # So the answer would be 12.
 #
+# Question Type : ShouldSee
 # Used : Find min and max of input array. Do binary search in this range, see mid which satisfy the condition.
 #        Logic : def max_value(nums, val):
 #        l = min(nums), r = max(nums)+1

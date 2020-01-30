@@ -14,6 +14,7 @@
 # str.isOn(3); // false
 # str.toggle(1, 3);
 #
+# Question Type : Generic
 # Used : We used binary indexed tree.
 #        Logic : class BIT:
 #        def add(self, i):

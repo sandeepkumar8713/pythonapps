@@ -11,6 +11,7 @@
 # Output: 105.00000
 # Explanation: We pay 70 to 0-th worker and 35 to 2-th worker.
 #
+# Question Type : ShouldSee
 # Used : At least one worker is paid their minimum wage expectation. We call him captain worker. Other worker will be
 #        paid as their sumOfQuality * ratioOfCaptain.
 #        For each captain worker that will be paid their minimum wage expectation, let's calculate
@@ -42,7 +43,7 @@ def mincostToHireWorkers(quality, wage, K):
     pool = []
     sumq = 0
     for ratio, q, w in workers:
-        print ratio, q, w
+        print(ratio, q, w)
         heapq.heappush(pool, -q)
         sumq += q
 
@@ -60,5 +61,5 @@ if __name__ == "__main__":
     quality = [3, 1, 10, 10, 1]
     wage = [4, 8, 2, 2, 7]
     K = 3
-    print mincostToHireWorkers(quality, wage, K)
+    print(mincostToHireWorkers(quality, wage, K))
 

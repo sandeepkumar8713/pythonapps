@@ -9,6 +9,7 @@
 # Output: true
 # Explanation: Return true because "leetcode" can be segmented as "leet code".
 #
+# Question Type : Generic
 # Used : We will use dp here. At each index of word we try to break the inpStr. Check if left part is already breakable
 #        (using dp) and check if substring in right side is present in wordSet.
 #        Logic : def wordBreak(inpStr, wordSet):
@@ -47,4 +48,4 @@ def wordBreak(inpStr, wordSet):
 if __name__ == "__main__":
     inpStr = "leetcode"
     wordSet = {"leet", "code"}
-    print wordBreak(inpStr, wordSet)
+    print(wordBreak(inpStr, wordSet))

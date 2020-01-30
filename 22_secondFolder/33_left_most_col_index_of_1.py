@@ -9,6 +9,7 @@
 #  [0, 0, 0, 0]]
 # Output: 1
 #
+# Question Type : ShouldSee
 # Used : We start from first row and last col. If 1 is found, we reduce col else inc row. Since it is sorted in
 #        ascending order we use this logic. We need to find first 1.
 #        Logic : def findLeftMostIndexOfOne(inpMat):
@@ -47,4 +48,4 @@ if __name__ == "__main__":
               [0, 1, 1, 1],
               [0, 0, 0, 0]]
 
-    print findLeftMostIndexOfOne(inpMat)
+    print(findLeftMostIndexOfOne(inpMat))

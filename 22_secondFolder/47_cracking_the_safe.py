@@ -12,6 +12,7 @@
 # Output: "00110"
 # Note: "01100", "10011", "11001" will be accepted too.
 #
+# Question Type : OddOne
 # Used : def crackSafe(n, k):
 #        M = k**(n-1)
 #        P = []
@@ -32,12 +33,12 @@ def crackSafe(n, k):
     M = k**(n-1)
 
     P = []
-    for i in xrange(k):
-        for q in xrange(M):
+    for i in range(k):
+        for q in range(M):
             P.append(q*k+i)
 
     ans = []
-    for i in xrange(k**n):
+    for i in range(k**n):
         j = i
         while P[j] >= 0:
             ans.append(str(j / M))
@@ -49,12 +50,12 @@ def crackSafe(n, k):
 if __name__ == "__main__":
     n = 1
     k = 2
-    print crackSafe(n, k)
+    print(crackSafe(n, k))
 
     n = 2
     k = 2
-    print crackSafe(n, k)
+    print(crackSafe(n, k))
 
     n = 4
     k = 2
-    print crackSafe(n, k)
+    print(crackSafe(n, k))

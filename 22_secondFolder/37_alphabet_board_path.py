@@ -17,6 +17,7 @@
 # Example : Input: target = "leet"
 # Output: "DDR!UURRR!!DDD!"
 #
+# Question Type : Generic
 # Used : Make a map : char : 2d index in the matrix.
 #        Now from current position, see the target character. Using coordinate system, find out how much we have to go
 #        up, down, left or right from current position.

@@ -29,6 +29,7 @@
 # row = 1,
 # col = 3
 #
+# Question Type : Generic
 # Used : We will use DFS(with 4 direction), with use of arrow and backtracking.
 #        Logic : def dfs(robot, visited, x, y, arrow):
 #        path = str(x) + "-" + str(y)

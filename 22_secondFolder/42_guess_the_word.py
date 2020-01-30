@@ -17,6 +17,7 @@
 # master.guess("eiowzz") returns 2, because "eiowzz" has 2 matches.
 # master.guess("abcczz") returns 4, because "abcczz" has 4 matches.
 #
+# Question Type : Easy
 # Used : Pre-compute similarity between two words. do that for every words. Example: 'abcdef' and 'cccwqf' c on
 #        index 2 and f on index 5 matched. so similarity score = 2. Save in wordEdge dict.
 #        Pick One word and master.guess it. If it returns 6, we got match. Else use the wordEdge, to find which all
@@ -79,7 +80,7 @@ def findSecretWord(wordlist, master):
     while chance > 0 and wordlist:
         matched = master.guess(wordlist[0])
         if matched == 6:
-            print "Word found:", (wordlist[0])
+            print("Word found:", (wordlist[0]))
             return
         word = wordlist.pop(0)
         # We keep wordList to make sure it has not been removed earlier.
@@ -88,7 +89,7 @@ def findSecretWord(wordlist, master):
         # print wordlist
         chance -= 1
 
-    print "Guess over"
+    print("Guess over")
 
 
 if __name__ == "__main__":

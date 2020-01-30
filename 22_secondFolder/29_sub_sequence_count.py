@@ -7,6 +7,7 @@
 # Output: 3
 # Explanation: There are three words in words that are a subsequence of S: "a", "acd", "ace".
 #
+# Question Type : ShouldSee
 # Used : Logic : def numMatchingSubseq(bigWord, words):
 #         res = 0, N = len(words)
 #         pointers = [0] * N
@@ -71,4 +72,4 @@ def numMatchingSubseq(bigWord, words):
 if __name__ == "__main__":
     bigWord = "abcde"
     words = ["a", "bb", "acd", "ace"]
-    print numMatchingSubseq(bigWord, words)
+    print(numMatchingSubseq(bigWord, words))

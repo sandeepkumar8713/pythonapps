@@ -8,6 +8,7 @@
 # input [1,1,4,2,8] and n=3
 # output = [1,1,2] and [4] and [8]
 #
+# Question Type : ShouldSee
 # Used : sort input array . pull max out, push in set1, then pull max out, push in set2 and then pull max out,
 #        push in set3. Now, pull max out, push in least sum set. Repeat this until input array is empty.
 # Complexity : O(n log n + n)

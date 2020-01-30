@@ -6,6 +6,7 @@
 # Given an array of n integers, return the result of all possible equations you can generate by adding the following
 # operators in-between the numbers: +, -, *, /, () (for prioritization).
 #
+# Question Type : Generic
 # Used : We will use divide and conquer. For every operator, divide in into left and right sub expression. Solve them
 #        first by calling the function again. It will return a list of possible results. Now use the earlier found
 #        operator in combination of all the possible results.
@@ -50,7 +51,7 @@ def diffWaysToCompute(S):
     if S.isdigit(): return [int(S)]
 
     opt = []
-    for i in xrange(len(S)):
+    for i in range(len(S)):
         # For second question, skip this check, run for all possible operators.
         if S[i]=='+' or S[i]=='-' or S[i]=='*' or S[i]=='/':
             left = diffWaysToCompute(S[:i])
@@ -65,7 +66,7 @@ def diffWaysToCompute(S):
 
 if __name__ == "__main__":
     inpStr = "2-1-1"
-    print diffWaysToCompute(inpStr)
+    print(diffWaysToCompute(inpStr))
 
     inpStr = "2*3-4*5"
-    print diffWaysToCompute(inpStr)
+    print(diffWaysToCompute(inpStr))

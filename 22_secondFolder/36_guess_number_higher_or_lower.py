@@ -19,6 +19,19 @@
 #        To find the worse case scenario, find the max return value between these 2 scenarios
 #        Then, find the best case scenario out of all your choices of k, and hence the min.
 #        Note take we will be filling only upper part of matrix.
+#        Logic :
+#        for i in range(n + 1):
+#           col = [0] * (n + 1)
+#           dp.append(col)
+#        for i in range(1, n + 1):
+#           for j in range(1, n - i + 1):
+#               res = sys.maxint
+#               start = j
+#               end = j + i
+#               for k in range(start, end):
+#                   res = min(res, k + max(dp[start][k - 1], dp[k + 1][end]))
+#               dp[start][end] = res
+#        return dp[1][n]
 # Complexity : O(n^3)
 
 import sys
@@ -35,7 +48,7 @@ def getMoneyAmount(n):
     # diagonally filling up DP-arr
     for i in range(1, n + 1):
         for j in range(1, n - i + 1):
-            res = sys.maxint
+            res = sys.maxsize
             start = j
             end = j + i
             for k in range(start, end):
@@ -47,4 +60,4 @@ def getMoneyAmount(n):
 
 if __name__ == "__main__":
     n = 10
-    print getMoneyAmount(n)
+    print(getMoneyAmount(n))

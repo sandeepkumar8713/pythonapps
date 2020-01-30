@@ -17,6 +17,7 @@
 # Output: true
 # Explanation: a + b = b + a
 #
+# Question Type : Generic
 # Used : Do in-order traversal. While doing so, if operator is + or *, check if left and right of roots are equal.
 #        Else check if left, left and right, right of roots are equal.
 #        Logic : def isEqual(root1, root2):
@@ -59,7 +60,7 @@ if __name__ == "__main__":
     root2.left = Node('b')
     root2.right = Node('a')
 
-    print isEqual(root1, root2)
+    print(isEqual(root1, root2))
 
     root1 = Node('-')
     root1.left = Node('a')
@@ -69,4 +70,4 @@ if __name__ == "__main__":
     root2.left = Node('b')
     root2.right = Node('a')
 
-    print isEqual(root1, root2)
+    print(isEqual(root1, root2))

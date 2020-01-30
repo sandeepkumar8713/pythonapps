@@ -14,6 +14,7 @@
 # Example: A = [1, 2, 3, 4]
 # return: 3, for 3 arithmetic slices in A: [1, 2, 3], [2, 3, 4] and [1, 2, 3, 4] itself.
 #
+# Question Type : Generic
 # Used : We should keep running count of the number of arithmetic condition fulfilled. Keep the sum of it. If condition
 #        fails reset running count to 0.
 #        Logic : def numberOfArithmeticSlices(inpArr):
@@ -42,4 +43,4 @@ def numberOfArithmeticSlices(inpArr):
 
 if __name__ == "__main__":
     inpArr = [1, 2, 3, 4]
-    print numberOfArithmeticSlices(inpArr)
+    print(numberOfArithmeticSlices(inpArr))

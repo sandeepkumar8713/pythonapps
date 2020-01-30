@@ -6,6 +6,7 @@
 # the stock), design an algorithm to find the maximum profit. Note that you cannot sell a stock before
 # you buy one. Followup : If you were only permitted to complete at most one transaction.
 #
+# Question Type : Generic
 # Used : For first question, loop over the input array, find the min price then the max price and subtract.
 #        The difference would give back the maxProfit.
 #        For follow up question. Find the first max profit using above function get there start and end index also. Now
@@ -33,7 +34,7 @@ import sys
 
 
 def maxProfit(prices, left, right):
-    minPrice = sys.maxint
+    minPrice = sys.maxsize
     maxProfit = 0
     sellIndex = -1
     buyIndex = -1
@@ -63,13 +64,13 @@ def maxProfitTwoTranscation(prices):
 
 if __name__ == "__main__":
     prices = [7, 1, 5, 3, 6, 4]
-    print maxProfit(prices, 0, len(prices) - 1)
+    print(maxProfit(prices, 0, len(prices) - 1))
 
     prices = [7, 6, 4, 3, 1]
-    print maxProfit(prices, 0, len(prices) - 1)
+    print(maxProfit(prices, 0, len(prices) - 1))
 
     prices = [3, 3, 5, 0, 0, 3, 1, 4]
-    print maxProfitTwoTranscation(prices)
+    print(maxProfitTwoTranscation(prices))
 
     prices = [1, 2, 3, 4, 5]
-    print maxProfitTwoTranscation(prices)
+    print(maxProfitTwoTranscation(prices))

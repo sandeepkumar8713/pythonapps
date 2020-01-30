@@ -6,6 +6,7 @@
 # Example :  Input: "()())()"
 # Output: ["()()()", "(())()"]
 #
+# Question Type : ShouldSee
 # Used : First we read s from left to right and remove all the invalid ). Then we will get multiple candidate
 #        solutions and save them in candidates. Then we read each candidate from right to left (reversely) and remove
 #        all the invalid ( and we will get the final solutions.
@@ -59,7 +60,7 @@ def removeInvalidParentheses(inpStr):
 
 if __name__ == "__main__":
     inpStr = "()())()"
-    print removeInvalidParentheses(inpStr)
+    print(removeInvalidParentheses(inpStr))
 
     inpStr = ")))"
-    print removeInvalidParentheses(inpStr)
+    print(removeInvalidParentheses(inpStr))

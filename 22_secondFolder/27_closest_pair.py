@@ -7,6 +7,7 @@
 #  [X,Y,0]]
 # Output: 1
 #
+# Question Type : Generic, SimilarAdded
 # Used : We can solve this using BFS.
 #        Push all 'X's into queue initially. Perform BFS and stop when the first 'Y' is encountered.
 # Complexity : O(m * n)
