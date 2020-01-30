@@ -5,6 +5,7 @@
 # Given word = "word", return the following list (order does not matter):
 # ["word", "1ord", "w1rd", "wo1d", "wor1", "2rd", "w2d", "wo2", "1o1d", "1or1", "w1r1", "1o2", "2r1", "3d", "w3", "4"]
 #
+# Question Type : Easy
 # Used : We have to go through all possibilities i.e. choose 0,1,2,3,4 char and convert to abbreviation.
 #        A classic DFS + backtracking problem. A trick here is if we've already abbrivate part of a word,
 #        we must jump at least a character.
@@ -52,4 +53,4 @@ def generateHelper(start, word, resultList):
 if __name__ == "__main__":
     wordList = generateAbbreviations("word")
     for item in wordList:
-        print item
+        print(item)

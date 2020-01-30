@@ -13,13 +13,18 @@
 #        For the maximum without a deletion, it is purely Kadane's algorithm.
 #        For the maximum with a deletion, we can either discard current number, or, add current number to previous
 #        maximum with a deletion.
+#        Logic : maxi = modified = unmodified = -sys.maxsize
+#        for n in arr:
+#           modified, unmodified = max(unmodified, modified + n), max(0, unmodified) + n
+#           maxi = max(maxi, modified, unmodified)
+#        return maxi
 # Complexity : O(n)
 
 import sys
 
 
 def maximumSum(arr):
-    maxi = modified = unmodified = -sys.maxint
+    maxi = modified = unmodified = -sys.maxsize
 
     for n in arr:
         modified, unmodified = max(unmodified, modified + n), max(0, unmodified) + n
@@ -29,4 +34,4 @@ def maximumSum(arr):
 
 if __name__ == "__main__":
     inpArr = [1, -2, 0, 3]
-    print maximumSum(inpArr)
+    print(maximumSum(inpArr))

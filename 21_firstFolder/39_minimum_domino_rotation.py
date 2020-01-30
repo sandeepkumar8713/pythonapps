@@ -11,6 +11,7 @@
 # If we rotate the second and fourth dominoes, we can make every value in the top row equal to 2,
 # as indicated by the second figure
 #
+# Question Type : ShouldSee
 # Used : Choose first element(num) of array A, count number of rotations required in both arrays to make all of them
 #        equal. if num is not in either of array then return -1. Else return minimum rotation.
 #        Repeat the same by choosing first element from array B.
@@ -60,4 +61,4 @@ def minDominoRotations(arrA, arrB):
 if __name__ == "__main__":
     A = [2, 1, 2, 4, 2, 2]
     B = [5, 2, 6, 2, 3, 2]
-    print minDominoRotations(A, B)
+    print(minDominoRotations(A, B))

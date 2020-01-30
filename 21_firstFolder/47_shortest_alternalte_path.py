@@ -11,6 +11,7 @@
 # Example 2: Input: n = 3, red_edges = [[0,1]], blue_edges = [[2,1]]
 # Output: [0,1,-1]
 #
+# Question Type : Generic
 # Used : Do BFS, continue with path only if next colour is different than previous color on this path. When an unvisited
 #        node is encountered, update its distance in the result array.
 #        Logic : def shortestAlternatingPaths(n, red_edges, blue_edges):
@@ -88,9 +89,9 @@ if __name__ == "__main__":
     n = 3
     red_edges = [[0, 1], [1, 2]]
     blue_edges = []
-    print shortestAlternatingPaths(n, red_edges, blue_edges)
+    print(shortestAlternatingPaths(n, red_edges, blue_edges))
 
     n = 3
     red_edges = [[0, 1]]
     blue_edges = [[2, 1]]
-    print shortestAlternatingPaths(n, red_edges, blue_edges)
+    print(shortestAlternatingPaths(n, red_edges, blue_edges))

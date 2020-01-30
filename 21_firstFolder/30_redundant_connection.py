@@ -23,6 +23,7 @@
 #  / \
 # 2 - 3
 #
+# Question Type : Generic
 # Used : Do union find on the edge, the one which is redundant will have same parent.
 #        For the tree valid question: A tree is a graph that doesn't have a cycle. So we can use the same logic here.
 #        There should not be redundant edges in tree.
@@ -75,11 +76,11 @@ def findRedundantConnection(edges):
 
 if __name__ == "__main__":
     edges = [[1,2], [1,3], [2,3]]
-    print findRedundantConnection(edges)
+    print(findRedundantConnection(edges))
 
     edges = [[0, 1], [0, 2], [0, 3], [1, 4]]
-    print findRedundantConnection(edges)
+    print(findRedundantConnection(edges))
 
     edges = [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]]
-    print findRedundantConnection(edges)
+    print(findRedundantConnection(edges))
 

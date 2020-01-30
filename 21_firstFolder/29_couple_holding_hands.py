@@ -12,6 +12,7 @@
 # Output: 1
 # Explanation: We only need to swap the second (row[1]) and third (row[2]) person.
 #
+# Question Type : Generic
 # Used : Make a location map. Loop the row, check adjacent elements. If not pair, use location map to search its pair
 #        and swap.
 #        Logic : def minSwapsCouples(row):
@@ -63,4 +64,4 @@ def minSwapsCouples(row):
 
 if __name__ == "__main__":
     row = [0, 2, 1, 3]
-    print minSwapsCouples(row)
+    print(minSwapsCouples(row))

@@ -9,6 +9,7 @@
 # Explanation: Swap s1[0] and s2[0], s1 = "yy", s2 = "xx".
 # Swap s1[0] and s2[1], s1 = "xy", s2 = "xy".
 #
+# Question Type : ShouldSee
 # Used : 1. seq is char in s1 + char in s2 when unmatched for some index i.
 #        2. for seq "xy": (char 'x' in s1 and char 'y' in s2) - add to set seen. If another similar sequence is
 #           encountered, increment swaps by 1 because s1 = "xx" and s2="yy" need 1 swap.

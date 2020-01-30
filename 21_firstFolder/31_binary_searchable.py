@@ -16,6 +16,7 @@
 # Output: 2
 # Explanation: 3 and 6 are the numbers guaranteed to be found.
 #
+# Question Type : Generic
 # Used : Run a loop over the input array. If the element is higher than max left and lower than min Right increase
 #        the count.
 #        Logic : def binarySearchable(inpArr):
@@ -44,8 +45,8 @@ def binarySearchable(inpArr):
     for i in range(1, n):
         maxLeft[i] = max(maxLeft[i-1], inpArr[i])
 
-    minRight = sys.maxint
-    for i in range(n-1,-1,-1):
+    minRight = sys.maxsize
+    for i in range(n-1, -1, -1):
         minRight = min(minRight, inpArr[i])
         if inpArr[i] <= minRight and inpArr[i] >= maxLeft[i]:
             count += 1
@@ -55,8 +56,8 @@ def binarySearchable(inpArr):
 
 if __name__ == "__main__":
     inpArr = [2, 1, 3, 5, 4, 6]
-    print binarySearchable(inpArr)
+    print(binarySearchable(inpArr))
 
     inpArr = [1, 2, 3, 4, 6]
-    print binarySearchable(inpArr)
+    print(binarySearchable(inpArr))
 

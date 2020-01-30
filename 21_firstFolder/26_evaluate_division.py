@@ -13,7 +13,7 @@
 # values = [2.0, 3.0],
 # queries = [ ["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x", "x"] ].
 #
-#
+# Question Type : Generic
 # Used : For given equations, make a weighted directed graph. Here operands will be vertices. The weight from a->b
 #        will be value and from b->a will be 1/value. Now for the given query, do bfs where a is start and b is end.
 #        While traversing the graph, keep multiplying its weight and saving it back in queue. When end is found,

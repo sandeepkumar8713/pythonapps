@@ -11,6 +11,7 @@
 # [3,5,7], [3,5,8], [3,5,9], [3,6,8], [3,6,9]
 # The falling path with the smallest sum is [1,4,7], so the answer is 12
 #
+# Question Type : ShouldSee
 # Used : dp(r, c) = A[r][c] + min(dp(r+1, c-1), dp(r+1, c), dp(r+1, c+1)), and the answer is min of dp(0, c)
 #        Logic : def minFallingPathSum(A):
 #        while len(A) >= 2:
@@ -24,7 +25,7 @@
 def minFallingPathSum(A):
     while len(A) >= 2:
         row = A.pop()
-        for i in xrange(len(row)):
+        for i in range(len(row)):
             A[-1][i] += min(row[max(0, i-1): min(len(row), i+2)])
     return min(A[0])
 
@@ -33,4 +34,4 @@ if __name__ == "__main__":
     inpMat = [[1, 2, 3],
               [4, 5, 6],
               [7, 8, 9]]
-    print minFallingPathSum(inpMat)
+    print(minFallingPathSum(inpMat))

@@ -8,6 +8,7 @@
 # Output : 36
 # Explanation: All the possible submatrices will have only 1s. Since, there are 36 submatrices in total, ans = 36
 #
+# Question Type : ShouldSee
 # Used : def findPrefixCount(p_arr, arr):
 #        for i in range(0, n):
 #           for j in range(n - 1, -1, -1):

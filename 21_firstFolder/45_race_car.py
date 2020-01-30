@@ -11,7 +11,7 @@
 # Output: 2
 # Explanation: The shortest instruction sequence is "AA". Your position goes from 0->1->3.
 #
-#
+# Question Type : Generic
 # Used : Will do bfs. At each step will to move in 2 directions : fwd and backward. Loop will run until we hit the
 #        target. Through BFS we will get shortest path.
 #        Logic :
@@ -84,4 +84,4 @@ def raceCar(target):
 
 if __name__ == "__main__":
     target = 3
-    print raceCar(target)
+    print(raceCar(target))

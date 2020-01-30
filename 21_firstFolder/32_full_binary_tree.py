@@ -4,6 +4,7 @@
 # Given an int n, return a list of all possible full binary trees with n leaf nodes. Each element of the answer
 # is the root node of one possible tree.
 #
+# Question Type : ShouldSee
 # Used : Run a loop from 1 to n, call recur for i leaves in left and n-i leaves in right and then combine the two
 #        subtrees into possible tree
 #        Logic : def recur(N):

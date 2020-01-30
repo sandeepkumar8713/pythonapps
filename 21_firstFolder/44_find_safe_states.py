@@ -10,6 +10,7 @@
 # Example: Input: graph = [[1,2],[2,3],[5],[0],[5],[],[]]
 # Output: [2,4,5,6]
 #
+# Question Type : Generic
 # Used : Let us perform a "brute force": a cycle-finding DFS algorithm on each node individually. This is a classic
 #        "white-gray-black" DFS algorithm that would be part of any textbook on DFS. We mark a node gray on entry,
 #        and black on exit. If we see a gray node during our DFS, it must be part of a cycle. In a naive view, we'll
@@ -57,4 +58,4 @@ def eventualSafeNodes(graph):
 
 if __name__ == "__main__":
     graph = [[1, 2], [2, 3], [5], [0], [5], [], []]
-    print eventualSafeNodes(graph)
+    print(eventualSafeNodes(graph))

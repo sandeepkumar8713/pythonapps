@@ -12,7 +12,7 @@
 # Explanation: We can extend "e" and "o" in the word "hello" to get "heeellooo".
 # We can't extend "helo" to get "heeellooo" because the group "ll" is not size 3 or more.
 #
-#
+# Question Type : Generic
 # Used : Make a function getCharCount() which returns unique chars and respective freq in tuple
 #        Now compare S with each word. If the unique char doesn't match skip it. Else each char count should
 #        be equal or more in S then increase count by 1.
@@ -63,4 +63,4 @@ def expressiveWords(S, words):
 if __name__ == "__main__":
     S = "heeellooo"
     words = ["hello", "hi", "helo"]
-    print expressiveWords(S, words)
+    print(expressiveWords(S, words))

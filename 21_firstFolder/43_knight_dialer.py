@@ -11,6 +11,7 @@
 # Example 2: Input: 2
 # Output: 20
 #
+# Question Type : ShouldSee
 # Used : By hand or otherwise, have a way to query what moves are available at each square. This implies the exact
 #        recursion for f. For example, from 1 we can move to 6, 8, so f(1, n) = f(6, n-1) + f(8, n-1).
 #        After, let's keep track of dp[start] = f(start, n), and update it for each n from 1, 2, ..., N.
@@ -34,7 +35,7 @@ moves = [[4, 6], [6, 8], [7, 9], [4, 8], [3, 9, 0], [],
 
 def knightDialer(N):
     dp = [1] * 10
-    for hops in xrange(N-1):
+    for hops in range(N-1):
         dp2 = [0] * 10
         for node, count in enumerate(dp):
             for nei in moves[node]:
@@ -46,4 +47,4 @@ def knightDialer(N):
 
 if __name__ == "__main__":
     N = 2
-    print knightDialer(N)
+    print(knightDialer(N))

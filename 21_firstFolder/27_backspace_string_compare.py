@@ -6,6 +6,7 @@
 # Output: true
 # Explanation: Both S and T become "ac".
 #
+# Question Type : ShouldSee
 # Used : Traverse the inpStr in reverse and skip the characters succeeded by 0.
 #        Logic : def getEndResult(inpStr):
 #        pendingDelete = 0
@@ -45,4 +46,4 @@ def backspaceStringCompare(S,T):
 if __name__ == "__main__":
     S = "ab#c"
     T = "ad#c"
-    print backspaceStringCompare(S, T)
+    print(backspaceStringCompare(S, T))

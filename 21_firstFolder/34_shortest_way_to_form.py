@@ -8,6 +8,7 @@
 # Output: 2
 # Explanation: The target "abcbc" can be formed by "abc" and "bc", which are subsequences of source "abc".
 #
+# Question Type : Generic
 # Used : Make a function find() which match target with source as much as possible.
 #        After that call find() again from next index (to match remaining with source)
 #        Logic : def find(j, source, target):
@@ -49,4 +50,4 @@ def minways(source, target):
 if __name__ == "__main__":
     source = "abc"
     target = "abcbc"
-    print minways(source, target)
+    print(minways(source, target))

@@ -15,6 +15,7 @@
 # Example 2: Input: "11235813"
 # Output: [1,1,2,3,5,8,13]
 #
+# Question Type : Generic
 # Used : DFS and backtracking. We make a recursive function. It takes a substring and calls it self again to check if
 #        remaining strings fulfill the condition of fibonacci.
 #        Logic : def helper(inp, ans, beg=0):
@@ -64,8 +65,8 @@ def helper(inp, ans, beg=0):
     i = 0
     N = len(inp)
     while i < numLen and beg + i < N:
-        curr = long(inp[beg: beg + i + 1])
-        if curr > sys.maxint:
+        curr = int(inp[beg: beg + i + 1])
+        if curr > sys.maxsize:
             return False
         sz = len(ans)
         if sz < 2 or (sz > 1 and ans[sz-2] + ans[sz-1] == int(curr)):
@@ -80,7 +81,7 @@ def helper(inp, ans, beg=0):
 
 if __name__ == "__main__":
     inp = "123456579"
-    print splitIntoFibonacci(inp)
+    print(splitIntoFibonacci(inp))
 
     inp = "11235813"
-    print splitIntoFibonacci(inp)
+    print(splitIntoFibonacci(inp))

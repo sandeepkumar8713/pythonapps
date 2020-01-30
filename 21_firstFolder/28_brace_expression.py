@@ -30,6 +30,7 @@
 # Output: ["a","ab","ac","z"]
 # Explanation: Each distinct word is written only once in the final answer.
 #
+# Question Type : ShouldSee
 # Used : We will use a stack here to parse the expression.
 #        If a character is a {, append it to the stack and start a new set of characters and append that to
 #        the stack as well.
@@ -109,4 +110,4 @@ def braceExpansionII(expression):
 
 if __name__ == "__main__":
     expression = "{a,b}{c,{d,e}}"
-    print braceExpansionII(expression)
+    print(braceExpansionII(expression))

@@ -10,6 +10,7 @@
 #   ["1","0","0","1","0"]]
 # Output: 6
 #
+# Question Type : ShouldSee
 # Used : We will do DP here. At each row, will try to find max subset with all 1.
 #        Logic : maximalRectangle(inpMat)
 #        lefts = [0] * width
@@ -79,4 +80,4 @@ if __name__ == "__main__":
               [1, 1, 1, 1, 1],
               [1, 0, 0, 1, 0]]
 
-    print maximalRectangle(inpMat)
+    print(maximalRectangle(inpMat))

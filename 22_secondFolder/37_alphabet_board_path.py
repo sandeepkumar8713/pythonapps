@@ -79,4 +79,4 @@ class Solution:
 if __name__ == "__main__":
     inpStr = "leet"
     solution = Solution()
-    print solution.alphabetBoardPath(inpStr)
+    print(solution.alphabetBoardPath(inpStr))

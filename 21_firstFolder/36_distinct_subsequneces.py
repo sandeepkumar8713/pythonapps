@@ -19,6 +19,7 @@
 #       a  b  c  $
 # dp = [0, 0, 1, 1]
 #
+# Question Type : ShouldSee
 # Used : We will use dp here. Make a indexDict of smallString. For each char in bigString, loop over its indices from
 #        the indexDict and increment the dp value at that index.
 #        Logic : def numDistinct(bigString, smallString):
@@ -59,4 +60,4 @@ def numDistinct(bigString, smallString):
 if __name__ == "__main__":
     bigString = "rabbbit"
     smallString = "rabbit"
-    print numDistinct(bigString, smallString)
+    print(numDistinct(bigString, smallString))
