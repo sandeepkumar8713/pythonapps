@@ -1,6 +1,7 @@
 # Question : Given weights and values of n items, put these items in a knapsack of capacity W to get the maximum
 # total value in the knapsack.
 #
+# Question Type : Generic
 # Used : Here we are maintaining a memory table. K : size (n+1) * (weightLimit+1). Initialize all as 0.
 #        Now loop over each element of the table K. If it is in first row or col set as 0.
 #           For this row i, check if current item i-1 can fit in the knapsack of j. If yes, choose the max of
@@ -35,4 +36,4 @@ if __name__ == "__main__":
     itemValue = [60, 100, 120]
     itemWeight = [10, 20, 30]
     weightLimit = 50
-    print knapSack(itemValue, itemWeight, weightLimit)
+    print(knapSack(itemValue, itemWeight, weightLimit))

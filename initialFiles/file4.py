@@ -8,6 +8,8 @@
 # height of tree h = log(n+1)-1
 
 # instead of switch use dictionary
+# Question Type : ShouldSee
+# TODO :: add used
 
 
 def add(A, B):
@@ -53,7 +55,7 @@ def calculateMatrix(matrix, height):
                 # print result
                 matrix[i][j] = result
 
-    print 'result =', matrix[0][1]
+    print('result =', matrix[0][1])
 
 
 operatorDict = {'+': add,
@@ -61,11 +63,13 @@ operatorDict = {'+': add,
                 '*': multiply,
                 '/': divide}
 
-# 5 * 4 + 100 - 20 = + * - 5 4 100 20 (number of nodes 7)
-A = ['+', '*', '-', '5', '4', '100', '20']
-# A = ['-','4','7']
-print 'given expression =', A
-matrix, height = make2DMatrix(A, len(A))
-calculateMatrix(matrix, height)
 
-# make a in order expression
+if __name__ == "__main__":
+    # 5 * 4 + 100 - 20 = + * - 5 4 100 20 (number of nodes 7)
+    A = ['+', '*', '-', '5', '4', '100', '20']
+    # A = ['-','4','7']
+    print('given expression =', A)
+    matrix, height = make2DMatrix(A, len(A))
+    calculateMatrix(matrix, height)
+
+    # make a in order expression

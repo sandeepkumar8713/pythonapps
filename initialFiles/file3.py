@@ -32,8 +32,8 @@ class Tree:
 
     def formString(self):
         noOfLeafs = pow(2,self.treeHeight-1)
-        nofSpaceAndElementInLastRow = noOfLeafs + noOfLeafs/2 + (noOfLeafs/2 - 1)*3
-        output = ' ' * (nofSpaceAndElementInLastRow/2)
+        nofSpaceAndElementInLastRow = noOfLeafs + noOfLeafs//2 + (noOfLeafs//2 - 1)*3
+        output = ' ' * (nofSpaceAndElementInLastRow//2)
         output += str(self.masterList[0][0]) + '\n'
 
         noOfInitialSpace = [0] * self.treeHeight
@@ -56,11 +56,11 @@ class Tree:
             if self.treeHeight < 3:
                 gapBetweenTwoElemnet = 1
             else:
-                gapBetweenTwoElemnet = (noOfElementInRowList[i] - pow(2,i))/(pow(2,i)-1)
+                gapBetweenTwoElemnet = (noOfElementInRowList[i] - pow(2,i))//(pow(2,i)-1)
             if i == self.treeHeight-1:
                 gapBetweenTwoElemnet = 3
 
-            output += ' ' * (nofSpaceAndElementInLastRow/2 - noOfElementInRowList[i]/2)
+            output += ' ' * (nofSpaceAndElementInLastRow//2 - noOfElementInRowList[i]//2)
 
             if i==self.treeHeight-1:
                 singleSeperator = ' '
@@ -80,6 +80,7 @@ class Tree:
         else:
             self.masterList[level].append(' ')
 
+
 if __name__ == '__main__':
     #binaryTree = Tree(Node(9,Node(6),Node(7,None,Node(15))))
     #binaryTree = Tree(Node(9, Node(6,Node(8),Node(1)), Node(7, Node(1), Node(5))))
@@ -93,5 +94,5 @@ if __name__ == '__main__':
     #binaryTree = Tree(leftNode)
 
     #binaryTree = Tree(Node(9, Node(6,None,Node(8)), Node(7)))
-    print binaryTree
+    print(binaryTree)
 
