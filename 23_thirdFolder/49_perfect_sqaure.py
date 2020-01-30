@@ -6,6 +6,7 @@
 # Output: 3
 # Explanation: 12 = 4 + 4 + 4.
 #
+# Question Type : Generic
 # Used : We convert the problem into graph. From given num, we try to traverse to all possible squares using BFS.
 #        Insert the difference into queue and search for next square. By bfs we will make sure that we reach the
 #        zero fastest by keep counting the layers of square added in each path.
@@ -50,10 +51,10 @@ def numSquares(n):
 
 if __name__ == "__main__":
     n = 12
-    print numSquares(n)
+    print(numSquares(n))
 
     n = 13
-    print numSquares(n)
+    print(numSquares(n))
 
     n = 1000
-    print numSquares(n)
+    print(numSquares(n))

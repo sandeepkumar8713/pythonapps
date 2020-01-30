@@ -13,6 +13,7 @@
 # Now given that table as input (m * n) where n is number of available rules combination (here its 6) and m rules
 # (3 in this case) , output if the table is ambiguous i.e it will output two different result for same query.
 #
+# Question Type : OddOne
 # Used :
 # Complexity :
 #

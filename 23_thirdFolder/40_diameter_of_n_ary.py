@@ -3,5 +3,5 @@
 # These two nodes must be two leaf nodes. The following examples have the longest path[diameter] shaded.
 #
 # TODO :: add code, binary tree diameter already added
-#
+# Question Type : Easy
 #

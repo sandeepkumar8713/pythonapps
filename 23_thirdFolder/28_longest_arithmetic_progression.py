@@ -11,6 +11,7 @@
 # Output: 3
 # Explanation: The longest arithmetic subsequence is [4,7,10].
 #
+# Question Type : Generic
 # Used : The main idea is to maintain a map of differences seen at each index. We iteratively build the map for a
 #        new index i, by considering all elements to the left one-by-one. For each pair of indices (i,j) and
 #        difference d = A[i]-A[j] considered, we check if there was an existing chain at the index j with
@@ -63,10 +64,10 @@ def longestArithSeqLength(inpArr):
 
 if __name__ == "__main__":
     inpArr = [3, 6, 9, 12]
-    print longestArithSeqLength(inpArr)
+    print(longestArithSeqLength(inpArr))
 
     inpArr = [9, 4, 7, 2, 10]
-    print longestArithSeqLength(inpArr)
+    print(longestArithSeqLength(inpArr))
 
     inpArr = [5, 7, 20, 9, 33]
-    print longestArithSeqLength(inpArr)
+    print(longestArithSeqLength(inpArr))

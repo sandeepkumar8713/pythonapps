@@ -10,6 +10,7 @@
 # If it is not possible, return false.
 # Followup : If player A takes the first hand instead, which node should he pick, so that it always wins.
 #
+# Question Type : ShouldSee
 # Used : To check if second player can win. Call a recursive function to get, left and right subtree count from the node
 #        selected by the first player. It also returns total number of nodes from given root. Now find max of left
 #        subtree, right subtree and remaining nodes(parent). If this max is more than n/2 return true.
@@ -105,5 +106,5 @@ if __name__ == "__main__":
 
     x = 3
     n = 11
-    print btreeGameWinningMoveSecondPlayer(root, x)
-    print btreeGameWinningMoveFirstPlayer(root, n)
+    print(btreeGameWinningMoveSecondPlayer(root, x))
+    print(btreeGameWinningMoveFirstPlayer(root, n))

@@ -21,6 +21,7 @@
 # Example: Input: [0,1,0,3,12]
 # Output: [1,3,12,0,0]
 #
+# Question Type : Easy
 # Used : Run a loop, keep track of index where lastNonZeroFoundAt index. When a non zero element is found, swap it with
 #        lastNonZeroFoundAt index and increment the index:
 #        Logic : def moveZeroes(inpArr):
@@ -44,7 +45,7 @@ def moveZeroes(inpArr):
 
 if __name__ == "__main__":
     inpArr = [0, 1, 0, 3, 12]
-    print moveZeroes(inpArr)
+    print(moveZeroes(inpArr))
 
     inpArr = [15, 0, 1, 0, 3, 12]
-    print moveZeroes(inpArr)
+    print(moveZeroes(inpArr))

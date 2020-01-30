@@ -4,6 +4,7 @@
 # A binary tree is the special case where m = 2, and a ternary tree is another case with m = 3 that limits its children
 # to three.
 #
+# Question Type : ShouldSee
 # Used : Loop over the input nodes and its children. While doing so, keeping XORing the values to a temp val. After the
 #        loop, each element will be visited twice accept the root node. So temp value will be root value.
 #        Logic : def findRoot(nodes):
@@ -50,4 +51,4 @@ if __name__ == "__main__":
 
     root = findRoot([n2, n3, n4, n1])
     if root:
-        print root.val
+        print(root.val)

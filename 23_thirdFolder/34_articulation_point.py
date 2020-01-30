@@ -7,6 +7,7 @@
 # The problem boiled down to walks in a graph. If a node appears twice in a walk in a graph then it's called a
 # critical node. Find all such nodes.
 #
+# Question Type : Generic
 # Used : The idea is to use DFS (Depth First Search). In DFS, we follow vertices in tree form called DFS tree.
 #        In DFS tree, a vertex u is parent of another vertex v, if v is discovered by u (obviously v is an adjacent
 #        of u in graph). In DFS tree, a vertex u is articulation point if one of the following two conditions is true.
@@ -23,6 +24,32 @@
 #        low[u] = min(disc[u], disc[w])
 #        where w is an ancestor of u and there is a back edge from
 #        some descendant of u to w.
+#        Logic :
+#        def AP(self):
+#        visited = [False] * (self.V)
+#        disc = [float("Inf")] * (self.V)
+#        low = [float("Inf")] * (self.V)
+#        parent = [-1] * (self.V)
+#        ap = [False] * (self.V)  # To store articulation points
+#        for i in range(self.V):
+#           if visited[i] is False:
+#               self.APUtil(i, visited, ap, parent, low, disc)
+#        def APUtil(self, u, visited, ap, parent, low, disc):
+#        children = 0, visited[u] = True
+#        disc[u] = self.Time, low[u] = self.Time
+#        self.Time += 1
+#        for v in self.graph[u]:
+#           if visited[v] is False:
+#               parent[v] = u
+#               children += 1
+#               self.APUtil(v, visited, ap, parent, low, disc)
+#               low[u] = min(low[u], low[v])
+#               if parent[u] == -1 and children > 1:
+#                   ap[u] = True
+#               if parent[u] != -1 and low[v] >= disc[u]:
+#                   ap[u] = True
+#           elif v != parent[u]:
+#               low[u] = min(low[u], disc[v])
 # Complexity : O(V+E)
 
 
@@ -108,7 +135,7 @@ class Graph:
 
         for index, value in enumerate(ap):
             if value is True:
-                print index,
+                print(index, end=" ")
 
 
 if __name__ == "__main__":
@@ -119,14 +146,14 @@ if __name__ == "__main__":
     g1.addEdge(0, 3)
     g1.addEdge(3, 4)
 
-    print "\nArticulation points in first graph "
+    print("\nArticulation points in first graph ")
     g1.AP()
 
     g2 = Graph(4)
     g2.addEdge(0, 1)
     g2.addEdge(1, 2)
     g2.addEdge(2, 3)
-    print "\nArticulation points in second graph "
+    print("\nArticulation points in second graph ")
     g2.AP()
 
     g3 = Graph(7)
@@ -138,5 +165,5 @@ if __name__ == "__main__":
     g3.addEdge(1, 6)
     g3.addEdge(3, 5)
     g3.addEdge(4, 5)
-    print "\nArticulation points in third graph "
+    print("\nArticulation points in third graph ")
     g3.AP()

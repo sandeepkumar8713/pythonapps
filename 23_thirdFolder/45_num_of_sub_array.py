@@ -8,6 +8,7 @@
 # [4], [3], [1], [2], [5], [4 3], [1 2]
 # [3 1 2], [4 3 1 2], [4 3 1 2 5]
 #
+# Question Type : Generic
 # Used : A few important observations:
 #        Since the input array is a permutation from 1 to n, each number will only appear once.
 #        For the sub sequence that meets this condition max(S) - min(S) = length(S) - 1, it will also have

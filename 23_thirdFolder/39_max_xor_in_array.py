@@ -6,6 +6,7 @@
 # Output: 28
 # Explanation: The maximum result is 5 ^ 25 = 28.
 #
+# Question Type : ShouldSee
 # Used : Make a trie of 2 children 0 and 1. Run a loop for each element. Insert the binary equivalent of the number
 #        in trie and also traverse with opposite bit to find perfect pair for this element and keep updating xor result.
 #        After the insertion update maxXor. After the array loop return maxXor.
@@ -65,4 +66,4 @@ def findMaxXor(inpArr):
 
 if __name__ == "__main__":
     inpArr = [3, 10, 5, 25, 2, 8]
-    print findMaxXor(inpArr)
+    print(findMaxXor(inpArr))

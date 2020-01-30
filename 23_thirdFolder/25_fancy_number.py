@@ -37,4 +37,4 @@ def isFancy(inpArr):
 
 if __name__ == "__main__":
     num = "9088806"
-    print (isFancy(num))
+    print(isFancy(num))

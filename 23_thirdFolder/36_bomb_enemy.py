@@ -10,6 +10,7 @@
 # 0 E 0 0
 # Output : 3 (Placing a bomb at (1,1) kills 3 enemies)
 #
+# Question Type : ShouldSee
 # Used : Run 2 loops in the matrix, from the current cell count the number of enemy hits until a wall hits (both row
 #        and col). Also keep track of max enemy hit.
 #        Logic : maxKilledEnemies(inpMat):
@@ -67,4 +68,4 @@ if __name__ == "__main__":
               ['E', '0', 'W', 'E'],
               ['0', 'E', '0', '0']]
 
-    print maxKilledEnemies(inpMat)
+    print(maxKilledEnemies(inpMat))

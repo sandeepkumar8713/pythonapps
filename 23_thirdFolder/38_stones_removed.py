@@ -11,6 +11,7 @@
 # Example : Input: stones = [[0,0],[0,2],[1,1],[2,0],[2,2]]
 # Output: 3
 #
+# Question Type : Generic
 # Used : We try to convert this to a graph problem. We assume rows and columns as nodes. So for a element in matrix,
 #        we make a union of its row and column. If 2 elements are on same row or col, they will have union and make
 #        a set. Remember elements sharing common row and col would form a disjoint set. So there might me multiple
@@ -39,7 +40,9 @@
 
 class DSU:
     def __init__(self, N):
-        self.p = range(N)
+        self.p = []
+        for i in range(N):
+            self.p.append(i)
 
     def find(self, x):
         if self.p[x] != x:
@@ -63,10 +66,10 @@ def removeStones(stones):
         parent = dsu.find(x)
         disJointSet.add(parent)
 
-    print "disjoint set count :", len(disJointSet)
+    print("disjoint set count :", len(disJointSet))
     return N - len(disJointSet)
 
 
 if __name__ == "__main__":
     stones = [[0, 0], [0, 1], [1, 0], [1, 2], [2, 1], [2, 2], [3, 3]]
-    print removeStones(stones)
+    print(removeStones(stones))

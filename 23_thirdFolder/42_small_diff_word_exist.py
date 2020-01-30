@@ -4,6 +4,7 @@
 # if given word "applx" then return true, as applx matches with apple and only one character is off.
 # aplpe returns false
 #
+# Question Type : Generic
 # Used : An alternative O(n*n) solution would be to preprocess the dictionary into a hash map thus: for every
 #        dictionary word w of length q add q words to the hashmap which can be created by removing q-th letter from
 #        the word w. Example: for the word 'dog' we add 'og', 'dg', 'do' into the hashmap. Then for the input word we

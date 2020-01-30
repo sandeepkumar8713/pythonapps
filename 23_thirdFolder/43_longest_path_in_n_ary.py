@@ -4,6 +4,7 @@
 # An n-Ary tree was given with their level of stickiness on the edges.If the water is falling from the root, find
 # the max time taken to wet the whole tree.
 #
+# Question Type : Easy
 # Used : Call a recursive function which return node, count in each of its children. Return maxCount + 1.
 #        Logic : def dfs(root):
 #        res = 0
@@ -41,4 +42,4 @@ if __name__ == "__main__":
     root.children[0].children[0] = Node(5)
     root.children[0].children[1] = Node(6)
 
-    print dfs(root)
+    print(dfs(root))

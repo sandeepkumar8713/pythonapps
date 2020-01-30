@@ -14,6 +14,7 @@
 # doesNodeExist(root, 4); // true
 # doesNodeExist(root, 7); // false, given the node on #7 is a nil node
 #
+# Question Type : Generic
 # Used : Given the target value, push it in stack, divide it by 2 and push again. Repeat this until target becomes 1.
 #        Now traverse the tree, pop elements from stack, if it is divisible by 2 go left else right. If node is None,
 #        return False. Else after the loop return True.
@@ -37,6 +38,17 @@
 #               node = node.right
 #           if node is None: return False
 #        return True
+#        def findCount(root):
+#        depth = getDepth(root)
+#        low = 2 ** (depth - 1)
+#        high = (2 ** depth) - 1
+#        while low < high:
+#           mid = low + (high - low)
+#           if doesNodeExist(root, mid):
+#               low = mid + 1
+#           else:
+#               high = mid - 1
+#        return high
 # Complexity : O(log n)
 
 ROOT = 1
@@ -103,13 +115,13 @@ if __name__ == "__main__":
     root.left.left = Node(4)
     root.right.left = Node(6)
 
-    print doesNodeExist(root, 5)
-    print doesNodeExist(root, 7)
-    print doesNodeExist(root, 3)
+    print(doesNodeExist(root, 5))
+    print(doesNodeExist(root, 7))
+    print(doesNodeExist(root, 3))
 
     root.left.right = Node(5)
     root.right.right = Node(7)
     root.left.left.left = Node(8)
     root.left.left.right = Node(9)
 
-    print findCount(root)
+    print(findCount(root))

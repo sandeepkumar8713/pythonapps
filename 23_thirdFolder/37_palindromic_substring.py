@@ -10,6 +10,7 @@
 # Output: 6
 # Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 #
+# Question Type : OddOne
 # Used : Call manachers function, which returns substring palindrome length array centered at i. Now sum array ele/2 to
 #        get the result.
 #        Logic : def manachers(inpStr):
@@ -39,7 +40,7 @@ def manachers(inpStr):
 
     # Here we try to use the fact that a substring palindrome has already been found at center i - 1, so use its small
     # part to skip some equality check.
-    for i in xrange(1, len(expandedStr) - 1):
+    for i in range(1, len(expandedStr) - 1):
         if i < right:
             palindromeLen[i] = min(right - i, palindromeLen[2 * center - i])
         while expandedStr[i + palindromeLen[i] + 1] == expandedStr[i - palindromeLen[i] - 1]:
@@ -60,4 +61,4 @@ def countSubstrings(inpStr):
 
 if __name__ == "__main__":
     inpStr = "aaa"
-    print countSubstrings(inpStr)
+    print(countSubstrings(inpStr))

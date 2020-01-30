@@ -6,6 +6,7 @@
 # Example : Input: nums = [1, 2, 3, 8, 4], target = 44
 # Output: "(3+8)*4"
 #
+# Question Type : OddOne
 # Used : My idea is to build a directed "almost bipartite" graph, the reason why it is not bipartite is because
 #        we have braces. Basically, we have two sets of nodes: value nodes and operator node, and two special
 #        nodes: ( and ).

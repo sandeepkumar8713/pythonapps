@@ -2,6 +2,7 @@
 # Question : Given N-ry tree, each child has it's own distance from parent, water is poured on top of the tree,
 # find the time when farthest node will be wet.
 #
+# Question Type : Generic, SimilarAdded
 # Used : find depth of the n-ary tree. recursive function
 # Complexity :
 #

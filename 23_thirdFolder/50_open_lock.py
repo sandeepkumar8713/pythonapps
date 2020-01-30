@@ -13,6 +13,7 @@
 # Note that a sequence like "0000" -> "0001" -> "0002" -> "0102" -> "0202" would be invalid,
 # because the wheels of the lock become stuck after the display becomes the dead end "0102".
 #
+# Question Type : Generic
 # Used : We are going to do a bi-directional BFS. One from source, other from target. While doing BFS we will maintain
 #        2 queue. We will loop through q1 and append new values in q2. Next we will loop over q2 and append in q1.
 #        Put dead end nodes in visited list.
@@ -52,7 +53,7 @@ def charToDigit(ch):
 
 
 def digitToChar(i):
-    return unichr(i + ord('0'))
+    return chr(i + ord('0'))
 
 
 def getTwoPossibility(chars, j):
@@ -117,4 +118,4 @@ if __name__ == "__main__":
     source = "0000"
     target = "0202"
     deadEnds = ["0201", "0101", "0102", "1212", "2002"]
-    print openLock(source, target, deadEnds)
+    print(openLock(source, target, deadEnds))

@@ -17,6 +17,7 @@
 # 18 converts to 81.
 # 19 converts to 61.
 #
+# Question Type : Generic
 # Used : Make numbers of fancy digits and check that they should not be fancy numbers.
 #        call as : getCountUtils(0, limit, [0])
 #        Logic : def getCountUtils(n, limit, count):
@@ -74,4 +75,4 @@ def getNotFancyCount(limit):
 
 if __name__ == "__main__":
     n = 20
-    print getNotFancyCount(20)
+    print(getNotFancyCount(20))

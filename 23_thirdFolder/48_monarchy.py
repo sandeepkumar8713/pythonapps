@@ -2,6 +2,7 @@
 # Question : Given a list of births and death. Return a list of order of succession of the monarchy.
 # It is pre-order in n-ary tree.
 #
+# Question Type : Easy
 # Used : When a birth function is called, we maintain a map of nodes and also make a n-ary tree of the nodes.
 #        Monarch map(name: node) is used make n-ary tree(ro attach child to its parent). For death we simply mark them
 #        as not alive. After the birth calls. We travel the n-ary in pre-order for  order of succession. If a monarch
@@ -44,7 +45,7 @@ class Monarchy(object):
         else:
             # find parent and add child
             if not (parent in self.monarchMap):
-                print "Parent not found"
+                print("Parent not found")
                 return
             self.monarchMap[parent].children.append(monarch)
         # Add the monarch to hash table
@@ -57,7 +58,7 @@ class Monarchy(object):
         if node:
             if node.isAlive is True:
                 # don't print dead people :'(
-                print node.name
+                print(node.name)
             for child in node.children:
                 self.preOrder(child)
 
@@ -76,6 +77,6 @@ if __name__ == "__main__":
     monarchy.birth("Asha ", "Bob")
     monarchy.getOrderOfSuccession()
 
-    print ""
+    print("")
     monarchy.death("Andy")
     monarchy.getOrderOfSuccession()
