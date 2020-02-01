@@ -1,5 +1,6 @@
 # Question : Write a function to print the breadth first traversal for a undirected graph from a given source s.
 #
+# Question Type : Easy
 # Used : Make a class whose member graph is a dict of keys(vertices) whose value is list of vertices it is connected to.
 #        Call a BFS(source) function whose input is source vertex. It maintains a list of boolean values to specify
 #           whether the vertices is visited or not. It appends the source to the queue marks this vertex as visited.

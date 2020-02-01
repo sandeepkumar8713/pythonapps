@@ -9,6 +9,7 @@
 # Output: 4
 # Explanation: Because we can choose [1, -2, 0, 3] and drop -2, thus the sub-array [1, 0, 3] becomes the maximum value.
 #
+# Question Type : ShouldSee
 # Used : We only need to track two variables: the maximum sum we can get (with / without) a deletion.
 #        For the maximum without a deletion, it is purely Kadane's algorithm.
 #        For the maximum with a deletion, we can either discard current number, or, add current number to previous

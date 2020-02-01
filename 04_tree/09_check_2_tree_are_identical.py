@@ -2,6 +2,7 @@
 # Question : Write Code to Determine if Two Trees are Identical. Two trees are identical when they have same data and
 # arrangement of data is also same.
 #
+# Question Type : Easy
 # Used : we need to (pre-order) traverse both trees simultaneously, and while traversing we need to compare data and
 #        children of the trees.
 #        Logic : def identicalTrees(a, b):

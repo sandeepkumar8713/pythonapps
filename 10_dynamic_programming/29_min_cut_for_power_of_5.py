@@ -2,6 +2,7 @@
 # Question : Given a binary string str. The task is to find the smallest positive integer C such that the binary
 # string can be cut into C pieces (sub-strings) and each sub-string should be a power of 5 with no leading zeros.
 #
+# Question Type : ShouldSee
 # Used : Iterate from i = 1 and for every str[j...i] where j = 0 & j < i, we check if the number formed from str[j..i]
 #        is a power of 5 then we update the dp[] array with the value of the lowest possible cut size value.
 #        After confirming that the number formed from str[j..i] in decimal is a power of 5 we calculate

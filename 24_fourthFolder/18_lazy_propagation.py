@@ -3,6 +3,7 @@
 # "Sum of given Range" problem to explain Lazy propagation. He then asked range update in best optimised way.
 # I told him Lazy propagation. I had to write code for segment tree with lazy propagation.
 #
+# Question Type : Generic
 # Used : updateRange(us, ue)
 #        1) If current segment tree node has any pending update, then first add that pending update to current node.
 #        2) If current node's range lies completely in update query range.

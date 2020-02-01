@@ -1,3 +1,5 @@
+# Question : Extract questions from all the files and store it in other file.
+
 import os
 LINE_LIMIT = 99
 
@@ -21,7 +23,7 @@ def formatLine(resStr):
         spaceChar = thisLineLimit
         while resStr[spaceChar] != ' ':
             spaceChar -= 1
-        print spaceChar
+        print(spaceChar)
         resStr = resStr[:spaceChar] + '\n' + resStr[spaceChar+1:]
         thisLineLimit += LINE_LIMIT
     return resStr
@@ -55,7 +57,7 @@ def getQuestion(filename, count, resOutputFile):
         resOutputFile.write(resStr + '\n')
         count[0] += 1
     else:
-        print "Question not found: ", filename
+        print("Question not found: ", filename)
     fp.close()
 
 
@@ -67,7 +69,7 @@ if __name__ == "__main__":
     resOutputFile = open('all_questions.txt', 'w')
     for filename in filenameList:
         getQuestion(filename, count, resOutputFile)
-    print count[0]
+    print(count[0])
     resOutputFile.close()
 
 

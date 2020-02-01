@@ -13,6 +13,7 @@
 # Game over. 8 is the number I picked.
 # You end up paying $5 + $7 + $9 = $21.
 #
+# Question Type : ShouldSee
 # Used : We will do dp with this condition range(i,j) : return min(k + max(func(i, k-1), func(k+1, j))), for i<=k<j.
 #        You choose a value k within the range.
 #        2 scenarios are likely to happen: k is too high OR k is too low

@@ -7,6 +7,7 @@
 # Explanation: The path [AAA, BBC, CCD, DDD] is closest to given array.
 # In path, BBC differs from BBB by 1 and CCD differs from CCC by 1 hence answer is 1 + 1 = 2.
 #
+# Question Type : Generic
 # Used : We are going to use bfs with min heap. While doing bfs, for each node in queue, we try to find next node,
 #        which has the least difference from the node in given array. We return when resultant array length is equal
 #        to given array length.

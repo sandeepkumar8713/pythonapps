@@ -2,6 +2,7 @@
 # Question : Given an n x n matrix, where every row and column is sorted in non-decreasing order. Find the kth
 # smallest element in the given 2D array.
 #
+# Question Type : Generic
 # Used : The idea is to use min heap. Following are detailed step.
 #        1) Build a min heap of elements from first row. A heap entry also stores row number and column number.
 #        2) Do following k times.

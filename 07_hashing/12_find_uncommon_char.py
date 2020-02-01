@@ -2,6 +2,7 @@
 # character means that either the character is present in one string or it is present in other string but not
 # in both. The strings contain only lowercase characters and can contain duplicates.
 #
+# Question Type : Easy
 # Used : Loop over the elements of string1 and push in hash dict while marking its value as 1
 #        Loop over the elements of string2 and if the element is present in hashDict mark it as -1 else insert in hash
 #           dict with value 2

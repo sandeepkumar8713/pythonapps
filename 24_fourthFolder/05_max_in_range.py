@@ -2,6 +2,7 @@
 # Question : Given an array arr[0 . . . n-1]. We need to efficiently find the minimum and maximum value
 # from index qs (query start) to qe (query end) where 0 <= qs <= qe <= n-1. We are given multiple queries.
 #
+# Question Type : Generic
 # Used : Make a segment tree of nodes, with min and max
 #        Now find min, max for given range
 #        Logic :

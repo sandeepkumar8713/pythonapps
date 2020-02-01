@@ -7,6 +7,7 @@
 # From each cell, you can either move to four directions: left, right, up or down. You may NOT move diagonally or
 # move outside of the boundary (i.e. wrap-around is not allowed).
 #
+# Question Type : Generic
 # Used : Do Depth First Search (DFS) from each cell to find all consecutive paths. While doing DFS, we may encounter
 #        many sub problems again and again. So we use dynamic programming to store results of sub problems.
 #        Logic : maxLen = 0

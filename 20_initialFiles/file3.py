@@ -1,6 +1,9 @@
 # Question : binary tree
 # print a binary tree with structure
-
+#
+# Question Type : OddOne
+# Used : TODO :: add used
+# Complexity :
 
 class Node:
     def __init__(self, cargo=None, left=None, right=None):

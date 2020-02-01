@@ -1,6 +1,7 @@
 # Question : The problem is to count all the possible paths from top left to bottom right of a mXn matrix with the
 # constraints that from each cell you can either move only to right or down.
 #
+# Question Type : Generic, SimilarAdded
 # Used: Solve this using sub problem. Path count to reach x,y is sum of path count to reach cell x-1,y and x,y-1. Use
 #       this logic to loop over the input matrix. (Recursion return  numberOfPaths(m-1, n) + numberOfPaths(m, n-1) would
 #       have more complexity, overlapping so memorization is used.

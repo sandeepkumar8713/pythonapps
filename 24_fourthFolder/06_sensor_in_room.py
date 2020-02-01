@@ -7,6 +7,7 @@
 # The third interviewers asked a question about flippy birds. Say in a 2d space. You are a flippy bird
 # and you are facing some obstacles. How do you know if you can cross all the obstacles and reach the other end.
 #
+# Question Type : Generic
 # Used : Yeah, this is percolation problem solvable using UnionFind.
 #        https://www.coursera.org/lecture/algorithms-part1/union-find-applications-OLXM8
 #        There are should be 2 disjoint set representing 2 walls.(left and right). Now start making union of sensors
