@@ -11,6 +11,7 @@
 # [ 0, y, 0, 0 ]
 # Output : 1
 #
+# Question Type : Generic, SimilarAdded
 # Used : Maintain a table dp of size m * n. Loop over the each and every element of input matrix. but from right side
 #        and column wise. col : n-1 to 0 and row : n -1  to 0
 #            The idea is to choose min distance out of 3 option right, down and right down

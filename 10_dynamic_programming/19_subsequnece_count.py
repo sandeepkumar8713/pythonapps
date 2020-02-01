@@ -14,6 +14,7 @@
 # Output : 7
 # Subsequences are abc, abc, abbc, aabc, abcc, abc and abc
 #
+# Question Type : ShouldSee
 # Used : Loop over each element in string:
 #           if ch == 'a': aCount = (1 + 2 * aCount)
 #           elif ch == 'b': bCount = aCount + 2 * bCount

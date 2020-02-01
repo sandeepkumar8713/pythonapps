@@ -9,6 +9,7 @@
 #          2 8
 #          10
 #
+# Question Type : Generic
 # Used : Make a matrix dp : size n * (1+targetSum), such that dp[i][j] stores true if sum j is possible with array
 #        elements from 0 to i.
 #        Logic : Make a first column of dp True, for sum 0
@@ -81,7 +82,7 @@ def printAllSubsets(inpArr, targetSum):
                 dp[i][j] = dp[i - 1][j]
 
     if dp[n-1][targetSum] is False:
-        print "No subset possible"
+        print("No subset possible")
         return
     printSubsetsRec(dp, inpArr, n-1, targetSum, [])
 

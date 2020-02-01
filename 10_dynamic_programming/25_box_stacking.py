@@ -6,6 +6,7 @@
 # larger than those of the 2-D base of the higher box. Of course, you can rotate a box so that any side
 # functions as its base. It is also allowable to use multiple instances of the same type of box.
 #
+# Question Type : SimilarAdded
 # Used : Make a class of Box with field : height, width and depth.
 #        Make a list of box objects with all 3 possible rotation
 #        Sort the list in decreasing order based on area.(width * depth)
@@ -78,4 +79,4 @@ if __name__ == "__main__":
               [1, 2, 3],
               [4, 5, 6],
               [10, 12, 32]]
-    print (getMaxStackSize(inpMat))
+    print(getMaxStackSize(inpMat))

@@ -5,6 +5,7 @@
 # this job done under the constraints that any painter will only paint continuous sections of boards, say
 # board {2, 3, 4} or only board {1} or nothing but not board {2, 4, 5}.
 #
+# Question Type : SimilarAdded
 # Used : Make a cumulative sum array, Make a dp array of size [k+1][n+1]. For each cell, try to separator from
 #        p = i to j. Choose the minimum of maximum values (Remember this is our aim).
 #        Steps :
@@ -49,7 +50,7 @@ def findMax(arr, k):
     # 2 to n boards
     for i in range(2, k+1):
         for j in range(2, n+1):
-            minimum = sys.maxint
+            minimum = sys.maxsize
             # i-1 th separator before position arr[p=1..j]
             for p in range(1, j+1):
                 minimum = min(minimum, max(dp[i - 1][p], subSum(p, j)))
@@ -68,4 +69,4 @@ if __name__ == "__main__":
     arr = [1, 2, 4, 7, 3, 6, 9]
     k = 4
 
-    print (findMax(arr, k))
+    print(findMax(arr, k))

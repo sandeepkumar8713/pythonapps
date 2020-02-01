@@ -9,6 +9,7 @@
 # Pattern = "*****ba*****ab", output : true
 # Pattern = "baaa?ab", output : true
 #
+# Question Type : ShouldSee
 # Used : Here we are maintaining a memory table. dp : size (n+1) * (m+1). Initialize all as False.
 #        dp[0][0] = True
 #        Only '*' can match with empty string
@@ -65,4 +66,4 @@ if __name__ == "__main__":
     inpStr = "baaabab"
     pattern = "*****ba*****ab"
     # pattern = "baaa?ab"
-    print strMatch(pattern, inpStr)
+    print(strMatch(pattern, inpStr))

@@ -8,6 +8,7 @@
 # --------------------------------------------
 # price    | 1   5   8   9  10  17  17  20
 #
+# Question Type : ShouldSee
 # Used : Here we are maintaining a memory table. val : size (n+1). Initialize all as 0.
 #        Loop over all the elements from 1 to n.
 #           Loop over elements from 0 to i
@@ -17,7 +18,7 @@
 # Complexity : O(n^2)
 
 import sys
-INT_MIN = -sys.maxint
+INT_MIN = -sys.maxsize
 
 
 def cutRod(prices):
@@ -35,4 +36,4 @@ if __name__ == "__main__":
     arr = [1, 5, 8, 9, 10, 17, 17, 20]
     # arr = [3, 5, 8, 9, 10, 17, 17, 20]
     size = len(arr)
-    print "Maximum Obtainable Value is ", cutRod(arr)
+    print("Maximum Obtainable Value is ", cutRod(arr))

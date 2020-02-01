@@ -6,6 +6,7 @@
 # Output: 2
 # Explanation: Numbers are 11 and 20
 #
+# Question Type : Generic
 # Used : Maintain a table dp of size: digitCount * targetSum and set all values as -1. Call a recursive function
 #        countRec(digitCount, targetSum, dp, firstCall).  if digitCount == 0: if targetSum == 0: return 1 else: return 0
 #        Check if for given digitCount and targetSum, possible count is already calculate.
@@ -51,4 +52,4 @@ def finalCount(digitCount, targetSum):
 if __name__ == "__main__":
     digitCount = 3
     targetSum = 5
-    print finalCount(digitCount, targetSum)
+    print(finalCount(digitCount, targetSum))

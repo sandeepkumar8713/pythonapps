@@ -6,6 +6,7 @@
 # Output: 4
 # We need to remove 4 elements (4, 5, 100, 200) so that 2*min becomes more than max.
 #
+# Question Type : ShouldSee
 # Used : initialize longestStart = -1 longestEnd = 0
 #        The idea is to take sub array of variable length, check if it satisfies the condition and take the longest
 #           sub array length.
@@ -26,8 +27,8 @@ def minRemovalsDP(inpArr):
     n = len(inpArr)
 
     for i in range(n):
-        minVal = sys.maxint
-        maxVal = -sys.maxint
+        minVal = sys.maxsize
+        maxVal = -sys.maxsize
         for j in range(i, n):
             if inpArr[j] > maxVal:
                 maxVal = inpArr[j]
@@ -55,4 +56,4 @@ if __name__ == "__main__":
     # inpArr = [4, 7, 5, 6]
     # inpArr = [20, 7, 5, 6]
     # inpArr = [20, 4, 1, 3]
-    print minRemovalsDP(inpArr)
+    print(minRemovalsDP(inpArr))

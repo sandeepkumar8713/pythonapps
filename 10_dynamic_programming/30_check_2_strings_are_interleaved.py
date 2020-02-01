@@ -3,6 +3,7 @@
 # C is said to be interleaving A and B, if it contains all characters of A and B and order of all characters in
 # individual strings is preserved.
 #
+# Question Type : Generic
 # Used : Make a dp 2 array of size m+1 * n+1
 #        Run two loops over A and B, and check if either of the character is present in C. If true set value using
 #        previous dp value of matching character.
@@ -59,5 +60,5 @@ if __name__ == "__main__":
     A = "XXY"
     B = "XXZ"
     C = "XXZXXXY"
-    print (isInterleaved(A, B, C))
-    print (isInterleaved("XY", "WZ", "WZXY"))
+    print(isInterleaved(A, B, C))
+    print(isInterleaved("XY", "WZ", "WZXY"))

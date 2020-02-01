@@ -7,6 +7,7 @@
 # Output : 5
 # Explanation : 3 (squares of size 12x12) +  2 (squares of size 18x18)
 #
+# Question Type : Generic
 # Used : Assuming we have a rectangle with width is N and height is M.
 #        if (N == M), so it is a square and nothing need to be done.
 #        Otherwise, we can divide the rectangle into two other smaller one (N - x, M) and (x, M), so it can
@@ -29,8 +30,8 @@ dp = [[0 for i in range(MAX)] for i in range(MAX)]
 
 
 def minimumSquare(m, n):
-    vertical_min = sys.maxint
-    horizontal_min = sys.maxint
+    vertical_min = sys.maxsize
+    horizontal_min = sys.maxsize
 
     if m == n:
         return 1

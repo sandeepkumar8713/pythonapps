@@ -5,6 +5,7 @@
 # Output: 3
 # The possible decodings are "ABA", "AU", "LA"
 #
+# Question Type : Generic
 # Used : If the last digit is non-zero, recur for remaining (n-1) digits and add the result to total count.
 #        If the last two digits form a valid character (or smaller than 27), recur for remaining (n-2) digits and add
 #           the result to total count.
@@ -34,4 +35,4 @@ def countDecodingDP(digits, n):
 if __name__ == "__main__":
     digits = "1234"
     n = len(digits)
-    print countDecodingDP(digits, n)
+    print(countDecodingDP(digits, n))

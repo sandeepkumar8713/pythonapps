@@ -3,6 +3,7 @@
 # The problem is not actually to perform the multiplications, but merely to decide in which order to perform the
 # multiplications.
 #
+# Question Type : Generic
 # Used : L is chain length. Here we are taking variable length and start at different i. Place parenthesis at different
 #        places between first and last matrix(i,j), recursively calculate count of multiplications for each parenthesis
 #        placement and return the minimum count.
@@ -29,14 +30,14 @@ import sys
 
 def printParenthesis(i, j, bracket, matrixNameAscii):
     if i == j:
-        print chr(matrixNameAscii[0]),
+        print(chr(matrixNameAscii[0]),end=" ")
         matrixNameAscii[0] += 1
         return
 
-    print "(",
+    print("(",end=" ")
     printParenthesis(i, bracket[i][j], bracket, matrixNameAscii)
     printParenthesis(bracket[i][j] + 1, j, bracket, matrixNameAscii)
-    print ")",
+    print(")",end=" ")
 
 
 def matrixChainOrder(matrixSize):
@@ -44,7 +45,7 @@ def matrixChainOrder(matrixSize):
     # Multiplication Size
     dp = []
     for i in range(n):
-        dp.append([sys.maxint] * n)
+        dp.append([sys.maxsize] * n)
 
     for i in range(n):
         dp[i][i] = 0
@@ -70,8 +71,8 @@ def matrixChainOrder(matrixSize):
 
     matrixNameAscii = ord('A')
     printParenthesis(1, n-1, bracket, [matrixNameAscii])
-    print
-    print dp[1][n-1]
+    print("")
+    print(dp[1][n-1])
 
 
 if __name__ == "__main__":

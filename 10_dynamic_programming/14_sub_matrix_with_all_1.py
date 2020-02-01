@@ -4,6 +4,7 @@
 # Question : Given a binary matrix, find out the maximum size square sub-matrix with all 1s.
 # Similar question : Count the number of squares in the matrix of zeros and ones, which consist only of zeros.
 #
+# Question Type : Generic
 # Used : The idea of the algorithm is to construct an auxiliary size matrix dp[][] in which each entry d[[i][j]
 #        represents size of the square sub-matrix with all 1s including mat[i][j] where mat[i][j] is the rightmost
 #        and bottommost entry in sub-matrix.
@@ -53,13 +54,13 @@ def printMaxSubSquare(mat):
     squareCount = 0
     for row in dp:
         squareCount += sum(row)
-    print "squareCount :", squareCount
-    print "Max square :"
+    print("squareCount :", squareCount)
+    print("Max square :")
 
     for thisRow in mat[maxI - maxSize + 1: maxI + 1]:
-        print thisRow[maxJ - maxSize + 1: maxJ + 1]
+        print(thisRow[maxJ - maxSize + 1: maxJ + 1])
 
-    print ""
+    print("")
 
 
 if __name__ == "__main__":
@@ -80,4 +81,3 @@ if __name__ == "__main__":
          [0, 0, 0],
          [0, 0, 0]]
     printMaxSubSquare(M)
-

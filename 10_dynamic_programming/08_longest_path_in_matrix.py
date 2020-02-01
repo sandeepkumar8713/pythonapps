@@ -8,6 +8,7 @@
 # Output: 4
 # The longest path is 6-7-8-9.
 #
+# Question Type : Generic, SimilarAdded
 # Used : Here we are maintaining a memory table. table : dp row * col . Initialize all as -1. (-1 not yet computed)
 #        Here the idea is to compute max possible path for each cell and return the largest value.
 #        Set result as 1. Loop over each of the elements in the array and call(if not yet calculated) recursive function
@@ -70,5 +71,5 @@ if __name__ == "__main__":
     mat = [[1, 2, 9],
            [5, 3, 8],
            [4, 6, 7]]
-    print "Longest path:", finLongestOverAll(mat)
+    print("Longest path:", finLongestOverAll(mat))
 

@@ -9,7 +9,7 @@
 #
 # Used : Do Depth First Search (DFS) from each cell to find all consecutive paths. While doing DFS, we may encounter
 #        many sub problems again and again. So we use dynamic programming to store results of sub problems.
-#        maxLen = 0
+#        Logic : maxLen = 0
 #        for i in range(row):
 #           for j in range(col):
 #             if dp[i][j] == -1:
@@ -18,6 +18,17 @@
 #                     ans = max(ans, 1 + getLenUtil(inpMat, dp, i + x[k], j + y[k], thisCell))
 #                 dp[i][j] = ans
 #             if maxLen < dp[i][j]: maxLen = dp[i][j]
+#        def getLenUtil(mat, dp, i, j, prev):
+#        row = len(mat), col = len(mat[0])
+#        if isvalid(i, j, row, col) is False or isadjacent(prev, mat[i][j]) is False:
+#           return 0
+#        if dp[i][j] != -1:
+#           return dp[i][j]
+#        ans = 0
+#        for k in range(len(x)):
+#           ans = max(ans, 1 + getLenUtil(mat, dp, i + x[k], j + y[k], mat[i][j]))
+#        dp[i][j] = ans
+#        return dp[i][j]
 # Complexity : O(n*m)
 
 
@@ -87,12 +98,12 @@ def getLen(inpMat):
 
 if __name__ == "__main__":
     inpMat = ["ACD", "HBA", "IGF"]
-    print getLen(inpMat)
+    print(getLen(inpMat))
 
     inpMat = ["ABE", "CFG", "BDH", "ABC"]
-    print getLen(inpMat)
+    print(getLen(inpMat))
 
     inpMat = [['9', '9', '4'],
               ['6', '6', '8'],
               ['2', '1', '1']]
-    print getLen(inpMat)
+    print(getLen(inpMat))

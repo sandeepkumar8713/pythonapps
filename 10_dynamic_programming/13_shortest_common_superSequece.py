@@ -5,6 +5,7 @@
 # Input:   str1 = "geek",  str2 = "eke"
 # Output: "geeke"
 #
+# Question Type : Generic
 # Used : We have to make a memory table count : dp (m + 1) * (n + 1). Mark all as 0.
 #        Loop over each of the elements in dp. If i is 0, then set dp[i][j] = j, as we will have to add all the elements
 #           from array Y. if j is 0, then set dp[i][j] = i. If same X[i-1] == Y[i-j]:  dp[i][j] = 1 + dp[i - 1][j - 1]
@@ -48,4 +49,4 @@ def superSeq(X, Y):
 if __name__ == "__main__":
     X = "AGGTAB"
     Y = "GXTXAYB"
-    print ("Length of the shortest super sequence is:", superSeq(X, Y))
+    print("Length of the shortest super sequence is:", superSeq(X, Y))

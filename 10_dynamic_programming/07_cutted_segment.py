@@ -3,7 +3,9 @@
 # way that the cut length of a line segment each time is integer either x , y or z. and after performing all
 # cutting operation the total number of cutted segments must be maximum.
 #
-# Used : Here we are maintaining a memory table. table : dp (lineSegmentLength+1). Initialize all as -1.
+# Question Type : SimilarAdded
+# Used : Similar to before problem
+#        Here we are maintaining a memory table. table : dp (lineSegmentLength+1). Initialize all as -1.
 #        dp[0] = 0
 #        Run a loop from start (minimum cut allowed) to lineSegmentLength
 #           Run a loop for each of the element in allowed cut
@@ -34,6 +36,4 @@ if __name__ == "__main__":
 
     # lineSegmentLength = 5
     # allowedCut = [5, 3, 2]
-    print maxSegment(allowedCut, lineSegmentLength)
-
-
+    print(maxSegment(allowedCut, lineSegmentLength))

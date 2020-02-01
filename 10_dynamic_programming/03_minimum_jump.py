@@ -6,8 +6,10 @@
 # Input :  arr[] = {1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9}
 # Output :  3 (1-> 3 -> 9 -> 9)
 #
+# Question Type : Generic, SimilarAdded
 # Used : The idea is to traverse all possible steps, and keep updating maxReach. Once previous point's reach get over.
 #        do step = maxReach - i, this we find the maxReach for this point, by traveling reach(step) of previous point.
+#        Similar to petrol tank problem
 # minJumps(arr) : set step = arr[0], jump = 1. Now run a loop from 1 to n-1 : if i == n-1: return jump
 #                   update maxReach : maxReach = max(maxReach, i + arr[i])
 #                   step -= 1   (we are moving forward, reducing our reach)

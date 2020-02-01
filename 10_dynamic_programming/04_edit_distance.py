@@ -5,6 +5,7 @@
 # Remove
 # Replace
 #
+# Question Type : Generic
 # Used : Here we are maintaining a memory table. dp : size (m+1) * (n+1). Initialize all as 0.
 #        Now loop over each element of the table dp. If it is in first row or col set as 0.
 #           If two characters of two strings are same, nothing much to do. Ignore these 2 characters and get count for
@@ -48,4 +49,4 @@ def editDist(str1, str2, m, n):
 if __name__ == "__main__":
     str1 = "sunday"
     str2 = "saturday"
-    print "Minimum operations:", editDist(str1, str2, len(str1), len(str2))
+    print("Minimum operations:", editDist(str1, str2, len(str1), len(str2)))

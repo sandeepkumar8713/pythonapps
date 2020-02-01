@@ -5,6 +5,7 @@
 # needed for "ababbbabbababa". The three cuts are "a|babbbab|b|ababa". If a string is palindrome, then minimum 0
 # cuts are needed. If a string of length n containing all different characters, then minimum n-1 cuts are needed.
 #
+# Question Type : Generic
 # Used : Call a recursive function minPalinPartition. Maintain a map dp size : n*n such that dp[i][j] is return true if
 #        inpStr[i..j] is palindrome. Maintain a array minCuts size : n such that minCuts[i] gives min cuts for
 #        inpStr[0..i].
@@ -23,7 +24,7 @@ import sys
 def minPalinPartition(inpStr):
     n = len(inpStr)
 
-    minCuts = [sys.maxint] * n
+    minCuts = [sys.maxsize] * n
 
     dp = []
     for i in range(n):
@@ -57,4 +58,4 @@ def minPalinPartition(inpStr):
 
 if __name__ == "__main__":
     inpStr = "ababbbabbababa"
-    print minPalinPartition(inpStr)
+    print(minPalinPartition(inpStr))

@@ -11,6 +11,7 @@
 # Input : jesslookedjustliketimherbrother
 # Output: jess looked just like tim her brother (7 unrecognized characters)
 #
+# Question Type : ShouldSee
 # Used : We will use recursion here. Call a function split(setOfWords, sentence, start, memo), which split the
 #        sentence at each character and call the function with remaining sentence to check if the invalid length
 #        is minimum.
@@ -47,7 +48,7 @@ def split(setOfWords, sentence, start, memo):
     if memo[start] is not None:
         return memo[start]
 
-    bestInvalid = sys.maxint
+    bestInvalid = sys.maxsize
     bestParsing = ""
 
     partial = ""
@@ -427,5 +428,5 @@ if __name__ == "__main__":
     sentence = "As one of the topk companies in the world, Google will surely attract the attention of computer" \
                " gurus. This does not, however, mean the company is for everyone."
     sentence = clean(sentence)
-    print (sentence)
-    print (bestSplit(setOfWords, sentence))
+    print(sentence)
+    print(bestSplit(setOfWords, sentence))

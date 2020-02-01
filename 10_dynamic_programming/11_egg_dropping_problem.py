@@ -9,6 +9,7 @@
 # If the egg doesn't break at a certain floor, it will not break at any floor below.
 # If the eggs breaks at a certain floor, it will break at any floor above.
 #
+# Question Type : ShouldSee
 # Used : When we drop an egg from a floor x, there can be two cases (1) The egg breaks (2) The egg doesn't break.
 #       1) We only need to check for floors lower than x with remaining eggs; so the problem reduces to
 #          x-1 floors and n-1 eggs
@@ -45,7 +46,7 @@ def eggDrop(eggCount, floorCount):
     # Fill rest of the entries in table using optimal substructure property
     for i in range(2, eggCount + 1):
         for j in range(2, floorCount + 1):
-            dp[i][j] = sys.maxint
+            dp[i][j] = sys.maxsize
             for x in range(1, j + 1):
                 # max because we are considering for worst case
                 minTrail = 1 + max(dp[i - 1][x - 1], dp[i][j - x])
@@ -61,4 +62,4 @@ if __name__ == "__main__":
 
     # n = 2
     # k = 10
-    print "Minimum number of trials in worst case with", n, "eggs and", k, "floors is", eggDrop(n, k)
+    print("Minimum number of trials in worst case with", n, "eggs and", k, "floors is", eggDrop(n, k))

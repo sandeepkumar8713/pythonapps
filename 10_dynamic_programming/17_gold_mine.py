@@ -4,6 +4,7 @@
 # (right->,right up /,right down\) that is from a given cell, the miner can move to the cell diagonally up
 # towards the right or right or diagonally down towards the right. Find out maximum amount of gold he can collect.
 #
+# Question Type : ShouldSee
 # Used : Maintain a table dp of size m * n. Loop over the each and every element of input matrix. but from right side
 #        and column wise. col : n-1 to 0 and row : 0 to n
 #           The idea is to choose max out of 3 option right, right up and right down

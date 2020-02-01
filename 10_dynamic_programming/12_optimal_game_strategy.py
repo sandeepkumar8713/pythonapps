@@ -11,6 +11,7 @@
 # Opponent chooses 3.
 # Total value collected by user is 15(8 + 7)
 #
+# Question Type : ShouldSee
 # Used : We have to make a memory table count : dp n * n. Mark all as 0.
 #        Run a loop from k: 0 to n-1
 #           Run a loop from j: k to n-1, i: 0 to n-j-1
@@ -55,4 +56,4 @@ def optimalStrategyOfGame(arr):
 
 if __name__ == "__main__":
     arr = [8, 15, 3, 7]
-    print "Maximum value:", optimalStrategyOfGame(arr)
+    print("Maximum value:", optimalStrategyOfGame(arr))

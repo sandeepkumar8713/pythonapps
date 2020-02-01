@@ -19,6 +19,7 @@
 #                .................... +
 #                Sum(m, n - 1, X - m)
 #
+# Question Type : ShouldSee
 # Used : Make a dp matrix : (dices + 1) * (targetSum + 1)
 #        Now run 2 loops on dp, current value can be find by adding, combination of dices : targetSum - 1 and
 #        combination of dices-1 and targetSum - 1. We have take care of overlapping combination if j - faces - 1 >= 0.

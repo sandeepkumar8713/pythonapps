@@ -9,6 +9,7 @@
 #  2 step + 1 step
 #  3 step
 #
+# Question Type : ShouldSee
 # Used : We have to make a memory table count : size (n+1). Mark all as 0. Initialize base values.
 #        Mark count[0] = 1, count[1] = 1, count[2] = 2
 #        Loop over the remaining elements, the count[i] would be sum of 3 previous counts as 1, 2, 3 steps are allowed.
@@ -31,4 +32,4 @@ def printCountDP(dist):
 
 if __name__ == "__main__":
     dist = 4
-    print "All possible ways are:", printCountDP(dist)
+    print("All possible ways are:", printCountDP(dist))
