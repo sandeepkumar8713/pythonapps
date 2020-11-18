@@ -4,8 +4,8 @@
 #                       20
 #                     /    \
 #                   8       22
-#                 /   \      \
-#               5      3      25
+#                 /   \    /  \
+#               5      3  4   25
 #                     / \
 #                   10    14
 #
@@ -36,7 +36,7 @@ def levelOrder(root):
 
     while len(queue) > 0:
         temp = queue.pop(0)
-        print(temp.data,end=" ")
+        print(temp.data, end=" ")
 
         if temp.left:
             queue.append(temp.left)
