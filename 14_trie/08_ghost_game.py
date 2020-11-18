@@ -1,9 +1,9 @@
 # https://leetcode.com/discuss/interview-experience/389969/Google-or-L3-or-Seattle-or-Sep-2019-No-Offer
 # http://www.petertheobald.com/tech/ghost-solver---in-which-we-ruin-a-great-game/
 # Question : Ghost game, its a game played in N players, game begins with empty string. There are 2 rules:
-# You can only add such char to the string so that it doesnt becomes a complete valid english word, but it
-# should always be a substring of a valid english word.
-# If you cant add a char, then you loose. Game ends when a player looses
+# You can only add such char to the string so that it doesn't becomes a complete valid english word, but it
+# should always be a substring of a valid english word. If you cant add a char, then you loose. Game ends when
+# a player looses
 #
 # Game state is: ""
 # You cannot add 'a' , as 'a' is a valid english word, but you can add 'c' because its a valid substring of
@@ -12,7 +12,7 @@
 # You loose, because now if you add 'b' thinking its a valid substring of "cable", but this already becomes
 # a valid english word "cab"
 #
-# After my initail probing of questions, I suggested we can use Trie, in which we keep the dictionary of valid
+# After my initial probing of questions, I suggested we can use Trie, in which we keep the dictionary of valid
 # english words. As we cant have a subtree after having a valid smaller word, the trie should be sufficiently
 # small. In trie node we also keep if this child is at the end of the terminal word (valid word), then the Idea
 # was fairly simple try appending any such char to the current state which is not a terminal word.
