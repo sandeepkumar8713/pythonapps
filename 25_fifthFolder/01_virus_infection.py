@@ -13,6 +13,7 @@
 #           else: islands.append(count), count = 1
 #           if i == len(position)-1: islands.append(count)
 #           first = second
+#       return min(islands), max(islands)
 # Complexity : O(n)
 
 
