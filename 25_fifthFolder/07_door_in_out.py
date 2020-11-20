@@ -25,13 +25,6 @@
 #               print(usageTime, personId, currDir), usageTime += 1
 # Complexity : O(n)
 
-class Person:
-    def __init__(self, id, time, direction):
-        self.id = id
-        self.time = time
-        self.direction = direction
-
-
 def flipDirection(currDir):
     if currDir == "In":
         return "Out"
@@ -74,4 +67,3 @@ if __name__ == "__main__":
     direction = ["In", "Out", "In", "Out", "Out", "In", "Out"]
 
     getDoorUsageTime(time, direction)
-
