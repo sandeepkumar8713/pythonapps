@@ -9,7 +9,7 @@
 # Input: S = “ccbbb”, K = 2
 # Output: ccbb
 #
-# Question Type : Easy
+# Question Type : Easy, SimilarAdded
 # Used : Make a map of character and its frequency for the given input string.
 #        Now loop over the map but from 25 to 0 index/ascii. While doing so keep appending the characters in the ansStr.
 #        If freq is more than 1, add consecutive characters while decreasing the freq in map. If the given limit is
