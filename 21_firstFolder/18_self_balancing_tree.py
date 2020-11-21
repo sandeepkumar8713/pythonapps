@@ -25,7 +25,7 @@ class AVL_Tree(object):
     def insert(self, root, key):
         if not root:
             return TreeNode(key)
-        elif key < root.val:
+        elif key < root.data:
             root.left = self.insert(root.left, key)
         else:
             root.right = self.insert(root.right, key)
@@ -127,7 +127,7 @@ class AVL_Tree(object):
         if not root:
             return
 
-        result.append(root.val)
+        result.append(root.data)
         self.preOrder(root.left, result)
         self.preOrder(root.right, result)
 

@@ -30,7 +30,7 @@ class AVLTree:
     def insert(self, root, key, smallerCount):
         if not root:
             return TreeNode(key)
-        elif key < root.val:
+        elif key < root.data:
             root.left = self.insert(root.left, key, smallerCount)
         else:
             root.right = self.insert(root.right, key, smallerCount)
@@ -114,7 +114,7 @@ class AVLTree:
         if not root:
             return
 
-        result.append(root.val)
+        result.append(root.data)
         self.preOrder(root.left, result)
         self.preOrder(root.right, result)
 

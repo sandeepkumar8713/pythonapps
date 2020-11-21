@@ -28,12 +28,12 @@ class Node:
 def findRoot(nodes):
     rootVal = 0
     for node in nodes:
-        rootVal ^= node.val
+        rootVal ^= node.data
         for child in node.children:
-            rootVal ^= child.val
+            rootVal ^= child.data
 
     for node in nodes:
-        if rootVal == node.val:
+        if rootVal == node.data:
             return node
 
     return None

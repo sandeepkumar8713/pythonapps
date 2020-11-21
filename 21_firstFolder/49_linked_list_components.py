@@ -36,7 +36,7 @@ def numComponents(head, G):
     cur = head
     ans = 0
     while cur.next:
-        if (cur.val in Gset and cur.next.val not in Gset):
+        if (cur.data in Gset and cur.next.data not in Gset):
             ans += 1
         cur = cur.next
 

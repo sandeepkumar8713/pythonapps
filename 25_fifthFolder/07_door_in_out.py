@@ -1,4 +1,5 @@
 # https://careercup.com/question?id=5660935302152192
+# https://leetcode.com/discuss/interview-question/699973/
 # Question : You are given 2 arrays: one representing the time people arrive at a door and other representing
 # the direction they want to go(in or out) You have to find at what time each person will use the door provided
 # no 2 people can use the door at the same time. Constraints: the door starts with ‘in’ position, in case of a
