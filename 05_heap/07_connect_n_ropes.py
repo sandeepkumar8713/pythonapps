@@ -84,3 +84,15 @@ def findMinCost(inpArr):
 if __name__ == "__main__":
     inpArr = [4, 3, 2, 6]
     print(findMinCost(inpArr))
+
+    inpArr = [8, 4, 6, 12]
+    print(findMinCost(inpArr))
+
+    inpArr = [20, 4, 8, 2]
+    print(findMinCost(inpArr))
+
+    inpArr = [1, 2, 5, 10, 35, 89]
+    print(findMinCost(inpArr))
+
+    inpArr = [2, 2, 3, 3]
+    print(findMinCost(inpArr))
