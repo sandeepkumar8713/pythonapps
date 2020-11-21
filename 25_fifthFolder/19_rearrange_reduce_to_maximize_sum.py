@@ -9,7 +9,7 @@
 # Output: 6
 # Explanation: One possible arrangement is {1, 2, 3} having maximum possible sum 6.
 #
-# Question Type : ShouldSee
+# Question Type : Generic
 # Used : Make a freq count array of size n+1. It will store freq of each element of inpArr. If any
 #        element is more than n, then its freq will be stored at n index of count array. Initialize
 #        nextUniqNum as 0. Now loop over the count array, while its value is more than 0 and nextUniqNum
