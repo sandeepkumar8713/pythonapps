@@ -1,3 +1,4 @@
+# https://www.geeksforgeeks.org/replace-every-element-with-the-greatest-on-right-side/
 # Question : Write a program to print all the LEADERS in the array. An element is leader if it is greater than
 # all the elements to its right side. The rightmost element is always a leader.
 # Follow up Given an array of integers, replace every element with the next greatest element (greatest element
@@ -7,15 +8,18 @@
 # Question Type : ShouldSee
 # Used : Scan all the elements from right to left in array and keep track of maximum till now. When maximum changes
 #        it's value, print it.
+#        For second question, loop over the inpArr from right side. While doing so track of max value found yet.
+#        Keep replacing each element with max value found yet.
 # Complexity : O(n)
 
 
 def printLeaders(arr, size):
+    print("Leaders :", end=" ")
     max_from_right = arr[size - 1]
-    print(max_from_right)
+    print(max_from_right, end=" ")
     for i in range(size - 2, 0, -1):
         if max_from_right < arr[i]:
-            print(arr[i])
+            print(arr[i], end=" ")
             max_from_right = arr[i]
 
 
@@ -37,4 +41,4 @@ if __name__ == "__main__":
     printLeaders(arr, len(arr))
     print("")
     nextGreatest(arr)
-    print(arr)
+    print("Replaced array :", arr)

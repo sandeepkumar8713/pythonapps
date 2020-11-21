@@ -1,4 +1,5 @@
 # CTCI : Q16_17_Contiguous_Sequence
+# https://practice.geeksforgeeks.org/problems/maximum-sub-array5443/1
 # Question : You are given a one dimensional array that may contain both positive and negative integers, find the
 # sum of contiguous subarray of numbers which has the largest sum.
 #
@@ -52,9 +53,11 @@ def maxSubArraySum(arr, l, h):
 
 
 if __name__ == "__main__":
-    # arr = [2, 3, 4, 5, 7]
-    arr = [2, -8, 3, -2, 4, -10]
-    n = len(arr)
+    arr = [2, 3, 4, 5, 7]
+    print(maxSubArraySum(arr, 0, len(arr) - 1))
 
-    max_sum = maxSubArraySum(arr, 0, n - 1)
-    print("Maximum contiguous sum is ", max_sum)
+    arr = [2, -8, 3, -2, 4, -10]
+    print(maxSubArraySum(arr, 0, len(arr) - 1))
+
+    arr = [1, 2, 5, -7, 2, 3]
+    print(maxSubArraySum(arr, 0, len(arr) - 1))

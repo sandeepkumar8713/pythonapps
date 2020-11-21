@@ -1,3 +1,4 @@
+# https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/
 # Question : Given two unsorted arrays of distinct elements,the task is to find all pairs from both arrays whose
 # sum is equal to x.
 #
