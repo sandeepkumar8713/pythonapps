@@ -5,9 +5,10 @@
 #
 # Question Type : Generic
 # Used : Call recursive function radixSort(inpArr, index) with index 0.
-#        Make a list of buckets of size 10. Loop over each of the input element. If index in lesser than size of string
-#           send it to the appropriate bucket using char at index. Else push the string in the inpArr.
-#        Run a loop over all the buckets and call radixSort() of those buckets whose length is more than 0
+#        Make a list of buckets of size 26. Loop over each of the input element.
+#        If index in lesser than size of string send it to the appropriate bucket using char at index.
+#        Else push the string in the inpArr.
+#        Run a loop over all the buckets and call radixSort() of those buckets whose length is more than 0.
 #        Merge these buckets into the input array.
 # Complexity : O(w * n)
 

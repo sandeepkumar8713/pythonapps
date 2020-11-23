@@ -6,8 +6,8 @@
 # We can make string palindrome as "abedeba" by adding ba at the end of the string.
 #
 # Question Type : ShouldSee
-# Used : Remove characters from the beginning of the string one by one and check if the string is palindrome or not.
-#        If true the output becomes the number of characters removed from the string.
+# Used : Remove characters from the beginning of the string one by one and check if the string
+#        is palindrome or not. If true the output becomes the number of characters removed from the string.
 # Complexity : O(n ^ 2)
 
 

@@ -5,12 +5,23 @@
 # Output : Geeks
 #
 # Question Type : Generic
-# Used : The longest common suffix has following optimal substructure property
-#        LCSuff(X, Y, m, n) = LCSuff(X, Y, m-1, n-1) + 1 if X[m-1] = Y[n-1]
-#                        0  Otherwise (if X[m-1] != Y[n-1])
-#        To print the substring, keep track of i,j for max length. Now traverse diagonally down from i,j till LCSuff
-#        is not 0
-#        Here we should have a memorization table to track.
+# Used : Make a 2D matrix and loop over it. This matrix will keep track of lengths of common substring.
+#        To print the substring, keep track of i,j for max length. Now traverse diagonally down
+#        from i,j till LCSuff is not 0. Here we should have a memorization table to track.
+#        LCSubStr(X, Y, m, n):
+#        for i in range(m + 1):
+#           for j in range(n + 1):
+#               if i == 0 or j == 0:
+#                   LCSuff[i][j] = 0
+#               elif X[i - 1] == Y[j - 1]:
+#                   LCSuff[i][j] = LCSuff[i - 1][j - 1] + 1
+#                   if LCSuff[i][j] > result:
+#                     result = LCSuff[i][j]
+#                     row = i
+#                     col = j
+#               else:
+#                 LCSuff[i][j] = 0
+#        return result
 # Complexity : O(m*n)
 
 

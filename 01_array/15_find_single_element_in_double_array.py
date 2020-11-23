@@ -1,11 +1,13 @@
 # Question : Given a sorted array in which all elements appear twice (one after one) and one element appears only once.
 #
-# # Question Type : ShouldSee, SimilarAdded
+# Question Type : ShouldSee, SimilarAdded
 # Used : Do binary search
 #        if low == high:
 #           return arr[low]  (answer)
-#        if mid is even check mid == mid + 1 if true target is in b/w mid + 2 and right else in left and mid
-#        if mid is odd check mid == mid -1 if true target is in b/w mid + 1 and right else in left and mid - 1
+#        if mid is even check mid == mid + 1
+#           if true target is in b/w mid + 2 and right else in left and mid
+#        if mid is odd check mid == mid - 1
+#           if true target is in b/w mid + 1 and right else in left and mid - 1
 # Complexity : O(log n)
 
 

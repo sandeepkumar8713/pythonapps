@@ -8,10 +8,13 @@
 # We can make given array palindrome with minimum one merging (merging 4 and 5 to make 9)
 #
 # Question Type : ShouldSee
-# Used : Set mergeCount = 0. Take 2 pointers left = 0 and right = n - 1. Loop while left < right:
+# Used : Set mergeCount = 0. Take 2 pointers left = 0 and right = n - 1.
+#        findMinOps(arr, n):
+#        Loop while left < right:
 #           if arr[left] == arr[right] : increment left and decrement right by 1
-#           if left is bigger than right, decrement right by 1, do merge arr[right] += arr[right + 1] and mergeCount++
-#           Else : increment left by 1. do merge arr[left] += arr[left - 1] and mergeCount++
+#           if left is bigger than right:
+#               decrement right by 1, do merge arr[right] += arr[right + 1] and mergeCount++
+#           else : increment left by 1. do merge arr[left] += arr[left - 1] and mergeCount++
 #        return mergeCount
 # Complexity : O(n)
 
@@ -41,4 +44,3 @@ if __name__ == "__main__":
     arr = [1, 4, 5, 9, 1]
     n = len(arr)
     print("Min merge operation: ", findMinOps(arr, n))
-

@@ -1,7 +1,7 @@
 # Question : Python program to check if two strings are anagrams of each other.
 #
 # Question Type : Easy
-# Used : make two list of 256 len, update count of each character in str1 and str2, now compare the two list
+# Used : Make two list of 256 len, update count of each character in str1 and str2, now compare the two list
 # Complexity : O(n)
 
 

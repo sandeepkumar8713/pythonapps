@@ -8,7 +8,8 @@
 #
 # Question Type : ShouldSee
 # Used : deque, push larger element at rear after removing all smaller elements, pop the first element as result
-#        loop for i : 0 to k-1, keep popping smaller(than a[i]) element from last, after that appending(indexof a[i]) in Qi.
+#        loop for i : 0 to k-1, keep popping smaller(than a[i]) element from last,
+#        after that appending(indexof a[i]) in Qi.
 #        loop for i : k to n-1, print arr[Qi[0]]. keep pop element from start while Qi[0] <= i - k.
 #            keep popping smaller(than a[i]) element from last, after that append(indexof a[i]) in Qi.
 #        print arr[Qi[0]]

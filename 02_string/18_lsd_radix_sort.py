@@ -5,11 +5,12 @@
 #
 # Question Type : Generic
 # Used : Find the max value in the input array. Run a loop while (10 ** index <= maxval). Call function
-#        distributeBasedOnDigit(array, base, index).
-# distributeBasedOnDigit() : Make a list of buckets of size base. Loop over input array and distribute them in buckets.
-#                               digit = (ele // (base ** index)) % base
-#                               buckets[digit].append(ele)
-#                            Merge these buckets into the input array.
+#        distributeBasedOnDigit(array, base, index):
+#        Make a list of buckets of size base.
+#        Loop over input array and distribute them in buckets.
+#        digit = (ele // (base ** index)) % base
+#        buckets[digit].append(ele)
+#        Merge these buckets into the input array.
 # Complexity : O(w * n)
 
 
@@ -46,4 +47,3 @@ if __name__ == "__main__":
     arr = [170, 45, 75, 90, 802, 24, 2, 66]
     radixSort(arr)
     print(arr)
-

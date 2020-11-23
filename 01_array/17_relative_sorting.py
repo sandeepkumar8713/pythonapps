@@ -14,6 +14,7 @@
 
 import functools
 
+
 def search(key):
     if key in A2:
         return A2.index(key)
@@ -39,5 +40,3 @@ if __name__ == "__main__":
     A1 = [2, 1, 2, 5, 7, 1, 9, 3, 6, 8, 8, 7, 5, 6, 9, 7, 5]
     A2 = [2, 1, 8, 3, 4]
     print(sorted(A1,  key=functools.cmp_to_key(comparator)))
-
-

@@ -7,12 +7,19 @@
 # Question Type : ShouldSee
 # Used : Make a list topElements of size k+1. set lastIndex=0. It is a marker that tells up to which index data is
 #        filled in topElements. Maintain a dict freqMap which stores frequency of each distinct element.
-#        Now loop over each of the element in input array. Update the freqMap for this element. If ele is not present
-#           in topElements: insert in topElements[] at lastIndex. set j = lastIndex. If lastIndex < k: lastIndex++.
+#        kTop(arr, n, k):
+#        for i in range(n):
+#           Update the freqMap for this element.
+#           If ele is not present in topElements:
+#               topElements[lastIndex] = ele, set j = lastIndex
+#               If lastIndex < k: lastIndex++
 #           If present: j = topElements.index(ele) (We need to set j to index of current ele in topElements)
 #           (Now move ele up if required)
-#           While j >= 1: if freqMap[topElements[j]] > freqMap[topElements[j-1]] : swap and j-- else: break
-#           print topElements[0:min(i, k-1)+1]
+#           while j >= 1:
+#               if freqMap[topElements[j]] > freqMap[topElements[j-1]]:
+#                   swap and j--
+#               else: break
+#        return topElements[0:min(i, k-1)+1]
 # Complexity : O(n * k)
 
 

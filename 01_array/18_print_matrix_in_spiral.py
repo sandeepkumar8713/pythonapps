@@ -1,7 +1,8 @@
 # Question : Given a 2D array, print it in spiral form.
 #
 # Question Type : ShouldSee, SimilarAdded
-# Used : while thisRow < m and thisCol < n:
+# Used : For reverse use stack.
+#        while thisRow < m and thisCol < n:
 #           print first row, thisRow += 1,
 #           print last col, dec n,
 #           print last row, dec m,
@@ -44,6 +45,7 @@ if __name__ == "__main__":
     mat = [[1, 2, 3, 4, 5, 6],
            [7, 8, 9, 10, 11, 12],
            [13, 14, 15, 16, 17, 18]]
+    printSpiral(mat)
 
     mat = [[1,   2,  3,  4,  5,  6],
            [7,   8,  9, 10, 11, 12],

@@ -8,9 +8,16 @@
 # abcde: Number of insertions required is 4. edcbabcde
 #
 # Question Type : Generic
-# Used : If we find out LCS of string and its reverse, we know how many maximum characters can form a palindrome.
-#        We need insert remaining characters. Find lcs length of string and its reverse and subtract it from length of
-#        string
+# Used : If we find out LCS of string and its reverse, we know how many maximum characters can form
+#        a palindrome. We need to insert remaining characters. Find lcs length of string and its reverse
+#        and subtract it from length of string.
+#        lcs(X, Y, m, n):
+#        if m == 0 or n == 0:
+#           return 0
+#        elif X[m - 1] == Y[n - 1]:
+#           return 1 + lcs(X, Y, m - 1, n - 1)
+#        else:
+#           return max(lcs(X, Y, m, n - 1), lcs(X, Y, m - 1, n))
 # Complexity : O(n^2) worst if there is no match in X and Y.
 
 

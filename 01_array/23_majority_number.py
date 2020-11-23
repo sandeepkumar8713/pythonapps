@@ -5,12 +5,14 @@
 # (and hence there is at most one such element).
 #
 # Question Type : Easy
-# Used : Call a function findCandidate(). set maj_index = 0. count = 1.
-#        Run a loop of the input array. If if A[maj_index] == A[i]: count++ else count--.
+# Used : findCandidate():
+#        maj_index = 0, count = 1
+#        Run a loop of the input array.
+#           If A[maj_index] == A[i]: count++ else count--
 #           If count == 0: (take current maj_index)  maj_index = i, count = 1
-#        return  A[maj_index]
-#        This value returned by findCandidate() might be majority number. Run a loop over elements and check if this is
-#        majority number.
+#        return A[maj_index]
+#        This value returned by findCandidate() might be majority number. Run a loop over elements
+#        and check if this is majority number.
 # Complexity : O(n)
 
 

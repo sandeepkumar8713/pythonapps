@@ -1,3 +1,4 @@
+# https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/
 # Question : The Longest Increasing sub sequence (LIS) problem is to find the length of the longest sub sequence of a
 # given sequence such that all elements of the sub sequence are sorted in increasing order. For example, the length
 # of LIS for {10, 22, 9, 33, 21, 50, 41, 60, 80} is 6 and LIS is {10, 22, 33, 50, 60, 80}.
@@ -11,6 +12,16 @@
 #        If arr[i] is larger than tail[length-1], then extend the tail by appending with arr[i]
 #        Else arr[i] would be somewhere in between the tail elements. Do binary search for it.
 #        Place it at its correct position, while discarding the right remaining elements of the tail.
+#        LIS(arr):
+#        tail[0] = arr[0]
+#        for i in range(1, len(arr)):
+#           if arr[i] < tail[0]:
+#               tail[0] = arr[i]
+#           elif arr[i] > tail[length-1]:
+#               tail[length] = arr[i], length += 1
+#        else:
+#           tail[ceilIndex(arr, -1, length-1, arr[i])] = arr[i]
+#        return length
 # Complexity : 0(n log n)
 
 
@@ -49,10 +60,12 @@ def LIS(arr):
             # and also, arr[i] would have already appeared in one of LIS, identify the location and replace it
             tail[ceilIndex(arr, -1, length-1, arr[i])] = arr[i]
 
-    print(tail[:length])
     return length
 
 
 if __name__ == "__main__":
     arr = [2, 5, 3, 7, 11, 8, 10, 13, 6]
+    print(LIS(arr))
+
+    arr = [50, 3, 10, 7, 40, 80]
     print(LIS(arr))

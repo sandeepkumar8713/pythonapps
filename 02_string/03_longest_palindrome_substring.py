@@ -3,8 +3,9 @@
 # "forgeeksskeegfor" the output should be "geeksskeeg"
 #
 # Question Type : Generic
-# Used : The idea is to generate all even length and odd length palindromes and keep track of the longest palindrome
-#        seen so far. One by one consider every character as center point of even and length palindromes.
+# Used : The idea is to generate all even length and odd length palindromes and keep track of the
+#        longest palindrome seen so far. One by one consider every character as center point of even
+#        and length palindromes.
 #        Run a loop for i: 1 to n-1.
 #           low = i - 1, high = i (for odd)
 #           keep looping while low >= 0 and high < length and string[low] == string[high]:

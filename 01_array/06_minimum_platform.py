@@ -6,7 +6,20 @@
 #        now loop through them, if a new bus is arriving in i while another bus is not departed in j then,
 #        add new platform else remove one platform, and keep track of highest platform count till now
 #        Note that if there is clash i is inc(to show next arrival) else j is inc (to show last departure)
-#        return maxPlatform
+#        findPlatform(arr, dep):
+#        platformNeeded = 1
+#        result = 1
+#        i = 1, j = 0
+#        while i < n and j < n:
+#           if arr[i] < dep[j]:
+#               platformNeeded += 1
+#               i += 1
+#               if platformNeeded > result:
+#                   result = platformNeeded
+#           else:
+#               platformNeeded -= 1
+#               j += 1
+#        return result
 # Complexity : O(n log n)
 
 

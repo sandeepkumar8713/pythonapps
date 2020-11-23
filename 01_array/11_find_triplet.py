@@ -1,9 +1,9 @@
 # https://www.geeksforgeeks.org/find-a-triplet-that-sum-to-a-given-value/
 # Question : Given an array of integers, write a function that returns true if there is a triplet (a, b, c)
-# that satisfies a2 + b2 = c2.
+# that satisfies a^2 + b^2 = c2.
 #
 # Question Type : Easy
-# Used : convert the given array in square, sort it
+# Used : Convert the given array in square, sort it.
 #        Fix the last element, find the pair whose sum is equal to last element
 #        if above statement fails, repeat with second last element
 # Complexity : O(n^2)
@@ -33,4 +33,3 @@ if __name__ == "__main__":
     arr = [3, 1, 4, 6, 5]
     arrSize = len(arr)
     print(isTriplet(arr, arrSize))
-

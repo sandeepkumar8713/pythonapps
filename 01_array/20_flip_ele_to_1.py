@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/find-zeroes-to-be-flipped-so-that-number-of-consecutive-1s-is-maximized/
-# Question : Given a binary array and an integer m, find the position of zeroes flipping which creates maximum number of
-# consecutive 1's in array.
+# Question : Given a binary array and an integer m, find the position of zeroes flipping which creates
+# maximum number of consecutive 1's in array.
 #
 # Input:   arr[] = {1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1}
 #          m = 2

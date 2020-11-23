@@ -48,4 +48,3 @@ def stockBuySell(arr):
 if __name__ == "__main__":
     arr = [100, 180, 260, 310, 40, 535, 695]
     print(stockBuySell(arr))
-

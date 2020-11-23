@@ -8,9 +8,10 @@
 # Output: Element 3 found at index 7
 #
 # Question Type : Easy
-# Used : The idea is to start comparing from the leftmost element and find the difference between current array
-#        element and x. Let this difference be 'diff'. From the given property of array, we always know that x must be
-#        at-least 'diff' away, so instead of searching one by one, we jump 'diff'.
+# Used : The idea is to start comparing from the leftmost element and find the difference between
+#        current array element and x. Let this difference be 'diff'. From the given property of array,
+#        we always know that x must be at-least 'diff' away, so instead of searching one by one,
+#        we jump 'diff'.
 # Complexity : O(n) worst
 
 
