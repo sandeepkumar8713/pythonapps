@@ -4,6 +4,7 @@
 # Question Type : Asked
 # Used : Call a recursive function reverse(head,k).
 #           We need to reverse the k nodes first.
+#           next = None, prev = None, count = 0
 #           Run a loop while current is not None and count < k:
 #               set next = current.next
 #               set current.next = prev

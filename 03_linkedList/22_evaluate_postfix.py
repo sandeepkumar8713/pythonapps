@@ -3,8 +3,9 @@
 # are evaluated faster compared to infix notation as parenthesis are not required in postfix
 #
 # Question Type : Easy
-# Used : Maintain a stack. Loop over the input expression. If ch is digit push in stack else pop two values from
-#           stack, do the operation over them and push it back to stack: stack.push(str(eval(val1 + ch + val2))).
+# Used : Maintain a stack. Loop over the input expression. If ch is digit push in stack else
+#           pop two values from stack, do the operation over them and push it back to stack:
+#           stack.push(str(eval(val1 + ch + val2))).
 #           Remember while pop, assign val2 then val1
 #        After the loop ends pop the an element from stack and return: return int(stack.pop())
 # Complexity : O(n)

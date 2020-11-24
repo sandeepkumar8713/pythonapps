@@ -6,10 +6,10 @@
 # Output : (a + (b + c))
 #
 # Question Type : Easy
-# Used : Maintain a stack. Loop over the input expression. If ch is operand push in stack else pop two values from
-#           stack, do the operation over them and push it back to stack:
-#                stack.push('(' + operand1 + ch + operand2 + ')')
-#           Remember while pop, assign operand2 then operand1
+# Used : Maintain a stack. Loop over the input expression. If ch is operand push in stack else pop
+#        two values from stack, do the operation over them and push it back to stack:
+#        stack.push('(' + operand1 + ch + operand2 + ')')
+#        Remember while pop, assign operand2 then operand1
 #        After the loop ends pop the an element from stack and return: return stack.pop()
 # Complexity : O(n)
 

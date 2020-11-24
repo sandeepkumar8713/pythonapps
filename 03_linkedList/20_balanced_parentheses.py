@@ -8,10 +8,10 @@
 # Used : Declare a character stack S.
 #        Now traverse the expression string exp.
 #        If the current character is a starting bracket (( or { or [) then push it to stack.
-#        Maintain a dict of opening and opening and closing bracket.
-#        If the current character is a closing bracket () or } or ]) then pop from stack and if the popped character is
-#           the matching starting bracket then fine else parenthesis are not balanced.
-#        After complete traversal, if there is some starting bracket left in stack then "not balanced"
+#        Maintain a dict of opening and closing bracket.
+#        If the current character is a closing bracket () or } or ]) then pop from stack and if the
+#        popped character is the matching starting bracket then fine else parenthesis are not balanced.
+#        After complete traversal, if there is some starting bracket left in stack then "not balanced".
 # Complexity : O(n)
 
 

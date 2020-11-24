@@ -6,10 +6,22 @@
 # unit of distance.
 #
 # Question Type : Generic
-# Used : We can use a Queue to store the current tour. We first enqueue first petrol pump to the queue, we keep
-# enqueueing petrol pumps till we either complete the tour, or current amount of petrol becomes negative. If the
-# amount becomes negative, then we keep dequeueing petrol pumps till the current amount becomes positive or queue
-# becomes empty.
+# Used : We can use a Queue to store the current tour. We first enqueue first petrol pump to the queue,
+#        we keep enqueueing petrol pumps till we either complete the tour, or current amount of petrol
+#        becomes positive. If the amount becomes negative, then we keep de-queueing petrol pumps till
+#        the current amount becomes positive(increase start index also) or queue becomes empty.
+#        printTour(arr):
+#        start = 0, end = 1
+#        curr_petrol = arr[start].petrol - arr[start].distance
+#        while (end != start or curr_petrol < 0):
+#           while (curr_petrol < 0 and start != end):
+#               curr_petrol -= arr[start].petrol - arr[start].distance
+#               start = (start + 1) % n
+#               if start == 0:
+#                   return -1
+#           curr_petrol += arr[end].petrol - arr[end].distance
+#           end = (end + 1) % n
+#        return start
 # Complexity : O(n)  If we consider the items between start and end as part of a circular queue, we can observe that
 # every item is enqueued at most two times to the queue.
 
@@ -26,8 +38,8 @@ def printTour(arr):
     end = 1
 
     curr_petrol = arr[start].petrol - arr[start].distance
-    while (end != start or curr_petrol < 0):
-        while (curr_petrol < 0 and start != end):
+    while end != start or curr_petrol < 0:
+        while curr_petrol < 0 and start != end:
 
             # Remove starting petrol pump. Change start
             curr_petrol -= arr[start].petrol - arr[start].distance

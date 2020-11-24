@@ -6,9 +6,10 @@
 # beginning of the loop(CTCI : Q2_08_Loop_Detection).
 #
 # Question Type : ShouldSee
-# Used : Run a slow and fast pointer, if a loop exist they will be equal at some point
-#        After detecting the loop, if we start slow pointer from head and move both slow and fast pointers at same
-#        speed until fast don't meet, they would meet at the beginning of the loop.
+# Used : Run a slow and fast pointer, if a loop exist they will be equal at some point.
+#        After detecting the loop, if we start slow pointer from head and move both slow and
+#        fast pointers at same speed until fast don't meet, they would meet at the
+#        beginning of the loop.
 # Complexity : O(n)
 
 

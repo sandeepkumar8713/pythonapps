@@ -9,17 +9,18 @@
 # Used : Split the linked list in two halves using found middle point.
 #        Reverse the second half.
 #        Do alternate merge of first and second halves.
-#
+#        mergeSecondHalf():
 #        Calculate halfSize(n/2). If n is odd: midPoint = halfSize + 1. else : midPoint = halfSize.
 #        Call divideLink(first,midpoint) function which would set null at end of first and return second.
 #        Now reverse the second half : midPointer = reverse(midPointer, halfSize)
 #        call recursive function merge. self.head = merge(head, midPointer)
-# Merge() : set result = None
-#           if first is None: return second
-#           if second is None: return first
-#           result = first
-#           result.next = merge(second, first.next) (Here we merge alternate lists)
-#           return result
+#        Merge():
+#        set result = None
+#        if first is None: return second
+#        if second is None: return first
+#        result = first
+#        result.next = merge(second, first.next) (Here we merge alternate lists)
+#        return result
 # Complexity : O(n)
 
 

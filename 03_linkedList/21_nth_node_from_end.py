@@ -3,9 +3,10 @@
 # the Linked List.
 #
 # Question Type : Easy
-# Used : Maintain two pointers : reference pointer and main pointer. Initialize both reference and main pointers to
-#        head. First move reference pointer to n nodes from head. Now move both pointers one by one until reference
-#        pointer reaches end. Now main pointer will point to nth node from the end. Return main pointer.
+# Used : Maintain two pointers : reference pointer and main pointer. Initialize both reference
+#        and main pointers to head. First move reference pointer to n nodes from head. Now move both
+#        pointers one by one until reference pointer reaches end. Now main pointer will point to nth
+#        node from the end. Return main pointer.
 # Complexity : O(n)
 
 
@@ -41,7 +42,7 @@ class LinkedList:
         count = 0
         while count < n:
             if refPtr is None:
-                print("%d is greater than the no. pf odes in list" % (n))
+                print("%d is greater than the no. of odes in list" % (n))
                 return
 
             refPtr = refPtr.next

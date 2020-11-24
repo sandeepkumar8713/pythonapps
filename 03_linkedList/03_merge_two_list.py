@@ -8,8 +8,19 @@
 # return a pointer to the head node of the merged list 2->3->5->10->15->20.
 #
 # Question Type : Generic
-# Used : Take the two lists, compare the data of each, return the lesser node and recursively call and assign its
-#        return value to result->next
+# Used : Take the two lists, compare the data of each, return the lesser node and recursively
+#        call and assign its return value to result->next.
+#        merge(nodeA, nodeB):
+#        if nodeA is None: return nodeB
+#        if nodeB is None: return nodeA
+#        result = None
+#        if nodeA.data < nodeB.data:
+#           result = nodeA
+#           result.next = merge(nodeA.next, nodeB)
+#        else:
+#           result = nodeB
+#           result.next = merge(nodeA, nodeB.next)
+#        return result
 # Complexity : O(n + m)
 
 

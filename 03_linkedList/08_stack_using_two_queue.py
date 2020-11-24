@@ -2,8 +2,9 @@
 # Question : Implement a Stack using 2 queue q1 and q2
 #
 # Question Type : Easy
-# Used : In push operation, the new element is always enqueued to q1. In pop() operation, if q2 is empty then all the
-#        elements except the last, are moved to q2. Finally the last element is dequeued from q1 and returned.
+# Used : In push operation, the new element is always enqueued to q1.
+#        In pop() operation, if q2 is empty then all the elements except the last, are moved to q2.
+#        Finally the last element is dequeued from q1 and returned.
 # Complexity : O(2n)
 
 

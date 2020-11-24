@@ -9,8 +9,9 @@
 # Output: 1->2->2->3->3->4->5
 #
 # Question Type : Easy
-# Used : We should make 3 queues: first, middle, last. Loop through the given list and push in either of the queue.
-#        Now merge the queue. Note that new nodes are not created. We play with next pointer.
+# Used : We should make 3 queues: first, middle, last. Loop through the given list and push in
+#        either of the queue. Now merge the queue. Note that new nodes are not created. We play
+#        with next pointer.
 # Complexity : O(n)
 
 

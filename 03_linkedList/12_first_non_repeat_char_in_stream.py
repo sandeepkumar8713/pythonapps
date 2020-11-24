@@ -2,16 +2,16 @@
 # tell the first non-repeating character in O(1) time at any moment.
 #
 # Question Type : Generic
-# Used : The DLL contains all non-repeating characters in order, i.e., the head of DLL contains first non-repeating
-#        character, the second node contains the second non-repeating and so on. We also maintain two arrays: one
-#        array is to maintain characters that are already visited two or more times, we call it repeated[], the other
-#        array is array of pointers to linked list nodes, we call it inDLL[].
-#        Logic : def findFirstNonRepeating(stream):
+# Used : The DLL contains all non-repeating characters in order, i.e., the head of DLL contains
+#        first non-repeating character, the second node contains the second non-repeating and so on.
+#        We also maintain two arrays: one array is to maintain characters that are already visited
+#        two or more times, we call it repeated[], the other array is array of pointers to linked list
+#        nodes, we call it inDLL[].
+#        findFirstNonRepeating(stream):
 #        inDLL = [] * MAX_CHAR
 #        repeated = [False] * MAX_CHAR
 #        for i in range(len(stream)):
 #           x = stream[i]
-#           print("Reading " + x + " from stream")
 #           if not repeated[ord(x)]:
 #               if not x in inDLL:
 #                   inDLL.append(x)

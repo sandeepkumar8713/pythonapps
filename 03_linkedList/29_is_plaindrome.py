@@ -4,11 +4,11 @@
 # list is a palindrome, else false.
 #
 # Question Type : ShouldSee
-# Used : Recursion. Call a recursive function isPalindrome(node,len) which returns object Result(node, isEqual).
-#        isEqual is True if next node to second last node is palindrome
-#        node is the last node.
-#        This function calls again isPalindrome(node.next, listSize-2). If subList is palindrome and first
-#        and last node are same: return Result
+# Used : Recursion. Call a recursive function isPalindrome(node,len) which returns object
+#        Result(node, isEqual). isEqual is True if next node to second last node is palindrome
+#        and node is the last node.
+#        This function calls again isPalindrome(node.next, listSize-2). If subList is palindrome
+#        and first and last node are same: return Result
 #        Note : handle edge case like : listSize = 0,1 or node = None
 # Complexity : O(n)
 
@@ -75,8 +75,8 @@ def isPalindrome(node, listSize):
 if __name__ == "__main__":
     llist = LinkedList()
     data = ['a', 'b', 'a', 'c', 'a', 'b', 'a']
-    #data = ['b', 'a', 'c', 'a', 'b', 'a']
-    #data = ['a','a']
+    # data = ['b', 'a', 'c', 'a', 'b', 'a']
+    # data = ['a','a']
     for item in data:
         llist.push(item)
 

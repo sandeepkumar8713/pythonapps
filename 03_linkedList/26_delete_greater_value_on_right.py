@@ -2,7 +2,7 @@
 # Question : Given a singly linked list, remove all the nodes which have a greater value on right side.
 #
 # Question Type : Generic
-# Used : def removeNextGreater(self):
+# Used : removeNextGreater(self):
 #        temp = self.head, prev = None
 #        while temp.next:
 #           if temp.data < temp.next.data:

@@ -1,9 +1,8 @@
 # https://techdevguide.withgoogle.com/resources/compress-decompression/
 # https://www.geeksforgeeks.org/decode-string-recursively-encoded-count-followed-substring/
-# Question : The question was to decompress the compressed string.I solved it using a stack of strings.
-# He then asked me to code my approach on paper so that all corner cases are covered.He then gave
-# me 2 or 3 test cases and asked me to dry run my code on these test cases.He was very impressed
-# by my approach.
+# Question : The question was to decompress the compressed string. I solved it using a stack of strings.
+# He then asked me to code my approach on paper so that all corner cases are covered. He then gave
+# me 2 or 3 test cases and asked me to dry run my code on these test cases.
 #
 # Question Type : Generic
 # Used : The idea is to use two stacks, one for integers and another for characters.

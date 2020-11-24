@@ -5,23 +5,16 @@
 # Question Type : Asked
 # Used : Traverse input list and copy next pointer to arbitrary pointer for every node.
 #        Do Merge Sort for the linked list formed by arbitrary pointers and update head accordingly.
-# MergeSort() : Call recursive function mergeSort() head = mergeSort(first, n)
-#               If n == 1: return first
-#               Call divideLink() function which would set null at end of first and return second.
-#                   second = divideLink(first, n)
-#               firstLength = n/2   secondLength = n/2 if n%2 ==0 else n/2 + 1
-#               call mergeSort on first and second:
-#                   first = mergeSort(first, firstLength)
-#                   second = mergeSort(second, secondLength)
-#               return merge(first, second)
-# Merge() : It is a recursive function which returns the head pointer to merged list
-#           set result = None.
-#           if first is None: return second     if second is None: return first
-#           if first.data < second.data:
-#               result = first
-#               result.arbitrary = merge(first.arbitrary, second)
-#           else: do same as above on second
-#           return result
+#        mergeSort(first, n):
+#        if n == 1:
+#           return first
+#        second = divideLink(first, n)
+#        firstLength = n//2
+#        if n % 2 == 0: secondLength = n//2
+#        else: secondLength = n//2 + 1
+#        first = mergeSort(first, firstLength)
+#        second = mergeSort(second, secondLength)
+#        return merge(first, second)
 # Complexity : O(n + n log n)
 
 

@@ -5,7 +5,7 @@
 # output: -5 -> -3 -> -2 -> 1 -> 4
 #
 # Question Type : ShouldSee
-# Used : Lets take 2 pointer prev = self.head and temp = self.head.next and loop till temp is not None
+# Used : Lets take 2 pointer prev = self.head and temp = self.head.next and loop till temp is not None.
 #        if temp.data < prev.data: Remove temp and place it at head. and update temp : temp = prev
 #           Else update prev = temp
 #        temp = temp.next

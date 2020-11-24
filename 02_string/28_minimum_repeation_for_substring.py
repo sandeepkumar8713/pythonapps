@@ -9,9 +9,10 @@
 # Output : -1
 #
 # Question Type : Generic
-# Used : Keep appending A to S, until len(S) < len(B). Then check if B is substring of S. If true return append count.
+# Used : Keep appending A to S, until len(S) < len(B). Then check if B is substring of S.
+#        If true return append count.
 #        Else check once more with S+A.
-#        Else return -1
+#        Else return -1.
 # Complexity : O(n * n) Substring matching for string of size n
 
 

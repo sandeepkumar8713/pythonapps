@@ -8,10 +8,11 @@
 # it is impossible to rot every orange then simply return -1.
 #
 # Question Type : Generic
-# Used : Push all the rotten oranges in the queue with time taken 0. Now loop through the queue and pop 1 element from
-#        rear and check its surrounding if there are fresh oranges make them rotten and push them in queue while
-#        incrementing the time by 1. Also keep track of maxTime taken so far.
-#        Once the queue is empty, check if any fresh orange is left or not. If not left return maxTime else return -1
+# Used : Push all the rotten oranges in the queue with time taken 0. Now loop through the queue
+#        and pop 1 element from rear and check its surrounding if there are fresh oranges make them
+#        rotten and push them in queue while incrementing the time by 1. Also keep track of maxTime
+#        taken so far. Once the queue is empty, check if any fresh orange is left or not. If not left
+#        return maxTime else return -1
 # Complexity : O(m*n)
 
 possiblePaths = [[-1, 0], [1, 0], [0, -1], [0, 1]]

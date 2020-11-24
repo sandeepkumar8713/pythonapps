@@ -16,8 +16,12 @@
 #        30               45
 #
 # Question Type : ShouldSee
-# Used : We use merge() to merge lists one by one. We recursively merge() the current list with already flattened list.
-#        The down pointer is used to link nodes of the flattened list.
+# Used : We use merge() to merge lists one by one. We recursively merge() the current list with
+#        already flattened list. The down pointer is used to link nodes of the flattened list.
+#        flatten(rootHead):
+#        if rootHead is None: return rootHead
+#        if rootHead.right is None: return rootHead
+#        return merge(rootHead, flatten(rootHead.right.getHead()))
 # Complexity : O(kn log n)
 
 
@@ -89,10 +93,12 @@ def flatten(rootHead):
 
     return merge(rootHead, flatten(rootHead.right.getHead()))
 
+
 def insertValues(root, inp):
     for item in inp:
         root.push(item)
     root.printList()
+
 
 if __name__ == "__main__":
     rootList = LinkedList()
