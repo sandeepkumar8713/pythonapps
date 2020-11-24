@@ -8,10 +8,10 @@
 #     4     5
 #
 # Question Type : Easy
-# Used : Def getLeafCount() and call recursively.
+# Used : Call getLeafCount(root) recursively.
 #        If given root is none return 0.
-#        If given root has left none and right none return 0 else call getLeafCount() over left and right child and
-#        return its sum.
+#        If given root has left none and right none return 1 else call getLeafCount()
+#        over left and right child and return its sum.
 # Complexity : O(n)
 
 

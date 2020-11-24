@@ -9,10 +9,10 @@
 #      4   5  6   7
 #
 # Question Type : Asked
-# Used : Do a recursive call over findLCA(root,n1,n2). In each call search for n1 or n2. If either is found return that
-#        node. If none is found, then call findLCA over left and right child. Either of them won't be empty, return
-#        that. Since LCA might be present in either left or right child.
-#        Logic : def findLCA(root, n1, n2):
+# Used : Do a recursive call over findLCA(root,n1,n2). In each call search for n1 or n2.
+#        If either is found return that node. If none is found, then call findLCA over left and right child.
+#        Either of them won't be empty, return that. Since LCA might be present in either left or right child.
+#        findLCA(root, n1, n2):
 #        if root is None: return None
 #        if root.data == n1 or root.data == n2:
 #           return root

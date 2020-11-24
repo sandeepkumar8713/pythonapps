@@ -10,8 +10,8 @@
 #                   10    14
 #
 # Question Type : Easy
-# Used : Create an empty queue q
-#        Append root to the queue
+# Used : Create an empty queue q.
+#        Append root to the queue.
 #        Loop while queue is not empty
 #           a) pop top node from queue and print node.data
 #           b) If node.left is present push it in queue

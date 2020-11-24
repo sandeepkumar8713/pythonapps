@@ -11,11 +11,9 @@
 #     4     5
 #
 # Question Type : Generic
-# Used : Call diameterOpt() which returns both max diameter and max height, recursively over left and right child.
-#        If root is None return height as 0 and diameter as 0, else call isBalanced() on left and right child
-#        get max height by either : left height + 1 or right height + 1
-#        get max diameter by either : left height + right height + 1 or left diameter or right diameter
-#        Logic : def diameterOpt(root,height):
+# Used : Call diameterOpt() which returns both max diameter and max height, recursively over
+#        left and right child.
+#        diameterOpt(root,height):
 #        lh = [0], rh = [0]
 #        if root is None:
 #           height[0] = 0

@@ -57,5 +57,3 @@ if __name__ == "__main__":
     root.right.left = Node(6)
     root.left.left.left = Node(7)
     print(isBalanced(root, [0]))
-
-

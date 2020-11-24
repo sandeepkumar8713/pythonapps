@@ -1,11 +1,11 @@
 # https://www.geeksforgeeks.org/write-c-code-to-determine-if-two-trees-are-identical/
-# Question : Write Code to Determine if Two Trees are Identical. Two trees are identical when they have same data and
+# Question : Write Code to determine if Two Trees are Identical. Two trees are identical when they have same data and
 # arrangement of data is also same.
 #
 # Question Type : Easy
-# Used : we need to (pre-order) traverse both trees simultaneously, and while traversing we need to compare data and
-#        children of the trees.
-#        Logic : def identicalTrees(a, b):
+# Used : We need to (pre-order) traverse both trees simultaneously, and while traversing we need
+#        to compare data and children of the trees.
+#        identicalTrees(a, b):
 #        if a is None and b is None:
 #           return True
 #        if a is not None and b is not None:

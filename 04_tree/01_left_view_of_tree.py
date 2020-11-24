@@ -8,9 +8,9 @@
 #                      25      40
 #
 # Question Type : Asked
-# Used : We can keep track of level of a node by passing a parameter to all recursive calls. The idea is to keep track
-#        of maximum level also. Whenever we see a node whose level is more than maximum level so far, we print the node
-#        because this is the first node in its level. (Preorder)
+# Used : We can keep track of level of a node by passing a parameter to all recursive calls.
+#        The idea is to keep track of maximum level also. Whenever we see a node whose level is more
+#        than maximum level so far, we print the node because this is the first node in its level. (Preorder)
 #        For right view : Do pre order but first call right subtree and then left subtree.
 # Complexity : O(n)
 

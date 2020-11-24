@@ -3,7 +3,7 @@
 # must be maintained. Deserialization is reading tree back from file.
 #
 # Question Type : ShouldSee
-# Used : Logic : def serialize(root, fp):
+# Used : def serialize(root, fp):
 #        if root is None:
 #           fp.write(str(MARKER) + " ")
 #           return

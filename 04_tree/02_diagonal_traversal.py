@@ -11,9 +11,10 @@
 #                        7  13
 #
 # Question Type : ShouldSee
-# Used : Maintain a hashDict diagonalPrintMap here key is vertical dist from root and value is list of nodes at that
-#        distance. Call a recursive function which does preOrder diagonalPrintUtil(root, d, diagonalPrintMap) with input
-#        diagonalPrintUtil(root, 0, {}). Insert this node in map :  diagonalPrintMap[d].append(root.data)
+# Used : Maintain a hashDict diagonalPrintMap here key is vertical dist from root and value is
+#        list of nodes at that distance. Call a recursive function which does preOrder
+#        diagonalPrintUtil(root, d, diagonalPrintMap) with input diagonalPrintUtil(root, 0, {}).
+#        Insert this node in map : diagonalPrintMap[d].append(root.data)
 #        Call function again on left subtree with d+1
 #        Call function again on right subtree with d.
 #        (Note that nodes at same vertical distance goes into same key in map)
