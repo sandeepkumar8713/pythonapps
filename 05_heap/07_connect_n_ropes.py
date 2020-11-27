@@ -10,8 +10,10 @@
 # Total cost for connecting all ropes is 5 + 9 + 15 = 29
 #
 # Question Type : Easy
-# Used : Maintain a minHeap. Insert inpArr and heapify it. set minCost = 0. Run a loop while size(minHeap) > 1:
-#           remove two elements from min heap, add them to minCost and insert the sum of the two elements in minHeap
+# Used : Maintain a minHeap. Insert inpArr and heapify it. set minCost = 0.
+#        Run a loop while size(minHeap) > 1:
+#           remove two elements from min heap, add them to minCost and insert
+#           the sum of the two elements in minHeap
 #        After the loop, print minCost
 # Complexity : O(n)
 

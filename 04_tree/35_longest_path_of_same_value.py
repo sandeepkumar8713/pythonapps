@@ -13,17 +13,17 @@
 # Output : 3
 #
 # Question Type : Generic
-# Used : We have to do post order traversal. We will call a recursive function which takes node and overall ans as
-#        input. It returns the length of path passing through given node. If this length is greater than ans, we update
-#        ans.
+# Used : We have to do post order traversal. We will call a recursive function which takes node and
+#        overall ans as input. It returns the length of path passing through given node.
+#        If this length is greater than ans, we update ans.
 #        def longestPath(node, ans):
-#           left = longestPath(node.left, ans)
-#           right = longestPath(node.right, ans)
-#           leftMax = 0, rightMax = 0
-#           if node.left and node.left.data == node.data: leftMax += left + 1
-#           if node.right and node.right.data == node.data: rightMax += right + 1
-#           ans[0] = max(ans[0], leftMax + rightMax)
-#           return max(leftMax, rightMax)
+#        left = longestPath(node.left, ans)
+#        right = longestPath(node.right, ans)
+#        leftMax = 0, rightMax = 0
+#        if node.left and node.left.data == node.data: leftMax += left + 1
+#        if node.right and node.right.data == node.data: rightMax += right + 1
+#        ans[0] = max(ans[0], leftMax + rightMax)
+#        return max(leftMax, rightMax)
 # Complexity : O(n)
 
 
@@ -67,4 +67,3 @@ if __name__ == '__main__':
     root.left.right = Node(9)
     root.right.right = Node(5)
     print(longestSameValuePath(root))
-

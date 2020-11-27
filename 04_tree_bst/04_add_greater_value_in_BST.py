@@ -18,13 +18,13 @@
 #       350   300    210   80
 #
 # Question Type : Easy
-# Used : The idea is to do reverse inorder traversal of BST. The reverse inorder traversal traverses all nodes in
-#        decreasing order.
+# Used : The idea is to do reverse inorder traversal of BST. The reverse inorder traversal traverses
+#        all nodes in decreasing order.
 #        Call a recursive function modifyBSTUtil(root, k) where k is passed by pointer (list[0])
 #           If root is None: return
 #           Call modifyBSTUtil() over root.right
 #           Now it has reached its largest element. Set oldVal = root.data. Add k to original data root.data += k[0]
-#           Now update the k value by adding with oldVal :  k[0] += oldVal. This new value k will be sent ahead.
+#           Now update the k value by adding with oldVal : k[0] += oldVal. This new value k will be sent ahead.
 #           Call modifyBSTUtil() over root.left
 #        Print the modified tree using inorder traversal
 # Complexity : O(n)

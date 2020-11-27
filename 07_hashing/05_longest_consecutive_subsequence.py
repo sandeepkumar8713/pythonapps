@@ -7,9 +7,18 @@
 #
 # Question Type : ShouldSee
 # Used : Loop over the elements and add it to the set. So it will have unique values.
-#        Loop over the elements, if its previous element arr[i] - 1 is not present in set, then this might be the first
-#           element in our desired sub sequence. Now keep incrementing this element j and keep checking if incremented
-#           value is in set. Once the loop gets over. Compare max value with j - arr[i] and update accordingly.
+#        Loop over the elements, if its previous element arr[i] - 1 is not present in set,
+#        then this might be the first element in our desired sub sequence. Now keep incrementing this
+#        element j and keep checking if incremented value is in set. Once the loop gets over.
+#        Compare max value with j - arr[i] and update accordingly.
+#        findLongestConseqSubseq(arr):
+#        for i in range(len(arr)):
+#           if (arr[i] - 1) not in s:
+#               j = arr[i]
+#               while j in s:
+#                   j += 1
+#               ans = max(ans, j - arr[i])
+#        return ans
 # Complexity : O(n)
 
 

@@ -15,9 +15,9 @@
 #
 # Question Type : ShouldSee
 # Used : Call a recursive function constructTreeUtils((pre, preLN, index, n). If index == n, return None.
-#           Make a newNode for value per[index] and increment index. If this value is non-leaf call the function again
-#           on left and right subtree and update accordingly. Now return this newNode.
-
+#        Make a newNode for value per[index] and increment index. If this value is non-leaf call
+#        the function again on left and right subtree and update accordingly. Now return this newNode.
+#
 #        The first element in pre[] will always be root. So we can easily figure out root. If left subtree is empty,
 #        the right subtree must also be empty and preLN[] entry for root must be 'L'. We can simply create a node and
 #        return it. If left and right subtrees are not empty, then recursively call for left and right subtrees and

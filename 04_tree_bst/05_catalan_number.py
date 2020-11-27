@@ -6,12 +6,12 @@
 # ...So are numbers of Binary Search Trees.
 #
 # Question Type : ShouldSee
-# Used : Let's say node i is chosen to be the root. Then there are i - 1 nodes smaller than i and n - i nodes bigger
-#        than i. For each of these two sets of nodes, there is a certain number of possible subtrees.
-#        Let t(n) be the total number of BSTs with n nodes. The total number of BSTs with i at the root is
-#        t(i - 1) t(n - i). The two terms are multiplied together because the arrangements in the left and right
-#        subtrees are independent. That is, for each arrangement in the left tree and for each arrangement in the right
-#        tree, you get one BST with i at the root.
+# Used : Let's say node i is chosen to be the root. Then there are i - 1 nodes smaller than i and n - i
+#        nodes bigger than i. For each of these two sets of nodes, there is a certain number of possible
+#        subtrees. Let t(n) be the total number of BSTs with n nodes. The total number of BSTs with i at
+#        the root is t(i - 1) t(n - i). The two terms are multiplied together because the arrangements in
+#        the left and right subtrees are independent. That is, for each arrangement in the left tree and for
+#        each arrangement in the right tree, you get one BST with i at the root.
 #        Summing over i gives the total number of binary search trees with n nodes.
 #        t(n) = {n (Summation) i = 1}  t(i-1)*t(n-i)
 #

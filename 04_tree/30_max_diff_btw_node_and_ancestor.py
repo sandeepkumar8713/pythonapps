@@ -1,15 +1,16 @@
 # https://www.geeksforgeeks.org/maximum-difference-between-node-and-its-ancestor-in-binary-tree/
-# Question : Given a binary tree, we need to find maximum value we can get by subtracting value of node B from value
-# of node A, where A and B are two nodes of the binary tree and A is an ancestor of B. Expected time complexity is O(n).
+# Question : Given a binary tree, we need to find maximum value we can get by subtracting value of node B
+# from value of node A, where A and B are two nodes of the binary tree and A is an ancestor of B. Expected
+# time complexity is O(n).
 #
 # Question Type : ShouldSee
 # Used : Call a recursive function maxDiffUtils(root, res) with input res = [-sys.maxint]
 #        if root is None: return return sys.maxint
-#        If we are at leaf node then just return its value because it can't be ancestor of any node. Then at each
-#        internal node we will try to get minimum value from left subtree and right subtree and calculate the
-#        difference between node value and this minimum value and according to that we will update the result.
-#        Atlast return the min value from this node: return min(minVal, root.data)
-#        Logic : def maxDiffUtils(root, res):
+#        If we are at leaf node then just return its value because it can't be ancestor of any node.
+#        Then at each internal node we will try to get minimum value from left subtree and right subtree
+#        and calculate the difference between node value and this minimum value and according to that
+#        we will update the result. At last return the min value from this node: return min(minVal, root.data)
+#        maxDiffUtils(root, res):
 #        if root is None: return sys.maxint
 #        if root.left is None and root.right is None:
 #           return root.data

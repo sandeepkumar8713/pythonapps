@@ -1,8 +1,8 @@
 # https://www.geeksforgeeks.org/construct-a-binary-tree-from-parent-array-representation/
-# Question : Given an array that represents a tree in such a way that array indexes are values in tree nodes and array
-# values give the parent node of that particular index (or node). The value of the root node index would always be -1
-# as there is no parent for root. Construct the standard linked representation of given Binary Tree from this
-# given representation.
+# Question : Given an array that represents a tree in such a way that array indexes are values in tree nodes
+# and array values give the parent node of that particular index (or node). The value of the root node index
+# would always be -1 as there is no parent for root. Construct the standard linked representation of given
+# Binary Tree from this given representation.
 #
 # Input: parent[] = {1, 5, 5, 2, 2, -1, 3}
 # Output: root of below tree

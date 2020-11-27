@@ -10,11 +10,11 @@
 # 3
 #
 # Question Type : Asked
-# Used : Loop over the input array from 0 to k-1 and keep record of elements and there frequency in dict. Print the
-#           length of dict.
-#        Now loop over the input array form k to n-1 and reduce the frequency of last element removed from window and
-#           increase the  frequency of new element inserted in window. Remove the element whose frequency is 0. Print
-#           the length of dict
+# Used : Loop over the input array from 0 to k-1 and keep record of elements and there frequency in dict.
+#           Print the length of dict.
+#        Now loop over the input array form k to n-1 and reduce the frequency of last element removed from
+#        window and increase the frequency of new element inserted in window. Remove the element whose frequency
+#        is 0. Print the length of dict
 # Complexity : O(n)
 
 

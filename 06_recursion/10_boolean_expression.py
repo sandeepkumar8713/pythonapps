@@ -22,8 +22,8 @@
 #           leftTrue, leftFalse, rightTrue and rightFalse
 #           way += subWay
 #        return way
-#        Note : No. of parenthesis combination Catalan(n) where n is no. of operator. We can use hash map to save
-#        substring result.
+#        Note : No. of parenthesis combination Catalan(n) where n is no. of operator. We can use
+#        hash map to save substring result.
 # Complexity : O(5^n) n is no. of operator and each function calls recur calls 4 times
 
 resultMap = {}

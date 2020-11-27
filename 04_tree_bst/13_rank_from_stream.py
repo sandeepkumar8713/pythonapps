@@ -4,7 +4,8 @@
 # smallest in stream, return -1.
 #
 # Question Type : Easy
-# Used : In BST we also add leftSize as a member of node. While inserting elements in BST, we keep updating leftSize
+# Used : In BST we also add leftSize as a member of node. While inserting elements in BST, we keep
+#        updating leftSize.
 #        We traverse the tree from root and compare the root values to x.
 #        If root->data == x : return root.leftSize
 #        If x < root.data : return getRankUtils(root.left, x) (If no child, return -1)

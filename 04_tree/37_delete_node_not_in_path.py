@@ -19,16 +19,16 @@
 #        9
 #
 # Question Type : ShouldSee
-# Used : Call a recursive function prune(root,sum). Do post order traversal, while subtracting sum with node data.
-#        If both left and right node return None, then this is leaf node. If sum is more than the node data, return
-#        None.
-#        def prune(root, sum):
-#           if root is None: return None
-#           root.left = prune(root.left, sum - root.data)
-#           root.right = prune(root.right, sum - root.data)
-#           if root.left is None and root.right is None:
+# Used : Call a recursive function prune(root,sum). Do post order traversal, while subtracting sum
+#        with node data. If both left and right node return None, then this is leaf node. If sum is
+#        more than the node data, return None.
+#        prune(root, sum):
+#        if root is None: return None
+#        root.left = prune(root.left, sum - root.data)
+#        root.right = prune(root.right, sum - root.data)
+#        if root.left is None and root.right is None:
 #           if sum > root.data: return None
-#           return root
+#        return root
 # Complexity : O(n)
 
 

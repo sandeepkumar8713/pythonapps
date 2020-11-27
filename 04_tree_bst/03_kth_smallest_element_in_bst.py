@@ -10,14 +10,15 @@
 #
 # Question Type : Generic
 # This can be solved using inorder traversal, but its complexity will be O(n). (kth largest element in bst)
-# Used : Assume that the root is having N nodes in its left subtree. If K = N + 1, root is K-th node. If K < N, we will
-#        continue our search (recursion) for the Kth smallest element in the left subtree of root. If K > N + 1, we
-#        continue our search in the right subtree for the (K - N - 1)-th smallest element.
+# Used : Assume that the root is having N nodes in its left subtree. If K = N + 1, root is K-th node.
+#        If K < N, we will continue our search (recursion) for the Kth smallest element in the left subtree
+#        of root. If K > N + 1, we continue our search in the right subtree for the (K - N - 1)-th smallest element.
 #        While inserting elements in the BST, also keep track of elements in the left subtree of each node.
 #        Call function kthSmallestElement(k). It set res = -1. If root is None: return res.
 #        Set temp = root. Now loop while temp is not None. If temp.leftCount + 1 == k: return temp.data .
 #           Else if k > temp.leftCount: k = k - (temp.leftCount + 1),  temp = temp.right
-#               It means that kth element is in right subtree. So go in right subtree to search (K-N-1)-th smallest ele.
+#               It means that kth element is in right subtree. So go in right subtree to
+#               search (K-N-1)-th smallest ele.
 #           Else temp = temp.left, search in left subtree.
 #        If come out of loop return res(-1). Which means not found.
 # Complexity : O(h) here h is height of binary tree so O(log n)

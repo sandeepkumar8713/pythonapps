@@ -17,15 +17,19 @@
 #               2.1 Print all leaf nodes of left sub-tree from left to right.
 #               2.2 Print all leaf nodes of right subtree from left to right.
 #        3. Print the right boundary in bottom-up manner.
-# printBoundaryLeft : Print the nodes in TOP DOWN manner. So first print and then traverse.
-#                     If root is present: if root.left is present : print root.data and printBoundaryLeft(root.left).
-#                     Else is left is None and right is present: print root.data and printBoundaryLeft(root.right).
-# printBoundaryRight : Print the nodes in BOTTOM UP manner. So first traverse then print.
-#                      If root is present: if root.right is present: printBoundaryRight(root.right) and print root.data
-#                      Else is right is None and left is present: printBoundaryRight(root.left) and  print root.data
-# printLeaves : We to in order traversal here. It is a recursive function
-#               If root is present: Call printLeaves(root.left). If both left and right subtree is None print root.data.
-#               Call printLeaves(root.right)
+#        printBoundaryLeft :
+#        Print the nodes in TOP DOWN manner. So first print and then traverse.
+#        If root is present: if root.left is present : print root.data and printBoundaryLeft(root.left).
+#        Else is left is None and right is present: print root.data and printBoundaryLeft(root.right).
+#        printBoundaryRight :
+#        Print the nodes in BOTTOM UP manner. So first traverse then print.
+#        If root is present: if root.right is present: printBoundaryRight(root.right) and print root.data
+#        Else is right is None and left is present: printBoundaryRight(root.left) and  print root.data
+#        printLeaves :
+#        We to in order traversal here. It is a recursive function
+#        If root is present: Call printLeaves(root.left).
+#        If both left and right subtree is None print root.data.
+#        Call printLeaves(root.right)
 # Complexity : O(n)
 
 

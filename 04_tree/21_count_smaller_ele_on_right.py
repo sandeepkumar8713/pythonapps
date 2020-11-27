@@ -4,16 +4,34 @@
 # contains count of smaller elements on right side of each element arr[i] in array.
 #
 # Question Type : OddOne
-# Used : We have use AVL tree. In Node add one more field as size which stores the count of left, right and this nodes.
-#        Call a recursive function insert(root, key, smallerCount). We traverse the array from right to left and
-#        insert all elements one by one in an AVL tree. While inserting first compare the key with root.
-#        If key is smaller than root, call the insert() on left subtree.
-#        Else if key is greater than root,  call the insert() on right subtree. Since key is greater than all the nodes
-#        in left subtree of root. So we add the size of left subtree to the smallerCount for the key being inserted.
+# Used : We have use AVL tree. In Node add one more field as size which stores the count of left,
+#        right and this nodes. Call a recursive function insert(root, key, smallerCount). We traverse
+#        the array from right to left and insert all elements one by one in an AVL tree. While inserting
+#        first compare the key with root. If key is smaller than root, call the insert() on left subtree.
+#        Else if key is greater than root, call the insert() on right subtree. Since key is greater than
+#        all the nodes in left subtree of root. So we add the size of left subtree to the smallerCount
+#        for the key being inserted.
 #           smallerCount[0] += self.getSize(root.left) + 1
 #        After this update height and size of this node.
-#        Then call balance out.
-#        (Note to update size while doing leftRotate and rightRotate)
+#        Then call balance out. (Note to update size while doing leftRotate and rightRotate)
+#        smallerCount(inpArr):
+#        avl = AVLTree(), root = None
+#        smallerCountList = [0] * len(inpArr)
+#        for i in range(len(inpArr) - 1, -1, -1):
+#           smallerCount = [0]
+#           root = avl.insert(root, inpArr[i], smallerCount)
+#           smallerCountList[i] = smallerCount[0]
+#        return smallerCountList
+#        insert(self, root, key, smallerCount):
+#        if not root: return TreeNode(key)
+#        elif key < root.val:
+#           root.left = self.insert(root.left, key, smallerCount)
+#        else:
+#           root.right = self.insert(root.right, key, smallerCount)
+#           smallerCount[0] += self.getSize(root.left) + 1
+#        root.height = 1 + max(self.getHeight(root.left), self.getHeight(root.right))
+#        root.size = self.getSize(root.left) + self.getSize(root.right) + 1
+#        return self.balanaceOut(root)
 # Complexity : O(n log n)
 
 
@@ -30,7 +48,7 @@ class AVLTree:
     def insert(self, root, key, smallerCount):
         if not root:
             return TreeNode(key)
-        elif key < root.data:
+        elif key < root.val:
             root.left = self.insert(root.left, key, smallerCount)
         else:
             root.right = self.insert(root.right, key, smallerCount)

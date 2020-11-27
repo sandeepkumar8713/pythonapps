@@ -15,8 +15,11 @@
 # Output: 1 2 3 4 5 6
 #
 # Question Type : ShouldSee
-# Used : If root1 is None do in order of root2, return
-#        If root2 is None do in order of root1, return
+# Used : Do inorder of the 2 trees simultaneously. Compare the values between them, print the lower one,
+#        push the bigger one in stack.
+#        merge(root1, root2):
+#        If root1 is None: do in order of root2, return
+#        If root2 is None: do in order of root1, return
 #        while temp1 is not None or temp2 is not None or len(stack1) != 0 or len(stack2) != 0:
 #           if temp1 is not None or temp2 is not None:
 #               push temp1 to stack1 and set temp1=temp1.left

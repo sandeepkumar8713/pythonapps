@@ -12,19 +12,19 @@
 # Output : Yes
 #
 # Question Type : Asked
-# Used : We will do post order traversal and keep saving the nodes as string sequence in hash table, and comparing if
-#        already found before.
+# Used : We will do post order traversal and keep saving the nodes as string sequence in hash table,
+#        and comparing if already found before.
 #        dupSubUtil(root):
-#           subStr = ""
-#           if root is None: return subStr + MARKER
-#           lStr = dupSubUtil(root.left)
-#           if lStr == subStr: return subStr
-#           rStr = dupSubUtil(root.right)
-#           if rStr == subStr: return subStr
-#           subStr += root.data + lStr + rStr
-#           if len(subStr) > 3 and subStr in subTrees: return ""
-#           subTrees.add(subStr)
-#           return subStr
+#        subStr = ""
+#        if root is None: return subStr + MARKER
+#        lStr = dupSubUtil(root.left)
+#        if lStr == subStr: return subStr
+#        rStr = dupSubUtil(root.right)
+#        if rStr == subStr: return subStr
+#        subStr += root.data + lStr + rStr
+#        if len(subStr) > 3 and subStr in subTrees: return ""
+#        subTrees.add(subStr)
+#        return subStr
 #        if subStr is "", then we found the subtree.
 # Complexity : O(n)
 

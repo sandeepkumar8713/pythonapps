@@ -10,13 +10,12 @@
 # X litre of water and you put that water in top glass, how much water will be contained by jth glass in ith row?
 #
 # Question Type : ShouldSee
-# Used : Run 2 loops for rows and cols and distribute the water from first glass to the desired glass. Return the amount
-#        in desired glass. If value is more than 1 then distribute the remaining water in two half in 2 lower glasses.
-#        Logic : def findWater(i, j, K):
+# Used : Run 2 loops for rows and cols and distribute the water from first glass to the desired glass.
+#        Return the amount in desired glass. If value is more than 1 then distribute the remaining water in
+#        two half in 2 lower glasses.
+#        findWater(i, j, K):
 #        glass = [0] * ((i+1)*(i+2) // 2)
-#        print(len(glass))
-#        glass[0] = K
-#        index = 0
+#        glass[0] = K, index = 0
 #        for row in range(1, i+1, 1):
 #           for col in range(1, row+1, 1):
 #               X = glass[index]

@@ -2,9 +2,20 @@
 # color of the given pixel and all adjacent(excluding diagonally adjacent) same colored pixels with the given color K.
 #
 # Question Type : Easy
-# Used : Given a matrix, start recursion from the given points, set the new pixel. After that recur for up, down, left,
-#        right. Return condition: posX and posY should be within matrix. If current pixel is not old pixel return.
+# Used : Given a matrix, start recursion from the given points, set the new pixel. After that recur
+#        for up, down, left, right. Return condition: posX and posY should be within matrix.
+#        If current pixel is not old pixel return.
 #        If new pixel is already set return.
+#        floodFill(inputMat, posX, posY, oldPixel, newPixel):
+#        if posX < 0 or posX >= len(inputMat): return
+#        if posY < 0 or posY >= len(inputMat[0]): return
+#        if inputMat[posX][posY] != oldPixel: return
+#        if inputMat[posX][posY] == newPixel: return
+#        inputMat[posX][posY] = newPixel
+#        floodFill(inputMat, posX - 1, posY, oldPixel, newPixel)
+#        floodFill(inputMat, posX + 1, posY, oldPixel, newPixel)
+#        floodFill(inputMat, posX, posY - 1, oldPixel, newPixel)
+#        floodFill(inputMat, posX, posY + 1, oldPixel, newPixel)
 # Complexity : O(n)
 
 

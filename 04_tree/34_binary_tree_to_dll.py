@@ -7,14 +7,14 @@
 # Question Type : ShouldSee, SimilarAdded
 # Used : Keep track of previous node while doing inorder traversal.
 #        When this node comes, use previous node to update its right and update left of this node
-#        def BinaryTree2DoubleLinkedList(root, head):
-#           if root is None: return
-#           BinaryTree2DoubleLinkedList(root.left, head)
-#           if Static.staticPrev is None:
-#               head[0] = root
-#           else:
-#               root.left = Static.staticPrev
-#               Static.staticPrev.right = root
+#        BinaryTree2DoubleLinkedList(root, head):
+#        if root is None: return
+#        BinaryTree2DoubleLinkedList(root.left, head)
+#        if Static.staticPrev is None:
+#           head[0] = root
+#        else:
+#           root.left = Static.staticPrev
+#           Static.staticPrev.right = root
 #           Static.staticPrev = root
 #           BinaryTree2DoubleLinkedList(root.right, head)
 # Complexity : O(n)

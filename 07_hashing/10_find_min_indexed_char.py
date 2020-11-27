@@ -7,8 +7,8 @@
 # Both e and s of patt are present in str, but e is present at minimum index, which is 1.
 #
 # Question Type : Easy
-# Used : Make a hash dict of str. Now loop over element of pattern, for each char get the corresponding
-#        index from dict and update min Index if required
+# Used : Make a hash dict of str. Now loop over element of pattern, for each char get the
+#        corresponding index from dict and update min Index if required
 # Complexity : O(n)
 
 import sys

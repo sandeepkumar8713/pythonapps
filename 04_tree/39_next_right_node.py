@@ -14,9 +14,9 @@
 # Output : 6
 #
 # Question Type : Easy
-# Used : Do pre order traversal of the given tree. While doing to find the given key, save its level. Next time when you
-#        reach the same, this node is our answer.
-#        Logic : def nextRightNode(root, k, level, valueLevel):
+# Used : Do pre order traversal of the given tree. While doing so find the given key, save its level.
+#        Next time when you reach the same, this node is our answer.
+#        nextRightNode(root, k, level, valueLevel):
 #        if root is None: return None
 #        if root.key == k: valueLevel[0] = level, return None
 #        elif valueLevel[0]:

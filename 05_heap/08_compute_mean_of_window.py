@@ -4,8 +4,9 @@
 # compute the average.
 #
 # Question Type : Generic
-# Used : make use of Min and Max heaps. Similar to find kth largest in stream.
-#       For smaller values use Max Heap, For larger value use Min heap. For middle value, maintain both min and max heap
+# Used : Make use of Min and Max heaps. Similar to find kth largest in stream.
+#        For smaller values use Max Heap, For larger value use Min heap.
+#        For middle value, maintain both min and max heap
 # Complexity : insert = (w log w), deleteByKey : (w log w)
 
 import operator

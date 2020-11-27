@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/print-nodes-binary-tree-k-leaves/
-# Question : Given a binary tree and a integer value K, the task is to find all nodes in given binary tree having K leaves in
-# subtree rooted with them.
+# Question : Given a binary tree and a integer value K, the task is to find all nodes in given binary tree
+# having K leaves in subtree rooted with them.
 #
 #              1
 #            /   \

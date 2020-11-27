@@ -11,10 +11,10 @@
 # Output: Not Possible
 #
 # Question Type : Generic
-# Used : Make a array of objects whose attributes are char and its frequency. Make a maxHeap(Priority Queue) out of
-#        this array. Loop while maxHeap is not empty. Pop top element from maxHeap, append the char to the result
-#        string. If previous element freq is more 0 again insert it in maxHeap. Make current element as previous after
-#        decrementing its frequency by 1.
+# Used : Make a array of objects whose attributes are char and its frequency. Make a maxHeap(Priority Queue)
+#        out of this array. Loop while maxHeap is not empty. Pop top element from maxHeap, append the char
+#        to the result string. If previous element freq is more than 0 again insert it in maxHeap. Make
+#        current element as previous after decrementing its frequency by 1.
 #        Logic :
 #        prev = Key('#', -1)
 #        resStr = ''
@@ -128,5 +128,3 @@ def rearrangeString(inputStr):
 if __name__ == "__main__":
     rearrangeString("bbbbaa")
     rearrangeString("aaabb")
-
-

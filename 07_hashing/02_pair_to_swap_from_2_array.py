@@ -9,8 +9,8 @@
 # Question Type : ShouldSee
 # Used : Find smaller of the 2 array. Find the value that these 2 sum up using this formula
 #        diff = abs(sum(largeArr) - sum(smallArr)) / 2
-#        Now loop through larger array while checking if (arr[i] + diff or arr[i] - diff) is in smaller array.
-#           If found put in pairs dict.
+#        Now loop through larger array while checking if (arr[i] + diff or arr[i] - diff)
+#           is in smaller array. If found put in pairs dict.
 #        If pairs dict is empty then not found else print the pairs.
 # Complexity :  O(n)
 

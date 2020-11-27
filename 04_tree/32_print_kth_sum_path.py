@@ -29,7 +29,7 @@
 #           calculate the pathSum and compare with k one by one over path list moving in reverse i.e. sum += path[len-1]
 #           sum += path[len-2], sum += path[len-3] and so on.... Print path if pathSum == k
 #        At the end pop the element pushed in path
-#        Logic : def printKPathUtil(root, path, k):
+#        printKPathUtil(root, path, k):
 #        if root is None: return
 #        path.append(root.data)
 #        printKPathUtil(root.left, path, k)

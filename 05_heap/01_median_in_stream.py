@@ -14,7 +14,7 @@
 #           If new element is less than median then push in left and get top element from it as median
 #           else push in right anf get top element from it as median
 #       If the right heap has more elements
-#           If new element is less median then push in right
+#           If new element is less median then push in left
 #           else push in right, after moving top element to left
 #           get top from both the heaps and average out to get median
 # Complexity : build heap = O(k) , heapify = O(log k),

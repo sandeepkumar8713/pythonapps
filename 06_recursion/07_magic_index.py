@@ -3,7 +3,7 @@
 # in the array, if there is any Fixed Point present in array, else returns -1. Fixed Point in an array is an index i
 # such that arr[i] is equal to i. Note that integers in array can be negative and elements can be repeated.
 #
-# Example : input : [-40, -20, -1, 1, 2, 3, 5, 7, 9, 12, 13]ll
+# Example : input : [-40, -20, -1, 1, 2, 3, 5, 7, 9, 12, 13]
 #           output : 7
 #
 # Question Type : Generic

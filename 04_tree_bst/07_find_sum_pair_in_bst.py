@@ -16,11 +16,12 @@
 #        minimum value node. We add sum of current nodes in both traversals and compare this sum with given target sum.
 #        If the sum is same as target sum, we return true. If the sum is more than target sum, we move to next node in
 #        reverse inorder traversal, otherwise we move to next node in normal inorder traversal.
-# Inorder : while not done1:
-#               If temp1 is not None, push the node in stack and move temp to next left.
-#               else: if stack is empty. set done1 = true
-#                    else: pop top node from stack. set val1 = temp1.data, move temp1 to next right and set done1 = true
-# Reverse Inorder : keeping pushing right node
+#        Inorder :
+#        while not done1:
+#           If temp1 is not None, push the node in stack and move temp to next left.
+#           else: if stack is empty. set done1 = true
+#                 else: pop top node from stack. set val1 = temp1.data, move temp1 to next right and set done1 = true
+#        Reverse Inorder : keeping pushing right node
 # Complexity : time : O(n) space : O(log n) for balanced tree
 
 

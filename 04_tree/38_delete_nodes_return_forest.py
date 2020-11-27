@@ -9,9 +9,10 @@
 # Output: [[1,2,null,4],[6],[7]]
 #
 # Question Type : ShouldSee
-# Used : Do post order traversal of the given tree, with a result list. If the current node is present in the
-#        toBeDeleted list, append left and right subtree in the result list and return None else return Node.
-#        Logic : delNodesUtils(root, res, toBeDeleted):
+# Used : Do post order traversal of the given tree, with a result list. If the current node is present
+#        in the toBeDeleted list, append left and right subtree in the result list and return None
+#        else return Node.
+#        delNodesUtils(root, res, toBeDeleted):
 #        leftChild = delNodesUtils(root.left, res, toBeDeleted)
 #        rightChild = delNodesUtils(root.right, res, toBeDeleted)
 #        if leftChild is None: root.left = None

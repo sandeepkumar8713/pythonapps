@@ -18,7 +18,8 @@
 #
 # Question Type : ShouldSee
 # Used : Call a recursive function correctBSTUtil((root, first, middle, last, prev) with
-#        correctBSTUtil((root, [None], [None], [None], [None]). This function should do inorder as it traverses the BST in increasing order.
+#        correctBSTUtil((root, [None], [None], [None], [None]). This function should do inorder as it
+#        traverses the BST in increasing order.
 #        If root is None: return
 #        Call the recursive function on left subtree
 #        if prev is not None and current data is less than previous data: (this is BST Violation)
@@ -29,7 +30,8 @@
 #
 #        Once we are out of recursive function. If first and last are set: swap them
 #        Else if first and middle are set: swap them
-#        Logic : def correctBSTUtil(root, first, middle, last, prev):
+#
+#        correctBSTUtil(root, first, middle, last, prev):
 #        if root is None: return
 #        correctBSTUtil(root.left, first, middle, last, prev)
 #        if prev[0] is not None and root.data < prev[0].data:

@@ -5,9 +5,10 @@
 #
 # Question Type : Easy
 # Used : Make a freq map of input string.
-#       Call a recursive function : printPerms(charMap, prefix, remainingLength, resultList)
-#       If remainingLength is 0: append prefix in resultList and return
-#       Loop over the characters in charMap, if its freq > 0: decrement the freq, add call the function again:
+#        Call a recursive function : printPerms(charMap, prefix, remainingLength, resultList)
+#        If remainingLength is 0: append prefix in resultList and return
+#        Loop over the characters in charMap, if its freq > 0: decrement the freq,
+#           add call the function again:
 #           printPerms(charMap, prefix + c, remainingLength - 1, resultList)
 #           decrement the freq
 #       Note : count is : n!/(repeatedCount!)

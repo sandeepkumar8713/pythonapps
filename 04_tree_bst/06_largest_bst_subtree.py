@@ -24,18 +24,19 @@
 #        Make a call to recursive function largestBSTUtil(node, minKey, maxKey, maxSize, isBst) with input :
 #           largestBSTUtil(root, [sys.maxint], [-sys.maxint], maxSize, [False]) and return maxSize[0].
 #        It returns the size of tree if it is BST else 0.
-# largestBSTUtil() : If root is null. set isBst[0] = True and return 0.
-#                    set maxKey[0] = -sys.maxint and call largestBSTUtil() on left subtree
-#                    if left subtree is bst and current node value is more than maxKey[0]: set leftIsBst = True
-#                    save leftMin = minKey[0]
-#                    set minKey[0] = sys.maxint and call largestBSTUtil() on right subtree
-#                    if right subtree is bst and current node value is less than minKey[0]: set rightIsBst = True
-#                    if leftMin < minKey[0]: minKey[0] = leftMin (As min and max from left and right, need to send up)
-#                    if node.data < minKey[0]: minKey[0] = node.data (We get min and max from leaf node only)
-#                    if node.data > maxKey[0]: maxKey[0] = node.data
-#                    If both left and right are bst: if sum of (left + right + 1) is more than maxSize update
-#                       return sum
-#                    Else: isBst[0] = False and return 0
+#        largestBSTUtil() :
+#        If root is null. set isBst[0] = True and return 0.
+#        set maxKey[0] = -sys.maxint and call largestBSTUtil() on left subtree
+#        if left subtree is bst and current node value is more than maxKey[0]: set leftIsBst = True
+#        save leftMin = minKey[0]
+#        set minKey[0] = sys.maxint and call largestBSTUtil() on right subtree
+#        if right subtree is bst and current node value is less than minKey[0]: set rightIsBst = True
+#        if leftMin < minKey[0]: minKey[0] = leftMin (As min and max from left and right, need to send up)
+#        if node.data < minKey[0]: minKey[0] = node.data (We get min and max from leaf node only)
+#        if node.data > maxKey[0]: maxKey[0] = node.data
+#        If both left and right are bst: if sum of (left + right + 1) is more than maxSize update maxSize
+#           return sum
+#        Else: isBst[0] = False and return 0
 # Complexity : O(n)
 
 import sys

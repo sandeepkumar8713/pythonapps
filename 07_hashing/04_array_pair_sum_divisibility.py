@@ -9,10 +9,12 @@
 #
 # Question Type : Generic
 # Used : Loop over the input array and make a dict of remainder(key) with its frequency as value.
-#        If remainder 0 is present in dict, then there should be even(to make pair) number of 0's else return false
+#        If remainder 0 is present in dict, then there should be even(to make pair) number of 0's else
+#           return false
 #        If remainder k/2 is is in dict, then there should be even number of k/2's else return false
-#        Now loop through the keys of dict, for each remainder in dict, there should also be remainder - k in dict else
-#            return false. If remainder - k is present in dict, its freq must be equal to freq of remainder in dict else
+#        Now loop through the keys of dict, for each remainder in dict, there should also be remainder - k
+#            in dict else return false. If remainder - k is present in dict, its freq must be equal to
+#            freq of remainder in dict else
 #            return false.
 #        If all above cases are passed return true.
 # Complexity : O(n)

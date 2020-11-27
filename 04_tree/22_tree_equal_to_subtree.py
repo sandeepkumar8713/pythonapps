@@ -9,6 +9,11 @@
 #        Call a recursive func isSubtree(T, S), If either T or S is None return true
 #        Call areIdentical(T, S) and return True if they are same
 #        Else return isSubtree(T.left, S) or isSubtree(T.right, S)  (We check by taking left and right subtree as root)
+#        isSubtree(T, S):
+#        if S is None: return True
+#        if T is None: return True
+#        if areIdentical(T, S): return True
+#        return isSubtree(T.left, S) or isSubtree(T.right, S)
 # Complexity : O(n^2)
 
 
