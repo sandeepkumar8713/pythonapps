@@ -12,7 +12,8 @@
 # Question Type : ShouldSee
 # Used : We have to make a memory table count : size (n+1). Mark all as 0. Initialize base values.
 #        Mark count[0] = 1, count[1] = 1, count[2] = 2
-#        Loop over the remaining elements, the count[i] would be sum of 3 previous counts as 1, 2, 3 steps are allowed.
+#        Loop over the remaining elements, the count[i] would be sum of 3 previous counts
+#           as 1, 2, 3 steps are allowed.
 #        return count[n]
 # Complexity : O(n)
 

@@ -9,10 +9,11 @@
 # Question Type : SimilarAdded
 # Used : Make a class of Box with field : height, width and depth.
 #        Make a list of box objects with all 3 possible rotation
-#        Sort the list in decreasing order based on area.(width * depth)
+#        Sort the list in decreasing order based on area. (width * depth)
 #        Now use longest increasing sub sequence(LIS) in dynamic programming approach.
-#        Maintain a list MSH where MSH[i] now stores the maximum stake height ending with box i. Initialize MSH[i] with
-#           height[i]. MSH(i) = Maximum possible Stack Height with box i at top of stack
+#        Maintain a list MSH where MSH[i] now stores the maximum stake height ending with box i.
+#        Initialize MSH[i] with height[i].
+#        MSH(i) = Maximum possible Stack Height with box i at top of stack
 #        Run 2 loops from i : 1 to n and j : 0 to i
 #           if depth[j] > depth[i] and width[j] > width[i] and MSH[i] < MSH[j] + height[i]:
 #               MSH[i] = MSH[j] + height[i]

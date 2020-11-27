@@ -9,8 +9,10 @@
 #        table[i] will be storing the number of solutions for targetSum i.
 #        Run a loop over coin value in coinList
 #           Run a loop from coin value to targetSum
-#               Consider this coin as chosen, then take possible counts from table[j - coinValue] and add to table[j].
+#               Consider this coin as chosen, then take possible counts from
+#                   table[j - coinValue] and add to table[j].
 #               table[j] += table[j - coinValue]
+#        return table[targetSum]
 # Complexity : O(n^2)
 
 
@@ -34,4 +36,4 @@ if __name__ == "__main__":
 
     # coinList = {2, 5, 3, 6}
     # targetSum = 10
-    print ("Possible ways to make change : " + str(count(coinList, targetSum)))
+    print("Possible ways to make change : " + str(count(coinList, targetSum)))

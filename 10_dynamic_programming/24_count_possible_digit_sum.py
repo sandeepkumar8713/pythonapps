@@ -7,13 +7,17 @@
 # Explanation: Numbers are 11 and 20
 #
 # Question Type : Generic
-# Used : Maintain a table dp of size: digitCount * targetSum and set all values as -1. Call a recursive function
-#        countRec(digitCount, targetSum, dp, firstCall).  if digitCount == 0: if targetSum == 0: return 1 else: return 0
+# Used : Maintain a table dp of size: digitCount * targetSum and set all values as -1.
+#        Call a recursive function countRec(digitCount, targetSum, dp, firstCall).
+#        if digitCount == 0:
+#           if targetSum == 0: return 1 else: return 0
 #        Check if for given digitCount and targetSum, possible count is already calculate.
 #        if dp[digitCount][targetSum] != -1: return dp[digitCount][targetSum]
 #        If this func is called first time start from 1 else 0.
-#        Run a loop by taking all possible digits from i : (0 or 1) to 9 and call recursive function again on each.
-#           if targetSum - i >= 0: possibleCount += countRec(digitCount - 1, targetSum - i, dp, false)
+#        Run a loop by taking all possible digits from i : (0 or 1) to 9 and
+#        call recursive function again on each.
+#           if targetSum - i >= 0:
+#               possibleCount += countRec(digitCount - 1, targetSum - i, dp, false)
 #        After the loop set dp[digitCount][targetSum] = possibleCount and return it.
 # Complexity : O(n * m) where n is digitCount and m is targetSum
 

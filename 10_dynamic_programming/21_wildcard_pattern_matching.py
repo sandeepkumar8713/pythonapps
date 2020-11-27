@@ -11,15 +11,17 @@
 #
 # Question Type : ShouldSee
 # Used : Here we are maintaining a memory table. dp : size (n+1) * (m+1). Initialize all as False.
+#        dp[i][j] with value True means that str till i matches with patt with j.
 #        dp[0][0] = True
 #        Only '*' can match with empty string
-#        for j in range(1, ptrLen + 1): if pattern[j - 1] == '*': dp[0][j] = dp[0][j - 1]
-#        Now Loop
+#        for j in range(1, ptrLen + 1):
+#           if pattern[j - 1] == '*': dp[0][j] = dp[0][j - 1]
 #        for i in range(1, strLen + 1):
 #           for j in range(1, ptrLen + 1):
-#                 if pattern[j - 1] == '*': dp[i][j] = dp[i][j-1] or dp[i-1][j]
-#                 elif pattern[j - 1] == '?' or inpStr[i - 1] == pattern[j - 1]: dp[i][j] = dp[i-1][j-1]
-#                 else: dp[i][j] = False
+#               if pattern[j - 1] == '*': dp[i][j] = dp[i][j-1] or dp[i-1][j]
+#               elif pattern[j - 1] == '?' or inpStr[i - 1] == pattern[j - 1]:
+#                   dp[i][j] = dp[i-1][j-1]
+#               else: dp[i][j] = False
 #        return dp[strLen][ptrLen]
 # Complexity : O(m*n) m : length of pattern and n : length of string
 

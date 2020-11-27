@@ -14,12 +14,12 @@
 #           break
 #       Print topological sorting of the above created graph.
 #
-#       Topological sorting : Maintain an empty stack. Loop over the vertices of the graph and call recursive function
-#       DFSUtils for unvisited vertices.
-#           In DFSUtils loop over the connected vertices and again call DFSUtils over each
-#           of them. After the loop got over push this input vertex in stack.
+#       Topological sorting : Maintain an empty stack. Loop over the vertices of the graph and call
+#       recursive function DFSUtils for unvisited vertices.
+#           In DFSUtils loop over the connected vertices and again call DFSUtils over each of them.
+#           After the loop got over push this input vertex in stack.
 #       Once DFSUtils is call over all the unvisited vertices. Pop elements from the stack and print it.
-# Complexity : O(n + aplhaCount)
+# Complexity : O(n + alphaCount)
 
 
 class Graph:

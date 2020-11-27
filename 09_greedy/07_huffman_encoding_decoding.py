@@ -22,16 +22,18 @@
 #
 # Question Type : ShouldSee
 # Used : From the given input string, make of list of nodes whose fields are : data, freq, left and right
-#        Using this list make a normal min heap.
-#        Loop while min heap has only one element
-#           pop twice from this min heap, tag them as left and right, merge them by(use '#' as data) summing their freq
-#           and push merged node in the heap again
+#        Using this list make a normal max heap.
+#        Loop while max heap has only one element
+#           pop twice from this max heap, tag them as left and right, merge them by(use '#' as data)
+#           summing their freq and push merged node in the heap again
 #        Pop this only element from the heap and tag it as root of tree.
 #        Make a call to recursive function storeCodes with default in code as ""
 #           If we find a leaf node, then save its char along with code
-#           else make recursive call to left subtree while appending 0 to the code and 1 for right subtree, save
+#           else make recursive call to left subtree while appending 0 to the code and 1 for right
+#           subtree, save
 #        By doing this we will get dict of char and there code.
-#        Now loop over the input string and covert char to codes using the above dict, this will give encoded string
+#        Now loop over the input string and covert char to codes using the above dict, this will give
+#        encoded string
 #
 #        To decode, loop through encoded string and travel the tree. From root, go to left if value is 0 or go to 1.
 #           If node data is '#' continue else print the char

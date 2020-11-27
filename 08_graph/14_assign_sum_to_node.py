@@ -6,16 +6,16 @@
 # Examples : Given a graph with values {1,2,3,4}, find total time it takes, such that all nodes have value as 10.
 #
 # Question Type : OddOne
-# Used : Since the graph is fully connected. The idea is to take a node, iterate over all its adjacent nodes through
-#        recursion and keep adding its sum. Once the end is reached. Rollback while updating the previously travelled
-#        nodes.
+# Used : Since the graph is fully connected. The idea is to take a node, iterate over all its adjacent
+#        nodes through recursion and keep adding its sum. Once the end is reached. Rollback while updating
+#        the previously travelled nodes.
 #        Call the recursive function distributeSum(node, totalSum, index, n).
 #           n5.data = distributeSum(n5, n5.data, 0, len(n5.adjacentNodes))
-#        In the function if index == n : return totalSum
-#           Add the current value to totalSum: totalSum += node.adjacentNodes[index].data
-#           Call the function on next node and assign its return value to current note data
-#               node.adjacentNodes[index].data = distributeSum(node, totalSum, index + 1, n)
-#           return current data value: return node.adjacentNodes[index].data
+#        distributeSum(node, totalSum, index, n):
+#        if index is n: return totalSum
+#        totalSum += node.adjacentNodes[index].data
+#        node.adjacentNodes[index].data = distributeSum(node, totalSum, index + 1, n)
+#        return node.adjacentNodes[index].data
 # Complexity : O(n)
 
 

@@ -9,10 +9,10 @@
 # Question Type : ShouldSee
 # Used : Sort the given input array. Set res as diff of first and last element.
 #        Set largest as a[n] - k and smallest as a[0] + k. Swap if smallest is bigger.
-#        Now loop over the input array from 0 to n-2. Try to choose each element as either as smallest or largest by
-#           incrementing and decrementing by k. If subtracted value is more than smallest or added value is lesser than
-#           largest then skip this element. Else try to check whether choosing subtracted as smallest or added as
-#           largest, which one gives smaller diff and update accordingly.
+#        Now loop over the input array from 0 to n-2. Try to choose each element as either as smallest
+#           or largest by incrementing and decrementing by k. If subtracted value is more than smallest or
+#           added value is lesser than largest then skip this element. Else try to check whether choosing
+#           subtracted as smallest or added as largest, which one gives smaller diff and update accordingly.
 #       return min(res, largest - smallest)
 # Complexity : O(n log n)
 

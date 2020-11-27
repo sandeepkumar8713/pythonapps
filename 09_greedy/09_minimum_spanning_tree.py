@@ -7,12 +7,27 @@
 # Used : Kruskal's Minimum Spanning Tree Algorithm
 #        Sort the given edges. Make a list of result, parent and rank. Result is empty.
 #        set parent as parent[i] = i and rank as rank[1 to n] = 0
-#        Loop over the given edges. For the given edge, get it parents of its vertices. If parents are not same, that
-#           means by considering this edge won't create a cycle. Add this edge in result list and call union function
-#           to update rank of parent vertex if required.
-#        Find function(i) : if  parent[i] = i return i else call recursive find(parent[i]) to get its root ancestor.
-#        Union function(u,v) : find parent of u and v, let it be xRoot and yRoot. If rank of xRoot is higher make it
-#           as parent else vice versa. If rank of both are same, then make one as root and increment its rank by 1.
+#        Loop over the given edges. For the given edge, get it parents of its vertices. If parents are
+#           not same, that means by considering this edge won't create a cycle. Add this edge in result
+#           list and call union function to update rank of parent vertex if required.
+#        print result array.
+#        Logic :
+#        while e < self.V - 1:
+#           u, v, w = self.graph[i]
+#           i = i + 1
+#           x = self.find(parent, u)
+#           y = self.find(parent, v)
+#           if x != y:
+#               e = e + 1
+#               result.append([u, v, w])
+#               self.union(parent, rank, x, y)
+#        return result
+#        Find function(i) :
+#        if parent[i] = i return i else
+#           call recursive find(parent[i]) to get its root ancestor.
+#        Union function(u,v):
+#        find parent of u and v, let it be xRoot and yRoot. If rank of xRoot is higher make it as parent
+#        else vice versa. If rank of both are same, then make one as root and increment its rank by 1.
 # Complexity : O(E Log E + E Log V) so O(n log n)
 
 

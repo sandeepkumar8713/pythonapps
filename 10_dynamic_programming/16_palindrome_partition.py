@@ -6,14 +6,18 @@
 # cuts are needed. If a string of length n containing all different characters, then minimum n-1 cuts are needed.
 #
 # Question Type : Generic
-# Used : Call a recursive function minPalinPartition. Maintain a map dp size : n*n such that dp[i][j] is return true if
-#        inpStr[i..j] is palindrome. Maintain a array minCuts size : n such that minCuts[i] gives min cuts for
-#        inpStr[0..i].
-#        Run a loop from length L 2 to n. Run a loop from i 0 to n-L. set otherEnd j = i + L - 1.
+# Used : Call a recursive function minPalinPartition. Maintain a map dp size : n*n such that
+#        dp[i][j] is return true if inpStr[i..j] is palindrome. Maintain a array minCuts size : n
+#        such that minCuts[i] gives min cuts for inpStr[0..i].
+#        Run a loop from length L : 2 to n.
+#           Run a loop from i: 0 to n-L. set otherEnd j = i + L - 1.
 #           If L == 2:  dp[i][j] = inpStr[i] == inpStr[j]
 #           else: dp[i][j] = inpStr[i] == inpStr[j] and dp[i + 1][j - 1]
-#        Now loop from i: 0 to n: if dp[0][i] is True: minCuts[i] = 0
-#           Else : dp[j+1][i] == True and 1 + minCuts[j] < minCuts[i]: minCuts[i] = minCuts[j] + 1 (take via path)
+#        Now loop from i: 0 to n:
+#           if dp[0][i] is True: minCuts[i] = 0
+#           Else : loop from j : 0 to i:
+#                   if dp[j+1][i] == True and 1 + minCuts[j] < minCuts[i]:
+#                       minCuts[i] = minCuts[j] + 1 (take via path)
 #        return minCuts[n-1]
 # Complexity : O(n^2)
 
@@ -35,8 +39,8 @@ def minPalinPartition(inpStr):
         dp[i][i] = True
 
     # L is length of string
-    for L in range(2, n+1):
-        for i in range(0, n-L):
+    for L in range(2, n + 1):
+        for i in range(0, n - L):
             j = i + L - 1
             if L == 2:
                 dp[i][j] = inpStr[i] == inpStr[j]
@@ -49,11 +53,11 @@ def minPalinPartition(inpStr):
             minCuts[i] = 0
         else:
             # if we cut at j, and check if j+1 to i is palindrome, then take via path
-            for j in range(0,i):
-                if dp[j+1][i] == True and 1 + minCuts[j] < minCuts[i]:
+            for j in range(0, i):
+                if dp[j + 1][i] and 1 + minCuts[j] < minCuts[i]:
                     minCuts[i] = minCuts[j] + 1
 
-    return minCuts[n-1]
+    return minCuts[n - 1]
 
 
 if __name__ == "__main__":

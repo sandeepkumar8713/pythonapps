@@ -15,9 +15,9 @@
 #
 # Question Type : Generic, SimilarAdded
 # Used : Make a graph of row*col nodes. Make array of all possible direction left, right, up and down.
-#        Loop through the elements of matrix, if its not 0, then loop over all possible directions it can go it. Check
-#           if next cell is within matrix and it is not a wall. If this condition is satisfied then add an edge between
-#           this cell and next cell.
+#        Loop through the elements of matrix, if its not 0, then loop over all possible directions it
+#           can go it. Check if next cell is within matrix and it is not a wall. If this condition is
+#           satisfied then add an edge between this cell and next cell.
 #           Also store source and destination cell number.
 #        Call BFS over the graph with input source and destination. It should return true if path exist.
 # Complexity : O(n*2)

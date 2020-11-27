@@ -10,28 +10,29 @@
 #          10
 #
 # Question Type : Generic
-# Used : Make a matrix dp : size n * (1+targetSum), such that dp[i][j] stores true if sum j is possible with array
-#        elements from 0 to i.
-#        Logic : Make a first column of dp True, for sum 0
-#                In first row, if sum is arr[i] set True.  (if inpArr[0] <= targetSum: dp[0][inpArr[0]] = True)
-#                Then run 2 loops for i : 1 to n, j : 0 to (target+1)
-#                    if inpArr[i] <= j:
-#                       # If this element is included, check if (j-inpArr[i]) can be achieved with i-1 elements
-#                       dp[i][j] = dp[i-1][j] or dp[i-1][j-inpArr[i]]
-#                    else: dp[i][j] = dp[i - 1][j]
-#                if dp[n-1][targetSum] is False: print "No subset possible"
-#                printSubsetsRec(dp, inpArr, n-1, targetSum, [])
+# Used : Make a matrix dp : size n * (1+targetSum), such that dp[i][j] stores true if sum j
+#        is possible with array elements from 0 to i.
+#        Logic :
+#        Make a first column of dp True, for sum 0
+#        In first row, if sum is arr[i] set True.  (if inpArr[0] <= targetSum: dp[0][inpArr[0]] = True)
+#           Then run 2 loops for i : 1 to n, j : 0 to (target+1)
+#               if inpArr[i] <= j:
+#               (If this element is included, check if (j-inpArr[i]) can be achieved with i-1 elements)
+#                   dp[i][j] = dp[i-1][j] or dp[i-1][j-inpArr[i]]
+#               else: dp[i][j] = dp[i - 1][j]
+#        if dp[n-1][targetSum] is False: print "No subset possible"
+#        printSubsetsRec(dp, inpArr, n-1, targetSum, [])
 #        Now we call a recursive function which picks and ignores the current element and check if the target can
 #        achieved, i.e. at the end sum becomes 0, print the elements selected so far.
-#        def printSubsetsRec(dp, inpArr, i, targetSum, subArray):
-#           if i == 0 and targetSum != 0 and dp[0][targetSum]:
-#              subArray.append(inpArr[i],  targetSum = 0
-#           if i == 0 and targetSum == 0:
-#               print (subArray), del subArray[:], return
-#           if dp[i - 1][targetSum]:
-#               subArrayB = subArray[:], printSubsetsRec(dp, inpArr, i - 1, targetSum, subArrayB)
-#           if targetSum >= inpArr[i] and dp[i-1][targetSum-inpArr[i]]:
-#               subArray.append(inpArr[i]), printSubsetsRec(dp, inpArr, i - 1, targetSum-inpArr[i], subArray)
+#        printSubsetsRec(dp, inpArr, i, targetSum, subArray):
+#        if i == 0 and targetSum != 0 and dp[0][targetSum]:
+#           subArray.append(inpArr[i]), targetSum = 0
+#        if i == 0 and targetSum == 0:
+#           print (subArray), del subArray[:], return
+#        if dp[i - 1][targetSum]: (excluding)
+#           subArrayB = subArray[:], printSubsetsRec(dp, inpArr, i - 1, targetSum, subArrayB)
+#        if targetSum >= inpArr[i] and dp[i-1][targetSum-inpArr[i]]: (including)
+#           subArray.append(inpArr[i]), printSubsetsRec(dp, inpArr, i - 1, targetSum-inpArr[i], subArray)
 # Complexity : O(n * targetSum)
 
 
@@ -41,7 +42,7 @@ def printSubsetsRec(dp, inpArr, i, targetSum, subArray):
         targetSum = 0
 
     if i == 0 and targetSum == 0:
-        print (subArray)
+        print(subArray)
         del subArray[:]
         return
 

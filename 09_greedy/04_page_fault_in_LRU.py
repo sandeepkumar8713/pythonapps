@@ -5,9 +5,9 @@
 #
 # Question Type : Generic
 # Used : Make a class LRU cache, whose attributes are: cacheList, capacity. Keep a count of page faults.
-#        Loop over the input pages. If the page is not in cache list increment the page fault. If the cache is not
-#           filled completely, append the page in cache list. If the cache is full, remove the first page from cache
-#           list and append the page in cache list.
+#        Loop over the input pages. If the page is not in cache list increment the page fault. If the cache
+#           is not filled completely, append the page in cache list. If the cache is full, remove the first
+#           page from cache list and append the page in cache list.
 #           If page is there in cache list, remove that page and append it in the end.
 #        return pageFaultCount
 # Complexity : O(n)

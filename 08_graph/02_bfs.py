@@ -1,13 +1,13 @@
 # Question : Write a function to print the breadth first traversal for a undirected graph from a given source s.
 #
 # Question Type : Easy
-# Used : Make a class whose member graph is a dict of keys(vertices) whose value is list of vertices it is connected to.
-#        Call a BFS(source) function whose input is source vertex. It maintains a list of boolean values to specify
-#           whether the vertices is visited or not. It appends the source to the queue marks this vertex as visited.
-#           It calls a function BFSUtil which takes queue and visited as input. It loops over queue until it is empty.
-#               In loop it pops an vertex from queue and prints it. It loops over the vertices which are connected to
-#               the poped out vertex. If this connected vertex is not visited before then push it in queue and mark it
-#                as visited.
+# Used : Make a class whose member graph is a dict of keys(vertices) whose value is list of vertices it
+#        is connected to. Call a BFS(source) function whose input is source vertex. It maintains a list of
+#        boolean values to specify whether the vertices is visited or not. It appends the source to the queue
+#        marks this vertex as visited. It calls a function BFSUtil which takes queue and visited as input.
+#        It loops over queue until it is empty. In loop it pops an vertex from queue and prints it. It loops
+#        over the vertices which are connected to the popped out vertex. If this connected vertex is not
+#        visited before then push it in queue and mark it as visited.
 # Complexity : O(V+E) count of vertex and edges
 
 

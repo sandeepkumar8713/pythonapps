@@ -6,11 +6,12 @@
 #
 # Question Type : Generic
 # Used : Kosaraju Algorithm
-#        Create an empty stack 'S' and do DFS traversal of a graph. In DFS traversal, after calling recursive DFSUtils
-#        for adjacent vertices of a vertex, push the vertex to stack.
+#        Create an empty stack 'S' and do DFS traversal of a graph. In DFS traversal, after calling
+#        recursive DFSUtils for adjacent vertices of a vertex, push the vertex to stack.
 #        Make one more graph, were the edge direction is reversed.
-#        Now loop over the vertices popped from stack S and do DFS for it using the transposed graph if it is not yet
-#           visited. Its DFS will give a group of strongly connected components.
+#        Now loop over the vertices popped from stack S and do DFS for it using the transposed graph
+#        if it is not yet visited. Its DFS will give a group of strongly connected components. Keep track
+#        of number of times DFSUtil is called(This is the ans).
 # Complexity : O(V+E)
 
 

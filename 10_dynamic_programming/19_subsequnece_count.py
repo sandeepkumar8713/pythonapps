@@ -29,11 +29,11 @@ def countSubsequences(inpStr):
     cCount = 0
 
     for ch in inpStr:
-#    If current  character is 'a', then
-#    there are following possibilities :
-#    a) Current character begins a new subsequence.
-#    b) Current character is part of aCount subsequences.
-#    c) Current character is not part of aCount subsequences.
+        # If current  character is 'a', then
+        # there are following possibilities :
+        # a) Current character begins a new subsequence.
+        # b) Current character is part of aCount subsequences.
+        # c) Current character is not part of aCount subsequences.
         if ch == 'a':
             aCount = (1 + 2 * aCount)
         elif ch == 'b':
@@ -49,6 +49,3 @@ if __name__ == "__main__":
     inpStr = "abcabc"
     inpStr = "aaabc"
     print(countSubsequences(inpStr))
-
-
-

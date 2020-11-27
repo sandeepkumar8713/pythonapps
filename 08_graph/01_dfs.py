@@ -1,11 +1,13 @@
 # Question : Write a function to print the depth first traversal for a undirected graph from a given source s.
 #
 # Question Type : Easy
-# Used : Make a class whose member graph is a dict of keys(vertices) whose value is list of vertices it is connected to.
-#        Call a DFS(source) function whose input is source vertex. It maintains a list of boolean values to specify
-#           whether the vertices is visited or not. It calls a recursive function DFSUtil which takes source and visited
-#           as input. Mark the given vertex as visited and print it. Loop of the vertices which are connected to this
-#           vertex. If this connected vertex is not yet visited call the recursive function DFSUtil again.
+# Used : Make a class whose member graph is a dict of keys(vertices) whose value is list of vertices it
+#        is connected to.
+#        Call a DFS(source) function whose input is source vertex. It maintains a list of boolean values to
+#        specify whether the vertices is visited or not. It calls a recursive function DFSUtil which takes
+#        source and visited as input. Mark the given vertex as visited and print it. Loop of the vertices
+#        which are connected to this vertex. If this connected vertex is not yet visited call the recursive
+#        function DFSUtil again.
 # Complexity : O(V+E) count of vertex and edges
 
 

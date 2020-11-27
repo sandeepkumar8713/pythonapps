@@ -6,15 +6,16 @@
 # getValVersion(version id, key) -> return value of the key of the particular version
 # Implement a SnapshotArray that supports the following interface:
 #
-# Question Type : ShouldSee
 # SnapshotArray(int length) initializes an array-like data structure with the given length. Initially, each element
 # equals 0.
 # void set(index, val) sets the element at the given index to be equal to val.
 # int snap() takes a snapshot of the array and returns the snap_id: the total number of times we called snap() minus 1.
 # int get(index, snap_id) returns the value at the given index, at the time we took the snapshot with the given snap_id
 #
-# Used : Use dict here. Key/index should be used once. It should have list of values along with version for each key.
-#        This is for second question :
+# Question Type : ShouldSee
+# Used : Use dict here. Key/index should be used once. It should have list of values along with
+#        version for each key.
+#        This is for second question. key : index, value : [snapId, value]
 #        Logic : class SnapshotArray:
 #        def __init__(self, length):
 #        self.record = [[[0, 0]] for i in range(length)]

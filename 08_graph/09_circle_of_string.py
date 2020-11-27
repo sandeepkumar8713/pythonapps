@@ -11,16 +11,18 @@
 #           Add an edge from first character to last character of the given graph.
 #       If the created graph has Eulerian circuit, then return true, else return false.
 #
-#       Eulerian Path is a path in graph that visits every edge exactly once. Eulerian Circuit is an Eulerian Path
-#       which starts and ends on the same vertex. For that these two conditions must be met:
+#       Eulerian Path is a path in graph that visits every edge exactly once. Eulerian Circuit is an
+#       Eulerian Path which starts and ends on the same vertex. For that these two conditions must be met:
 #       1) All vertices with nonzero degree belong to a single strongly connected component.
 #       2) In degree and out degree of every vertex is same
 #
-#       For 1) Find the first vertex whose out degree is more than 0. Use DFS using the vertex. If DFS traversal doesn't
-#       visit all vertices with non zero degree, then return false. Take a transpose graph(gr) of this graph. Do DFS
-#       using the same previously used vertex. If DFS traversal doesn't visit all vertices of original graph with non
-#       zero degree, then return false. If above conditions are passed then return True.
-#       For 2) Maintain in and out degree of each vertex in the graph and check if they are same for each vertex.
+#       For 1) Find the first vertex whose out degree is more than 0. Use DFS using the vertex. If DFS
+#       traversal doesn't visit all vertices with non zero degree, then return false. Take a transpose
+#       graph(gr) of this graph. Do DFS using the same previously used vertex. If DFS traversal doesn't
+#       visit all vertices of original graph with non zero degree, then return false. If above conditions
+#       are passed then return True.
+#       For 2) Maintain in and out degree of each vertex in the graph and check if they are same for
+#       each vertex.
 # Complexity : O(V+E)
 
 CHARS = 26
@@ -113,4 +115,3 @@ if __name__ == "__main__":
         print("Can be chained")
     else:
         print("Can't be chained")
-

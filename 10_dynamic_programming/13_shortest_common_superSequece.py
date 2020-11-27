@@ -7,11 +7,13 @@
 #
 # Question Type : Generic
 # Used : We have to make a memory table count : dp (m + 1) * (n + 1). Mark all as 0.
-#        Loop over each of the elements in dp. If i is 0, then set dp[i][j] = j, as we will have to add all the elements
-#           from array Y. if j is 0, then set dp[i][j] = i. If same X[i-1] == Y[i-j]:  dp[i][j] = 1 + dp[i - 1][j - 1]
+#        Loop over each of the elements in dp.
+#           If i is 0, then set dp[i][j] = j, as we will have to add all the elements from array Y.
+#           If j is 0, then set dp[i][j] = i.
+#           If X[i-1] == Y[i-j]: dp[i][j] = 1 + dp[i - 1][j - 1]
 #           add this same element once and check for remaining.
-#           else dp[i][j] = 1 + min(dp[i - 1][j], dp[i][j - 1]) we will either add i or j and check for remaining and
-#           choose whichever gives lower value.
+#           else dp[i][j] = 1 + min(dp[i - 1][j], dp[i][j - 1])
+#           we will either add i or j and check for remaining and choose whichever gives lower value.
 #        return dp[m][n]
 #        Use this approach for LCS also as it is more efficient.
 # Complexity : O(n^2)

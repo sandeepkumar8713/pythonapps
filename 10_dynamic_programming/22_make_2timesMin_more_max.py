@@ -7,15 +7,31 @@
 # We need to remove 4 elements (4, 5, 100, 200) so that 2*min becomes more than max.
 #
 # Question Type : ShouldSee
-# Used : initialize longestStart = -1 longestEnd = 0
-#        The idea is to take sub array of variable length, check if it satisfies the condition and take the longest
-#           sub array length.
-#        Run two loops i : 0 to n-1 and j : i to n-1. For array[i to n] keep maintaining min and max value and keep
-#           checking this condition if 2 * minVal < maxVal : break from inner loop.
-#           (If the property is violated, then no point to continue for a bigger array)
-#           Compare diff b/w i & j and longestStart & longestEnd. Update if required
+# Used : Initialize longestStart = -1 longestEnd = 0
+#        The idea is to take sub array of variable length, check if it satisfies the condition
+#        and take the longest sub array length.
+#        Run two loops i : 0 to n-1 and j : i to n-1:
+#        For array[i to n] keep maintaining min and max value and keep checking this condition
+#        if 2 * minVal < maxVal : break from inner loop.
+#        (If the property is violated, then no point to continue for a bigger array)
+#        Compare diff b/w i & j and longestStart & longestEnd. Update if required
 #        After the loop, If condition not satisfied at all, if longestStart == -1: return n
-#        Else return number of elements to be removed to satisfy : return n - (longestEnd - longestStart + 1)
+#        Else return number of elements to be removed to satisfy :
+#        return n - (longestEnd - longestStart + 1)
+#        minRemovalsDP(inpArr):
+#        longestStart = -1, longestEnd = 0
+#        n = len(inpArr)
+#        for i in range(n):
+#           minVal = sys.maxsize
+#           maxVal = -sys.maxsize
+#           for j in range(i, n):
+#               if inpArr[j] > maxVal: maxVal = inpArr[j]
+#               if inpArr[j] < minVal: minVal = inpArr[j]
+#               if 2 * minVal < maxVal: break
+#               if j - i > longestEnd - longestStart or longestStart == -1:
+#                   longestStart = i, longestEnd = j
+#        if longestStart == -1: return n
+#        return n - (longestEnd - longestStart + 1)
 # Complexity : O(n^2)
 
 import sys

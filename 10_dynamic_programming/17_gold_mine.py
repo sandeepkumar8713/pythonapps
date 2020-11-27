@@ -5,14 +5,14 @@
 # towards the right or right or diagonally down towards the right. Find out maximum amount of gold he can collect.
 #
 # Question Type : ShouldSee
-# Used : Maintain a table dp of size m * n. Loop over the each and every element of input matrix. but from right side
-#        and column wise. col : n-1 to 0 and row : 0 to n
+# Used : Maintain a table dp of size m * n. Loop over the each and every element of input matrix,
+#        but from right side and column wise. col : n-1 to 0 and row : 0 to n
 #           The idea is to choose max out of 3 option right, right up and right down
 #           right = dp[row][col + 1]
 #           right_up = dp[row - 1][col + 1]
 #           right_down = dp[row + 1][col + 1]
 #           calculate dp[row][col] = gold[row][col] + max(right, right_up, right_down)
-#       Now from the first column of dp choose the max and return
+#        Now from the first column of dp choose the max and return
 # Complexity : O(m * n)
 
 
@@ -61,4 +61,4 @@ if __name__ == "__main__":
     m = len(mat)
     n = len(mat[0])
 
-    print (getMaxGold(mat, m, n))
+    print(getMaxGold(mat, m, n))

@@ -5,9 +5,9 @@
 # (provided in whatever data structure you would like).
 #
 # Question Type : ShouldSee
-# Used : Make a map of number to words for all the given words in the dictionary. Convert each letter of word to a
-#        digit and make a number. Append that word in map where key is that number. After this pre-processing its easy
-#        give answer.
+# Used : Make a map of number to words for all the given words in the dictionary. Convert each letter of word
+#        to a digit and make a number. Append that word in map where key is that number.
+#        After this pre-processing its easy give answer.
 # Complexity : O(1) space : O(n) where n is number of total words
 
 

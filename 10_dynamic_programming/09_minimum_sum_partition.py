@@ -9,17 +9,19 @@
 # Subset2 = {11}, sum of Subset2 = 11
 #
 # Question Type : Generic
-# Used : Let us suppose total sum is 100, so ideal division would be 50-50. If not possible 49-51, 48-52 and so on ...
-#        So to tell this, we should have array of boolean from 0 to 100, specifying whether it is possible to make
-#        those sums using the given input elements by including or excluding.
-#        To get the above mentioned array we have to make a memory table dp : size (n+1) * (totalSum). Mark all as false
-#        Where dp[i][j] specify whether it is possible to make sum j using i elements. Set first row as sum.Set first
-#        column as true. Loop over the elements of dp. To exclude current element : dp[i][j] = dp[i - 1][j]. To include
-#           current element, check if current element is less than or equal to j(sum), if yes :
-#           dp[i][j] |= dp[i - 1][j - arr[i - 1]]
-#        After the loop we will have dp[n][totalSum] array. Loop over this array from totalSum/2 to 0. If dp[n][j] is
-#           true then set diff = (totalSum - 2 * j) and break.
-#       return break
+# Used : Let us suppose total sum is 100, so ideal division would be 50-50. If not possible 49-51,
+#        48-52 and so on ... So to tell this, we should have array of boolean from 0 to 100, specifying
+#        whether it is possible to make those sums using the given input elements by including or
+#        excluding. To get the above mentioned array we have to make a memory table dp :
+#        size (n+1) * (totalSum). Mark all as false. Where dp[i][j] specify whether it is possible
+#        to make sum j using i elements. Set first row as false. Set first column as true.
+#        Loop over the elements of dp.
+#           To exclude current element : dp[i][j] = dp[i - 1][j]. To include current element,
+#           check if current element is less than or equal to j(sum), if yes :
+#               dp[i][j] |= dp[i - 1][j - arr[i - 1]]
+#        After the loop we will have dp[n][totalSum] array. Loop over this array from totalSum/2 to 0.
+#           If dp[n][j] is true then set diff = (totalSum - 2 * j) and break.
+#       return diff
 #       Logic : dp = []
 #       for i in range(n+1):
 #           dp.append([False] * (totalSum + 1))

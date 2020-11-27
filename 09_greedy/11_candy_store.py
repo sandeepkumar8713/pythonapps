@@ -14,9 +14,11 @@
 #
 # Question Type : Generic
 # Used : Sort the given array.
-#        To find min, loop while n >= 1. Add arr[i] in sum and reduce n by k (n = n - k)
-#        To find max, set start = 0 and end = 0, loop while end >= start, add arr[end] in sum, reduce end = end - 1 and
-#           increment start = start + k
+#        To find min, loop from left and reduce from right by k.
+#        Loop while n >= 1. Add arr[i] in sum and reduce n by k (n = n - k)
+#        To find max, loop from right and increment left by k.
+#        set start = 0 and end = 0, loop while end >= start, add arr[end] in sum,
+#           reduce end = end - 1 and increment start = start + k
 # Complexity : O(log n)
 
 

@@ -2,23 +2,27 @@
 # Question : Given an array of integers where each element represents the max number of steps that can be made
 # forward from that element. Write a function to return the minimum number of jumps to reach the end of the array
 # (starting from the first element). If an element is 0, then cannot move through that element.
+# Similar : 24_fourthFolder/32_minimum_refueling
 #
 # Input :  arr[] = {1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9}
 # Output :  3 (1-> 3 -> 9 -> 9)
 #
 # Question Type : Generic, SimilarAdded
-# Used : The idea is to traverse all possible steps, and keep updating maxReach. Once previous point's reach get over.
-#        do step = maxReach - i, this we find the maxReach for this point, by traveling reach(step) of previous point.
-#        Similar to petrol tank problem
-# minJumps(arr) : set step = arr[0], jump = 1. Now run a loop from 1 to n-1 : if i == n-1: return jump
-#                   update maxReach : maxReach = max(maxReach, i + arr[i])
-#                   step -= 1   (we are moving forward, reducing our reach)
-#                   if step == 0: (Our reach is over. Now we have to choose maxReach found till from the previous point
-#                                 and jump)
-#                       jump += 1
-#                       if i >= maxReach: return -1  (Not possible to reach end, step should not be negative)
-#                       step = maxReach - i
-#                 return -1
+# Used : The idea is to traverse all possible steps, and keep updating maxReach. Once previous point's
+#        reach get over. do step = maxReach - i, this way we find the maxReach for this point,
+#        by traveling reach(step) of previous point.
+#        minJumps(arr) :
+#        set step = arr[0], jump = 1.
+#        Now run a loop from 1 to n-1 :
+#           if i == n-1: return jump
+#           maxReach = max(maxReach, i + arr[i])
+#           step -= 1   (we are moving forward, reducing our reach)
+#           if step == 0: (Our reach is over. Now we have to choose maxReach found till from the
+#                         previous point and jump)
+#               jump += 1
+#               if i >= maxReach: return -1 (Not possible to reach end, step should not be negative)
+#               step = maxReach - i
+#        return -1
 # Complexity : O(n)
 
 
