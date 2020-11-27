@@ -8,14 +8,27 @@
 #         b->Trees
 #
 # Question Type : ShouldSee
-# Used : Make a call to function patternMatch(inpStr, pat, n, m). If n < m: return False
+# Used : Make a call to function patternMatch(inpStr, pat, n, m).
+#        If n < m: return False
 #        Maintain a map for key : character of pattern, value : subString from inpStr
-#        Make a call to recursive function patternMatchUtil(inpStr, n, i, pat, m, j, myMap). If it returns true, pattern
-#        is found, hence print the map.
-# patternMatchUtil() : if i == n and j == m: return True
-#                      if i == n or j == m: return False
-#                      set ch = pat[j]. If ch is present in map, extract that subString (alreadyTaggedString). Extract
-#                      another substring from inpStr from i to i + len(alreadyTaggedString).
+#        Make a call to recursive function patternMatchUtil(inpStr, n, i, pat, m, j, myMap).
+#        If it returns true, pattern is found, hence print the map.
+#        patternMatchUtil(inpStr, n, i, pat, m, j, myMap):
+#        if i == n and j == m: return True
+#        if i == n or j == m: return False
+#        ch = pat[j]
+#        if ch in myMap.keys():
+#           alreadyTaggedString = myMap[ch]
+#           nextSubString = inpStr[i: i + len(alreadyTaggedString)]
+#           if nextSubString != alreadyTaggedString:
+#               return False
+#           return patternMatchUtil(inpStr, n, i + len(alreadyTaggedString), pat, m, j + 1, myMap)
+#        for charLen in range(1, n-i+1):
+#           myMap[ch] = inpStr[i: i + charLen]
+#           if patternMatchUtil(inpStr, n, i + charLen, pat, m, j + 1, myMap):
+#               return True
+#           del myMap[ch]
+#        return False
 # Complexity : O(n!)
 
 

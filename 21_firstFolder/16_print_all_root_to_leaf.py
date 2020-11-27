@@ -2,8 +2,8 @@
 # Question : Given a binary tree, print all root-to-leaf paths.
 #
 # Question Type : Easy
-# Used : Do pre-order traversal of binary tree and keep pushing elements in the stack. When leaf node is found print
-#        the stack.
+# Used : Do pre-order traversal of binary tree and keep pushing elements in the stack.
+#        When leaf node is found print the stack.
 # Complexity : O(n)
 
 

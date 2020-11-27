@@ -8,10 +8,11 @@
 #        2) Return the maximum of following three
 #           a) Maximum subarray sum in left half (Make a recursive call)
 #           b) Maximum subarray sum in right half (Make a recursive call)
-#           c) Maximum subarray sum such that the subarray crosses the midpoint
-#       maxCrossingSum : The idea is simple, find the maximum sum starting from mid point and ending at some point
-#       on left of mid, then find the maximum sum starting from mid + 1 and ending with sum point on right of mid + 1.
-#       Finally, combine the two and return.
+#           c) Maximum subarray sum such that the subarray crosses the midpoint. maxCrossingSum()
+#       maxCrossingSum():
+#       The idea is simple, find the maximum sum starting from mid point and ending at some point
+#       on left of mid, then find the maximum sum starting from mid + 1 and ending with sum point
+#       on right of mid + 1. Finally, combine the two and return.
 # Complexity : (n log n)
 
 

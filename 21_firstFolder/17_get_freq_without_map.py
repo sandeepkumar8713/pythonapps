@@ -4,9 +4,9 @@
 # absent from the array. Count frequency of all elements that are present and print the missing elements.
 #
 # Question Type : ShouldSee
-# Used : Since we are sure that all values are <= n, use mode of n for each element to get the index, and add n to it.
-#        It represents the count. To show the result divide each element by n and index represent the corresponding
-#        number.
+# Used : Since we are sure that all values are <= n, use mode of n for each element to get the index,
+#        and add n to it. It represents the count. To show the result divide each element by n
+#        and index represent the corresponding number.
 # Complexity : O(n)
 
 

@@ -9,16 +9,18 @@
 # Used : We use top of size k to save index of top element of each stack
 #        We use one extra array next of size n to save index of next element (next[indexOf1] = indexOf2)
 #        We use free variable which points to first available index for insertion
-#        push() : insert_at = self.free
-#                 self.free = self.next[self.free]
-#                 self.arr[insert_at] = item
-#                 self.next[insert_at] = self.top[sn]
-#                 self.top[sn] = insert_at
-#        pop() : topOfStackIndex = self.top[sn]
-#                self.top[sn] = self.next[topOfStackIndex]
-#                self.next[topOfStackIndex] = self.free
-#                self.free = topOfStackIndex
-#                return self.arr[topOfStackIndex]
+#        push() :
+#        insert_at = self.free
+#        self.free = self.next[self.free]
+#        self.arr[insert_at] = item
+#        self.next[insert_at] = self.top[sn]
+#        self.top[sn] = insert_at
+#        pop() :
+#        topOfStackIndex = self.top[sn]
+#        self.top[sn] = self.next[topOfStackIndex]
+#        self.next[topOfStackIndex] = self.free
+#        self.free = topOfStackIndex
+#        return self.arr[topOfStackIndex]
 #        Note : For both operations we have to update : arr, free, next, top
 # Complexity : Push and pop : O(1), Space : O(2n)
 

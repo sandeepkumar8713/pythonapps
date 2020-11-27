@@ -8,16 +8,22 @@
 # as end of word node
 #
 # Question Type : Easy
-# Used : Here node would have two fields: children (list of length 26) and isEndOfWord (marker to tell if word ends)
-#        Define a func charToIndex(ch), it converts given char to integer b/w 0 to 25. To be used as index in children.
-# Insert : Set temp = root and loop over the character in the inpStr. Call charToIndex(ch) to get its index.
-#               If this index is not in children, assign a newNode to it.
-#               Now traverse in the children : temp = temp.children[index].
-#          Once the loop gets over mark temp as end : temp.isEndOfWord = True
-# Search : Set temp = root and loop over the character in the inpStr. Call charToIndex(ch) to get its index.
-#               If this index is not in children, return False.
-#               Else traverse in the children : temp = temp.children[index].
-#          Once the loop gets over. If temp is not None and temp.isEndOfWord return True.
+# Used : Here node would have two fields: children (list of length 26) and
+#        isEndOfWord (marker to tell if word ends)
+#        Define a func charToIndex(ch), it converts given char to integer b/w 0 to 25.
+#        To be used as index in children.
+#        Insert :
+#        Set temp = root and loop over the character in the inpStr.
+#           Call charToIndex(ch) to get its index.
+#           If this index is not in children, assign a newNode to it.
+#           Now traverse in the children : temp = temp.children[index].
+#        Once the loop gets over mark temp as end : temp.isEndOfWord = True
+#        Search :
+#        Set temp = root and loop over the character in the inpStr.
+#           Call charToIndex(ch) to get its index.
+#           If this index is not in children, return False.
+#           Else traverse in the children : temp = temp.children[index].
+#        Once the loop gets over. If temp is not None and temp.isEndOfWord return True.
 # Complexity : insert O(m) search O(m) where m is length of input string
 
 MAX_CHAR = 26

@@ -16,6 +16,7 @@
 #           Increment index by 1
 #        Do Xor over all the element, this will give the result
 #        Logic :
+#        index = 0
 #        for i in range(INT_BITS-1, -1, -1):
 #           maxInd = index
 #           maxEle = -sys.maxint

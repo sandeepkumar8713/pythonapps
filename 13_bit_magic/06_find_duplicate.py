@@ -1,10 +1,11 @@
 # Question : Find duplicate character in a String O(1n) time with no extra space
 #
 # Question Type : Easy
-# Used : Maintain a mainRegister set to 0. Loop over the characters in input string. Covert the char to number i from
-#           0 to 25. Do left shift of single bit 1(bitRepresent), for given value of i. Do & operation of bitRepresent
-#           and mainRegister. If bitRepresent is already present print ch else do or operation :
-#           mainRegister = mainRegister | bitRepresent
+# Used : Maintain a mainRegister set to 0. Loop over the characters in input string.
+#        Convert the char to number i from 0 to 25. Do left shift of single bit 1(bitRepresent),
+#        for given value of i. Do & operation of bitRepresent and mainRegister.
+#        If bitRepresent is already present print ch
+#        else do or operation: mainRegister = mainRegister | bitRepresent
 # Complexity : O(n)
 
 

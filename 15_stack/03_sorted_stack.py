@@ -4,23 +4,23 @@
 # an additional temporary stack, but you may not copy the elements into any other data structure
 # (such as an array). The stack supports the following operations: push, pop, peek, and is Empty.
 # Question : Given a stack, sort it using recursion.
+# Note : It can be solved using temp stack also : https://www.geeksforgeeks.org/sort-stack-using-temporary-stack/
 #
 # Question Type : Generic
 # Used : Recursion. Pop top element, call sortStack(), then call sortedInsert(poppedElement)
 #        sortedInsert(stack, item):
-#           if stack.isEmpty() or item < stack.peek():
-#               stack.push(item)
-#               return
-#           temp = stack.pop()
-#           sortedInsert(stack, item)
-#           stack.push(temp)
+#        if stack.isEmpty() or item < stack.peek():
+#           stack.push(item)
+#           return
+#        temp = stack.pop()
+#        sortedInsert(stack, item)
+#        stack.push(temp)
 #
 #        sortedStack(stack):
-#           if not stack.isEmpty():
-#               item = stack.pop()
-#               sortedStack(stack)
-#               sortedInsert(stack, item)
-#        Note : It can be solved using temp stack also : https://www.geeksforgeeks.org/sort-stack-using-temporary-stack/
+#        if not stack.isEmpty():
+#           item = stack.pop()
+#           sortedStack(stack)
+#           sortedInsert(stack, item)
 # Complexity : O(n^2)
 
 class Node:

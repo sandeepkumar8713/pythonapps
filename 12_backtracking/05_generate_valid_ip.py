@@ -4,8 +4,9 @@
 # 0 prefixed unless they are 0.
 #
 # Question Type : Easy
-# Used : Run 3 loops from : 0 to n - 2, i + 1 to n - 1 and j + 1 to n. By running these 3 loops split the given string
-#        into 4 parts that will give you a ip address. Check if ip is valid, if true then print it.
+# Used : Run 3 loops from : 0 to n - 2, i + 1 to n - 1 and j + 1 to n.
+#        By running these 3 loops split the given string into 4 parts that will give you
+#        a ip address. Check if ip is valid, if true then print it.
 #        Condition for valid ip: Spilt the ip in 4 parts can check for
 #           Sub part should not be of length more than 3. It should be between 0 to 255.
 #           It should be more than 0.

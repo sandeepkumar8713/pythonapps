@@ -5,10 +5,14 @@
 # For eg: input=> {{a,b},{c,d}}, output => {{a,c},{a,d},{b,c},{b,d}}
 #
 # Question Type : Easy
-# Used : Call a recursive func multiplyArray(inpArr, outStr, i, rowSize) where i is the row index of input matrix.
+# Used : Call a recursive func multiplyArray(inpArr, outStr, i, rowSize) where i is the row index
+#        of input matrix.
 #        If i == rowSize: print outStr, return
-#        Loop over all the character ch in this row. Append ch to outStr. Call multiplyArray again with i+1.
-#           Now as the output string is already print, backtrack by removing the last appended ch. outStr = outStr[:-1]
+#        Loop over all the character ch in this row.
+#           Append ch to outStr.
+#           Call multiplyArray again with i+1.
+#           Now as the output string is already print, backtrack by removing the last appended ch.
+#           outStr = outStr[:-1]
 # Complexity : O(n^n)
 
 

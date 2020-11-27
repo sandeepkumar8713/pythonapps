@@ -11,8 +11,8 @@
 # Used : Prepare a trie using given words. Make a hash set of input characters.
 #        Call recursive function searchWord(root, hashSet, resStr)
 #           If root isEndOfWord print resStr
-#           Loop over the character in hashSet. If that char is present in children of root, then call searchWord()
-#               over that child and append the char to resStr.
+#           Loop over the character in hashSet. If that char is present in children of root,
+#               then call searchWord() over that child and append the char to resStr.
 #               searchWord(root.children[charToIndex(char)], hashSet, resStr + char)
 # Complexity : To prepare Trie O(n * m) where n is number of words and m is max length of word
 #              To search one word O(k * m) where k is length of input character

@@ -7,20 +7,19 @@
 # Output: 2
 #
 # Question Type : ShouldSee
-# Used : We modify the merge sort and before merging, we check the condition on left and right sub array.
-#        def mergeSortAndCount(inpArr, start, end):
-#           if start < end:
-#               mid = (start + end) / 2
-#               count = mergeSortAndCount(inpArr, start, mid) + mergeSortAndCount(inpArr, mid + 1, end)
-#               j = mid + 1
-#               for i in range(start, mid+1):
-#                   while j <= end and inpArr[i] > inpArr[j] * 2:
-#                       j += 1
-#                   count += j - (mid + 1)
-#               merge(inpArr, start, mid, end)
-#               return count
-#           else:
-#               return 0
+# Used : We modify the merge sort and before merging, we check the condition on left and right sub array and keep
+#        track of count.
+#        mergeSortAndCount(inpArr, start, end):
+#        if start >= end: return 0
+#        mid = (start + end) / 2
+#        count = mergeSortAndCount(inpArr, start, mid) + mergeSortAndCount(inpArr, mid + 1, end)
+#        j = mid + 1
+#        for i in range(start, mid+1):
+#           while j <= end and inpArr[i] > inpArr[j] * 2:
+#               j += 1
+#           count += j - (mid + 1)
+#        merge(inpArr, start, mid, end)
+#        return count
 # Complexity : O(n log n)
 
 
@@ -56,18 +55,18 @@ def merge(arr, left, mid, right):
 
 
 def mergeSortAndCount(inpArr, start, end):
-    if start < end:
-        mid = (start + end) // 2
-        count = mergeSortAndCount(inpArr, start, mid) + mergeSortAndCount(inpArr, mid + 1, end)
-        j = mid + 1
-        for i in range(start, mid+1):
-            while j <= end and inpArr[i] > inpArr[j] * 2:
-                j += 1
-            count += j - (mid + 1)
-        merge(inpArr, start, mid, end)
-        return count
-    else:
+    if start >= end:
         return 0
+
+    mid = (start + end) // 2
+    count = mergeSortAndCount(inpArr, start, mid) + mergeSortAndCount(inpArr, mid + 1, end)
+    j = mid + 1
+    for i in range(start, mid+1):
+        while j <= end and inpArr[i] > inpArr[j] * 2:
+            j += 1
+        count += j - (mid + 1)
+    merge(inpArr, start, mid, end)
+    return count
 
 
 if __name__ == "__main__":

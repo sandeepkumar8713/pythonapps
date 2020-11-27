@@ -1,5 +1,5 @@
-# Question : Given a string, the task is to find maximum consecutive repeating character in string.
 # https://www.geeksforgeeks.org/maximumConsecutiveRepeatingCharacterString/
+# Question : Given a string, the task is to find maximum consecutive repeating character in string.
 #
 # Examples:
 # Input : str = "geeekk"

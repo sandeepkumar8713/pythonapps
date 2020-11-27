@@ -14,7 +14,7 @@
 # Used : Dynamic programming
 #        dp[0] = inp[0]
 #        dp[1] = max(inp[0], inp[1])
-#        dp[i] = max(inp[i]+dp[i-2],dp[i])
+#        dp[i] = max(inp[i]+dp[i-2], dp[i-1])
 # Complexity : O(n)
 
 

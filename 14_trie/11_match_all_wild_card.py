@@ -4,9 +4,9 @@
 # of matched words?
 #
 # Question Type : Generic
-# Used : Make a Trie for all the words in dictionary. Do iterative search of the given inpStr in trie. If * is
-#        encountered in inpStr then loop over all the characters at current level in trie and call the recursive search
-#        again. While doing so all keep track of matched words.
+# Used : Make a Trie for all the words in dictionary. Do iterative search of the given inpStr in trie.
+#        If * is encountered in inpStr then loop over all the characters at current level in trie and
+#        call the recursive search again. While doing so all keep track of matched words.
 #        getMatchedStringsUtils(temp, inpStr, stack, matchedWords, startLevel):
 #        for level in range(startLevel, len(inpStr)):
 #           inpChar = inpStr[level]

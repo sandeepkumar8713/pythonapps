@@ -3,8 +3,8 @@
 # "GeeksforGeeks", then output should be 'f'
 #
 # Question Type : Easy, SimilarAdded
-# Used : Used a map to store each character as key and count & index as its value. Loop again to find the first
-#        character with count 1 and return
+# Used : Used a map to store each character as key and count & index as its value. Loop again
+#        to find the first character with count 1 and return.
 # Complexity : O(n)
 
 

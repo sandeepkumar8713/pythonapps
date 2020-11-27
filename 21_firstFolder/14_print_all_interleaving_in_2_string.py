@@ -13,7 +13,7 @@
 #     CDAB
 #
 # Used : Use recursion, 2 ways choose either from s1 or s2
-#        Logic : def printIlsRecur(str1, str2, iStr, m, n, i):
+#        printIlsRecur(str1, str2, iStr, m, n, i):
 #        if m == 0 and n == 0:
 #           print(toString(iStr))
 #        if m != 0:

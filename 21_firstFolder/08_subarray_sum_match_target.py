@@ -3,9 +3,10 @@
 # than the given value.
 #
 # Question Type : Generic
-# Used : Keep adding the elements from the start until the sum is equal to target. Now start removing elements from
-#        start until sum is still equal to target. Update the minimum length. Repeat the above process till end
-#        Logic : def smallestSubWithSum(arr,x):
+# Used : Sliding window problem. Keep adding the elements from the start until the sum is equal to
+#        target. Now start removing elements from start until sum is still equal to target. Update
+#        the minimum length. Repeat the above process till end.
+#        smallestSubWithSum(arr,x):
 #        n = len(arr), currSum = 0, minLen = n+1
 #        start = 0, end = 0
 #        while end < n:

@@ -8,18 +8,18 @@
 #
 # Question Type : Generic
 # Used : Insert the words of the array in trie.
-#        Now loop through each character of big word. Find all the words present in trie which start with this character
-#        Save the words and its is location (in big word) in a map.
+#        Now loop through each character of big word. Find all the words present in trie which start
+#        with this character. Save the words and its is location (in big word) in a map.
 #        After the loop complete return the map
 #
-#        def searchAll(big, smalls):
-#           trie = createTreeFromStrings(smalls, big)
-#           for i in range(0, len(big)):
-#               wordsFound = findStringsAtLoc(trie, big, i)
-#               for word in wordsFound:
-#                   if word in lookup: lookup[word].append(i)
-#                   else: lookup[word] = [i]
-#           return lookup
+#        searchAll(big, smalls):
+#        trie = createTreeFromStrings(smalls, big)
+#        for i in range(0, len(big)):
+#           wordsFound = findStringsAtLoc(trie, big, i)
+#           for word in wordsFound:
+#           if word in lookup: lookup[word].append(i)
+#           else: lookup[word] = [i]
+#        return lookup
 # Complexity : O(kt + bk) k is the length of the longest string in T, b is the length of the bigger string,
 #              and t is the number of smaller strings within T
 

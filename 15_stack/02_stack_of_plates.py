@@ -8,25 +8,26 @@
 # Implement a function popAt(int index) which performs a pop operation on a specific sub-stack
 #
 # Question Type : ShouldSee
-# Used : Make a class of members : capacity and stacks. where capacity is max size of each sub stack and stacks is a
-#        list of lists.
-#        Push : Find the last list from stack and append data in it. If it is already filled,
-#               append one more list(with data) in stacks
-#        Pop : Find the last list from stack. pop the last element from the list. If this list becomes empty, pop this
-#              list from the stacks
-#        PopAt: Find the element from the given index, pop it and readjust remaining elements on right right.
-#               Logic :
-#               subStackIndex = index // self.capacity
-#               innerIndex = index % self.capacity
-#               subStack = self.stacks[subStackIndex]
-#               subStack.pop(innerIndex)
-#
-#               while subStackIndex + 1 < len(self.stacks):
-#                   subStack = self.stacks[subStackIndex]
-#                   nextSubStack = self.stacks[subStackIndex + 1]
-#                   data = nextSubStack.pop(0)
-#                   subStack.append(data)
-#                   subStackIndex += 1
+# Used : Make a class of members : capacity and stacks. where capacity is max size of each sub stack
+#        and stacks is a list of lists.
+#        Push :
+#        Find the last list from stack and append data in it. If it is already filled,
+#        append one more list(with data) in stacks
+#        Pop :
+#        Find the last list from stack. pop the last element from the list. If this list becomes empty, pop this
+#        list from the stacks
+#        PopAt: Find the element from the given index, pop it and readjust remaining elements on right side.
+#        Logic :
+#        subStackIndex = index // self.capacity
+#        innerIndex = index % self.capacity
+#        subStack = self.stacks[subStackIndex]
+#        subStack.pop(innerIndex)
+#        while subStackIndex + 1 < len(self.stacks):
+#           subStack = self.stacks[subStackIndex]
+#           nextSubStack = self.stacks[subStackIndex + 1]
+#           data = nextSubStack.pop(0)
+#           subStack.append(data)
+#           subStackIndex += 1
 # Complexity : popAt(index) O(n)
 
 

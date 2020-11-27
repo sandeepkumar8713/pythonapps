@@ -4,9 +4,10 @@
 # or any other comparison operator.
 #
 # Question Type : ShouldSee
-# Used : Minimum of x and y will be : y + ((x - y) & ((x - y) >>(sizeof(int) * CHAR_BIT - 1)))
-#        This method shifts the subtraction of x and y by 31. If (x-y) is smaller than 0,
-#        then (x -y)>>31 will be 1. If (x-y) is greater than or equal to 0, then (x -y)>>31 will be 0.
+# Used : Minimum of x and y will be : y + ((x - y) & ((x - y) >> (sizeof(int) * CHAR_BIT - 1)))
+#        This method shifts the difference of x and y by 31.
+#        If (x-y) is smaller than 0, then (x - y) >> 31 will be 1.
+#        If (x-y) is greater than or equal to 0, then (x -y)>>31 will be 0.
 #        So if x >= y, we get minimum as y + (x-y)&0 which is y.
 #        If x < y, we get minimum as y + (x-y)&1 which is x.
 # Complexity : O(1)

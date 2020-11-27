@@ -4,7 +4,8 @@
 # Question Type : Generic
 # Used : XOR with 1 gives toggles the input
 #        XOR with 0 gives back the input
-#        XOR operation over same values gives 0. Here here same value will cancel out and we will be left with alone
+#        XOR operation over same values gives 0. Here same value will cancel out and
+#        we will be left with alone
 # Complexity : O(n)
 
 

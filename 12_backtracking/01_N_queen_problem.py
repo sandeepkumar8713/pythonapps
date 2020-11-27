@@ -4,10 +4,12 @@
 #
 # Question Type : Generic
 # Used : Make a board of size N*N and mark all as 0.
-#        Make a call to recursive function solveNQUtil(board,col=0,N). If col >= N print board and return true.
-#        Run a loop from 0 to n-1 for row, check if placing queen at board[i][col] is safe. (Check that row, col and
-#           diagonal is clear or not) If true, board[i][col] = 1 and call solveNQUtil with col + 1. (Note that we are
-#           running the loop row wise). While running the loop, atleast once solveNQUtil should return True.
+#        Make a call to recursive function solveNQUtil(board,col=0,N). If col >= N print board and
+#        return true. Run a loop from 0 to n-1 for row, check if placing queen at board[i][col] is safe.
+#        (Check that row, col and diagonal is clear or not)
+#           If true, board[i][col] = 1 and call solveNQUtil with col + 1.
+#           (Note that we are running the loop row wise).
+#           While running the loop, at least once solveNQUtil should return True.
 #           res = solveNQUtil(board, col + 1, N) or res
 #           board[i][col] = 0 (this is back tracking)
 #        return res
@@ -37,7 +39,6 @@ def isSafe(board, row, col, N):
 
                 nextDirI += dI[m]
                 nextDirJ += dJ[m]
-
     return True
 
 
@@ -46,8 +47,8 @@ def solveNQUtil(board, col, N):
     if col >= N:
         solutionCount += 1
         for item in board:
-            print (item)
-        print ("")
+            print(item)
+        print("")
         return True
 
     res = False

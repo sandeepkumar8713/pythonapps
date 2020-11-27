@@ -1,5 +1,5 @@
 # https://www.geeksforgeeks.org/write-an-efficient-c-program-to-reverse-bits-of-a-number/
-# Question : write an efficient c program to reverse bits of a number.
+# Question : Write an efficient c program to reverse bits of a number.
 #
 # Input : n = 1
 # Output : 2147483648
@@ -8,10 +8,10 @@
 # 100....0.
 #
 # Question Type : Easy
-# Used : The idea is to keep putting set bits of the num in reverse_num until num becomes zero. After num becomes zero,
-#        shift the remaining bits of reverse_num.
+# Used : The idea is to keep putting set bits of the num in reverse_num until num becomes zero.
+#        After num becomes zero, shift the remaining bits of reverse_num.
 #        Logic :
-#        reverseNum = 0
+#        reverseNum = 0, count = 32 - 1
 #        while num != 0:
 #           reverseNum |= num & 1
 #           num >>= 1

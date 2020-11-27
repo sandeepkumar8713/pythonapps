@@ -16,8 +16,8 @@
 # 'F' has no children, so 0! permutations possible#
 #
 # Question Type : ShouldSee
-# Used : Do level order traversal of the n-ary tree. While traversing, calculate the ways by multiplying the factorial
-#        of number of children of each node.
+# Used : Do level order traversal of the n-ary tree. While traversing, calculate the ways by
+#        multiplying the factorial of number of children of each node.
 #        ways *= factorial(len(temp.children))
 # Complexity : O(n * n)
 #              We visit each node once during the traversal and take O(n) time to compute factorial for every node.

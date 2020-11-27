@@ -8,11 +8,14 @@
 #
 # Question Type : ShouldSee
 # Used : Call a recursive function printPowerSetUtil(inpArr, i, subSet, powerSet) with input
-#        printPowerSetUtil(inpArr, 0, [], powerSet). if i == len(inpArr): powerSet.append(subSet[::]) and return
-#           Call printPowerSetUtil() again 2 times, once by ignoring this element and other by including this element.
-#           subSet.pop()
-#       PowerSet has all the possible subset but it might contain duplicate subset. Run a 2 loops to find distinct
-#       subset and print them.
+#        printPowerSetUtil(inpArr, 0, [], powerSet).
+#        if i == len(inpArr):
+#           powerSet.append(subSet[::]) and return
+#        Call printPowerSetUtil() again 2 times, once by ignoring this element
+#        and other by including this element.
+#        subSet.pop()
+#        PowerSet has all the possible subset but it might contain duplicate subset. Run a 2
+#        loops to find distinct subset and print them.
 # Complexity : O(2 ^ n * 2 ^ n * 2 ^ n) so O(2 ^ (3n))
 
 

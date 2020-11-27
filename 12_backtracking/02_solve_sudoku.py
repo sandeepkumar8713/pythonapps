@@ -4,13 +4,15 @@
 #
 # Question Type : ShouldSee
 # Used : Make call to recursive function solveSudoku(grid).
-#           It finds the first unvisited cell in grid, if not found, print grid and return true.
-#           Else row = unvisitedCell[0] col = unvisitedCell[1]
-#           Run a loop from num 0 to 9, to check which one will fit at grid[row][col]. Check if it is safe to set num.
-#               (Check that num should not appear in that row, col or box). If is it safe then set grid[row][col] = num.
-#               Call solveSudoku again. If it returns true, return true and exit. Else grid[row][col] = 0, and continue
-#               the loop.
-#           If we are out of loop, return false. (Not possible)
+#        It finds the first unvisited cell in grid, if not found, print grid and return true.
+#        Else row = unvisitedCell[0] col = unvisitedCell[1]
+#        Run a loop from num 0 to 9, to check which one will fit at grid[row][col].
+#           Check if it is safe to set num. (Check that num should not appear in that row,
+#           col or box).
+#           If is it safe then set grid[row][col] = num.
+#           Call solveSudoku again. If it returns true, return true and exit.
+#           Else grid[row][col] = 0, and continue the loop.
+#        If we are out of loop, return false. (Not possible)
 # Complexity : O(N!)
 
 

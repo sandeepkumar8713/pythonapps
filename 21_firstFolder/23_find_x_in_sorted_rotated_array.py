@@ -6,9 +6,11 @@
 # 3 4 5 1 2. Devise a way to find an element in the rotated array in O(log n) time.
 #
 # Question Type : Generic
-# Used : check if key is in mid; if not check if left half is sorted if yes recur in left half, if not found in left
-#        half recur in right half
-#        If right half is sorted recur in right half, if not found in right half recur in left half
+# Used : Check if key is in mid;
+#        if not check if left half is sorted if yes recur in left half,
+#        if not found in left half recur in right half
+#        If right half is sorted recur in right half,
+#        if not found in right half recur in left half
 # Complexity : O(log n)
 
 

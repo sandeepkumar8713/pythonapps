@@ -5,7 +5,8 @@
 # Question Type : Generic, SimilarAdded
 # Used : Now maze will represent number of ways to reach this cell from maze[0][0].
 #        Set 1 for first row and column of maze till you find -1, then break
-#        Run loop from 1 to row-1, 1 to col - 1. if maze[i][j] == -1 : continue, else
+#        Run loop from 1 to row-1, 1 to col - 1.
+#           if maze[i][j] == -1 : continue, else
 #           if maze[i-1][j] > 0: maze[i][j] += maze[i-1][j] (Add the paths possible from up and left to current)
 #           if maze[i][j-1] > 0: maze[i][j] += maze[i][j-1]
 #        if maze[row-1][col-1] is not -1, return it else return 0.

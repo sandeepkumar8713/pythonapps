@@ -10,10 +10,11 @@
 # line are 4, those point are {0, 0}, {1, 1}, {2, 2}, {3, 3}
 #
 # Question Type : ShouldSee
-# Used : For each point p, calculate its slope with other points and use a map to record how many points have same
-#        slope, by which we can find out how many points are on same line with p as their one point. For each point
-#        keep doing the same thing and update the maximum number of point count found so far. Make sure to keep
-#        separate count of overlapping and vertical points(xdiff will be 0).
+# Used : For each point p, calculate its slope with other points and use a map to record how many
+#        points have same slope, by which we can find out how many points are on same line with p as
+#        their one point. For each point keep doing the same thing and update the maximum number of
+#        point count found so far. Make sure to keep separate count of overlapping and vertical
+#        points(xdiff will be 0).
 #        Logic :
 #        for i in range(0, len(points)-1):
 #           curMax = overlapPoints = verticalPoints = 0
@@ -28,7 +29,7 @@
 #                   if slope in slopeMap.keys(): slopeMap[slope] += 1
 #                   else: slopeMap[slope] = 1
 #                   curMax = max(curMax, slopeMap[slope])
-#             curMax = max(curMax, verticalPoints)
+#               curMax = max(curMax, verticalPoints)
 #           maxPoint = max(maxPoint, curMax + overlapPoints + 1)
 # Complexity : O(n^2)
 

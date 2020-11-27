@@ -11,7 +11,8 @@
 #        Search for given query using standard Trie search algorithm.
 #        If query prefix itself is not present, return -1 to indicate the same.
 #        If query is present and is end of word in Trie, print query.
-#        Else recursively print all nodes under subtree of last matching node for which isEndOfWord is True.
+#        Else recursively print all nodes under subtree of last matching node for which
+#        isEndOfWord is True.
 # Complexity : O(n * m) while inserting words in trie
 
 MAX_CHAR = 26

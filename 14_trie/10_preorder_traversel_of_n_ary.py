@@ -13,9 +13,10 @@
 #  N M	      O   L
 # Output : A B K N M J F D G E C O H I L
 #
-# Used : Do preprocessing of the given input i.e. keep a list of preorder traversed nodes and children count of each
-#        node. While searching, just print from the key node till children count of the preorder traversed nodes.
-#        def traverseTreeUtils(temp, preOrder, allChildrenCount):
+# Used : Do preprocessing of the given input i.e. keep a list of preorder traversed nodes and children
+#        count of each node. While searching, just print from the key node till children count of the
+#        preorder traversed nodes.
+#        traverseTreeUtils(temp, preOrder, allChildrenCount):
 #        count = 0, preOrder.append(temp)
 #        allChildrenCount.append(count)
 #        index = len(preOrder) - 1
@@ -67,7 +68,6 @@ def searchNode(preOrder, allChildrenCount, key):
 
 
 if __name__ == '__main__':
-
     root = newNode('A')
     (root.children).append(newNode('B'))
     (root.children).append(newNode('F'))

@@ -5,7 +5,7 @@
 # -1 for not possible
 #
 # Question Type : ShouldSee
-# Used : use stack, in case of inc pop else push. At end of loop pop everything
+# Used : Use stack, in case of inc pop else push. At end of loop pop everything
 #        Logic :
 #        for i in range(0, len(pattern)+1):
 #           if i < len(pattern) and not(pattern[i] == 'M' or pattern[i] == 'N'):

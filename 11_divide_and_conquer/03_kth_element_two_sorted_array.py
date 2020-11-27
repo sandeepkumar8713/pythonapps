@@ -10,11 +10,12 @@
 #
 # Question Type : ShouldSee
 # Used : We call a recursive function kthElement with input arr1,m,arr2,n,k.
-#        If m > n, swap the input arrays and call again(Try to make n larger). If k == 1, return min(arr1[0], arr2[0])
+#        If m > n, swap the input arrays and call again(Try to make n larger).
+#        If k == 1, return min(arr1[0], arr2[0])
 #        set i as min(m, k / 2), set j as j = min(n, k / 2)
 #        If arr1[i - 1] > arr2[j - 1]: then search in arr1[0:m-1] and arr2[j:n-1], since we have found out the lowest j
 #           else : search in arr1[i:m-1] and arr2[0:n-1], since we have found out the lowest i
-#        Logic : def kthElement(arr1, m, arr2, n, k):
+#        kthElement(arr1, m, arr2, n, k):
 #        if k > (m + n) or k < 1: return -1
 #        if m > n:
 #           return kthElement(arr2, n, arr1, m, k)
@@ -24,9 +25,9 @@
 #           return min(arr1[0], arr2[0])
 #        i = min(m, k // 2)
 #        j = min(n, k // 2)
-#        if arr1[i - 1] > arr2[j - 1]:
+#        if arr1[i - 1] > arr2[j - 1]: (all up and second half of down)
 #           return kthElement(arr1, m, arr2[j:n-1], n - j, k - j)
-#       else:
+#       else: (first half of up and all down)
 #           return kthElement(arr1[i:m-1], m - i, arr2, n, k - i)
 # Complexity : O(log k)
 

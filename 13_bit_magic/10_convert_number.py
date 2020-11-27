@@ -7,8 +7,9 @@
 # Output: 2
 #
 # Question Type : Easy
-# Used : Each 1 in the XOR represents a bit that is different between A and B. Therefore, to check the number of bits
-# that are different between A and B, we simply need to count the number of bits in A A B that are 1.
+# Used : Each 1 in the XOR represents a bit that is different between A and B. Therefore,
+#        to check the number of bits that are different between A and B, we simply need to count
+#        the number of bits in A ^ B that are 1.
 # Complexity : O(1)
 
 

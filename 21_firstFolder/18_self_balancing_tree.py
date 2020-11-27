@@ -30,7 +30,7 @@ class AVL_Tree(object):
         else:
             root.right = self.insert(root.right, key)
 
-        root.height = 1 + max(self.getHeight(root.left),self.getHeight(root.right))
+        root.height = 1 + max(self.getHeight(root.left), self.getHeight(root.right))
         return self.balanaceOut(root)
 
     def deleteElem(self, root, key):
@@ -132,7 +132,7 @@ class AVL_Tree(object):
         self.preOrder(root.right, result)
 
 
-if __name__== "__main__":
+if __name__ == "__main__":
     myTree = AVL_Tree()
     root = None
 

@@ -15,9 +15,33 @@
 # https://www.geeksforgeeks.org/distance-nearest-cell-1-binary-matrix/
 #
 # Question Type : Generic, SimilarAdded
-# Used : Represent the matrix as 2 way connected graph. Push the nodes which have 0 in the queue. Do BFS and traverse
-#        the graph and keep updating the distance of all the adjacent nodes for the node which has been popped out
+# Used : Represent the matrix as 2 way connected graph. Push the nodes which have 0 in the queue.
+#        Do BFS and traverse the graph and keep updating the distance of all the adjacent nodes for
+#        the node which has been popped out.
 #        of queue.
+#        findMinDistance(mat):
+#        dist = [9999] * (n*m+1)
+#        visit = [0] * (n*m+1)
+#        queue = [], k = 1
+#        for i in range(0, n):
+#           for j in range(0, m):
+#               if mat[i][j] == 1:
+#                   dist[k] = 0
+#                   visit[k] = 1
+#                   queue.append(k)
+#                k += 1
+#        graph.bfs(visit, dist, queue)
+#        graph.printDist(dist)
+#
+#        bfs(self, visit, dist, queue):
+#        while len(queue) != 0:
+#           temp = queue[0]
+#           del queue[0]
+#           for i in range(0, len(self.g[temp])):
+#               if visit[self.g[temp][i]] != 1:
+#                   dist[self.g[temp][i]] = min(dist[self.g[temp][i]], dist[temp]+1)
+#                   queue.append(self.g[temp][i])
+#                   visit[self.g[temp][i]] = 1
 # Complexity : O(n^2)
 
 
@@ -77,6 +101,7 @@ class Graph:
                 print(resStr)
                 c = 0
                 resStr = ''
+
 
 def findMinDistance(mat):
     n = len(mat)

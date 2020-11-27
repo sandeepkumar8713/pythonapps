@@ -4,7 +4,8 @@
 # e.g. sample input : 12345,  sample output : Twelve Thousand Three Hundred Forty Five.
 #
 # Question Type : Easy
-# Used : Take care to represent values between 0-999. After that break the numbers into hundreds, millions and billions.
+# Used : Take care to represent values between 0-999. After that break the numbers into hundreds,
+#        millions and billions.
 #        Now call the above function again.
 # Complexity : O(n)
 

@@ -3,10 +3,15 @@
 # If the given numbers are {54, 546, 548, 60}, the arrangement 6054854654 gives the largest value.
 #
 # Question Type : ShouldSee
-# Used : In the used sorting algorithm, instead of using the default comparison, write a comparison function myCompare()
-#        and use it to sort numbers. Given two numbers X and Y, how should myCompare() decide which number to put
-#        first we compare two numbers XY (Y appended at the end of X) and YX (X appended at the end of Y). If XY is
+# Used : In the used sorting algorithm, instead of using the default comparison, write a
+#        comparison function myCompare() and use it to sort numbers. Given two numbers X and Y,
+#        how should myCompare() decide which number to put first we compare two numbers
+#        XY (Y appended at the end of X) and YX (X appended at the end of Y). If XY is
 #        larger, then X should come before Y in output, else Y should come before.
+#        comparator(a, b):
+#        ab = str(a) + str(b)
+#        ba = str(b) + str(a)
+#        return cmp(int(ba), int(ab))
 # Complexity : O(n^2)
 
 import functools

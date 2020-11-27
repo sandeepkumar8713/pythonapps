@@ -11,7 +11,8 @@
 #
 # Question Type : Generic
 # XOR: 0 XOR 0 = 0, 0 XOR 1 = 1, 1 XOR 0 = 1 and 1 XOR 1 = 0. For toggle do XOR with 1.
-# Used : Calculate num = ((1 << r) - 1) ^ ((1 << (l-1)) - 1). This will produce a number num having r number of bits
+# Used : Calculate num = ((1 << r) - 1) ^ ((1 << (l-1)) - 1).
+#        This will produce a number num having r number of bits
 #        and bits in the range l to r are the only set bits.
 #        Now, perform n = n ^ num. This will toggle the bits in the range l to r in n.
 # Complexity : O(1)

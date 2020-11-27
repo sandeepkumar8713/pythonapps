@@ -13,9 +13,27 @@
 # return max_so_far
 #
 # Question Type : Generic
-# Used : for all possible combination of columns for start and end, make a temp array containing sum of all the columns
-#         in between for each row. Send that row to Kadane algorithm, which will return the max sum its corresponding
-#         start and end. Compare it with previously saved max value and update accordingly.
+# Used : For all possible combination of columns for start and end, make a temp array containing
+#        sum of all the columns in between for each row. Send that row to Kadane algorithm,
+#        which will return the max sum its corresponding start and end. Compare it with previously
+#        saved max value and update accordingly.
+#        findMaxSum(M):
+#        col = len(M[1]), row = len(M)
+#        maxSum = -9999
+#        for left in range(0, col):
+#           temp = [0] * row
+#           for right in range(left, col):
+#               for i in range(0, row):
+#                   temp[i] += M[i][right]
+#             indexDict = kadane(temp)
+#             sum = indexDict['sum']
+#             start = indexDict['start']
+#             end = indexDict['end']
+#
+#             if sum > maxSum:
+#                 maxSum = sum, finalLeft = left, finalRight = right
+#                 finalTop = start, finalBottom = end
+#        return maxSum
 # Complexity : O(n^3)
 
 

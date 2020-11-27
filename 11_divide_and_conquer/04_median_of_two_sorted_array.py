@@ -7,7 +7,7 @@
 # Used : Make a call to recursive function getMedian(arr1, arr2, n). If n <= 0: return -1
 #            if n == 1: return arr1[0] + arr2[0] // 2
 #            if n == 2: return (max(arr1[0], arr2[0]) + min(arr1[1], arr2[1])) // 2
-#            find median of arr1 and arr2, m1 and m2
+#            find median of arr1 and arr2 i.e m1 and m2
 #            If m1 < m2 : median exist in arr1[mid...n-1] and arr2[0....mid]. Call the function again on it.
 #            Else median exist in arr1[0...mid] and arr2[mid...n-1]. Call function on it.
 #        While calling recursive function take care of n being odd or even.
@@ -63,4 +63,3 @@ if __name__ == "__main__":
     n2 = len(arr2)
     if n1 == n2:
         print(getMedian(arr1, arr2, n1))
-
