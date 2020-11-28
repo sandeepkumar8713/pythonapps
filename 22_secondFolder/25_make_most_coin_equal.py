@@ -10,10 +10,12 @@
 # 7 3 1 0 -90      here sameCount is 3 (for 0, 1, 3)
 #
 # Question Type : Asked
-# Used : Sort the given inpArr. Run a loop in reverse i : n-1 to 0. Take inpArr[i], Subtract it from all the elements
-#           in inpArr and dave the difference in diffArr. Now run a loop j : i to 0 and try to make most diffArr[j] as
-#               0 and keep decrementing remainingPileHeight accordingly and keep incrementing sameCount by 1.
-#               If remainingPileHeight is not as big as diffArr[j] then break.
+# Used : Sort the given inpArr. Run a loop in reverse i : n-1 to 0.
+#           Take inpArr[i], Subtract it from all the elements in inpArr and save the difference
+#               in diffArr. Now run a loop j : i to 0 and try to make most diffArr[j] as
+#               0 and keep decrementing remainingPileHeight accordingly and keep
+#               incrementing sameCount by 1. If remainingPileHeight is not as big as diffArr[j]
+#               then break.
 #           compare maxCount with sameCount and update if required.
 #        return maxCount
 # Complexity : O(n)

@@ -5,8 +5,8 @@
 # Output : 1 2 2 1 3 3
 #
 # Question Type : Easy
-# Used : traverse through the expression, if '(' is found increment bracket number by 1, print it and append in list
-#        if ')' is found , pop a last element from list, print it
+# Used : Traverse through the expression, if '(' is found increment bracket number by 1,
+#        print it and append in list. if ')' is found , pop a last element from list, print it.
 # Complexity : O(n)
 
 

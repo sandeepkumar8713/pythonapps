@@ -19,8 +19,8 @@
 #
 # Question Type : Generic
 # Used : Make a max heap out of the products. Where the matching condition is that, node at top will have
-#        highest improved rate. i.e. choose the product to add new item whose rating improve the most, thus
-#        increasing the overall average.
+#        highest improved rate. i.e. choose the product to add new item whose rating improve the most,
+#        thus increasing the overall average.
 #        fiveStarSellers(ratings, threshold):
 #        avgRatings = 0, count = 0
 #        total5Stars = 0, N = len(ratings)

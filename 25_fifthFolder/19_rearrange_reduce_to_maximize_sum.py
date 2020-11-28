@@ -15,9 +15,10 @@
 #        nextUniqNum as 0. Now loop over the count array, while its value is more than 0 and nextUniqNum
 #        is less than current index i, keep incrementing the nextUniqNum and adding the same in ans, while
 #        reducing its freq count. It might happen that nextUniqNum becomes equal or more than current index
-#        i and count[i] > 1. Meaning more elements need to be added for given i, but we can increase nextUniqNum
-#        as doing so might increase the last element value in the resultant array but we are just allowed
-#        to reduce the values not increase it. So we just repeat with value with i. Add i * count[i] in ans.
+#        i and count[i] > 1. Meaning more elements need to be added for given i, but we cannont increase
+#        nextUniqNum as doing so might increase the last element value in the resultant array but we
+#        are just allowed to reduce the values not increase it. So we just repeat with value with i.
+#        Add i * count[i] in ans.
 #        maxSum(a, n):
 #        count = [0] * (n + 1)
 #        for i in range(0, n):

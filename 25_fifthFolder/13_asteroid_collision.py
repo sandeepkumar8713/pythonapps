@@ -10,8 +10,9 @@
 # Explanation: The 10 and -5 collide resulting in 10. The 5 and 10 never collide.
 #
 # Question Type : Easy
-# Used : Use a stack to store result. When a new item arrives, check if it negative and smaller or equal than top of
-#        stack and condition of collision is satisfied i.e: (item< 0 <stack[-1]). If required pop the top of stack.
+# Used : Use a stack to store result. When a new item arrives, check if it is negative and smaller or
+#        equal than top of stack and condition of collision is satisfied i.e: (item< 0 <stack[-1]).
+#        If required pop the top of stack.
 #        If item collision condition is not satisfied simply push the item in stack.
 #        for item in asteroids:
 #           while stack and item < 0 < stack[-1]:

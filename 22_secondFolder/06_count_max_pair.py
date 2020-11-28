@@ -1,7 +1,13 @@
-# Question : Given an array arr[], count number of pairs arr[i], arr[j] such that arr[i] + arr[j] is maximum and i < j.
+# Question : Given an array arr[], count number of pairs arr[i], arr[j] such that arr[i] + arr[j] is maximum
+# and i < j.
 #
 # Question Type : ShouldSee
-# Used : Logic : def sum(a, n):
+# Used : Keep count of running maxCount and secondMaxCount.
+#        if (maxCount > 1):
+#           return maxCount * (maxCount - 1) / 2
+#        return secondMaxCount
+#
+#        sum(a, n):
 #        maxVal = a[0], maxCount = 1
 #        secondMax = sys.maxsize
 #        for i in range(1, n):

@@ -8,10 +8,11 @@
 # starting ‘in’ position. Should be linear time complexity.
 #
 # Question Type : ShouldSee
-# Used : Do Pre-processing of the given time and direction list. Make a 2D Dictionary, with value as person id.
-#        {"arrivalTime":{"In":[0],"Out":[1]}}
-#        Now loop over the outer dict, from min to max arrival time, keep track of usageTime and current Direction.
-#        Allow people to go whose desired direction is currDir then flip currDir then allow other set of people to go.
+# Used : Do Pre-processing of the given time and direction list. Make a 2D Dictionary, with value as
+#        person id : {"arrivalTime":{"In":[0],"Out":[1]}}
+#        Now loop over the outer dict, from min to max arrival time, keep track of usageTime
+#        and current Direction. Allow people to go whose desired direction is currDir then flip
+#        currDir then allow other set of people to go.
 #        assignUsageTime(arrivalMap, minTime, maxTime):
 #        currDir = "In", usageTime = minTime
 #        for time in range(minTime, maxTime + 1):

@@ -22,6 +22,7 @@
 #        for ele in largerArr:
 #           if x - ele[1] in hashDict:
 #               result.append([ele[0], hashDict[x - ele[1]]])
+#
 #        findOptimalPairs(arr1, arr2, target):
 #        result = []
 #        for x in range(target, minTarget - 1, -1):

@@ -7,11 +7,24 @@
 #  only one 4 and recursively process remaining occurrences.
 #
 # Question Type : Generic
-# Used : In partition function. After finding pivot position. Run a loop from 0 to pivotPosition-1 and keep swapping
-#        pivot to middle. Similarly run a loop from pivotPosition+1 to n-1 and keep swapping pivot to middle. Now
-#        partition would return left and right pivot position. Use these two position to do quicksort further.
+# Used : In partition function. After finding pivot position.
+#        Run a loop from 0 to pivotPosition-1 and keep swapping pivot to middle.
+#        Similarly run a loop from pivotPosition+1 to n-1 and keep swapping pivot to middle.
+#        Now partition would return left and right pivot position.
+#        Use these two position to do quicksort further.
 #        quickSort(array, start, pivotLeft[0] - 1)
 #        quickSort(array, pivotRight[0] + 1, end)
+#
+#        partition(arr, left, right, pivotLeft, pivotRight):
+#        i = (left - 1)  # index of smaller element
+#        pivot = arr[right]  # pivot
+#        for j in range(left, right):
+#           if arr[j] <= pivot:
+#               i = i + 1
+#               arr[i], arr[j] = arr[j], arr[i]
+#        arr[i + 1], arr[right] = arr[right], arr[i + 1]
+#        pivotPosition = i + 1
+#        pivot = arr[i + 1]
 # Complexity : O(n log n)
 
 

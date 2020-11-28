@@ -5,14 +5,16 @@
 # sorted in ascending order, the next lexicographically smaller permutation does not exist.
 #
 # Question Type : ShouldSee, SimilarAdded
-# Used : 1) Traverse the given number from rightmost digit, keep traversing till you find a digit which is smaller than
-#        the previously traversed digit. For example, if the input number is "43215", we stop at 1(index i)
-#        because 1 is smaller than next digit 5. If we do not find such a digit, then output is "Not Possible".
-#        2) Find rightmost element's index that is less than str[i - 1]. Now search the right side of i-1,
-#        such that element is larger than str[i-1]. For "43215", the right side of 2 contains "15". 1 is smaller than 2.
+# Used : 1) Traverse the given number from rightmost digit, keep traversing till you find a digit
+#        which is smaller than the previously traversed digit. For example, if the input number is
+#        "43215", we stop at 1(index i) because 1 is smaller than next digit 5. If we do not find
+#        such a digit, then output is "Not Possible".
+#        2) Find rightmost element's index that is less than str[i - 1]. Now search the right side
+#        of i-1, such that element is larger than str[i-1]. For "43215", the right side of 2 contains
+#        "15". 1 is smaller than 2.
 #        3) Swap the above found two digits, we get 43125 in above example.
-#        4) Now reverse all digits from position i to the end of number. The number that we get after reversing is
-#        the output. We get "43152" which is the next smaller number than 43215.
+#        4) Now reverse all digits from position i to the end of number. The number that we get after
+#        reversing is the output. We get "43152" which is the next smaller number than 43215.
 #        prevPermutation(inpArr):
 #        n = len(inpArr), i = n - 1
 #        while i > 0 and inpArr[i - 1] <= inpArr[i]:

@@ -7,7 +7,8 @@
 # Output: prod[]  = {180, 600, 360, 300, 900}
 #
 # Question Type : Easy
-# Used : Make running(cumulative) array of products for left and right elements. Then multiply them to get answer.
+# Used : Make running(cumulative) array of products for left and right elements.
+#        Then multiply them to get answer.
 #        productArray(arr, n):
 #        temp = 1, prod = [1] * n
 #        for i in range(n):

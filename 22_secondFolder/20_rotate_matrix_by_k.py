@@ -4,14 +4,16 @@
 #
 # Question Type : Easy
 # Used : Make an auxiliary array temp[] of size M*N.
-#        Start traversing matrix in spiral form and store elements of current ring in temp[] array. While storing the
-#           elements in temp, keep track of starting and ending positions of current ring.
+#        Start traversing matrix in spiral form and store elements of current ring in temp[] array.
+#           While storing the elements in temp, keep track of starting and ending positions of
+#           current ring.
 #        For every ring that is being stored in temp[], rotate that subarray temp[]
 #        Repeat this process for each ring of matrix.
-#       In last traverse matrix again spirally and copy elements of temp[] array to matrix.
-# Array rotate by k : reverse(start, start+k)
-#                     reverse(start+k, end)
-#                     reverse(start, end)
+#        In last traverse matrix again spirally and copy elements of temp[] array to matrix.
+#        Array rotate by k :
+#        reverse(start, start+k)
+#        reverse(start+k, end)
+#        reverse(start, end)
 # Complexity : O(m * n)
 
 

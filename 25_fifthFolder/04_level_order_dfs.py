@@ -10,15 +10,14 @@
 #                   10    14
 #
 # Question Type : ShouldSee
-# Used : Do pre-order traversal while calculating level for each node and adding the elements in map using level.
-#        After traversal, sort the map using keys and print the values
+# Used : Do pre-order traversal while calculating level for each node and adding the elements in
+#        map using level. After traversal, sort the map using keys and print the values
 #        def getLevelDFS(root, level, m):
 #        if root is None: return
 #        try:
 #           m[level].append(root.data)
 #        except:
 #           m[level] = [root.data]
-#
 #        getLevelDFS(root.left, level + 1, m)
 #        getLevelDFS(root.right, level + 1, m)
 # Complexity : O(n)

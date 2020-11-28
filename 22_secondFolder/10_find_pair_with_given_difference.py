@@ -6,10 +6,12 @@
 # Input: arr[] = {5, 20, 3, 2, 50, 80}, n = 78
 # Output: Pair Found: (2, 80)
 #
-# Used : Sort the given the input array. Take 2 pointers i = 0 and j = 1. Loop while i < n and j < n:
+# Used : Sort the given the input array.
+#        Take 2 pointers i = 0 and j = 1.
+#        Loop while i < n and j < n:
 #           if i != j and arr[j] - arr[i] == diff: return True
-#           Else if arr[j] - arr[i] < diff : j++ (i.e. if calculated diff is less than target, increase right else left)
-#           Else i++
+#           Else if arr[j] - arr[i] < diff : j++
+#           Else i++  (i.e. if calculated diff is less than target, increase right else left)
 #        If we come out if loop, return False
 # Complexity : O(n log n)
 

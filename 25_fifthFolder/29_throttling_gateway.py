@@ -13,9 +13,10 @@
 # requestTime = [1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 7, 7, 7, 11, 11, 11, 11 ]
 #
 # Question Type : ShouldSee
-# Used : Make a list, each element consisting to 2 values: arrival time, reqCount. Now loop over this arrivalList.
-#        At each index, find sum of requests till 0 secs, 20 secs and 60 secs back. If the sum is more than the limit
-#        add the diff in dropped count. Also keep track of already dropped requests. If requests are already dropped,
+# Used : Make a list, each element consisting to 2 values: arrival time, reqCount. Now loop over
+#        this arrivalList. At each index, find sum of requests till 0 secs, 20 secs and 60 secs back.
+#        If the sum is more than the limit add the diff in dropped count.
+#        Also keep track of already dropped requests. If requests are already dropped,
 #        we don't need to drop again.
 #        gatewayLimit(inpArr):
 #        dropped = 0

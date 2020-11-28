@@ -16,6 +16,7 @@
 #        n = len(a), m = len(b)
 #        if n > m: return (m * (m + 1)) / 2
 #        else: return (n * (n + 1)) / 2 + (m - n) * n
+#
 #        count_of_collision(a, b):
 #        ans = 0, truckCountB = 0
 #        for i in range(0, m):

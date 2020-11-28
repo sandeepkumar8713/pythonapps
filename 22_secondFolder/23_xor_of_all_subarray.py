@@ -12,10 +12,11 @@
 # (3^5^2^4^6) = 7
 #
 # Question Type : ShouldSee
-# Used : Remember that xor of same values give 0, So even occurrences will cancel out and we only have to care about odd
-#        occurrences. Number at i-th index will have  (i + 1) * (N - i) frequency.
+# Used : Remember that xor of same values give 0, So even occurrences will cancel out and we only
+#        have to care about odd occurrences. Number at i-th index will have (i + 1) * (N - i) frequency.
 #        set res = 0
-#        So run a loop over the input array, calculate its freq. If freq is odd, do xor with res : res ^= inpArr[i]
+#        So run a loop over the input array, calculate its freq.
+#           If freq is odd, do xor with res : res ^= inpArr[i]
 #        return res
 # Complexity : O(n)
 

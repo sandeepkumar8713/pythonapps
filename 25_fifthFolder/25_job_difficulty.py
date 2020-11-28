@@ -3,9 +3,9 @@
 # Question : You want to schedule a list of jobs in d days. Jobs are dependent (i.e To work on the i-th job,
 # you have to finish all the jobs j where 0 <= j < i). You have to finish at least one task every day. The
 # difficulty of a job schedule is the sum of difficulties of each day of the d days. The difficulty of a day
-# is the maximum difficulty of a job done in that day.Given an array of integers jobDifficulty and an integer d.
-# The difficulty of the i-th job is jobDifficulty[i]. Return the minimum difficulty of a job schedule. If you cannot
-# find a schedule for the jobs return -1.
+# is the maximum difficulty of a job done in that day. Given an array of integers jobDifficulty and an integer d.
+# The difficulty of the i-th job is jobDifficulty[i]. Return the minimum difficulty of a job schedule. If you
+# cannot find a schedule for the jobs return -1.
 #
 # Example : Input: jobDifficulty = [6,5,4,3,2,1], d = 2
 # Output: 7
@@ -14,13 +14,16 @@
 # The difficulty of the schedule = 6 + 1 = 7.
 #
 # Question Type : OddOne
-# Used : We will use 2 dp, 1 for current day, other of next day. Run a loop for each day. For that day make a stack.
-#        Run another loop, over all the jobs starting from current day. Initialize tempDp with jobDifficulty of the
-#        current job. Now keep popping job from the stack, if its difficulty is less than current job. Now update
-#        current tempDp if (after removing popped job difficulty from and adding current job difficulty) is less.
-#        If stack is still not empty, update current tempDp if top job in stack is choosen and its tempDp value
-#        is less. At the end append current job index in stack.
-#        When the jobs loop gets over update dp with tempDp and reset tempDp
+# Used : We will use 2 dp, 1 for current day, other of next day. Run a loop for each day.
+#        For that day make a stack.
+#        Run another loop, over all the jobs starting from current day. Initialize tempDp with
+#        jobDifficulty of the current job. Now keep popping job from the stack, if its difficulty
+#        is less than current job. Now update current tempDp if (after removing popped job difficulty
+#        from and adding current job difficulty is less).
+#        If stack is still not empty, update current tempDp if top job in stack is choosen
+#        and its tempDp value is less.
+#        At the end append current job index in stack.
+#        When the current day jobs loop gets over update dp with tempDp and reset tempDp.
 #        After the outer loop, return dp[-1]
 #        minDifficulty(jobDifficulty, d):
 #        for day in range(d):

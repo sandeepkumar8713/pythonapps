@@ -13,8 +13,8 @@
 #
 # Question Type : Generic
 # Used : We can use max heap here, and do the operation k times. Its complexity will be O(n log n).
-#        Other option is use freq map, loop over it in reverse and pick the largest element, add the same in
-#        answer and assign its freq to largest - 1 number in count map.
+#        Other option is use freq map, loop over it in reverse and pick the largest element,
+#        add the same in answer and assign its freq to largest - 1 number in count map.
 #        getMaxSum(inpArr, k):
 #        maxEle = max(inpArr)
 #        count = [0] * (maxEle + 1)

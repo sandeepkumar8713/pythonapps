@@ -11,8 +11,9 @@
 # Output = [2, 3]
 #
 # Question Type : Easy
-# Used : Make a map, based on inpStr. Key is index of "|". Value is count "*" between this key and previous key.
-#        Now loop over the given index array and find the required value and append in result.
+# Used : Make a map, based on inpStr. Key is index of "|". Value is count "*" between this key
+#        and previous key. Now loop over the given index array and find the required value and
+#        append in result.
 #        getItemCount(myMap, startIndices, endIndices):
 #        result = [0] * len(startIndices)
 #        for i in range(len(startIndices)):

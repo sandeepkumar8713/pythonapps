@@ -12,9 +12,11 @@
 # apple, apple, orange, orange, banana, apple, banana, banana
 #
 # Question Type : Generic
-# Used : We use the concept of sliding window here. Keep increasing the window size as long as it match. At the end
-#        check if window size is equal to secret code size. If a group matches partially, we move the index of shopping
-#        cart back to the previously matched index and reset the codeWordIndex to 0.
+# Used : We use the concept of sliding window here. Keep increasing the window size as long as it match.
+#        At the end check if window size is equal to secret code size. If a group matches partially,
+#        we move the index of shopping cart back to the previously matched index and reset the
+#        codeWordIndex to 0.
+#
 #        isWinner(codeList, shoppingCart):
 #        lastMatchedindex = 0, codeIndex = 0, codeWordIndex = 0
 #        shopCartIndex = lastMatchedindex

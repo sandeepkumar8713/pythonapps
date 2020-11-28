@@ -3,7 +3,8 @@
 #
 # Question Type : Generic
 # Used : Save sum and product of 1 to 9.
-#        Run a loop over each row, col and sub matrix(3*3) to check that there sum and product are equal as above.
+#        Run a loop over each row, col and sub matrix(3*3) to check that there sum and
+#        product are equal as above.
 # Complexity : O(n^2)
 
 

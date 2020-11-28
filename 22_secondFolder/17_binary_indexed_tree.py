@@ -21,10 +21,20 @@
 #
 # Question Type : Generic
 # Used : Loop over all the input element and update in BIT(Binary Index Tree) Tree
-# updateBIT() : add 1 to i. Loop while i <= n: add val to BITTree[i]. Add 1 to last set bit of i. i += i & (-i)
-# update() :  call updateBIT twice with : updateBIT(BITTree, n, l, val) and updateBIT(BITTree, n, r+1, -val)
-# getElement() : add 1 to i. Loop while i >= 0 : data += BITTree[index] and subtract 1 from last set bit of i.
-#                   i -= i & (-i). After the loop return data.
+#        updateBIT():
+#        add 1 to i.
+#        Loop while i <= n:
+#           add val to BITTree[i]
+#           i += i & (-i); Add 1 to last set bit of i
+#        update():
+#        call updateBIT twice with :
+#        updateBIT(BITTree, n, l, val) and updateBIT(BITTree, n, r+1, -val)
+#        getElement() :
+#        add 1 to i.
+#        Loop while i >= 0 :
+#           data += BITTree[index]
+#           i -= i & (-i); Subtract 1 from last set bit of i
+#        After the loop return data.
 # Complexity :  O(q * log n) + O(n * log n) where q is number of queries.
 
 

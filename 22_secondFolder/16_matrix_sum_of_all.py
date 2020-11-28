@@ -15,7 +15,8 @@
 #        Loop over each element of input matrix : do this
 #            colSum[j] += mat[i][j]
 #            rowSum[i] += mat[i][j]
-#        For a cell index (i, j), the desired sum will be "sum - row[i] - col[j] + mat[i][j]"
+#        For a cell index (i, j), the desired sum will be
+#        "sum - row[i] - col[j] + mat[i][j]"
 # Complexity : O(m * n)
 
 

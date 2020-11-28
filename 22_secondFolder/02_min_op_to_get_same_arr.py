@@ -11,13 +11,14 @@
 #     3     |    1, 3            | 4, 4, 4
 #
 # Question Type : Easy, SimilarAdded
-# Used :  If we took a closer look at each operation as well problem statement we will find that increasing all n-1
-# element except the largest one is similar to decreasing the largest element only. So, the smallest elements need not
-# to decrease any more and rest of elements will got decremented up to smallest one. In this way the total number of
-# operation required for making all elements equal will be arraySum - n * (smallestElement).
+# Used :  If we took a closer look at each operation as well problem statement we will find that increasing
+#         all n-1 element except the largest one is similar to decreasing the largest element only. So,
+#         the smallest elements need not to decrease any more and rest of elements will got decremented
+#         up to smallest one. In this way the total number of operation required for making all elements
+#         equal will be arraySum - n * (smallestElement).
 # Complexity :O(n)
-# take example of bar chart, where in each round the max bar is decremented by 1, till all are equal to min
-# since all should be equal to small, subtract small from each element and sum the result
+# Take example of bar chart, where in each round the max bar is decremented by 1, till all are equal to min
+# Since all should be equal to small, subtract small from each element and sum the result.
 
 
 def minOp(arr):

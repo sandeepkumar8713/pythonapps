@@ -17,10 +17,11 @@
 # So the answer is 4 +5 +7+6= 22
 #
 # Question Type : ShouldSee
-# Used : Do post-order traversal, while doing so left and right child returns the dict of sum of its children at each
-#        level below it. For current node, check if data is even, if yes then pick value from left and right child
-#        dictionary with key K - 1 and add it to the overallSum.
-#        Make a new children dict which is a sum of both left and right child, with first value as the node.data.
+# Used : Do post-order traversal, while doing so left and right child returns the dict of sum of
+#        its children at each level below it. For current node, check if data is even, if yes then
+#        pick value from left and right child dictionary with key K - 1 and add it to the overallSum.
+#        Make a new children dict which is a sum of both left and right child, with first value as
+#        the node.data.
 #        postOrderTraversal(node, level, K):
 #        if node is None: return {}
 #        leftSum = postOrderTraversal(node.left, level+1, K)

@@ -8,8 +8,9 @@
 # Output : [9, -7, 8, -3, 5, -1, 2, 4, 6]
 #
 # Question Type : Easy
-# Used : First of all move all the negative numbers to left and positive ones to right. To do this use, logic
-#        similar to quicksort partition. The idea is to consider 0 as pivot and divide the array around it.
+# Used : First of all move all the negative numbers to left and positive ones to right.
+#        To do this use, logic similar to quicksort partition. The idea is to consider 0 as pivot
+#        and divide the array around it.
 #        Now swap alternate negative numbers on left with positive ones in right.
 #        rearrange(arr, n):
 #        i = -1

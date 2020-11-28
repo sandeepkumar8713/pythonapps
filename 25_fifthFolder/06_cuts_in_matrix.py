@@ -22,9 +22,11 @@
 # | ----------------|
 #
 # Question Type : Generic
-# Used : Do Pre-processing on the given inpMat, find row-wise and column-wise sum. Also sum of the matrix element.
-#        Check if H and V cuts will equally distribute the elements. (totalSum % (H+1) == 0)
-#        If yes, then loop over the row-size sum elements and check if its sum is equal to the sectionSum(average).
+# Used : Do Pre-processing on the given inpMat, find row-wise and column-wise sum. Also sum of the
+#        matrix element. Check if H and V cuts will equally distribute the elements.
+#        (totalSum % (H+1) == 0)
+#        If yes, then loop over the row-size sum elements and check if its sum is equal to
+#        the sectionSum(average).
 #        makeCuts(rowSum, sectionSum, cuts, cutIndexes):
 #        runningSum = 0, cutsMade = False
 #        for i in range(len(rowSum)):

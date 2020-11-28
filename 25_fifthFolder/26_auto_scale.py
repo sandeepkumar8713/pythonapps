@@ -9,8 +9,9 @@
 # for this system as an array determine the number of instances at the end of the time frame.
 #
 # Question Type : Easy
-# Used : Loop over the given inpArr, if avg util is less than 25%, half the instances. If avg utils is more than 60%,
-#        double the instances. After doubling or reducing the instances, increment the loop index by 10.
+# Used : Loop over the given inpArr, if avg util is less than 25%, half the instances.
+#        If avg utils is more than 60%, double the instances.
+#        After doubling or reducing the instances, increment the loop index by 10.
 # Complexity : O(n)
 
 import math

@@ -20,9 +20,10 @@
 # colony to be good
 #
 # Question Type : Generic
-# Used : Maintain a color array of size n with 2 colors. Take one node as source and assign 1 color to it.
-#        Push this node in the queue. Do BFS over the graph using the queue. While doing so, assign color to
-#        adjacent nodes. If we get a adjacent node whose color is same, the return False.
+# Used : Maintain a color array of size n with 2 colors. Take one node as source and assign
+#        1 color to it. Push this node in the queue. Do BFS over the graph using the queue.
+#        While doing so, assign color to adjacent nodes. If we get a adjacent node whose color
+#        is same, the return False.
 #        If we come out of the loop, return True.
 # Complexity : O(n)
 

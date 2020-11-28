@@ -6,9 +6,12 @@
 # If A doesn't know B, then B can't be celebrity. Discard B, and A may be celebrity.
 #
 # Question Type : Asked
-# Used : Take left and right pointer. Loop while left < right: if mat[left][right] left += 1 else right -= 1.
-#        After the loop left might be the celebrity. Loop over from 0 to n-1 and check if left doesn't know anybody
-#        and everybody knows left. If true, return left.
+# Used : Take left and right pointer.
+#        Loop while left < right: if mat[left][right]
+#           left += 1
+#        else right -= 1.
+#        After the loop left might be the celebrity. Loop over from 0 to n-1 and
+#        check if left doesn't know anybody and everybody knows left. If true, return left.
 # Complexity : O(n)
 
 

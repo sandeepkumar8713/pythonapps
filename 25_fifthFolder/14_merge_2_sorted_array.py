@@ -8,11 +8,11 @@
 # Therefore, the required output is 2 3 10.
 #
 # Question Type : Generic
-# Used : The idea is to consider the (N + 1)th element of the final sorted array as a pivot element and perform
-#        the quick sort partition around the pivot element.
-#        Loop through both array to find lesser value to be set as pivot. Call Partition function which makes sure
-#        that all the element on left side of pivot are smaller and vice versa in right side. Now sort the elements
-#        on both sides.
+# Used : The idea is to consider the (N + 1)th element of the final sorted array as a pivot element
+#        and perform the quick sort partition around the pivot element.
+#        Loop through both array to find lesser value to be set as pivot. Call Partition function
+#        which makes sure that all the element on left side of pivot are smaller and vice versa
+#        in right side. Now sort the elements on both sides.
 #        Merge(arr, brr):
 #        N = len(arr), M = len(brr)
 #        l = 0, r = 0, index = -1, pivot = 0

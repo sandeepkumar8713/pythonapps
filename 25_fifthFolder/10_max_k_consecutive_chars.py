@@ -11,11 +11,26 @@
 #
 # Question Type : Easy, SimilarAdded
 # Used : Make a map of character and its frequency for the given input string.
-#        Now loop over the map but from 25 to 0 index/ascii. While doing so keep appending the characters in the ansStr.
-#        If freq is more than 1, add consecutive characters while decreasing the freq in map. If the given limit is
-#        reached, find the next character from the map and append in ansStr. If not found, return the ansStr.
+#        Now loop over the map but from 25 to 0 index/ascii. While doing so keep appending the
+#        characters in the ansStr. If freq is more than 1, add consecutive characters while
+#        decreasing the freq in map. If the given limit is reached, find the next character
+#        from the map and append in ansStr. If not found, return the ansStr.
 #        After appending the next char, let the loop continue as normal.
 #        After loop return the ansStr.
+#        Logic:
+#        for i in range(MAX_CHAR-1, -1, -1):
+#           count = 0
+#           while charset[i] > 0:
+#               newStrings += indexToChar(i)
+#               charset[i] -= 1
+#               count += 1
+#               if charset[i] > 0 and count == limit:
+#                   next = nextAvailableChar(charset, i)
+#                   if next == '\0':
+#                       return newStrings
+#                   newStrings += next
+#                   count = 0
+#        return newStrings
 # Complexity : O(n)
 
 MAX_CHAR = 26

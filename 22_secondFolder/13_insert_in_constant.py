@@ -7,18 +7,22 @@
 #
 # Question Type : ShouldSee
 # Used : Its better to use map only.
-# insert(x) : Check if x is already present by doing a hash map lookup.
-#             If not present, then insert it at the end of the array.
-#             Add in hash table also, x is added as key and last array index as index.
-# remove(x) : Check if x is present by doing a hash map lookup.
-#             If present, then find its index and remove it from hash map.
-#             Swap the last element with this element in array and remove the last element.Swapping is done because the
-#               last element can be removed in O(1) time.
-#             Update index of last element in hash map.
-# getRandom() : Generate a random number from 0 to last index.
-#               Return the array element at the randomly generated index.
-# search(x) : Do a lookup for x in hash map and get its index.
-#             Use this index to get value from array.
+#        insert(x) :
+#        Check if x is already present by doing a hash map lookup.
+#        If not present, then insert it at the end of the array.
+#        Add in hash table also, x is added as key and last array index as index.
+#        remove(x) :
+#        Check if x is present by doing a hash map lookup.
+#        If present, then find its index and remove it from hash map.
+#        Swap the last element with this element in array and remove the last element.
+#        Swapping is done because the last element can be removed in O(1) time.
+#        Update index of last element in hash map.
+#        getRandom() :
+#        Generate a random number from 0 to last index.
+#        Return the array element at the randomly generated index.
+#        search(x) :
+#        Do a lookup for x in hash map and get its index.
+#        Use this index to get value from array.
 # Complexity : O(n) (searching data in dict)
 
 import random

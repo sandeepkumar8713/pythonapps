@@ -7,10 +7,19 @@
 #
 # Question Type : Generic
 # Used : Convert all 0 to -1
-#        Run a loop, keep adding elements while looping
-#        Keep checking id sum is zero, if true update max len and end index
-#        Check if sum + n, is already in map or not, if true update the max len with (i - hmap[arrSum + n]) if it is
-#        larger than max len.
+#        Keep updating sun in hash dict
+#        if the running sum is already in hash dict, get the diff b/w the two index.
+#        Logic :
+#        for i in range(len(arr)):
+#           arrSum += arr[i]
+#           if arrSum == 0:
+#               maxLen = i+1, endIndex = i
+#           if arrSum + n in hmap:
+#               if maxLen < (i - hmap[arrSum + n]):
+#                   maxLen = i - hmap[arrSum + n]
+#                   endIndex = i
+#           else:
+#               hmap[arrSum+n] = i
 # Complexity : O(n)
 
 

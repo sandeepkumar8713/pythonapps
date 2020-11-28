@@ -8,8 +8,9 @@
 # Output : {1, 1, 1, 2, 1, 4, 6}
 #
 # Question Type : Generic
-# Used : Loop over the given inpArr. If current element is higher than previous element, add its span to current span.
-#        Jump in left by current span value. Repeat the above process.
+# Used : Loop over the given inpArr. If current element is higher than previous element,
+#        add its span to current span. Jump in left by current span value.
+#        Repeat the above process.
 #        calculateSpan(inpArr):
 #        n = len(inpArr), span = [0] * n
 #        span[0] = 1

@@ -5,12 +5,13 @@
 # Output: ["abc", "bca", "cab"]
 #
 # Question Type : ShouldSee
-# Used : Map a charMap dict, where key is char and value is last found index. Maintain currSubStrStart which points to
-#        the start of substring we are trying to make in given inpStr. Loop over the inpStr. While doing so check if
-#        this current char has appeared before. If yes, then we have to update currSubStrStart to previously found
-#        index + 1, as we have encountered same char and we should start making substring after first found character.
-#        While loop also check if diff b/w current index and currSubStrStart is equal to k. If yes, we found a
-#        substring, append this in the result set.
+# Used : Map a charMap dict, where key is char and value is last found index. Maintain currSubStrStart
+#        which points to the start of substring we are trying to make in given inpStr.
+#        Loop over the inpStr. While doing so check if this current char has appeared before.
+#        If yes, then we have to update currSubStrStart to previously found index + 1,
+#        as we have encountered same char and we should start making substring after first found character.
+#        While looping also check if diff b/w current index and currSubStrStart is equal to k.
+#        If yes, we found a substring, append this in the result set.
 #        subStringK(inpStr, k):
 #        charMap = dict(), resultSet = set()
 #        currSubStrStart = 0

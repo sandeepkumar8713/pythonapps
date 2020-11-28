@@ -2,11 +2,21 @@
 # Question : Find all numbers less than n, which are palindromic. Numbers can be printed in any order.
 #
 # Question Type : Generic
-# Used : Call createPalindrome(inp,isOdd). It would append the inp in reverse to inp itself. If isOdd that means that
-#           we accepting and output of odd length. In such case, ignore the last digit doing by n = n/10, before
-#           appending the reverse of it. After appending return the palindromic value.
-#        We need to call createPalindrome() twice for even and odd. Call createPalindrome with input inp = 1 and keep
-#           calling createPalindrome() (and doing inp++) in the loop until it returns value more than n
+# Used : Call createPalindrome(inp,isOdd). It would append the inp in reverse to inp itself.
+#           If isOdd that means that we accepting and output of odd length. In such case, ignore
+#           the last digit doing by n = n/10, before appending the reverse of it. After
+#           appending return the palindromic value.
+#        We need to call createPalindrome() twice for even and odd. Call createPalindrome with
+#        input inp = 1 and keep calling createPalindrome() (and doing inp++) in the loop
+#        until it returns value more than n.
+#        generatePaldindromes(n):
+#        for j in range(2):
+#           i = 1
+#           palindromicNum = createPalindrome(i, j % 2)
+#           while palindromicNum < n:
+#               print(palindromicNum)
+#               palindromicNum = createPalindrome(i, j % 2)
+#               i = i + 1
 # Complexity : (n)
 
 
