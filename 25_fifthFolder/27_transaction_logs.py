@@ -6,7 +6,7 @@
 # Output should be an array of user-ids that are sorted. If same userid appears in the transaction as userid1
 # and userid2, it should count as one occurrence, not two.
 #
-# Question Type : Easy
+# Question Type : Asked
 # Used : Make a dict of given transactions with uid as key and value as occurrence count.
 #        Loop over the dict and append the ids whose count is equal or more than threshold.
 # Complexity : O(n)
