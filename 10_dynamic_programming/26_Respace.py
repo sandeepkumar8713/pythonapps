@@ -17,6 +17,7 @@
 #        check if the invalid length is minimum.
 #        split(setOfWords, sentence, start, memo):
 #  	     partial = "", index = start
+#        bestInvalid = sys.maxsize, bestParsing = ""
 #        while index < len(sentence):
 #        	c = sentence[index]
 #         	partial += c, invalid = 0

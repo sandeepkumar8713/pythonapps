@@ -24,7 +24,8 @@
 # Used : From the given input string, make of list of nodes whose fields are : data, freq, left and right
 #        Using this list make a normal max heap.
 #        Loop while max heap has only one element
-#           pop twice from this max heap, tag them as left and right, merge them by(use '#' as data)
+#           pop twice from this max heap(last element), tag them as left and right, merge them by
+#           (use '#' as data)
 #           summing their freq and push merged node in the heap again
 #        Pop this only element from the heap and tag it as root of tree.
 #        Make a call to recursive function storeCodes with default in code as ""
@@ -35,7 +36,8 @@
 #        Now loop over the input string and covert char to codes using the above dict, this will give
 #        encoded string
 #
-#        To decode, loop through encoded string and travel the tree. From root, go to left if value is 0 or go to 1.
+#        To decode, loop through encoded string and travel the tree. From root, go to left if value is
+#        0 or go to 1.
 #           If node data is '#' continue else print the char
 #        This will give the decoded string
 # Complexity : O(n log n)
@@ -77,7 +79,7 @@ class Heap:
         self.size = n
         for i in range(n):
             self.data.append(arr[i])
-        start = n/2 - 1
+        start = n//2 - 1
         for i in range(start, -1, -1):
             self.heapify(i)
 
@@ -93,7 +95,7 @@ class Heap:
         self.data.append(ele)
         self.size += 1
         n = self.size
-        start = n / 2 - 1
+        start = n // 2 - 1
         for i in range(start, -1, -1):
             self.heapify(i)
 
@@ -123,8 +125,8 @@ def makeTree(inpStr):
     minHeap = Heap(operator.lt)
     minHeap.buildHeap(nodeList)
 
-    # for item in minHeap.data:
-    #     print item.data, item.freq
+    for item in minHeap.data:
+        print(item.data, item.freq)
 
     while minHeap.size != 1:
         left = minHeap.removeTop()

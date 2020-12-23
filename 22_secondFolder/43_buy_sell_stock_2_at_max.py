@@ -17,6 +17,7 @@
 #        leftProfit, leftIndex = maxProfit(prices, 0, index[0] - 1)
 #        rightProfit, rightIndex = maxProfit(prices, index[1] + 1, len(prices) - 1)
 #        return firstProfit + max(leftProfit, rightProfit)
+#
 #        def maxProfit(prices, left, right):
 #        minPrice = sys.maxint, maxProfit = 0
 #        sellIndex = -1, buyIndex = -1

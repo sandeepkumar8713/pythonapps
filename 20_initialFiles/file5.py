@@ -7,7 +7,7 @@
 # maxHeight which returns the height of the highest possible stack so formed.
 #
 # longest incraesing subsequence
-# Question Type : Generic
+# Question Type : SimilarAdded
 # Used : sort based on 2d area in decreasing order and then the problem becomes LIS
 #        Logic : def boxStacking(array):
 #        height, twoDPlane = cubeDimension(array)

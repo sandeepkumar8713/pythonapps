@@ -8,8 +8,8 @@
 # starting ‘in’ position. Should be linear time complexity.
 #
 # Question Type : ShouldSee
-# Used : Do Pre-processing of the given time and direction list. Make a 2D Dictionary, with value as
-#        person id : {"arrivalTime":{"In":[0],"Out":[1]}}
+# Used : Do Pre-processing of the given time and direction list. Make a 2D Dictionary, with \
+#        key : value as {"arrivalTime":{"In":[personId],"Out":[personId]}}
 #        Now loop over the outer dict, from min to max arrival time, keep track of usageTime
 #        and current Direction. Allow people to go whose desired direction is currDir then flip
 #        currDir then allow other set of people to go.

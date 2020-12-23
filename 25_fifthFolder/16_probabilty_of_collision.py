@@ -49,6 +49,7 @@ def count_of_collision(a, b):
         if b[i] == 'T':
             truckCountB += 1
     i = 0
+    print(truckCountB)
     while i < m and i < n:
         if a[i] == 'T':
             ans += truckCountB
@@ -68,4 +69,6 @@ def findProbability(a, b):
 if __name__ == "__main__":
     S = "TCCBCTTB"
     T = "BTCCBBTT"
+    # S = "TC"
+    # T = "TT"
     findProbability(S, T)

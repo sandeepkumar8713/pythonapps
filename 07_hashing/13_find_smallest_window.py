@@ -1,5 +1,5 @@
 # Question : Given two strings string1 and string2, find the smallest substring in string1 containing all
-# characters of string efficiently.
+# characters of string 2 efficiently.
 #
 # Input : string = "this is a test string"
 # pattern = "tist"

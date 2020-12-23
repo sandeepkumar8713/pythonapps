@@ -22,21 +22,23 @@
 #
 # Question Type : Generic
 # Used : Logic:
-# computeLPSArray(pat, M, lps) : set i = 1, lps[0] = 0 and length = 0. Run a loop while i < N:
-#                                if pat[i] == pat[length]: (inc length assign it to lps[i] and inc i)
-#                                   length += 1, lps[i] = length, i += 1
-#                                else:
-#                                   if length != 0: (reduce length to match with previous pat[length])
-#                                       length = lps[length - 1]
-#                                   else:
-#                                       lps[i] = 0
-#                                       i += 1
-# KMPSearch(pat, txt): Compute LPS for pat using the above function. Now loop while i < N:
-#                      if pat[j] == txt[i]: inc both i and j by 1
-#                      if j == M : print "pattern found at (i-j)"
-#                      elif i < N and pat[j] != txt[i] :  (if j is not at start, update j using lps else inc i)
-#                           if j != 0: j = lps[j - 1]
-#                           else: i += 1
+#        computeLPSArray(pat, M, lps) :
+#        set i = 1, lps[0] = 0 and length = 0. Run a loop while i < N:
+#        if pat[i] == pat[length]: (inc length assign it to lps[i] and inc i)
+#           length += 1, lps[i] = length, i += 1
+#        else:
+#           if length != 0: (reduce length to match with previous pat[length])
+#               length = lps[length - 1]
+#        else:
+#            lps[i] = 0, i += 1
+#
+#        KMPSearch(pat, txt):
+#        Compute LPS for pat using the above function. Now loop while i < N:
+#        if pat[j] == txt[i]: inc both i and j by 1
+#        if j == M : print "pattern found at (i-j)"
+#        elif i < N and pat[j] != txt[i] :  (if j is not at start, update j using lps else inc i)
+#           if j != 0: j = lps[j - 1]
+#           else: i += 1
 #
 # Complexity : O(n) if input txt is of length n
 
