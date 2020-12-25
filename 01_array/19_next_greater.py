@@ -3,13 +3,15 @@
 # element x is the first greater element on the right side of x in array. Elements for which no greater element exist,
 # consider next greater element as -1.
 #
-# Question Type : ShouldSee
+# Question Type : Asked
 # Used : Stack, push the first element to stack
 #        Now loop through the remaining elements, if the current element is larger than top of stack, pop from stack.
 #           print(str(element) + " -- " + str(next)), Keep popping from stack unless current is less than top or empty.
 #        if current is less than top, push current in stack.
 #        When the array finishes, pop remaining elements from the stack and mark them as -1.
-# Complexity : O(n), Worst when elements are sorted in decreasing
+#        Other Approach : Start from right side, use min Heap to insert values, Use binary search to search next
+#        greater value. Complexity : O(n * log n)
+# Complexity : O(n ^ 2), Worst when elements are sorted in decreasing
 
 
 def createStack():

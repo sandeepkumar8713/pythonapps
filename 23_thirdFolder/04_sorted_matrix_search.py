@@ -3,12 +3,15 @@
 # Question : Given an M x N matrix in which each row and each column is sorted in
 # ascending order, write a method to find an element.
 #
-# Question Type : Generic
-# Used : while i < n and j >= 0:
-#         if mat[i][j] == x: print "found"
-#         if mat[i][j] > x: j -= 1
-#         elif mat[i][j] < x: i += 1
-#         print "not found"
+# Question Type : Asked
+# Used : Start search from top right. If ele is less than the key go down,
+#        If ele is more than the key go left.
+#        i = 0, j = n - 1
+#        while i < n and j >= 0:
+#           if mat[i][j] == x: print "found"
+#           if mat[i][j] > x: j -= 1
+#           elif mat[i][j] < x: i += 1
+#        print "not found"
 # Complexity : O(m + n)
 
 
