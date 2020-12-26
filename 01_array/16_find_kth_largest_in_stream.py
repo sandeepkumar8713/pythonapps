@@ -1,6 +1,9 @@
 # CTCI : Q17_14_Smallest_K
 # http://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/
 # Question : Given an infinite stream of integers, find the k'th largest element at any point of time.
+# Similar : https://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/
+# Write an efficient program for printing k largest elements in an array. Elements in array can be in any order.
+# (Here answer will be whole min heap of size k.)
 #
 # stream[] = {10, 20, 11, 70, 50, 40, 100, 5, ...}
 # k = 3
