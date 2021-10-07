@@ -1,5 +1,5 @@
 # https://www.geeksforgeeks.org/python-program-for-arranging-the-students-according-to-their-marks-in-descending-order/
-# Qeustion : Consider a class of 20 students whose names and marks are given to you. The task is to arrange the students
+# Question : Consider a class of 20 students whose names and marks are given to you. The task is to arrange the students
 # according to their marks in decreasing order. Write a python program to perform the task.
 #
 # Question Type : Easy

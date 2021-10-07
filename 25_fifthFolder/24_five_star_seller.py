@@ -1,5 +1,5 @@
 # https://leetcode.com/discuss/interview-question/933383/
-# Third-party companies that sell their products on Amazon.com are able to analyze the customer reviews for
+# Question : Third-party companies that sell their products on Amazon.com are able to analyze the customer reviews for
 # their products in real time. Imagine that Amazon is creating a category called "five-star sellers" that will
 # only display products sold by companies whose average percentage of five-star reviews per-product is at or
 # above a certain threshold. Given the number of five-star and total reviews for each product a company sells,

@@ -1,5 +1,5 @@
 # https://leetcode.com/discuss/interview-question/932920/
-# Amazon Fresh is running a promotion in which customers receive prizes for purchasing a secret combination of fruits.
+# Question : Amazon Fresh is running a promotion in which customers receive prizes for purchasing a secret combination of fruits.
 # The combination will change each day, and the team running the promotion wants to use a code list to make it easy
 # to change the combination. The code list contains groups of fruits. Both the order of the groups within the code
 # list and the order of the fruits within the groups matter. However, between the groups of fruits, any number,
