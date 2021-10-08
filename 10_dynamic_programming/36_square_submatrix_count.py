@@ -1,4 +1,4 @@
-# https://www.geeksforgeeks.org/maximum-size-square-sub-matrix-with-sum-less-than-or-equals-to-k/
+# https://www.geeksforgeeks.org/count-all-square-sub-matrix-with-sum-greater-than-the-given-number-s/
 # Question : Given a matrix mat[][] and two integers K and S, the task is to count all K x K sub-matrix such that the
 # sum of all the elements in the sub-matrix is greater than or equal to S.
 #
@@ -38,6 +38,7 @@
 #             if subMatSum >= target:
 #                 count += 1
 #        return count
+# Complexity : O(M * N)
 
 dim = 5
 
