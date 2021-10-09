@@ -1,4 +1,5 @@
 # CTCI : Q17_21_Volume_of_Histogram
+# https://leetcode.com/problems/trapping-rain-water/
 # Question : Given n non-negative integers representing an elevation map where the width of each bar is 1,
 # compute how much water it is able to trap after raining.
 #

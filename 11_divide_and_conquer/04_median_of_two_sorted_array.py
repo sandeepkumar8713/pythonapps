@@ -1,5 +1,6 @@
-# https:////www.geeksforgeeks.org//median-of-two-sorted-arrays//
-# https:////www.geeksforgeeks.org//median-of-two-sorted-arrays-of-different-sizes//
+# https://www.geeksforgeeks.org/median-of-two-sorted-arrays/
+# https://www.geeksforgeeks.org/median-of-two-sorted-arrays-of-different-sizes/
+# https://leetcode.com/problems/median-of-two-sorted-arrays/
 # Question : There are 2 sorted arrays A and B of size n each. Write an algorithm to find the median of the array
 # obtained after merging the above 2 arrays(i.e. array of length 2n).
 #
