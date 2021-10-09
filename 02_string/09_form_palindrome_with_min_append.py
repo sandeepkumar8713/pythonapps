@@ -1,5 +1,6 @@
-# Question : Given a string s we need to tell minimum characters to be appended (insertion at end) to make a
-# string palindrome.
+# Similar : https://leetcode.com/problems/shortest-palindrome/
+# Question : Given a string s we need to tell minimum characters to be appended (insertion at end)
+# to make a string palindrome.
 #
 # Input : s = "abede"
 # Output : 2
@@ -7,7 +8,8 @@
 #
 # Question Type : ShouldSee
 # Used : Remove characters from the beginning of the string one by one and check if the string
-#        is palindrome or not. If true the output becomes the number of characters removed from the string.
+#        is palindrome or not. If true the output becomes the number of characters removed
+#        from the string.
 # Complexity : O(n ^ 2)
 
 

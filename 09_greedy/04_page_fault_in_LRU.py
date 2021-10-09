@@ -1,5 +1,5 @@
 # CTCI : Q16_25_LRU_Cache (similar)
-# Similar : https://practice.geeksforgeeks.org/problems/lru-cache/1
+# Similar : https://practice.geeksforgeeks.org/problems/lru-cache/1, https://leetcode.com/problems/lru-cache/
 # Question : Given a sequence of pages and memory capacity, your task is to find the number of page faults using
 # Least Recently Used (LRU) Algorithm.
 #
