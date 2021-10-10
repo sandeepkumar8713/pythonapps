@@ -1,4 +1,5 @@
 # CTCI : Q17_20_Continuous_Median
+# https://leetcode.com/problems/find-median-from-data-stream/
 # Question : Given that integers are read from a data stream. Find median of elements read so for in efficient way.
 # For simplicity assume there are no duplicates.
 # input =  5, 15, 1, 3

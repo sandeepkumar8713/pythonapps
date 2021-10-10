@@ -1,4 +1,5 @@
 # https://www.geeksforgeeks.org/design-a-data-structure-that-supports-insert-delete-search-and-getrandom-in-constant-time/
+# https://leetcode.com/problems/insert-delete-getrandom-o1/
 # Question : Design a data structure that supports following operations in 0(1) time.
 # insert(x): Inserts an item x to the data structure if not already present.
 # remove(x): Removes an item x from the data structure if present.

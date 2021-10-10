@@ -1,7 +1,7 @@
 # Question : You are given n pairs of numbers. In every pair, the first number is always smaller than the second
 # number. A pair (c, d) can follow another pair (a, b) if b < c. Chain of pairs can be formed in this fashion.
 # Find the longest chain which can be formed from a given set of pairs.
-# Similar : box stacking
+# Similar : box stacking (20_initialFiles/file5)
 #
 # Question Type : Generic
 # Used : This can be easily solved as job selection problem described in 01_activity_selection.py in

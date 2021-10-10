@@ -1,4 +1,6 @@
 # https://www.geeksforgeeks.org/count-all-square-sub-matrix-with-sum-greater-than-the-given-number-s/
+# Similar : https://leetcode.com/problems/range-sum-query-2d-immutable/
+# Similar : https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/
 # Question : Given a matrix mat[][] and two integers K and S, the task is to count all K x K sub-matrix such that the
 # sum of all the elements in the sub-matrix is greater than or equal to S.
 #
@@ -44,7 +46,7 @@ dim = 5
 
 
 # Function to create a cumulative matrix
-def createTable(mat, k, p, dp):
+def createTable(mat, dp):
     dp[0][0] = mat[0][0]
 
     for j in range(1, dim):
@@ -79,7 +81,7 @@ def countSubMatrixUtil(dp, k, target):
 
 def countSubMatrix(mtrx, k, target):
     dp = [[0] * dim for i in range(dim)]
-    createTable(mtrx, k, target, dp)
+    createTable(mtrx, dp)
     return countSubMatrixUtil(dp, k, target)
 
 

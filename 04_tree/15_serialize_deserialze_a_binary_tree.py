@@ -1,6 +1,8 @@
 # https://www.geeksforgeeks.org/serialize-deserialize-binary-tree/
-# Question : Serialization is to store tree in a file so that it can be later restored. The structure of tree
-# must be maintained. Deserialization is reading tree back from file.
+# https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+# Similar : https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/
+# Question : Serialization is to store tree in a file so that it can be later restored. The
+# structure of tree must be maintained. Deserialization is reading tree back from file.
 #
 # Question Type : ShouldSee
 # Used : def serialize(root, fp):

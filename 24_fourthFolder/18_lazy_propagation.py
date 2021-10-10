@@ -1,7 +1,8 @@
 # https://www.geeksforgeeks.org/lazy-propagation-in-segment-tree/
-# Question : Write a function which takes start and end index and return their range sum. We have used the same
-# "Sum of given Range" problem to explain Lazy propagation. He then asked range update in best optimised way.
-# I told him Lazy propagation. I had to write code for segment tree with lazy propagation.
+# Question : Write a function which takes start and end index and return their range sum. We
+# have used the same "Sum of given Range" problem to explain Lazy propagation. He then asked
+# range update in best optimised way. I told him Lazy propagation. I had to write code for
+# segment tree with lazy propagation.
 #
 # Question Type : Generic
 # Used : updateRange(us, ue)
