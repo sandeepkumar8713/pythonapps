@@ -1,5 +1,6 @@
 # http://shibaili.blogspot.com/2019/01/359-logger-rate-limiter.html
 # https://massivealgorithms.blogspot.com/2016/06/leetcode-359-logger-rate-limiter.html
+# https://leetcode.com/problems/logger-rate-limiter/
 # Question :  Design a data structure for running stream of string. You have to print a word if it has not come
 # within 10 second else ignore it.
 #

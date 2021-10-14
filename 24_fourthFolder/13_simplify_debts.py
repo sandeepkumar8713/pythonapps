@@ -1,6 +1,8 @@
 # https://www.geeksforgeeks.org/minimize-cash-flow-among-given-set-friends-borrowed-money/
-# Question : Given a number of friends who have to give or take some amount of money from one another. Design an
-# algorithm by which the total cash flow among all the friends is minimized.
+# https://leetcode.com/problems/optimal-account-balancing/
+# https://cheonhyangzhang.gitbooks.io/leetcode-solutions/content/solutions-451-500/465-optimal-account-balancing.html
+# Question : Given a number of friends who have to give or take some amount of money from one
+# another. Design an algorithm by which the total cash flow among all the friends is minimized.
 #
 # Question Type : ShouldSee
 # Used : Make a array of amount[n], it tells the amount to be paid or received

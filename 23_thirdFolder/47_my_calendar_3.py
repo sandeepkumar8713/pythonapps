@@ -1,3 +1,4 @@
+# Similar : https://leetcode.com/problems/my-calendar-i/
 # Question : Implement a MyCalendarThree class to store your events. A new event can always be added.
 # Your class will have one method, book(int start, int end). Formally, this represents a booking on the half
 # open interval [start, end), the range of real numbers x such that start <= x < end. A K-booking happens when K

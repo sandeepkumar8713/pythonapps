@@ -1,4 +1,5 @@
 # https://www.careercup.com/question?id=5385816814125056
+# https://leetcode.com/problems/maximize-distance-to-closest-person/
 # Question : Given a bench with n seats and few people sitting, tell the seat number each time when a new person
 # goes to sit on the bench such that his distance from others is maximum.
 #

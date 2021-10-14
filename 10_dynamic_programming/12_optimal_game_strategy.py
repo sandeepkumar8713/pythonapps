@@ -1,4 +1,5 @@
 # https://www.geeksforgeeks.org/optimal-strategy-for-a-game-dp-31/
+# Similar : https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/
 # Question : Consider a row of n coins of values v1 ... vn, where n is even. We play a game against an
 # opponent by alternating turns. In each turn, a player selects either the first or last coin from the row,
 # removes it from the row permanently and receives the value of the coin. Determine the maximum possible
