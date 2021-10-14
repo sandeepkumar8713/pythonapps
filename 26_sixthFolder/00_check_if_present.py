@@ -11,4 +11,14 @@
 # https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/
 # https://leetcode.com/problems/maximum-average-subarray-i/
 # https://leetcode.com/problems/find-duplicate-subtrees/
-#
+# https://leetcode.com/problems/non-decreasing-array/
+# https://leetcode.com/problems/24-game/
+# https://leetcode.com/problems/redundant-connection-ii/
+# https://leetcode.com/problems/my-calendar-iii/
+# https://leetcode.com/problems/daily-temperatures/
+# https://leetcode.com/problems/swim-in-rising-water/
+# https://leetcode.com/problems/reaching-points/
+# https://leetcode.com/problems/escape-the-ghosts/
+# https://leetcode.com/problems/domino-and-tromino-tiling/
+# https://leetcode.com/problems/soup-servings/
+# 

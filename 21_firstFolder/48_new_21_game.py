@@ -9,7 +9,7 @@
 # Output: 1.00000
 # Explanation:  Alice gets a single card, then stops.
 #
-# Question Type : ShouldSee
+# Question Type : OddOne
 # Used : See the link for explanation.
 #        Logic : def new21Game(N, K, W):
 #        dp = [0.0] * (N + W + 1)

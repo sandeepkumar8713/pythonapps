@@ -1,5 +1,6 @@
 # https://atprogrammer.com/2019/06/20/1088-Confusing-Number-II/
 # https://github.com/openset/leetcode/tree/master/problems/confusing-number-ii
+# https://leetcode.com/problems/rotated-digits/
 # Question : Given a positive integer N, return the number of confusing numbers between 1 and N inclusive.
 # We can rotate digits by 180 degrees to form new digits. When 0, 1, 6, 8, 9 are rotated 180 degrees,
 # they become 0, 1, 9, 8, 6 respectively. When 2, 3, 4, 5 and 7 are rotated 180 degrees, they become invalid.
