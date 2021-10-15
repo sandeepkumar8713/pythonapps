@@ -5,33 +5,56 @@
 # sentence where each word is a valid dictionary word. Return all such possible sentences in any order.
 # Note that the same word in the dictionary may be reused multiple times in the segmentation.
 #
-# Example :
-# Input: s = "catsanddog", wordDict = ["cat","cats","and","sand","dog"]
+# Example : Input: s = "catsanddog", wordDict = ["cat","cats","and","sand","dog"]
 # Output: ["cats and dog","cat sand dog"]
 #
-# Question Type : ShouldSee
-# Used :
-# Complexity :
-#
-# TODO ::
+# Question Type : SimilarAdded
+# Used : We will use map here. At each index of word we try to break the inpStr. Check if left part is
+#        already breakable (using map) and check if substring in right side is present in wordSet.
+#        keep extending the wordlist at given index.
+#        After the loop, return the word set from last index of map.
+#        Logic : def wordBreak(inpStr, wordSet):
+#        map[0] = [[]]
+#        for i in range(n + 1):
+#           if i not in map: continue
+#           for word in wordSet:
+#               if len(word) <= len(inpStr[i:]):
+#                   if word == inpStr[i:i + len(word)]:
+#                       wordList = [x + [word] for x in map[i]]
+#                       if i + len(word) in map:
+#                           map[i + len(word)].extend(wordList)
+#                       else:
+#                           map[i + len(word)] = wordList
+#        return [' '.join(x) for x in map[n]]
+# Complexity : O(m * n) n is length on inpStr and m is length of wordSet
+
 
 from collections import defaultdict
 
 
-class Solution:
-    def wordBreak(self, s, wordDict):
-        # Use a dp dict to store until pos=i what could be the word break choices
-        # e.g. s='abcd', dp[3] = [['abc', 'd'], ['ab', 'cd']] assuming they are valid words
-        dp = defaultdict(list)
-        # Initialize with pos=-1 an empty list of list, so when the first word come in, it finds pos=-1 to attach new words to it
-        dp[-1] = [[]]
+def wordBreak(inpStr, wordSet):
+    n = len(inpStr)
+    map = {}
+    map[0] = [[]]
 
-        for i in range(len(s)):
-            for word in wordDict:
-                # At pos=i, find forward if there is a substring end at pos=i that matches with a word in wordDict
-                # Besides, dp[i-len(word)] should exist, otherwise there is no valid break-word choices at pos=i-len(word)
-                if i >= len(word) - 1 and s[i + 1 - len(word):i + 1] == word and i - len(word) in dp:
-                    # If yes, attach the new word to existing break choices at dp[i-len(word)] and add to current choices
-                    dp[i] += [x + [word] for x in dp[i - len(word)]]
+    for i in range(n + 1):
+        if i not in map:
+            continue
+        for word in wordSet:
+            if len(word) <= len(inpStr[i:]):
+                if word == inpStr[i:i + len(word)]:
+                    wordList = [x + [word] for x in map[i]]
+                    if i + len(word) in map:
+                        # We got multiple chooses to break word at i + len(word), so should extend the wordlist
+                        map[i + len(word)].extend(wordList)
+                    else:
+                        map[i + len(word)] = wordList
 
-        return [' '.join(x) for x in dp[len(s) - 1]]  # the dp[last] corresponds to the result
+    return [' '.join(x) for x in map[n]]
+
+
+if __name__ == "__main__":
+    s = "catsanddog"
+    wordSet = ["cat", "cats", "and", "sand", "dog"]
+    print(wordBreak(s, wordSet))
+

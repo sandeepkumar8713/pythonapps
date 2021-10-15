@@ -1,15 +1,15 @@
 # https://leetcode.com/problems/merge-intervals/
-# Question : Given a set of time intervals in any order, merge all overlapping intervals into one and output the
-# result which should have only mutually exclusive intervals. Let the intervals be represented as pairs of integers
-# for simplicity.
+# Question : Given a set of time intervals in any order, merge all overlapping intervals into one and
+# output the result which should have only mutually exclusive intervals. Let the intervals be represented
+# as pairs of integers for simplicity.
 # For example, let the given set of intervals be {{1,3}, {2,4}, {5,7}, {6,8} }. The intervals {1,3} and {2,4}
 # overlap with each other, so they should be merged and become {1, 4}. Similarly {5, 7} and {6, 8} should be
 # merged and become {5, 8}
 #
 # Question Type : Generic
 # Used : Make a class Interval of field start and end. Make a sorted list of intervals based on start time.
-#        Loop over sorted list, if start of index-1 is less than end of index, then merge it by setting max and min of
-#        start and end.
+#        Loop over sorted list, if start of index-1 is less than end of index, then merge it by setting
+#        max and min of start and end.
 #        for i in range(len(sortedL)):
 #           if index != 0 and sortedL[index-1].start <= sortedL[index].end:
 #               while index != 0 and sortedL[index-1].start <= sortedL[index].end:
