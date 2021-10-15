@@ -12,8 +12,48 @@
 # coins =  3*1*5    +   3*5*8   +  1*3*8  + 1*8*1 = 167
 #
 # Question Type : ShouldSee
-# Used :
-# Complexity :
-#
-# TODO::
-#
+# Used : DP is used.
+#        Call recursive function dfs, with start and end, which calculate max value using intermediate
+#        value of dfs().
+#        Logic :
+#        nums = [1] + nums + [1]
+#        dp = dict()
+#        def dfs(l, r):
+#           if l > r: return 0
+#           if (l, r) not in dp:
+#               maximum = float("-inf")
+#               for i in range(l, 1 + r):
+#                   maximum = max(maximum, nums[i] * nums[l - 1] * nums[r + 1] +
+#                      dfs(l, i - 1) + dfs(i + 1, r))
+#               dp[(l, r)] = maximum
+#           return dp[(l, r)]
+#        return dfs(1, len(nums) - 2)
+# Complexity : O(n^2)
+
+
+def maxCoins(nums):
+    nums = [1] + nums + [1]
+    dp = dict()
+
+    def dfs(l, r):
+        if l > r:
+            return 0
+        if (l, r) not in dp:
+            maximum = float("-inf")
+            for i in range(l, 1 + r):
+                maximum = max(maximum, nums[i] * nums[l - 1] * nums[r + 1] + dfs(l, i - 1) + dfs(i + 1, r))
+            dp[(l, r)] = maximum
+        return dp[(l, r)]
+
+    return dfs(1, len(nums) - 2)
+
+
+if __name__ == "__main__":
+    nums = [3, 1, 5, 8]
+    print(maxCoins(nums))
+
+    nums = [8, 8]
+    print(maxCoins(nums))
+
+    nums = [1, 5]
+    print(maxCoins(nums))
