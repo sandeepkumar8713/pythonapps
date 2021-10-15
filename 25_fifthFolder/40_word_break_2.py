@@ -34,7 +34,7 @@ from collections import defaultdict
 
 def wordBreak(inpStr, wordSet):
     n = len(inpStr)
-    map = {}
+    map = dict()
     map[0] = [[]]
 
     for i in range(n + 1):
