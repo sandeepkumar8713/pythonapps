@@ -2,8 +2,8 @@
 # Question : Given an array arr[0..n-1]. The following operations need to be performed.
 # update(l, r, val) : Add 'val' to all the elements in the array from [l, r].
 # getElement(i) : Find element in the array indexed at 'i'.
-# Initially all the elements in the array are 0. Queries can be in any oder, i.e., there can be many updates
-# before point query.
+# Initially all the elements in the array are 0. Queries can be in any oder, i.e.,
+# there can be many updates before point query.
 #
 # Input : arr = {0, 0, 0, 0, 0}
 # Queries: update : l = 0, r = 4, val = 2

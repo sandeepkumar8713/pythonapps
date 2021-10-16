@@ -1,4 +1,5 @@
 # https://www.geeksforgeeks.org/count-maximum-points-on-same-line/
+# https://leetcode.com/problems/max-points-on-a-line/
 # Question : Given N point on a 2D plane as pair of (x, y) co-ordinates, we need to find maximum number of point
 # which lie on the same line.
 #
@@ -100,8 +101,13 @@ if __name__ == "__main__":
     inpMat = [[-1, 1], [0, 0], [1, 1], [2, 2],
               [3, 3], [3, 4]]
 
-    #inpMat = [[1,1],[3,2],[5,3],[4,1],[2,3],[1,4]]
+    points = []
+    for item in inpMat:
+        points.append(Point(item[0], item[1]))
 
+    print(maxPointOnSameLine(points))
+
+    inpMat = [[1, 1], [3, 2], [5, 3], [4, 1], [2, 3], [1, 4]]
     points = []
     for item in inpMat:
         points.append(Point(item[0], item[1]))
