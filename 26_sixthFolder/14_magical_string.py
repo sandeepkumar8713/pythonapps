@@ -7,14 +7,55 @@
 # that the occurrence sequence is s itself. Given an integer n, return the number of 1's in the
 # first n number in the magical string s.
 #
-#
 # Example : Input: n = 6
 # Output: 3
 # Explanation: The first 6 elements of magical string s is "122112" and it contains three 1's, so return 3.
 #
-# Question Type : OddOne
-# Used :
-# Complexity :
-#
-# TODO ::
-#
+# Question Type : ShouldSee
+# Used : Follow the pattern. one 1 and two 2, then repeat
+#        We try to construct the pattern till length
+#        While keep count of 1's
+#        Logic :
+#        magStr = "122"
+#        lastDigit = 2, strCount = 3
+#        while strCount <= n:
+#           if lastDigit == 2:
+#               strCount += 1
+#               ones += 1
+#               lastDigit = 1
+#           else:
+#               strCount += 2
+#               lastDigit = 2
+#        return ones
+# Complexity : O(n)
+
+
+def countOnes(n):
+    magStr = "122"
+    ones = 1
+    if n == 0:
+        return 0
+
+    if n <= 3:
+        return ones
+
+    lastDigit = 2
+    strCount = 3
+    while strCount <= n:
+        if lastDigit == 2:
+            strCount += 1
+            ones += 1
+            lastDigit = 1
+        else:
+            strCount += 2
+            lastDigit = 2
+
+    return ones
+
+
+if __name__ == "__main__":
+    n = 6
+    print(countOnes(n))
+
+    n = 1
+    print(countOnes(n))
