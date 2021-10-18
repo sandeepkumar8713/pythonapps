@@ -15,8 +15,55 @@
 # Only "AA" is not eligible because there are 2 absences (there need to be fewer than 2).
 #
 # Question Type : ShouldSee
-# Used :
-# Complexity :
+# Used : We should do DFS with DP. The sub solution is sum of n-1 with all 3 possibilities (P, A, L).
+#        For each day we have 3 possibilities.
+#        put 'P', late count resets, absent count continues
+#        put 'L', late count increases, absent count continues
+#        put 'A', late count resets, absent count increases
+#        While doing DFS, save the sub solution in dp.
+#        Logic:
+#        def dfs(dp, n, lateCnt, absntCnt):
+#        if lateCnt >= 3 or absntCnt >= 2: return 0
+#        if n == 0: return 1
+#        if (n,lateCnt, absntCnt) in dp: return dp[(n,lateCnt, absntCnt)]
+#        ans = (dfs(dp, n-1, 0, absntCnt) % m + dfs(dp, n-1, lateCnt + 1, absntCnt) % m
+#           + dfs(dp, n-1, 0, absntCnt +1) % m) % m
+#        dp[(n, lateCnt, absntCnt)] = ans
+#        return dp[(n, lateCnt, absntCnt)]
 #
-# TODO ::
-#
+#        dfs(dp, n, 0, 0)
+# Complexity : O(n)
+
+m = 1e9 + 7
+
+
+def dfs(dp, n, lateCnt, absntCnt):
+    if lateCnt >= 3 or absntCnt >= 2:
+        return 0
+
+    if n == 0:
+        return 1
+
+    if (n,lateCnt, absntCnt) in dp:
+        return dp[(n,lateCnt, absntCnt)]
+
+    # 3 option possible
+    # put 'P', late count resets, absent count continues
+    # put 'L', late count increases, absent count continues
+    # put 'A', late count resets, absent count increases
+    ans = (dfs(dp, n-1, 0, absntCnt) % m + dfs(dp, n-1, lateCnt + 1, absntCnt) % m + dfs(dp, n-1, 0, absntCnt +1) % m) % m
+    dp[(n, lateCnt, absntCnt)] = ans
+    return dp[(n, lateCnt, absntCnt)]
+
+
+def awardCount(n):
+    dp = {}
+    return dfs(dp, n, 0, 0)
+
+
+if __name__ == "__main__":
+    n = 2
+    print(awardCount(n))
+
+    n = 1
+    print(awardCount(n))

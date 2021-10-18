@@ -17,8 +17,74 @@
 # You need to buy 3A and 2B, so you may pay $10 for 1A and 2B (special offer #2), and $4 for 2A.
 #
 # Question Type : ShouldSee
-# Used :
-# Complexity :
-#
-# TODO ::
-#
+# Used : We do DFS using DP. DP's index while be tuple of needs array.
+#        For each possible combination of need, check if special can be applied. If applied,
+#        call DFS on remaining needs. While recursive calls, save the sub solution in dp.
+#        Logic :
+#        def dfs(dp, price, specials, needs):
+#        if sum(needs) == 0: return 0
+#        if tuple(needs) in dp: return dp[tuple(needs)]
+#        for i in range(len(needs)):
+#           actualPrice += price[i] * needs[i]
+#        for special in specials:
+#           ok, remainingNeeds = canBuy(special, needs)
+#           if ok:
+#               specialPrice = dfs(dp, price, specials, remainingNeeds) + special[-1]
+#               minPrice = min(minPrice, specialPrice)
+#        dp[tuple(needs)] = min(minPrice, actualPrice)
+#        return dp[tuple(needs)]
+# Complexity : O(k^n) count of all possible combinations of needs.
+
+
+import sys
+
+
+def canBuy(special, needs):
+    remainingNeeds = []
+    for i in range(len(needs)):
+        remaining = needs[i] - special[i]
+        if remaining < 0:
+            return False, needs
+        remainingNeeds.append(remaining)
+    return True, remainingNeeds
+
+
+def dfs(dp, price, specials, needs):
+    if sum(needs) == 0:
+        return 0
+
+    if tuple(needs) in dp:
+        return dp[tuple(needs)]
+
+    actualPrice = 0
+    for i in range(len(needs)):
+        actualPrice += price[i] * needs[i]
+
+    minPrice = sys.maxsize
+    for special in specials:
+        ok, remainingNeeds = canBuy(special, needs)
+        if ok:
+            specialPrice = dfs(dp, price, specials, remainingNeeds) + special[-1]
+            minPrice = min(minPrice, specialPrice)
+            remainingNeeds.clear()
+
+    dp[tuple(needs)] = min(minPrice, actualPrice)
+    return dp[tuple(needs)]
+
+
+def shoppingOffers(price, special, needs):
+    dp = {}
+    return dfs(dp, price, special, needs)
+
+
+if __name__ == "__main__":
+    price = [2, 5]
+    specials = [[3, 0, 5], [1, 2, 10]]
+    needs = [3, 2]
+    print(shoppingOffers(price, specials, needs))
+
+    price = [2, 3, 4]
+    special = [[1, 1, 0, 4], [2, 2, 1, 9]]
+    needs = [1, 2, 1]
+    print(shoppingOffers(price, specials, needs))
+
