@@ -11,8 +11,60 @@
 # exactly 2 distinct integers: 1 and 2.
 #
 # Question Type : ShouldSee
-# Used :
-# Complexity :
-#
-# TODO ::
-#
+# Used : For k = 7, we need at least 8 elements to create 7 distinct diff.
+#        Pick first k + 1 from the sorted array.
+#        Place the first half at the even indices and reversely place
+#        the second half at the gaps.
+#        Return the array.
+#        Logic :
+#        temp = [i+1 for i in range(n)]
+#        k += 1
+#        ans = temp[::]
+#        i = 0
+#        while i < (k + 1)//2:
+#           ans[i * 2] = temp[i]
+#            i += 1
+#        j = 0, i = k - 1
+#        while i >= (k + 1)//2 and (j * 2 + 1) < n:
+#           ans[j * 2 + 1] = temp[i]
+#           i -= 1, j += 1
+#        return ans
+# Complexity : O(n)
+
+
+# Take first k + 1 elements from the ascendingly sorted array
+# Place the first half at the even indices, and reversely place
+# the second half at the gaps.
+
+def constructArray(n, k):
+        temp = [i+1 for i in range(n)]
+        k += 1
+
+        ans = temp[::]
+        i = 0
+        while i < (k + 1)//2:
+            ans[i * 2] = temp[i]
+            i += 1
+
+        j = 0
+        i = k - 1
+        while i >= (k + 1)//2 and (j * 2 + 1) < n:
+            ans[j * 2 + 1] = temp[i]
+            i -= 1
+            j += 1
+
+        return ans
+
+
+if __name__ == "__main__":
+    n = 3
+    k = 2
+    print(constructArray(n, k))
+
+    n = 5
+    k = 2
+    print(constructArray(n, k))
+
+    n = 3
+    k = 1
+    print(constructArray(n, k))
