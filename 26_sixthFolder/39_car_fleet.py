@@ -18,8 +18,54 @@
 # Note that no other cars meet these fleets before the destination, so the answer is 3.
 #
 # Question Type : ShouldSee
-# Used :
-# Complexity :
-#
-# TODO ::
-#
+# Used : Make a list of tuples, with two fields, position and time to reach
+#        Now sort this list. The last car in this list will reach first.
+#        Loop over the list in reverse, the cars whose time_to_reach is less can the first car to reach,
+#        will join the fleet. Else that car will form another fleet.
+#        After the loop return the fleet count.
+#        Logic :
+#        for i in range(n):
+#           timeRemaining = (target - position[i]) / speed[i]
+#           cs.append((position[i], timeRemaining))
+#        cs.sort()
+#        fleet = 1, time_to_reach = cs[n - 1][1]
+#        for i in range(n - 2, -1, -1):
+#           if cs[i][1] <= time_to_reach: continue
+#           fleet += 1
+#           time_to_reach = cs[i][1]
+#        return fleet
+# Complexity : O(n log n)
+
+
+def carFleet(target, position, speed):
+    n = len(position)
+    cs = []
+
+    for i in range(n):
+        timeRemaining = (target - position[i]) / speed[i]
+        cs.append((position[i], timeRemaining))
+
+    cs.sort()
+
+    fleet = 1
+    time_to_reach = cs[n - 1][1]
+
+    for i in range(n - 2, -1, -1):
+        if cs[i][1] <= time_to_reach:  # it will join a fleet
+            continue
+        fleet += 1
+        time_to_reach = cs[i][1]
+
+    return fleet
+
+
+if __name__ == "__main__":
+    target = 12
+    position = [10, 8, 0, 5, 3]
+    speed = [2, 4, 1, 1, 3]
+    print(carFleet(target, position, speed))
+
+    target = 10
+    position = [3]
+    speed = [3]
+    print(carFleet(target, position, speed))

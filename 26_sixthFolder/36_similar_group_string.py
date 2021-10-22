@@ -13,8 +13,69 @@
 # Output: 2
 #
 # Question Type : ShouldSee
-# Used :
-# Complexity :
+# Used : We can convert this problem to graph, where each str represents a node.
+#        Similarity menas diff count b/w 2 str must be less than or equal to 2.
+#        The similarity means a edge b/w 2 nodes.
+#        Now do parent and union on graph.
+#        Return len of disjoint set.
+#        Logic :
+#        def is_sim(s1, s2):
+#        n = len(s1), diff = 0
+#        for i in range(n):
+#           if s1[i] != s2[i]: diff += 1
+#           if diff > 2: break
+#        return diff <= 2
 #
-# TODO ::
-#
+#        def numSimilarGroups(strs)
+#           for i in range(n - 1):
+#               for j in range(i + 1, n):
+#                   if is_sim(strs[i], strs[j]):
+#                       union(i, j, parentArr)
+#        ans = set()
+#        for i in range(n):
+#           ans.add(find(i, parentArr))
+#        return len(ans)
+# Complexity : O(n^2)
+
+
+def is_sim(s1, s2):
+    n = len(s1)
+    diff = 0
+    for i in range(n):
+        if s1[i] != s2[i]:
+            diff += 1
+        if diff > 2:
+            break
+    return diff <= 2
+
+
+def find(x, parentArr):
+    while parentArr[x] != x:
+        x = parentArr[x]
+    return x
+
+
+def union(x, y, parentArr):
+    parentArr[find(y, parentArr)] = find(x, parentArr)
+
+
+def numSimilarGroups(strs):
+    n = len(strs)
+
+    parentArr = {i: i for i in range(n)}
+
+    for i in range(n-1):
+        for j in range(i + 1, n):
+            if is_sim(strs[i], strs[j]):
+                union(i, j, parentArr)
+
+    ans = set()
+    for i in range(n):
+        ans.add(find(i, parentArr))
+
+    return len(ans)
+
+
+if __name__ == "__main__":
+    strs = ["tars", "rats", "arts", "star"]
+    print(numSimilarGroups(strs))
