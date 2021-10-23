@@ -13,8 +13,44 @@
 # Explanation: One of the longest word chains is ["a","ba","bda","bdca"]
 #
 # Question Type : ShouldSee
-# Used :
-# Complexity :
-#
-# TODO ::
-#
+# Used : This is similar to box stacking. We avoid 2 loops by sorting the array based on len.
+#        Make a dp (dict) where key is word and value is chain len till that word.
+#        Loop over the words array. For each ele, break it into all possible sub words
+#        and check if sub words is already present in dp and update max len value.
+#        Insert the word in dp with max chain len.
+#        Logic:
+#        words = sorted(words, key=len)
+#        dp = {}, overrallMax = 0
+#        for word in words:
+#           chainLen = 1
+#           for i in range(len(word)):
+#               current_splice = word[:i] + word[i + 1:]
+#               if current_splice in dp:
+#                   chainLen = max(chainLen, dp[current_splice])
+#           dp[word] = chainLen + 1
+#           overrallMax = max(overrallMax, chainLen)
+#        return overrallMax
+# Complexity : O(n log n + n * k) where n is word count, k is length of longest word.
+
+
+def longestStrChain(words):
+    words = sorted(words, key=len)
+    dp = {}
+    overrallMax = 0
+
+    for word in words:
+        chainLen = 1
+        for i in range(len(word)):
+            current_splice = word[:i] + word[i + 1:]
+            if current_splice in dp:
+                chainLen = max(chainLen, dp[current_splice])
+
+        dp[word] = chainLen + 1
+        overrallMax = max(overrallMax, chainLen)
+
+    return overrallMax
+
+
+if __name__ == "__main__":
+    words = ["a", "b", "ba", "bca", "bda", "bdca"]
+    print(longestStrChain(words))
