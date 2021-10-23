@@ -4,7 +4,7 @@ total=0
 
 printTypeCount(){
   type=$1
-  typeCount=$(grep -r "Question Type : $type" . | wc -l)
+  typeCount=$(grep -r "Question Type : $type" --include=\*.py . | wc -l)
   echo "$type = $typeCount"
   total=$((total+typeCount))
 }

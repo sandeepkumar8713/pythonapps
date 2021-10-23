@@ -2,6 +2,7 @@
 
 import os
 LINE_LIMIT = 99
+from categoryWise import getSelectedFilename
 
 def getFilenameList():
     filenameList = []
@@ -10,7 +11,7 @@ def getFilenameList():
             dirPath = './' + dirName
             for filename in os.listdir(dirPath):
                 filePathName = dirPath + '/' + filename
-                if '.py' in filePathName:
+                if '.py' in filePathName and '.pyc' not in filePathName:
                     filenameList.append(filePathName)
 
     return filenameList
@@ -71,5 +72,12 @@ if __name__ == "__main__":
         getQuestion(filename, count, resOutputFile)
     print(count[0])
     resOutputFile.close()
+
+    count2 = [1]
+    resOutputFile2 = open('all_questions_category.txt', 'w')
+    for filename in getSelectedFilename():
+        getQuestion(filename + ".py", count2, resOutputFile2)
+    print(count2[0])
+    resOutputFile2.close()
 
 

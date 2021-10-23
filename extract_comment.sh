@@ -1,7 +1,7 @@
 #!/bin/sh
 
-currentDate=$(date +'%d_%m_%Y')
-#currentDate=$(date +'%d_%m_%Y_%H_%M')
+qType=$(date +'%d_%m_%Y')
+#qType=$(date +'%d_%m_%Y_%H_%M')
 
 fileName='fileList.txt'
 #find . -name '32_zero_matrix.py' > $fileName
@@ -33,11 +33,27 @@ extract(){
 rm allFilesComments_*.txt
 
 users=(Asked Generic ShouldSee Easy SimilarAdded OddOne)
-for u in "${users[@]}"
-do
+
+getAllFilesQtype(){
+  for u in "${users[@]}"
+  do
     grep -rl "$u" --include=\*.py . > $fileName
-    currentDate="$u"
-    outputFile="allFilesComments_$currentDate.txt"
+    qType="$u"
+    outputFile="allFilesComments_$qType.txt"
     echo "" > $outputFile
     extract
-done
+  done
+}
+
+getAllFilesCategory(){
+  categoryFileList="category_file_list.txt"
+  grep -oe "[0-9A-Za-z\_\/]*.py" all_questions_category.txt > $categoryFileList
+  fileName=$categoryFileList
+  outputFile="allFilesComments_category.txt"
+  echo "" > $outputFile
+  extract
+  rm -f $categoryFileList
+}
+
+getAllFilesQtype
+getAllFilesCategory

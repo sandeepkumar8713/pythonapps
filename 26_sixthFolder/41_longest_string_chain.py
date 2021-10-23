@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/longest-string-chain/
-# You are given an array of words where each word consists of lowercase English letters.
+# Question : You are given an array of words where each word consists of lowercase English letters.
 # wordA is a predecessor of wordB if and only if we can insert exactly one letter anywhere
 # in wordA without changing the order of the other characters to make it equal to wordB.
 # For example, "abc" is a predecessor of "abac", while "cba" is not a predecessor of "bcad".

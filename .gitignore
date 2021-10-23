@@ -4,6 +4,7 @@ venv/
 allFiles*
 extract.py
 test.txt
-all_questions.txt
+all_questions*.txt
 allFilesComments*.txt
 fileList.txt
+__pycache__/
