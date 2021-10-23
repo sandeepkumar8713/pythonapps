@@ -15,8 +15,71 @@
 # become 6. Now the score of Bob is 7 and Bob wins.
 #
 # Question Type : ShouldSee
-# Used :
-# Complexity :
+# Used : Make a dp dict, where key is index and value, is Alice's score from index to n.
+#        Considering Alice makes first move, we do DFS from index 0.
+#        During DFS, at each point Alice can choose 1, 2 or 3 stones fron start of array.
+#        For the remaining array, call DFS again.
+#        While doing DFS, keep updating dp dict.
+#        After the DFS, return dp[0]
+#        Alice's score should be +ve for her to win.
+#        Logic :
+#        def dfs(dp, stoneValue, index):
+#        n = len(stoneValue)
+#        if index >= n: return 0
+#        if index in dp: return dp[index]
+#        op1 = stoneValue[index] - dfs(dp, stoneValue, index + 1)
+#        if index + 1 < n:
+#           op2 = stoneValue[index] + stoneValue[index + 1] - dfs(dp, stoneValue, index + 2)
+#        if index + 2 < n:
+#           op3 = stoneValue[index] + stoneValue[index + 1] + stoneValue[index + 2] - dfs(dp, stoneValue, index + 3)
+#        ans = max(ans, op1, op2, op3)
+#        dp[index] = ans
+#        return ans
 #
-# TODO ::
-#
+#        dp = dict()
+#        k = dfs(dp, stoneValue, 0)
+#        if k > 0: return "Alice"
+#        elif k < 0: return "Bob"
+#        else: return "Tie"
+# Complexity : O(n)
+
+import sys
+
+
+def dfs(dp, stoneValue, index):
+    n = len(stoneValue)
+    ans = -sys.maxsize
+    op1 = op2 = op3 = ans
+
+    if index >= n:
+        return 0
+
+    if index in dp:
+        return dp[index]
+
+    op1 = stoneValue[index] - dfs(dp, stoneValue, index + 1)
+    if index + 1 < n:
+        op2 = stoneValue[index] + stoneValue[index + 1] - dfs(dp, stoneValue, index + 2)
+    if index + 2 < n:
+        op3 = stoneValue[index] + stoneValue[index + 1] + stoneValue[index + 2] - dfs(dp, stoneValue, index + 3)
+
+    ans = max(ans, op1, op2, op3)
+    dp[index] = ans
+    return ans
+
+
+def stoneGameIII(stoneValue):
+    dp = dict()
+    k = dfs(dp, stoneValue, 0)
+
+    if k > 0:
+        return "Alice"
+    elif k < 0:
+        return "Bob"
+    else:
+        return "Tie"
+
+
+if __name__ == "__main__":
+    values = [1, 2, 3, 7]
+    print(stoneGameIII(values))
