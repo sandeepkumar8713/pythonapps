@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/find-the-maximum-of-minimums-for-every-window-size-in-a-given-array/
-# Question : Given an integer array of size n, find the maximum of the minimum's of every window size in the array.
-# Note that window size varies from 1 to n.
+# Question : Given an integer array of size n, find the maximum of the minimum's of every
+# window size in the array. Note that window size varies from 1 to n.
 #
 # Input:  arr[] = {10, 20, 30, 50, 10, 70, 30}
 # Output:         70, 30, 20, 10, 10, 10, 10
@@ -18,20 +18,22 @@
 #
 # Question Type : OddOne
 # Used : set left = [-1] * (n+1) and right = [n] * (n+1)
-#       1. Find indexes of next smaller and previous smaller for every element. Next smaller is the nearest smallest
-#          element on right side of arr[i]. Similarly, previous smaller element is the nearest smallest element on left
-#          side of arr[i]. (by using stack)
-#       2. Create an auxiliary array ans[n+1] to store the result. Values in ans[] can be filled by iterating
-#          through right[] and left[]
-#       3. Once we have indexes of next and previous smaller, we know that arr[i] is a minimum of a window of length
-#          "right[i] - left[i] - 1". Lengths of windows for which the elements are minimum are {7, 3, 2, 1, 7, 1, 2}.
-#          This array indicates, first element is minimum in window of size 7, second element is minimum in window of
-#          size 3, and so on. ans[length] = max(ans[length], inpArr[i])
+#       1. Find indexes of next smaller and previous smaller for every element. Next smaller
+#          is the nearest smallest element on right side of arr[i]. Similarly, previous smaller
+#          element is the nearest smallest element on left side of arr[i]. (by using stack)
+#       2. Create an auxiliary array ans[n+1] to store the result. Values in ans[] can be filled
+#          by iterating through right[] and left[]
+#       3. Once we have indexes of next and previous smaller, we know that arr[i] is a minimum of
+#          a window of length "right[i] - left[i] - 1". Lengths of windows for which the elements
+#          are minimum are {7, 3, 2, 1, 7, 1, 2}. This array indicates, first element is minimum
+#          in window of size 7, second element is minimum in window of size 3, and so on.
+#          ans[length] = max(ans[length], inpArr[i])
 #       4. Observation:
-#       a) Result for length i, i.e. ans[i] would always be greater or same as result for length i+1, i.e., ans[i+1].
-#       b) If ans[i] is not filled it means there is no direct element which is minimum of length i and therefore
-#          either the element of length ans[i+1], or ans[i+2], and so on is same as ans[i]. So we fill rest of the
-#          entries using below loop.
+#       a) Result for length i, i.e. ans[i] would always be greater or same as result for
+#          length i+1, i.e., ans[i+1].
+#       b) If ans[i] is not filled it means there is no direct element which is minimum of
+#          length i and therefore either the element of length ans[i+1], or ans[i+2],
+#          and so on is same as ans[i]. So we fill rest of the entries using below loop.
 #          for i in range(n-1, 0, -1):
 #               ans[i] = max(ans[i], ans[i+1])
 #       5) print ans[1:]

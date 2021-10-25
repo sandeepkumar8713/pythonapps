@@ -1,10 +1,12 @@
-# Question : Given an array and a number k where k is smaller than size of array, we need to find the k'th smallest
-# element in the given array. It is given that all array elements are distinct.
+# Question : Given an array and a number k where k is smaller than size of array,
+# we need to find the k'th smallest element in the given array.
+# It is given that all array elements are distinct.
 #
 # Question Type : ShouldSee
-# Used : We will use a recursive function. With in it use the partition function of quicksort, since it gives
-#        back position of pivot in sorted array, use it compare with k. Same logic can be used for kth largest
-#        element by passing n-k to the above function
+# Used : We will use a recursive function. Within it use the partition function of quicksort,
+#        since it gives back position of pivot in sorted array, use it compare with k.
+#        Same logic can be used for kth largest element by passing n-k to the above function
+#        Logic :
 #        kthSmallest(arr, left, right, k):
 #        if 0 < k <= right - left + 1:
 #           pos = partition(arr, left, right)
@@ -16,7 +18,8 @@
 #               return kthSmallest(arr, pos+1, right, k - pos + left - 1)
 #        return None
 # Complexity : O(n) , worst : O(n^2)
-#              We can even use min heap, form a min heap in O(n) and extract k times : O(n + k log n)
+#              We can even use min heap, form a min heap in O(n log n) and
+#              extract k times : O(n log n + k log n)
 
 
 def partition(arr, l, r):

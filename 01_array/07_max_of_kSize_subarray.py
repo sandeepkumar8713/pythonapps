@@ -1,14 +1,16 @@
 # https://www.geeksforgeeks.org/sliding-window-maximum-maximum-of-all-subarrays-of-size-k/
-# Question : Given an array and an integer k, find the maximum for each and every contiguous sub array of size k.
-# Find maximum in every sliding window of size k in the given array.
+# Question : Given an array and an integer k, find the maximum for each and every
+# contiguous sub array of size k. Find maximum in every sliding window of size k
+# in the given array.
 #
 # Input : arr[] = {1, 2, 3, 1, 4, 5, 2, 3, 6}
 #         k = 3
 # Output : 3 3 4 5 5 5 6
 #
 # Question Type : ShouldSee
-# Used : deque, push larger element at rear after removing all smaller elements, pop the first element as result
-#        loop for i : 0 to k-1, keep popping smaller(than a[i]) element from last,
+# Used : Deque, push larger element at rear after removing all smaller elements,
+#        pop the first element as result.
+#        Loop for i : 0 to k-1, keep popping smaller(than a[i]) element from last,
 #        after that appending(indexof a[i]) in Qi.
 #        loop for i : k to n-1, print arr[Qi[0]]. keep pop element from start while Qi[0] <= i - k.
 #            keep popping smaller(than a[i]) element from last, after that append(indexof a[i]) in Qi.

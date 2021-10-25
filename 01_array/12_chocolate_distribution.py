@@ -1,10 +1,13 @@
-# Question : Given an array of n integers where each value represents number of chocolates in a packet. Each packet
-# can have variable number of chocolates. There are m students, the task is to distribute chocolate packets such that :
-# Each student gets one packet. The difference between the number of chocolates in packet with maximum chocolates
+# Question : Given an array of n integers where each value represents number of chocolates
+# in a packet. Each packet can have variable number of chocolates. There are m students,
+# the task is to distribute chocolate packets such that : Each student gets one packet.
+# The difference between the number of chocolates in packet with maximum chocolates
 # and packet with minimum chocolates given to the students is minimum.
 #
 # Question Type : Generic
-# Used : Sort the array, run a sliding window of size m and keep checking the minimum difference of each window
+# Used : Sort the array, run a sliding window of size m and keep checking the
+#        minimum difference of each window
+#        Logic :
 #        findMinDiff(arr, n, m):
 #        while i + m - 1 < n:
 #           diff = arr[i+m-1] - arr[i]

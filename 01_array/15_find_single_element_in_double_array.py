@@ -1,4 +1,5 @@
-# Question : Given a sorted array in which all elements appear twice (one after one) and one element appears only once.
+# Question : Given a sorted array in which all elements appear twice (one after one)
+# and one element appears only once.
 #
 # Question Type : ShouldSee, SimilarAdded
 # Used : Do binary search

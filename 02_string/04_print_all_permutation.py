@@ -3,12 +3,13 @@
 #
 # Question Type : Easy
 # Used : backtrack
-#        Fix a element on left, keep replacing every element on the right side and print and then backtrack.
+#        Fix a element on left, keep replacing every element on the right side and print
+#        and then backtrack.
 #        Call a recursive function permute(a, l, r) with input permute(a, 0, n - 1).
 #        If l == r : print a
 #        else: loop for i : l to r:
 #           swap a[l] and a[i]
-#           call recursive function again  permute(a, left + 1, right)
+#           call recursive function again permute(a, left + 1, right)
 #           swap a[l] and a[i]
 # Complexity : O(n!)
 

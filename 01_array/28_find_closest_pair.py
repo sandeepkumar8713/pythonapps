@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/closest-numbers-list-unsorted-integers/
-# Question : Given a list of distinct unsorted integers, find the pair of elements that have the smallest absolute
-# difference between them? If there are multiple pairs, find them all.
+# Question : Given a list of distinct unsorted integers, find the pair of elements
+# that have the smallest absolute difference between them? If there are multiple pairs,
+# find them all.
 #
 # Examples: Input : arr[] = {10, 50, 12, 100}
 # Output : (10, 12)

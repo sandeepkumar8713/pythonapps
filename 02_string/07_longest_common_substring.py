@@ -1,13 +1,17 @@
-# Question : Given two strings 'X' and 'Y', print the length of the longest common substring. If two or more
-# substrings have the same value for longest common substring, then print any one of them.
+# Question : Given two strings 'X' and 'Y', print the length of the longest common substring.
+# If two or more substrings have the same value for longest common substring, then print any
+# one of them.
+#
 # Input :  X = "GeeksforGeeks",
 #          Y = "GeeksQuiz"
 # Output : Geeks
 #
 # Question Type : Generic
-# Used : Make a 2D matrix and loop over it. This matrix will keep track of lengths of common substring.
-#        To print the substring, keep track of i,j for max length. Now traverse diagonally down
-#        from i,j till LCSuff is not 0. Here we should have a memorization table to track.
+# Used : Make a 2D matrix and loop over it. This matrix will keep track of lengths of common
+#        substring. To print the substring, keep track of i,j for max length. Now traverse
+#        diagonally down from i,j till LCSuff is not 0. Here we should have a memorization
+#        table to track.
+#        Logic :
 #        LCSubStr(X, Y, m, n):
 #        for i in range(m + 1):
 #           for j in range(n + 1):
@@ -21,7 +25,10 @@
 #                     col = j
 #               else:
 #                 LCSuff[i][j] = 0
-#        return result
+#        while LCSuff[row][col] != 0:
+#           outputstring = X[row-1] + outputstring
+#           row -= 1, col -= 1
+#       return outputstring, result
 # Complexity : O(m*n)
 
 

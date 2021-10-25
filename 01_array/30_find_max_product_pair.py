@@ -13,7 +13,8 @@
 #       b) Second maximum positive value
 #       c) Maximum negative value i.e., a negative value with maximum absolute value
 #       d) Second maximum negative value.
-#       At the end of the loop, compare the products of first two and last two and print the maximum of two products.
+#       At the end of the loop, compare the products of first two and last two and
+#       print the maximum of two products.
 # Complexity : O(n)
 
 import sys

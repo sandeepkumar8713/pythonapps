@@ -2,8 +2,8 @@
 # http://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/
 # Question : Given an infinite stream of integers, find the k'th largest element at any point of time.
 # Similar : https://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/
-# Write an efficient program for printing k largest elements in an array. Elements in array can be in any order.
-# (Here answer will be whole min heap of size k.)
+# Write an efficient program for printing k largest elements in an array.
+# Elements in array can be in any order. (Here answer will be whole min heap of size k.)
 #
 # stream[] = {10, 20, 11, 70, 50, 40, 100, 5, ...}
 # k = 3
@@ -11,8 +11,9 @@
 #
 # Question Type : Asked
 # Used : For first k elements make a min heap
-#        Now loop through the remaining elements, if x if greater than top of heap replace and heapify
-#        for each iteration top of the heap is kth largest element till now
+#        Now loop through the remaining elements, if x if greater than top of heap
+#        replace and heapify.
+#        for each iteration top of the heap is kth largest element till now.
 # Complexity : build heap = O(k) , heapify = O(log k), search and replace = O( n log k)
 #              total = O( k log k + n log k)
 

@@ -1,15 +1,16 @@
 # https://www.geeksforgeeks.org/replace-every-element-with-the-greatest-on-right-side/
-# Question : Write a program to print all the LEADERS in the array. An element is leader if it is greater than
-# all the elements to its right side. The rightmost element is always a leader.
-# Follow up Given an array of integers, replace every element with the next greatest element (greatest element
-# on the right side) in the array. Since there is no element next to the last element, replace it with -1.
-# For example, if the array is {16, 17, 4, 3, 5, 2}, then it should be modified to {17, 5, 5, 5, 2, -1}.
+# Question : Write a program to print all the LEADERS in the array. An element is leader if it
+# is greater than all the elements to its right side. The rightmost element is always a leader.
+# Follow up Given an array of integers, replace every element with the next greatest element
+# (greatest element on the right side) in the array. Since there is no element next to the last
+# element, replace it with -1. For example, if the array is {16, 17, 4, 3, 5, 2}, then it
+# should be modified to {17, 5, 5, 5, 2, -1}.
 #
 # Question Type : ShouldSee
-# Used : Scan all the elements from right to left in array and keep track of maximum till now. When maximum changes
-#        it's value, print it.
-#        For second question, loop over the inpArr from right side. While doing so track of max value found yet.
-#        Keep replacing each element with max value found yet.
+# Used : Scan all the elements from right to left in array and keep track of maximum till now.
+#        When maximum changes update it's value and print it.
+#        For second question, loop over the inpArr from right side. While doing so keep track
+#        of max value found yet. Keep replacing each element with max value found yet.
 # Complexity : O(n)
 
 

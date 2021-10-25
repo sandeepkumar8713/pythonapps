@@ -1,7 +1,8 @@
 # https://www.geeksforgeeks.org/find-minimum-number-of-merge-operations-to-make-an-array-palindrome/
-# Question : Given an array of positive integers. We need to make the given array a 'Palindrome'. Only allowed operation
-# on array is merge. Merging two adjacent elements means replacing them with their sum. The task is to find minimum
-# number of merge operations required to make given array a 'Palindrome'.
+# Question : Given an array of positive integers. We need to make the given array a 'Palindrome'.
+# Only allowed operation on array is merge. Merging two adjacent elements means replacing them
+# with their sum. The task is to find minimum number of merge operations required to make given
+# array a 'Palindrome'.
 #
 # Input : arr[] = {1, 4, 5, 1}
 # Output : 1
@@ -9,12 +10,16 @@
 #
 # Question Type : ShouldSee
 # Used : Set mergeCount = 0. Take 2 pointers left = 0 and right = n - 1.
+#        Logic :
 #        findMinOps(arr, n):
 #        Loop while left < right:
 #           if arr[left] == arr[right] : increment left and decrement right by 1
 #           if left is bigger than right:
-#               decrement right by 1, do merge arr[right] += arr[right + 1] and mergeCount++
-#           else : increment left by 1. do merge arr[left] += arr[left - 1] and mergeCount++
+#               decrement right by 1
+#               do merge arr[right] += arr[right + 1], mergeCount++
+#           else :
+#               increment left by 1
+#               do merge arr[left] += arr[left - 1], and mergeCount++
 #        return mergeCount
 # Complexity : O(n)
 

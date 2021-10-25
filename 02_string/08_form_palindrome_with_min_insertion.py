@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-dp-28/
-# Question : Given a string, find the minimum number of characters to be inserted to convert it to palindrome.
-# Note that insertion can be in start, middle or end.
+# Question : Given a string, find the minimum number of characters to be inserted to
+# convert it to palindrome. Note that insertion can be in start, middle or end.
 # ab: Number of insertions required is 1. bab
 # aa: Number of insertions required is 0. aa
 # abcd: Number of insertions required is 3. dcbabcd
@@ -8,9 +8,9 @@
 # abcde: Number of insertions required is 4. edcbabcde
 #
 # Question Type : Generic
-# Used : If we find out LCS of string and its reverse, we know how many maximum characters can form
-#        a palindrome. We need to insert remaining characters. Find lcs length of string and its reverse
-#        and subtract it from length of string.
+# Used : If we find out LCS of string and its reverse, we know how many maximum characters
+#        can form a palindrome. We need to insert remaining characters. Find lcs length of
+#        string and its reverse and subtract it from length of string.
 #        lcs(X, Y, m, n):
 #        if m == 0 or n == 0:
 #           return 0

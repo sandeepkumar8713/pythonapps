@@ -7,9 +7,11 @@
 #
 # Question Type : Easy
 # Used : Make cumulative sum for given input from length n+1.
-#           such as : cumulativeSumArray[i] = cumulativeSumArray[i-1] + arr[i-1]
-#        To get the required sum do : return cumulativeSumArray[stopIndex + 1] - cumulativeSumArray[startIndex]
-#        Note that cumulativeSumArray is 1 step late, arr[i] is stored in cumulativeSumArray[i+1]
+#        such as : cumulativeSumArray[i] = cumulativeSumArray[i-1] + arr[i-1]
+#        To get the required sum do :
+#           return cumulativeSumArray[stopIndex + 1] - cumulativeSumArray[startIndex]
+#        Note that cumulativeSumArray is 1 step late,
+#        arr[i] is stored in cumulativeSumArray[i+1]
 # Complexity : Preparation : O(n) Calculation : O(1)
 
 

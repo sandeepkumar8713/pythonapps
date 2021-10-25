@@ -1,12 +1,15 @@
 # Similar : https://leetcode.com/problems/meeting-rooms-ii/
-# Question : Given arrival and departure times of all trains that reach a railway station, find the minimum number
-# of platforms required for the railway station so that no train waits.
+# Question : Given arrival and departure times of all trains that reach a railway station,
+# find the minimum number of platforms required for the railway station so that no train waits.
 #
 # Question Type : Generic
-# Used : sort the arrival and departure array
-#        now loop through them, if a new bus is arriving in i while another bus is not departed in j then,
-#        add new platform else remove one platform, and keep track of highest platform count till now
-#        Note that if there is clash i is inc(to show next arrival) else j is inc (to show last departure)
+# Used : Sort the arrival and departure array
+#        Now loop through them, if a new bus is arriving in i while another bus is not
+#        departed in j then, add new platform else remove one platform, and keep track of
+#        highest platform count till now.
+#        Note that if there is clash, i is inc (to show next arrival)
+#        else j is inc (to show last departure)
+#        Logic :
 #        findPlatform(arr, dep):
 #        platformNeeded = 1
 #        result = 1

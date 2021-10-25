@@ -5,8 +5,9 @@
 # Question Type : ShouldSee
 # Used : Check if first row and column has zero, if yes set rowHasZero and colHasZero as true.
 #        Now loop through the matrix, if you find 0, set its cell of first row and col to zero
-#        (corresponding col or row). Make 2 function nullifyRow and nullifyCol which set 0 to given row and col.
-#        Run loop over first column and row, if a cell value is 0, call nullifyRow and nullifyCol.
+#        (corresponding col or row). Make 2 function nullifyRow and nullifyCol which set 0
+#        to given row and col. Run loop over first column and row, if a cell value is 0,
+#        call nullifyRow and nullifyCol.
 #        if rowHasZero is true, nullifyRow(matrix, 0)
 #        if colHasZero is true, nullifyCol(matrix, 0)
 # Complexity : O(n^2)
@@ -63,4 +64,3 @@ if __name__ == "__main__":
     setZero(inpMat)
     for row in inpMat:
         print(row)
-

@@ -16,13 +16,14 @@
 #
 # Question Type : Generic
 # Used : Maintain a cumulative Sum Array for input array. Maintain a dict of remainders.
-#        (Keep in mind that over a cumulative sum array, if the reminder of two elements are same, then sum b/w them
-#         is divisible by k)
-#         Run a loop for i : 0 to n-1. Calculate reminder: curr_rem = cumulativeSum[i] % k
-#         Three Conditions : if currRem is 0. update maxSum.
-#                            else if currRem is not in dict. Insert in dict
-#                            if currRem is in dict. Check for above mentioned diff and update maxSum if required
-#         return maxSum / k
+#        (Keep in mind that over a cumulative sum array, if the reminder of two elements
+#        are same, then sum b/w them is divisible by k)
+#        Run a loop for i : 0 to n-1. Calculate reminder: curr_rem = cumulativeSum[i] % k
+#        Three Conditions :
+#        1. if currRem is 0. update maxSum.
+#        2. else if currRem is not in dict. Insert in dict.
+#        3. if currRem is in dict. Check for mentioned diff and update maxSum if required.
+#        return maxSum / k
 # Complexity : O(n)
 
 

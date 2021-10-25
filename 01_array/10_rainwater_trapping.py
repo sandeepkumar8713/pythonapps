@@ -12,7 +12,8 @@
 # |__|_|
 #
 # Question Type : ShouldSee
-# Used : Make two array of left max and right max, now loop through with min of left & right and subtract current.
+# Used : Make two array of left max and right max, now loop through with min of left &
+#        right and subtract current.
 #        def findWater(arr, n):
 #        left[0] = arr[0]
 #        for i in range(1, n):

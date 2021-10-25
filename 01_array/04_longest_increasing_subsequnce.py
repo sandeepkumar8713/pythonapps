@@ -1,17 +1,19 @@
 # https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/
-# Question : The Longest Increasing sub sequence (LIS) problem is to find the length of the longest sub sequence of a
-# given sequence such that all elements of the sub sequence are sorted in increasing order. For example, the length
+# Question : The Longest Increasing sub sequence (LIS) problem is to find the length of the
+# longest sub sequence of a given sequence such that all elements of the sub sequence are
+# sorted in increasing order. For example, the length
 # of LIS for {10, 22, 9, 33, 21, 50, 41, 60, 80} is 6 and LIS is {10, 22, 33, 50, 60, 80}.
 #
 # Question Type : Generic
-# Used : Make a array called tail filled with zeros. Note that we are dealing with end elements only. We need not to
-#        maintain all the lists. We can store the end elements in an array.
-#        Now through the given array.  Also, ensure we have maintained the condition, "end element of smaller list is
-#        smaller than end elements of larger lists"
+# Used : Make a array called tail filled with zeros. Note that we are dealing with end
+#        elements only. We need not to maintain all the lists. We can store the end elements
+#        in an array. Now loop through the given array. Also, ensure we have maintained the
+#        condition, "end element of smaller list is smaller than end elements of larger lists"
 #        If arr[i] is smaller than tail[0], replace it with arr[i] and form a new LIS
 #        If arr[i] is larger than tail[length-1], then extend the tail by appending with arr[i]
 #        Else arr[i] would be somewhere in between the tail elements. Do binary search for it.
 #        Place it at its correct position, while discarding the right remaining elements of the tail.
+#        Logic :
 #        LIS(arr):
 #        tail[0] = arr[0]
 #        for i in range(1, len(arr)):

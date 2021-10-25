@@ -1,0 +1,1 @@
+AP Formula : Sn = n/2(2a + (n-1)d)

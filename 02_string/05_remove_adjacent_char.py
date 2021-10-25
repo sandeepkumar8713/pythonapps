@@ -1,31 +1,35 @@
 # Similar : https://www.geeksforgeeks.org/reduce-the-string-by-removing-k-consecutive-identical-characters/
-# Question : Given a string, recursively remove adjacent duplicate characters from string. The output string should not
-# have any adjacent duplicates. See following examples.
+# Question : Given a string, recursively remove adjacent duplicate characters from string.
+# The output string should not have any adjacent duplicates. See following examples.
 #
 # Input:  azxxzy
 # Output: ay
 #
 # Question Type : ShouldSee
-# Used : 1) Start from the leftmost character and remove duplicates at left corner if there are any.
-#        2) The first character must be different from its adjacent now. Recur for string of length n-1
-#           (string without first character).
-#        3) Let the string obtained after reducing right substring of length n-1 be rem_str. There are three possible
-#           cases
-#               ... .a) If first character of rem_str matches with the first character of original string, remove the
-#                    first character from rem_str.
-#               ... .b) Else if the last removed character in recursive calls is same as the first character of the
-#                    original string. Ignore the first character of original string and return rem_str.
-#               ... .c) Else, append the first character of the original string at the beginning of rem_str.
+# Used : 1) Start from the leftmost character and remove duplicates at left corner if
+#           there are any.
+#        2) The first character must be different from its adjacent now. Recur for string
+#           of length n-1 (string without first character).
+#        3) Let the string obtained after reducing right substring of length n-1 be
+#           rem_str. There are three possible cases
+#           a) If first character of rem_str matches with the first character of original
+#              string, remove the first character from rem_str.
+#           b) Else if the last removed character in recursive calls is same as the first
+#              character of the original string. Ignore the first character of original string
+#              and return rem_str.
+#           c) Else, append the first character of the original string at the beginning of
+#              rem_str.
 #        4) Return rem_str.
-#        Logic : def removeUtil(string, last_removed):
+#        Logic :
+#        def removeUtil(string, last_removed):
 #        if len(string) == 0 or len(string) == 1:
 #           return string
 #        if string[0] == string[1]:
 #           last_removed = ord(string[0])
-#        while len(string) > 1 and string[0] == string[1]:
+#           while len(string) > 1 and string[0] == string[1]:
 #             string = string[1:]
-#        string = string[1:]
-#        return removeUtil(string, last_removed)
+#           string = string[1:]
+#           return removeUtil(string, last_removed)
 #        rem_str = removeUtil(string[1:], last_removed)
 #        if len(rem_str) != 0 and rem_str[0] == string[0]:
 #           last_removed = ord(string[0])
@@ -33,6 +37,7 @@
 #        if len(rem_str) == 0 and last_removed == ord(string[0]):
 #           return rem_str
 #        return [string[0]] + rem_str
+#
 #        def remove(string):
 #        last_removed = 0
 #        return toString(removeUtil(toList(string), last_removed))
