@@ -1,25 +1,30 @@
-# Question : Given two strings, A and B, of equal length, find whether it is possible to cut both strings at a common
-# point such that the first part of A and the second part of B form a palindrome.
+# Question : Given two strings, A and B, of equal length, find whether it is possible to cut
+# both strings at a common point such that the first part of A and the second part of B form
+# a palindrome.
 #
-# Extension1. How would you change your solution if the strings could be cut at any point (not just a common point)?
-# Extension2. Multiple cuts in the strings (substrings to form a palindrome)? Form a palindrome using a substring
-# from both strings.
+# Extension1. How would you change your solution if the strings could be cut at any
+# point (not just a common point)?
+# Extension2. Multiple cuts in the strings (substrings to form a palindrome)? Form a
+# palindrome using a substring from both strings.
 #
 # Question Type : ShouldSee
-# Used : 1st Question : Run a loop while characters match : Start from left of A and right of B.
-#                       We have choose non-matching sub string either from A or B.
-#                       Now check if either of the strings are palindrome.
-#                       makeStrA = strA[:l] + strA[l:(n - l)] + strB[(r+1):]
-#                       makeStrB = strA[:l] + strB[l:(n - l)] + strB[(r + 1):]
-#       2nd Question : Run a loop similar to above.
-#                      In case of substring (for both A and B), check if it is palindrome, if not remove characters
-#                      from one end and repeat, until 1 character is left
-#                      return longer of the two string
-#                      makeStrA = strA[:l] + middleA + strB[(r+1):]
-#                      makeStrB = strA[:l] + middleB + strB[(r + 1):]
-#       3rd Question : Reverse the string B, Find longest common sub string between A and revB.
-#                      Our palindrome is : commonString + middleChar + commonString[::-1]
-#                      Where midChar is next char from A or previous char from B or ''
+# Used : 1st Question :
+#        Run a loop while characters match : Start from left of A and right of B.
+#        We have choose non-matching sub string either from A or B.
+#        Now check if either of the strings are palindrome.
+#        makeStrA = strA[:l] + strA[l:(n - l)] + strB[(r+1):]
+#        makeStrB = strA[:l] + strB[l:(n - l)] + strB[(r + 1):]
+#        2nd Question :
+#        Run a loop similar to above.
+#        In case of substring (for both A and B), check if it is palindrome, if not remove characters
+#        from one end and repeat, until 1 character is left
+#        return longer of the two string
+#        makeStrA = strA[:l] + middleA + strB[(r+1):]
+#        makeStrB = strA[:l] + middleB + strB[(r + 1):]
+#        3rd Question :
+#        Reverse the string B, Find longest common sub string between A and revB.
+#        Our palindrome is : commonString + middleChar + commonString[::-1]
+#        Where midChar is next char from A or previous char from B or ''
 # Complexity : 1st Question : O(n)
 #              2nd Question : O(n^2)
 #              3rd Question : O(n^2)

@@ -1,7 +1,7 @@
 # https://www.geeksforgeeks.org/find-one-extra-character-string/
-# Question : Given two strings which are of lengths n and n+1. The second string contains all the character
-# of the first string, but there is one extra character. Your task to find the extra character in the second
-# string.
+# Question : Given two strings which are of lengths n and n+1. The second string contains
+# all the character of the first string, but there is one extra character. Your task to
+# find the extra character in the second string.
 #
 # Question Type : Easy
 # Used : Add the character of both strings. Their difference will give ascii of extra character.

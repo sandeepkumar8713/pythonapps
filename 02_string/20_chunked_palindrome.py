@@ -1,15 +1,16 @@
 # https://www.geeksforgeeks.org/longest-possible-chunked-palindrome/
-# Question : Given a string, the task is to return the length of its longest possible chuncked palindrome. It means
-# a palindrome formed by substring in the case when it is not formed by characters of the string. For better
-# understanding look at the example.
+# Question : Given a string, the task is to return the length of its longest possible
+# chuncked palindrome. It means a palindrome formed by substring in the case when it is
+# not formed by characters of the string. For better understanding look at the example.
 #
 # Input : ghiabcdefhelloadamhelloabcdefghi
 # Output : 7
 # (ghi)(abcdef)(hello)(adam)(hello)(abcdef)(ghi)
 #
 # Question Type : ShouldSee
-# Used : The idea is to have two pointer on left and right of the given string. Check if left and right
-#        substring are of same length.. If yes, call recursive function over remaining substring.
+# Used : The idea is to have two pointer on left and right of the given string. Check
+#        if left and right substring are of same length.. If yes, call recursive
+#        function over remaining substring.
 #        LPCUtil(currStr, chunkCount, processedLength, originalLen):
 #        if len(currStr) == 0: return chunkCount
 #        if len(currStr) == 1:

@@ -7,10 +7,11 @@
 # The given string is 3 times repetition of "abc"
 #
 # Question Type : Generic
-# Used : 1) Find length of the longest proper prefix of 'str' which is also a suffix. Let the length of
-#           the longest proper prefix suffix be 'len'. This can be computed in O(n) time using
-#           pre-processing step of KMP string matching algorithm.
-#        2) If value of 'n - len' divides n (or 'n % (n-len)' is 0), then return true, else return false.
+# Used : 1) Find length of the longest proper prefix of 'str' which is also a suffix.
+#           Let the length of the longest proper prefix suffix be 'len'. This can be
+#           computed in O(n) time using pre-processing step of KMP string matching algorithm.
+#        2) If value of 'n - len' divides n (or 'n % (n-len)' is 0), then return true,
+#           else return false.
 # Complexity : O(n)
 
 

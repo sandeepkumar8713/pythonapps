@@ -7,8 +7,8 @@
 # Output : True
 #
 # Question Type : ShouldSee
-# Used : Here we have to make sure that frequency of each character is even. At most only one
-#        character can have odd frequency. Use a bit vector and keep flipping its bits.
+# Used : Here we have to make sure that frequency of each character is even. At most only
+#        one character can have odd frequency. Use a bit vector and keep flipping its bits.
 #        At end bit vector must be 0 as bits will be flipped even number of times.
 #        For 1 odd use this logic : (bitVector & (bitVector - 1)) == 0
 # Complexity : O(n)

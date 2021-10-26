@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/minimum-number-of-times-a-has-to-be-repeated-such-that-b-is-a-substring-of-it/
-# Question : Given two strings A and B. The task is to find the minimum number of times A has to be repeated such
-# that B is a substring of it. If no such solution exists print -1.
+# Question : Given two strings A and B. The task is to find the minimum number of times A
+# has to be repeated such that B is a substring of it. If no such solution exists print -1.
 #
 # Examples: Input : A = "abcd", B = "cdabcdab"
 # Output : 3

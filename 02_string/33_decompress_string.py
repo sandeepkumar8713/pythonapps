@@ -9,11 +9,12 @@
 # Question Type : Generic
 # Used : The idea is to use two stacks, one for integers and another for characters.
 #        Now, traverse the string,
-#           Whenever we encounter any number, push it into the integer stack and in case of any alphabet (a to z)
-#           or open bracket ('['), push it onto the character stack.
-#           Whenever any close bracket (']') is encounter pop the character from the character stack until open
-#           bracket ('[') is not found in the character stack. Also, pop the top element from the integer stack,
-#           say n. Now make a string repeating the popped character n number of time. Now, push all character of
+#           Whenever we encounter any number, push it into the integer stack and in case
+#           of any alphabet (a to z) or open bracket ('['), push it onto the character stack.
+#           Whenever any close bracket (']') is encountered pop the character from the
+#           character stack until open bracket ('[') is not found in the character stack.
+#           Also, pop the top element from the integer stack, say n. Now make a string
+#           repeating the popped character n number of time. Now, push all character of
 #           the string in the stack.
 #        Now pop all the elements from string stack. This is the answer.
 # Complexity : O(2 * n * m) where n is number of bracket count and m is number of char count
@@ -86,6 +87,10 @@ def decode(inpStr):
 
 if __name__ == '__main__':
     inpStr = "3[b2[ca]]"
+    print(decode(inpStr))
+
     inpStr = "2[abc]3[cd]ef"
-    # inpStr = "1[1[1[1[1[1[1[1[1[1[1[1[1[1[1[1[1[1[1[1[xx]]]]]]]]]]]]]]]]]]]]"
+    print(decode(inpStr))
+
+    inpStr = "1[1[1[1[1[1[1[1[1[1[1[1[1[1[1[1[1[1[1[1[xx]]]]]]]]]]]]]]]]]]]]"
     print(decode(inpStr))
