@@ -1,13 +1,19 @@
 # http://www.geeksforgeeks.org/clone-linked-list-next-arbit-pointer-set-2/
-# Question : You are given a Double Link List with one pointer of each node pointing to the next node just like in a
-# single link list. The second pointer however CAN point to any node in the list and not just the previous node.
+# Question : You are given a Double Link List with one pointer of each node pointing
+# to the next node just like in a single link list. The second pointer however CAN point
+# to any node in the list and not just the previous node.
 # Now write a program in O(n) time to duplicate(clone) this list.
 #
 # Question Type : Asked
 # Used : Traverse the original linked list and make a copy of nodes.
-#        Make a hash map of key value pair with original linked list node and copied linked list node.
-#        Traverse the original linked list again and using the hash map adjust the next and random
-#           reference of cloned linked list nodes
+#        Make a hash map of key value pair with original linked list node and copied
+#        linked list node. Traverse the original linked list again and using the hash map
+#        adjust the next and random reference of cloned linked list nodes.
+#        Logic :
+#        while origCurrNode:
+#           newCurrNode = Node(origCurrNode.data)
+#           myMap[origCurrNode] = newCurrNode
+#           origCurrNode = origCurrNode.next
 #        Do this while looping second time over the original linked list.
 #           myMap[origCurrNode].next = myMap[origCurrNode.next]
 #           myMap[origCurrNode].random = myMap[origCurrNode.random]

@@ -1,15 +1,19 @@
-# Question : Suppose there is a circle. There are n petrol pumps on that circle. You are given two sets of data.
+# Question : Suppose there is a circle. There are n petrol pumps on that circle. You are
+# given two sets of data.
 # 1. The amount of petrol that every petrol pump has.
 # 2. Distance from that petrol pump to the next petrol pump.
-# Calculate the first point from where a truck will be able to complete the circle (The truck will stop at each petrol
-# pump and it has infinite capacity). Expected time complexity is O(n). Assume for 1 litre petrol, the truck can go 1
+# Calculate the first point from where a truck will be able to complete the circle
+# (The truck will stop at each petrol pump and it has infinite capacity).
+# Expected time complexity is O(n). Assume for 1 litre petrol, the truck can go 1
 # unit of distance.
 #
 # Question Type : Generic
-# Used : We can use a Queue to store the current tour. We first enqueue first petrol pump to the queue,
-#        we keep enqueueing petrol pumps till we either complete the tour, or current amount of petrol
-#        becomes positive. If the amount becomes negative, then we keep de-queueing petrol pumps till
-#        the current amount becomes positive(increase start index also) or queue becomes empty.
+# Used : We can use a Queue to store the current tour. We first enqueue first petrol pump
+#        to the queue, we keep enqueueing petrol pumps till we either complete the tour,
+#        or current amount of petrol becomes positive. If the amount becomes negative,
+#        then we keep de-queueing petrol pumps till the current amount becomes positive
+#        (increase start index also) or queue becomes empty.
+#        Logic :
 #        printTour(arr):
 #        start = 0, end = 1
 #        curr_petrol = arr[start].petrol - arr[start].distance
@@ -22,8 +26,9 @@
 #           curr_petrol += arr[end].petrol - arr[end].distance
 #           end = (end + 1) % n
 #        return start
-# Complexity : O(n)  If we consider the items between start and end as part of a circular queue, we can observe that
-# every item is enqueued at most two times to the queue.
+# Complexity : O(n)  If we consider the items between start and end as part of a
+# circular queue, we can observe that every item is enqueued at most two times to
+# the queue.
 
 
 class PetrolPump:

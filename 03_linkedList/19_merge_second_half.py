@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/rearrange-a-given-linked-list-in-place/
-# Question : Given a singly linked list L0 -> L1 -> ... -> Ln-1 -> Ln. Rearrange the nodes in the list so that the new
-# formed list is : L0 -> Ln -> L1 -> Ln-1 -> L2 -> Ln-2 ...
+# Question : Given a singly linked list L0 -> L1 -> ... -> Ln-1 -> Ln. Rearrange the
+# nodes in the list so that the new formed list is : L0 -> Ln -> L1 -> Ln-1 -> L2 -> Ln-2 ...
 #
 # Input:  1 -> 2 -> 3 -> 4
 # Output: 1 -> 4 -> 2 -> 3
@@ -10,8 +10,10 @@
 #        Reverse the second half.
 #        Do alternate merge of first and second halves.
 #        mergeSecondHalf():
-#        Calculate halfSize(n/2). If n is odd: midPoint = halfSize + 1. else : midPoint = halfSize.
-#        Call divideLink(first,midpoint) function which would set null at end of first and return second.
+#        Calculate halfSize(n/2).
+#        If n is odd: midPoint = halfSize + 1. else : midPoint = halfSize.
+#        Call divideLink(first,midpoint) function which would set null at end of first
+#        and return second.
 #        Now reverse the second half : midPointer = reverse(midPointer, halfSize)
 #        call recursive function merge. self.head = merge(head, midPointer)
 #        Merge():

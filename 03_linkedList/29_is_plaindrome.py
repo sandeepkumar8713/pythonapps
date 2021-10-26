@@ -7,9 +7,20 @@
 # Used : Recursion. Call a recursive function isPalindrome(node,len) which returns object
 #        Result(node, isEqual). isEqual is True if next node to second last node is palindrome
 #        and node is the last node.
-#        This function calls again isPalindrome(node.next, listSize-2). If subList is palindrome
-#        and first and last node are same: return Result
-#        Note : handle edge case like : listSize = 0,1 or node = None
+#        This function calls again isPalindrome(node.next, listSize-2). If subList is
+#        palindrome and first and last node are same: return Result
+#        Logic :
+#        def isPalindrome(node, listSize):
+#        if node is None or listSize <= 0:
+#           return Result(node, True)
+#        elif listSize is 1:
+#           return Result(node.next, True)
+#        nextResult = isPalindrome(node.next, listSize-2)
+#        if not nextResult.isEqual or nextResult.node is None:
+#           return nextResult
+#        nextResult.isEqual = (nextResult.node.data == node.data)
+#        nextResult.node = nextResult.node.next
+#        return nextResult
 # Complexity : O(n)
 
 

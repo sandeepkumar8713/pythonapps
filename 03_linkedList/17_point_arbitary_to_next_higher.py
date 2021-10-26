@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/point-to-next-higher-value-node-in-a-linked-list-with-an-arbitrary-pointer/
-# Question : Given singly linked list with every node having an additional "arbitrary" pointer that currently points
-# to NULL. Need to make the "arbitrary" pointer point to the next higher value node.
+# Question : Given singly linked list with every node having an additional "arbitrary" pointer
+# that currently points to NULL. Need to make the "arbitrary" pointer point to the next higher value node.
 #
 # Question Type : Asked
 # Used : Traverse input list and copy next pointer to arbitrary pointer for every node.

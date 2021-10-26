@@ -1,11 +1,13 @@
 # CTCI : Q10_01_Sorted_Merge
 # https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/
-# Question : Write a SortedMerge() function that takes two lists, each of which is sorted in increasing order,
-# and merges the two together into one list which is in increasing order. SortedMerge() should return the new list.
-# The new list should be made by splicing together the nodes of the first two lists.
+# Question : Write a SortedMerge() function that takes two lists, each of which is sorted
+# in increasing order, and merges the two together into one list which is in increasing order.
+# SortedMerge() should return the new list. The new list should be made by splicing together
+# the nodes of the first two lists.
 #
-# For example if the first linked list a is 5->10->15 and the other linked list b is 2->3->20, then SortedMerge() should
-# return a pointer to the head node of the merged list 2->3->5->10->15->20.
+# For example if the first linked list a is 5->10->15 and the other linked list b is
+# 2->3->20, then SortedMerge() should return a pointer to the head node of the merged
+# list 2->3->5->10->15->20.
 #
 # Question Type : Generic
 # Used : Take the two lists, compare the data of each, return the lesser node and recursively

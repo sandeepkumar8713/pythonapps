@@ -4,9 +4,9 @@
 # We are not allowed to use any extra space and expected time complexity is O(n).
 #
 # Question Type : OddOne
-# Used : We need to convert single linked list to double linked list. Loop through the linkedList and
-#        replace next value with XOR(prev, next). Once this is done take two pointer at left and right
-#        of linkedList and find pair sum.
+# Used : We need to convert single linked list to double linked list. Loop through the
+#        linkedList and replace next value with XOR(prev, next). Once this is done
+#        take two pointer at left and right of linkedList and find pair sum.
 # Complexity : O(n)
 
 memoryMap = {}

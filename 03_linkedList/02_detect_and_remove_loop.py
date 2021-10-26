@@ -1,7 +1,7 @@
-# Question : Write a function detectAndRemoveLoop() that checks whether a given Linked List contains loop and if loop
-# is present then removes the loop and returns true. And if the list doesn't contain loop then returns false.
-# Below diagram shows a linked list with a loop. detectAndRemoveLoop() must change the below list to
-# 1->2->3->4->5->NULL.
+# Question : Write a function detectAndRemoveLoop() that checks whether a given Linked List
+# contains loop and if loop is present then removes the loop and returns true. And if the
+# list doesn't contain loop then returns false. Below diagram shows a linked list with a loop.
+# detectAndRemoveLoop() must change the below list to 1->2->3->4->5->NULL.
 # Similar Question : Given a circular linked list, implement an algorithm that returns the node at the
 # beginning of the loop(CTCI : Q2_08_Loop_Detection).
 #

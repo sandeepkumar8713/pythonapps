@@ -5,10 +5,10 @@
 #
 # Question Type : Easy
 # Used : We already know that merging of two linked lists can be done in O(n) time and
-#       O(1) space (For arrays O(n)space is required). The idea is to pair up K lists and merge
-#       each pair in linear time using O(1) space. After first cycle, K/2 lists are left each of
-#       size 2*N. After second cycle, K/4 lists are left each of size 4*N and so on. We repeat the
-#       procedure until we have only one list left.
+#        O(1) space (For arrays O(n)space is required). The idea is to pair up K lists
+#        and merge each pair in linear time using O(1) space. After first cycle, K/2
+#        lists are left each of size 2*N. After second cycle, K/4 lists are left each
+#        of size 4*N and so on. We repeat the procedure until we have only one list left.
 # Complexity : O(k * n * log K)
 
 

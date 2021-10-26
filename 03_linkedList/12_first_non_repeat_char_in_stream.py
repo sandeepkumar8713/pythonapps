@@ -1,5 +1,5 @@
-# Question : Given a stream of characters, find the first non-repeating character from stream. You need to
-# tell the first non-repeating character in O(1) time at any moment.
+# Question : Given a stream of characters, find the first non-repeating character from stream.
+# You need to tell the first non-repeating character in O(1) time at any moment.
 #
 # Question Type : Generic
 # Used : The DLL contains all non-repeating characters in order, i.e., the head of DLL contains
@@ -7,6 +7,7 @@
 #        We also maintain two arrays: one array is to maintain characters that are already visited
 #        two or more times, we call it repeated[], the other array is array of pointers to linked list
 #        nodes, we call it inDLL[].
+#        Logic :
 #        findFirstNonRepeating(stream):
 #        inDLL = [] * MAX_CHAR
 #        repeated = [False] * MAX_CHAR
@@ -24,8 +25,9 @@
 #           else:
 #               print("no non-repeating character",end=" ")
 #               print(str(-1))
-# Complexity : O(1) Note that appending a new node to DLL is O(1) operation if we maintain tail pointer. Removing a
-#              node from DLL is also O(1). So both operations, addition of new character and finding first
+# Complexity : O(1) Note that appending a new node to DLL is O(1) operation if we
+#              maintain tail pointer. Removing a node from DLL is also O(1).
+#              So both operations, addition of new character and finding first
 #              non-repeating character take O(1) time.
 
 

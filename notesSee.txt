@@ -6,4 +6,9 @@
 02_string/19_msd_radix_sort.py
 02_string/30_find_extra_character.py
 02_string/32_same_char_substring_count.py
+03_linkedList/06_subtract_two_linked_list.py
+03_linkedList/09_find_min_element_from_stack.py
+03_linkedList/12_first_non_repeat_char_in_stream.py
+03_linkedList/25_sort_already_sorted.py
+03_linkedList/28_partition_into_three.py
 

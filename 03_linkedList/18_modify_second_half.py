@@ -1,5 +1,6 @@
-# Question :  Given a Singly Linked list, Update the second half of the list such that nth element becomes
-# sum(1st + nth) element, (n - 1)st element becomes sum(2nd + n - 1st) element and so on.
+# Question : Given a Singly Linked list, Update the second half of the list such
+# that nth element becomes sum(1st + nth) element, (n - 1)st element becomes
+# sum(2nd + n - 1st) element and so on.
 #
 # Eg: 2->3->4->5->7 = > 2->3->(4 + 4)->(5 + 3)->(7 + 2)
 # Eg: 2->3->6->10->5->7  = > 2->3->6->(10 + 6)->(5 + 3)->(7 + 2)

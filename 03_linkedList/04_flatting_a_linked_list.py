@@ -1,4 +1,5 @@
-# Question : Given a linked list where every node represents a linked list and contains two pointers of its type:
+# Question : Given a linked list where every node represents a linked list and contains
+# two pointers of its type:
 # (i) Pointer to next node in the main list (we call it 'right' pointer in below code)
 # (ii) Pointer to a linked list where this node is head ('e call it 'down' pointer in below code).
 # All linked lists are sorted.

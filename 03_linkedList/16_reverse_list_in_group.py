@@ -1,5 +1,6 @@
 # https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/
-# Question : Given a linked list, write a function to reverse every k nodes (where k is an input to the function)
+# Question : Given a linked list, write a function to reverse every k nodes
+# (where k is an input to the function)
 #
 # Question Type : Asked
 # Used : Call a recursive function reverse(head,k).

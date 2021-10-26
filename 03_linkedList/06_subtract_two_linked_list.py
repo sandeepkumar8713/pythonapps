@@ -1,11 +1,15 @@
-# Question : Given two numbers represented by two linked lists, write a function that returns sum list. The sum list is
-# linked list representation of addition of two input numbers. It is not allowed to modify the lists. Also, not
-# allowed to use explicit extra space.
+# Question : Given two numbers represented by two linked lists, write a function that
+# returns sum list. The sum list is linked list representation of addition of two input
+# numbers. It is not allowed to modify the lists. Also, not allowed to use explicit
+# extra space.
 #
 # Question Type : Generic
-# Used : If the size of two linked list is same then it is easy. Recur till the end and come back subtracting.
-#        If the size is different, move the current pointer of the larger list to the same size subtract like above.
-#        Now do recur from head to current for larger list till ens and come back subtracting borrow.
+# Used : If the size of two linked list is same then it is easy. Recur till the end and
+#        come back subtracting.
+#        If the size is different, move the current pointer of the larger list to the same
+#        size subtract like above.
+#        Now do recur from head to current for larger list till ens and come back
+#        subtracting borrow.
 # Complexity : O(n)
 
 
