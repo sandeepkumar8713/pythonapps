@@ -5,9 +5,11 @@
 #
 # Question Type : ShouldSee
 # Used : Find the string with minimum length
-#        Do binary search over it. First check if left to mid is present in all the strings in array.
+#        Do binary search over it. First check if left to mid is present in all the
+#        strings in array.
 #        If yes and add to prefix. If not, then make right as mid -1
-#        Once left half is matched, then it move to right half with left = mid + 1, and repeat the above process
+#        Once left half is matched, then it move to right half with left = mid + 1,
+#        and repeat the above process
 # Complexity : O(NM log M) where M is length of shortest string
 
 

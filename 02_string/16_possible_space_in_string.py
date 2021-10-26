@@ -9,15 +9,16 @@
 #         A B C
 #
 # Question Type : Easy
-# Used : Given a inpStr of length n, let its index be i. Make a list buff of length 2n and index j.
+# Used : Given a inpStr of length n, let its index be i.
+#        Make a list buff of length 2n and index j.
 #        Set first element of buff : buff[0] = inpStr[0]. Call the recursive function
 #        printPatternUtil(inpStr, buff, i, j, n) with i = 1 and j = 2.
 #        In recursive function if i == n: set buff[j] = '\0', print buff and return
 #           Here we have two option either to place space or not, so take both the routes.
 #           buff[j] = inpStr[i], printPatternUtil(inpStr, buff, i + 1, j + 1, n)
 #           buff[j] = ' ', buff[j + 1] = inpStr[i], printPatternUtil(inpStr, buff, i + 1, j + 2, n)
-# Complexity : Since number of Gaps are n-1, there are total 2^(n-1) patters each having length ranging from n to 2n-1.
-#              Thus overall complexity would be O(n*(2^n)).
+# Complexity : Since number of Gaps are n-1, there are total 2^(n-1) patters each having length
+#              ranging from n to 2n-1. Thus overall complexity would be O(n*(2^n)).
 
 
 def toString(List):

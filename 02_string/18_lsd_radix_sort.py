@@ -1,10 +1,12 @@
 # https://en.wikipedia.org/wiki/Radix_sort
-# Question : LSD (Least Significant Digit) radix sorts typically use the following sorting order: short keys come
-# before longer keys, and then keys of the same length are sorted lexicographically. This coincides with the normal
-# order of integer representations, such as the sequence 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+# Question : LSD (Least Significant Digit) radix sorts typically use the following sorting order:
+# short keys come before longer keys, and then keys of the same length are sorted lexicographically.
+# This coincides with the normal order of integer representations, such as the sequence
+# 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
 #
 # Question Type : Generic
-# Used : Find the max value in the input array. Run a loop while (10 ** index <= maxval). Call function
+# Used : Find the max value in the input array.
+#        Run a loop while (10 ** index <= maxval). Call function
 #        distributeBasedOnDigit(array, base, index):
 #        Make a list of buckets of size base.
 #        Loop over input array and distribute them in buckets.

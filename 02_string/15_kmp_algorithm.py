@@ -1,7 +1,8 @@
 # https://www.geeksforgeeks.org/searching-for-patterns-set-2-kmp-algorithm/
 # https://en.wikipedia.org/wiki/Knuth-Morris-Pratt_algorithm
-# Question : Given a text txt[0..n-1] and a pattern pat[0..m-1], write a function search(char pat[], char txt[])
-# that prints all occurrences of pat[] in txt[]. You may assume that n > m.
+# Question : Given a text txt[0..n-1] and a pattern pat[0..m-1], write a function
+# search(char pat[], char txt[]) that prints all occurrences of pat[] in txt[].
+# You may assume that n > m.
 #
 # Input:  txt[] = "THIS IS A TEST TEXT"
 #         pat[] = "TEST"
@@ -10,14 +11,16 @@
 # Explanation : In the next step, we compare next window of txt with pat.
 # txt = "A|AAAA|BAAABA"
 # pat =  "AAAA" [Pattern shifted one position]
-# This is where KMP does optimization over Naive. In this second window, we only compare fourth A of pattern with
-# fourth character of current window of text to decide whether current window matches or not. Since we know
-# first three characters will anyway match, we skipped matching first three characters.
+# This is where KMP does optimization over Naive. In this second window, we only
+# compare fourth A of pattern with fourth character of current window of text to decide
+# whether current window matches or not. Since we know first three characters will
+# anyway match, we skipped matching first three characters.
 #
 # Need of Preprocessing?
-# An important question arises from above explanation, how to know how many characters to be skipped. To know this,
-# we pre-process pattern and prepare an integer array lps[] that tells us the count of characters to be skipped.
-# For each sub-pattern pat[0..i] where i = 0 to m-1, lps[i] stores length of the maximum matching proper prefix which
+# An important question arises from above explanation, how to know how many characters
+# to be skipped. To know this, we pre-process pattern and prepare an integer array lps[]
+# that tells us the count of characters to be skipped. For each sub-pattern pat[0..i]
+# where i = 0 to m-1, lps[i] stores length of the maximum matching proper prefix which
 # is also a suffix of the sub-pattern pat[0..i].
 #
 # Question Type : Generic
@@ -36,7 +39,8 @@
 #        Compute LPS for pat using the above function. Now loop while i < N:
 #        if pat[j] == txt[i]: inc both i and j by 1
 #        if j == M : print "pattern found at (i-j)"
-#        elif i < N and pat[j] != txt[i] :  (if j is not at start, update j using lps else inc i)
+#        elif i < N and pat[j] != txt[i] :
+#           (if j is not at start, update j using lps else inc i)
 #           if j != 0: j = lps[j - 1]
 #           else: i += 1
 #

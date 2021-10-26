@@ -1,16 +1,22 @@
 # https://www.geeksforgeeks.org/find-the-longest-substring-with-k-unique-characters-in-a-given-string/
-# Question : Given a string you need to print longest possible substring that has exactly M unique characters.
-# If there are more than one substring of longest possible length, then print any one of them.
+# Question : Given a string you need to print longest possible substring that has
+# exactly M unique characters. If there are more than one substring of longest possible
+# length, then print any one of them.
 #
 # Question Type : Easy
-# Used : Take a sliding window, traverse over the string and keep track of largest window found yet.
-#        Take two endpoints of window wLeft, wRight as 0. Also keep track of uniqueCount in window.
+# Used : Take a sliding window, traverse over the string and keep track of largest window
+#        found yet. Take two endpoints of window wLeft, wRight as 0.
+#        Also keep track of uniqueCount in window.
 #        Maintain a dict myMap to keep track of char and their frequency.
 #        Loop while wRight is less than n.
-#           If uniqueCount <= m then, if arr[wRight] in myMap, increment its frequency in myMap and increment zeroCount,
-#               else increment uniqueCount by 1 and push this char in myMap. Increment window in right side.
-#           If uniqueCount > m then check if arr[wLeft] is in myMap. If true decrement its freq in myDict by 1. If its
-#               freq is 0, decrement uniqueCount by 1 and delete from myMap. Increment window in left side.
+#           If uniqueCount <= m then,
+#               if arr[wRight] in myMap, increment its freq in myMap and inc uniqueCount,
+#               else increment uniqueCount by 1 and push this char in myMap.
+#               Increment window in right side.
+#           If uniqueCount > m then,
+#               if arr[wLeft] is in myMap. If true dec its freq in myDict by 1. If its
+#               freq is 0, decrement uniqueCount by 1 and delete from myMap.
+#               Increment window in left side.
 #           Update max window size by comparing it with (wRight - wLeft)
 #       return inpStr[bestLeft:bestLeft + bestWindow]
 # Complexity : O(n)

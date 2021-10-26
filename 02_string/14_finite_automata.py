@@ -1,7 +1,8 @@
 # https://www.geeksforgeeks.org/searching-for-patterns-set-5-finite-automata/
 # https://www.geeksforgeeks.org/pattern-searching-set-5-efficient-constructtion-of-finite-automata/
-# Question : Given a text txt[0..n-1] and a pattern pat[0..m-1], write a function search(char pat[], char txt[])
-# that prints all occurrences of pat[] in txt[]. You may assume that n > m.
+# Question : Given a text txt[0..n-1] and a pattern pat[0..m-1], write a function
+# search(char pat[], char txt[]) that prints all occurrences of pat[] in txt[].
+# You may assume that n > m.
 #
 # Input:  txt[] = "THIS IS A TEST TEXT"
 #         pat[] = "TEST"
@@ -9,8 +10,8 @@
 #
 # Question Type : OddOne
 # Used : TODO :: add used
-# Complexity : computeTF() is O(m^3*NO_OF_CHARS) where m is length of the pattern and NO_OF_CHARS is 256
-#              search(n)
+# Complexity : computeTF() is O(m^3*NO_OF_CHARS) where m is length of the pattern and
+#              NO_OF_CHARS is 256, search(n)
 
 NO_OF_CHARS = 256
 

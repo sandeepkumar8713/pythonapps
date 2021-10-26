@@ -3,11 +3,11 @@
 #
 # Question Type : Easy
 # Used : Split the Roman Numeral string into Roman Symbols (character).
-# Convert each symbol of Roman Numerals into the value it represents.
-# Take symbol one by one from starting from index 0:
-#   If current value of symbol is greater than or equal to the value of next symbol,
-#       then add this value to the running total.
-#   else add the difference between the two to the running total.
+#        Convert each symbol of Roman Numerals into the value it represents.
+#        Take symbol one by one from starting from index 0:
+#        If current value of symbol is greater than or equal to the value of next symbol,
+#           then add this value to the running total.
+#        else add the difference between the two to the running total.
 # Complexity : O(n)
 
 romanNumMap = {'I': 1,
