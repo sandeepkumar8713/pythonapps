@@ -14,8 +14,8 @@
 #                  3   -->   90 --> NULL
 #
 # Question Type : Generic, SimilarAdded
-# Used : Do Level order traversal using queue and keeping track of count of elements on each level.
-#        Loop over the count and connect the nodes on same level.
+# Used : Do Level order traversal using queue and keeping track of count of elements on
+#        each level. Loop over the count and connect the nodes on same level.
 #        Logic :
 #        while len(queue) > 0:
 #           count = len(queue)

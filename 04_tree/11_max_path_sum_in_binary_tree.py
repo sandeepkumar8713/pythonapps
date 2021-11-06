@@ -1,5 +1,6 @@
 # http://www.geeksforgeeks.org/find-maximum-path-sum-in-a-binary-tree/
-# Question : Given a binary tree, find the maximum path sum. The path may start and end at any node in the tree.
+# Question : Given a binary tree, find the maximum path sum. The path may start and end at any
+# node in the tree.
 #
 #           10
 #        /     \
@@ -11,7 +12,8 @@
 # 20 + 2 + 10 + 10 = 42
 #
 # Question Type : Generic
-# Used : Call findMaxUtil() on root recursively for left and right. Store value of left and right max.
+# Used : Call findMaxUtil() on root recursively for left and right. Store value of left
+#        and right max.
 #        Find max single from either : l + root.data or r + root.data or root.data
 #        Find max top from either : max single or l + r + root.data
 #        find max ultimate from either : max top or max ultimate

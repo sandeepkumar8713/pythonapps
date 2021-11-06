@@ -12,11 +12,13 @@
 #                8
 #
 # Question Type : Generic
-# Used : Here we will be using least common ancestor. From there find the distance to a and b and sum it.
+# Used : Here we will be using least common ancestor. From there find the distance to
+#        a and b and sum it.
 #        lca = findLCA(root, a , b)
 #        d1 = findLevel(lca, a, 0)
 #        d2 = findLevel(lca, b, 0)
 #        return d1 + d2
+#        Logic :
 #        findLevel(root, data, level):
 #        If root is None: return -1 (not found)
 #        If root.data == data: return level
@@ -25,8 +27,8 @@
 #        if res != -1: return res
 #        Do the same as above for right subtree.
 #        return -1 (not found in left and right subtree)
-#        Similarly we can print path also, by passing a list, appending the root data and popping it
-#        in last(if return -1).
+#        Similarly we can print path also, by passing a list, appending the root data and
+#        popping it in last(if return -1).
 # Complexity : O(n)
 
 

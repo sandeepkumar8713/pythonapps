@@ -1,7 +1,8 @@
 # https://www.geeksforgeeks.org/tree-isomorphism-problem/
-# Question : Write a function to detect if two trees are isomorphic. Two trees are called isomorphic if one
-# of them can be obtained from other by a series of flips, i.e. by swapping left and right children of a number
-# of nodes. Any number of nodes at any level can have their children swapped. Two empty trees are isomorphic.
+# Question : Write a function to detect if two trees are isomorphic. Two trees are called
+# isomorphic if one of them can be obtained from other by a series of flips, i.e. by
+# swapping left and right children of a number of nodes. Any number of nodes at any
+# level can have their children swapped. Two empty trees are isomorphic.
 #
 # This is not mirror image
 #               1                        1
@@ -13,11 +14,14 @@
 #          7    8                           8    7
 #
 # Question Type : Easy
-# Used : Call a recursive function sIsomorphic(n1, n2). If n1 is None and n2 is None: return True
-#       If n1 is None or n2 is None: return False
-#       If n1.data != n2.data: return False
-#       Now either of two cases can happen: flipped or not flipped. So check for both either should give true.
-#       Now call function on n1.left,n2.left and n1.right,n2.right or n1.left,n2.right and n1.right,n2.left
+# Used : Call a recursive function sIsomorphic(n1, n2).
+#        If n1 is None and n2 is None: return True
+#        If n1 is None or n2 is None: return False
+#        If n1.data != n2.data: return False
+#        Now either of two cases can happen: flipped or not flipped.
+#        So check for both either should give true.
+#        Now call function on n1.left,n2.left and n1.right,n2.right or
+#        n1.left,n2.right and n1.right,n2.left
 # Complexity : O(n)
 
 

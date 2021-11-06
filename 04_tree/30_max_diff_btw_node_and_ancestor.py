@@ -10,6 +10,7 @@
 #        Then at each internal node we will try to get minimum value from left subtree and right subtree
 #        and calculate the difference between node value and this minimum value and according to that
 #        we will update the result. At last return the min value from this node: return min(minVal, root.data)
+#        Logic :
 #        maxDiffUtils(root, res):
 #        if root is None: return sys.maxint
 #        if root.left is None and root.right is None:

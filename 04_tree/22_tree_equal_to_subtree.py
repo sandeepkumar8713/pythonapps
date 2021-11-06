@@ -1,14 +1,17 @@
 # CTCI :: Q4_10_Check_Subtree
 # https://www.geeksforgeeks.org/check-if-a-binary-tree-is-subtree-of-another-binary-tree/
-# Question : Given two binary trees, check if the first tree is subtree of the second one. A subtree of a tree T
-# is a tree S consisting of a node in T and all of its descendants in T. The subtree corresponding to the root
-# node is the entire tree; the subtree corresponding to any other node is called a proper subtree.
+# Question : Given two binary trees, check if the first tree is subtree of the second one.
+# A subtree of a tree T is a tree S consisting of a node in T and all of its descendants in T.
+# The subtree corresponding to the root node is the entire tree; the subtree corresponding
+# to any other node is called a proper subtree.
 #
 # Question Type : Generic
-# Used : Make a func  areIdentical(root1, root2), It checks if the tree starting from root1 and root2 are same or not.
+# Used : Make a func  areIdentical(root1, root2), It checks if the tree starting from
+#        root1 and root2 are same or not.
 #        Call a recursive func isSubtree(T, S), If either T or S is None return true
 #        Call areIdentical(T, S) and return True if they are same
-#        Else return isSubtree(T.left, S) or isSubtree(T.right, S)  (We check by taking left and right subtree as root)
+#        Else return isSubtree(T.left, S) or isSubtree(T.right, S)
+#        (We check by taking left and right subtree as root)
 #        isSubtree(T, S):
 #        if S is None: return True
 #        if T is None: return True

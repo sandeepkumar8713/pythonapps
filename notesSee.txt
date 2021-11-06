@@ -11,4 +11,6 @@
 03_linkedList/12_first_non_repeat_char_in_stream.py
 03_linkedList/25_sort_already_sorted.py
 03_linkedList/28_partition_into_three.py
-
+04_tree/17_print_node_at_dist_k_from_a_node.py
+04_tree/25_boundary_traversal.py
+04_tree/29_convert_postorder_inorder_to_tree.py

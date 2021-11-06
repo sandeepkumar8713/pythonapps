@@ -1,6 +1,6 @@
 # CTCI : Q4_08_First_Common_Ancestor
-# Question : Given a binary tree (not a binary search tree) and two values say n1 and n2, write a program to find
-# the least common ancestor.
+# Question : Given a binary tree (not a binary search tree) and two values say n1 and n2,
+# write a program to find the least common ancestor.
 #
 #            1
 #         /    \
@@ -9,9 +9,12 @@
 #      4   5  6   7
 #
 # Question Type : Asked
-# Used : Do a recursive call over findLCA(root,n1,n2). In each call search for n1 or n2.
-#        If either is found return that node. If none is found, then call findLCA over left and right child.
-#        Either of them won't be empty, return that. Since LCA might be present in either left or right child.
+# Used : Do a recursive call over findLCA(root,n1,n2).
+#        In each call search for n1 or n2.
+#        If either is found return that node.
+#        If neither is found, then call findLCA over left and right child.
+#        Either of them won't be empty, return that. Since LCA might be present in either
+#        left or right child.
 #        findLCA(root, n1, n2):
 #        if root is None: return None
 #        if root.data == n1 or root.data == n2:

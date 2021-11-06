@@ -12,10 +12,11 @@
 #        At each level, invert the ltr i.e. true to false or false to true.
 #        If ltr is true call left then right child else call right then left child.
 #        Other method :
-#        We can print spiral order traversal in O(n) time and O(n) extra space. The idea is to use
-#        two stacks. We can use one stack for printing from left to right and other stack for printing
-#        from right to left. In every iteration, we have nodes of one level in one of the stacks.
-#        We print the nodes, and push nodes of next level in other stack.
+#        We can print spiral order traversal in O(n) time and O(n) extra space. The idea is
+#        to use two stacks. We can use one stack for printing from left to right and other
+#        stack for printing from right to left. In every iteration, we have nodes of one
+#        level in one of the stacks. We print the nodes, and push nodes of next level in
+#        other stack.
 #        Logic : def printSpiral(root):
 #        ltr = True
 #        for i in range(0, height(root)+1):

@@ -1,6 +1,7 @@
-# Question : Given a Binary Tree, we need to print the bottom view from left to right. A node x is there in output
-# if x is the bottommost node at its horizontal distance. Horizontal distance of left child of a node x is equal
-# to horizontal distance of x minus 1, and that of right child is horizontal distance of x plus 1.
+# Question : Given a Binary Tree, we need to print the bottom view from left to right.
+# A node x is there in output if x is the bottommost node at its horizontal distance.
+# Horizontal distance of left child of a node x is equal to horizontal distance of
+# x minus 1, and that of right child is horizontal distance of x plus 1.
 #
 # Examples:
 #                       20
@@ -13,10 +14,10 @@
 # For the above tree the output should be 5, 10, 3, 14, 25.
 #
 # Question Type : Generic
-# Used : Do level order traversal of tree while maintaining Horizontal Distance (HD) of each node.
-#        Push root element in queue, loop until queue is empty while pushing left and right nodes in queue.
-#        In each iteration, update the map with HD value and data
-#        After the loop, sort the map based on keys and print its value
+# Used : Do level order traversal of tree while maintaining Horizontal Distance (HD) of
+#        each node. Push root element in queue, loop until queue is empty while pushing
+#        left and right nodes in queue. In each iteration, update the map with HD value
+#        and data. After the loop, sort the map based on keys and print its value.
 #        Logic :
 #        while len(queue) > 0:
 #           temp = queue.pop(0)

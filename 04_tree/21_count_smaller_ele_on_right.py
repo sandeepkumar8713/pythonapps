@@ -1,7 +1,8 @@
 # https://www.geeksforgeeks.org/count-smaller-elements-on-right-side/
-# Question : Write a function to count number of smaller elements on right of each element in an array. Given an
-# unsorted array arr[] of distinct integers, construct another array countSmaller[] such that countSmaller[i]
-# contains count of smaller elements on right side of each element arr[i] in array.
+# Question : Write a function to count number of smaller elements on right of each element
+# in an array. Given an unsorted array arr[] of distinct integers, construct another
+# array countSmaller[] such that countSmaller[i] contains count of smaller elements on
+# right side of each element arr[i] in array.
 #
 # Question Type : OddOne
 # Used : We have use AVL tree. In Node add one more field as size which stores the count of left,

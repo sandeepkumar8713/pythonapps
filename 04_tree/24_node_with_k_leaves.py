@@ -11,10 +11,12 @@
 #      9  10   11  12
 #
 # Question Type : Easy
-# Used : Here any node having K leaves means sum of leaves in left subtree and in right subtree must be equal to K.
-#        So to solve this problem we use post order traversal of tree. First we calculate leaves in left subtree then
-#        in right subtree and if sum is equal to K, then print current node. In each recursive call we return sum of
-#        leaves of left subtree and right subtree to it's ancestor.
+# Used : Here any node having K leaves means sum of leaves in left subtree and in right
+#        subtree must be equal to K.
+#        So to solve this problem we use post order traversal of tree. First we calculate
+#        leaves in left subtree then in right subtree and if sum is equal to K, then print
+#        current node. In each recursive call we return sum of leaves of left subtree and
+#        right subtree to it's ancestor.
 #        Make a call to recursive func kLeaves(root, k). If root is None: return 0
 #           Calculate leaves in left and right subtree. total = kLeaves(root.left, k) + kLeaves(root.right, k)
 #           If both left and right subtree are none return 1.

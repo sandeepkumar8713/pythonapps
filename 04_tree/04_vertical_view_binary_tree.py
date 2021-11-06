@@ -1,4 +1,5 @@
-# Question : Given a binary tree, print it vertically. The following example illustrates vertical order traversal.
+# Question : Given a binary tree, print it vertically. The following example illustrates
+# vertical order traversal.
 #
 #            1
 #         /    \
@@ -16,9 +17,10 @@
 # 9
 #
 # Question Type : Generic
-# Used : Do pre-order traversal while calculating HD for each node and adding the elements in map using hd.
+# Used : Do pre-order traversal while calculating HD for each node and adding the elements
+#        in map using hd.
 #        Elements with same HD comes as 1 vertical line.
-#        After traversal, sort the map using keys and print the values
+#        After traversal, sort the map using keys and print the values.
 # Complexity : O(n)
 
 

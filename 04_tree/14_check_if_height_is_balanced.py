@@ -14,11 +14,13 @@
 #       7
 #
 # Question Type : ShouldSee
-# Used : Call isBalanced() which returns both result and max height, recursively over left and right child.
-#        If root is None return height as 0 and result true, else call isBalanced() on left and right child
+# Used : Call isBalanced() which returns both result and max height, recursively over
+#        left and right child.
+#        If root is None return height as 0 and result true, else call isBalanced()
+#        on left and right child.
 #        get max height by either : left height + 1 or right height + 1
-#        If difference b/w left and right height is more than or equal to 2 return result as false
-#        else return and of left and right result
+#        If diff b/w left and right height is more than or equal to 2 return result as false
+#        else return AND of left and right result
 # Complexity : O(n)
 
 

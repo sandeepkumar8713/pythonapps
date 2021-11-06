@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/diameter-of-binary-tree/
-# Question : The diameter of a tree (sometimes called the width) is the number of nodes on the longest path
-# between two end nodes. Constructed binary tree is
+# Question : The diameter of a tree (sometimes called the width) is the number of nodes on
+# the longest path between two end nodes. Constructed binary tree is
 #
 # Given a binary tree, return the farthermost nodes.
 # Use the above algorithm, return pointer to leaf along with value

@@ -17,7 +17,8 @@
 # Used : Do level order traversal of tree while maintaining Horizontal Distance HD of each node.
 #        Push root element in queue, set its root.HD = 0. Maintain myMap dict, to store visited HD.
 #        Loop until queue is empty
-#           a) Pop top node from queue and if node.hd is not in myMap then insert HD and node.data in myMap
+#           a) Pop top node from queue and if node.hd is not in myMap then insert HD and
+#              node.data in myMap
 #           b) If node.left is present set temp.left.hd = hd - 1 and push it in queue
 #           c) If node.right is present set temp.right.hd = hd + 1 push it in queue
 #        After the loop, sort the map based on keys and print its value

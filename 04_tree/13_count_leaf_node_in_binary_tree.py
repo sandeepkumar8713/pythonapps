@@ -1,5 +1,5 @@
-# Question : Program to count leaf nodes in a binary tree. A node is a leaf node if both left and right child nodes
-# of it are NULL.
+# Question : Program to count leaf nodes in a binary tree. A node is a leaf node if both
+# left and right child nodes of it are NULL.
 #
 #             1
 #           /   \
