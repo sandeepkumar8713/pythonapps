@@ -1,8 +1,8 @@
 # https://www.geeksforgeeks.org/longest-path-values-binary-tree/
 # similar : https://github.com/neerazz/FAANG/blob/00fe090a270f0405238e34a14f81e61ec20efd1a/Algorithms/Neeraj/algorithum/dfs-bfs/LongestBinaryTreePath.java
-# Question : Given a binary tree, find the length of the longest path where each node in the path has the same
-# value. This path may or may not pass through the root. The length of path between two nodes is represented by
-# the number of edges between them.
+# Question : Given a binary tree, find the length of the longest path where each node in the
+# path has the same value. This path may or may not pass through the root. The length of path
+# between two nodes is represented by the number of edges between them.
 #
 # Example :
 # Input :
@@ -14,9 +14,10 @@
 # Output : 3
 #
 # Question Type : Generic
-# Used : We have to do post order traversal. We will call a recursive function which takes node and
-#        overall ans as input. It returns the length of path passing through given node.
-#        If this length is greater than ans, we update ans.
+# Used : We have to do post order traversal. We will call a recursive function which
+#        takes node and overall ans as input. It returns the length of path passing
+#        through given node. If this length is greater than ans, we update ans.
+#        Logic :
 #        def longestPath(node, ans):
 #        left = longestPath(node.left, ans)
 #        right = longestPath(node.right, ans)

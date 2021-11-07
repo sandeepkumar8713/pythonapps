@@ -1,5 +1,6 @@
 # https://www.geeksforgeeks.org/check-binary-tree-contains-duplicate-subtrees-size-2/
-# Question : Given a Binary Tree, check whether the Binary tree contains a duplicate sub-tree of size 2 or more.
+# Question : Given a Binary Tree, check whether the Binary tree contains a duplicate
+# sub-tree of size 2 or more.
 #
 # Input :  Binary Tree
 #                A
@@ -12,8 +13,8 @@
 # Output : Yes
 #
 # Question Type : Asked
-# Used : We will do post order traversal and keep saving the nodes as string sequence in hash table,
-#        and comparing if already found before.
+# Used : We will do post order traversal and keep saving the nodes as string sequence
+#        in hash table and comparing if already found before.
 #        dupSubUtil(root):
 #        subStr = ""
 #        if root is None: return subStr + MARKER

@@ -1,12 +1,15 @@
 # CTCI : Q17_12_BiNode
-# Question : Given a Binary Tree (BT), convert it to a Doubly Linked List(DLL) In-Place. The left and right
-# pointers in nodes are to be used as previous and next pointers respectively in converted DLL. The order
-# of nodes in DLL must be same as Inorder of the given Binary Tree. The first node of Inorder traversal
-# (left most node in BT) must be head node of the DLL.
+# Question : Given a Binary Tree (BT), convert it to a Doubly Linked List(DLL) In-Place.
+# The left and right pointers in nodes are to be used as previous and next pointers
+# respectively in converted DLL. The order of nodes in DLL must be same as Inorder of the
+# given Binary Tree. The first node of Inorder traversal (left most node in BT) must be
+# head node of the DLL.
 #
 # Question Type : ShouldSee, SimilarAdded
 # Used : Keep track of previous node while doing inorder traversal.
-#        When this node comes, use previous node to update its right and update left of this node
+#        When this node comes, use previous node to update its right and update left of
+#        this node.
+#        Logic :
 #        BinaryTree2DoubleLinkedList(root, head):
 #        if root is None: return
 #        BinaryTree2DoubleLinkedList(root.left, head)

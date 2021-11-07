@@ -14,3 +14,6 @@
 04_tree/17_print_node_at_dist_k_from_a_node.py
 04_tree/25_boundary_traversal.py
 04_tree/29_convert_postorder_inorder_to_tree.py
+04_tree/34_binary_tree_to_dll.py
+04_tree/37_delete_node_not_in_path.py
+

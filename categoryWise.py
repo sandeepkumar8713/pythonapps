@@ -53,14 +53,15 @@ questionMap['bfs'] = {'03_linkedList/13_rotten_orange', }
 questionMap['verticalDist'] = {'04_tree/02_diagonal_traversal',}
 
 questionMap['HorizontalDist'] = {'04_tree/03_bottom_view_binary_tree',
-                                 '04_tree/04_vertical_view_binary_tree'}
+                                 '04_tree/04_vertical_view_binary_tree',
+                                 '04_tree/19_top_view_of_binary_tree'}
 
 questionMap['lca'] = {'04_tree/08_LCA',
                       '04_tree/20_distance_btw_2_nodes'}
 
 questionMap['maxPath'] = {'04_tree/11_max_path_sum_in_binary_tree',
                           '04_tree/12_diameter_of_binary_tree',
-                          '04_tree/19_top_view_of_binary_tree'}
+                          '04_tree/35_longest_path_of_same_value'}
 
 
 def getSelectedFilename():

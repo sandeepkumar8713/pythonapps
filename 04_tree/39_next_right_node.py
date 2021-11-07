@@ -1,9 +1,10 @@
 # https://www.geeksforgeeks.org/find-next-right-node-given-key-set-2/
-# Question : Given a Binary tree and a key in the binary tree, find the node right to the given key. If there is
-#  no node on right side, then return NULL. Expected time complexity is O(n) where n is the number of nodes in the
-#  given binary tree.
+# Question : Given a Binary tree and a key in the binary tree, find the node right to the given key.
+# If there is no node on right side, then return NULL. Expected time complexity is O(n)
+# where n is the number of nodes in the given binary tree.
 #
-# For example, consider the following Binary Tree. Output for 2 is 6, output for 4 is 5. Output for 10, 6 and 5 is NULL.
+# For example, consider the following Binary Tree.
+# Output for 2 is 6, output for 4 is 5. Output for 10, 6 and 5 is NULL.
 #
 #                   10
 #                /      \
@@ -14,8 +15,9 @@
 # Output : 6
 #
 # Question Type : Easy
-# Used : Do pre order traversal of the given tree. While doing so find the given key, save its level.
-#        Next time when you reach the same, this node is our answer.
+# Used : Do pre order traversal of the given tree. While doing so find the given key,
+#        save its level. Next time when you reach the same level, this node is our answer.
+#        Logic :
 #        nextRightNode(root, k, level, valueLevel):
 #        if root is None: return None
 #        if root.key == k: valueLevel[0] = level, return None
