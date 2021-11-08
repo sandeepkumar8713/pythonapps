@@ -1,19 +1,21 @@
 # CTCI : Q17_20_Continuous_Median
 # https://leetcode.com/problems/find-median-from-data-stream/
-# Question : Given that integers are read from a data stream. Find median of elements read so for in efficient way.
-# For simplicity assume there are no duplicates.
+# Question : Given that integers are read from a data stream. Find median of elements read
+# so for in efficient way. For simplicity assume there are no duplicates.
 # input =  5, 15, 1, 3
 # output = 5, 10, 5, 4
 #
 # Question Type : Generic
 # Used : Make a left max heap and right max heap. Iterate over the input elements.
 #       If the left heap has more elements
-#           If new element is less than median then push in left, after moving top element to right
+#           If new element is less than median then push in left, after moving top element
+#           to right
 #           else push in right
 #           get top from both the heaps and average out to get median
 #       If both heap have same number of elements
-#           If new element is less than median then push in left and get top element from it as median
-#           else push in right anf get top element from it as median
+#           If new element is less than median then push in left and get top element from
+#           it as median
+#           else push in right and get top element from it as median
 #       If the right heap has more elements
 #           If new element is less median then push in left
 #           else push in right, after moving top element to left

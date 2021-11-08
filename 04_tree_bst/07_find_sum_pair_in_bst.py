@@ -1,7 +1,8 @@
 # https://www.geeksforgeeks.org/find-a-pair-with-given-sum-in-bst/
-# Question : Given a Balanced Binary Search Tree and a target sum, write a function that returns true if there
-# is a pair with sum equals to target sum, otherwise return false. Expected time complexity is O(n) and only
-# O(Log n) extra space can be used. Any modification to Binary Search Tree is not allowed. Note that height
+# Question : Given a Balanced Binary Search Tree and a target sum, write a function that
+# returns true if there is a pair with sum equals to target sum, otherwise return false.
+# Expected time complexity is O(n) and only O(Log n) extra space can be used.
+# Any modification to Binary Search Tree is not allowed. Note that height
 # of a Balanced BST is always O(Log n).
 #
 #                    15
@@ -11,16 +12,20 @@
 #             8  12   16  25
 #
 # Question Type : OddOne
-# Used : We traverse BST in Normal Inorder and Reverse Inorder simultaneously. In reverse inorder, we start from the
-#        rightmost node which is the maximum value node. In normal inorder, we start from the left most node which is
-#        minimum value node. We add sum of current nodes in both traversals and compare this sum with given target sum.
-#        If the sum is same as target sum, we return true. If the sum is more than target sum, we move to next node in
-#        reverse inorder traversal, otherwise we move to next node in normal inorder traversal.
+# Used : We traverse BST in Normal Inorder and Reverse Inorder simultaneously. In reverse
+#        inorder, we start from the rightmost node which is the maximum value node. In
+#        normal inorder, we start from the left most node which is minimum value node.
+#        We add sum of current nodes in both traversals and compare this sum with given
+#        target sum.
+#        If the sum is same as target sum, we return true. If the sum is more than target sum,
+#        we move to next node in reverse inorder traversal, otherwise we move to next node
+#        in normal inorder traversal.
 #        Inorder :
 #        while not done1:
 #           If temp1 is not None, push the node in stack and move temp to next left.
 #           else: if stack is empty. set done1 = true
-#                 else: pop top node from stack. set val1 = temp1.data, move temp1 to next right and set done1 = true
+#                 else: pop top node from stack. set val1 = temp1.data,
+#                       move temp1 to next right and set done1 = true
 #        Reverse Inorder : keeping pushing right node
 # Complexity : time : O(n) space : O(log n) for balanced tree
 

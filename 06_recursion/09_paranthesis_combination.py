@@ -7,8 +7,10 @@
 # Used : Call a function : recur(strList, pos, n, open, close) where strList = [''] * 2n,
 #        pos = 0, open = 0, close = 0
 #           if close == n : print contents of strList and return
-#           if open > close : add '}' in strList at pos, then call recur(strList, pos + 1, n, open, close + 1)
-#           if open < n : add '{' in strList at pos, the call recur(strList, pos + 1, n, open + 1, close)
+#           if open > close : add '}' in strList at pos,
+#               then call recur(strList, pos + 1, n, open, close + 1)
+#           if open < n : add '{' in strList at pos,
+#               the call recur(strList, pos + 1, n, open + 1, close)
 #        Note : Combination count : catalan(n)
 # Complexity : O(n * catalan(n))
 

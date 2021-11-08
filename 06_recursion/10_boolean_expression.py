@@ -12,7 +12,7 @@
 # Question Type : ShouldSee
 # Used : Call recursive function : countEval(exp, result)
 #        if len(exp) == 0: return 0
-#        if len(exp) == 1) return stringToBool(exp) == result ? 1 : 0
+#        if len(exp) == 1: return stringToBool(exp) == result ? 1 : 0
 #        Loop over each operator in exp:
 #           operator = exp[i]
 #           leftOperand = exp[0:i]

@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/find-the-largest-subtree-in-a-tree-that-is-also-a-bst/
-# Question : Given a Binary Tree, write a function that returns the size of the largest subtree which is also
-# a Binary Search Tree (BST). If the complete Binary Tree is BST, then return the size of whole tree.
+# Question : Given a Binary Tree, write a function that returns the size of the largest subtree
+# which is also a Binary Search Tree (BST). If the complete Binary Tree is BST, then
+# return the size of whole tree.
 #
 # Input:
 #       5
@@ -16,26 +17,35 @@
 # 1    3
 #
 # Question Type : ShouldSee
-# Used : If we traverse the tree in bottom up manner, then we can pass information about subtrees to the parent. The
-#        passed information can be used by the parent to do BST test (for parent node) only in constant time
-#        (or O(1) time). A left subtree need to tell the parent whether it is BST or not and also need to pass maximum
-#        value in it. So that we can compare the maximum value with the parent's data to check the BST property.
+# Used : If we traverse the tree in bottom up manner, then we can pass information about
+#        subtrees to the parent. The passed information can be used by the parent to do
+#        BST test (for parent node) only in constant time (or O(1) time).
+#        A left subtree need to tell the parent whether it is BST or not and also need to
+#        pass maximum value in it. So that we can compare the maximum value with the parent's
+#        data to check the BST property.
 #        Similarly, the right subtree need to pass the minimum value up the tree.
-#        Make a call to recursive function largestBSTUtil(node, minKey, maxKey, maxSize, isBst) with input :
-#           largestBSTUtil(root, [sys.maxint], [-sys.maxint], maxSize, [False]) and return maxSize[0].
+#        Make a call to recursive function
+#        largestBSTUtil(node, minKey, maxKey, maxSize, isBst) with input :
+#        largestBSTUtil(root, [sys.maxint], [-sys.maxint], maxSize, [False])
+#        and return maxSize[0].
 #        It returns the size of tree if it is BST else 0.
+#        Logic :
 #        largestBSTUtil() :
 #        If root is null. set isBst[0] = True and return 0.
 #        set maxKey[0] = -sys.maxint and call largestBSTUtil() on left subtree
-#        if left subtree is bst and current node value is more than maxKey[0]: set leftIsBst = True
-#        save leftMin = minKey[0]
+#        if left subtree is bst and current node value is more than maxKey[0]:
+#        set leftIsBst = True, save leftMin = minKey[0]
 #        set minKey[0] = sys.maxint and call largestBSTUtil() on right subtree
-#        if right subtree is bst and current node value is less than minKey[0]: set rightIsBst = True
-#        if leftMin < minKey[0]: minKey[0] = leftMin (As min and max from left and right, need to send up)
-#        if node.data < minKey[0]: minKey[0] = node.data (We get min and max from leaf node only)
+#        if right subtree is bst and current node value is less than minKey[0]:
+#        set rightIsBst = True
+#        if leftMin < minKey[0]: minKey[0] = leftMin
+#        (As min and max from left and right, need to send up)
+#        if node.data < minKey[0]: minKey[0] = node.data
+#        (We get min and max from leaf node only)
 #        if node.data > maxKey[0]: maxKey[0] = node.data
-#        If both left and right are bst: if sum of (left + right + 1) is more than maxSize update maxSize
-#           return sum
+#        If both left and right are bst:
+#           if sum of (left + right + 1) is more than maxSize update maxSize
+#               return sum
 #        Else: isBst[0] = False and return 0
 # Complexity : O(n)
 

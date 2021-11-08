@@ -2,7 +2,8 @@
 # http://www.geeksforgeeks.org/a-program-to-check-if-a-binary-tree-is-bst-or-not/
 # Question : A program to check if a binary tree is BST or not.
 #
-# A binary search tree (BST) is a node based binary tree data structure which has the following properties.
+# A binary search tree (BST) is a node based binary tree data structure which has the
+# following properties.
 # The left subtree of a node contains only nodes with keys less than the node's key.
 # The right subtree of a node contains only nodes with keys greater than the node's key.
 # Both the left and right subtrees must also be binary search trees.
@@ -10,9 +11,11 @@
 # Each node (item in the tree) has a distinct key.
 #
 # Question Type : Easy
-# Used :  The trick is to write a utility helper function isBSTUtil(struct node* node, int min, int max) that traverses
-#         down the tree keeping track of the narrowing min and max allowed values as it goes, looking at each node only
-#         once. The initial values for min and max should be INT_MIN and INT_MAX. Note that empty tree is a BST.
+# Used :  The trick is to write a utility helper function
+#         isBSTUtil(struct node* node, int min, int max) that traverses down the tree keeping
+#         track of the narrowing min and max allowed values as it goes, looking at each node
+#         only once. The initial values for min and max should be INT_MIN and INT_MAX.
+#         Note that empty tree is a BST.
 #         isBSTUtil(node, mini, maxi):
 #         if node is None: return True
 #         if node.data < mini or node.data > maxi:

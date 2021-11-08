@@ -1,7 +1,8 @@
 # https://www.geeksforgeeks.org/merge-two-bsts-with-limited-extra-space/
-# Question : Given two Binary Search Trees(BST), print the elements of both BSTs in sorted form. The expected
-# time complexity is O(m+n) where m is the number of nodes in first tree and n is the number of nodes in second
-# tree. Maximum allowed auxiliary space is O(height of the first tree + height of the second tree).
+# Question : Given two Binary Search Trees(BST), print the elements of both BSTs in sorted
+# form. The expected time complexity is O(m+n) where m is the number of nodes in first tree
+# and n is the number of nodes in second tree. Maximum allowed auxiliary space is
+# O(height of the first tree + height of the second tree).
 #
 # Examples:
 # First BST
@@ -15,8 +16,8 @@
 # Output: 1 2 3 4 5 6
 #
 # Question Type : ShouldSee
-# Used : Do inorder of the 2 trees simultaneously. Compare the values between them, print the lower one,
-#        push the bigger one in stack.
+# Used : Do inorder of the 2 trees simultaneously. Compare the values between them, print
+#        the lower one, push the bigger one in stack.
 #        merge(root1, root2):
 #        If root1 is None: do in order of root2, return
 #        If root2 is None: do in order of root1, return

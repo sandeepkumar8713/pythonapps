@@ -10,7 +10,7 @@
 #        Loop over the characters in charMap, if its freq > 0: decrement the freq,
 #           add call the function again:
 #           printPerms(charMap, prefix + c, remainingLength - 1, resultList)
-#           decrement the freq
+#           increment the freq
 #       Note : count is : n!/(repeatedCount!)
 # Complexity : O(n!)
 

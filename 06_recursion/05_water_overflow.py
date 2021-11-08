@@ -5,14 +5,17 @@
 #               4    5    6
 #             7    8    9   10
 #
-# You can put water to only top glass. If you put more than 1 litre water to 1st glass, water overflows and fills
-# equally in both 2nd and 3rd glasses. Glass 5 will get water from both 2nd glass and 3rd glass and so on. If you have
-# X litre of water and you put that water in top glass, how much water will be contained by jth glass in ith row?
+# You can put water to only top glass. If you put more than 1 litre water to 1st glass, water
+# overflows and fills equally in both 2nd and 3rd glasses. Glass 5 will get water from both
+# 2nd glass and 3rd glass and so on. If you have X litre of water and you put that water in
+# top glass, how much water will be contained by jth glass in ith row?
 #
 # Question Type : ShouldSee
-# Used : Run 2 loops for rows and cols and distribute the water from first glass to the desired glass.
-#        Return the amount in desired glass. If value is more than 1 then distribute the remaining water in
-#        two half in 2 lower glasses.
+# Used : Run 2 loops for rows and cols and distribute the water from first glass to the
+#        desired glass.
+#        Return the amount in desired glass. If value is more than 1 then distribute the
+#        remaining water in two half in 2 lower glasses.
+#        Logic :
 #        findWater(i, j, K):
 #        glass = [0] * ((i+1)*(i+2) // 2)
 #        glass[0] = K, index = 0

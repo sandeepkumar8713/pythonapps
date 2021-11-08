@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/find-smallest-range-containing-elements-from-k-lists/
-# Question : Given k sorted lists of integers of size n each, find the smallest range that includes at least
-# element from each of the k lists. If more than one smallest ranges are found, print any one of them.
+# Question : Given k sorted lists of integers of size n each, find the smallest range that
+# includes at least element from each of the k lists. If more than one smallest ranges are
+# found, print any one of them.
 #
 # Input:
 # K = 3
@@ -13,15 +14,17 @@
 #
 # Question Type : Generic
 # Used : Make a structure Node : ele, i, j where ele is the element in array, along with its
-#           index in inpLists and next element index in that array. Make a min heap which would have above
-#           mentioned Node as data
-#        Push first element of each array of inpList in the min Heap as Node and keep comparing and updating
-#        maxVal if required. Heapify the minHeap after all the elements are pushed.
-#        While True: Pop top node from min heap. Assign minVal = node.ele. Compare valRange with diff of
-#                    minVal and maxVal and update valRange, startElement and endElement if required.
-#                    If j has reached its array end then break; if node.j < n: break
-#                    Else read next element using node.j, Make a node out of it and insert in minHeap. Compare new
-#                    element with maxVal and update if required
+#           index in inpLists and next element index in that array. Make a min heap which
+#           would have above mentioned Node as data
+#        Push first element of each array of inpList in the min Heap as Node and keep
+#        comparing and updating maxVal if required.
+#        Heapify the minHeap after all the elements are pushed.
+#        While True:
+#           Pop top node from min heap. Assign minVal = node.ele. Compare valRange with diff
+#           of minVal and maxVal and update valRange, startElement and endElement if required.
+#           If j has reached its array end then break; if node.j < n: break
+#           Else read next element using node.j, Make a node out of it and insert in minHeap.
+#           Compare new element with maxVal and update if required
 #        After the loop: print startElement, endElement
 # Complexity : (nk log nk)
 

@@ -9,6 +9,7 @@
 #            if given element is less than or equal to sum, then insert the element in intermediate result
 #            call findNumbers() again with (sum - arr[i]) and index i+1. If element is duplicate then i+2.
 #            pop 1 element from intermediate result
+#        Logic :
 #        findNumbers(arr, sum, r, i):
 #        if sum < 0: return
 #        if sum == 0: new_list = r[:]

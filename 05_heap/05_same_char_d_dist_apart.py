@@ -1,16 +1,18 @@
 # https://www.geeksforgeeks.org/rearrange-a-string-so-that-all-same-characters-become-at-least-d-distance-away/
-# Question : Given a string and a positive integer d. Some characters may be repeated in the given string.
-# Rearrange characters of the given string such that the same characters become d distance away from each other.
-# Note that there can be many possible rearrangements, the output should be one of the possible rearrangements.
-# If no such arrangement is possible, that should also be reported.
+# Question : Given a string and a positive integer d. Some characters may be repeated in the
+# given string. Rearrange characters of the given string such that the same characters become
+# d distance away from each other. Note that there can be many possible rearrangements, the
+# output should be one of the possible rearrangements. If no such arrangement is possible,
+# that should also be reported.
 #
 # Question Type : Easy
 # Used : Let the given string be str and size of string be n
-#        Traverse str, store all characters and their frequencies in a Max Heap MH. The value of frequency decides the
-#           order in MH. Heapify the MH.
+#        Traverse str, store all characters and their frequencies in a Max Heap MH.
+#           The value of frequency decides the order in MH. Heapify the MH.
 #        Take a resStr list and mark all element as '\0'
 #        Do following while MH is not empty.
-#           Extract the Most frequent character(top from MH). Let the extracted character be x and its frequency be f.
+#           Extract the Most frequent character(top from MH).
+#           Let the extracted character be x and its frequency be f.
 #           Find the first available position in str, i.e., find the first '\0' in str.
 #           if p + dDist * k >= n: return "not possible"
 #           Let the first position be p. Fill x at p, p+d,.. p+(f-1)d

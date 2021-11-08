@@ -1,15 +1,16 @@
 # CTCI : Q8_03_Magic_Index
-# Question : Given an array of n integers sorted in ascending order, write a function that returns a Fixed Point
-# in the array, if there is any Fixed Point present in array, else returns -1. Fixed Point in an array is an index i
-# such that arr[i] is equal to i. Note that integers in array can be negative and elements can be repeated.
+# Question : Given an array of n integers sorted in ascending order, write a function that
+# returns a Fixed Point in the array, if there is any Fixed Point present in array,
+# else returns -1. Fixed Point in an array is an index i such that arr[i] is equal to i.
+# Note that integers in array can be negative and elements can be repeated.
 #
 # Example : input : [-40, -20, -1, 1, 2, 3, 5, 7, 9, 12, 13]
 #           output : 7
 #
 # Question Type : Generic
-# Used : We used binary search as the input array is already sorted. But here we know that some elements can be
-#       repeated, so mid index calculation has changed. If element is not found in left side we search
-#       in right side.
+# Used : We used binary search as the input array is already sorted. But here we know that
+#       some elements can be repeated, so mid index calculation has changed.
+#       If element is not found in left side we search in right side.
 #       left = magicIndex(arr, start, min(midValue, midIndex - 1))
 #       right = magicIndex(arr, max(midValue, midIndex + 1), end)
 # Complexity : average O(log n) worst : O(n)

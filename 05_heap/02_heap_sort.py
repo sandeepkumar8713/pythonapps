@@ -2,7 +2,8 @@
 #
 # Question Type : Easy
 # Used : Make a max heap from the input array.
-#        For each element swap top and bottom element of heap. Pop the max element and do heapify
+#        For each element swap top and bottom element of heap. Pop the max element and
+#        do heapify
 #        again from top for remaining element. Store the pop element in stack.
 #        After the loop, pop the stack one by one to get the sorted element.
 # Complexity : build heap = O(k) , heapify = O(log k),

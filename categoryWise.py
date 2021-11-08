@@ -22,7 +22,9 @@ questionMap['slidingWindow'] = {'01_array/12_chocolate_distribution',
                                 '01_array/20_flip_ele_to_1',
                                 '02_string/12_longest_substring_with_k_unique_char', }
 
-questionMap['heap'] = {'01_array/16_find_kth_largest_in_stream', }
+questionMap['heap'] = {'01_array/16_find_kth_largest_in_stream',
+                       '05_heap/08_compute_mean_of_window',
+                       '05_heap/09_kth_smallest_ele_in_marix'}
 
 questionMap['kRemainder'] = {'01_array/29_chocolate_distribution_consecutive', }
 
@@ -62,6 +64,21 @@ questionMap['lca'] = {'04_tree/08_LCA',
 questionMap['maxPath'] = {'04_tree/11_max_path_sum_in_binary_tree',
                           '04_tree/12_diameter_of_binary_tree',
                           '04_tree/35_longest_path_of_same_value'}
+
+questionMap['leftCount'] = {'04_tree_bst/03_kth_smallest_element_in_bst',
+                            '04_tree_bst/14_rank_of_player'}
+
+questionMap['binarySearch'] = {'04_tree_bst/08_sorted_array_to_bst',
+                               '06_recursion/07_magic_index'}
+
+questionMap['nxtInorderNode'] = {'04_tree_bst/09_inorder_next_data_in_bst',
+                                 '04_tree_bst/10_delete_node_in_BST'}
+
+questionMap['heap'] = {'05_heap/01_median_in_stream',
+                       '05_heap/04_non_adjacent_character',
+                       '05_heap/05_same_char_d_dist_apart'}
+
+questionMap['pathInMatrix'] = {'06_recursion/02_possible_path_in_matrix',}
 
 
 def getSelectedFilename():

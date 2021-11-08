@@ -16,4 +16,11 @@
 04_tree/29_convert_postorder_inorder_to_tree.py
 04_tree/34_binary_tree_to_dll.py
 04_tree/37_delete_node_not_in_path.py
+04_tree_bst/06_largest_bst_subtree.py
+04_tree_bst/11_correct_swapped_bst.py
+05_heap/03_basic_operation.py
+05_heap/06_find_smallest_range.py
+06_recursion/04_special_keyboard.py
+06_recursion/05_water_overflow.py
+06_recursion/06_josephus_problem.py
 

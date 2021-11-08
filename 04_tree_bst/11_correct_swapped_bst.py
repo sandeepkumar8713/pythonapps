@@ -18,11 +18,12 @@
 #
 # Question Type : ShouldSee
 # Used : Call a recursive function correctBSTUtil((root, first, middle, last, prev) with
-#        correctBSTUtil((root, [None], [None], [None], [None]). This function should do inorder as it
-#        traverses the BST in increasing order.
+#        correctBSTUtil((root, [None], [None], [None], [None]). This function should do
+#        inorder as it traverses the BST in increasing order.
 #        If root is None: return
 #        Call the recursive function on left subtree
-#        if prev is not None and current data is less than previous data: (this is BST Violation)
+#        if prev is not None and current data is less than previous data:
+#           (this is BST Violation)
 #           If first is None: first = prev and middle = root
 #           Else: last = root
 #        prev = root

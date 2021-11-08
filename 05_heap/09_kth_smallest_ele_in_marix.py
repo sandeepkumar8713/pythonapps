@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/kth-smallest-element-in-a-row-wise-and-column-wise-sorted-2d-array-set-1/
-# Question : Given an n x n matrix, where every row and column is sorted in non-decreasing order.
-# Find the kth smallest element in the given 2D array.
+# Question : Given an n x n matrix, where every row and column is sorted in non-decreasing
+# order. Find the kth smallest element in the given 2D array.
 #
 # Question Type : Generic
 # Used : The idea is to use min heap. Following are detailed step.

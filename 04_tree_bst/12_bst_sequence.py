@@ -1,8 +1,8 @@
 # CTCI : Q4_09_BST_Sequences
 # https://hackernoon.com/bst-sequences-in-python-c072c0e9b19f
-# Question : A binary search tree was created by traversing through an array from left to right
-# and inserting each element. Given a binary search tree with distinct elements, print all possible
-# arrays that could have led to this tree.
+# Question : A binary search tree was created by traversing through an array from left to
+# right and inserting each element. Given a binary search tree with distinct elements,
+# print all possible arrays that could have led to this tree.
 #
 # Question Type : OddOne
 # TODO :: go through the code and the one in java, add used explanation

@@ -5,9 +5,11 @@
 # Question Type : ShouldSee
 # Used : Insert : Add the new element at end. Run a loop from n/2 to 0 and call heapify(i)
 #        Remove top : Swap first and last element. Delete last. Call heapify(0). return last
-#        Decrease by key : Replace the new element at k. Run a loop from k/2 to 0 and call heapify(i)
+#        Decrease by key : Replace the new element at k. Run a loop from k/2 to 0
+#                          and call heapify(i)
 #        Delete Key : call Decrease by Key(k, minInt). call Remove top.
-# Complexity : insert = (n log n), remove top = log n, decrease by key : (n log n), delete by key : (n log n)
+# Complexity : insert = (n log n), remove top = log n,
+#              decrease by key : (n log n), delete by key : (n log n)
 #
 
 import operator

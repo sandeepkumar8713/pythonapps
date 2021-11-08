@@ -11,11 +11,13 @@
 # 1
 #
 # Question Type : ShouldSee
-# Used : For the given sorted input array call a recursive function sortedArrayToBst(inpArr, left, right) with input
-#        sortedArrayToBst(inpArr,0,n-1). It is used to do preorder and make BST tree.
+# Used : For the given sorted input array call a recursive function
+#        sortedArrayToBst(inpArr, left, right) with input sortedArrayToBst(inpArr,0,n-1).
+#        It is used to do preorder and make BST tree.
 #        if left > right: return None
-#        find mid of left and right and make a node for that element
-#        Now call function again for left side of array to set left subtree. Similarly for right side.
+#        find mid of left and right and make a node for that element.
+#        Now call function again for left side of array to set left subtree.
+#        Similarly for right side.
 #        root.left = sortedArrayToBst(inpArr, left, mid-1)
 #        root.right = sortedArrayToBst(inpArr, mid+1, right)
 #        return root

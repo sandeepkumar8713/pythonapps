@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/kth-largest-element-in-bst-when-modification-to-bst-is-not-allowed/
-# Question : Given a Binary Search Tree (BST) and a positive integer k, find the k'th largest element in
-# the Binary Search Tree.
+# Question : Given a Binary Search Tree (BST) and a positive integer k, find the k'th
+# largest element in the Binary Search Tree.
 #
 #               50
 #            /     \
@@ -9,9 +9,9 @@
 #        20   40  60   80
 #
 # Question Type : Asked
-# Used : The idea is to do reverse inorder traversal of BST. The reverse inorder traversal traverses
-#        all nodes in decreasing order.
-#        Call a recursive function largestKthNodeUtil(root, k) where k is passed by pointer (list[0])
+# Used : The idea is to do reverse inorder traversal of BST. The reverse inorder traversal
+#        traverses all nodes in decreasing order.
+#        Call a recursive func largestKthNodeUtil(root, k) where k is passed by pointer.
 #           If root is None: return
 #           Call largestKthNodeUtil() over root.right
 #           Now it has reached its largest element. decrement k by 1

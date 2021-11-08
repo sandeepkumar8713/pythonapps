@@ -1,11 +1,11 @@
 # CTCI : Q10_10_Rank_from_Stream
-# Question : Given a stream of integers, lookup the rank of a given integer x. Rank of an integer in stream is
-# "Total number of elements less than or equal to x (not including x)". If element is not found in stream or is
-# smallest in stream, return -1.
+# Question : Given a stream of integers, lookup the rank of a given integer x.
+# Rank of an integer in stream is "Total number of elements less than or equal to x
+# (not including x)". If element is not found in stream or is smallest in stream, return -1.
 #
 # Question Type : Easy
-# Used : In BST we also add leftSize as a member of node. While inserting elements in BST, we keep
-#        updating leftSize.
+# Used : In BST we also add leftSize as a member of node. While inserting elements in BST,
+#        we keep updating leftSize.
 #        We traverse the tree from root and compare the root values to x.
 #        If root->data == x : return root.leftSize
 #        If x < root.data : return getRankUtils(root.left, x) (If no child, return -1)

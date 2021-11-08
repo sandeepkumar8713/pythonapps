@@ -10,14 +10,17 @@
 #  you can produce).
 #
 # Question Type : ShouldSee
-# Used : Level 1: if less than 7 then return same number
-#        Level 2:  Definition of a breakpoint is that instance after which we need to only press Ctrl-A,
-#                  Ctrl-C once and the only Ctrl-V's afterwards to generate the optimal length.
-#                  If we loop from N-3 to 1 and choose each of these values for the break-point, and compute
-#                  that optimal string they would produce. Like 16 from 9 keystrokes.
-#        Level 3: Use level 2 values, do Ctrl-A, Ctrl-C once and the only Ctrl-V's afterwards to generate
-#                 the optimal length. Here formula is : curr = (n-b-1)*screen[b-1]
-#                 (b is the no. of keystrokes already entered before copy)
+# Used : Level 1:
+#        if less than 7 then return same number
+#        Level 2:
+#        Definition of a breakpoint is that instance after which we need to only press Ctrl-A,
+#        Ctrl-C once and the only Ctrl-V's afterwards to generate the optimal length.
+#        If we loop from N-3 to 1 and choose each of these values for the break-point, and
+#        compute that optimal string they would produce. Like 16 from 9 keystrokes.
+#        Level 3:
+#        Use level 2 values, do Ctrl-A, Ctrl-C once and the only Ctrl-V's afterwards to
+#        generate the optimal length. Here formula is : curr = (n-b-1)*screen[b-1]
+#        (b is the no. of keystrokes already entered before copy)
 #        This solved through dynamic programming.
 #        Logic :
 #        for n in range(7, N+1, 1):

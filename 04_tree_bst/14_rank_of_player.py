@@ -1,10 +1,11 @@
-# Question : Given a list of player names and their scores - {Carl, 70; Alex, 55; Isla, 40}, design a data structure
-# that can support following modules in optimal time-
+# Question : Given a list of player names and their scores - {Carl, 70; Alex, 55; Isla, 40},
+# design a data structure that can support following modules in optimal time-
 # i) updateEntry(string name, int score)
 # ii) getEntryFromRank(int rank)
 #
 # Question Type : Easy
-# Used : Use a binary search tree to save data, Here keep track of rightCount of children of each node
+# Used : Use a binary search tree to save data, Here keep track of rightCount of children of
+#        each node.
 #        It is reverse of question find kth smallest element in bst.
 #        while temp:
 #           if temp.rightCount + 1 == k: return temp.name

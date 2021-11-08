@@ -1,11 +1,14 @@
-# Question : Given a 2D screen, location of a pixel in the screen ie(x,y) and a color(K), your task is to replace
-# color of the given pixel and all adjacent(excluding diagonally adjacent) same colored pixels with the given color K.
+# Question : Given a 2D screen, location of a pixel in the screen ie(x,y) and a color(K),
+# your task is to replace color of the given pixel and all adjacent(excluding diagonally
+# adjacent) same colored pixels with the given color K.
 #
 # Question Type : Easy
-# Used : Given a matrix, start recursion from the given points, set the new pixel. After that recur
-#        for up, down, left, right. Return condition: posX and posY should be within matrix.
+# Used : Given a matrix, start recursion from the given points, set the new pixel. After
+#        that recur for up, down, left, right. Return condition: posX and posY should be
+#        within matrix.
 #        If current pixel is not old pixel return.
 #        If new pixel is already set return.
+#        Logic :
 #        floodFill(inputMat, posX, posY, oldPixel, newPixel):
 #        if posX < 0 or posX >= len(inputMat): return
 #        if posY < 0 or posY >= len(inputMat[0]): return

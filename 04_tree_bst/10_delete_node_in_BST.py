@@ -8,12 +8,16 @@
 #        20   40  60   80
 #
 # Question Type : Generic
-# Used : Call a recursive function deleteNode(root, key): If root is None : return None
-#        if key < root.data: call function over left subtree : root.left = deleteNode(root.left, key)
+# Used : Call a recursive function deleteNode(root, key):
+#        If root is None : return None
+#        if key < root.data:
+#           call function over left subtree : root.left = deleteNode(root.left, key)
 #        Else if key > root.data: call function over right subtree
-#        Else this we have to delete this root node. If root.left is None: return root.right
+#        Else this we have to delete this root node.
+#           If root.left is None: return root.right
 #           Else if root.right is None: return root.left
-#           Else : Find the next inOrder successor, by finding minVal in right subtree. Update root.data = minVal
+#           Else : Find the next inOrder successor, by finding minVal in right subtree.
+#                  Update root.data = minVal
 #                  Now delete this min Node. So call func again on right subtree
 #                  root.right = deleteNode(root.right, minVal)
 #        return root
