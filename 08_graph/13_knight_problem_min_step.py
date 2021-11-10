@@ -1,13 +1,15 @@
 # https://www.geeksforgeeks.org/minimum-steps-reach-target-knight
-# Question : Given a square chessboard of N x N size, the position of Knight and position of a target is given.
-# We need to find out minimum steps a Knight will take to reach the target position.
-# This is similar (infinite chess with forbidden cells) : https://www.careercup.com/question?id=5711185563877376
+# Question : Given a square chessboard of N x N size, the position of Knight and position of
+# a target is given. We need to find out minimum steps a Knight will take to reach the target
+# position. This is similar (infinite chess with forbidden cells) :
+# https://www.careercup.com/question?id=5711185563877376
 #
 # Question Type : Generic
 # Used : Make a queue Push starting cell(x,y,distance) point in queue
 #        Loop (until queue is empty)
 # 	        Pop one cell from queue
-# 	        Add all possible directions to it. If it is inside board and non visited push to queue
+# 	        Add all possible directions to it. If it is inside board and non visited
+# 	        push to queue
 # 	        If target reached then return distance
 # Complexity : O(N) no. of cells
 

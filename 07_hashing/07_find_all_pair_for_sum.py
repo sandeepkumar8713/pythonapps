@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/
-# Question : Given two unsorted arrays of distinct elements,the task is to find all pairs from both arrays whose
-# sum is equal to x.
+# Question : Given two unsorted arrays of distinct elements, the task is to find
+# all pairs from both arrays whose sum is equal to x.
 #
 # Input :  arr1[] = {-1, -2, 4, -6, 5, 7}
 #          arr2[] = {6, 3, 4, 0}

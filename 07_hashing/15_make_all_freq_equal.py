@@ -1,5 +1,6 @@
-# Question : Given a string which contains lower alphabetic characters, we need to remove at most one character
-# from this string in such a way that frequency of each distinct character becomes same in the string.
+# Question : Given a string which contains lower alphabetic characters, we need to remove
+# at most one character from this string in such a way that frequency of each distinct
+# character becomes same in the string.
 #
 # Input  : str = "xyyz"
 # Output : Yes
@@ -8,9 +9,9 @@
 # Question Type : ShouldSee
 # Used : Loop over the elements in input array and update its frequency in hashDict.
 #        Find the minimum frequency.
-#        Loop over the list of frequencies and find the diff between minValue and current value. If
-#           diff is more than 1 return False. If diff is equal to 1 then allow for once. If diff is
-#           equal to 1 again then return False.
+#        Loop over the list of frequencies and find the diff between minValue and current
+#           value. If diff is more than 1 return False. If diff is equal to 1 then allow
+#           for once. If diff is equal to 1 again then return False.
 #        If loop is over, return True
 # Complexity : O(n)
 

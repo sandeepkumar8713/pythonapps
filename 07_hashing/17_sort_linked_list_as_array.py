@@ -1,16 +1,18 @@
 # https://www.geeksforgeeks.org/sort-linked-list-order-elements-appearing-array/
-# Question : Given an array of size N and a Linked List where elements will be from the array but can also be
-# duplicated, sort the linked list in the order, elements are appearing in the array. It may be assumed that
-# the array covers all elements of the linked list.
+# Question : Given an array of size N and a Linked List where elements will be from the
+# array but can also be duplicated, sort the linked list in the order, elements
+# are appearing in the array. It may be assumed that the array covers all elements
+# of the linked list.
 #
 # Input : Linked list : 3 2 5 8 5 2 1
 #         array : 5, 1, 3, 2, 8
 # Output: Sorted Linked List : 5 5 1 3 2 2 8
 #
 # Question Type : ShouldSee
-# Used : First, make a hash table that stores the frequencies of elements in linked list. Then,
-#        simply traverse array and for each element of arr[i] check the frequency in the has table and
-#        modify the data of list by arr[i] element up to its frequency and at last Print the list.
+# Used : First, make a hash table that stores the frequencies of elements in linked list.
+#        Then, simply traverse array and for each element of arr[i] check the frequency
+#        in the has table and modify the data of list by arr[i] element up to its
+#        frequency and at last Print the list.
 # Complexity : O(n)
 
 

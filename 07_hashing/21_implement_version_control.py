@@ -1,21 +1,23 @@
 # Similar : https://leetcode.com/problems/time-based-key-value-store/
-# Question : Implement the version control map system which takes the snapshot of the versions of data.
-# Implement the following functions:
+# Question : Implement the version control map system which takes the snapshot of the
+# versions of data. Implement the following functions:
 # put(key, value) -> puts the value again the key in the latest version of the map
 # get(key) -> get the value of the key for the latest version of the data
 # snapshot() -> take a snapshot and increment the version
 # getValVersion(version id, key) -> return value of the key of the particular version
 # Implement a SnapshotArray that supports the following interface:
 #
-# SnapshotArray(int length) initializes an array-like data structure with the given length. Initially, each element
-# equals 0.
+# SnapshotArray(int length) initializes an array-like data structure with the given length.
+# Initially, each element equals 0.
 # void set(index, val) sets the element at the given index to be equal to val.
-# int snap() takes a snapshot of the array and returns the snap_id: the total number of times we called snap() minus 1.
-# int get(index, snap_id) returns the value at the given index, at the time we took the snapshot with the given snap_id
+# int snap() takes a snapshot of the array and returns the snap_id:
+#   the total number of times we called snap() minus 1.
+# int get(index, snap_id) returns the value at the given index,
+#   at the time we took the snapshot with the given snap_id
 #
 # Question Type : ShouldSee
-# Used : Use dict here. Key/index should be used once. It should have list of values along with
-#        version for each key.
+# Used : Use dict here. Key/index should be used once. It should have list of values
+#        along with version for each key.
 #        This is for second question. key : index, value : [snapId, value]
 #        Logic : class SnapshotArray:
 #        def __init__(self, length):

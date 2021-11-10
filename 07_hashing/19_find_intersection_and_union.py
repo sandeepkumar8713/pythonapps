@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/union-and-intersection-of-two-linked-lists/
-# Question : Given two Linked Lists, create union and intersection lists that contain union and intersection
-# of the elements present in the given lists. Order of elements in output lists doesn't matter.
+# Question : Given two Linked Lists, create union and intersection lists that contain union
+# and intersection of the elements present in the given lists. Order of elements in output
+# lists doesn't matter.
 #
 # Input:
 #    List1: 10->15->4->20
@@ -10,13 +11,15 @@
 #    Union List: 2->8->20->4->15->10
 #
 # Question Type : Easy
-# Used : Union (list1, list2) : Initialize the result list as NULL and create an empty hash table. Traverse
-#        both lists one by one, for each element being visited, look the element in hash table. If the element
-#        is not present, then insert the element to result list. If the element is present, then ignore it.
-#        Intersection (list1, list2): Initialize the result list as NULL and create an empty hash table.
-#        Traverse list1. For each element being visited in list1, insert the element in hash table. Traverse
-#        list2, for each element being visited in list2, look the element in hash table. If the element is
-#        present, then insert the element to result list. If the element is not present, then ignore it.
+# Used : Union (list1, list2): Initialize the result list as NULL and create an empty hash
+#        table. Traverse both lists one by one, for each element being visited, look the
+#        element in hash table. If the element is not present, then insert the element to
+#        result list. If the element is present, then ignore it.
+#        Intersection (list1, list2): Initialize the result list as NULL and create an empty
+#        hash table. Traverse list1. For each element being visited in list1, insert the
+#        element in hash table. Traverse list2, for each element being visited in list2,
+#        look the element in hash table. If the element is present, then insert the element
+#        to result list. If the element is not present, then ignore it.
 # Complexity : O(n)
 
 

@@ -23,4 +23,8 @@
 06_recursion/04_special_keyboard.py
 06_recursion/05_water_overflow.py
 06_recursion/06_josephus_problem.py
+07_hashing/02_pair_to_swap_from_2_array.py
+07_hashing/18_find_recurring_fraction.py
+07_hashing/21_implement_version_control.py
+08_graph/15_stepping_numbers.py
 

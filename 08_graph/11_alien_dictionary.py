@@ -1,24 +1,27 @@
 # CTCI : Q4_07_Build_Order (similar)
 # http://www.geeksforgeeks.org/given-sorted-dictionary-find-precedence-characters/
-# Question : Given a sorted dictionary (array of words) of an alien language of size n, find order of characters
-# in the language.
+# Question : Given a sorted dictionary (array of words) of an alien language of size n,
+# find order of characters in the language.
 #
 # Input:  words[] = {"baa", "abcd", "abca", "cab", "cad"}
 # Output: Order of characters is 'b', 'd', 'a', 'c'
 #
 # Question Type : Generic
-# Used : Create a graph g with number of vertices equal to the size of alphabet in the given alien language.
-#        Loop over the elements of input array. Such that word1 = inpArr[i] and  word2 = inpArr[i+1]
-#           One by one compare characters of both words and find the first mismatching characters.
+# Used : Create a graph g with number of vertices equal to the size of alphabet in the given
+#        alien language.
+#        Loop over the elements of input array. Such that word1 = inpArr[i] and
+#           word2 = inpArr[i+1]. One by one compare characters of both words and find the
+#           first mismatching characters.
 #           Create an edge in g from mismatching character of word1 to that of word2.
 #           break
 #       Print topological sorting of the above created graph.
 #
-#       Topological sorting : Maintain an empty stack. Loop over the vertices of the graph and call
-#       recursive function DFSUtils for unvisited vertices.
-#           In DFSUtils loop over the connected vertices and again call DFSUtils over each of them.
-#           After the loop got over push this input vertex in stack.
-#       Once DFSUtils is call over all the unvisited vertices. Pop elements from the stack and print it.
+#       Topological sorting : Maintain an empty stack. Loop over the vertices of the graph
+#       and call recursive function DFSUtils for unvisited vertices.
+#           In DFSUtils loop over the connected vertices and again call DFSUtils over each
+#           of them. After the loop got over push this input vertex in stack.
+#       Once DFSUtils is called over all the unvisited vertices.
+#       Pop elements from the stack and print it.
 # Complexity : O(n + alphaCount)
 
 

@@ -1,13 +1,14 @@
 # CTCI : Q16_20_T9
 # Similar : https://leetcode.com/problems/letter-combinations-of-a-phone-number/
-# Question : On old cell phones, users typed on a numeric keypad and the phone would provide a list of words
-# that matched these numbers. Each digit mapped to a set of O - 4 letters. Implement an algorithm
-# to return a list of matching words, given a sequence of digits. You are provided a list of valid words
-# (provided in whatever data structure you would like).
+# Question : On old cell phones, users typed on a numeric keypad and the phone would provide
+# a list of words that matched these numbers. Each digit mapped to a set of O - 4 letters.
+# Implement an algorithm to return a list of matching words, given a sequence of digits.
+# You are provided a list of valid words (provided in whatever data structure you would like).
 #
 # Question Type : ShouldSee
-# Used : Make a map of number to words for all the given words in the dictionary. Convert each letter of word
-#        to a digit and make a number. Append that word in map where key is that number.
+# Used : Make a map of number to words for all the given words in the dictionary. Convert
+#        each letter of word to a digit and make a number. Append that word in map where
+#        key is that number.
 #        After this pre-processing its easy give answer.
 # Complexity : O(1) space : O(n) where n is number of total words
 

@@ -1,5 +1,6 @@
-# Question : Given an array of strings, find if the given strings can be chained to form a circle. A string X
-# can be put before another string Y in circle if the last character of X is same as first character of Y.
+# Question : Given an array of strings, find if the given strings can be chained to form
+# a circle. A string X can be put before another string Y in circle if the last character
+# of X is same as first character of Y.
 #
 # Input: arr[] = {"for", "geek", "rig", "kaf"}
 # Output: Yes, the given strings can be chained.
@@ -9,20 +10,22 @@
 # Used : Create a directed graph g with number of vertices equal to the size of alphabet.
 #        Loop over the strings in input array and do this:
 #           Add an edge from first character to last character of the given graph.
-#       If the created graph has Eulerian circuit, then return true, else return false.
+#        If the created graph has Eulerian circuit, then return true, else return false.
 #
-#       Eulerian Path is a path in graph that visits every edge exactly once. Eulerian Circuit is an
-#       Eulerian Path which starts and ends on the same vertex. For that these two conditions must be met:
-#       1) All vertices with nonzero degree belong to a single strongly connected component.
-#       2) In degree and out degree of every vertex is same
+#        Eulerian Path is a path in graph that visits every edge exactly once. Eulerian
+#        Circuit is an Eulerian Path which starts and ends on the same vertex.
+#        For that these two conditions must be met:
+#        1) All vertices with nonzero degree belong to a single strongly connected component.
+#        2) In degree and out degree of every vertex is same
 #
-#       For 1) Find the first vertex whose out degree is more than 0. Use DFS using the vertex. If DFS
-#       traversal doesn't visit all vertices with non zero degree, then return false. Take a transpose
-#       graph(gr) of this graph. Do DFS using the same previously used vertex. If DFS traversal doesn't
-#       visit all vertices of original graph with non zero degree, then return false. If above conditions
-#       are passed then return True.
-#       For 2) Maintain in and out degree of each vertex in the graph and check if they are same for
-#       each vertex.
+#       1. Find the first vertex whose out degree is more than 0. Use DFS using the vertex.
+#       If DFS traversal doesn't visit all vertices with non zero degree, then return false.
+#       Take a transpose graph(gr) of this graph. Do DFS using the same previously used vertex.
+#       If DFS traversal doesn't visit all vertices of original graph with non zero degree,
+#       then return false.
+#       If above conditions are passed then return True.
+#       2. Maintain in and out degree of each vertex in the graph and check if they are same
+#       for each vertex.
 # Complexity : O(V+E)
 
 CHARS = 26

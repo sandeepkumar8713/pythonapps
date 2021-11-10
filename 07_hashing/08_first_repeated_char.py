@@ -1,5 +1,5 @@
-# Question : Given a string, find the first repeated character in it. We need to find the character that occurs
-# more than once and whose index of first occurrence is smallest.
+# Question : Given a string, find the first repeated character in it. We need to find the
+# character that occurs more than once and whose index of first occurrence is smallest.
 #
 # Input:  ch = "geeksforgeeks"
 # Output: e

@@ -1,15 +1,20 @@
 # https://www.geeksforgeeks.org/detect-cycle-in-a-graph/
-# Question : Given a directed graph, check whether the graph contains a cycle or not. Your function should return
-# true if the given graph contains at least one cycle, else return false. For example, the following graph contains
-# three cycles 0->2->0, 0->1->2->0 and 3->3, so your function must return true.
+# Question : Given a directed graph, check whether the graph contains a cycle or not.
+# Your function should return true if the given graph contains at least one cycle,
+# else return false. For example, the following graph contains three
+# cycles 0->2->0, 0->1->2->0 and 3->3, so your function must return true.
 #
 # Question Type : Generic
-# Used : Recursion stack means the single depth while moving from first vertex to last vertex. While in
-#        this stack if we get a previously visited vertex then we can say that we a cycle.
-#        Visit the all the vertex of graph using DFS and also keep track of vertex in current recStack.
-#        If we find a already visited vertex which is already in current recursion stack return True.
-#        While existing a stack (recursive func call), mark that vertex in recStack as false.
+# Used : Recursion stack means the single depth while moving from first vertex to last vertex.
+#        While in this stack if we get a previously visited vertex then we can say that we
+#        have a cycle.
+#        Visit the all the vertex of graph using DFS and also keep track of vertex in
+#        current recStack.
+#        If we find a already visited vertex which is already in current recursion stack
+#        return True.
+#        While exiting a stack (recursive func call), mark that vertex in recStack as false.
 #        If we come out of above loop then return false. No cycle found.
+#        Logic :
 #        isCyclicUtils(self, v, visited, recStack):
 #        visited[v] = True, recStack[v] = True
 #        for i in self.graph[v]:

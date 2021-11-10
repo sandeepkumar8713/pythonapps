@@ -1,7 +1,8 @@
 # https://www.geeksforgeeks.org/google-interview-experience-off-campus/
-# Question : A graph has N vertices numbered from 1 to N. We have two lists. One list M consisted of edges
-# between vertices. The other list K consists of restricted paths. We have to add edges one by one from M and
-# check whether the addition of the particular edge leads to a path between the restricted edges given in K.
+# Question : A graph has N vertices numbered from 1 to N. We have two lists. One list M
+# consisted of edges between vertices. The other list K consists of restricted paths.
+# We have to add edges one by one from M and check whether the addition of the particular
+# edge leads to a path between the restricted edges given in K.
 # If it creates a path, we have to discard the edge.
 #
 # Example: N = 4; K = {(1, 4)}; M = {(1, 2), (2, 3), (3, 4)}.
@@ -11,6 +12,7 @@
 # Used : For the given edgeList, Loop over it.
 #        Add the edge in graph, find connected components,
 #        If restricted path edges are there in connect component, remove the edge from graph
+#        Try to solve it by parent and rank.
 # Complexity : O(E * E * V * (V+E)) where E is edge count V is vertex count
 
 

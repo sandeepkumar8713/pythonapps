@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/longest-consecutive-sequence/
-# Question : Given an array of integers, find the length of the longest sub-sequence such that elements in the
-# sub sequence are consecutive integers, the consecutive numbers can be in any order.
+# Question : Given an array of integers, find the length of the longest sub-sequence such
+# that elements in the sub sequence are consecutive integers, the consecutive numbers
+# can be in any order.
 #
 # Input: arr[] = {1, 9, 3, 10, 4, 20, 2};
 # Output: 4
@@ -8,10 +9,12 @@
 #
 # Question Type : ShouldSee
 # Used : Loop over the elements and add it to the set. So it will have unique values.
-#        Loop over the elements, if its previous element arr[i] - 1 is not present in set,
-#        then this might be the first element in our desired sub sequence. Now keep incrementing this
-#        element j and keep checking if incremented value is in set. Once the loop gets over.
-#        Compare max value with j - arr[i] and update accordingly.
+#        Loop over the elements, if its previous element arr[i] - 1 is not present in
+#        set, then this might be the first element in our desired sub sequence. Now
+#        keep incrementing this element j and keep checking if incremented value is
+#        in set.
+#        Once the loop gets over. Compare max value with j - arr[i] and update accordingly.
+#        Logic:
 #        findLongestConseqSubseq(arr):
 #        for i in range(len(arr)):
 #           if (arr[i] - 1) not in s:

@@ -1,11 +1,11 @@
-# Question : Given two given arrays of equal length, the task is to find if given arrays are equal or not.
-# Two arrays are said to be equal if both of them contain same set of elements, arrangements (or permutation)
-# of elements may be different though.
+# Question : Given two given arrays of equal length, the task is to find if given arrays
+# are equal or not. Two arrays are said to be equal if both of them contain same set of
+# elements, arrangements (or permutation) of elements may be different though.
 #
 # Question Type : Easy
 # Used : Loop over the elements of arr1 and make a entry of its frequency in hash dict.
-#        Loop over the elements of arr2 and see if it is present in hash dict and reduce its frequency by 1 else
-#           return False
+#        Loop over the elements of arr2 and see if it is present in hash dict and
+#           reduce its frequency by 1 else return False.
 #        Return true if above condition is passed.
 # Complexity : O(n)
 

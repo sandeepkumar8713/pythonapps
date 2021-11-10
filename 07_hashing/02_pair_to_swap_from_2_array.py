@@ -1,6 +1,6 @@
 # CTCI : Q16_21_Sum_Swap
-# Question : Given two arrays of integers, find a pair of values (one value from each array) that you can swap
-# to give the two arrays the same sum.
+# Question : Given two arrays of integers, find a pair of values (one value from each array)
+# that you can swap to give the two arrays the same sum.
 #
 # Input : A[] = {4, 1, 2, 1, 1, 2}
 #         B[] = (3, 6, 3, 3)
@@ -12,7 +12,7 @@
 #        Now loop through larger array while checking if (arr[i] + diff or arr[i] - diff)
 #           is in smaller array. If found put in pairs dict.
 #        If pairs dict is empty then not found else print the pairs.
-# Complexity :  O(n)
+# Complexity : O(n)
 
 
 def findPair(arr1, arr2):

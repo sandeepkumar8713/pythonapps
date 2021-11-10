@@ -1,15 +1,18 @@
 # https://www.geeksforgeeks.org/minimum-number-swaps-required-sort-array/
-# Question : Given an array of n distinct elements, find the minimum number of swaps required to sort the array.
+# Question : Given an array of n distinct elements, find the minimum number of swaps
+# required to sort the array.
 #
 # Question Type : ShouldSee
-# Used : Make a indexDict for key(element): value(index) for the input array. Sort the input array.
-#        Maintain a boolean array to take care of visited elements. Maintain a global res to count all the swap.
-#        Loop through the sorted array. If the element is already visited or its index is same as value in
-#           indexDict(already at correct place) skip it.
-#           Else take j=i and run 1 more loop while visited[j] = False. (loop while the swapping takes
-#               place). Based on current element change the value of j to its swapped elements's
-#               index j = indexDict[ele]. Count the no. of times this loop ran. Keep marking element at
-#               index as visited.
+# Used : Make a indexDict for key(element): value(index) for the input array. Sort the input
+#        array. Maintain a boolean array to take care of visited elements. Maintain a global
+#        res to count all the swap.
+#        Loop through the sorted array. If the element is already visited or its index is
+#           same as value in indexDict(already at correct place) skip it.
+#           Else take j=i and run 1 more loop while visited[j] = False.
+#           (loop while the swapping takes place).
+#           Based on current element change the value of j to its swapped elements's
+#           index j = indexDict[ele]. Count the no. of times this loop ran. Keep marking
+#           element at index as visited.
 #           Add this counter to the global res
 #        return res
 #        Logic :

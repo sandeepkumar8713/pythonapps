@@ -1,5 +1,5 @@
-# Question : Given two strings string1 and string2, find the smallest substring in string1 containing all
-# characters of string 2 efficiently.
+# Question : Given two strings string1 and string2, find the smallest substring in
+# string1 containing all characters of string 2 efficiently.
 #
 # Input : string = "this is a test string"
 # pattern = "tist"
@@ -8,14 +8,17 @@
 # Question Type : Generic, SimilarAdded
 # Used : Loop over the pattern and add the elements to hashPatt along with frequency.
 #        hashStr represents the sliding window. Take start as 0.
-#        Loop over the string and add the elements to hashString along with frequency. If ele is present
-#            in hashPatt and freq of ele in hashStr is less than or equal to freq of ele in
-#            hashPatt(hashStr[ele] <= hashPatt[ele]) then increase the count. If count is equal to length
-#            of pattern, then we have found the pattern in this window. Now we need to reduce the size of
-#            window from left side by removing not matching or repeated ele.
+#        Loop over the string and add the elements to hashString along with frequency.
+#            If ele is present in hashPatt and freq of ele in hashStr is less than or
+#            equal to freq of ele in hashPatt(hashStr[ele] <= hashPatt[ele]) then increase
+#            the count.
+#            If count is equal to length of pattern, then we have found the pattern in
+#            this window. Now we need to reduce the size of window from left side by
+#            removing not matching or repeated ele.
 #            Loop while inpStr[start] is not in hashPatt or hashStr[inpStr[start]] > hashPatt[inpStr[start]]
 #               decrement starts freq from hashStr and increment start by 1
-#            Update the minWindow, size if current window is less than minWindow and keep startIndex
+#            Update the minWindow, size if current window is less than minWindow
+#            and keep startIndex
 #        print minWindow
 # Complexity : O(n)
 

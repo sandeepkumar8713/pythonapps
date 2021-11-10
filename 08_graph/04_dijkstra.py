@@ -1,14 +1,17 @@
 # https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/
-# Question : Given a graph and a source vertex in the graph, find shortest paths from source to all vertices
-# in the given graph.
+# Question : Given a graph and a source vertex in the graph, find shortest paths from source
+# to all vertices in the given graph.
 #
 # Question Type : ShouldSee
-# Used : Maintain a minDist array with size v, initialize them with maxInt. Maintain a shortest path tree(SPT)
-#        array with size v, initialize them with False. Initialize minDist[src] as 0.
-#        Loop over the vertices of the graph. Find the index of vertex whose distance from source to vertex
-#           is min (minimum value in minDist array which is not yet added in SPT) and include it in SPT.
-#           Now use this newly found vertex, to check if via (lesser cost) path is possible, by looping over
-#           all the vertices which are not yet included in SPT and update minDist.
+# Used : Maintain a minDist array with size v, initialize them with maxInt.
+#        Maintain a shortest path tree(SPT) array with size v, initialize them with False.
+#        Initialize minDist[src] as 0.
+#        Loop over the vertices of the graph. Find the index of vertex whose distance from
+#           source to vertex is min (minimum value in minDist array which is not yet added
+#           in SPT) and include it in SPT.
+#           Now use this newly found vertex, to check if via (lesser cost) path is possible,
+#           by looping over all the vertices which are not yet included in SPT and update
+#           minDist.
 # Complexity : O(n^2)
 #              If the input graph is represented using adjacency list, it can be reduced to O(E log V) with
 #              the help of binary heap.

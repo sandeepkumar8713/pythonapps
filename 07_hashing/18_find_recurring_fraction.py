@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/find-recurring-sequence-fraction/
 # https://leetcode.com/problems/fraction-to-recurring-decimal/
-# Question : Given a fraction, find recurring sequence of digits if exists, otherwise print "No recurring sequence".
+# Question : Given a fraction, find recurring sequence of digits if exists,
+# otherwise print "No recurring sequence".
 #
 # Input  : Numerator = 8, Denominator = 3
 # Output : Recurring sequence is 6
@@ -11,12 +12,13 @@
 # Explanation : 50/22 = 2.272727272.....
 #
 # Question Type : ShouldSee
-# Used : Do normal division and keep track of remainder found with quotient index. If that remain is found again,
-#        break and print from that index to end.
-#       fractionToDecimal(numerator, denominator):
-#       res = "", hashMap = dict()
-#       rem = numerator % denominator
-#       while rem != 0 and rem not in hashMap.keys():
+# Used : Do normal division and keep track of remainder found with quotient index.
+#        If that remainder is found again, break and print from that index to end.
+#        Logic :
+#        fractionToDecimal(numerator, denominator):
+#        res = "", hashMap = dict()
+#        rem = numerator % denominator
+#        while rem != 0 and rem not in hashMap.keys():
 #           hashMap[rem] = len(res)
 #           rem = rem*10
 #           resPart = rem // denominator

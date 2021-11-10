@@ -11,11 +11,13 @@
 # Question Type : Generic
 # Used : Initialize the result which is list of dict(startIndex : endIndex). Initialize dict
 #        hasDict(sumSoFar:[indexes where sum ends]).
-#        Loop over the elements in the input array and keep adding the elements to the sumSoFar. If the
-#           sumSoFar is 0 append {0:i} to the result. If sumSoFar is already in the hashDict then there
-#           exists at-least one sub array ending at i with 0 sum. So take the list of indexes for this
-#           sum from the hashDict. Now iterate over this list and keep appending {index + 1: i} to the result.
+#        Loop over the elements in the input array and keep adding the elements to the
+#        sumSoFar. If the sumSoFar is 0 append {0:i} to the result. If sumSoFar is already
+#        in the hashDict then there exists at-least one sub array ending at i with 0 sum.
+#        So take the list of indexes for this sum from the hashDict. Now iterate over this
+#        list and keep appending {index + 1: i} to the result.
 #           Now append i to list of sumSoFar in hashDict, i.e. hashDict[sumSoFar].append(i)
+#        Logic:
 #        findSubArray(arr):
 #        for i in range(len(arr)):
 #           sumSoFar += arr[i]

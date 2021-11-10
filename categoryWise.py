@@ -20,13 +20,17 @@ questionMap['quickSort'] = {'01_array/09_find_kth_small_element', }
 
 questionMap['slidingWindow'] = {'01_array/12_chocolate_distribution',
                                 '01_array/20_flip_ele_to_1',
-                                '02_string/12_longest_substring_with_k_unique_char', }
+                                '02_string/12_longest_substring_with_k_unique_char',
+                                '07_hashing/13_find_smallest_window'}
 
 questionMap['heap'] = {'01_array/16_find_kth_largest_in_stream',
                        '05_heap/08_compute_mean_of_window',
                        '05_heap/09_kth_smallest_ele_in_marix'}
 
-questionMap['kRemainder'] = {'01_array/29_chocolate_distribution_consecutive', }
+questionMap['kRemainder'] = {'01_array/29_chocolate_distribution_consecutive',
+                             '07_hashing/01_find_largest_sub_array_with_sum_0',
+                             '07_hashing/04_array_pair_sum_divisibility',
+                             '07_hashing/09_find_all_subarray_with_sum_zero'}
 
 questionMap['palindrome'] = {'02_string/03_longest_palindrome_substring',
                              '02_string/08_form_palindrome_with_min_insertion',
@@ -49,8 +53,23 @@ questionMap['linkedList'] = {'03_linkedList/02_detect_and_remove_loop',
 
 questionMap['reachInArray'] = {'03_linkedList/10_circular_tour', }
 
-questionMap['bfs'] = {'03_linkedList/13_rotten_orange', }
+questionMap['bfs'] = {'03_linkedList/13_rotten_orange',
+                      '08_graph/12_snake_and_ladder',
+                      '08_graph/13_knight_problem_min_step'}
 
+questionMap['dfs'] = {'08_graph/03_detect_cycle',
+                      '08_graph/11_alien_dictionary',
+                      '08_graph/17_overall_array'}
+
+questionMap['pathInMatrix'] = {'06_recursion/02_possible_path_in_matrix',
+                               '08_graph/07_find_path_exist',
+                               '08_graph/08_min_cost_path_in_matrix'}
+
+questionMap['shortestDist'] = {'08_graph/04_dijkstra',
+                               '08_graph/10_ford_warshall'}
+
+questionMap['ssc'] = {'08_graph/06_strongly_connect_component',
+                      '08_graph/09_circle_of_string'}
 
 questionMap['verticalDist'] = {'04_tree/02_diagonal_traversal',}
 
@@ -78,7 +97,7 @@ questionMap['heap'] = {'05_heap/01_median_in_stream',
                        '05_heap/04_non_adjacent_character',
                        '05_heap/05_same_char_d_dist_apart'}
 
-questionMap['pathInMatrix'] = {'06_recursion/02_possible_path_in_matrix',}
+
 
 
 def getSelectedFilename():

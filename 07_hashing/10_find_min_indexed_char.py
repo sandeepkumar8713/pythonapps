@@ -1,5 +1,6 @@
-# Question : Given a string str and another string patt. Find the character in patt that is present at the
-# minimum index in str. If no character of patt is present in str then print 'No character present'.
+# Question : Given a string str and another string patt. Find the character in patt that
+# is present at the minimum index in str. If no character of patt is present in str
+# then print 'No character present'.
 #
 # Input : str = "geeksforgeeks"
 #         patt = "set"
