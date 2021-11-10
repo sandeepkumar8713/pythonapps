@@ -1,13 +1,13 @@
-# Question : Given two numbers 'N' and 'S' , find the largest number that can be formed with 'N' digits and whose
-# sum of digits should be equals to 'S'.
+# Question : Given two numbers 'N' and 'S' , find the largest number that can be formed with
+# 'N' digits and whose sum of digits should be equals to 'S'.
 #
 # Question Type : Easy
-# Used : First check if is possible to reach the target with given number of digits using this:
+# Used : First check if is possible to reach the target with given number of digits using this
 #        targetSum > 9 * digitCount
 #        Make a result array of size digitCount and initialize all with 0
-#        Loop over the element of array and check if target sum is greater or equal than 9. If it is,
-#           set 9 in array and decrement targetSum by 9. Else put target sum in the array and set
-#           targetSum as 0.
+#        Loop over the element of array and check if target sum is greater or equal than 9.
+#           If it is, set 9 in array and decrement targetSum by 9. Else put target sum in
+#           the array and set targetSum as 0.
 #        return result array.
 # Complexity : O(n)
 

@@ -1,5 +1,5 @@
-# Question : Given an array consisting cost of toys. Given an integer K depicting the amount with you.
-# Maximise the number of toys you can have with K amount.
+# Question : Given an array consisting cost of toys. Given an integer K depicting the amount
+# with you. Maximise the number of toys you can have with K amount.
 #
 # Question Type : Easy
 # Used : Sort the given array of costs. Run a loop to over them while the sum is less than K.

@@ -1,12 +1,15 @@
 # CTCI : Q8_11_Coins
-# Question : Given a value N, if we want to make change for N cents, and we have infinite supply of each of
-# S = { S1, S2, .. , Sm} valued coins, how many ways can we make the change? The order of coins doesn't matter.
+# Question : Given a value N, if we want to make change for N cents, and we have infinite
+# supply of each of S = { S1, S2, .. , Sm} valued coins, how many ways can we make the
+# change? The order of coins doesn't matter.
 #
 # For example, for N = 4 and S = {1,2,3}, there are four solutions: {1,1,1,1},{1,1,2},{2,2},{1,3}.
 #
 # Question Type : Generic
-# Used : Here we are maintaining a memory table. table : size (targetSum+1). Initialize all as 0.
+# Used : Here we are maintaining a memory table. table : size (targetSum+1).
+#        Initialize all as 0.
 #        table[i] will be storing the number of solutions for targetSum i.
+#        table[0] = 1
 #        Run a loop over coin value in coinList
 #           Run a loop from coin value to targetSum
 #               Consider this coin as chosen, then take possible counts from

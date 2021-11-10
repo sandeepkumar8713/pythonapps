@@ -19,6 +19,7 @@
 #                     ans = max(ans, 1 + getLenUtil(inpMat, dp, i + x[k], j + y[k], thisCell))
 #                 dp[i][j] = ans
 #             if maxLen < dp[i][j]: maxLen = dp[i][j]
+#        return maxLen
 #        def getLenUtil(mat, dp, i, j, prev):
 #        row = len(mat), col = len(mat[0])
 #        if isvalid(i, j, row, col) is False or isadjacent(prev, mat[i][j]) is False:

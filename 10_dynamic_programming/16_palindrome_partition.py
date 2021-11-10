@@ -1,14 +1,17 @@
 # https://www.geeksforgeeks.org/dynamic-programming-set-17-palindrome-partitioning/
-# Question : Given a string, a partitioning of the string is a palindrome partitioning if every substring of the
-# partition is a palindrome. For example, "aba|b|bbabb|a|b|aba" is a palindrome partitioning of "ababbbabbababa".
-# Determine the fewest cuts needed for palindrome partitioning of a given string. For example, minimum 3 cuts are
-# needed for "ababbbabbababa". The three cuts are "a|babbbab|b|ababa". If a string is palindrome, then minimum 0
-# cuts are needed. If a string of length n containing all different characters, then minimum n-1 cuts are needed.
+# Question : Given a string, a partitioning of the string is a palindrome partitioning if
+# every substring of the partition is a palindrome. For example, "aba|b|bbabb|a|b|aba" is
+# a palindrome partitioning of "ababbbabbababa". Determine the fewest cuts needed for
+# palindrome partitioning of a given string. For example, minimum 3 cuts are needed for
+# "ababbbabbababa". The three cuts are "a|babbbab|b|ababa". If a string is palindrome,
+# then minimum 0 cuts are needed. If a string of length n containing all different
+# characters, then minimum n-1 cuts are needed.
 #
 # Question Type : Generic
 # Used : Call a recursive function minPalinPartition. Maintain a map dp size : n*n such that
-#        dp[i][j] is return true if inpStr[i..j] is palindrome. Maintain a array minCuts size : n
-#        such that minCuts[i] gives min cuts for inpStr[0..i].
+#        dp[i][j] is return true if inpStr[i..j] is palindrome.
+#        Maintain a array minCuts size : n such that
+#        minCuts[i] gives min cuts for inpStr[0..i].
 #        Run a loop from length L : 2 to n.
 #           Run a loop from i: 0 to n-L. set otherEnd j = i + L - 1.
 #           If L == 2:  dp[i][j] = inpStr[i] == inpStr[j]

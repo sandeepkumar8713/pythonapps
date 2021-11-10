@@ -1,6 +1,6 @@
-# Question : Given a n*n matrix where all numbers are distinct, find the maximum length path (starting from any
-# cell) such that all cells along the path are in increasing order with a difference of 1. We can move in 4
-# directions from a given cell (i, j).
+# Question : Given a n*n matrix where all numbers are distinct, find the maximum length
+# path (starting from any cell) such that all cells along the path are in increasing
+# order with a difference of 1. We can move in 4 directions from a given cell (i, j).
 #
 # Input:  mat[][] = {{1, 2, 9}
 #                    {5, 3, 8}
@@ -9,11 +9,12 @@
 # The longest path is 6-7-8-9.
 #
 # Question Type : Generic, SimilarAdded
-# Used : Here we are maintaining a memory table. table : dp row * col . Initialize all as -1. (-1 not
-#        yet computed). Here the idea is to compute max possible path for each cell and return the
-#        largest value.
-#        Set result as 1. Loop over each of the elements in the matrix and call (if not yet calculated -1)
-#           recursive function findLongestFromACell which would set maxpathlength for this cell in dp[i][j].
+# Used : Here we are maintaining a memory table.
+#        table : dp row * col . Initialize all as -1. (-1 not yet computed).
+#        Here the idea is to compute max possible path for each cell and return the largest value.
+#        Set result as 1. Loop over each of the elements in the matrix and call
+#           (if not yet calculated -1) recursive function findLongestFromACell which would set
+#           maxpathlength for this cell in dp[i][j].
 #           See if it is more than result and update accordingly.
 #        return result
 #
@@ -28,7 +29,7 @@
 #           if 0 <= nextI < row and 0 <= nextJ < col:
 #               if (mat[i][j] + 1) == mat[nextI][nextJ]:
 #                   atleastOneGreaterFound = True
-#                    dp[i][j] = 1 + findLongestFromACell(nextI, nextJ, mat, dp)
+#                   dp[i][j] = 1 + findLongestFromACell(nextI, nextJ, mat, dp)
 #        if not atleastOneGreaterFound: dp[i][j] = 1
 #        return dp[i][j]
 # Complexity : O(n^2)

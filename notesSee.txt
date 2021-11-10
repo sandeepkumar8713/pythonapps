@@ -27,4 +27,10 @@
 07_hashing/18_find_recurring_fraction.py
 07_hashing/21_implement_version_control.py
 08_graph/15_stepping_numbers.py
+09_greedy/06_min_diff_in_heigth.py
+10_dynamic_programming/19_subsequnece_count.py
+10_dynamic_programming/20_perfect_sum_subset.py
+10_dynamic_programming/22_make_2timesMin_more_max.py
+10_dynamic_programming/26_Respace.py
+
 

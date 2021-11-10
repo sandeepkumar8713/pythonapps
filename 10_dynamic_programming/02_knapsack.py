@@ -2,10 +2,11 @@
 # total value in the knapsack.
 #
 # Question Type : Generic
-# Used : Here we are maintaining a memory table. K : size (n+1) * (weightLimit+1). Initialize all as 0.
+# Used : Here we are maintaining a memory table. K : size (n+1) * (weightLimit+1).
+#        Initialize all as 0.
 #        Now loop over each element of the table K. If it is in first row or col set as 0.
-#           For this row i, check if current item i-1 can fit in the knapsack of j. If yes, choose
-#              the max of previous row value, by ignoring this item : (K[i - 1][j]) or
+#           For this row i, check if current item i-1 can fit in the knapsack of j. If yes,
+#              choose the max of previous row value, by ignoring this item: (K[i - 1][j]) or
 #              put item in bag and check with remaining capacity:
 #              (itemValue[i - 1] + K[i - 1][j - itemWeight[i - 1]])
 #           If it can't fit then set previous row value (K[i - 1][j])

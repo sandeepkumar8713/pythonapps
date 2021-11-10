@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/perfect-sum-problem-print-subsets-given-sum/
-# Question : Given an array of integers and a sum, the task is to print all subsets of given array with
-# sum equal to given sum.
+# Question : Given an array of integers and a sum, the task is to print all subsets of given
+# array with sum equal to given sum.
 #
 # Examples:
 # Input : arr[] = {2, 3, 5, 6, 8, 10}
@@ -24,6 +24,7 @@
 #        printSubsetsRec(dp, inpArr, n-1, targetSum, [])
 #        Now we call a recursive function which picks and ignores the current element and check if the target can
 #        achieved, i.e. at the end sum becomes 0, print the elements selected so far.
+#        Logic :
 #        printSubsetsRec(dp, inpArr, i, targetSum, subArray):
 #        if i == 0 and targetSum != 0 and dp[0][targetSum]:
 #           subArray.append(inpArr[i]), targetSum = 0

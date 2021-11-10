@@ -1,7 +1,8 @@
 # https://www.geeksforgeeks.org/huffman-decoding/
-# Question : Huffman coding is a loss less data compression algorithm. The idea is to assign variable-length codes
-# to input characters, lengths of the assigned codes are based on the frequencies of corresponding characters.
-# The most frequent character gets the smallest code and the least frequent character gets the largest code.
+# Question : Huffman coding is a loss less data compression algorithm. The idea is to assign
+# variable-length codes to input characters, lengths of the assigned codes are based on
+# the frequencies of corresponding characters. The most frequent character gets the smallest
+# code and the least frequent character gets the largest code.
 #
 # Input Data : AAAAAABCCCCCCDDEEEEE
 # Frequencies : A: 6, B: 1, C: 6, D: 2, E: 5
@@ -21,8 +22,8 @@
 # Decoded Data : AAAAAABCCCCCCDDEEEEE
 #
 # Question Type : ShouldSee
-# Used : From the given input string, make of list of nodes whose fields are : data, freq, left and right
-#        Using this list make a normal max heap.
+# Used : From the given input string, make of list of nodes whose fields are : data, freq,
+#        left and right. Using this list make a normal max heap.
 #        Loop while max heap has only one element
 #           pop twice from this max heap(last element), tag them as left and right, merge them by
 #           (use '#' as data)

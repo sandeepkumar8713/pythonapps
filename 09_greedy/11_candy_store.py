@@ -1,7 +1,8 @@
-# Question : In a candy store there are N different types of candies available and the prices of all the N
-# different types of candies are provided. There is also an attractive offer by candy store. We can buy a single
-# candy from the store and get at-most K other candies (all are different types) for free. Find minimum amount
-# of money we have to spend to buy all the N different candies.
+# Question : In a candy store there are N different types of candies available and the prices
+# of all the N different types of candies are provided. There is also an attractive offer by
+# candy store. We can buy a single candy from the store and get at-most K other candies
+# (all are different types) for free. Find minimum amount of money we have to spend to
+# buy all the N different candies.
 #
 # Input :  price[] = {3, 2, 1, 4}
 #                k = 2
@@ -15,9 +16,11 @@
 # Question Type : Generic
 # Used : Sort the given array.
 #        To find min, loop from left and reduce from right by k.
-#        Loop while n >= 1. Add arr[i] in sum and reduce n by k (n = n - k)
+#        Loop while n >= 1.
+#           Add arr[i] in sum and reduce n by k (n = n - k)
 #        To find max, loop from right and increment left by k.
-#        set start = 0 and end = 0, loop while end >= start, add arr[end] in sum,
+#        set start = 0 and end = 0
+#        loop while end >= start, add arr[end] in sum,
 #           reduce end = end - 1 and increment start = start + k
 # Complexity : O(log n)
 

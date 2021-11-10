@@ -38,9 +38,28 @@ questionMap['palindrome'] = {'02_string/03_longest_palindrome_substring',
                              '02_string/20_chunked_palindrome',
                              '02_string/25_palindrome_permutation',
                              '02_string/31_palindrome_from_2_strings',
-                             '03_linkedList/29_is_plaindrome',}
+                             '03_linkedList/29_is_plaindrome',
+                             '10_dynamic_programming/16_palindrome_partition'}
 
-questionMap['dpDfs'] = {'02_string/07_longest_common_substring', }
+questionMap['dpDfs'] = {'02_string/07_longest_common_substring',
+                        '10_dynamic_programming/13_shortest_common_superSequece',
+                        '10_dynamic_programming/14_sub_matrix_with_all_1',
+                        '10_dynamic_programming/15_count_possible_decoding',
+                        '10_dynamic_programming/33_longest_consecutive_path_in_matrix'}
+
+questionMap['dpBox'] = {'09_greedy/01_activity_selection',
+                        '09_greedy/08_max_len_chain',
+                        '10_dynamic_programming/25_box_stacking'}
+
+questionMap['subProblem'] = {'09_greedy/02_make_change_with_min_coin',
+                             '10_dynamic_programming/05_all_possible_coin_change',
+                             '23_thirdFolder/49_perfect_square',
+                             '10_dynamic_programming/02_knapsack',
+                             '10_dynamic_programming/04_edit_distance',
+                             '10_dynamic_programming/12_optimal_game_strategy',
+                             '10_dynamic_programming/17_gold_mine',
+                             '10_dynamic_programming/21_wildcard_pattern_matching',
+                             '10_dynamic_programming/36_square_submatrix_count'}
 
 questionMap['bitVector'] = {'02_string/23_unique_char_without_map', }
 
@@ -51,7 +70,9 @@ questionMap['linkedList'] = {'03_linkedList/02_detect_and_remove_loop',
                              '03_linkedList/03_merge_two_list',
                              '03_linkedList/14_clone_double_linked',}
 
-questionMap['reachInArray'] = {'03_linkedList/10_circular_tour', }
+questionMap['reachInArray'] = {'03_linkedList/10_circular_tour',
+                               '10_dynamic_programming/03_minimum_jump'
+                               '24_fourthFolder/32_minimum_refueling'}
 
 questionMap['bfs'] = {'03_linkedList/13_rotten_orange',
                       '08_graph/12_snake_and_ladder',
@@ -61,12 +82,16 @@ questionMap['dfs'] = {'08_graph/03_detect_cycle',
                       '08_graph/11_alien_dictionary',
                       '08_graph/17_overall_array'}
 
+questionMap['lru'] = {'09_greedy/04_page_fault_in_LRU',}
+
 questionMap['pathInMatrix'] = {'06_recursion/02_possible_path_in_matrix',
                                '08_graph/07_find_path_exist',
-                               '08_graph/08_min_cost_path_in_matrix'}
+                               '08_graph/08_min_cost_path_in_matrix'
+                               '10_dynamic_programming/08_longest_path_in_matrix'}
 
 questionMap['shortestDist'] = {'08_graph/04_dijkstra',
-                               '08_graph/10_ford_warshall'}
+                               '08_graph/10_ford_warshall',
+                               '09_greedy/09_minimum_spanning_tree'}
 
 questionMap['ssc'] = {'08_graph/06_strongly_connect_component',
                       '08_graph/09_circle_of_string'}
@@ -90,15 +115,14 @@ questionMap['leftCount'] = {'04_tree_bst/03_kth_smallest_element_in_bst',
 questionMap['binarySearch'] = {'04_tree_bst/08_sorted_array_to_bst',
                                '06_recursion/07_magic_index'}
 
+questionMap['painter'] = {'10_dynamic_programming/27_painter_partition_problem',}
+
 questionMap['nxtInorderNode'] = {'04_tree_bst/09_inorder_next_data_in_bst',
                                  '04_tree_bst/10_delete_node_in_BST'}
 
 questionMap['heap'] = {'05_heap/01_median_in_stream',
                        '05_heap/04_non_adjacent_character',
                        '05_heap/05_same_char_d_dist_apart'}
-
-
-
 
 def getSelectedFilename():
     overallSet = []

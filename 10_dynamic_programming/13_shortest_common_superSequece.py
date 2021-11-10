@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/shortest-common-supersequence/
-# Question : Given two strings str1 and str2, find the shortest string that has both str1 and str2 as sub
-# sequences. We need to find length of a string that has both strings as sub sequences and is shortest such string.
+# Question : Given two strings str1 and str2, find the shortest string that has both str1
+# and str2 as sub sequences. We need to find length of a string that has both strings as
+# sub sequences and is shortest such string.
 #
 # Input:   str1 = "geek",  str2 = "eke"
 # Output: "geeke"

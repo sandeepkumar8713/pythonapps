@@ -1,12 +1,14 @@
-# Question : Given N activities with their start and finish times. Select the maximum number of activities that
-# can be performed by a single person, assuming that a person can only work on a single activity at a time.
+# Question : Given N activities with their start and finish times. Select the maximum number
+# of activities that can be performed by a single person, assuming that a person can only work
+# on a single activity at a time.
 # Similar : 10_dynamic_programming/25_box_stacking, use MSH here
 #
 # Question Type : Generic
-# Used : Given two array start and finish. Sort the finish array and accordingly sort the start array.
+# Used : Given two array start and finish. Sort the finish array and accordingly sort the
+#        start array.
 #        Mark the first task as done, now run a loop over remaining tasks.
-#        If this tasks start time is more than previous done task's finish time then mark this as done
-#           and update this task as previous done task.
+#        If this tasks start time is more than previous done task's finish time then mark
+#           this as done and update this task as previous done task.
 # Complexity : O(n log n)
 
 

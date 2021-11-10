@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/count-of-n-digit-numbers-whose-sum-of-digits-equals-to-given-sum/
-# Question : Given two integers 'n' and 'sum', find count of all n digit numbers with sum of digits as 'sum'.
-# Leading 0's are not counted as digits.
+# Question : Given two integers 'n' and 'sum', find count of all n digit numbers with sum of
+# digits as 'sum'. Leading 0's are not counted as digits.
 #
 # Input:  n = 2, sum = 2
 # Output: 2

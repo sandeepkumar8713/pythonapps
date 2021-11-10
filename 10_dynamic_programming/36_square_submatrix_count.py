@@ -1,8 +1,9 @@
 # https://www.geeksforgeeks.org/count-all-square-sub-matrix-with-sum-greater-than-the-given-number-s/
 # Similar : https://leetcode.com/problems/range-sum-query-2d-immutable/
 # Similar : https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/
-# Question : Given a matrix mat[][] and two integers K and S, the task is to count all K x K sub-matrix such that the
-# sum of all the elements in the sub-matrix is greater than or equal to S.
+# Question : Given a matrix mat[][] and two integers K and S, the task is to count all
+# K x K sub-matrix such that the sum of all the elements in the sub-matrix is greater
+# than or equal to S.
 #
 # Example : Input: K = 2, S = 15
 # mat[][] = {{1, 2, 3},

@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum/
-# Question : Given a set of integers, the task is to divide it into two sets S1 and S2 such that the absolute
-# difference between their sums is minimum.
+# Question : Given a set of integers, the task is to divide it into two sets S1 and S2 such
+# that the absolute difference between their sums is minimum.
 #
 # Input:  arr[] = {1, 6, 11, 5}
 # Output: 1
@@ -9,11 +9,13 @@
 # Subset2 = {11}, sum of Subset2 = 11
 #
 # Question Type : Generic
-# Used : Let us suppose total sum is 100, so ideal division would be 50-50. If not possible 49-51,
-#        48-52 and so on ... So to tell this, we should have array of boolean from 0 to 100, specifying
-#        whether it is possible to make those sums using the given input elements by including or
-#        excluding. To get the above mentioned array we have to make a memory table dp :
-#        size (n+1) * (totalSum). Mark all as false. Where dp[i][j] specify whether it is possible
+# Used : Let us suppose total sum is 100, so ideal division would be 50-50. If not possible
+#        49-51, 48-52 and so on ... So to tell this, we should have array of boolean from 0
+#        to 100, specifying whether it is possible to make those sums using the given input
+#        elements by including or excluding.
+#        To get the above mentioned array we have to make a memory table dp :
+#        size (n+1) * (totalSum).
+#        Mark all as false. Where dp[i][j] specify whether it is possible
 #        to make sum j using i elements. Set first row as false. Set first column as true.
 #        Loop over the elements of dp.
 #           To exclude current element : dp[i][j] = dp[i - 1][j]. To include current element,

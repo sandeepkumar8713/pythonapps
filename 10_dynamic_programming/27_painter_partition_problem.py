@@ -1,13 +1,14 @@
 # https://www.geeksforgeeks.org/painters-partition-problem/
 # https://www.geeksforgeeks.org/allocate-minimum-number-pages/
-# Question : We have to paint n boards of length {A1, A2...An}. There are k painters available and each takes 1
-# unit time to paint 1 unit of board. The problem is to find the minimum time to get
-# this job done under the constraints that any painter will only paint continuous sections of boards, say
-# board {2, 3, 4} or only board {1} or nothing but not board {2, 4, 5}.
+# Question : We have to paint n boards of length {A1, A2...An}. There are k painters available
+# and each takes 1 unit time to paint 1 unit of board. The problem is to find the minimum time
+# to get this job done under the constraints that any painter will only paint continuous
+# sections of boards, say board {2, 3, 4} or only board {1} or nothing but not board {2, 4, 5}.
 #
 # Question Type : SimilarAdded
-# Used : Make a cumulative sum array, Make a dp array of size [k+1][n+1]. For each cell, try to separator from
-#        p = i to j. Choose the minimum of maximum values (Remember this is our aim).
+# Used : Make a cumulative sum array, Make a dp array of size [k+1][n+1]. For each cell,
+#        try to separator from p = i to j. Choose the minimum of maximum values
+#        (Remember this is our aim).
 #        Steps :
 #         for i in range(2, k+1):
 #           for j in range(2, n+1):

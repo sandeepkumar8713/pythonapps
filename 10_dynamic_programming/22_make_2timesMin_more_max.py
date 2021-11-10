@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/remove-minimum-elements-either-side-2min-max/
-# Question : Given an unsorted array, trim the array such that twice of minimum is greater than maximum in the
-# trimmed array. Elements should be removed either end of the array. Number of removals should be minimum.
+# Question : Given an unsorted array, trim the array such that twice of minimum is greater
+# than maximum in thebtrimmed array. Elements should be removed either end of the array.
+# Number of removals should be minimum.
 #
 # arr[] = {4, 5, 100, 9, 10, 11, 12, 15, 200}
 # Output: 4
@@ -18,6 +19,7 @@
 #        After the loop, If condition not satisfied at all, if longestStart == -1: return n
 #        Else return number of elements to be removed to satisfy :
 #        return n - (longestEnd - longestStart + 1)
+#        Logic :
 #        minRemovalsDP(inpArr):
 #        longestStart = -1, longestEnd = 0
 #        n = len(inpArr)

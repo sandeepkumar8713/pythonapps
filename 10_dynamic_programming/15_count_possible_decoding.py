@@ -1,5 +1,5 @@
-# Question : Let 1 represent 'A', 2 represents 'B', etc. Given a digit sequence, count the number of possible
-# decodings of the given digit sequence.
+# Question : Let 1 represent 'A', 2 represents 'B', etc. Given a digit sequence, count the
+# number of possible decodings of the given digit sequence.
 #
 # Input:  digits[] = "121"
 # Output: 3
@@ -8,8 +8,8 @@
 # Question Type : Generic
 # Used : If the last digit is non-zero, recur for remaining (n-1) digits and add the result
 #        to total count.
-#        If the last two digits form a valid character (or smaller than 27), recur for remaining
-#        (n-2) digits and add the result to total count.
+#        If the last two digits form a valid character (or smaller than 27), recur for
+#        remaining (n-2) digits and add the result to total count.
 #        Maintain DP of size n+1: where dp[n] represents possible count for digits[n-1].
 #        set dp[0] = 1, dp[1] = 1
 #        Run a loop from 2 to n over digits.

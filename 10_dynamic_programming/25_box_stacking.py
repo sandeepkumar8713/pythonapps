@@ -1,10 +1,11 @@
 # CTCI : Q8_13_Stack_of_Boxes
 # https://www.geeksforgeeks.org/box-stacking-problem-dp-22/
-# Question : You are given a set of n types of rectangular 3-D boxes, where the i^th box has height h(i), width w(i)
-# and depth d(i) (all real numbers). You want to create a stack of boxes which is as tall as possible, but you can
-# only stack a box on top of another box if the dimensions of the 2-D base of the lower box are each strictly
-# larger than those of the 2-D base of the higher box. Of course, you can rotate a box so that any side
-# functions as its base. It is also allowable to use multiple instances of the same type of box.
+# Question : You are given a set of n types of rectangular 3-D boxes, where the i^th box has
+# height h(i), width w(i) and depth d(i) (all real numbers). You want to create a stack of
+# boxes which is as tall as possible, but you can only stack a box on top of another box if
+# the dimensions of the 2-D base of the lower box are each strictly larger than those of the
+# 2-D base of the higher box. Of course, you can rotate a box so that any side functions as
+# its base. It is also allowable to use multiple instances of the same type of box.
 #
 # Question Type : Generic, SimilarAdded
 # Used : Make a class of Box with field : height, width and depth.

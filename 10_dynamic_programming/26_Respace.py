@@ -13,8 +13,8 @@
 #
 # Question Type : ShouldSee
 # Used : We will use recursion here. Call a function split(setOfWords, sentence, start, memo),
-#        which split the sentence at each character and call the function with remaining sentence to
-#        check if the invalid length is minimum.
+#        which split the sentence at each character and call the function with remaining
+#        sentence to check if the invalid length is minimum.
 #        split(setOfWords, sentence, start, memo):
 #  	     partial = "", index = start
 #        bestInvalid = sys.maxsize, bestParsing = ""
