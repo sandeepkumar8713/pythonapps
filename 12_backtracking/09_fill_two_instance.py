@@ -1,7 +1,7 @@
 # https://www.geeksforgeeks.org/fill-two-instances-numbers-1-n-specific-way/
-# Question : Given a number n, create an array of size 2n such that the array contains 2 instances of every
-# number from 1 to n, and the number of elements between two instances of a number i is equal to i. If such a
-# configuration is not possible, then print the same.
+# Question : Given a number n, create an array of size 2n such that the array contains 2
+# instances of every number from 1 to n, and the number of elements between two instances
+# of a number i is equal to i. If such a configuration is not possible, then print the same.
 #
 # Examples:
 # Input: n = 3
@@ -13,6 +13,7 @@
 #           place curr at i and i + curr + 1 and recurr for next curr - 1
 #           If recurr function return True, then return true else backtrack
 #        return False
+#        Logic:
 #        fillUtil(res, curr, n):
 #        if curr == 0: return True
 #        for i in range(2 * n - curr - 1):

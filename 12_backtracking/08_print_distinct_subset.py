@@ -1,7 +1,7 @@
 # CTCI : Q8_04_Power_Set
 # https://www.geeksforgeeks.org/find-distinct-subsets-given-set/
-# Question : Given a set of positive integers, find all its subsets. The set can contain duplicate elements,
-# so any repeated subset should be considered only once in the output.
+# Question : Given a set of positive integers, find all its subsets. The set can contain
+# duplicate elements, so any repeated subset should be considered only once in the output.
 #
 # Input:  S = {1, 2, 2}
 # Output:  {}, {1}, {2}, {1, 2}, {2, 2}, {1, 2, 2}

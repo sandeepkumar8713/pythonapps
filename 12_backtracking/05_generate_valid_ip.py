@@ -1,7 +1,8 @@
-# Question : Given a string containing only digits, restore it by returning all possible valid IP address combinations.
+# Question : Given a string containing only digits, restore it by returning all possible
+# valid IP address combinations.
 #
-# A valid IP address must be in the form of A.B.C.D, where A, B, C, and D are numbers from 0-255. The numbers cannot be
-# 0 prefixed unless they are 0.
+# A valid IP address must be in the form of A.B.C.D, where A, B, C, and D are numbers from
+# 0-255. The numbers cannot be 0 prefixed unless they are 0.
 #
 # Question Type : Easy
 # Used : Run 3 loops from : 0 to n - 2, i + 1 to n - 1 and j + 1 to n.

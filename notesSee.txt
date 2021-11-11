@@ -32,5 +32,21 @@
 10_dynamic_programming/20_perfect_sum_subset.py
 10_dynamic_programming/22_make_2timesMin_more_max.py
 10_dynamic_programming/26_Respace.py
+11_divide_and_conquer/03_kth_element_two_sorted_array.py
+11_divide_and_conquer/04_median_of_two_sorted_array.py
+12_backtracking/01_N_queen_problem.py
+12_backtracking/05_generate_valid_ip.py
+12_backtracking/08_print_distinct_subset.py
+12_backtracking/09_fill_two_instance.py
+13_bit_magic/02_rotate_bits.py
+13_bit_magic/05_max_subset_array_xor.py
+13_bit_magic/09_next_number.py
+13_bit_magic/15_add_without_operator.py
+13_bit_magic/16_sum_of_bit_difference.py
+14_trie/06_traverse_n_ary_tree.py
+14_trie/10_preorder_traversel_of_n_ary.py
+15_stack/03_sorted_stack.py
+15_stack/04_animal_shelter.py
+
 
 

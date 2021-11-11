@@ -1,11 +1,13 @@
-# Question : The n-queens puzzle is the problem of placing n queens on an n*n chessboard such that no two queens
-# attack each other. Given an integer n, print all distinct solutions to the n-queens puzzle. If queen is placed
-# in a cell, no other queen should be placed in that row,col or diagonal.
+# Question : The n-queens puzzle is the problem of placing n queens on an n*n chessboard such
+# that no two queens attack each other. Given an integer n, print all distinct solutions
+# to the n-queens puzzle. If queen is placed in a cell, no other queen should be placed in
+# that row,col or diagonal.
 #
 # Question Type : Generic
 # Used : Make a board of size N*N and mark all as 0.
-#        Make a call to recursive function solveNQUtil(board,col=0,N). If col >= N print board and
-#        return true. Run a loop from 0 to n-1 for row, check if placing queen at board[i][col] is safe.
+#        Make a call to recursive function solveNQUtil(board,col=0,N).
+#        If col >= N print board and return true.
+#        Run a loop from 0 to n-1 for row, check if placing queen at board[i][col] is safe.
 #        (Check that row, col and diagonal is clear or not)
 #           If true, board[i][col] = 1 and call solveNQUtil with col + 1.
 #           (Note that we are running the loop row wise).

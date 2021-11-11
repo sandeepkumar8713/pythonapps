@@ -1,15 +1,16 @@
 # https://www.geeksforgeeks.org/median-of-two-sorted-arrays/
 # https://www.geeksforgeeks.org/median-of-two-sorted-arrays-of-different-sizes/
 # https://leetcode.com/problems/median-of-two-sorted-arrays/
-# Question : There are 2 sorted arrays A and B of size n each. Write an algorithm to find the median of the array
-# obtained after merging the above 2 arrays(i.e. array of length 2n).
+# Question : There are 2 sorted arrays A and B of size n each. Write an algorithm to find the
+# median of the array obtained after merging the above 2 arrays(i.e. array of length 2n).
 #
 # Question Type : Generic
 # Used : Make a call to recursive function getMedian(arr1, arr2, n). If n <= 0: return -1
 #            if n == 1: return arr1[0] + arr2[0] // 2
 #            if n == 2: return (max(arr1[0], arr2[0]) + min(arr1[1], arr2[1])) // 2
 #            find median of arr1 and arr2 i.e m1 and m2
-#            If m1 < m2 : median exist in arr1[mid...n-1] and arr2[0....mid]. Call the function again on it.
+#            If m1 < m2 : median exist in arr1[mid...n-1] and arr2[0....mid].
+#            Call the function again on it.
 #            Else median exist in arr1[0...mid] and arr2[mid...n-1]. Call function on it.
 #        While calling recursive function take care of n being odd or even.
 #        If n = 10 send 5 values to recursive function, i.e from index 0 to 4 and 5 to 9

@@ -85,9 +85,11 @@ questionMap['dfs'] = {'08_graph/03_detect_cycle',
 questionMap['lru'] = {'09_greedy/04_page_fault_in_LRU',}
 
 questionMap['pathInMatrix'] = {'06_recursion/02_possible_path_in_matrix',
+                               '12_backtracking/03_count_possible_path',
                                '08_graph/07_find_path_exist',
-                               '08_graph/08_min_cost_path_in_matrix'
-                               '10_dynamic_programming/08_longest_path_in_matrix'}
+                               '08_graph/08_min_cost_path_in_matrix',
+                               '10_dynamic_programming/08_longest_path_in_matrix',
+                               '12_backtracking/04_print_all_possible_path'}
 
 questionMap['shortestDist'] = {'08_graph/04_dijkstra',
                                '08_graph/10_ford_warshall',
@@ -113,7 +115,9 @@ questionMap['leftCount'] = {'04_tree_bst/03_kth_smallest_element_in_bst',
                             '04_tree_bst/14_rank_of_player'}
 
 questionMap['binarySearch'] = {'04_tree_bst/08_sorted_array_to_bst',
-                               '06_recursion/07_magic_index'}
+                               '06_recursion/07_magic_index',
+                               '11_divide_and_conquer/02_find_element_repeated_once',
+                               '11_divide_and_conquer/03_kth_element_two_sorted_array'}
 
 questionMap['painter'] = {'10_dynamic_programming/27_painter_partition_problem',}
 
@@ -123,6 +127,25 @@ questionMap['nxtInorderNode'] = {'04_tree_bst/09_inorder_next_data_in_bst',
 questionMap['heap'] = {'05_heap/01_median_in_stream',
                        '05_heap/04_non_adjacent_character',
                        '05_heap/05_same_char_d_dist_apart'}
+
+questionMap['mergeSort'] = {'11_divide_and_conquer/06_reverse_pair',}
+
+questionMap['bitMagic'] = {'13_bit_magic/01_toggle_bits_between_range',
+                           '13_bit_magic/03_swap_odd_even_bits',
+                           '13_bit_magic/04_alone_in_couple',
+                           '13_bit_magic/06_find_duplicate',
+                           '13_bit_magic/10_convert_number',
+                           '13_bit_magic/12_multiply_without_operator',
+                           '13_bit_magic/14_find_max_without_operator',
+                           '13_bit_magic/17_count_set_bits'}
+
+questionMap['trie'] = {'14_trie/02_find_palindrome_pair',
+                       '14_trie/03_print_all_anagram_together',
+                       '14_trie/04_print_valid_words',
+                       '14_trie/05_auto_complete',
+                       '14_trie/07_multi_search',
+                       '14_trie/11_match_all_wild_card',
+                       '14_trie/12_word_serach_2',}
 
 def getSelectedFilename():
     overallSet = []

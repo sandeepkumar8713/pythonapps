@@ -1,13 +1,13 @@
-# Question : Given a sorted array in which all elements appear twice (one after one) and one element appears only once.
-# Find that element in O(log n) complexity.
+# Question : Given a sorted array in which all elements appear twice (one after one)
+# and one element appears only once. Find that element in O(log n) complexity.
 #
 # Question Type : SimilarAdded
 # Used : Do a binary search over the elements.
-#       Find the middle index, say 'mid'.
-#        If 'mid' is even, then compare arr[mid] and arr[mid + 1]. If both are same, then the required element after
-#           'mid' else before mid.
-#        If 'mid' is odd, then compare arr[mid] and arr[mid - 1]. If both are same, then the required element after
-#           'mid' else before mid.
+#        Find the middle index, say 'mid'.
+#        If 'mid' is even, then compare arr[mid] and arr[mid + 1]. If both are same,
+#           then the required element after 'mid' else before mid.
+#        If 'mid' is odd, then compare arr[mid] and arr[mid - 1]. If both are same,
+#           then the required element after 'mid' else before mid.
 #        If low > high : return None
 #        If low == high : return arr[low]
 # Complexity : O(log n)

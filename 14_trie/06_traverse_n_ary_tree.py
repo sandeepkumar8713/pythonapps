@@ -1,7 +1,7 @@
 # https://www.geeksforgeeks.org/number-of-ways-to-traverse-an-n-ary-tree/
-# Question : Given an n-ary tree, count number of ways to traverse an n-ary (or a Directed Acyclic Graph) tree starting
-# from the root vertex. The count of all ways to traverse is the product of factorials of the number of children of
-# each node.
+# Question : Given an n-ary tree, count number of ways to traverse an n-ary
+# (or a Directed Acyclic Graph) tree starting from the root vertex. The count of all ways to
+# traverse is the product of factorials of the number of children of each node.
 #
 #                 A
 #             / /  \  \

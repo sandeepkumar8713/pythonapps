@@ -1,7 +1,7 @@
 # CTCI : Q5_04_Next_Number
 # https://www.geeksforgeeks.org/closest-next-smaller-greater-numbers-number-set-bits/
-# Question : Given a positive integer n, print the next smallest and the previous largest number that have the
-# same number of 1 bits in their binary representation
+# Question : Given a positive integer n, print the next smallest and the previous largest
+# number that have the same number of 1 bits in their binary representation
 #
 # Question Type : Generic
 # Used : nextGreater:

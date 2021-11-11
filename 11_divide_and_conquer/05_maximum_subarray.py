@@ -1,7 +1,7 @@
 # CTCI : Q16_17_Contiguous_Sequence
 # https://practice.geeksforgeeks.org/problems/maximum-sub-array5443/1
-# Question : You are given a one dimensional array that may contain both positive and negative integers, find the
-# sum of contiguous subarray of numbers which has the largest sum.
+# Question : You are given a one dimensional array that may contain both positive and negative
+# integers, find the sum of contiguous subarray of numbers which has the largest sum.
 #
 # Question Type : ShouldSee
 # Used : 1) Divide the given array in two halves
@@ -10,9 +10,9 @@
 #           b) Maximum subarray sum in right half (Make a recursive call)
 #           c) Maximum subarray sum such that the subarray crosses the midpoint. maxCrossingSum()
 #       maxCrossingSum():
-#       The idea is simple, find the maximum sum starting from mid point and ending at some point
-#       on left of mid, then find the maximum sum starting from mid + 1 and ending with sum point
-#       on right of mid + 1. Finally, combine the two and return.
+#       The idea is simple, find the maximum sum starting from mid point and ending at some
+#       point on left of mid, then find the maximum sum starting from mid + 1 and ending with
+#       sum point on right of mid + 1. Finally, combine the two and return.
 # Complexity : (n log n)
 
 

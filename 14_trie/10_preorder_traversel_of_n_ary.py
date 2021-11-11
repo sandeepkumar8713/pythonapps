@@ -1,6 +1,6 @@
 # https://careercup.com/question?id=5732671899041792
-# Question : Given an n-ary tree and some queries for the tree, in every query you’ll be given a node you are
-# supposed to print preorder traversal of the subtree rooted at that node.
+# Question : Given an n-ary tree and some queries for the tree, in every query you’ll be given a
+# node you are supposed to print preorder traversal of the subtree rooted at that node.
 #
 # Example :
 # Input :
@@ -13,9 +13,11 @@
 #  N M	      O   L
 # Output : A B K N M J F D G E C O H I L
 #
+# Question Type : ShouldSee
 # Used : Do preprocessing of the given input i.e. keep a list of preorder traversed nodes and children
 #        count of each node. While searching, just print from the key node till children count of the
 #        preorder traversed nodes.
+#        Logic :
 #        traverseTreeUtils(temp, preOrder, allChildrenCount):
 #        count = 0, preOrder.append(temp)
 #        allChildrenCount.append(count)

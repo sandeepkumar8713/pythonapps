@@ -1,6 +1,7 @@
 # CTCI : Q16_18_Pattern_Matcher
 # https://www.geeksforgeeks.org/match-a-pattern-and-string-without-using-regular-expressions/
-# Question : Given a string, find out if string follows a given pattern or not without using any regular expressions.
+# Question : Given a string, find out if string follows a given pattern or not without using
+# any regular expressions.
 #
 # Input: string - GraphTreesGraph
 #        pattern - aba
