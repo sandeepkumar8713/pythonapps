@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/xor-subarray-xors/
-# Question : Given an array of integers, we need to get total XOR of all subarray XORs where subarray XOR can be
-# obtained by XORing all elements of it.
+# Question : Given an array of integers, we need to get total XOR of all subarray XORs where
+# subarray XOR can be obtained by XORing all elements of it.
 #
 # Input : arr[] = [3, 5, 2, 4, 6]
 # Output : 7

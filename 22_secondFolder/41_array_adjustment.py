@@ -1,7 +1,8 @@
 # https://leetcode.com/discuss/interview-question/349612
-# Question : Given an integer array nums containing positive elements and an int maxValue. Find the value of x such
-# that the sum of the elements of the array is maximum and is less than the given maxValue. x is defined as: if
-# the current value is greater than x, then x is used as the new value, otherwise keep the original value
+# Question : Given an integer array nums containing positive elements and an int maxValue.
+# Find the value of x such that the sum of the elements of the array is maximum and is less
+# than the given maxValue. x is defined as: if the current value is greater than x,
+# then x is used as the new value, otherwise keep the original value
 # nums[i] = min(x, nums[i]).
 #
 # Example : Input: nums = [10, 5, 20, 30], maxValue = 40
@@ -13,7 +14,8 @@
 # So the answer would be 12.
 #
 # Question Type : ShouldSee
-# Used : Find min and max of input array. Do binary search in this range, see mid which satisfy the condition.
+# Used : Find min and max of input array.
+#        Do binary search in this range, see mid which satisfy the condition.
 #        Logic : def max_value(nums, val):
 #        l = min(nums), r = max(nums)+1
 #        while l < r:

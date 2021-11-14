@@ -8,8 +8,9 @@
 # with u < v, that represents an undirected edge connecting nodes u and v. Return an edge that can be removed so
 # that the resulting graph is a tree of N nodes. If there are multiple answers, return the answer that occurs
 # last in the given 2D-array. The answer edge [u, v] should be in the same format, with u < v.
-# Similar Question : Given n nodes labeled from 0 to n - 1 and a list of undirected edges (each edge is a pair of
-# nodes), write a function to check whether these edges make up a valid tree.
+#
+# Similar Question : Given n nodes labeled from 0 to n - 1 and a list of undirected edges
+# (each edge is a pair of nodes), write a function to check whether these edges make up a valid tree.
 # For example: Given n = 5 and edges = [[0, 1], [0, 2], [0, 3], [1, 4]], return true.
 # Given n = 5 and edges = [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]], return false.
 # Note: you can assume that no duplicate edges will appear in edges. Since all edges are undirected,
@@ -25,7 +26,8 @@
 #
 # Question Type : Generic
 # Used : Do union find on the edge, the one which is redundant will have same parent.
-#        For the tree valid question: A tree is a graph that doesn't have a cycle. So we can use the same logic here.
+#        For the tree valid question: A tree is a graph that doesn't have a cycle.
+#        So we can use the same logic here.
 #        There should not be redundant edges in tree.
 #        Logic : def findRedundantConnection(edges):
 #        def union(x, y):

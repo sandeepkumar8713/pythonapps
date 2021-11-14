@@ -1,10 +1,10 @@
 # https://www.geeksforgeeks.org/3-way-quicksort-dutch-national-flag/
-# Question : In simple QuickSort algorithm, we select an element as pivot, partition the array around pivot
-# and recur for subarrays on left and right of pivot.
+# Question : In simple QuickSort algorithm, we select an element as pivot, partition the
+# array around pivot and recur for subarrays on left and right of pivot.
 #
 # Consider an array which has many redundant elements. For example,
-# {1, 4, 2, 4, 2, 4, 1, 2, 4, 1, 2, 2, 2, 2, 4, 1, 4, 4, 4}. If 4 is picked as pivot in Simple QuickSort, we fix
-#  only one 4 and recursively process remaining occurrences.
+# {1, 4, 2, 4, 2, 4, 1, 2, 4, 1, 2, 2, 2, 2, 4, 1, 4, 4, 4}. If 4 is picked as pivot in Simple
+# QuickSort, we fix only one 4 and recursively process remaining occurrences.
 #
 # Question Type : Generic
 # Used : In partition function. After finding pivot position.
@@ -14,7 +14,7 @@
 #        Use these two position to do quicksort further.
 #        quickSort(array, start, pivotLeft[0] - 1)
 #        quickSort(array, pivotRight[0] + 1, end)
-#
+#        Logic :
 #        partition(arr, left, right, pivotLeft, pivotRight):
 #        i = (left - 1)  # index of smaller element
 #        pivot = arr[right]  # pivot
@@ -25,6 +25,7 @@
 #        arr[i + 1], arr[right] = arr[right], arr[i + 1]
 #        pivotPosition = i + 1
 #        pivot = arr[i + 1]
+#        Now to above mentioned swap, to move all pivot elements to middle.
 # Complexity : O(n log n)
 
 

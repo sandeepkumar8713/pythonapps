@@ -1,12 +1,12 @@
 # https://leetcode.com/problems/all-possible-full-binary-trees/
 # https://leetcode.com/discuss/interview-question/414082/Google-or-Full-Binary-Trees-With-N-Leaves
 # Question : A full binary tree is a binary tree where each node has exactly 0 or 2 children.
-# Given an int n, return a list of all possible full binary trees with n leaf nodes. Each element of the answer
-# is the root node of one possible tree.
+# Given an int n, return a list of all possible full binary trees with n leaf nodes.
+# Each element of the answer is the root node of one possible tree.
 #
 # Question Type : ShouldSee
-# Used : Run a loop from 1 to n, call recur for i leaves in left and n-i leaves in right and then combine the two
-#        subtrees into possible tree
+# Used : Run a loop from 1 to n, call recur for i leaves in left and n-i leaves in right and
+#        then combine the two subtrees into possible tree
 #        Logic : def recur(N):
 #        if N == 0: return None
 #        elif N == 1: return [Node(0)]

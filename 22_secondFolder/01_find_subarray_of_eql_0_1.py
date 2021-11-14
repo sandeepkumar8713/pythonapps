@@ -1,5 +1,6 @@
 # CTCI : Q17_05_Letters_and_Numbers
-# Question : Given an array containing only 0s and 1s, find the largest sub array which contain equal no of 0s and 1s.
+# Question : Given an array containing only 0s and 1s, find the largest sub array which contain
+# equal no of 0s and 1s.
 # Expected time complexity is O(n).
 #
 # Input: arr[] = {1, 0, 1, 1, 1, 0, 0}
@@ -7,7 +8,7 @@
 #
 # Question Type : Generic
 # Used : Convert all 0 to -1
-#        Keep updating sun in hash dict
+#        Keep updating sum in hash dict
 #        if the running sum is already in hash dict, get the diff b/w the two index.
 #        Logic :
 #        for i in range(len(arr)):

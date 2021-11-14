@@ -1,10 +1,10 @@
 # CTCI : Q16_04_Tic_Tac_Win
 # https://www.geeksforgeeks.org/validity-of-a-given-tic-tac-toe-board-configuration/
-# Question : A Tic-Tac-Toe board is given after some moves are played. Find out if the given board is valid, i.e.,
-# is it possible to reach this board position after some moves or not.
+# Question : A Tic-Tac-Toe board is given after some moves are played. Find out if the given
+# board is valid, i.e., is it possible to reach this board position after some moves or not.
 #
-# Since we know that the game starts with X, a given grid of Tic-Tac-Toe game would be definitely invalid if following
-# two conditions meet
+# Since we know that the game starts with X, a given grid of Tic-Tac-Toe game would be definitely
+# invalid if following two conditions meet
 # a) countX != countO AND
 # b) countX != countO + 1
 #

@@ -18,8 +18,9 @@
 # 3 started at 103 and ended at 105
 #
 # Question Type : ShouldSee
-# Used : We create a hashMap to store the start time of a pid. When we call end, we get the start time of the pid
-#        from the hashMap and append it into the heap.
+# Used : We create a hashMap to store the start time of a pid. When we call end, we get the
+#        start time of the pid from the hashMap and append it into the heap.
+#        Now print the min heap.
 #        Logic : def start(self, pid, ts):
 #        if pid not in self.store:
 #           self.store[pid] = ts

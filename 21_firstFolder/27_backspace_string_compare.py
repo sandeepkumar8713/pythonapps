@@ -7,7 +7,8 @@
 # Explanation: Both S and T become "ac".
 #
 # Question Type : ShouldSee
-# Used : Traverse the inpStr in reverse and skip the characters succeeded by 0.
+# Used : Traverse the inpStr in reverse and skip the characters succeeded by #.
+#        Now compare the two string after the above operation
 #        Logic : def getEndResult(inpStr):
 #        pendingDelete = 0
 #        result = ""

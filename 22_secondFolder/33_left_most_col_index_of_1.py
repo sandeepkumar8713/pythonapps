@@ -1,6 +1,6 @@
 # https://leetcode.com/discuss/interview-question/341247/Facebook-and-Google-or-Phone-screen-or-Leftmost-column-index-of-1
-# Question : In a binary matrix (all elements are 0 and 1), every row is sorted in ascending order (0 to the left of
-# 1). Find the leftmost column index with a 1 in it.
+# Question : In a binary matrix (all elements are 0 and 1), every row is sorted in ascending
+# order (0 to the left of 1). Find the leftmost column index with a 1 in it.
 #
 # Example : Input:
 # [[0, 0, 0, 1],
@@ -10,8 +10,8 @@
 # Output: 1
 #
 # Question Type : ShouldSee
-# Used : We start from first row and last col. If 1 is found, we reduce col else inc row. Since it is sorted in
-#        ascending order we use this logic. We need to find first 1.
+# Used : We start from first row and last col. If 1 is found, we reduce col else inc row.
+#        Since it is sorted in ascending order we use this logic. We need to find first 1.
 #        Logic : def findLeftMostIndexOfOne(inpMat):
 #        rows = len(inpMat)
 #        cols = len(inpMat[0])

@@ -1,12 +1,14 @@
 # https://leetcode.com/problems/guess-the-word/
 # https://leetcode.com/problems/guess-the-word/discuss/411298/20-lines-of-python.
-# Question : We are given a word list of unique words, each word is 6 letters long, and one word in this list is
-# chosen as secret.You may call master.guess(word) to guess a word.  The guessed word should have type string and
-# must be from the original list with 6 lowercase letters. This function returns an integer type, representing
-# the number of exact matches (value and position) of your guess to the secret word.  Also, if your guess is not
-# in the given wordlist, it will return -1 instead. For each test case, you have 10 guesses to guess the word.
-# At the end of any number of calls, if you have made 10 or less calls to master.guess and at least one of
-# these guesses was the secret, you pass the testcase.
+# Question : We are given a word list of unique words, each word is 6 letters long, and one word
+# in this list is chosen as secret.You may call master.guess(word) to guess a word.  The guessed
+# word should have type string and must be from the original list with 6 lowercase letters.
+# This function returns an integer type, representing the number of exact matches
+# (value and position) of your guess to the secret word. Also, if your guess is not
+# in the given wordlist, it will return -1 instead. For each test case, you have
+# 10 guesses to guess the word. At the end of any number of calls, if you have made 10
+# or less calls to master.guess and at least one of these guesses was the secret, you
+# pass the testcase.
 #
 # Example 1:
 # Input: secret = "acckzz", wordlist = ["acckzz","ccbazz","eiowzz","abcczz"]
@@ -18,11 +20,13 @@
 # master.guess("abcczz") returns 4, because "abcczz" has 4 matches.
 #
 # Question Type : Easy
-# Used : Pre-compute similarity between two words. do that for every words. Example: 'abcdef' and 'cccwqf' c on
-#        index 2 and f on index 5 matched. so similarity score = 2. Save in wordEdge dict.
-#        Pick One word and master.guess it. If it returns 6, we got match. Else use the wordEdge, to find which all
-#        words had same similarity score (Our secret is among them). Repeat the above process. This way we would
-#        reduce the word list count.
+# Used : Pre-compute similarity between two words. do that for every words.
+#        Example: 'abcdef' and 'cccwqf' c on index 2 and f on index 5 matched.
+#        so similarity score = 2. Save in wordEdge dict.
+#        Pick One word and master.guess it. If it returns 6, we got match.
+#        Else use the wordEdge, to find which all
+#        words had same similarity score (Our secret is among them).
+#        Repeat the above process. This way we would reduce the word list count.
 #        Logic : def findSecretWord(wordlist, master):
 #        wordEdge = defaultdict(lambda: defaultdict(list))
 #        for i in range(len(wordlist)):

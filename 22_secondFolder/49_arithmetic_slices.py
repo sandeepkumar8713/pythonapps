@@ -1,5 +1,5 @@
-# Question : A sequence of number is called arithmetic if it consists of at least three elements and if the difference
-# between any two consecutive elements is the same.
+# Question : A sequence of number is called arithmetic if it consists of at least three elements
+# and if the difference between any two consecutive elements is the same.
 # For example, these are arithmetic sequence:
 # 1, 3, 5, 7, 9
 # 7, 7, 7, 7
@@ -15,8 +15,8 @@
 # return: 3, for 3 arithmetic slices in A: [1, 2, 3], [2, 3, 4] and [1, 2, 3, 4] itself.
 #
 # Question Type : Generic
-# Used : We should keep running count of the number of arithmetic condition fulfilled. Keep the sum of it. If condition
-#        fails reset running count to 0.
+# Used : We should keep running count of the number of arithmetic condition fulfilled.
+#        Keep the sum of it. If condition fails reset running count to 0.
 #        Logic : def numberOfArithmeticSlices(inpArr):
 #        runningCount = 0, total = 0
 #        for i in range(2, len(inpArr)):

@@ -1,9 +1,11 @@
 # https://leetcode.com/problems/shortest-path-with-alternating-colors/
-# Question : Consider a directed graph, with nodes labelled 0, 1, ..., n-1.  In this graph, each edge is either red
-# or blue, and there could be self-edges or parallel edges. Each [i, j] in red_edges denotes a red directed edge
-# from node i to node j.  Similarly, each [i, j] in blue_edges denotes a blue directed edge from node i to node j.
-# Return an array answer of length n, where each answer[X] is the length of the shortest path from node 0 to node
-# X such that the edge colors alternate along the path (or -1 if such a path doesn't exist).
+# Question : Consider a directed graph, with nodes labelled 0, 1, ..., n-1.  In this graph,
+# each edge is either red or blue, and there could be self-edges or parallel edges.
+# Each [i, j] in red_edges denotes a red directed edge from node i to node j.
+# Similarly, each [i, j] in blue_edges denotes a blue directed edge from node i to node j.
+# Return an array answer of length n, where each answer[X] is the length of the shortest
+# path from node 0 to node X such that the edge colors alternate along the path
+# (or -1 if such a path doesn't exist).
 #
 # Example : Input: n = 3, red_edges = [[0,1],[1,2]], blue_edges = []
 # Output: [0,1,-1]
@@ -12,8 +14,9 @@
 # Output: [0,1,-1]
 #
 # Question Type : Generic
-# Used : Do BFS, continue with path only if next colour is different than previous color on this path. When an unvisited
-#        node is encountered, update its distance in the result array.
+# Used : Do BFS, continue with path only if next colour is different than previous color
+#        on this path. When an unvisited node is encountered, update its distance in the
+#        result array.
 #        Logic : def shortestAlternatingPaths(n, red_edges, blue_edges):
 #        graph = dict()
 #        for i, j in red_edges:

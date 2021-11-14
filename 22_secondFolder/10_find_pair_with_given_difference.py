@@ -1,12 +1,12 @@
 # https://www.geeksforgeeks.org/find-a-pair-with-the-given-difference/
-# Question : Given an unsorted array and a number n, find if there exists a pair of elements in the array
-# whose difference is n.
+# Question : Given an unsorted array and a number n, find if there exists a pair of
+# elements in the array whose difference is n.
 #
-# Question Type : Easy
 # Input: arr[] = {5, 20, 3, 2, 50, 80}, n = 78
 # Output: Pair Found: (2, 80)
 #
-# Used : Sort the given the input array.
+# Question Type : Easy
+# Used : Sort the given input array.
 #        Take 2 pointers i = 0 and j = 1.
 #        Loop while i < n and j < n:
 #           if i != j and arr[j] - arr[i] == diff: return True

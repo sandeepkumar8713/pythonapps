@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/number-of-submatrices-with-all-1s/
-# Question : Given a N*N matrix containing only 0s and 1s, the task is to count the number of submatrices containing
-# all 1s.
+# Question : Given a N*N matrix containing only 0s and 1s, the task is to count the number of
+# submatrices containing all 1s.
 #
 # Examples: Input : arr[][] = {{1, 1, 1},
 #                    {1, 1, 1},

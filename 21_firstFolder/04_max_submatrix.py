@@ -1,7 +1,8 @@
 # CTCI : Q17_24_Max_Submatrix
 # https://www.geeksforgeeks.org/dynamic-programming-set-27-max-sum-rectangle-in-a-2d-matrix/
 # http://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
-# Question : Given a 2D array, find the maximum sum sub array in it. It can contain +ve and -ve numbers
+# Question : Given a 2D array, find the maximum sum sub array in it. It can contain +ve and
+# -ve numbers.
 # Kadane algorithm
 #
 # Loop for each element of the array

@@ -1,20 +1,27 @@
 # https://leetcode.com/problems/find-eventual-safe-states/
-# Question : In a directed graph, we start at some node and every turn, walk along a directed edge of the graph.  If
-# we reach a node that is terminal (that is, it has no outgoing directed edges), we stop. Now, say our starting node
-# is eventually safe if and only if we must eventually walk to a terminal node.  More specifically, there exists a
-# natural number K so that for any choice of where to walk, we must have stopped at a terminal node in less
-# than K steps. Which nodes are eventually safe?  Return them as an array in sorted order. The directed graph has N
-# nodes with labels 0, 1, ..., N-1, where N is the length of graph.  The graph is given in the following form:
+# Question : In a directed graph, we start at some node and every turn, walk along a directed
+# edge of the graph. If we reach a node that is terminal (that is, it has no outgoing directed
+# edges), we stop. Now, say our starting node is eventually safe if and only if we must
+# eventually walk to a terminal node. More specifically, there exists a natural number K so
+# that for any choice of where to walk, we must have stopped at a terminal node in less than K steps.
+# Which nodes are eventually safe?  Return them as an array in sorted order. The directed
+# graph has N nodes with labels 0, 1, ..., N-1, where N is the length of graph.
+# The graph is given in the following form:
 # graph[i] is a list of labels j such that (i, j) is a directed edge of the graph.
 #
 # Example: Input: graph = [[1,2],[2,3],[5],[0],[5],[],[]]
 # Output: [2,4,5,6]
 #
 # Question Type : Generic
-# Used : Let us perform a "brute force": a cycle-finding DFS algorithm on each node individually. This is a classic
-#        "white-gray-black" DFS algorithm that would be part of any textbook on DFS. We mark a node gray on entry,
-#        and black on exit. If we see a gray node during our DFS, it must be part of a cycle. In a naive view, we'll
-#        clear the colors between each search.
+# Used : Let us perform a "brute force": a cycle-finding DFS algorithm on each node individually.
+#        This is a classic "white-gray-black" DFS algorithm that would be part of any textbook
+#        on DFS. We mark a node gray on entry, and black on exit. If we see a gray node during
+#        our DFS, it must be part of a cycle. In a naive view, we'll clear the colors between
+#        each search.
+#        dfs returns true if the given node is terminal safe.
+#        We do dfs over the node, on entry we mark it as gray, if any of the neighbours is gray and
+#        that neighbour is not terminal safe, that means this node is also not terminal safe.
+#        We need to do dfs on each node.
 #        Logic : color = [WHITE] * nodeCount
 #        def dfs(node):
 #        if color[node] != WHITE:

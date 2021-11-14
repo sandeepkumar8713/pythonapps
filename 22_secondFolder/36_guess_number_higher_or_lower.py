@@ -3,8 +3,8 @@
 # Question : We are playing the Guess Game. The game is as follows:
 # I pick a number from 1 to n. You have to guess which number I picked.
 # Every time you guess wrong, I'll tell you whether the number I picked is higher or lower.
-# However, when you guess a particular number x, and you guess wrong, you pay $x. You win the game when you guess
-# the number I picked.
+# However, when you guess a particular number x, and you guess wrong, you pay $x.
+# You win the game when you guess the number I picked.
 #
 # Example: n = 10, I pick 8.
 # First round:  You guess 5, I tell you that it's higher. You pay $5.
@@ -14,7 +14,8 @@
 # You end up paying $5 + $7 + $9 = $21.
 #
 # Question Type : ShouldSee
-# Used : We will do dp with this condition range(i,j) : return min(k + max(func(i, k-1), func(k+1, j))), for i<=k<j.
+# Used : We will do dp with this condition range(i,j) :
+#           return min(k + max(func(i, k-1), func(k+1, j))), for i<=k<j.
 #        You choose a value k within the range.
 #        2 scenarios are likely to happen: k is too high OR k is too low
 #        To find the worse case scenario, find the max return value between these 2 scenarios

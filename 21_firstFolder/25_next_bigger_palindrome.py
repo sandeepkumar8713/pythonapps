@@ -1,21 +1,21 @@
 # https://www.geeksforgeeks.org/given-a-number-find-next-smallest-palindrome-larger-than-this-number/
-# Question : Given a number, find the next smallest palindrome larger than this number. For example, if the
-# input number is "2 3 5 4 5", the output should be "2 3 6 3 2". And if the input number is "9 9 9", the output
-# should be "1 0 0 1".
+# Question : Given a number, find the next smallest palindrome larger than this number.
+# For example, if the input number is "2 3 5 4 5", the output should be "2 3 6 3 2".
+# And if the input number is "9 9 9", the output should be "1 0 0 1".
 #
 # Question Type : Generic
 # Used : If all the digits in number are 9. return 100001
 #        Else call function generateNextPalindromeUtils(num).
 #        In this function place i just before mid and j after mid.
 #        If n is odd, ignore mid.
-#        Now move i to left and j to right if the middle digits are same
+#        Now move i to left and j to right if the middle digits are same.
 #        if i < 0 or num[i] < num[j]: leftSmaller = True
 #        while i >= 0 : Copy the mirror of left to right
 #        if leftSmaller: set carry = 1 and i = mid - 1.
 #           if there are odd digits, then increment the middle digit by carry and store
 #           the carry.
-#           while i >= 0: Add 1 to the rightmost digit of the left side, propagate the carry
-#           towards MSB digit and
+#           while i >= 0: Add 1 to the rightmost digit of the left side, propagate the
+#           carry towards MSB digit and
 #           simultaneously copying mirror of the left side to the right side.
 #        After the function call gets over print num
 # Complexity : O(m) where m is length of number
@@ -54,7 +54,7 @@ def generateNextPalindromeUtils(num):
         # if there are odd digits, then increment the middle digit and store the carry
         if n % 2 == 1:
             num[mid] += carry
-            carry = num[mid] / 10
+            carry = num[mid] // 10
             num[mid] %= 10
             j = mid + 1
         else:
@@ -64,7 +64,7 @@ def generateNextPalindromeUtils(num):
         # copying mirror of the left side to the right side.
         while i >= 0:
             num[i] += carry
-            carry = num[i] / 10
+            carry = num[i] // 10
             num[i] %= 10
             num[j] = num[i]
             j += 1
@@ -91,5 +91,7 @@ def generateNextPalindrome(num):
 
 if __name__ == "__main__":
     num = [9, 4, 1, 8, 7, 9, 7, 8, 3, 2, 2]
-    # num = [9, 9, 9, 9]
+    generateNextPalindrome(num)
+
+    num = [9, 9, 9, 9]
     generateNextPalindrome(num)

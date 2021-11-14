@@ -1,8 +1,8 @@
-# Question : Given a simple expression tree, which is also a full binary tree consisting of basic
-# binary operators i.e + - ,* and / and some integers, Your task is to evaluate the
-# expression tree. You need to complete the function evalTree which takes the root of the
-# tree as its only argument and returns an integer denoting the result obtained by simplifying
-# the expression tree.
+# Question : Given a simple expression tree, which is also a full binary tree consisting
+# of basic binary operators i.e + - ,* and / and some integers, Your task is to evaluate
+# the expression tree. You need to complete the function evalTree which takes the root of
+# the tree as its only argument and returns an integer denoting the result obtained by
+# simplifying the expression tree.
 #
 # Full binary tree (is a tree in which every node other than the leaves has two children)
 # height of tree h = log(n+1)-1

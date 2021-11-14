@@ -1,5 +1,6 @@
-# Question : Given piles of coins of different heights and a separate pile of height x. Find out the maximum
-# number of piles, which can be made same of height by distributing coins from separate pile of height x.
+# Question : Given piles of coins of different heights and a separate pile of height x.
+# Find out the maximum number of piles, which can be made same of height by distributing
+# coins from separate pile of height x.
 #
 # Input : 3, 10, 7, 9, 100   separatePileHeight = 4
 # Output : 3

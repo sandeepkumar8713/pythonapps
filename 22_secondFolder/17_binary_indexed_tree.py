@@ -32,9 +32,13 @@
 #        getElement() :
 #        add 1 to i.
 #        Loop while i >= 0 :
-#           data += BITTree[index]
+#           data += BITTree[i]
 #           i -= i & (-i); Subtract 1 from last set bit of i
 #        After the loop return data.
+#        constructBITTree(arr,n):
+#        BITTree = [0] * (n + 1)
+#        for i in range(len( arr)):
+#           updateBIT(BITTree, n, i, arr[i])
 # Complexity :  O(q * log n) + O(n * log n) where q is number of queries.
 
 

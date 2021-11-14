@@ -1,7 +1,8 @@
 # https://leetcode.com/discuss/interview-question/285144/Google-or-Onsite-or-Minimize-the-distance-to-the-farthest-point
-# Question : Assume you're looking to move, and have a set of amenities that you want to have easy access to from your
-# new home. You have found a neighborhood you like, each block of which has zero or more amenities. How would you
-# pick the block to live in such that the farthest distance to any amenity in your list is minimized?
+# Question : Assume you're looking to move, and have a set of amenities that you want to have
+# easy access to from your new home. You have found a neighborhood you like, each block of which
+# has zero or more amenities. How would you pick the block to live in such that the farthest
+# distance to any amenity in your list is minimized?
 #
 # Example:
 # Say your list contains {school, grocery}, and the blocks are as follows:
@@ -16,8 +17,9 @@
 #
 # Question Type : Generic
 # Used : It comes down to sliding window problem, which has all the amenities with shortest length.
-#        Run a loop over the input block, keep adding the blocks to window. Within this loop, run another loop,
-#        i.e. window has all the amenities: keep removing elements from left side and update min window len.
+#        Run a loop over the input block, keep adding the blocks to window. Within this loop,
+#        run another loop, i.e. window has all the amenities:
+#           keep removing elements from left side and update min window len.
 #        Return mid of left and right of window.
 #        Logic : def pickBlock(allAmenities, blocks):
 #        block = 0, minLen = sys.maxint, window = dict()

@@ -1,5 +1,5 @@
-# Question : Given an array arr[], count number of pairs arr[i], arr[j] such that arr[i] + arr[j] is maximum
-# and i < j.
+# Question : Given an array arr[], count number of pairs arr[i], arr[j] such that
+# arr[i] + arr[j] is maximum and i < j.
 #
 # Question Type : ShouldSee
 # Used : Keep count of running maxCount and secondMaxCount.

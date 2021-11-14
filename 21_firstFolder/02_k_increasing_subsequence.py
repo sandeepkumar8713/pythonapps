@@ -1,5 +1,5 @@
-# Question : Given an array of integers, find out number of ways in which you can select increasing and decreasing
-# sub sequences of length k(k<=n). for eg array is 1 4 6 2 5 & k=3
+# Question : Given an array of integers, find out number of ways in which you can select
+# increasing and decreasing sub sequences of length k(k<=n). for eg array is 1 4 6 2 5 & k=3
 # then the answer is :- 1 4 5, 1 2 5,1 4 6
 #
 # Question Type : Generic

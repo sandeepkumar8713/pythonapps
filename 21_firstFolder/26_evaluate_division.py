@@ -1,8 +1,8 @@
 # https://leetcode.com/problems/evaluate-division/
 # https://leetcode.com/problems/evaluate-division/discuss/412161/Python-Solution-Beats-98
-# Question : Equations are given in the format A / B = k, where A and B are variables represented as
-# strings, and k is a real number (floating point number). Given some queries, return the answers. If
-# the answer does not exist, return -1.0.
+# Question : Equations are given in the format A / B = k, where A and B are variables
+# represented as strings, and k is a real number (floating point number). Given some queries,
+# return the answers. If the answer does not exist, return -1.0.
 #
 # Example: Given a / b = 2.0, b / c = 3.0.
 # queries are: a / c = ?, b / a = ?, a / e = ?, a / a = ?, x / x = ? .
@@ -14,10 +14,11 @@
 # queries = [ ["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x", "x"] ].
 #
 # Question Type : Generic
-# Used : For given equations, make a weighted directed graph. Here operands will be vertices. The weight from a->b
-#        will be value and from b->a will be 1/value. Now for the given query, do bfs where a is start and b is end.
-#        While traversing the graph, keep multiplying its weight and saving it back in queue. When end is found,
-#        return the corresponding product.
+# Used : For given equations, make a weighted directed graph. Here operands will be vertices.
+#        The weight from a->b will be value and from b->a will be 1/value. Now for the given query,
+#        do bfs where a is start and b is end.
+#        While traversing the graph, keep multiplying its weight and saving it back in queue.
+#        When end is found, return the corresponding product.
 #        Logic : def BFS(graph, numerator, denominator):
 #        queue = [], visited = set()
 #        queue.append([numerator, 1])

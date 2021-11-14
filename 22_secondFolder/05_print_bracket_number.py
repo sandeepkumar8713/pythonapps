@@ -1,12 +1,12 @@
-# Question : Given an expression exp of length n consisting of some brackets. The task is to print the bracket
-# numbers when the expression is being parsed.
+# Question : Given an expression exp of length n consisting of some brackets. The task is to
+# print the bracket numbers when the expression is being parsed.
 #
 # Input : (a+(b*c))+(d/e)
 # Output : 1 2 2 1 3 3
 #
 # Question Type : Easy
 # Used : Traverse through the expression, if '(' is found increment bracket number by 1,
-#        print it and append in list. if ')' is found , pop a last element from list, print it.
+#        print it and append in list. if ')' is found , pop a last element from list, print it
 # Complexity : O(n)
 
 

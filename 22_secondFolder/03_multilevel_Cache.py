@@ -1,6 +1,7 @@
 # Question : Multi -level cache system design with different storage in each level.
-# a. Read Operation : Minimum time to read a particular key from cache system. This should be followed by writing the
-# key in all levels above it. Eg. if "key" is found at level 'i', add this key to cache present at 1 to i-1 level.
+# a. Read Operation : Minimum time to read a particular key from cache system. This should be
+# followed by writing the key in all levels above it. Eg. if "key" is found at level 'i', add
+# this key to cache present at 1 to i-1 level.
 # b. Write Operation: - Any write Operation should write  in cache of all levels.
 #
 # You can choose any algorithm for cache management like LRU, MRU.

@@ -1,7 +1,8 @@
 # https://leetcode.com/discuss/interview-question/339111/Google-or-Onsite-or-Compare-Expression-Trees
-# Question : Given 2 binary expression trees tree1 and tree2. The leaves of a binary expression tree are variable
-# names and the other nodes contain operators. Find out if the expressions represented by these trees are equal
-# or not. There are only plus signs + and letters in the tree. Input is guaranteed to be valid. Follow up : let us
+# Question : Given 2 binary expression trees tree1 and tree2. The leaves of a binary
+# expression tree are variable names and the other nodes contain operators. Find out if the
+# expressions represented by these trees are equal or not. There are only plus signs + and
+# letters in the tree. Input is guaranteed to be valid. Follow up : let us
 # (-) operator is also added.
 #
 # Example : Input:
@@ -18,7 +19,8 @@
 # Explanation: a + b = b + a
 #
 # Question Type : Generic
-# Used : Do in-order traversal. While doing so, if operator is + or *, check if left and right of roots are equal.
+# Used : Do in-order traversal. While doing so, if operator is + or *,
+#        check if left and right of roots are equal.
 #        Else check if left, left and right, right of roots are equal.
 #        Logic : def isEqual(root1, root2):
 #        if root1 is None and root2 is None: return True

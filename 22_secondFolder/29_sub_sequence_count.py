@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/number-of-matching-subsequences/
-# Question : Given string S and a dictionary of words words, find the number of words[i] that is a subsequence of S.
+# Question : Given string S and a dictionary of words words, find the number of
+# words[i] that is a subsequence of S.
 #
 # Example : Input:
 # S = "abcde"
@@ -8,7 +9,10 @@
 # Explanation: There are three words in words that are a subsequence of S: "a", "acd", "ace".
 #
 # Question Type : ShouldSee
-# Used : Logic : def numMatchingSubseq(bigWord, words):
+# Used :  Try to use hashing here. Key : char, value : list of indices
+#         Loop over the input array. compare each char, see if present, fetch its index, next ele
+#           should be present at index the previous index.
+#         Logic : def numMatchingSubseq(bigWord, words):
 #         res = 0, N = len(words)
 #         pointers = [0] * N
 #         endset = dict()

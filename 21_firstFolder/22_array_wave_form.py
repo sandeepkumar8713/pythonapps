@@ -6,8 +6,9 @@
 # one element bigger than a smaller element then bigger and so on.
 #
 # Question Type : ShouldSee
-# Used : Loop over the array and check only for even index following condition for i-1 > i < i + 1;
-#        else swap
+# Used : Loop over the array and check only for even index following condition for
+#        i-1 > i < i + 1; else swap
+#        Logic:
 #        sortInWave(arr, n):
 #        for i in range(0, n, 2):
 #           if i > 0 and arr[i - 1] > arr[i]:

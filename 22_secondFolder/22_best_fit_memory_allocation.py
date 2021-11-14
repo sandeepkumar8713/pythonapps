@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/program-best-fit-algorithm-memory-management/
-# Question : Best fit allocates the process to a partition which is the smallest sufficient partition among the free
-# available partitions.
+# Question : Best fit allocates the process to a partition which is the smallest sufficient
+# partition among the free available partitions.
 #
 # Input : blockSize[]   = {100, 500, 200, 300, 600};
 #         processSize[] = {212, 417, 112, 426};

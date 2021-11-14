@@ -12,7 +12,8 @@
 # 0 and 1 are connected, so [0, 1] and [3] are the two connected components.
 #
 # Question Type : Generic
-# Used : Loop over the linked list. If the current element is in G and next element is not in G, then inc the count.
+# Used : Loop over the linked list. If the current element is in G and next element is not in G,
+#        then inc the count.
 #        Logic : def numComponents(head, G):
 #        Gset = set(G)
 #        cur = head, ans = 0

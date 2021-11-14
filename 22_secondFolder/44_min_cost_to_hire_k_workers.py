@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/minimum-cost-to-hire-k-workers/
-# Question : There are N workers.  The i-th worker has a quality[i] and a minimum wage expectation wage[i].
-# Now we want to hire exactly K workers to form a paid group.  When hiring a group of K workers, we must pay
+# Question : There are N workers. The i-th worker has a quality[i] and a minimum wage expectation wage[i].
+# Now we want to hire exactly K workers to form a paid group. When hiring a group of K workers, we must pay
 # them according to the following rules:
 # Every worker in the paid group should be paid in the ratio of their quality compared to other workers
 # in the paid group.
@@ -12,8 +12,8 @@
 # Explanation: We pay 70 to 0-th worker and 35 to 2-th worker.
 #
 # Question Type : ShouldSee
-# Used : At least one worker is paid their minimum wage expectation. We call him captain worker. Other worker will be
-#        paid as their sumOfQuality * ratioOfCaptain.
+# Used : At least one worker is paid their minimum wage expectation.
+#        We call him captain worker. Other worker will be paid as their sumOfQuality * ratioOfCaptain.
 #        For each captain worker that will be paid their minimum wage expectation, let's calculate
 #        the cost of hiring K workers where each point of quality is worth wage[captain] / quality[captain] dollars.
 #        Logic : def mincostToHireWorkers(quality, wage, K):

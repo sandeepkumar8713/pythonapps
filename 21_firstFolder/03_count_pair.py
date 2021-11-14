@@ -1,8 +1,8 @@
 # CTCI : Q16_24_Pairs_With_Sum
 # Similar : https://www.geeksforgeeks.org/write-a-c-program-that-given-a-set-a-of-n-numbers-and-another-number-x-determines-whether-or-not-there-exist-two-elements-in-s-whose-sum-is-exactly-x/
 # https://www.geeksforgeeks.org/count-pairs-with-given-sum/
-# Question : Given an array of integers, and a number 'sum', find the number of pairs of integers in the array
-# whose sum is equal to 'sum'.
+# Question : Given an array of integers, and a number 'sum', find the number of pairs of
+# integers in the array whose sum is equal to 'sum'.
 # 
 # Input  :  arr[] = {1, 5, 7, -1},
 #           sum = 6

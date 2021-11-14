@@ -1,7 +1,7 @@
 # https://www.geeksforgeeks.org/find-sum-of-all-elements-in-a-matrix-except-the-elements-in-given-row-andor-column-2/
-# Question : Given a 2D matrix and a set of cell indexes e.g., an array of (i, j) where i indicates row and j column.
-# For every given cell index (i, j), find sums of all matrix elements except the elements present in i'th row
-# and/or j'th column.
+# Question : Given a 2D matrix and a set of cell indexes e.g., an array of (i, j) where i
+# indicates row and j column. For every given cell index (i, j), find sums of all matrix
+# elements except the elements present in i'th row and/or j'th column.
 #
 # mat[][]  = { {1, 1, 2}
 #              {3, 4, 6}

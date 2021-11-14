@@ -1,5 +1,6 @@
-# Question : We are given an array consisting of n elements. At each operation you can select any one element and
-# increase rest of n-1 elements by 1. You have to make all elements equal performing such operation as many
+# Question : We are given an array consisting of n elements. At each operation you can
+# select any one element and increase rest of n-1 elements by 1. You have to make all
+# elements equal performing such operation as many
 # times you wish. Find the minimum number of operations needed for this.
 #
 # Input : arr[] = {1, 2, 3}

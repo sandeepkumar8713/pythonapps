@@ -47,6 +47,25 @@
 14_trie/10_preorder_traversel_of_n_ary.py
 15_stack/03_sorted_stack.py
 15_stack/04_animal_shelter.py
-
+16_coordinate/01_max_points_on_same_line.py
+20_initialFiles/06_matrix_in_spiral.py
+21_firstFolder/01_produce_inc_dec_pattern.py
+21_firstFolder/10_form_the_largest_no.py
+21_firstFolder/15_rotate_matrix_by_90.py
+21_firstFolder/17_get_freq_without_map.py
+21_firstFolder/22_array_wave_form.py
+21_firstFolder/24_largest_rectange_in_histogram.py
+21_firstFolder/32_full_binary_tree.py
+21_firstFolder/36_distinct_subsequneces.py
+21_firstFolder/38_submatrix_count_with_all_1.py
+21_firstFolder/39_minimum_domino_rotation.py
+21_firstFolder/40_min_swap.py
+21_firstFolder/46_split_array_into_fibonacci.py
+22_secondFolder/04_first_unique_in_stream.py
+22_secondFolder/08_find_next_bigger_number.py
+22_secondFolder/21_angle_between_hour_minute_hand.py
+22_secondFolder/22_best_fit_memory_allocation.py
+22_secondFolder/28_compare_expression_tree.py
+22_secondFolder/49_arithmetic_slices.py
 
 

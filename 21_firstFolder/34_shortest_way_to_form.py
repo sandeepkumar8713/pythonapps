@@ -1,8 +1,9 @@
 # https://algorithm-notes-allinone.blogspot.com/2019/08/leetcode-1055-shortest-way-to-form.html
 # https://leetcode.com/discuss/interview-question/451456/Google-or-Phone-or-Shortest-Way-to-Form-String/
-# Question : From any string, we can form a subsequence of that string by deleting some number of characters
-# (possibly no deletions). Given two strings source and target, return the minimum number of subsequences of
-# source such that their concatenation equals target. If the task is impossible, return -1.
+# Question : From any string, we can form a subsequence of that string by deleting some number
+# of characters (possibly no deletions). Given two strings source and target, return the minimum
+# number of subsequences of source such that their concatenation equals target.
+# If the task is impossible, return -1.
 #
 # Example: Input: source = "abc", target = "abcbc"
 # Output: 2
@@ -24,6 +25,7 @@
 #           if ret == j: return -1
 #           j = ret, count += 1
 #        return count
+# Complexity : O(m * n)
 
 
 def find(j, source, target):

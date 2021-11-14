@@ -1,12 +1,16 @@
 # https://www.geeksforgeeks.org/calculate-angle-hour-hand-minute-hand/
-# Question : This problem is know as Clock angle problem where we need to find angle between hands of an
-# analog clock at a given time.
+# Question : This problem is know as Clock angle problem where we need to find angle
+# between hands of an analog clock at a given time.
 #
 # Input:  h = 12:00, m = 30.00
 # Output: 165 degree
 #
 # Question Type : ShouldSee
 # Used : Calculate the angles moved by hour and minute hands with reference to 12:00
+#        hour explanation : 360 / (12 * 60) = 0.5 degree in 1 min
+#        It takes 720 mins to complete 1 rotation by hour hand
+#        minute explanation : 360 / 60 = 6 degree in 1 min
+#        It takes 60 mins to complete 1 rotation by minute hand
 #        hour_angle = 0.5 * (h * 60 + m)
 #        minute_angle = 6 * m
 #        To calculate angle subtract the above two.

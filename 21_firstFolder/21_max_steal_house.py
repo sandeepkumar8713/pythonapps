@@ -1,9 +1,10 @@
 # CTCI : Q17_16_The_Masseuse
 # https://www.geeksforgeeks.org/find-maximum-possible-stolen-value-houses/
 # https://www.geeksforgeeks.org/maximum-sum-such-that-no-two-elements-are-adjacent/
-# Question : There are n houses build in a line, each of which contains some value in it. A thief is going to
-# steal the maximal value of these houses, but he can't steal in two adjacent houses because owner of the
-# stolen houses will tell his two neighbour left and right side. What is the maximum stolen value.
+# Question : There are n houses build in a line, each of which contains some value in it.
+# A thief is going to steal the maximal value of these houses, but he can't steal in two
+# adjacent houses because owner of the stolen houses will tell his two neighbour left and
+# right side. What is the maximum stolen value.
 #
 # Examples:
 # Input  : hval[] = {6, 7, 1, 3, 8, 2, 4}

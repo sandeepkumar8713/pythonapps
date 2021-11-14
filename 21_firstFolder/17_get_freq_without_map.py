@@ -1,12 +1,12 @@
 # https://www.geeksforgeeks.org/count-frequencies-elements-array-o1-extra-space-time/
-# Question : Given an unsorted array of n integers which can
-# contain integers from 1 to n. Some elements can be repeated multiple times and some other elements can be
-# absent from the array. Count frequency of all elements that are present and print the missing elements.
+# Question : Given an unsorted array of n integers which can contain integers from 1 to n.
+# Some elements can be repeated multiple times and some other elements can be absent from
+# the array. Count frequency of all elements that are present and print the missing elements.
 #
 # Question Type : ShouldSee
-# Used : Since we are sure that all values are <= n, use mode of n for each element to get the index,
-#        and add n to it. It represents the count. To show the result divide each element by n
-#        and index represent the corresponding number.
+# Used : Since we are sure that all values are <= n, use mode of n for each element to get
+#        the index, and add n to it. It represents the count. To show the result divide
+#        each element by n and index represent the corresponding number.
 # Complexity : O(n)
 
 

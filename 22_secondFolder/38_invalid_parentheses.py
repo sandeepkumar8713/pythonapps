@@ -7,9 +7,9 @@
 # Output: ["()()()", "(())()"]
 #
 # Question Type : ShouldSee
-# Used : First we read s from left to right and remove all the invalid ). Then we will get multiple candidate
-#        solutions and save them in candidates. Then we read each candidate from right to left (reversely) and remove
-#        all the invalid ( and we will get the final solutions.
+# Used : First we read s from left to right and remove all the invalid ). Then we will get multiple
+#        candidate solutions and save them in candidates. Then we read each candidate from right
+#        to left (reversely) and remove all the invalid ( and we will get the final solutions.
 #        Logic : def dfs(inpStr, left, right, paranMap, sols):
 #        bal = 0
 #        for j in range(right, len(inpStr)):

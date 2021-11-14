@@ -1,7 +1,7 @@
 # https://www.geeksforgeeks.org/distance-nearest-cell-1-binary-matrix/
-# Question : Given a matrix (m*n) filled with X and 0(zero). Calculate the distance from nearest 0 for all
-# cells marked with X. The distance of four neighboring cells(top,bottom,right,left) will be 1. The distance is
-# calculated as |i1 - i2| + |j1 - j2|,
+# Question : Given a matrix (m*n) filled with X and 0(zero). Calculate the distance from
+# nearest 0 for all cells marked with X. The distance of four neighboring cells
+# (top,bottom,right,left) will be 1. The distance is calculated as |i1 - i2| + |j1 - j2|,
 # where i1, j1 are the row number and column number of the current cell and i2, j2 are the
 # row number and column number of the nearest cell having value 1.
 #

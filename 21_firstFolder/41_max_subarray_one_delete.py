@@ -1,8 +1,9 @@
 # https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/discuss/429880/Simple-Python-5-lines-O(N)-time-O(1)-space
 # https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/
-# Question : Given an array of integers, return the maximum sum for a non-empty sub-array (contiguous elements) with
-# at most one element deletion. In other words, you want to choose a sub-array and optionally delete one element from
-# it so that there is still at least one element left and the sum of the remaining elements is maximum possible.
+# Question : Given an array of integers, return the maximum sum for a non-empty sub-array
+# (contiguous elements) with at most one element deletion. In other words, you want to choose
+# a sub-array and optionally delete one element from it so that there is still at least one
+# element left and the sum of the remaining elements is maximum possible.
 # Note that the sub-array needs to be non-empty after deleting one element.
 #
 # Example : Input: arr = [1, -2, 0, 3]

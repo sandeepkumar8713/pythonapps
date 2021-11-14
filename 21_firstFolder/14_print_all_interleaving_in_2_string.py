@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/print-all-interleavings-of-given-two-strings/
-# Question : Given two strings str1 and str2, write a function that prints all inter leavings of the given
-# two strings. You may assume that all characters in both strings are different.
+# Question : Given two strings str1 and str2, write a function that prints all inter leavings
+# of the given two strings. You may assume that all characters in both strings are different.
 #
 # Question Type : Easy
 # Input: str1 = "AB",  str2 = "CD"

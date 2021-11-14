@@ -1,9 +1,9 @@
 # https://leetcode.com/problems/new-21-game/
 # Question : Alice plays the following game, loosely based on the card game "21".
 # Alice starts with 0 points, and draws numbers while she has less than K points.  During each draw, she
-# gains an integer number of points randomly from the range [1, W], where W is an integer.  Each draw
-# is independent and the outcomes have equal probabilities. Alice stops drawing numbers when she gets K or more points.
-# What is the probability that she has N or less points?
+# gains an integer number of points randomly from the range [1, W], where W is an integer. Each draw
+# is independent and the outcomes have equal probabilities. Alice stops drawing numbers when she gets
+# K or more points. What is the probability that she has N or less points?
 #
 # Example : Input: N = 10, K = 1, W = 10
 # Output: 1.00000

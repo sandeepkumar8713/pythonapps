@@ -16,7 +16,8 @@
 #
 # Question Type : Asked
 # Used : Traverse the matrix as DFS till 1 is found and keep marking them as visited.
-#        So keep track of non-visited cells and do DFS again. In doing so keep the count of DFS called.
+#        So keep track of non-visited cells and do DFS again. In doing so keep the
+#        count of DFS called.
 #        While doing so also keep count of size of each island, to find max island size.
 # Complexity : O(n^2)
 

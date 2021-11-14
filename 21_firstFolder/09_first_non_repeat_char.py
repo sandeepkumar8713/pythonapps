@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/
-# Question : Given a string, find the first non-repeating character in it. For example, if the input string is
-# "GeeksforGeeks", then output should be 'f'
+# Question : Given a string, find the first non-repeating character in it. For example, if
+# the input string is "GeeksforGeeks", then output should be 'f'
 #
 # Question Type : Easy, SimilarAdded
 # Used : Used a map to store each character as key and count & index as its value. Loop again
