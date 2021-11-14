@@ -5,9 +5,12 @@
 # Question Type : Generic
 # Used : Sort the given word list based on length. Make a map and set all the values as true.
 #        This map tells weather the given word is original word or not.
-#        Now call this function over each of the word which tells weather it can be build using other words.
+#        Now call this function over each of the word which tells weather it can be build
+#        using other words.
+#        We try to break the word at each element
 #        def canBuildWord(word, originalWord, map):
-#           if word in map and not originalWord: return map[word]
+#           if word in map and not originalWord:
+#               return map[word]
 #           for i in range(1, len(word)):
 #               left = word[0:i], right = word[i:]
 #               if left in map and map[left] and canBuildWord(right, False, map):

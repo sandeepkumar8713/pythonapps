@@ -1,9 +1,9 @@
 # CTCI : Q17_22_Word_Transformer
-# Question : Given a dictionary, and two words 'start' and 'target' (both of same length). Find length
-# of the smallest chain from 'start' to 'target' if it exists, such that adjacent words in the chain
-# only differ by one character and each word in the chain is a valid word i.e., it exists in the
-# dictionary. It may be assumed that the 'target' word exists in dictionary and length of all
-# dictionary words is same.
+# Question : Given a dictionary, and two words 'start' and 'target' (both of same length).
+# Find length of the smallest chain from 'start' to 'target' if it exists, such that adjacent
+# words in the chain only differ by one character and each word in the chain is a valid word
+# i.e., it exists in the dictionary. It may be assumed that the 'target' word exists in
+# dictionary and length of all dictionary words is same.
 #
 # Example:
 # Input:  Dictionary = {POON, PLEE, SAME, POIE, PLEA, PLIE, POIN}
@@ -13,10 +13,11 @@
 # Explanation: TOON - POON - POIN - POIE - PLIE - PLEE - PLEA
 #
 # Question Type : Generic
-# Used : We should do BFS. Insert start word in queue along with distance covered. Loop over the element
-#        in the queue until target is found. Pop the element(temp) from the queue. Find the words which
-#        are 1 distance away from temp. Add these element along with distance in the queue. Remove temp
-#        word from wordList. If temp is target, return distance covered.
+# Used : We should do BFS. Insert start word in queue along with distance covered. Loop over
+#        the element in the queue until target is found. Pop the element(temp) from the queue.
+#        Find the words which are 1 distance away from temp. Add these element along with
+#        distance in the queue. Remove temp word from wordList. If temp is target, return
+#        distance covered.
 # Complexity : O(n*2m) n is number of words and m is length of the string
 
 

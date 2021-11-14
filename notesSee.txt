@@ -67,5 +67,16 @@
 22_secondFolder/22_best_fit_memory_allocation.py
 22_secondFolder/28_compare_expression_tree.py
 22_secondFolder/49_arithmetic_slices.py
+23_thirdFolder/05_line_intersection.py
+23_thirdFolder/06_factorial_zero.py
+23_thirdFolder/08_max_living_people.py
+23_thirdFolder/46_busy_traffic.py
+23_thirdFolder/10_subarray_sort.py
+23_thirdFolder/20_two_missing_number.py
+23_thirdFolder/22_max_black_submatrix.py
+23_thirdFolder/30_root_of_n_ary_tree.py
+23_thirdFolder/33_binary_tree_coloring.py
+23_thirdFolder/36_bomb_enemy.py
+
 
 

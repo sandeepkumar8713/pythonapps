@@ -9,11 +9,12 @@
 # Output:[7, 10] (index)
 #
 # Question Type : Generic, SimilarAdded
-# Used : Make a object CountLookup, which keep tracks of weather each element in shorter array has appeared at least
-#        once in larger array. Fields : fulfilledCount and freqMap. Now loop over the larger array, it should be
-#        like a sliding window, where left side moves only once. But right side moves until the CountLookup is fulfilled
-#        i.e. all the shorter array elements have appeared at least once. While running loop, we keep track of smallest
-#        sliding window found till now.
+# Used : Make a object CountLookup, which keep tracks of weather each element in shorter array
+#        has appeared at least once in larger array. Fields : fulfilledCount and freqMap. Now
+#        loop over the larger array, it should be like a sliding window, where left side moves
+#        only once. But right side moves until the CountLookup is fulfilled i.e. all the
+#        shorter array elements have appeared at least once. While running loop, we keep track
+#        of smallest sliding window found till now.
 #        Logic :
 #        bestRange = [], rIndex = 0, countLookup.incrementIfFound(largerArr[rIndex])
 #        for lIndex in range(len(largerArr)):

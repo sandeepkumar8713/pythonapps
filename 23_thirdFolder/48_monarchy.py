@@ -3,9 +3,11 @@
 # It is pre-order in n-ary tree.
 #
 # Question Type : Easy
-# Used : When a birth function is called, we maintain a map of nodes and also make a n-ary tree of the nodes.
-#        Monarch map(name: node) is used make n-ary tree(ro attach child to its parent). For death we simply mark them
-#        as not alive. After the birth calls. We travel the n-ary in pre-order for  order of succession. If a monarch
+# Used : When a birth function is called, we maintain a map of nodes and also make a n-ary
+#        tree of the nodes.
+#        Monarch map(name: node) is used make n-ary tree(ro attach child to its parent). For
+#        death we simply mark them as not alive. After the birth calls.
+#        We travel the n-ary in pre-order for order of succession. If a monarch
 #        is marked as dead, we don't print it while doing pre-order.
 #        Logic : def birth(self, child, parent):
 #        monarch = Monarch()

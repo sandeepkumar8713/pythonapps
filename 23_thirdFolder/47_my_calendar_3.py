@@ -17,7 +17,8 @@
 # MyCalendarThree.book(25, 55); // returns 3
 #
 # Question Type : Generic
-# Used : Make one dict of timeLine, Add 1 at start of time in timeline and subtract 1 at end of time in timeline.
+# Used : Make one dict of timeLine,
+#        Add 1 at start of time in timeline and subtract 1 at end of time in timeline.
 #        Now loop through the map, keep adding the values, return max total.
 #        Logic : class MyCalendar:
 #        def __init__(self): self.timeLine = dict()

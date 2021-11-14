@@ -6,11 +6,12 @@
 # counts for both 1908 and 1909.
 #
 # Question Type : Generic
-# Used : We can create an array of the years, where the value at delta[year] indicates how the population
-# changed in that year. To create this array, we walk through the list of people and increment when they're
-# born and decrement when they die. Once we have this array(delta), we can walk through each of the years,
-# tracking the current population as we go (adding the value at array[year] each time). While keeping track
-# of highest population reached.
+# Used : We can create an array of the years, where the value at delta[year] indicates how the
+#        population changed in that year. To create this array, we walk through the list of
+#        people and increment when they're born and decrement when they die. Once we have this
+#        array(delta), we can walk through each of the years, tracking the current population
+#        as we go (adding the value at array[year] each time). While keeping track
+#        of highest population reached.
 # Complexity : O(n + m) n : people count m : year range
 
 import random

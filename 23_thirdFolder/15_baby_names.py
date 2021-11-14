@@ -1,18 +1,19 @@
 # CTCI : Q17_07_Baby_Names
 # Question : Each year, the government releases a list of the 10,000 most common baby names
-# and their frequencies (the number of babies with that name). The only problem with this is that
-# some names have multiple spellings. For example, "John" and ''.Jon" are essentially the same name
-# but would be listed separately in the list. Given two lists, one of names/frequencies and the other
-# of pairs of equivalent names, write an algorithm to print a new list of the true frequency of each
-# name. Note that if John and Jon are synonyms, and Jon and Johnny are synonyms, then John and
-# Johnny are synonyms. (It is both transitive and symmetric.) In the final list, any name can be used
-# as the "real" name.
+# and their frequencies (the number of babies with that name). The only problem with this is
+# that some names have multiple spellings. For example, "John" and ''.Jon" are essentially
+# the same name but would be listed separately in the list. Given two lists, one of
+# names/frequencies and the other of pairs of equivalent names, write an algorithm to print
+# a new list of the true frequency of each name. Note that if John and Jon are synonyms,
+# and Jon and Johnny are synonyms, then John and Johnny are synonyms. (It is both transitive
+# and symmetric.) In the final list, any name can be used as the "real" name.
 #
 # Question Type : Generic
 # Used : Make a class node of name and freq.
-#        Add nodes to the graph
+#        Add nodes to the graph.
 #        Add edges between the synonym node.
-#        Run DFS on each of the node which will give the total freq. Call this func on each node:
+#        Run DFS on each of the node which will give the total freq.
+#        Call this func on each node:
 #        getComponentFrequency(node, visitedDict):
 #           if visitedDict[node.name] is True:
 #               return 0

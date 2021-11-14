@@ -7,6 +7,7 @@
 # Used : We just need to generate a range of values where each value is equally likely
 #       (and where the range has at least seven elements). If we can do this, then we
 #       can discard the elements greater than 7.
+#       Logic:
 #       Do r1 = 2 * rand5(), Here r1 will always be even, to make it odd do,
 #       r2 = rand5() if r2 != 4: rand1 = r2 % 2, num = r1 + rand1
 #       return num if it less than 7 else keep looping

@@ -7,9 +7,12 @@
 # Explanation: The maximum result is 5 ^ 25 = 28.
 #
 # Question Type : ShouldSee
-# Used : Make a trie of 2 children 0 and 1. Run a loop for each element. Insert the binary equivalent of the number
-#        in trie and also traverse with opposite bit to find perfect pair for this element and keep updating xor result.
-#        After the insertion update maxXor. After the array loop return maxXor.
+# Used : Make a trie of 2 children 0 and 1. Run a loop for each element.
+#        Insert the binary equivalent of the number in trie and also traverse with
+#        opposite bit to find perfect pair for this element and keep updating xor result.
+#        After the insertion update maxXor.
+#        After the array loop return maxXor.
+#        Here we are creating xor while traversing the trie and then check if it is max.
 #        Logic : def findMaxXor(inpArr):
 #        root = Trie(), maxXor = 0
 #        for num in inpArr:

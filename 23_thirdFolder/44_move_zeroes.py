@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/move-zeroes/
-# Question : Given an array nums, write a function to move all 0's to the end of it while maintaining the relative
-# order of the non-zero elements.
+# Question : Given an array nums, write a function to move all 0's to the end of it while maintaining
+# the relative order of the non-zero elements.
 #
 # Consider a n-ary tree (i.e. each parent node has at least one children (except the leafs) and up to n).
 # Some children nodes may be missing, i.e. a parent node could have only n/2 children.
@@ -22,8 +22,9 @@
 # Output: [1,3,12,0,0]
 #
 # Question Type : Easy
-# Used : Run a loop, keep track of index where lastNonZeroFoundAt index. When a non zero element is found, swap it with
-#        lastNonZeroFoundAt index and increment the index:
+# Used : Run a loop, keep track of index where lastNonZeroFoundAt index.
+#        When a non zero element is found, swap it with lastNonZeroFoundAt index
+#        and increment the index:
 #        Logic : def moveZeroes(inpArr):
 #        lastNonZeroFoundAt = 0
 #        for i in range(len(inpArr)):

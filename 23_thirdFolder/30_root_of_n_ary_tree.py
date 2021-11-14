@@ -1,12 +1,14 @@
 # https://leetcode.com/discuss/interview-question/351946/Google-or-Onsite-or-Find-Root-of-N-ary-Tree
-# Question : Given an N-ary tree as a list of nodes Node[] tree. Each node has a unique value. In graph theory, an
-# m-ary tree (also known as k-ary or k-way tree) is a rooted tree in which each node has no more than m children.
-# A binary tree is the special case where m = 2, and a ternary tree is another case with m = 3 that limits its children
+# Question : Given an N-ary tree as a list of nodes Node[] tree. Each node has a unique value.
+# In graph theory, an m-ary tree (also known as k-ary or k-way tree) is a rooted tree in which each
+# node has no more than m children. A binary tree is the special case where m = 2, and a ternary
+# tree is another case with m = 3 that limits its children
 # to three.
 #
 # Question Type : ShouldSee
-# Used : Loop over the input nodes and its children. While doing so, keeping XORing the values to a temp val. After the
-#        loop, each element will be visited twice accept the root node. So temp value will be root value.
+# Used : Loop over the input nodes and its children. While doing so, keeping XORing the values
+#        to a temp val. After the loop, each element will be visited twice accept the root node.
+#        So temp value will be root value.
 #        Logic : def findRoot(nodes):
 #        rootVal = 0
 #        for node in nodes:

@@ -1,25 +1,30 @@
 # https://leetcode.com/playground/5ZjWvodJ
-# Question : Given a complete (virtual) binary tree, return true/false if the given target node exists in the tree
-# or not. Here, the virtual means the tree nodes are numbered assuming the tree is a complete binary tree.
-# Follow up Question : Given a complete binary tree, count the number of nodes. In a complete binary tree every level,
-# except possibly the last, is completely filled, and all nodes in the last level are as far left as possible.
-# It can have between 1 and 2h nodes inclusive at the last level h.
+# Question : Given a complete (virtual) binary tree, return true/false if the given target
+# node exists in the tree or not. Here, the virtual means the tree nodes are numbered assuming
+# the tree is a complete binary tree.
+# Follow up Question : Given a complete binary tree, count the number of nodes. In a complete
+# binary tree every level, except possibly the last, is completely filled, and all nodes
+# in the last level are as far left as possible. It can have between 1 and 2h nodes inclusive
+# at the last level h.
 #
 # Example:
 #                1
 # 		    /         \
-# 		 2              3
+# 		   2             3
 #        /   \         /  \
 #      4   (5)nil     6  (7)nil
 # doesNodeExist(root, 4); // true
 # doesNodeExist(root, 7); // false, given the node on #7 is a nil node
 #
 # Question Type : Generic
-# Used : Given the target value, push it in stack, divide it by 2 and push again. Repeat this until target becomes 1.
-#        Now traverse the tree, pop elements from stack, if it is divisible by 2 go left else right. If node is None,
-#        return False. Else after the loop return True.
-#        For follow up question, find the depth of tree. We would know low and high value of the last level. Now using
-#        the function defined in previous question do binary search over it(return high).
+# Used : Given the target value, push it in stack, divide it by 2 and push again.
+#        Repeat this until target becomes 1.
+#        Now traverse the tree, pop elements from stack, if it is divisible by 2
+#        go left else right. If node is None, return False.
+#        Else after the loop return True.
+#        For follow up question, find the depth of tree. We would know low and high
+#        value of the last level. Now using the function defined in previous question
+#        do binary search over it(return high).
 #        Logic : def doesNodeExist(root, target):
 #        if root is None: return False
 #        path = getPathFromRootTo(target)

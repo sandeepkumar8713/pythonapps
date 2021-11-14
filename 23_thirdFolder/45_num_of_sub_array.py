@@ -1,6 +1,6 @@
 # https://leetcode.com/discuss/interview-question/406148/Google-or-Phone-Screen-or-Number-of-Subarrays-That-Satisfy-Condition
-# Question : Given an array A that is a permutation of n numbers [1-n]. Find the number of subarrarys S that meets
-# the following condition max(S) - min(S) = length(S) - 1.
+# Question : Given an array A that is a permutation of n numbers [1-n]. Find the number
+# of subarrarys S that meets the following condition max(S) - min(S) = length(S) - 1.
 #
 # Example : Input: [4, 3, 1, 2, 5]
 # Output: 10

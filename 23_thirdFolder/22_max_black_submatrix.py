@@ -1,13 +1,13 @@
 # CTCI : Q17_23_Max_Black_Square
 # Question : Imagine you have a square matrix, where each cell (pixel) is either black or
-# white. Design an algorithm to find the maximum sub square such that all four borders are filled with
-# black pixels.
+# white. Design an algorithm to find the maximum sub square such that all four borders
+# are filled with black pixels.
 #
 # Question Type : Generic
 # Used : For the given matrix make a processed matrix whose cell contains a object squareCell
 #        whose members are rightZeros and downZeros from the current cell.
-#        Now run one more loop from N to 1 (possible square size) and call findSqaureWithSize() to check if
-#        sub square of given size is possible.
+#        Now run one more loop from N to 1 (possible square size) and call findSqaureWithSize()
+#        to check if sub square of given size is possible.
 #        def findSqaureWithSize(processed, squareSize):
 #           count = len(processed) - squareSize + 1
 #           for row in range(0, count):
@@ -15,7 +15,8 @@
 #                   if isSquare(processed, row, col, squareSize):
 #                       return row, col, squareSize
 #            return None
-#         Note that isSquare checks if processed has equal or more 0's than squareSize, from position (row,col)
+#         Note that isSquare checks if processed has equal or more 0's than squareSize,
+#         from position (row,col)
 # Complexity : O(N ^ 3)
 
 

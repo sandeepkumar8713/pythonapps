@@ -13,9 +13,11 @@
 # [14, 15] with average speed is 80
 #
 # Question Type : Generic
-# Used : Make a class Event : eventType(open or close), time, speed. Make list of events from the given input intervals.
-#        Sort the event list based on time. Mow loop over the list, if it a open event, increment the total else
-#        decrement the total. If time is not equal to previous time, insert the timestamp along with average in result.
+# Used : Make a class Event : eventType(open or close), time, speed.
+#        Make list of events from the given input intervals.
+#        Sort the event list based on time. Now loop over the list, if it a open event,
+#        increment the total else decrement the total.
+#        If time is not equal to previous time, insert the timestamp along with average in result.
 #        Logic : def intervalAverages(intervals):
 #        events = []
 #        for interval in intervals:

@@ -1,9 +1,10 @@
 # https://www.geeksforgeeks.org/check-if-a-given-number-is-fancy/
 # Question : A fancy number is one which when rotated 180 degrees is the same. Given a number,
-# find whether it is fancy or not. 180 degree rotations of 6, 9, 1, 0 and 8 are 9, 6, 1, 0 and 8 respectively
+# find whether it is fancy or not. 180 degree rotations of 6, 9, 1, 0 and 8 are 9, 6, 1, 0
+# and 8 respectively
 #
 # Examples:
-# Input:  num =  96
+# Input: num = 96
 # Output: Yes
 # If we rotate given number by 180, we get same number
 #
