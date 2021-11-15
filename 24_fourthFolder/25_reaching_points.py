@@ -13,6 +13,7 @@
 #
 # Question Type : Generic
 # Used : Run a loop to reduce target to source.
+#        while tx >= sx and ty >= sy and tx != ty:
 #           If sx == tx is same, return true if y's difference is divisible by sx
 #           If sy == ty is same, return true if x's difference is divisible by sy
 #           If tx < ty : ty = ty % tx else tx = tx % ty

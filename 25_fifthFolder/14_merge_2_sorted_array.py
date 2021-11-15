@@ -1,11 +1,11 @@
 # https://www.geeksforgeeks.org/merge-two-sorted-arrays-in-o1-extra-space-using-quicksort-partition/
-# Question : Given two sorted arrays, arr[], brr[] of size N, and M, the task is to merge the two given arrays
-# such that they form a sorted sequence of integers combining elements of both the arrays.
+# Question : Given two sorted arrays, arr[], brr[] of size N, and M, the task is to merge the two
+# given arrays such that they form a sorted sequence of integers combining elements of both the arrays.
 #
 # Examples: Input: arr[] = {10}, brr[] = {2, 3}
 # Output: 2 3 10
-# Explanation: The merged sorted array obtained by taking all the elements from the both the arrays is {2, 3, 10}.
-# Therefore, the required output is 2 3 10.
+# Explanation: The merged sorted array obtained by taking all the elements from the both
+# the arrays is {2, 3, 10}. Therefore, the required output is 2 3 10.
 #
 # Question Type : Generic
 # Used : The idea is to consider the (N + 1)th element of the final sorted array as a pivot element

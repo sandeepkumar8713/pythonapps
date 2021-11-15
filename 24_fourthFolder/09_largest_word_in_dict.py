@@ -9,9 +9,9 @@
 # Output : geeksgeeks
 #
 # Question Type : Generic
-# Used : We traverse all dictionary words and for every word, we check if it is sub sequence
-#        of given string and is largest of all such words. We finally return the longest word with given string
-#        as sub sequence.
+# Used : We traverse all dictionary words and for every word,
+#        we check if it is sub sequence of given string and is largest of all such words.
+#        We finally return the longest word with given string as sub sequence.
 #       def isSubSequence(str1,str2):
 #           i=0, j=0
 #           while i < n and j < m:

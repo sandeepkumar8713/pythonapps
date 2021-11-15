@@ -10,9 +10,10 @@
 # Question Type : Generic
 # Used : Yeah, this is percolation problem solvable using UnionFind.
 #        https://www.coursera.org/lecture/algorithms-part1/union-find-applications-OLXM8
-#        There are should be 2 disjoint set representing 2 walls.(left and right). Now start making union of sensors
-#        with other sensor and walls. After this, if the 2 walls have same parent(not disjoint) it means that they
-#        are connected, so thief can't pass through it. The two walls should be disjoint for a pass.
+#        There should be 2 disjoint set representing 2 walls.(left and right). Now start making
+#        union of sensors with other sensor and walls. After this, if the 2 walls have same
+#        parent(not disjoint) it means that they are connected, so thief can't pass through it.
+#        The two walls should be disjoint for a pass.
 #        Logic : def canGoFromLeftToRight(roomHeight, sensors, r):
 #        ids = range(len(sensors))
 #        top = [], bottom = []

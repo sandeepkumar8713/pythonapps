@@ -11,8 +11,8 @@
 # Output: true
 #
 # Question Type : ShouldSee
-# Used : Make a array of size sum. Bit n of dp[s] tells me whether it's possible to build a subset of size
-#        n with sum s
+# Used : Make a array of size sum. Bit n of dp[s] tells me whether it's possible
+#        to build a subset of size n with sum s
 #        p = [1] * (totalSum + 1)
 #        for item in inpArr:
 #           remainderSum = totalSum - item

@@ -14,7 +14,7 @@
 #        If last element of res, still has more occurrences to come and it is greater
 #          than curr ch, pop it from res and mark it as unvisited.
 #        push current ch in res and mark as visited
-#        returnn res
+#        return res
 #        Logic :
 #        visited = [False] * MAX_CHAR, res = []
 #        for i in range(n):

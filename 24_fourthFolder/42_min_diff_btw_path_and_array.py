@@ -1,6 +1,6 @@
 # https://leetcode.com/discuss/interview-question/378687/google-onsite-min-diff-between-given-path-and-path-in-the-graph
-# Question : Given a graph whose nodes are 3-letter words and an array of 3-letter words. Find a path in the graph
-# such that the difference b/w words in the path and given array is minimum.
+# Question : Given a graph whose nodes are 3-letter words and an array of 3-letter words.
+# Find a path in the graph such that the difference b/w words in the path and given array is minimum.
 #
 # Example : Input: G, arr = [AAA, BBB, CCC, DDD]
 # Output: 2
@@ -8,8 +8,9 @@
 # In path, BBC differs from BBB by 1 and CCD differs from CCC by 1 hence answer is 1 + 1 = 2.
 #
 # Question Type : Generic
-# Used : We are going to use bfs with min heap. While doing bfs, for each node in queue, we try to find next node,
-#        which has the least difference from the node in given array. We return when resultant array length is equal
+# Used : We are going to use bfs with min heap.
+#        While doing bfs, for each node in queue, we try to find next node, which has the least
+#        difference from the node in given array. We return when resultant array length is equal
 #        to given array length.
 #        Logic : minDiffPath(G, path):
 #        n, pq, seen = len(path), [], {}

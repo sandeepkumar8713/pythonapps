@@ -12,11 +12,14 @@
 # Then the 1st smallest distance pair is (1,1), and its distance is 0.
 #
 # Question Type : ShouldSee
-# Used : Here we find min and max value of inpArr. We do binary search over it, take a mid value, then check if there
-#        are k pairs or more whose distance is less than mid. After the binary search low is our answer.
-#        Let's binary search for the answer. It's definitely in the range [0, W], where W = max(nums) - min(nums)].
-#        Let possible(guess) be true if and only if there are k or more pairs with distance less than or equal to
-#        guess. We will focus on evaluating our possible function quickly. We will use a sliding window approach
+# Used : Here we find min and max value of inpArr. We do binary search over it,
+#        take a mid value, then check if there are k pairs or more whose distance
+#        is less than mid. After the binary search low is our answer.
+#        Let's binary search for the answer. It's definitely in the range [0, W],
+#        where W = max(nums) - min(nums)].
+#        Let possible(guess) be true if and only if there are k or more pairs with
+#        distance less than or equal to guess. We will focus on evaluating our
+#        possible function quickly. We will use a sliding window approach
 #        to count the number of pairs with distance <= guess.
 #        Logic :
 #        smallestDistancePair(nums, k):

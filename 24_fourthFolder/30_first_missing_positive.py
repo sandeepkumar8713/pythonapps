@@ -5,8 +5,9 @@
 # Output: 3
 #
 # Question Type : Easy
-# Used : Run a loop over the given elements. If this ele is positive and less than count of inpArr. Assign this in
-#        tempArr at same index. Later on run loop for the tempArr, return the index at which its value doesn't match.
+# Used : Run a loop over the given elements. If this ele is positive and less than count of inpArr.
+#        Assign this in tempArr at same index. Later on run loop for the tempArr,
+#        return the index at which its value doesn't match.
 #        Logic :
 #        for ele in inpArr:
 #           if ele > 0 and ele <= n:

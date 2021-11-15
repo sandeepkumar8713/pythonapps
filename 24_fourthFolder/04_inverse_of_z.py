@@ -3,8 +3,9 @@
 # So F(x, y) = z and also that inverse F(z) = (x, y)
 #
 # Question Type : ShouldSee
-# Used : Make use of hash map. This solution is similar to open addressing. For given x,y calculate distance from
-#        origin i.e. z= sqrt(x^2 + y^2). Now check if z is present in map, and its x,y pair matches.
+# Used : Make use of hash map. This solution is similar to open addressing.
+#        For given x,y calculate distance from origin i.e. z= sqrt(x^2 + y^2).
+#        Now check if z is present in map, and its x,y pair matches.
 #        If exists, add 0.0001 to z and try again. If not exist, insert z with x,y in map.
 # Complexity : O(n) insert O(1) search
 

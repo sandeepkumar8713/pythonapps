@@ -4,15 +4,19 @@
 # goes to sit on the bench such that his distance from others is maximum.
 #
 # Question Type : Generic
-# Used : We will use max heap. Make a class with 2 member, leftEdge and rightEdge, these tell the left and right
-#        distance from current seat to previous seat. If the bench is empty place it on first index. Next time
-#        place it at last index. Now make a seat(0,n-1) and insert in max heap.
+# Used : We will use max heap. Make a class with 2 member, leftEdge and rightEdge,
+#        these tell the left and right distance from current seat to previous seat.
+#        If the bench is empty place it on first index. Next time place it at last index.
+#        Now make a seat(0,n-1) and insert in max heap.
 #        When next person comes in,
-#        When next person comes in, pop top element from the max heap, result will be (left+right)/2 of popped element.
-#        Insert 2 nodes : seat(left,(left+right)/2) and seat((left+right)/2,right) in max heap and heapify.
-#        Please note that we are inserting range in heap. So that we can place the next person in middle of the range.
-#        Comparison of max heap would be difference between left and right. So the top element has max range, between
-#        which next person will be placed.
+#        When next person comes in, pop top element from the max heap, result will be
+#        (left+right)/2 of popped element.
+#        Insert 2 nodes : seat(left,(left+right)/2) and seat((left+right)/2,right) in max
+#        heap and heapify.
+#        Please note that we are inserting range in heap. So that we can place the next
+#        person in middle of the range.
+#        Comparison of max heap would be difference between left and right. So the top
+#        element has max range, between which next person will be placed.
 # Complexity : Build Heap: O(N)
 #              Return next seat: O(1) --> getMax operation
 #              Add entries to heap: O(logN)

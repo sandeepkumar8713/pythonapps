@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/maximum-absolute-difference-between-sum-of-two-contiguous-sub-arrays/
-# Question : Given an array of integers, find two non-overlapping contiguous sub-arrays such that the
-# absolute difference between the sum of two sub-arrays is maximum.
+# Question : Given an array of integers, find two non-overlapping contiguous sub-arrays
+# such that the absolute difference between the sum of two sub-arrays is maximum.
 #
 # Example:
 # Input: [-2, -3, 4, -1, -2, 1, 5, -3]
@@ -8,13 +8,15 @@
 # Two sub arrays are [-2, -3] and [4, -1, -2, 1, 5]
 #
 # Question Type : Generic
-# Used : Using Kadane algorithm we can find left and right max sub array. We can find min sub array by inverting the
-#        sign of input array. Now use this logic:
+# Used : Using Kadane algorithm we can find left and right max sub array.
+#        We can find min sub array by inverting the sign of input array.
+#        Now use this logic:
 #        for i in range(n - 1):
 #           absValue = max(abs(leftMax[i] - rightMin[i + 1]), abs(leftMin[i] - rightMax[i + 1]))
 #           if absValue > result: result = absValue
 #        return result
-#        Note : We are cutting the array at each index and checking its left and right sub array for difference.
+#        Note : We are cutting the array at each index and checking its left and right sub array
+#        for difference.
 # Complexity : O(n)
 
 import sys

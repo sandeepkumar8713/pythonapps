@@ -7,8 +7,9 @@
 # Question Type : ShouldSee
 # Used : Make a array of amount[n], it tells the amount to be paid or received
 #        Now call recursive function, find max debit and credit.
-#        Choose which ever is smaller and add that amount to maxCredit, subtract that amount to maxDebit
-#        So now maxDebit pays minAmount to maxCredit
+#        Choose which ever is smaller and add that amount to maxCredit, subtract
+#        that amount to maxDebit.
+#        So now maxDebit pays minAmount to maxCredit.
 #        Call the recursive function again.
 #        Logic :  for i in range(n):
 #                   for j in range(n):

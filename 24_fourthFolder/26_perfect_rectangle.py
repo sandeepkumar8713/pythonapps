@@ -3,7 +3,7 @@
 # a rectangular region. Each rectangle is represented as a bottom-left point and a top-right point. For example,
 # a unit square is represented as [1,1,2,2]. (coordinate of bottom-left point is (1, 1) and top-right point is (2, 2)).
 #
-# Question Type : ShouldSee
+# Question Type : ShouldSee, SimilarAdded
 # Used : From the given rectangles find extreme left, bottom, right and top
 #        Run a loop for each small rectangle:
 #           update height and width map, with coordinates as key

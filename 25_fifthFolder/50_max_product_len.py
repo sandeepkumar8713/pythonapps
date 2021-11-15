@@ -10,7 +10,7 @@
 # Used : Make a bitmask for each word given in words list
 #        Run 2 loops to make all possible pair of words
 #        Do and operation of bit mask of each pair.
-#        If ans is 0, then there is no overlap, so we can consider for prod calculation.
+#        If ans is 0, then there is no overlap, so we can consider for product calculation.
 #        Compare it with maxProd and update if required.
 #        Logic:
 #        maxProd = 0

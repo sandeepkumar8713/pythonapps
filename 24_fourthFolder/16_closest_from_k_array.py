@@ -1,11 +1,11 @@
 # https://www.geeksforgeeks.org/find-three-closest-elements-from-given-three-sorted-arrays/
-# Question : Given k arrays of size n each. You have to select one number from each of them such that the
-# difference between them is minimum. Initially, the question was for 3 arrays, I told him the solution
-# quickly then he changed 3 to k.
+# Question : Given k arrays of size n each. You have to select one number from each of them
+# such that the difference between them is minimum. Initially, the question was for 3 arrays,
+# I told him the solution quickly then he changed 3 to k.
 #
 # Question Type : Generic
 # Used : Considering the arrays are sorted. We should have current indexes of the array.
-#        Run a loop until all the indexes hve reached their end.
+#        Run a loop until all the indexes have reached their end.
 #           Find max and min among current elements.
 #           If difference of max and min is less than diff, than update diff.
 #           If diff is 0, break

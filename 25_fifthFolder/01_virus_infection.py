@@ -1,7 +1,7 @@
 # https://careercup.com/question?id=5078647835197440
-# Question : Given n number of persons in a park. One of them is having a virus. But we don't know whom. Also, the
-#            position of all persons is given. A contaminated person can spread it up to d distance. When the best
-#            case (Spread is minimum) and the worst case(Spread is maximum) would occur?
+# Question : Given n number of persons in a park. One of them is having a virus. But we don't know
+# whom. Also, the position of all persons is given. A contaminated person can spread it up to d
+# distance. When the best case (Spread is minimum) and the worst case(Spread is maximum) would occur?
 #
 # Question Type : ShouldSee
 # Used : Try to make islands of people who are within the given distance d. Now the islands with max and min people

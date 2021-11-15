@@ -12,8 +12,8 @@
 # Explanation: You can allocate to the first, second and third child with 2, 1, 2 candies respectively.
 #
 # Question Type : Easy
-# Used : Initially give 1 candy to each child. Make left and right loop, and increase candy count if neighbours have
-#        higher rating.
+# Used : Initially give 1 candy to each child. Make left and right loop, and increase
+#        candy count if neighbours have higher rating.
 #        Logic :
 #        for i in range(1, n):
 #           if ratings[i] > ratings[i-1]: candies[i] = candies[i-1] + 1

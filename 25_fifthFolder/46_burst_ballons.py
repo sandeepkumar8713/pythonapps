@@ -23,6 +23,7 @@
 #           if (l, r) not in dp:
 #               maximum = float("-inf")
 #               for i in range(l, 1 + r):
+#                   left and right sub array is already brust
 #                   maximum = max(maximum, nums[i] * nums[l - 1] * nums[r + 1] +
 #                      dfs(l, i - 1) + dfs(i + 1, r))
 #               dp[(l, r)] = maximum

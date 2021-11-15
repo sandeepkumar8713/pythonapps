@@ -1,14 +1,15 @@
 # https://www.geeksforgeeks.org/counting-inversions/
-# Question : Inversion Count for an array indicates - how far (or close) the array is from being sorted. If array is
-# already sorted then inversion count is 0. If array is sorted in reverse order that inversion count is the maximum.
+# Question : Inversion Count for an array indicates - how far (or close) the array is from being
+# sorted. If array is already sorted then inversion count is 0. If array is sorted in reverse order
+# that inversion count is the maximum.
 # Formally speaking, two elements a[i] and a[j] form an inversion if a[i] > a[j] and i < j
 #
 # Example:
 # The sequence 2, 4, 1, 3, 5 has three inversions (2, 1), (4, 1), (4, 3).
 #
 # Question Type : Generic
-# Used : We will do normal merge sort. While doing merge if second array has smaller element, increase invCount by no.
-#        of elements left in first array.
+# Used : We will do normal merge sort. While doing merge if second array has smaller element,
+#        increase invCount by no. of elements left in first array.
 #        Logic :  while i <= mid and j <= right:
 #                   if arr[i] <= arr[j]:
 #                       temp_arr[k] = arr[i], k += 1, i += 1

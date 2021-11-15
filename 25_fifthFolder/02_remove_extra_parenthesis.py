@@ -13,9 +13,9 @@
 # ((abc)(def)) --> (abc)(def)
 #
 # Question Type : ShouldSee
-# Used : Loop over the given inpStr, if ( occurs, push its position from the right side in stack. If ) occurs pop top
-#        value from stack. If top value is same as current position, then the substring b/w start and end is balanced
-#        it can be the answer.
+# Used : Loop over the given inpStr, if ( occurs, push its position from the right side in stack.
+#        If ) occurs pop top value from stack. If top value is same as current position,
+#        then the substring b/w start and end is balanced it can be the answer.
 #        for i in range(0, len(inpStr)):
 #           if inpStr[i] == '(': stack.append(len(inpStr) - 1 - i)
 #           elif inpStr[i] == ')':

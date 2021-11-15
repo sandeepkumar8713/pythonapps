@@ -8,12 +8,13 @@
 # Output: 4
 #
 # Question Type : Generic
-# Used : We are using union and find concept. Run a loop over each element in input array. Find all its
-#        factors and make union from the element to all its factors.
-#        Now run a loop again, find root of each element from union. For connected components all the elements will
-#        have same root. So keep the freq of root. Root with max freq is the answer.
-#        Suppose elements are 15 and 35, then there uf will be : 35 -> 5 -> 7 and 15 -> 3 -> 5 -> 7. So both will have
-#        7 as root.
+# Used : We are using union and find concept. Run a loop over each element in input array.
+#        Find all its factors and make union from the element to all its factors.
+#        Now run a loop again, find root of each element from union.
+#        For connected components all the elements will have same root.
+#        So keep the freq of root. Root with max freq is the answer.
+#        Suppose elements are 15 and 35, then there uf will be : 35 -> 5 -> 7 and
+#        15 -> 3 -> 5 -> 7. So both will have 7 as root.
 #        Logic : def largestComponentSize(inpArr):
 #        if inpArr is None or len(inpArr) == 0:
 #           return 0

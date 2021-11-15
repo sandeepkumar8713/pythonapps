@@ -8,8 +8,8 @@
 # Output: 3
 #
 # Question Type : Easy
-# Used : Make a set of given inpArr. Sum it and multiply by 3. Subtract it with sum of inpArr. We will get the twice of
-#        missing number.
+# Used : Make a set of given inpArr. Sum it and multiply by 3. Subtract it with sum of inpArr.
+#        We will get the twice of missing number.
 #        Logic :
 #        sumOfSet = 3 * sum(set(inpArr))
 #        sumOfInpArr = sum(inpArr)

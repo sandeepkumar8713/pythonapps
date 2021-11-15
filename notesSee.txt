@@ -50,6 +50,7 @@
 16_coordinate/01_max_points_on_same_line.py
 20_initialFiles/06_matrix_in_spiral.py
 21_firstFolder/01_produce_inc_dec_pattern.py
+25_fifthFolder/09_bitonic_sequnce.py
 21_firstFolder/10_form_the_largest_no.py
 21_firstFolder/15_rotate_matrix_by_90.py
 21_firstFolder/17_get_freq_without_map.py
@@ -63,6 +64,7 @@
 21_firstFolder/46_split_array_into_fibonacci.py
 22_secondFolder/04_first_unique_in_stream.py
 22_secondFolder/08_find_next_bigger_number.py
+25_fifthFolder/15_next_smaller_number.py
 22_secondFolder/21_angle_between_hour_minute_hand.py
 22_secondFolder/22_best_fit_memory_allocation.py
 22_secondFolder/28_compare_expression_tree.py
@@ -77,6 +79,23 @@
 23_thirdFolder/30_root_of_n_ary_tree.py
 23_thirdFolder/33_binary_tree_coloring.py
 23_thirdFolder/36_bomb_enemy.py
+24_fourthFolder/02_lexicographically_smallest_substring.py
+24_fourthFolder/09_largest_word_in_dict.py
+24_fourthFolder/12_max_diff_of_index.py
+24_fourthFolder/13_simplify_debts.py
+24_fourthFolder/16_closest_from_k_array.py
+24_fourthFolder/20_text_justification.py
+24_fourthFolder/22_create_max_number.py
+24_fourthFolder/25_reaching_points.py
+24_fourthFolder/30_first_missing_positive.py
+24_fourthFolder/34_submatrix_sum_queries.py
+24_fourthFolder/43_distribute_coins_binary_tree.py
+24_fourthFolder/50_escape_large_maze.py
+25_fifthFolder/03_find_max_range.py
+25_fifthFolder/08_stock_span.py
+25_fifthFolder/11_kth_child_sum.py
+25_fifthFolder/50_max_product_len.py
+
 
 
 

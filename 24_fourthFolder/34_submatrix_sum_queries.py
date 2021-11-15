@@ -1,11 +1,11 @@
 # https://www.geeksforgeeks.org/submatrix-sum-queries/
-# Question : Given a matrix of size M x N, there are large number of queries to find sub matrix sums. Inputs to
-# queries are left top and right bottom indexes of sub matrix whose sum is to find out. How to pre-process the matrix
-# so that sub matrix sum queries can be performed in O(1) time.
+# Question : Given a matrix of size M x N, there are large number of queries to find sub matrix sums.
+# Inputs to queries are left top and right bottom indexes of sub matrix whose sum is to find out.
+# How to pre-process the matrix so that sub matrix sum queries can be performed in O(1) time.
 #
 # Question Type : Generic
-# Used : Make a auxiliary matrix which would be a cumulative sum of the input matrix. We will use this to find
-#        result for the given query.
+# Used : Make a auxiliary matrix which would be a cumulative sum of the input matrix.
+#        We will use this to find result for the given query.
 #        Build aux : 1. Copy first row of mat[][] to aux[][]
 #                    2. Do column wise sum of the matrix and store it.
 #                    3. Do the row wise sum of updated matrix aux[][] in step 2.

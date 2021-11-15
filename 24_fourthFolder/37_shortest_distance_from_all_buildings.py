@@ -24,10 +24,12 @@
 # So return 7.
 #
 # Question Type : Generic
-# Used : Do BFS from each building. While doing so, if we find an empty space (x,y), update these two:
+# Used : Do BFS from each building. While doing so, if we find an empty space (x,y),
+#        update these two:
 #        distMat[x][y] : distance sum of all building from x,y
 #        reachableBuildingCount[x][y] : how many buildings can be reached from x,y
-#        After BFS, loop over the inpMat again, if empty space is found, check if all the buildings can be reached from
+#        After BFS, loop over the inpMat again, if empty space is found,
+#        check if all the buildings can be reached from
 #        it. If yes, get sum dist for all the buildings and update min.
 #        Logic : def bfs(inpMat, distMat, reachableBuildingCount, x, y):
 #        dist = 0

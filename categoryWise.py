@@ -14,7 +14,12 @@ questionMap['hashing'] = {'26_sixthFolder/46_good_split_count',
                           '23_thirdFolder/18_longest_word',
                           '23_thirdFolder/28_longest_arithmetic_progression',
                           '23_thirdFolder/42_small_diff_word_exist',
-                          '23_thirdFolder/48_monarchy'}
+                          '23_thirdFolder/48_monarchy',
+                          '24_fourthFolder/04_inverse_of_z',
+                          '24_fourthFolder/17_string_stream',
+                          '24_fourthFolder/19_hit_counter',
+                          '24_fourthFolder/35_toeplitz_matrix',
+                          '25_fifthFolder/49_remove_duplicate',}
 
 questionMap['leftRightSum'] = {'01_array/03_find_equilibrium',
                                '01_array/10_rainwater_trapping',
@@ -26,7 +31,9 @@ questionMap['minPlatform'] = {'01_array/06_minimum_platform',
                               '23_thirdFolder/47_my_calendar_3'}
 
 questionMap['quickSort'] = {'01_array/09_find_kth_small_element',
-                            '22_secondFolder/19_3_way_quick_sort'}
+                            '22_secondFolder/19_3_way_quick_sort',
+                            '25_fifthFolder/14_merge_2_sorted_array',
+                            '25_fifthFolder/18_rearrange_pos_neg',}
 
 questionMap['slidingWindow'] = {'01_array/12_chocolate_distribution',
                                 '01_array/20_flip_ele_to_1',
@@ -34,11 +41,14 @@ questionMap['slidingWindow'] = {'01_array/12_chocolate_distribution',
                                 '07_hashing/13_find_smallest_window',
                                 '21_firstFolder/08_subarray_sum_match_target',
                                 '22_secondFolder/30_min_dist_to_far_block',
-                                '22_secondFolder/48_permutation_in_string'}
+                                '22_secondFolder/48_permutation_in_string',
+                                '25_fifthFolder/22_amazon_fresh_secret_code',
+                                '25_fifthFolder/34_restaurant_serve',}
 
 questionMap['heap'] = {'01_array/16_find_kth_largest_in_stream',
                        '05_heap/08_compute_mean_of_window',
-                       '05_heap/09_kth_smallest_ele_in_marix'}
+                       '05_heap/09_kth_smallest_ele_in_marix',
+                       '25_fifthFolder/37_max_mutual_frnd',}
 
 questionMap['kRemainder'] = {'01_array/29_chocolate_distribution_consecutive',
                              '07_hashing/01_find_largest_sub_array_with_sum_0',
@@ -60,7 +70,9 @@ questionMap['dpDfs'] = {'02_string/07_longest_common_substring',
                         '10_dynamic_programming/13_shortest_common_superSequece',
                         '10_dynamic_programming/14_sub_matrix_with_all_1',
                         '10_dynamic_programming/15_count_possible_decoding',
-                        '10_dynamic_programming/33_longest_consecutive_path_in_matrix'}
+                        '10_dynamic_programming/33_longest_consecutive_path_in_matrix',
+                        '24_fourthFolder/47_coke_machine',
+                        '25_fifthFolder/46_burst_ballons',}
 
 questionMap['dpBox'] = {'09_greedy/01_activity_selection',
                         '09_greedy/08_max_len_chain',
@@ -78,6 +90,7 @@ questionMap['subProblem'] = {'09_greedy/02_make_change_with_min_coin',
                              '10_dynamic_programming/36_square_submatrix_count',
                              '21_firstFolder/21_max_steal_house',
                              '22_secondFolder/35_word_break',
+                             '25_fifthFolder/40_word_break_2',
                              '22_secondFolder/36_guess_number_higher_or_lower', }
 
 questionMap['bitVector'] = {'02_string/23_unique_char_without_map', }
@@ -87,7 +100,8 @@ questionMap['compressStr'] = {'02_string/26_compressed_string',
 
 questionMap['linkedList'] = {'03_linkedList/02_detect_and_remove_loop',
                              '03_linkedList/03_merge_two_list',
-                             '03_linkedList/14_clone_double_linked', }
+                             '03_linkedList/14_clone_double_linked',
+                             '25_fifthFolder/39_clone_graph',}
 
 questionMap['reachInArray'] = {'03_linkedList/10_circular_tour',
                                '10_dynamic_programming/03_minimum_jump',
@@ -100,8 +114,13 @@ questionMap['bfs'] = {'03_linkedList/13_rotten_orange',
                       '21_firstFolder/26_evaluate_division',
                       '21_firstFolder/45_race_car',
                       '21_firstFolder/47_shortest_alternalte_path',
-                      '23_thirdFolder/21_word_transform'
-                      '23_thirdFolder/50_open_lock'}
+                      '23_thirdFolder/21_word_transform',
+                      '23_thirdFolder/50_open_lock',
+                      '24_fourthFolder/37_shortest_distance_from_all_buildings',
+                      '24_fourthFolder/42_min_diff_btw_path_and_array',
+                      '24_fourthFolder/44_go_game',
+                      '25_fifthFolder/12_bipartite_graph',
+                      '25_fifthFolder/45_min_height_tree',}
 
 questionMap['dfs'] = {'08_graph/03_detect_cycle',
                       '08_graph/11_alien_dictionary',
@@ -129,7 +148,10 @@ questionMap['ssc'] = {'08_graph/06_strongly_connect_component',
                       '21_firstFolder/49_linked_list_components'}
 
 questionMap['parentUnion'] = {'21_firstFolder/30_redundant_connection',
-                              '23_thirdFolder/38_stones_removed'}
+                              '23_thirdFolder/38_stones_removed',
+                              '24_fourthFolder/06_sensor_in_room',
+                              '24_fourthFolder/24_largest_connected_component',
+                              '25_fifthFolder/33_drop_off_center',}
 
 questionMap['verticalDist'] = {'04_tree/02_diagonal_traversal', }
 
@@ -137,7 +159,8 @@ questionMap['HorizontalDist'] = {'04_tree/03_bottom_view_binary_tree',
                                  '04_tree/04_vertical_view_binary_tree',
                                  '04_tree/19_top_view_of_binary_tree'}
 
-questionMap['island'] = {'21_firstFolder/06_count_island_in_matrix', }
+questionMap['island'] = {'21_firstFolder/06_count_island_in_matrix',
+                         '25_fifthFolder/01_virus_infection',}
 
 questionMap['lca'] = {'04_tree/08_LCA',
                       '04_tree/20_distance_btw_2_nodes'}
@@ -158,9 +181,17 @@ questionMap['binarySearch'] = {'04_tree_bst/08_sorted_array_to_bst',
                                '21_firstFolder/31_binary_searchable',
                                '22_secondFolder/40_find_peak_element',
                                '22_secondFolder/41_array_adjustment',
-                               '23_thirdFolder/35_check_node_exists'}
+                               '23_thirdFolder/35_check_node_exists',
+                               '24_fourthFolder/15_counting_inversion',
+                               '24_fourthFolder/31_kth_smallest_pair',
+                               '24_fourthFolder/38_find_obejct_in_a_grid',
+                               '24_fourthFolder/46_find_function_argument',
+                               '24_fourthFolder/48_split_array_largest_sum',
+                               '25_fifthFolder/38_insert_interval'}
 
-questionMap['preProcess'] = {'22_secondFolder/42_guess_the_word', }
+questionMap['preProcess'] = {'22_secondFolder/42_guess_the_word',
+                             '25_fifthFolder/06_cuts_in_matrix',
+                             '25_fifthFolder/07_door_in_out',}
 
 questionMap['stocks'] = {'22_secondFolder/43_buy_sell_stock_2_at_max', }
 
@@ -173,7 +204,10 @@ questionMap['heap'] = {'05_heap/01_median_in_stream',
                        '05_heap/04_non_adjacent_character',
                        '05_heap/05_same_char_d_dist_apart',
                        '22_secondFolder/39_implement_looger',
-                       '22_secondFolder/44_min_cost_to_hire_k_workers'}
+                       '22_secondFolder/44_min_cost_to_hire_k_workers',
+                       '24_fourthFolder/07_max_distance_on_bench',
+                       '25_fifthFolder/20_max_sum_by_selecting_k_ele',
+                       '25_fifthFolder/42_skyline_problem',}
 
 questionMap['mergeSort'] = {'11_divide_and_conquer/06_reverse_pair', }
 
@@ -202,7 +236,8 @@ questionMap['coordinate'] = {'16_coordinate/03_perfect_rectangle',
                              '16_coordinate/06_valid_square',
                              '16_coordinate/07_max_points_visible'}
 
-questionMap['kadane'] = {'21_firstFolder/04_max_submatrix', }
+questionMap['kadane'] = {'21_firstFolder/04_max_submatrix',
+                         '24_fourthFolder/10_max_diff_btw_subarray'}
 
 questionMap['BIT'] = {'22_secondFolder/17_binary_indexed_tree',
                       '22_secondFolder/32_light_string'}
@@ -217,6 +252,9 @@ questionMap['minDiffPair'] = {'23_thirdFolder/07_smallest_diff',
 
 questionMap['fancy'] = {'23_thirdFolder/25_fancy_number',
                         '23_thirdFolder/26_confusing_number'}
+
+questionMap['segmentTree'] = {'24_fourthFolder/05_max_in_range',
+                        '24_fourthFolder/18_lazy_propagation'}
 
 
 def getSelectedFilename():

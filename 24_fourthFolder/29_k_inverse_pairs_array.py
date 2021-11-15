@@ -1,7 +1,8 @@
 # https://leetcode.com/problems/k-inverse-pairs-array/solution/
-# Question : Given two integers n and k, find how many different arrays consist of numbers from 1 to n such
-# that there are exactly k inverse pairs. We define an inverse pair as following: For ith and jth element in the
-# array, if i < j and a[i] > a[j] then it's an inverse pair; Otherwise, it's not. Since the answer may be very large,
+# Question : Given two integers n and k, find how many different arrays consist of numbers
+# from 1 to n such that there are exactly k inverse pairs. We define an inverse pair
+# as following: For ith and jth element in the array, if i < j and a[i] > a[j] then
+# it's an inverse pair; Otherwise, it's not. Since the answer may be very large,
 # the answer should be modulo 109 + 7.
 #
 # Example : Input: n = 3, k = 0
