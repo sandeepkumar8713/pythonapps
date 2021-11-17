@@ -40,6 +40,7 @@ def solve(board):
                 if 0 <= a < len(board) and 0 <= b < len(board[0]):
                     dfs(a, b, ch)
 
+    # Loop over edge cells
     for i in range(len(board)):
         for j in range(len(board[0])):
             if i == 0 or i == len(board) - 1 or j == 0 or j == len(board[0]) - 1:

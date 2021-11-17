@@ -11,7 +11,7 @@
 # Question Type : Generic
 # Used : Make a right min array.
 #        Now loop the given array, while doing so maintain left max also.
-#        if left max is less than right min, increment count.
+#        if left max is less than right min, increment count. (Already sorted)
 #        After the loop, return count
 #        Logic :
 #        cut, leftMax = 0, -1

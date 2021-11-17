@@ -14,7 +14,7 @@
 #
 # Question Type : ShouldSee
 # Used : We can convert this problem to graph, where each str represents a node.
-#        Similarity menas diff count b/w 2 str must be less than or equal to 2.
+#        Similarity means diff count b/w 2 str must be less than or equal to 2.
 #        The similarity means a edge b/w 2 nodes.
 #        Now do parent and union on graph.
 #        Return len of disjoint set.

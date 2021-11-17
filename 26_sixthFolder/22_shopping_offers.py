@@ -17,7 +17,7 @@
 # You need to buy 3A and 2B, so you may pay $10 for 1A and 2B (special offer #2), and $4 for 2A.
 #
 # Question Type : ShouldSee
-# Used : We do DFS using DP. DP's index while be tuple of needs array.
+# Used : We do DFS using DP. DP's index will be tuple of needs array.
 #        For each possible combination of need, check if special can be applied. If applied,
 #        call DFS on remaining needs. While recursive calls, save the sub solution in dp.
 #        Logic :
@@ -26,6 +26,7 @@
 #        if tuple(needs) in dp: return dp[tuple(needs)]
 #        for i in range(len(needs)):
 #           actualPrice += price[i] * needs[i]
+#        minPrice = sys.maxsize
 #        for special in specials:
 #           ok, remainingNeeds = canBuy(special, needs)
 #           if ok:

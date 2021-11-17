@@ -16,7 +16,7 @@
 #
 # Question Type : Generic
 # Used : Make a dict, key char from first str and value from second str
-#        Now loop over the two array simultaneously. While doing so see char1 in there in dict.
+#        Now loop over the two array simultaneously. While doing so see char1 is there in dict.
 #        If no, insert char1 as key and char2 as value
 #        If yes, check if char2 in dict is same as char2 in str2. If yes continue else return False
 #        After loop, return True.

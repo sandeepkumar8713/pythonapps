@@ -8,13 +8,15 @@
 # Used : Run a loop from 2 to n - 1 and place comma at each place.
 #        For each left and right substr call generate which places dot at all possible places.
 #        Now merge the all possible left and right substr.
-#        Note : placing dot we should take take there should not be extra at prefix and suffix of dot.
+#        Note : while placing dot we should take take there should not be extra at prefix
+#        and suffix of dot.
 #        Logic :
 #        for i in range(2, n - 1):
 #           cand_l, cand_r = generate(inpStr[1:i]), generate(inpStr[i:-1])
 #           for l in cand_l:
 #               for r in cand_r:
 #                   ans.append("(" + l + ", " + r + ")")
+#
 #        def generate(inpStr):
 #        ans = []
 #        if inpStr == "0" or inpStr[0] != "0": ans.append(inpStr)

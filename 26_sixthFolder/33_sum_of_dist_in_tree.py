@@ -33,6 +33,7 @@
 #        weights[node] = ans
 #        depths[node] = depth
 #        return ans
+#
 #        def dfs2(adjMap, weights, ans, node, parent, w):
 #        nodeCount = len(adjMap)
 #        ans[node] = w
@@ -42,6 +43,7 @@
 #
 #        dfs(adjMap, weights, depths, 0, -1, 0)
 #        dfs2(adjMap, weights, ans, 0, -1, sum(depths))
+#        return ans
 # Complexity :
 
 

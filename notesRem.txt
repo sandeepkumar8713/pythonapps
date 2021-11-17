@@ -12,3 +12,6 @@ area = abs(0.5 * (x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)))
 
 arc angle
 math.degrees(math.atan2(p[1] - loc[1], p[0] - loc[0])))
+
+find median from sorted list (odd and even)
+medianList.append((sortedList[(k - 1) // 2] + sortedList[k // 2]) / 2)

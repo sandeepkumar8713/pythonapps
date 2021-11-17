@@ -17,7 +17,7 @@
 # Question Type : ShouldSee
 # Used : Make a dp dict, where key is index and value, is Alice's score from index to n.
 #        Considering Alice makes first move, we do DFS from index 0.
-#        During DFS, at each point Alice can choose 1, 2 or 3 stones fron start of array.
+#        During DFS, at each point Alice can choose 1, 2 or 3 stones from start of array.
 #        For the remaining array, call DFS again.
 #        While doing DFS, keep updating dp dict.
 #        After the DFS, return dp[0]

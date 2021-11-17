@@ -13,7 +13,7 @@
 # Example : Input: n = 10
 # Output: 16
 #
-# Question Type : Generic
+# Question Type : Generic, SimilarAdded
 # Used : For each number, assume it is the root of the BST, call the function on left and right
 #        (take the max, because we want the worst case), and for each assumption (for each number as a root)
 #        take the min between all assumptions. (min of the max)

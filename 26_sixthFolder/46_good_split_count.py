@@ -8,7 +8,7 @@
 #
 # Question Type : Generic
 # Used : For each split, maintain left and right freqDict.
-#        Loop over the given str, and push ele in left dict and pop same from rigth dict
+#        Loop over the given str, and push ele in left dict and pop same from right dict
 #        Compare key count, increment k if equal.
 #        return k
 #        Logic :

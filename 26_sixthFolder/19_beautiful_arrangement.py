@@ -14,7 +14,7 @@
 #        First we pick 1, see at which all indices it can be placed. After placing it at
 #        a valid index, repeat the above process for 2. It may continue till n. At this
 #        point increment the counter by 1.
-#        After the backtracking is compelte, return counter value.
+#        After the backtracking is complete, return counter value.
 #        Logic :
 #        def calculate(n, num, visited, count):
 #        if num > n: count[0] += 1

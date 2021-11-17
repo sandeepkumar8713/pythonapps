@@ -85,6 +85,7 @@
 24_fourthFolder/13_simplify_debts.py
 24_fourthFolder/16_closest_from_k_array.py
 24_fourthFolder/20_text_justification.py
+26_sixthFolder/44_sentence_fitting.py
 24_fourthFolder/22_create_max_number.py
 24_fourthFolder/25_reaching_points.py
 24_fourthFolder/30_first_missing_positive.py
@@ -95,7 +96,14 @@
 25_fifthFolder/08_stock_span.py
 25_fifthFolder/11_kth_child_sum.py
 25_fifthFolder/50_max_product_len.py
-
-
+26_sixthFolder/02_patching_array.py
+26_sixthFolder/06_nth_digit.py
+26_sixthFolder/18_longest_uncommon_subseq.py
+26_sixthFolder/19_beautiful_arrangement.py
+26_sixthFolder/25_beautiful_arrangement_2.py
+26_sixthFolder/31_ambiguous_coordinates.py
+26_sixthFolder/33_sum_of_dist_in_tree.py
+26_sixthFolder/34_push_dominoes.py
+26_sixthFolder/39_car_fleet.py
 
 
