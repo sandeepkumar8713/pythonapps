@@ -30,9 +30,10 @@ extract(){
   rm -f $fileName
 }
 
-rm allFilesComments_*.txt
-
 users=(Asked Generic ShouldSee Easy SimilarAdded OddOne)
+#users=(Asked)
+
+rm allFilesComments_*.txt
 
 getAllFilesQtype(){
   for u in "${users[@]}"
@@ -55,5 +56,14 @@ getAllFilesCategory(){
   rm -f $categoryFileList
 }
 
+getAllFilesNotesSee(){
+  fileName='notesSeeCopy.txt'
+  cp 'notesSee.txt' $fileName
+  outputFile="allFilesComments_notesSee.txt"
+  echo "" > $outputFile
+  extract
+}
+
 getAllFilesQtype
 getAllFilesCategory
+getAllFilesNotesSee
