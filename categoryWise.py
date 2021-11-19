@@ -4,7 +4,6 @@ questionMap = dict()
 
 questionMap['arrayCreation'] = {'01_array/26_min_operation_to_make_same',
                                 '01_array/27_min_operation_to_make_equal',
-                                '26_sixthFolder/48_min_inc_to_reach_target',
                                 '26_sixthFolder/48_min_inc_to_reach_target'}
 
 questionMap['hashing'] = {'26_sixthFolder/46_good_split_count',

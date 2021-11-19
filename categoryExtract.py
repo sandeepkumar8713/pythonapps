@@ -29,7 +29,9 @@ def writeInFile(qFile, category, comments, count):
 
 def extract_comment():
     count = 0
-    for category, qList in questionMap.items():
+    for category, qSet in questionMap.items():
+        qList = list(qSet)
+        qList.sort()
         for qFile in qList:
             comments = fetchFile(qFile)
             count += 1
