@@ -16,6 +16,13 @@
 #        We call him captain worker. Other worker will be paid as their sumOfQuality * ratioOfCaptain.
 #        For each captain worker that will be paid their minimum wage expectation, let's calculate
 #        the cost of hiring K workers where each point of quality is worth wage[captain] / quality[captain] dollars.
+#        Steps:
+#        Sort the workers based on ratio (w/q), q, w.
+#        Loop over the sorted list, while doing so push q to max heap and keep adding q to sumQ.
+#           If maxHeap size is more than k, pop top q and subtract from sumQ.
+#           If maxHep size is equal to k, consider as captain and calculate ratio * sumq
+#           and update min if required.
+#        Return min.
 #        Logic : def mincostToHireWorkers(quality, wage, K):
 #        from fractions import Fraction
 #        workers = sorted((Fraction(w, q), q, w)

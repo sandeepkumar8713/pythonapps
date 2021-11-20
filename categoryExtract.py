@@ -32,10 +32,13 @@ def extract_comment():
     for category, qSet in questionMap.items():
         qList = list(qSet)
         qList.sort()
+        fCount = 0
         for qFile in qList:
             comments = fetchFile(qFile)
             count += 1
-            writeInFile(qFile, category, comments, count)
+            fCount += 1
+            categoryLabel = category + ' (%s of %s)' % (fCount, len(qList))
+            writeInFile(qFile, categoryLabel , comments, count)
 
     print (count)
 

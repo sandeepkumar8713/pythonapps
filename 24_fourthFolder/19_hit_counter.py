@@ -3,9 +3,22 @@
 #
 # Question Type : Generic
 # Used : Here we try to keep hit count at each timestamp
-#        Make 2 arrays of size 0. times and hit.
+#        Make 2 arrays of size 300. times and hit. Initialize as 0.
 #        On hit call, update hit count and timestamp in times at timestamp % 300. Overwrite old timestamp
-#        on getHit call, sum the hit count where timestamp - times[i] < 300
+#        on getHit call, sum the hit count where timestamp - times[i] < 300.
+#        def hit(timestamp):
+#        idx = timestamp % 300
+#        if times[idx] != timestamp:
+#           times[idx] = timestamp
+#           hits[idx] = 1
+#        else:
+#           hits[idx] += 1
+#        def getHits(timestamp):
+#        res = 0
+#        for i in range(300):
+#           if timestamp - times[i] < 300:
+#               res += hits[i]
+#        return res
 # Complexity : O(1)
 
 

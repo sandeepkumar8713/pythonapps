@@ -11,7 +11,7 @@
 # Question Type : ShouldSee
 # Used :  Try to use hashing here. Key : char, value : list of indices
 #         Loop over the input array. compare each char, see if present, fetch its index, next ele
-#           should be present at index the previous index.
+#           should be present at index after the previous index.
 #         Logic : def numMatchingSubseq(bigWord, words):
 #         res = 0, N = len(words)
 #         pointers = [0] * N
@@ -38,7 +38,7 @@
 #                             endset[endc].append(i)
 #             endset[char] = newarr
 #         return res
-# Complexity :
+# Complexity : (n*k)
 
 
 def numMatchingSubseq(bigWord, words):

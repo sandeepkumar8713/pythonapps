@@ -15,3 +15,6 @@ math.degrees(math.atan2(p[1] - loc[1], p[0] - loc[0])))
 
 find median from sorted list (odd and even)
 medianList.append((sortedList[(k - 1) // 2] + sortedList[k // 2]) / 2)
+
+For a matrix, diff of indices are same for diagonal (left to right)
+sum of indices are same for diagonal (right to left)

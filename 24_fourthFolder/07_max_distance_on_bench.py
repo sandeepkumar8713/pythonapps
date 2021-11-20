@@ -17,6 +17,22 @@
 #        person in middle of the range.
 #        Comparison of max heap would be difference between left and right. So the top
 #        element has max range, between which next person will be placed.
+#        Logic:
+#        def getSeat(inpArr, seatingSpaces):
+#        n = len(inpArr)
+#        if inpArr[0] == 0:
+#           inpArr[0] = 1, return 0
+#        if inpArr[n-1] == 0:
+#           seatingSpaces.append(Seat(0, n-1)), inpArr[n-1] = 1
+#           return n-1
+#        seatingSpacesSorted = sorted(seatingSpaces,  key=functools.cmp_to_key(compare))
+#        copyToOriginal(seatingSpacesSorted, seatingSpaces)
+#        currentSeat = seatingSpaces.pop(0)
+#        seatingSpaces.append(Seat(currentSeat.leftEdge, (currentSeat.leftEdge + currentSeat.rightEdge) // 2))
+#        seatingSpaces.append(Seat((currentSeat.leftEdge + currentSeat.rightEdge) // 2, currentSeat.rightEdge))
+#        newSeat = (currentSeat.leftEdge + currentSeat.rightEdge) // 2
+#        inpArr[newSeat] = 1
+#        return newSeat
 # Complexity : Build Heap: O(N)
 #              Return next seat: O(1) --> getMax operation
 #              Add entries to heap: O(logN)

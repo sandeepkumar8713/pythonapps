@@ -22,9 +22,11 @@
 #           else:
 #               pivot = brr[r], r += 1
 #           index += 1
+#        # If pivot element is not found or index < N
 #        while index < N and l < N:
 #           pivot = arr[l]
 #           l += 1, index += 1
+#        # If pivot element is not found or index < N
 #        while index < N and r < M:
 #           pivot = brr[r]
 #           r += 1, index += 1

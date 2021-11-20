@@ -6,6 +6,9 @@
 # He then asked me to code my approach on paper so that all corner cases are covered. He then gave
 # me 2 or 3 test cases and asked me to dry run my code on these test cases.
 #
+# Example : Input : "3[b2[ca]]"
+# Output : bcacabcacabcaca
+#
 # Question Type : Generic
 # Used : The idea is to use two stacks, one for integers and another for characters.
 #        Now, traverse the string,
