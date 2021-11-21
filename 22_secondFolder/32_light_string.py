@@ -15,7 +15,8 @@
 # str.toggle(1, 3);
 #
 # Question Type : Generic
-# Used : We used binary indexed tree.
+# Used : We used binary indexed tree. We add 1 to each index in given range for toggle.
+#        To check if on or not we check if mod of 2 is even or not
 #        Logic : class BIT:
 #        def add(self, i):
 #        i += 1

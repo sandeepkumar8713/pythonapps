@@ -3,22 +3,28 @@
 # from index qs (query start) to qe (query end) where 0 <= qs <= qe <= n-1. We are given multiple queries.
 #
 # Question Type : Generic
-# Used : Make a segment tree of nodes, with min and max
-#        Now find min, max for given range
+# Used : Make a segment tree of nodes, with min and max.
+#        Now find min, max for given range.
 #        Logic :
 #        MinMaxUtils(segmentTree, currentStart, currentEnd, queryStart, queryEnd, index):
-#           if queryStart <= currentStart and currentEnd <= queryEnd: return segmentTree.nodeList[index]
+#           query range is within current range
+#           if queryStart <= currentStart and currentEnd <= queryEnd:
+#               return segmentTree.nodeList[index]
 #           temp = Node()
+#           No overlap b/w current and query range
 #           if currentEnd < queryStart or queryEnd < currentStart:
 #               temp.minimum = sys.maxint
 #               temp.maximum = -sys.maxint
 #               return temp
 #           midIndex = getMid(currentStart, currentEnd)
+#           leftChildIndex = index * 2 + 1
+#           rightChildIndex = index * 2 + 2
 #           left = MinMaxUtils(segmentTree, currentStart, midIndex,  queryStart, queryEnd, leftChildIndex)
 #           right = MinMaxUtils(segmentTree, midIndex + 1, currentEnd, queryStart, queryEnd, rightChildIndex)
 #           temp.minimum = min(left.minimum, right.minimum)
 #           temp.maximum = max(left.maximum, right.maximum)
 #           return temp
+#
 #        def constructUtil(self, inpArr, startIndex, endIndex, index):
 #           if startIndex == endIndex:
 #               self.nodeList[index].minimum = inpArr[startIndex]
@@ -33,6 +39,8 @@
 #               self.nodeList[rightChildIndex].minimum)
 #           self.nodeList[index].maximum = max(self.nodeList[leftChildIndex].maximum,
 #               self.nodeList[rightChildIndex].maximum)
+#
+#        Ans = MinMaxUtils(segmentTree, 0, n - 1, queryStart, queryEnd, 0)
 # Complexity : Tree construction O(n) Search O(log n)
 
 import math

@@ -14,7 +14,8 @@
 #
 # Question Type : ShouldSee
 # Used : We should run 2 bfs (i.e for atlantic and pacific)
-#        Start bfs by pushing cells on edge in queue.
+#        Start bfs by pushing cells on edge in queue. During BFS, push the next cell in queue
+#        only if its height higher than or equal to current cell's height.
 #        While doing so keep track of cells visited in two separate matrix.
 #        Our ans is intersection of these two visited matrix.
 #        Logic:

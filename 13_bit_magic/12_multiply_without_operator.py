@@ -10,6 +10,15 @@
 #         become odd, we add the first number to result (result is initialized as 0).
 #         The value of a*b is same as (a*2)*(b/2) if b is even,
 #         otherwise the value is same as ((a*2)*(b/2) + a).
+#         Logic :
+#         def russianPeasant(a, b):
+#         a, b = makeSecondSmaller(a, b)
+#         res = 0
+#         while b > 0:
+#           if b & 1: res = res + a
+#           a <<= 1
+#           b >>= 1
+#         return res
 # Complexity : O(log m) m is smaller of the two
 
 

@@ -5,6 +5,8 @@
 # Every time you guess wrong, I'll tell you whether the number I picked is higher or lower.
 # However, when you guess a particular number x, and you guess wrong, you pay $x.
 # You win the game when you guess the number I picked.
+# Given a particular n, return the minimum amount of money you need to guarantee a
+# win regardless of what number I pick.
 #
 # Example: n = 10, I pick 8.
 # First round:  You guess 5, I tell you that it's higher. You pay $5.

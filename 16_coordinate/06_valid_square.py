@@ -8,10 +8,10 @@
 # Output: true
 #
 # Question Type : Generic
-# Used : Find all 4 possible side distance and 2 diagonals
-#        Sort the distance matrix
-#        Check top 4 values of sorted array for side equality
-#        Check bottom 2 values for diagonal equality
+# Used : Find all 4 possible side distance and 2 diagonals.
+#        Sort the distance array.
+#        Check top 4 values of sorted array for side equality.
+#        Check bottom 2 values for diagonal equality.
 #        Logic:
 #        d12 = distance(p1, p2), d13 = distance(p1, p3)
 #        d14 = distance(p1, p4), d23 = distance(p2, p3)

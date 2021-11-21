@@ -97,7 +97,6 @@
 25_fifthFolder/11_kth_child_sum.py
 25_fifthFolder/50_max_product_len.py
 26_sixthFolder/02_patching_array.py
-26_sixthFolder/06_nth_digit.py
 26_sixthFolder/18_longest_uncommon_subseq.py
 26_sixthFolder/19_beautiful_arrangement.py
 26_sixthFolder/25_beautiful_arrangement_2.py

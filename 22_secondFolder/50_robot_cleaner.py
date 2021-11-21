@@ -21,7 +21,7 @@
 #   // Clean the current cell.
 #   void clean();
 # }
-
+#
 # Example: Input:
 # room = [[1,1,1,1,1,0,1,1],
 #         [1,1,1,1,1,0,1,1],

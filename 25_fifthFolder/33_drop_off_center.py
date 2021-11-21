@@ -17,6 +17,7 @@
 #        OR count number of possible disjoint set possible in the list.
 #        and return subset count of each disjoint set.
 #        ans = count of nodes + count of pairs in above list + count of all possible combined nodes
+#        ans = sum of power set of each disjoint set sum(2^n)
 # Complexity : O(m) where m is number of edges
 #
 # TODO :: add code

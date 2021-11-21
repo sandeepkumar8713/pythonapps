@@ -18,3 +18,15 @@ medianList.append((sortedList[(k - 1) // 2] + sortedList[k // 2]) / 2)
 
 For a matrix, diff of indices are same for diagonal (left to right)
 sum of indices are same for diagonal (right to left)
+
+A set of n can have 2^n subsets. (power subset)
+
+To get sorted key in dict, loop from min(keys) to max(keys).
+
+When we subtract a number by 1 and do bitwise & with itself (n & (n-1)), we unset the rightmost set bit
+
+For a given array, if we create all possible subarray. Number at i-th index will have (i + 1) * (N - i) frequency.
+
+i += i & (-i); Add 1 to last set bit of i
+i -= i & (-i); Subtract 1 from last set bit of i
+

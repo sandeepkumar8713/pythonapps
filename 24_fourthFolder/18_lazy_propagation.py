@@ -6,7 +6,8 @@
 #
 # Question Type : Generic
 # Used : updateRange(us, ue)
-#        1) If current segment tree node has any pending update, then first add that pending update to current node.
+#        1) If current segment tree node has any pending update, then first add that
+#           pending update to current node.
 #        2) If current node's range lies completely in update query range.
 #           a) Update current node
 #           b) Postpone updates to children by setting lazy value for children nodes.
@@ -26,6 +27,7 @@
 #           mid = (segStart + segEnd) / 2
 #           return self.getSumUtil(segStart, mid, queryStart, queryEnd, index * 2 + 1) + \
 #               self.getSumUtil(mid + 1, segEnd, queryStart, queryEnd, index * 2 + 2)
+#
 #        def updateRangeUtil(self, segStart, segEnd, queryStart, queryEnd, index, diff):
 #           if self.lazy[index] != 0:
 #               self.tree[index] += (segEnd - segStart + 1) * self.lazy[index]
@@ -33,14 +35,16 @@
 #               self.lazy[index * 2 + 1] += self.lazy[index]
 #               self.lazy[index * 2 + 2] += self.lazy[index]
 #           self.lazy[index] = 0
+#           No overlap b/w segment and query range
 #           if segStart > segEnd or segStart > queryEnd or segEnd < queryStart:
 #               return 0
+#           Query start/end is more than segment range
 #           if segStart >= queryStart and segEnd <= queryEnd:
 #               self.tree[index] += (segEnd - segStart + 1) * diff
 #               if segStart != segEnd:
 #                   self.lazy[index * 2 + 1] += diff
 #                   self.lazy[index * 2 + 2] += diff
-#           return
+#               return
 #           mid = (segStart + segEnd) // 2
 #           self.updateRangeUtil(segStart, mid, queryStart, queryEnd, index * 2 + 1, diff)
 #           self.updateRangeUtil(mid + 1, segEnd, queryStart, queryEnd, index * 2 + 2, diff)

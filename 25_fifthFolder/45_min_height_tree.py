@@ -14,7 +14,7 @@
 #        The nodes which are trimmed at last are the nodes suitable to be root.
 #        Do BFS over the given node, starting from nodes whose indegree is 1.
 #        During BFS, pop element from queue, append the nodes to the result.
-#        Loop the nodes its neighbour and reduce their indegree.
+#        Loop over the node's neighbours and reduce their indegree.
 #        If neighbour's indgree is 1, append it to temp.
 #        After popping all nodes from queue, if temp list has element,
 #        add it to queue and reset the result list

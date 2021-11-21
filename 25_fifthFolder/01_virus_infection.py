@@ -4,8 +4,12 @@
 # distance. When the best case (Spread is minimum) and the worst case(Spread is maximum) would occur?
 #
 # Question Type : ShouldSee
-# Used : Try to make islands of people who are within the given distance d. Now the islands with max and min people
-#        are answers.
+# Used : Try to make islands of people who are within the given distance d. Now the islands with
+#        max and min people are answers.
+#        Loop over the given input array, for first person, count all the person which at distance
+#        less than d. Add the count in island list. Reset the count and repeat the above process
+#        for second person.
+#        Logic :
 #        islands = [], first = position[0], count = 1
 #        for i in range(1, len(position)):
 #           second = position[i]
