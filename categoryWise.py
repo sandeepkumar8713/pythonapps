@@ -30,7 +30,8 @@ questionMap['leftRightSum'] = {'01_array/03_find_equilibrium',
                                '26_sixthFolder/09_rain_water_trap_3d',
                                '01_array/14_find_pivot_element',
                                '26_sixthFolder/28_max_chunks_to_make_sorted',
-                               '21_firstFolder/31_binary_searchable', }
+                               '21_firstFolder/31_binary_searchable',
+                               '24_fourthFolder/12_max_diff_of_index.py', }
 
 questionMap['kadane'] = {'21_firstFolder/04_max_submatrix',
                          '24_fourthFolder/10_max_diff_btw_subarray'}

@@ -81,7 +81,6 @@
 23_thirdFolder/36_bomb_enemy.py
 24_fourthFolder/02_lexicographically_smallest_substring.py
 24_fourthFolder/09_largest_word_in_dict.py
-24_fourthFolder/12_max_diff_of_index.py
 24_fourthFolder/13_simplify_debts.py
 24_fourthFolder/16_closest_from_k_array.py
 24_fourthFolder/20_text_justification.py

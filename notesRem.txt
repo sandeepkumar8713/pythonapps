@@ -30,3 +30,17 @@ For a given array, if we create all possible subarray. Number at i-th index will
 i += i & (-i); Add 1 to last set bit of i
 i -= i & (-i); Subtract 1 from last set bit of i
 
+It is known for a string of length n, there are a total of n*(n+1)/2 number of substrings.
+
+Let Points be A and B. So line can be represent by : c1 = a1*A.x + b1*A.y
+where a1 = B.y - A.y; b1 = A.x - B.x
+Now find determinant b/w lines
+determinant = float(a1*b2 - a2*b1)
+To find intersecting points :
+if determinant == 0: print ("Given lines are parallel")
+else: x = (b2*c1 - b1*c2) / determinant; y = (a1*c2 - a2*c1) / determinant
+
+Recall the quadratic formula:
+x = [-b +- sqrt(b^2 - 4ac)] / 2a
+
+

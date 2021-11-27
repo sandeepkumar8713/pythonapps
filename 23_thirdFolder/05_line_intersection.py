@@ -4,9 +4,11 @@
 # point of intersection of these lines. The points are given in 2D Plane with their X and Y Coordinates.
 #
 # Question Type : ShouldSee
-# Used : a1 = B.y - A.y; b1 = A.x - B.x
-#        c1 = a1*A.x + b1*A.y
+# Used : Let Points be A and B. So line can be represent by : c1 = a1*A.x + b1*A.y
+#        where a1 = B.y - A.y; b1 = A.x - B.x
+#        Now find determinant b/w lines
 #        determinant = float(a1*b2 - a2*b1)
+#        To find intersecting points :
 #        if determinant == 0: print ("Given lines are parallel")
 #        else: x = (b2*c1 - b1*c2) / determinant; y = (a1*c2 - a2*c1) / determinant
 # Complexity : O(1)

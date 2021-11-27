@@ -29,7 +29,7 @@
 #        j = min(n, k // 2)
 #        if arr1[i - 1] > arr2[j - 1]: (all up and second half of down)
 #           return kthElement(arr1, m, arr2[j:n-1], n - j, k - j)
-#        else: (first half of up and all down)
+#        else: (second half of up and all down)
 #           return kthElement(arr1[i:m-1], m - i, arr2, n, k - i)
 # Complexity : O(log k)
 
