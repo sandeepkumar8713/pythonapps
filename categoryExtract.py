@@ -33,6 +33,7 @@ def extract_comment():
         qList = list(qSet)
         qList.sort()
         fCount = 0
+        print (category)
         for qFile in qList:
             comments = fetchFile(qFile)
             count += 1

@@ -42,8 +42,8 @@ def findTwoElements(array,num):
     print('Pair not found')
 
 
-#It checks the presence of required element
-#The elements should be of known numbers
+# It checks the presence of required element
+# The elements should be of known numbers
 def hashMap(array,num):
     # (complexity : n, space complexity: max integer)
     constantMax = 100000

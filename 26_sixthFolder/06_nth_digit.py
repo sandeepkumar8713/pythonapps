@@ -8,7 +8,7 @@
 # which is part of the number 10.
 #
 # Question Type : ShouldSee
-# Used : Remember this : 1 * 9 [1, 9], 2 * 90 [10, 99], 2 * 90 [10, 99], 4 * 9000 [1000, 9999]
+# Used : Remember this : 1 * 9 [1, 9], 2 * 90 [10, 99], 3 * 900 [100, 999], 4 * 9000 [1000, 9999]
 #        Here n is target digits to be used.
 #        Following, run a loop of levels to find out n lies b/w which level.
 #        While looping also keep track of numberUsed and digitUsed.

@@ -2,6 +2,7 @@
 01_array/32_zero_matrix.py
 02_string/05_remove_adjacent_char.py
 02_string/15_kmp_algorithm.py
+02_string/22_represent_string_by_subtring.py
 02_string/17_bucket_sort.py
 02_string/19_msd_radix_sort.py
 02_string/30_find_extra_character.py

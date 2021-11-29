@@ -31,7 +31,7 @@ questionMap['leftRightSum'] = {'01_array/03_find_equilibrium',
                                '01_array/14_find_pivot_element',
                                '26_sixthFolder/28_max_chunks_to_make_sorted',
                                '21_firstFolder/31_binary_searchable',
-                               '24_fourthFolder/12_max_diff_of_index.py', }
+                               '24_fourthFolder/12_max_diff_of_index', }
 
 questionMap['kadane'] = {'21_firstFolder/04_max_submatrix',
                          '24_fourthFolder/10_max_diff_btw_subarray'}
@@ -42,6 +42,7 @@ questionMap['minPlatform'] = {'01_array/06_minimum_platform',
                               '23_thirdFolder/47_my_calendar_3'}
 
 questionMap['quickSort'] = {'01_array/09_find_kth_small_element',
+                            '20_initialFiles/02_find_pair_in_array',
                             '22_secondFolder/19_3_way_quick_sort',
                             '25_fifthFolder/14_merge_2_sorted_array',
                             '25_fifthFolder/18_rearrange_pos_neg', }
@@ -106,7 +107,6 @@ questionMap['reachInArray'] = {'03_linkedList/10_circular_tour',
 questionMap['binarySearch'] = {'04_tree_bst/08_sorted_array_to_bst',
                                '06_recursion/07_magic_index',
                                '11_divide_and_conquer/02_find_element_repeated_once',
-                               '11_divide_and_conquer/03_kth_element_two_sorted_array',
                                '21_firstFolder/13_count_freq_of_target_in_sorted',
                                '21_firstFolder/23_find_x_in_sorted_rotated_array',
                                '22_secondFolder/40_find_peak_element',
@@ -197,7 +197,7 @@ questionMap['preProcess'] = {'22_secondFolder/42_guess_the_word',
                              '25_fifthFolder/06_cuts_in_matrix',
                              '25_fifthFolder/07_door_in_out', }
 
-questionMap['stocks'] = {'01_array/13_stock_buy_sell.py',
+questionMap['stocks'] = {'01_array/13_stock_buy_sell',
                          '22_secondFolder/43_buy_sell_stock_2_at_max', }
 
 questionMap['nxtInorderNode'] = {'04_tree_bst/09_inorder_next_data_in_bst',
@@ -219,7 +219,7 @@ questionMap['trie'] = {'14_trie/02_find_palindrome_pair',
                        '14_trie/05_auto_complete',
                        '14_trie/07_multi_search',
                        '14_trie/11_match_all_wild_card',
-                       '14_trie/12_word_serach_2',
+                       '14_trie/12_word_search_2',
                        '23_thirdFolder/39_max_xor_in_array'}
 
 questionMap['coordinate'] = {'16_coordinate/03_perfect_rectangle',
@@ -235,7 +235,7 @@ questionMap['sortedMatrix'] = {'22_secondFolder/33_left_most_col_index_of_1',
                                '23_thirdFolder/04_sorted_matrix_search'}
 
 questionMap['countDigits'] = {'23_thirdFolder/14_count_2s_in_0_to_n',
-                              '26_sixthFolder/06_nth_digit.py'}
+                              '26_sixthFolder/06_nth_digit'}
 
 questionMap['dpDfs'] = {'02_string/07_longest_common_substring',
                         '10_dynamic_programming/13_shortest_common_superSequece',
@@ -265,9 +265,10 @@ questionMap['subProblem'] = {'09_greedy/02_make_change_with_min_coin',
                              '10_dynamic_programming/21_wildcard_pattern_matching',
                              '10_dynamic_programming/36_square_submatrix_count',
                              '21_firstFolder/21_max_steal_house',
+                             '21_firstFolder/50_subsequnce_sum_divisble_by_n',
                              '22_secondFolder/35_word_break',
                              '25_fifthFolder/40_word_break_2',
-                             '22_secondFolder/36_guess_number_higher_or_lower', }
+                             '22_secondFolder/36_guess_number_higher_or_lower',}
 
 questionMap['minDiffPair'] = {'23_thirdFolder/07_smallest_diff',
                               '23_thirdFolder/17_word_distance', }

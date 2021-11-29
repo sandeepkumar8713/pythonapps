@@ -1,9 +1,5 @@
 AP Formula : Sn = n/2(2a + (n-1)d)
 
-subset count
-
-odd even single formula
-
 Total number of possible Binary Search Trees with n different keys
 Catalan number Cn = (2n)!/(n+1)!*n! : 2nCn / (n + 1)
 
@@ -42,5 +38,3 @@ else: x = (b2*c1 - b1*c2) / determinant; y = (a1*c2 - a2*c1) / determinant
 
 Recall the quadratic formula:
 x = [-b +- sqrt(b^2 - 4ac)] / 2a
-
-
