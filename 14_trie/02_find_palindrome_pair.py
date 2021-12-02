@@ -1,4 +1,5 @@
 # https://www.geeksforgeeks.org/palindrome-pair-in-an-array-of-words-or-strings/
+# Similar : https://leetcode.com/problems/palindrome-pairs/
 # Question : Given a list of words, find if any of the two words can be joined to form a palindrome.
 #
 # Question Type : Generic
@@ -120,7 +121,12 @@ def checkPalindromePair(words):
 
 if __name__ == '__main__':
     # inpWords = ["geekf", "geeks", "or", "keeg", "abc", "bc"]
+    checkPalindromePair(inpWords)
+
     # inpWords = ['dnas', 'sandeeppee']
     # inpWords = ['eppeednas', 'sande']
-    inpWords = ['dnas', 'sandeeppee', 'eppeednas', 'sande']
-    checkPalindromePair(inpWords)
+    # inpWords = ['dnas', 'sandeeppee', 'eppeednas', 'sande']
+
+    inpWords = ["abcd", "dcba", "lls", "s", "sssll"]
+    inpWords = ["bat", "tab", "cat"]
+    inpWords = ["a", ""]

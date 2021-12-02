@@ -1,4 +1,5 @@
 # CTCI : Q16_06_Smallest_Difference
+# Similar : https://leetcode.com/problems/find-k-pairs-with-smallest-sums/
 # https://www.geeksforgeeks.org/smallest-difference-pair-values-two-unsorted-arrays/
 # Question : Given two arrays of integers, compute the pair of values (one value in each array) with the
 # smallest (non-negative) difference. Return the difference.

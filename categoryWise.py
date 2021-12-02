@@ -191,7 +191,8 @@ questionMap['dfs'] = {'08_graph/03_detect_cycle',
                       '22_secondFolder/50_robot_cleaner',
                       '23_thirdFolder/15_baby_names',
                       '23_thirdFolder/34_articulation_point',
-                      '26_sixthFolder/43_surrounded_region', }
+                      '26_sixthFolder/43_surrounded_region',
+                      '26_sixthFolder/21_reconstruct_itinerary'}
 
 questionMap['preProcess'] = {'22_secondFolder/42_guess_the_word',
                              '25_fifthFolder/06_cuts_in_matrix',
@@ -246,7 +247,8 @@ questionMap['dpDfs'] = {'02_string/07_longest_common_substring',
                         '25_fifthFolder/46_burst_ballons',
                         '26_sixthFolder/20_attendance_record_2',
                         '26_sixthFolder/22_shopping_offers',
-                        '26_sixthFolder/45_stone_game_3', }
+                        '26_sixthFolder/45_stone_game_3',
+                        '26_sixthFolder/49_combination_sum',}
 
 questionMap['dpBox'] = {'09_greedy/01_activity_selection',
                         '09_greedy/08_max_len_chain',
