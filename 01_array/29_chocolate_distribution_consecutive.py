@@ -1,4 +1,5 @@
 # https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/
+# https://leetcode.com/problems/maximum-average-subarray-i/
 # Question : The problem is to find maximum sum sub-array divisible by k and then return (sum / k).
 # Given n boxes containing some chocolates arranged in a row. There are k number of students.
 # The problem is to distribute maximum number of chocolates equally among k students by selecting

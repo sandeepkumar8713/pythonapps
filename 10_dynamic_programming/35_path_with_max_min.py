@@ -1,10 +1,11 @@
 # https://leetcode.com/discuss/interview-question/383669/
+# Similar : 27_seventh_folder/02_swim_in_rising_water.py
 # Question : Given a matrix with r rows and c columns, find the maximum score of a path starting at [0, 0]
 # and ending at [r-1, c-1]. The score of a path is the minimum value in that path. For example, the score of
 # the path 8 → 4 → 5 → 9 is 4. Don’t include the first or final entry. You can only move either down or right
 # at any point in time.
 #
-# Question Type : ShouldSee
+# Question Type : ShouldSee, SimilarAdded
 # Used : Make a 2D dp matrix of size m*n. Initialize them as 0.
 #        Set second row and col of dp, equal to inpMat as we are not support to consider entry point.
 #        Run the 2 loops over dp while updating its value from left and up value with following condition.

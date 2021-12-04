@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/redundant-connection/
 # https://leetcode.com/problems/redundant-connection/discuss/418520/Easy-Python-Solution-(-Union-Find-)
 # https://zhuhan0.blogspot.com/2017/07/leetcode-261-graph-valid-tree.html
+# Similar : https://leetcode.com/problems/redundant-connection-ii/
 # Question : In this problem, a tree is an undirected graph that is connected and has no cycles.
 # The given input is a graph that started as a tree with N nodes (with distinct values 1, 2, ..., N), with one
 # additional edge added. The added edge has two different vertices chosen from 1 to N, and was not an edge that
@@ -86,3 +87,5 @@ if __name__ == "__main__":
     edges = [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]]
     print(findRedundantConnection(edges))
 
+    edges = [[1, 2], [2, 3], [3, 4], [4, 1], [1, 5]]
+    print(findRedundantConnection(edges))

@@ -104,3 +104,4 @@
 26_sixthFolder/33_sum_of_dist_in_tree.py
 26_sixthFolder/34_push_dominoes.py
 26_sixthFolder/39_car_fleet.py
+27_seventh_folder/01_game_24.py

@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/find-largest-word-dictionary-deleting-characters-given-string/
-# Question : Giving a dictionary and a string 'str', find the longest string in dictionary which can be formed by
-# deleting some characters of the given 'str'.
+# https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/
+# Question : Giving a dictionary and a string 'str', find the longest string in dictionary
+# which can be formed by deleting some characters of the given 'str'.
 #
 # Example :
 # Input  : dict = {"pintu", "geeksfor", "geeksgeeks",
@@ -12,13 +13,14 @@
 # Used : We traverse all dictionary words and for every word,
 #        we check if it is sub sequence of given string and is largest of all such words.
 #        We finally return the longest word with given string as sub sequence.
-#       def isSubSequence(str1,str2):
-#           i=0, j=0
-#           while i < n and j < m:
-#               if str1[j] == str2[i]:
-#                   j += 1
-#               i += 1
-#           return j == m
+#        Logic :
+#        def isSubSequence(str1,str2):
+#        i=0, j=0
+#        while i < n and j < m:
+#           if str1[j] == str2[i]:
+#               j += 1
+#           i += 1
+#        return j == m
 # Complexity : O(K * m) k is length of dict and m is length of largest word
 
 
