@@ -1,10 +1,3 @@
-# https://leetcode.com/problems/reaching-points/
-# https://leetcode.com/problems/escape-the-ghosts/
-# https://leetcode.com/problems/domino-and-tromino-tiling/
-# https://leetcode.com/problems/soup-servings/
-# https://leetcode.com/problems/largest-sum-of-averages/
-# https://leetcode.com/problems/find-and-replace-in-string/
-# https://leetcode.com/problems/keys-and-rooms/
 # https://leetcode.com/problems/shortest-path-visiting-all-nodes/
 # https://leetcode.com/problems/k-similar-strings/
 # https://leetcode.com/problems/max-area-of-island/
@@ -17,3 +10,5 @@
 # https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/
 # https://leetcode.com/problems/flip-equivalent-binary-trees/
 # https://leetcode.com/problems/freedom-trail/
+# https://leetcode.com/problems/soup-servings/
+# https://leetcode.com/problems/find-and-replace-in-string/ use hash map, easy

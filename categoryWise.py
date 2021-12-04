@@ -68,7 +68,8 @@ questionMap['heap'] = {'05_heap/01_median_in_stream',
                        '01_array/16_find_kth_largest_in_stream',
                        '05_heap/08_compute_mean_of_window',
                        '05_heap/09_kth_smallest_ele_in_matrix',
-                       '25_fifthFolder/37_max_mutual_frnd', }
+                       '25_fifthFolder/37_max_mutual_frnd',
+                       '27_seventh_folder/02_swim_in_rising_water', }
 
 questionMap['mergeSort'] = {'11_divide_and_conquer/06_reverse_pair',
                             '24_fourthFolder/15_counting_inversion',
@@ -248,7 +249,7 @@ questionMap['dpDfs'] = {'02_string/07_longest_common_substring',
                         '26_sixthFolder/20_attendance_record_2',
                         '26_sixthFolder/22_shopping_offers',
                         '26_sixthFolder/45_stone_game_3',
-                        '26_sixthFolder/49_combination_sum',}
+                        '26_sixthFolder/49_combination_sum', }
 
 questionMap['dpBox'] = {'09_greedy/01_activity_selection',
                         '09_greedy/08_max_len_chain',
@@ -270,7 +271,7 @@ questionMap['subProblem'] = {'09_greedy/02_make_change_with_min_coin',
                              '21_firstFolder/50_subsequnce_sum_divisble_by_n',
                              '22_secondFolder/35_word_break',
                              '25_fifthFolder/40_word_break_2',
-                             '22_secondFolder/36_guess_number_higher_or_lower',}
+                             '22_secondFolder/36_guess_number_higher_or_lower', }
 
 questionMap['minDiffPair'] = {'23_thirdFolder/07_smallest_diff',
                               '23_thirdFolder/17_word_distance', }
