@@ -55,7 +55,8 @@ questionMap['slidingWindow'] = {'01_array/12_chocolate_distribution',
                                 '22_secondFolder/30_min_dist_to_far_block',
                                 '22_secondFolder/48_permutation_in_string',
                                 '25_fifthFolder/22_amazon_fresh_secret_code',
-                                '26_sixthFolder/13_sliding_window_median', }
+                                '26_sixthFolder/13_sliding_window_median',
+                                '27_seventh_folder/11_min_diff_bw_max_n_min', }
 
 questionMap['heap'] = {'05_heap/01_median_in_stream',
                        '05_heap/04_non_adjacent_character',
@@ -273,7 +274,7 @@ questionMap['subProblem'] = {'09_greedy/02_make_change_with_min_coin',
                              '22_secondFolder/35_word_break',
                              '22_secondFolder/36_guess_number_higher_or_lower',
                              '25_fifthFolder/40_word_break_2',
-                             '27_seventh_folder/09_min_subsequence_in_big_str',}
+                             '27_seventh_folder/09_min_subsequence_in_big_str', }
 
 questionMap['minDiffPair'] = {'23_thirdFolder/07_smallest_diff',
                               '23_thirdFolder/17_word_distance', }

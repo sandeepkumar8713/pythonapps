@@ -34,6 +34,7 @@
 10_dynamic_programming/20_perfect_sum_subset.py
 10_dynamic_programming/22_make_2timesMin_more_max.py
 10_dynamic_programming/26_Respace.py
+10_dynamic_programming/35_path_with_max_min.py
 11_divide_and_conquer/03_kth_element_two_sorted_array.py
 11_divide_and_conquer/04_median_of_two_sorted_array.py
 12_backtracking/01_N_queen_problem.py
