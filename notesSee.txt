@@ -27,6 +27,7 @@
 07_hashing/02_pair_to_swap_from_2_array.py
 07_hashing/18_find_recurring_fraction.py
 07_hashing/21_implement_version_control.py
+08_graph/05_min_swap.py
 08_graph/15_stepping_numbers.py
 09_greedy/06_min_diff_in_heigth.py
 10_dynamic_programming/19_subsequnece_count.py

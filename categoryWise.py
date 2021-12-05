@@ -183,7 +183,8 @@ questionMap['bfs'] = {'03_linkedList/13_rotten_orange',
                       '25_fifthFolder/12_bipartite_graph',
                       '25_fifthFolder/45_min_height_tree',
                       '26_sixthFolder/10_pacific_water_flow',
-                      '26_sixthFolder/32_bus_routes'}
+                      '26_sixthFolder/32_bus_routes',
+                      '27_seventh_folder/07_shortest_path_visiting_node', }
 
 questionMap['dfs'] = {'08_graph/03_detect_cycle',
                       '08_graph/11_alien_dictionary',
@@ -270,8 +271,9 @@ questionMap['subProblem'] = {'09_greedy/02_make_change_with_min_coin',
                              '21_firstFolder/21_max_steal_house',
                              '21_firstFolder/50_subsequnce_sum_divisble_by_n',
                              '22_secondFolder/35_word_break',
+                             '22_secondFolder/36_guess_number_higher_or_lower',
                              '25_fifthFolder/40_word_break_2',
-                             '22_secondFolder/36_guess_number_higher_or_lower', }
+                             '27_seventh_folder/09_min_subsequence_in_big_str',}
 
 questionMap['minDiffPair'] = {'23_thirdFolder/07_smallest_diff',
                               '23_thirdFolder/17_word_distance', }

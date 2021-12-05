@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/maximum-size-sub-matrix-with-all-1s-in-a-binary-matrix/
 # https://leetcode.com/problems/maximal-square/
 # https://leetcode.com/discuss/interview-question/416012/
+# https://leetcode.com/problems/count-square-submatrices-with-all-ones/
 # Question : Given a binary matrix, find out the maximum size square sub-matrix with all 1s.
 # Similar question : Count the number of squares in the matrix of zeros and ones, which
 # consist only of zeros.
@@ -83,4 +84,9 @@ if __name__ == "__main__":
     M = [[1, 0, 0],
          [0, 0, 0],
          [0, 0, 0]]
+    printMaxSubSquare(M)
+
+    M = [[0, 1, 1, 1],
+         [1, 1, 1, 1],
+         [0, 1, 1, 1]]
     printMaxSubSquare(M)

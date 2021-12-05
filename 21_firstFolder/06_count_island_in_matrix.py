@@ -3,6 +3,7 @@
 # http://www.geeksforgeeks.org/find-length-largest-region-boolean-matrix/
 # https://leetcode.com/problems/number-of-islands/
 # Similar : https://leetcode.com/problems/number-of-closed-islands/
+# Similar : https://leetcode.com/problems/max-area-of-island/
 # Program to count islands in boolean 2D matrix
 # Question : Given a boolean 2D matrix, find the number of islands. A group of connected 1s forms an island.
 #

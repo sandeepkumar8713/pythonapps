@@ -1,4 +1,5 @@
 # https://www.geeksforgeeks.org/minimum-number-swaps-required-sort-array/
+# Similar : https://leetcode.com/problems/k-similar-strings/
 # Question : Given an array of n distinct elements, find the minimum number of swaps
 # required to sort the array.
 #

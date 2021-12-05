@@ -1,5 +1,6 @@
 # Question : Given two strings string1 and string2, find the smallest substring in
 # string1 containing all characters of string 2 efficiently.
+# Similar : 27_seventh_folder/09_min_subsequence_in_big_str.py
 #
 # Input : string = "this is a test string"
 # pattern = "tist"
@@ -62,7 +63,7 @@ def findMinWindow(inpStr, patt):
 
         j += 1
 
-    if minStartIndex is -1:
+    if minStartIndex == -1:
         print("Not found")
     else:
         print(inpStr[minStartIndex:minStartIndex + minWindowLen])
@@ -73,3 +74,6 @@ if __name__ == "__main__":
     pattern = "tist"
     findMinWindow(string, pattern)
 
+    string = "abcdebdde"
+    pattern = "bde"
+    findMinWindow(string, pattern)
