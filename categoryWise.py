@@ -202,7 +202,8 @@ questionMap['preProcess'] = {'22_secondFolder/42_guess_the_word',
                              '25_fifthFolder/07_door_in_out', }
 
 questionMap['stocks'] = {'01_array/13_stock_buy_sell',
-                         '22_secondFolder/43_buy_sell_stock_2_at_max', }
+                         '22_secondFolder/43_buy_sell_stock_2_at_max',
+                         '27_seventh_folder/12_stock_buy_sell_with_k_transaction',}
 
 questionMap['nxtInorderNode'] = {'04_tree_bst/09_inorder_next_data_in_bst',
                                  '04_tree_bst/10_delete_node_in_BST'}

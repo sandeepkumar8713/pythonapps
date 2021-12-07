@@ -64,6 +64,6 @@ getAllFilesNotesSee(){
   extract
 }
 
-#getAllFilesQtype
-#getAllFilesCategory
+getAllFilesQtype
+getAllFilesCategory
 getAllFilesNotesSee
