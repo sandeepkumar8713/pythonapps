@@ -1,4 +1,5 @@
 # https://www.geeksforgeeks.org/total-number-of-possible-binary-search-trees-with-n-keys/
+# https://leetcode.com/problems/unique-binary-search-trees/
 # Question : Total number of possible Binary Search Trees with n different keys
 # (countBST(n)) = Catalan number Cn = (2n)!/(n+1)!*n!
 #
@@ -44,4 +45,5 @@ def catalan(n):
 
 
 if __name__ == "__main__":
+    print(catalan(3))
     print(catalan(5))

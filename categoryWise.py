@@ -31,10 +31,12 @@ questionMap['leftRightSum'] = {'01_array/03_find_equilibrium',
                                '01_array/14_find_pivot_element',
                                '26_sixthFolder/28_max_chunks_to_make_sorted',
                                '21_firstFolder/31_binary_searchable',
-                               '24_fourthFolder/12_max_diff_of_index', }
+                               '24_fourthFolder/12_max_diff_of_index',
+                               '27_seventh_folder/20_step_step_sum', }
 
 questionMap['kadane'] = {'21_firstFolder/04_max_submatrix',
-                         '24_fourthFolder/10_max_diff_btw_subarray'}
+                         '24_fourthFolder/10_max_diff_btw_subarray',
+                         '27_seventh_folder/19_max_sub_array', }
 
 questionMap['LIS'] = {'01_array/04_longest_increasing_subsequnce', }
 
@@ -203,7 +205,7 @@ questionMap['preProcess'] = {'22_secondFolder/42_guess_the_word',
 
 questionMap['stocks'] = {'01_array/13_stock_buy_sell',
                          '22_secondFolder/43_buy_sell_stock_2_at_max',
-                         '27_seventh_folder/12_stock_buy_sell_with_k_transaction',}
+                         '27_seventh_folder/12_stock_buy_sell_with_k_transaction', }
 
 questionMap['nxtInorderNode'] = {'04_tree_bst/09_inorder_next_data_in_bst',
                                  '04_tree_bst/10_delete_node_in_BST'}
