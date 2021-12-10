@@ -1,5 +1,6 @@
 # https://www.geeksforgeeks.org/count-number-ways-reach-destination-maze/
 # Similar : https://leetcode.com/problems/unique-paths/
+# Similar : https://leetcode.com/problems/unique-paths-iii/
 # Question : Given a maze with obstacles, count number of paths to reach rightmost-bottommost
 # cell from topmost-leftmost cell. A cell in given maze has value -1 if it is a blockage or
 # dead end, else 0.

@@ -218,7 +218,8 @@ questionMap['bitMagic'] = {'13_bit_magic/01_toggle_bits_between_range',
                            '13_bit_magic/12_multiply_without_operator',
                            '13_bit_magic/14_find_max_without_operator',
                            '13_bit_magic/17_count_set_bits',
-                           '22_secondFolder/23_xor_of_all_subarray', }
+                           '22_secondFolder/23_xor_of_all_subarray',
+                           '13_bit_magic/19_find_2_single_num', }
 
 questionMap['trie'] = {'14_trie/02_find_palindrome_pair',
                        '14_trie/03_print_all_anagram_together',
