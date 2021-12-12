@@ -1,4 +1,5 @@
 # CTCI : Q8_01_Triple_Step
+# https://leetcode.com/problems/climbing-stairs/
 # Question : Given a distance dist, count total number of ways to cover the distance with 1, 2 and 3 steps.
 #
 # Input:  n = 3

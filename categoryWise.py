@@ -278,7 +278,8 @@ questionMap['subProblem'] = {'09_greedy/02_make_change_with_min_coin',
                              '22_secondFolder/35_word_break',
                              '22_secondFolder/36_guess_number_higher_or_lower',
                              '25_fifthFolder/40_word_break_2',
-                             '27_seventh_folder/09_min_subsequence_in_big_str', }
+                             '27_seventh_folder/09_min_subsequence_in_big_str',
+                             '27_seventh_folder/25_partition_equal_sum', }
 
 questionMap['minDiffPair'] = {'23_thirdFolder/07_smallest_diff',
                               '23_thirdFolder/17_word_distance', }

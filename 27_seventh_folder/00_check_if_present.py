@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/maximal-rectangle/
+# https://leetcode.com/problems/find-all-duplicates-in-an-array/
 # Not sure, whether to add these or not.
 # https://leetcode.com/problems/freedom-trail/
 # https://leetcode.com/problems/soup-servings/
