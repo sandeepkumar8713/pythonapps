@@ -34,6 +34,7 @@
 10_dynamic_programming/20_perfect_sum_subset.py
 10_dynamic_programming/22_make_2timesMin_more_max.py
 10_dynamic_programming/26_Respace.py
+10_dynamic_programming/31_minimum_paper_cut_square.py
 10_dynamic_programming/35_path_with_max_min.py
 11_divide_and_conquer/03_kth_element_two_sorted_array.py
 11_divide_and_conquer/04_median_of_two_sorted_array.py
@@ -58,8 +59,9 @@
 21_firstFolder/15_rotate_matrix_by_90.py
 21_firstFolder/17_get_freq_without_map.py
 21_firstFolder/22_array_wave_form.py
-21_firstFolder/24_largest_rectange_in_histogram.py
+21_firstFolder/24_largest_rectangle_in_histogram.py
 21_firstFolder/32_full_binary_tree.py
+21_firstFolder/34_shortest_way_to_form.py
 21_firstFolder/36_distinct_subsequneces.py
 21_firstFolder/38_submatrix_count_with_all_1.py
 21_firstFolder/39_minimum_domino_rotation.py
@@ -82,6 +84,7 @@
 23_thirdFolder/30_root_of_n_ary_tree.py
 23_thirdFolder/33_binary_tree_coloring.py
 23_thirdFolder/36_bomb_enemy.py
+23_thirdFolder/45_num_of_sub_array.py
 24_fourthFolder/02_lexicographically_smallest_substring.py
 24_fourthFolder/09_largest_word_in_dict.py
 24_fourthFolder/13_simplify_debts.py
@@ -97,6 +100,8 @@
 25_fifthFolder/03_find_max_range.py
 25_fifthFolder/08_stock_span.py
 25_fifthFolder/11_kth_child_sum.py
+25_fifthFolder/19_rearrange_reduce_to_maximize_sum.py
+25_fifthFolder/44_game_of_life.py
 25_fifthFolder/50_max_product_len.py
 26_sixthFolder/02_patching_array.py
 26_sixthFolder/18_longest_uncommon_subseq.py
@@ -106,4 +111,6 @@
 26_sixthFolder/33_sum_of_dist_in_tree.py
 26_sixthFolder/34_push_dominoes.py
 26_sixthFolder/39_car_fleet.py
-27_seventh_folder/01_game_24.py
+27_seventhFolder/01_game_24.py
+27_seventhFolder/18_interval_list_intersection.py
+

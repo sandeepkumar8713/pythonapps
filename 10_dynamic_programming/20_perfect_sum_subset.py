@@ -11,7 +11,7 @@
 #
 # Question Type : Generic
 # Used : Make a matrix dp : size n * (1+targetSum), such that dp[i][j] stores true if sum j
-#        is possible with array elements from 0 to i.
+#        is possible with array elements from 0 to i. (Knapsack Problem)
 #        Logic :
 #        Make a first column of dp True, for sum 0
 #        In first row, if sum is arr[i] set True.  (if inpArr[0] <= targetSum: dp[0][inpArr[0]] = True)
@@ -22,8 +22,8 @@
 #               else: dp[i][j] = dp[i - 1][j]
 #        if dp[n-1][targetSum] is False: print "No subset possible"
 #        printSubsetsRec(dp, inpArr, n-1, targetSum, [])
-#        Now we call a recursive function which picks and ignores the current element and check if the target can
-#        achieved, i.e. at the end sum becomes 0, print the elements selected so far.
+#        Now we call a recursive function which picks and ignores the current element and check if
+#        the target can achieved, i.e. at the end sum becomes 0, print the elements selected so far.
 #        Logic :
 #        printSubsetsRec(dp, inpArr, i, targetSum, subArray):
 #        if i == 0 and targetSum != 0 and dp[0][targetSum]:

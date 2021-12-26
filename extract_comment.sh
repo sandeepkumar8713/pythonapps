@@ -38,7 +38,7 @@ rm allFilesComments_*.txt
 getAllFilesQtype(){
   for u in "${users[@]}"
   do
-    grep -rl "$u" --include=\*.py . > $fileName
+    grep -rl "$u" --include=\*.py . | sort -u > $fileName
     qType="$u"
     outputFile="allFilesComments_$qType.txt"
     echo "" > $outputFile

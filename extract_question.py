@@ -64,6 +64,7 @@ def getQuestion(filename, count, resOutputFile):
 
 if __name__ == "__main__":
     filenameList = getFilenameList()
+    filenameList.sort()
     #filenameList = readFileName()
     #filenameList = ['01_array/32_zero_matrix.py']
     count = [1]
