@@ -6,8 +6,8 @@
 # Example : Input: nums = [5,2,6,1]
 # Output: [2,1,1,0]
 #
-# Question Type : Generic
-# Used :
+# Question Type : ShouldSee
+# Used : Use merge sort
 # Complexity :
 #
 # TODO :: Check if similar added

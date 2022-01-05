@@ -4,8 +4,8 @@
 #
 # Consider a n-ary tree (i.e. each parent node has at least one children (except the leafs) and up to n).
 # Some children nodes may be missing, i.e. a parent node could have only n/2 children.
-# The order of the children nodes matters here and, referring to them with their index i, a parent node with a child
-# at index i is different than a parent node without a child at index i.
+# The order of the children nodes matters here and, referring to them with their index i, a parent node
+# with a child at index i is different than a parent node without a child at index i.
 # That is, the missing children nodes can be positioned anywhere between the index 0 and n - 1, and are represented
 # by None values innode.children. Write a recursive, in-place function which moves all missing children (i.e. the
 # None values) to the right of the children list, and consequently, the valid children to the left.

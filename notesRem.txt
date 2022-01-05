@@ -38,3 +38,7 @@ else: x = (b2*c1 - b1*c2) / determinant; y = (a1*c2 - a2*c1) / determinant
 
 Recall the quadratic formula:
 x = [-b +- sqrt(b^2 - 4ac)] / 2a
+
+Use the sorted func with key as second element i.e. score
+result = sorted(inpArr, key=lambda x: x[1])
+

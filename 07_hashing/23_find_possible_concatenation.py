@@ -3,6 +3,9 @@
 # (Words in list L are all of the same length). Find the starting indices of the substrings
 # in string S, which contains all the words present in list L.
 #
+# Example : inpStr = "barfoothefoobarman" words = ["foo", "bar"]
+# Output : [0,9]
+#
 # Question Type : ShouldSee
 # Used : 1. Declare a map (hash_map) which stores all words of List L corresponding to
 #           their occurrences inside list L.
