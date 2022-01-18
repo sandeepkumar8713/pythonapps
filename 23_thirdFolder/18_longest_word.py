@@ -2,6 +2,10 @@
 # Question : Given a list of words, write a program to find the longest word made of other words
 # in the list.
 #
+# Example :
+# Input : wordList = ["be", "cause", "because", "tester", "testing", "testingtester", "test"]
+# Output : "testingtester"
+#
 # Question Type : Generic
 # Used : Sort the given word list based on length. Make a map and set all the values as true.
 #        This map tells weather the given word is original word or not.
@@ -54,7 +58,6 @@ def printLongestWord(wordList):
     longestWord = ""
     for word in wordList:
         if canBuildWord(word, True, map):
-            print (word)
             if len(longestWord) < len(word):
                 longestWord = word
     return longestWord
@@ -62,4 +65,4 @@ def printLongestWord(wordList):
 
 if __name__ == "__main__":
     wordList = ["be", "cause", "because", "tester", "testing", "testingtester", "test"]
-    print ("Longest Word = %s" % printLongestWord(wordList))
+    print("Longest Word = %s" % printLongestWord(wordList))

@@ -42,3 +42,38 @@ x = [-b +- sqrt(b^2 - 4ac)] / 2a
 Use the sorted func with key as second element i.e. score
 result = sorted(inpArr, key=lambda x: x[1])
 
+for interval in intervals:
+    events.append(Event('open', interval[0], interval[2]))
+    events.append(Event('close', interval[1], interval[2]))
+events.sort(key=lambda x: x.time)
+
+def comparator(a, b):
+    return a-b
+print(sorted(A1, key=functools.cmp_to_key(comparator)))
+
+quicksort
+partition(arr, left, right, pivotLeft, pivotRight):
+i = (left - 1) # index of smaller element
+pivot = arr[right] # pivot
+for j in range(left, right):
+    if arr[j] <= pivot:
+    i = i + 1
+    arr[i], arr[j] = arr[j], arr[i]
+arr[i + 1], arr[right] = arr[right], arr[i + 1]
+pivotPosition = i + 1
+pivot = arr[i + 1]
+
+josephus(n, k) = (josephus(n - 1, k) + k-1) % n + 1
+josephus(1, k) = 1
+
+import heapq
+heapq.heapify(pool)
+heapq.heappush(pool, q) # Min heap
+heapq.heappush(pool, -q) # Max heap
+sumq += heapq.heappop(pool)
+
+def charToIndex(ch):
+    return ord(ch) - ord('a')
+
+def indexToChar(i):
+    return chr(i + ord('a'))

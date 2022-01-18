@@ -14,7 +14,7 @@
 #                    { 1 , 3 , 0 }};
 # Output : Yes
 #
-# Question Type : Generic, SimilarAdded
+# Question Type : Asked
 # Used : Make a graph of row*col nodes. Make array of all possible direction left, right, up and down.
 #        Loop through the elements of matrix, if its not 0, then loop over all possible directions it
 #           can go it. Check if next cell is within matrix and it is not a wall. If this condition is

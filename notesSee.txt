@@ -75,7 +75,6 @@
 21_firstFolder/32_full_binary_tree.py
 21_firstFolder/34_shortest_way_to_form.py
 21_firstFolder/36_distinct_subsequneces.py
-21_firstFolder/38_submatrix_count_with_all_1.py
 21_firstFolder/39_minimum_domino_rotation.py
 21_firstFolder/40_min_swap.py
 21_firstFolder/46_split_array_into_fibonacci.py
@@ -100,7 +99,6 @@
 23_thirdFolder/10_subarray_sort.py
 23_thirdFolder/16_kth_multiple_of_3_5_7.py
 23_thirdFolder/20_two_missing_number.py
-23_thirdFolder/22_max_black_submatrix.py
 23_thirdFolder/30_root_of_n_ary_tree.py
 23_thirdFolder/33_binary_tree_coloring.py
 23_thirdFolder/36_bomb_enemy.py
@@ -136,6 +134,5 @@
 26_sixthFolder/34_push_dominoes.py
 26_sixthFolder/39_car_fleet.py
 27_seventhFolder/01_game_24.py
-27_seventhFolder/09_min_subsequence_in_big_str.py
 27_seventhFolder/15_min_cost_move_coin.py
 27_seventhFolder/18_interval_list_intersection.py
