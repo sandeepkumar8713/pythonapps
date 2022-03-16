@@ -16,6 +16,7 @@
 #        have to care about odd occurrences. Number at i-th index will have (i + 1) * (N - i) frequency.
 #        set res = 0
 #        So run a loop over the input array, calculate its freq.
+#           freq = (i + 1) * (n - i)
 #           If freq is odd, do xor with res : res ^= inpArr[i]
 #        return res
 # Complexity : O(n)

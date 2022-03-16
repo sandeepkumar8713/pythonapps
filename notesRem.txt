@@ -77,3 +77,64 @@ def charToIndex(ch):
 
 def indexToChar(i):
     return chr(i + ord('a'))
+
+sys.maxsize
+
+while left < right:
+    mid = left + (right - left) / 2
+
+level order
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.hd = sys.maxsize
+        self.left = None
+        self.right = None
+
+# dict sorted on keys
+for key in sorted(map):
+    print(map[key], end=" ")
+
+# BFS
+while queue:
+    cost, node = queue.pop(0)
+    nodeIndex = node[0]
+    visitedNodes = node[1]
+    if visitedNodes == targetVisit:
+        return cost
+
+c = a ^ b
+
+# multiply without operator
+res = 0
+while b > 0:
+if b & 1: res = res + a
+    a <<= 1
+    b >>= 1
+return res
+
+INT_BIT = sys.getsizeof(int())
+
+class TrieNode():
+    def __init__(self):
+        self.children = dict()
+        self.word = ''
+
+def build_trie(words):
+    trie = TrieNode()
+    for word in words:
+        temp = trie
+        for ch in word:
+            if ch not in temp.children:
+                temp.children[ch] = TrieNode()
+            temp = temp.children[ch]
+        temp.word = word
+    return trie
+
+Merge sort
+# Auxiliary space
+# better for large data structure
+
+Quick Sort
+# Worst case
+# Locality of reference
