@@ -1,7 +1,8 @@
 # https://www.geeksforgeeks.org/dice-throw-dp-30/
+# https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/
 # Question : https://www.geeksforgeeks.org/dice-throw-dp-30/
-# Given n dice each with m faces, numbered from 1 to m, find the number of ways to get sum X. X is the summation
-# of values on each face when all the dice are thrown.
+# Given n dice each with m faces, numbered from 1 to m, find the number of ways to get sum X.
+# X is the summation of values on each face when all the dice are thrown.
 #
 # Explanation : Let the function to find X from n dice is: Sum(m, n, X)
 # The function can be represented as:

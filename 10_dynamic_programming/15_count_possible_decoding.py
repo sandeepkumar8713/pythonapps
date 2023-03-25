@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/decode-ways/
 # Question : Let 1 represent 'A', 2 represents 'B', etc. Given a digit sequence, count the
 # number of possible decodings of the given digit sequence.
 #
@@ -5,7 +6,7 @@
 # Output: 3
 # The possible decodings are "ABA", "AU", "LA"
 #
-# Question Type : Generic
+# Question Type : Asked
 # Used : If the last digit is non-zero, recur for remaining (n-1) digits and add the result
 #        to total count.
 #        If the last two digits form a valid character (or smaller than 27), recur for
