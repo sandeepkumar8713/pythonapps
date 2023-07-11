@@ -11,7 +11,7 @@
 #
 # Question Type : Asked
 # Used : For first k elements make a min heap
-#        Now loop through the remaining elements, if x if greater than top of heap
+#        Now loop through the remaining elements, if x is greater than top of heap
 #        replace and heapify.
 #        for each iteration top of the heap is kth largest element till now.
 # Complexity : build heap = O(k) , heapify = O(log k), search and replace = O( n log k)
@@ -25,8 +25,8 @@ class MinHeap:
 
     def heapify(self, i):
         smallest = i
-        left = 2*i + 1
-        right = 2*i + 2
+        left = 2 * i + 1
+        right = 2 * i + 2
 
         if left < self.size and self.data[left] < self.data[smallest]:
             smallest = left
@@ -42,10 +42,10 @@ class MinHeap:
         self.size = n
         for i in range(n):
             self.data.append(arr[i])
-        for i in range(n//2 - 1, -1, -1):
+        for i in range(n // 2 - 1, -1, -1):
             self.heapify(i)
 
-    def replaceMin(self,x):
+    def replaceMin(self, x):
         self.data[0] = x
         self.heapify(0)
 
@@ -56,7 +56,7 @@ class MinHeap:
 def kindKthLargest(arr, k):
     result = []
     i = 0
-    while i < k-1:
+    while i < k - 1:
         result.append(-1)
         i += 1
 

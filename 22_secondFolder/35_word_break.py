@@ -13,7 +13,7 @@
 # Question Type : Generic
 # Used : We will use dp here. At each index of word we try to break the inpStr. Check if left part is
 #        already breakable (using dp) and check if substring in right side is present in wordSet.
-#        Logic : def wordBreak(inpStr, wordSet):
+# Logic: def wordBreak(inpStr, wordSet):
 #        n = len(inpStr)
 #        dp = [True] + [False] * n
 #        for i in range(len(inpStr) + 1):

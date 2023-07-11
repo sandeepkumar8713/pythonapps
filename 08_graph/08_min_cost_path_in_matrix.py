@@ -10,7 +10,7 @@
 #        Now loop while the queue is not empty. Pop first cell from queue. Loop over the
 #           possible directions it can go to. Check if it is safe to go to next cell.
 #           Now check if sum of dist[currentCell] and grid[nextCell] is less than
-#           dist[nextCell]. If true then if nextCell is already there in queue,
+#           dist[nextCell]. If true then, if nextCell is already there in queue,
 #           then remove its previous entry, as we got lesser cost to reach this cell.
 #           Now append this cell in queue and update the dist[nextCell] with lower cost.
 #        return dist[destination]

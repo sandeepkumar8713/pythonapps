@@ -8,7 +8,7 @@
 #        found yet. Take two endpoints of window wLeft, wRight as 0.
 #        Also keep track of uniqueCount in window.
 #        Maintain a dict myMap to keep track of char and their frequency.
-#        Loop while wRight is less than n.
+# Logic: Loop while wRight is less than n.
 #           If uniqueCount <= m then,
 #               if arr[wRight] in myMap, increment its freq in myMap and inc uniqueCount,
 #               else increment uniqueCount by 1 and push this char in myMap.
@@ -18,7 +18,7 @@
 #               freq is 0, decrement uniqueCount by 1 and delete from myMap.
 #               Increment window in left side.
 #           Update max window size by comparing it with (wRight - wLeft)
-#       return inpStr[bestLeft:bestLeft + bestWindow]
+#        return inpStr[bestLeft:bestLeft + bestWindow]
 # Complexity : O(n)
 
 

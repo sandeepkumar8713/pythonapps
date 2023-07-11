@@ -8,8 +8,7 @@
 # Used : It is a variance of Kadane's algorithm.
 #        We should also maintain min check so far. As later on we can get a negative
 #        value, which can turn it in positive.
-#        Logic :
-#        for i in range(1, n):
+# Logic: for i in range(1, n):
 #           max_here_check = max_so_far * inpArr[i]
 #           min_here_check = min_so_far * inpArr[i]
 #           max_so_far = max(max_here_check, min_here_check, inpArr[i])

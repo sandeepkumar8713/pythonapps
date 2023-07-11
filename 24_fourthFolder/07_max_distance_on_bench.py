@@ -17,8 +17,8 @@
 #        person in middle of the range.
 #        Comparison of max heap would be difference between left and right. So the top
 #        element has max range, between which next person will be placed.
-#        Logic:
-#        def getSeat(inpArr, seatingSpaces):
+#        Relative sort used.
+# Logic: def getSeat(inpArr, seatingSpaces):
 #        n = len(inpArr)
 #        if inpArr[0] == 0:
 #           inpArr[0] = 1, return 0

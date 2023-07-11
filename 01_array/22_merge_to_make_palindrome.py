@@ -10,8 +10,11 @@
 #
 # Question Type : ShouldSee
 # Used : Set mergeCount = 0. Take 2 pointers left = 0 and right = n - 1.
-#        Logic :
-#        findMinOps(arr, n):
+#        Loop till left is less than right.
+#        Keep comparing and continuing till values are same.
+#        If values are different, merge elements on lesser side.
+#        While doing so keep track of merge count.
+# Logic: findMinOps(arr, n):
 #        Loop while left < right:
 #           if arr[left] == arr[right] : increment left and decrement right by 1
 #           if left is bigger than right:

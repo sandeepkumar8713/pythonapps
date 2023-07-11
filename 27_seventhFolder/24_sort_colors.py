@@ -10,8 +10,7 @@
 #        Loop over the input array. If mid is 0, swap to low.
 #        If mid is 1, inc mid
 #        If mid is 2, swap to high
-#        Logic :
-#        low = 0, mid = 0, high = len(inpArr) - 1
+# Logic: low = 0, mid = 0, high = len(inpArr) - 1
 #        while mid < high:
 #           ele = inpArr[mid]
 #           if ele == 0:

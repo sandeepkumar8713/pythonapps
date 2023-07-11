@@ -16,6 +16,12 @@
 #                   table[j - coinValue] and add to table[j].
 #               table[j] += table[j - coinValue]
 #        return table[targetSum]
+# Logic: table = [0] * (targetSum + 1)
+#        table[0] = 1
+#        for coinValue in coinList:
+#           for j in range(coinValue, targetSum + 1):
+#               table[j] += table[j - coinValue]
+#        return table[targetSum]
 # Complexity : O(n^2)
 
 
@@ -24,8 +30,8 @@ def count(coinList, targetSum):
     table = [0] * (targetSum + 1)
     table[0] = 1
 
-    # Pick all coins one by one and update the table[] values after the index greater than or equal to the value of the
-    # picked coin
+    # Pick all coins one by one and update the table[] values after the index greater
+    # than or equal to the value of the picked coin
     for coinValue in coinList:
         for j in range(coinValue, targetSum + 1):
             table[j] += table[j - coinValue]

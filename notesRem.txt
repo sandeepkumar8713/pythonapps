@@ -12,21 +12,12 @@ math.degrees(math.atan2(p[1] - loc[1], p[0] - loc[0])))
 find median from sorted list (odd and even)
 medianList.append((sortedList[(k - 1) // 2] + sortedList[k // 2]) / 2)
 
-For a matrix, diff of indices are same for diagonal (left to right)
-sum of indices are same for diagonal (right to left)
-
-A set of n can have 2^n subsets. (power subset)
-
-To get sorted key in dict, loop from min(keys) to max(keys).
-
 When we subtract a number by 1 and do bitwise & with itself (n & (n-1)), we unset the rightmost set bit
 
 For a given array, if we create all possible subarray. Number at i-th index will have (i + 1) * (N - i) frequency.
 
 i += i & (-i); Add 1 to last set bit of i
 i -= i & (-i); Subtract 1 from last set bit of i
-
-It is known for a string of length n, there are a total of n*(n+1)/2 number of substrings.
 
 Let Points be A and B. So line can be represent by : c1 = a1*A.x + b1*A.y
 where a1 = B.y - A.y; b1 = A.x - B.x
@@ -39,17 +30,10 @@ else: x = (b2*c1 - b1*c2) / determinant; y = (a1*c2 - a2*c1) / determinant
 Recall the quadratic formula:
 x = [-b +- sqrt(b^2 - 4ac)] / 2a
 
-Use the sorted func with key as second element i.e. score
-result = sorted(inpArr, key=lambda x: x[1])
-
 for interval in intervals:
     events.append(Event('open', interval[0], interval[2]))
     events.append(Event('close', interval[1], interval[2]))
 events.sort(key=lambda x: x.time)
-
-def comparator(a, b):
-    return a-b
-print(sorted(A1, key=functools.cmp_to_key(comparator)))
 
 quicksort
 partition(arr, left, right, pivotLeft, pivotRight):
@@ -65,23 +49,6 @@ pivot = arr[i + 1]
 
 josephus(n, k) = (josephus(n - 1, k) + k-1) % n + 1
 josephus(1, k) = 1
-
-import heapq
-heapq.heapify(pool)
-heapq.heappush(pool, q) # Min heap
-heapq.heappush(pool, -q) # Max heap
-sumq += heapq.heappop(pool)
-
-def charToIndex(ch):
-    return ord(ch) - ord('a')
-
-def indexToChar(i):
-    return chr(i + ord('a'))
-
-sys.maxsize
-
-while left < right:
-    mid = left + (right - left) / 2
 
 level order
 class Node:
@@ -115,6 +82,8 @@ return res
 
 INT_BIT = sys.getsizeof(int())
 
+---------------------------------------------------------------------------------
+
 class TrieNode():
     def __init__(self):
         self.children = dict()
@@ -138,3 +107,70 @@ Merge sort
 Quick Sort
 # Worst case
 # Locality of reference
+
+# Parent union
+def sample():
+    def union(i, j, ids):
+        ids[find(i, ids)] = find(j, ids)
+
+    def find(i, ids):
+        while i != ids[i]:
+            ids[i] = ids[ids[i]] # Set grandparent
+            i = ids[i]
+        return i
+
+    # To be called after all unions to find grandfather as well.
+    for i in range(len(ids)):
+        find(i, ids)
+
+    # complexity : O(e log v) where e is the number of edges in the graph and v is the number of vertices.
+
+
+Eulerian Path is a path in graph that visits every edge exactly once. Eulerian
+Circuit is an Eulerian Path which starts and ends on the same vertex.
+For that these two conditions must be met:
+1) All vertices with nonzero degree belong to a single strongly connected component.
+2) In degree and out degree of every vertex is same
+
+for node in route:
+    graph[node] = graph.get(node, []) + [i]
+
+# Sort in decreasing order based on area.
+allBoxList.sort(key=lambda x: x.getArea(), reverse=True)
+
+Use the sorted func with key as second element i.e. score
+result = sorted(inpArr, key=lambda x: x[1])
+
+import functools
+def comparator(a, b):
+    return a-b
+print(sorted(A1, key=functools.cmp_to_key(comparator)))
+
+For a matrix, diff of indices are same for diagonal (left to right)
+sum of indices are same for diagonal (right to left)
+
+A set of n can have 2^n subsets. (power subset)
+
+To get sorted key in dict, loop from min(keys) to max(keys).
+
+It is known for a string of length n, there are a total of n*(n+1)/2 number of substrings.
+
+import heapq
+heapq.heapify(pool)
+heapq.heappush(pool, q) # Min heap
+heapq.heappush(pool, -q) # Max heap
+sumq += heapq.heappop(pool)
+
+def charToIndex(ch):
+    return ord(ch) - ord('a')
+
+def indexToChar(i):
+    return chr(i + ord('a'))
+
+import sys
+sys.maxsize
+
+while left < right:
+    mid = left + (right - left) / 2
+
+---------------------------------------------------------------

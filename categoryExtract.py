@@ -1,6 +1,8 @@
 import os
-from categoryWise import questionMap
-fileName = "allFilesComments_category2.txt"
+from categoryWise import questionMap as catQuestionMap
+from top_125 import questionMap as topQuestionMap
+fileName_cat = "allFilesComments_category.txt"
+fileName_top = "allFilesComments_top_125.txt"
 
 
 def fetchFile(qFile):
@@ -27,24 +29,28 @@ def writeInFile(qFile, category, comments, count):
         f.write("****************************************************************")
         f.write("\n\n")
 
-def extract_comment():
+
+def extract_comment(questionMap):
     count = 0
     for category, qSet in questionMap.items():
         qList = list(qSet)
         qList.sort()
         fCount = 0
-        print (category)
+        print(category)
         for qFile in qList:
             comments = fetchFile(qFile)
             count += 1
             fCount += 1
             categoryLabel = category + ' (%s of %s)' % (fCount, len(qList))
-            writeInFile(qFile, categoryLabel , comments, count)
+            writeInFile(qFile, categoryLabel, comments, count)
 
-    print (count)
+    print(count)
 
 
 if __name__ == "__main__":
+    questionMap = topQuestionMap
+    fileName = fileName_top
+
     if os.path.exists(fileName):
         os.remove(fileName)
-    extract_comment()
+    extract_comment(questionMap)

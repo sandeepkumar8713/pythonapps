@@ -14,7 +14,7 @@
 #        union of sensors with other sensor and walls. After this, if the 2 walls have same
 #        parent(not disjoint) it means that they are connected, so thief can't pass through it.
 #        The two walls should be disjoint for a pass.
-#        Logic : def canGoFromLeftToRight(roomHeight, sensors, r):
+# Logic: def canGoFromLeftToRight(roomHeight, sensors, r):
 #        ids = range(len(sensors))
 #        top = [], bottom = []
 #        for i,[x,y] in enumerate(sensors):

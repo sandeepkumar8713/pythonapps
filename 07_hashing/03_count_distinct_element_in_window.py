@@ -5,10 +5,7 @@
 # Input:  arr[] = {1, 2, 1, 3, 4, 2, 3};
 #             k = 4
 # Output:
-# 3
-# 4
-# 4
-# 3
+# 3, 4, 4, 3
 #
 # Question Type : Asked
 # Used : Loop over the input array from 0 to k-1 and keep record of elements and there

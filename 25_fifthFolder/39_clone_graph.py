@@ -7,7 +7,7 @@
 # Question Type : SimilarAdded
 # Used : Traverse the graph using DFS, while doing so make a map of key(int) and value(new Node)
 #        Now traverse the neighbours, do dfs over on them and keep appending new nodes.
-#        Logic : dfs(node):
+# Logic: dfs(node):
 #        if node.val in nodeMap:
 #           return nodeMap[node.val]
 #        new_node = Node(node.val)

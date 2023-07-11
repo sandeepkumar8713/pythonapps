@@ -8,9 +8,10 @@
 # move outside of the boundary (i.e. wrap-around is not allowed).
 #
 # Question Type : Generic
-# Used : Do Depth First Search (DFS) from each cell to find all consecutive paths. While doing DFS, we may encounter
-#        many sub problems again and again. So we use dynamic programming to store results of sub problems.
-#        Logic : maxLen = 0
+# Used : Do Depth First Search (DFS) from each cell to find all consecutive paths. While doing DFS,
+#        we may encounter many sub problems again and again. So we use dynamic programming to
+#        store results of sub problems.
+# Logic: maxLen = 0
 #        for i in range(row):
 #           for j in range(col):
 #             if dp[i][j] == -1:
@@ -20,6 +21,7 @@
 #                 dp[i][j] = ans
 #             if maxLen < dp[i][j]: maxLen = dp[i][j]
 #        return maxLen
+#
 #        def getLenUtil(mat, dp, i, j, prev):
 #        row = len(mat), col = len(mat[0])
 #        if isvalid(i, j, row, col) is False or isadjacent(prev, mat[i][j]) is False:

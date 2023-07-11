@@ -25,6 +25,15 @@
 #        2. else if currRem is not in dict. Insert in dict.
 #        3. if currRem is in dict. Check for mentioned diff and update maxSum if required.
 #        return maxSum / k
+# Logic: for i in range(n):
+#        curr_rem = cumulativeSum[i] % k
+#        if curr_rem == 0 and maxSum < cumulativeSum[i]:
+#           maxSum = cumulativeSum[i]
+#        elif not curr_rem in remDict:
+#           remDict[curr_rem] = i
+#        elif maxSum < cumulativeSum[i] - cumulativeSum[remDict[curr_rem]]:
+#           maxSum = cumulativeSum[i] - cumulativeSum[remDict[curr_rem]]
+#        return maxSum // k
 # Complexity : O(n)
 
 

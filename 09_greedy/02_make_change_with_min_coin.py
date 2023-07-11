@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/coin-change/
 # Question : Given a value V, if we want to make change for V cents, and we have infinite
 # supply of each of C = { C1, C2, .. , Cm} valued coins, what is the minimum number of coins
 # to make the change?
@@ -15,8 +16,7 @@
 #           If subRes is not max int and (subRes + 1) is less than current value in table,
 #           then update the table[i]
 #        At the end of loop return table[targetValue]
-#        Logic:
-#        minCoins(coins,targetValue):
+# Logic: minCoins(coins,targetValue):
 #        table = [sys.maxsize] * (targetValue + 1)
 #        table[0] = 0
 #        for i in range(1, targetValue+1):

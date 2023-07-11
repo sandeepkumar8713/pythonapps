@@ -13,7 +13,7 @@
 # Used : At each station of each assembly line, calculate minimum time to reach this station, i.e (from previous
 #        station of same line or previous station of other line). Try to reach exit station, while calculating
 #        minimum path to reach exit.
-#        carAssembleTime(assemTime, transferTime, entryTime, exitTime):
+# Logic: carAssembleTime(assemTime, transferTime, entryTime, exitTime):
 #        n = len(assemTime[0])
 #        first = entryTime[0] + assemTime[0][0]
 #        second = entryTime[1] + assemTime[1][0]

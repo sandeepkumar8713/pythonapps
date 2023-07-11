@@ -38,13 +38,13 @@ questionMap['leftRightSum'] = {'01_array/03_find_equilibrium',
                                '21_firstFolder/31_binary_searchable',
                                '24_fourthFolder/12_max_diff_of_index',
                                '25_fifthFolder/17_product_array_puzzle',
-                               '27_seventhFolder/20_step_step_sum', }
+                               '27_seventhFolder/20_step_step_sum'}
 
 questionMap['kadane'] = {'21_firstFolder/04_max_submatrix',
                          '21_firstFolder/41_max_subarray_one_delete',
                          '24_fourthFolder/10_max_diff_btw_subarray',
                          '27_seventhFolder/17_max_prod_array',
-                         '27_seventhFolder/19_max_sub_array', }
+                         '27_seventhFolder/19_max_sub_array'}
 
 questionMap['LIS'] = {'01_array/04_longest_increasing_subsequnce', }
 
@@ -52,10 +52,12 @@ questionMap['minPlatform'] = {'01_array/06_minimum_platform',
                               '23_thirdFolder/47_my_calendar_3'}
 
 questionMap['quickSort'] = {'01_array/09_find_kth_small_element',
+                            '11_divide_and_conquer/07_quick_sort',
                             '20_initialFiles/02_find_pair_in_array',
                             '22_secondFolder/19_3_way_quick_sort',
                             '25_fifthFolder/14_merge_2_sorted_array',
-                            '25_fifthFolder/18_rearrange_pos_neg', }
+                            '25_fifthFolder/18_rearrange_pos_neg',
+                            }
 
 questionMap['slidingWindow'] = {'01_array/12_chocolate_distribution',
                                 '01_array/20_flip_ele_to_1',
@@ -68,7 +70,7 @@ questionMap['slidingWindow'] = {'01_array/12_chocolate_distribution',
                                 '25_fifthFolder/22_amazon_fresh_secret_code',
                                 '24_fourthFolder/39_moving_product_from_data_stream',
                                 '26_sixthFolder/13_sliding_window_median',
-                                '27_seventhFolder/11_min_diff_bw_max_n_min', }
+                                '27_seventhFolder/11_min_diff_bw_max_n_min'}
 
 questionMap['heap'] = {'05_heap/01_median_in_stream',
                        '05_heap/04_non_adjacent_character',
@@ -136,7 +138,7 @@ questionMap['binarySearch'] = {'02_string/11_longest_common_prefix',
                                '23_thirdFolder/01_sorted_infinite_array',
                                '23_thirdFolder/35_check_node_exists',
                                '24_fourthFolder/31_kth_smallest_pair',
-                               '24_fourthFolder/38_find_obejct_in_a_grid',
+                               '24_fourthFolder/38_find_object_in_a_grid',
                                '24_fourthFolder/46_find_function_argument',
                                '24_fourthFolder/48_split_array_largest_sum',
                                '25_fifthFolder/38_insert_interval',
@@ -328,6 +330,4 @@ def getSelectedFilename():
 
 if __name__ == "__main__":
     fileList = getSelectedFilename()
-    for item in fileList:
-        print(item)
     print(len(fileList))

@@ -1,4 +1,5 @@
 # CTCI : Q1_08_Zero_Matrix
+# https://leetcode.com/problems/set-matrix-zeroes/
 # Question : Write an algorithm such that if an element in an MxN matrix is 0, its entire row and
 # column are set to 0.
 #

@@ -2,7 +2,7 @@
 # Question : Given a graph and a source vertex in the graph, find shortest paths from source
 # to all vertices in the given graph.
 #
-# Question Type : ShouldSee
+# Question Type : Generic
 # Used : Maintain a minDist array with size v, initialize them with maxInt.
 #        Maintain a shortest path tree(SPT) array with size v, initialize them with False.
 #        Initialize minDist[src] as 0.
@@ -12,9 +12,20 @@
 #           Now use this newly found vertex, to check if via (lesser cost) path is possible,
 #           by looping over all the vertices which are not yet included in SPT and update
 #           minDist.
+# Logic: def dijkstra(self, src):
+#        dist = [sys.maxsize] * self.V
+#        dist[src] = 0
+#        sptSet = [False] * self.V
+#        for i in range(self.V):
+#           u = self.minDistance(dist, sptSet)
+#           sptSet[u] = True
+#        for v in range(self.V):
+#           if self.graph[u][v] > 0 and sptSet[v] is False and dist[v] > dist[u] + self.graph[u][v]:
+#               dist[v] = dist[u] + self.graph[u][v]
+#        self.printSolution(src, dist)
 # Complexity : O(n^2)
-#              If the input graph is represented using adjacency list, it can be reduced to O(E log V) with
-#              the help of binary heap.
+#              If the input graph is represented using adjacency list, it can be reduced to O(E log V)
+#              with the help of binary heap.
 
 import sys
 
@@ -41,7 +52,6 @@ class Graph():
         return min_index
 
     def dijkstra(self, src):
-
         dist = [sys.maxsize] * self.V
         dist[src] = 0
         sptSet = [False] * self.V

@@ -18,7 +18,7 @@
 #        3. If we include str[i] to form subsequence, add the previous subresult with str[i] to set
 #           value in this row. So dp[i][(j + inpArr[i]) % n] |= dp[i - 1][j] (use previous rem j)
 #        Subsequence is possible if dp[n - 1][0] is True.
-#        Logic : def countDivisibleSubseq(inpArr):
+# Logic: def countDivisibleSubseq(inpArr):
 #        n = len(inpArr)
 #        dp = [[0 for x in range(n)]
 #                 for y in range(n)]
@@ -32,6 +32,7 @@
 #           return getValue(dp, inpArr, n)
 #        else:
 #           return -1
+#
 #        def getValue(dp,str,n):
 #        result = [], col = 0
 #        for i in range(n-1, -1, -1):

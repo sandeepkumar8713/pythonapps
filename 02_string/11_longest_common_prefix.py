@@ -1,3 +1,4 @@
+# https://www.geeksforgeeks.org/longest-common-prefix-using-sorting/
 # Question : Given a set of strings, find the longest common prefix.
 #
 # Input  : {"geeksforgeeks", "geeks", "geek", "geezer"}
@@ -10,7 +11,7 @@
 #        If yes and add to prefix. If not, then make right as mid -1
 #        Once left half is matched, then it move to right half with left = mid + 1,
 #        and repeat the above process
-# Complexity : O(NM log M) where M is length of shortest string
+# Complexity : O(NM log M) where M is length of the shortest string
 
 
 def findMinLen(arr):

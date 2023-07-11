@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/longest-common-subsequence/
 # Question : Given two strings 'X' and 'Y', print the length of the longest common substring.
 # If two or more substrings have the same value for longest common substring, then print any
 # one of them.
@@ -11,8 +12,7 @@
 #        substring. To print the substring, keep track of i,j for max length. Now traverse
 #        diagonally down from i,j till LCSuff is not 0. Here we should have a memorization
 #        table to track.
-#        Logic :
-#        LCSubStr(X, Y, m, n):
+# Logic: LCSubStr(X, Y, m, n):
 #        for i in range(m + 1):
 #           for j in range(n + 1):
 #               if i == 0 or j == 0:
@@ -28,7 +28,7 @@
 #        while LCSuff[row][col] != 0:
 #           outputstring = X[row-1] + outputstring
 #           row -= 1, col -= 1
-#       return outputstring, result
+#        return outputstring, result
 # Complexity : O(m*n)
 
 

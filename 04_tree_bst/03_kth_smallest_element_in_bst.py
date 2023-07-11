@@ -20,7 +20,9 @@
 #        smallest element.
 #        While inserting elements in the BST, also keep track of elements in the left
 #        subtree of each node.
-#        Call function kthSmallestElement(k). It set res = -1. If root is None: return res.
+# Logic: Call function kthSmallestElement(k).
+#        It set res = -1.
+#        If root is None: return res.
 #        Set temp = root.
 #        Now loop while temp is not None.
 #           If temp.leftCount + 1 == k: return temp.data

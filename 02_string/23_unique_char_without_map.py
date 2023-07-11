@@ -9,6 +9,13 @@
 # Used : Take checker = 0, loop over each char: left shift 1 by the ascii value of char.
 #        If AND operation with checker is > 0 then return false
 #        else do OR operation shifted integer with checker.
+# Logic: checker = 0
+#        for i in range(0, len(inputStr)):
+#           val = ord(inputStr[i]) - ord('a')
+#           if (checker & (1 << val)) > 0:
+#               return False
+#           checker |= (1 << val)
+#        return True
 # Complexity : O(n)
 
 

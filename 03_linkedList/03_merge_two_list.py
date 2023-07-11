@@ -1,5 +1,6 @@
 # CTCI : Q10_01_Sorted_Merge
 # https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/
+# https://leetcode.com/problems/merge-two-sorted-lists/
 # Question : Write a SortedMerge() function that takes two lists, each of which is sorted
 # in increasing order, and merges the two together into one list which is in increasing order.
 # SortedMerge() should return the new list. The new list should be made by splicing together
@@ -9,10 +10,10 @@
 # 2->3->20, then SortedMerge() should return a pointer to the head node of the merged
 # list 2->3->5->10->15->20.
 #
-# Question Type : Generic
+# Question Type : Asked
 # Used : Take the two lists, compare the data of each, return the lesser node and recursively
 #        call and assign its return value to result->next.
-#        merge(nodeA, nodeB):
+# Logic: merge(nodeA, nodeB):
 #        if nodeA is None: return nodeB
 #        if nodeB is None: return nodeA
 #        result = None

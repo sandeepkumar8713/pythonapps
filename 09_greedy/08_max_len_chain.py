@@ -2,7 +2,7 @@
 # than the second number. A pair (c, d) can follow another pair (a, b) if b < c.
 # Chain of pairs can be formed in this fashion. Find the longest chain which can be formed
 # from a given set of pairs.
-# Similar : box stacking (20_initialFiles/file5)
+# Similar : box stacking (20_initialFiles/file5), 01_array/04_longest_increasing_subsequnce
 #
 # Question Type : Generic
 # Used : This can be easily solved as job selection problem described in
@@ -15,8 +15,7 @@
 #           Here we check if pair i can be suffixed to pair j and if MCL[i] < MCL[j] + 1.
 #           Then update MCL[i] accordingly.
 #        return max val from MCL array.
-#        Logic :
-#        maxChainLength(arr):
+# Logic: maxChainLength(arr):
 #        n = len(arr), MCL = [1] * n
 #        for i in range(1, n):
 #           for j in range(0, i):

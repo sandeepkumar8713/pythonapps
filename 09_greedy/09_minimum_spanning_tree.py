@@ -13,7 +13,9 @@
 #           cycle. Add this edge in result list and call union function to update rank
 #           of parent vertex if required.
 #        print result array.
-#        Logic :
+#
+# Logic: self.graph = sorted(self.graph, key=lambda item: item[2])
+#        e = 0, i = 0
 #        while e < self.V - 1:
 #           u, v, w = self.graph[i]
 #           i = i + 1

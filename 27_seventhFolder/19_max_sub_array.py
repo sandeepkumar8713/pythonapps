@@ -5,14 +5,14 @@
 #
 # Question Type : Easy
 # Used : We will use Kadane algo here.
-#        Logic :
-#        max_ending_here = inpArr[0]
+# Logic: max_ending_here = inpArr[0]
 #        for i in range(1, len(inpArr)):
 #           max_ending_here = max_ending_here + inpArr[i]
 #           if max_ending_here < 0:
 #               max_ending_here = 0
 #           if max_so_far < max_ending_here:
 #               max_so_far = max_ending_here
+#        return max_so_far
 # Complexity : O(n)
 
 import sys

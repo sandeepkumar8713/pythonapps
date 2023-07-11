@@ -23,7 +23,7 @@
 # Question Type : Generic
 # Used : Make numbers of fancy digits and check that they should not be fancy numbers.
 #        call as : getCountUtils(0, limit, [0])
-#        Logic : def getCountUtils(n, limit, count):
+# Logic: def getCountUtils(n, limit, count):
 #        if n > limit: return
 #        if not isFancy(str(n)): count[0] += 1
 #        if n != 0: getCountUtils(n * 10, limit, count)

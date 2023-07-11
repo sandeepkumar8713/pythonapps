@@ -1,15 +1,17 @@
 # https://www.geeksforgeeks.org/find-minimum-element-in-a-sorted-and-rotated-array/
+# https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 # Question : A sorted array is rotated at some unknown point, find the minimum element in it
 #
 # Question Type : Easy
-# Used : We need to call a recursive function: findMin(arr, low, high)
+# Used : We need to call a recursive function:
+# Logic: findMin(arr, low, high)
 #           if low == high return arr[low]
 #           mid = (low + high) / 2
 #           if arr[mid + 1] is smaller than arr[mid], return arr[mid + 1]
 #           if arr[mid] is smaller than arr[mid-1], return arr[mid]
 #           if arr[high] > arr[mid]:
 #                return findMin(arr, low, mid - 1)
-#           else:return findMin(arr, mid + 1, high)
+#           else: return findMin(arr, mid + 1, high)
 # Complexity : O(log n)
 
 

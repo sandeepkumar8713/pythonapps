@@ -17,7 +17,19 @@
 #           remove two elements from min heap, add them to minCost and insert
 #           the sum of the two elements in minHeap
 #        After the loop, print minCost
-# Complexity : O(n)
+# Logic: findMinCost(inpArr):
+#        heap = inpArr.copy()
+#        heapq.heapify(heap)
+#        minCost = 0
+#        while len(heap) > 1:
+#           first = heapq.heappop(heap)
+#           second = heapq.heappop(heap)
+#           minCost += first + second
+#           heapq.heappush(heap, first + second)  # Min heap
+#        return minCost
+# Complexity : O(n log n)
+#              Heapify takes O(n log n)
+#              Heap push and pop takes O(log n)
 
 import operator
 
@@ -30,8 +42,8 @@ class Heap:
 
     def heapify(self, i):
         largest = i
-        left = 2*i + 1
-        right = 2*i + 2
+        left = 2 * i + 1
+        right = 2 * i + 2
 
         if left < self.size and self.op(self.data[left], self.data[largest]):
             largest = left
@@ -47,12 +59,12 @@ class Heap:
         self.size = n
         for i in range(n):
             self.data.append(arr[i])
-        start = n//2 - 1
+        start = n // 2 - 1
         for i in range(start, -1, -1):
             self.heapify(i)
 
     def removeTop(self):
-        self.data[0], self.data[self.size-1] = self.data[self.size-1], self.data[0]
+        self.data[0], self.data[self.size - 1] = self.data[self.size - 1], self.data[0]
         temp = self.data[-1]
         del self.data[-1]
         self.size -= 1
@@ -71,7 +83,7 @@ class Heap:
         return self.size
 
 
-def findMinCost(inpArr):
+def findMinCostOld(inpArr):
     minHeap = Heap(operator.lt)
     minHeap.buildHeap(inpArr, len(inpArr))
     minCost = 0
@@ -81,6 +93,23 @@ def findMinCost(inpArr):
         second = minHeap.removeTop()
         minCost += first + second
         minHeap.insert(first + second)
+
+    return minCost
+
+
+import heapq
+
+
+def findMinCost(inpArr):
+    heap = inpArr.copy()
+    heapq.heapify(heap)
+
+    minCost = 0
+    while len(heap) > 1:
+        first = heapq.heappop(heap)
+        second = heapq.heappop(heap)
+        minCost += first + second
+        heapq.heappush(heap, first + second)  # Min heap
 
     return minCost
 

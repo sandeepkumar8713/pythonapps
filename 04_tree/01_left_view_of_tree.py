@@ -13,6 +13,13 @@
 #        is more than maximum level so far, we print the node because this is the first node
 #        in its level. (Preorder)
 #        For right view : Do pre order but first call right subtree and then left subtree.
+# Logic: leftViewUtil(root, level, max_level):
+#        if root is None: return
+#        if max_level[0] < level:
+#           print(root.data,end=" ")
+#           max_level[0] = level
+#        leftViewUtil(root.left, level + 1, max_level)
+#        leftViewUtil(root.right, level + 1, max_level)
 # Complexity : O(n)
 
 

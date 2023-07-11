@@ -1,5 +1,5 @@
-# Question : Given weights and values of n items, put these items in a knapsack of capacity W to get the maximum
-# total value in the knapsack.
+# Question : Given weights and values of n items, put these items in a knapsack of capacity W to
+# get the maximum total value in the knapsack.
 #
 # Question Type : Generic
 # Used : Here we are maintaining a memory table. K : size (n+1) * (weightLimit+1).
@@ -11,8 +11,7 @@
 #              (itemValue[i - 1] + K[i - 1][j - itemWeight[i - 1]])
 #           If it can't fit then set previous row value (K[i - 1][j])
 #        return K[n][weightLimit] (Last item of table will give max value)
-#        Logic :
-#        for i in range(n + 1):
+# Logic: for i in range(n + 1):
 #           for j in range(weightLimit + 1):
 #               if i == 0 or j == 0:
 #                   K[i][j] = 0

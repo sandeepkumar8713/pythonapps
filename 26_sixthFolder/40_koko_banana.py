@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/koko-eating-bananas/
+# Similar : https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
 # Question : Koko loves to eat bananas. There are n piles of bananas, the ith pile has
 # piles[i] bananas. The guards have gone and will come back in h hours. Koko can decide
 # her bananas-per-hour eating speed of k. Each hour, she chooses some pile of bananas and
@@ -15,8 +16,7 @@
 #        We guess a speed (b/w 1 and max(piles)), check if we can finish all bananas.
 #        We need to do Binary search over the guess. While doing so find min speed with
 #        all bananas eaten.
-#        Logic :
-#        def hrsTakes(k, piles):
+# Logic: def hrsTakes(k, piles):
 #        return sum(math.ceil(p / k) for p in piles)
 #
 #        def minEatingSpeed(piles, h)

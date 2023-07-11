@@ -1,4 +1,5 @@
 # https://www.geeksforgeeks.org/find-top-k-or-most-frequent-numbers-in-a-stream/
+# https://leetcode.com/problems/top-k-frequent-elements/
 # Question : Given an array of n numbers. Your task is to read numbers from the array and
 # keep at-most K numbers at the top (According to their decreasing frequency) every time a
 # new number is read. We basically need to print top k numbers sorted by frequency when
@@ -9,8 +10,7 @@
 # Used : Make a list topElements of size k+1. set lastIndex=0. It is a marker that tells
 #        up to which index data is filled in topElements. Maintain a dict freqMap which
 #        stores frequency of each distinct element.
-#        Logic :
-#        kTop(arr, n, k):
+# Logic: kTop(arr, n, k):
 #        for i in range(n):
 #           Update the freqMap for this element.
 #           If ele is not present in topElements:

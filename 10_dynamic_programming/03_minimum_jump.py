@@ -13,8 +13,7 @@
 # Used : The idea is to traverse all possible steps, and keep updating maxReach. Once
 #        previous point's reach get over. do step = maxReach - i, this way we find the
 #        maxReach for this point, by traveling reach(step) of previous point.
-#        Logic :
-#        minJumps(arr) :
+# Logic: minJumps(arr) :
 #        set step = arr[0], jump = 1.
 #        Now run a loop from 1 to n-1 :
 #           if i == n-1: return jump

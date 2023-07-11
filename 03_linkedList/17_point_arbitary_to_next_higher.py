@@ -5,6 +5,17 @@
 # Question Type : Asked
 # Used : Traverse input list and copy next pointer to arbitrary pointer for every node.
 #        Do Merge Sort for the linked list formed by arbitrary pointers and update head accordingly.
+# Logic: merge(first, second):
+#        result = None
+#        if first is None: return second
+#        if second is None: return first
+#        if first.data < second.data:
+#           result = first
+#           result.arbitrary = merge(first.arbitrary, second)
+#        else:
+#           result = second
+#           result.arbitrary = merge(first, second.arbitrary)
+#        return result
 #        mergeSort(first, n):
 #        if n == 1:
 #           return first

@@ -14,7 +14,7 @@
 # Question Type : Generic
 # Used : Call diameterOpt() which returns both max diameter and max height, recursively over
 #        left and right child.
-#        diameterOpt(root,height):
+# Logic: diameterOpt(root,height):
 #        lh = [0], rh = [0]
 #        if root is None:
 #           height[0] = 0

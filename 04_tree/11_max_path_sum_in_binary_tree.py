@@ -1,4 +1,5 @@
 # http://www.geeksforgeeks.org/find-maximum-path-sum-in-a-binary-tree/
+# https://leetcode.com/problems/binary-tree-maximum-path-sum/
 # Question : Given a binary tree, find the maximum path sum. The path may start and end at any
 # node in the tree.
 #
@@ -18,6 +19,13 @@
 #        Find max top from either : max single or l + r + root.data
 #        find max ultimate from either : max top or max ultimate
 #        return max top
+# Logic: findMaxUtil(root):
+#        l = findMaxUtil(root.left)
+#        r = findMaxUtil(root.right)
+#        max_single = max(max(l, r) + root.data, root.data)
+#        max_top = max(max_single, l + r + root.data)
+#        findMaxUtil.res = max(findMaxUtil.res, max_top)
+#        return max_single
 # Complexity : O(n)
 
 

@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/palindromic-substrings/
 # Question : Given a string, your task is to count how many palindromic substrings in this string.
 # The substrings with different start indexes or end indexes are counted as different substrings even they
 # consist of same characters.
@@ -13,7 +14,7 @@
 # Question Type : OddOne
 # Used : Call manachers function, which returns substring palindrome length array centered at i. Now sum array ele/2 to
 #        get the result.
-#        Logic : def manachers(inpStr):
+# Logic: def manachers(inpStr):
 #        expandedStr = '@#' + '#'.join(inpStr) + '#$'
 #        palindromeLen = [0] * len(expandedStr)
 #        center = right = 0
@@ -38,8 +39,8 @@ def manachers(inpStr):
     palindromeLen = [0] * len(expandedStr)
     center = right = 0
 
-    # Here we try to use the fact that a substring palindrome has already been found at center i - 1, so use its small
-    # part to skip some equality check.
+    # Here we try to use the fact that a substring palindrome has already been found at center i - 1,
+    # so use its small part to skip some equality check.
     for i in range(1, len(expandedStr) - 1):
         if i < right:
             palindromeLen[i] = min(right - i, palindromeLen[2 * center - i])

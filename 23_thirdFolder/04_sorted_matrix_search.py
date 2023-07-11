@@ -7,7 +7,7 @@
 # Question Type : Asked
 # Used : Start search from top right. If ele is less than the key go down,
 #        If ele is more than the key go left.
-#        i = 0, j = n - 1
+# Logic: i = 0, j = n - 1
 #        while i < n and j >= 0:
 #           if mat[i][j] == x: print "found"
 #           if mat[i][j] > x: j -= 1

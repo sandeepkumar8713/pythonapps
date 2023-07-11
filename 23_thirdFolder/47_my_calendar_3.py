@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/my-calendar-iii/
 # Similar : https://leetcode.com/problems/my-calendar-i/
+# Similar : 01_array/06_minimum_platform
 # Question : Implement a MyCalendarThree class to store your events. A new event can always be added.
 # Your class will have one method, book(int start, int end). Formally, this represents a booking on the half
 # open interval [start, end), the range of real numbers x such that start <= x < end. A K-booking happens when K
@@ -21,7 +22,7 @@
 # Used : Make one dict of timeLine,
 #        Add 1 at start of time in timeline and subtract 1 at end of time in timeline.
 #        Now loop through the map, keep adding the values, return max total.
-#        Logic : class MyCalendar:
+# Logic: class MyCalendar:
 #        def __init__(self): self.timeLine = dict()
 #        def book(self, start, end):
 #           if start in self.timeLine:

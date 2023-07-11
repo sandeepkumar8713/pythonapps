@@ -1,5 +1,6 @@
 # https://www.geeksforgeeks.org/tree-isomorphism-problem/
 # https://leetcode.com/problems/flip-equivalent-binary-trees/
+# Similar : https://leetcode.com/problems/invert-binary-tree/
 # Question : Write a function to detect if two trees are isomorphic. Two trees are called
 # isomorphic if one of them can be obtained from other by a series of flips, i.e. by
 # swapping left and right children of a number of nodes. Any number of nodes at any
@@ -10,7 +11,7 @@
 #            /     \                 /      \
 #           2       3               3       2
 #          /  \    /                 \     /  \
-#         4   5   6                  6    4    5
+#         4   5   6                  6    5    4
 #           /  \                             /   \
 #          7    8                           8    7
 #

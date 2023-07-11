@@ -13,13 +13,13 @@
 #        Do binary search for new ele in sortedList and insert.
 #        Calculate median.
 #        Do binary search for old ele in sortedList and delete.
-#        Logic :
-#        sortedList = nums[:k - 1], sortedList.sort()
+# Logic: sortedList = nums[:k - 1], sortedList.sort()
 #        for i in range(k - 1, len(nums)):
 #           sortedList = insert(sortedList, nums[i])
 #           medianList.append((sortedList[(k - 1) // 2] + sortedList[k // 2]) / 2)
 #           sortedList = remove(sortedList, nums[i - k + 1])
 #        return medianList
+#
 #        def insert(inpArr, key):
 #        i = binarySearch(inpArr, key)
 #        newArray = inpArr[:i] + [key] + inpArr[i:]

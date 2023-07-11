@@ -1,4 +1,5 @@
 # https://www.geeksforgeeks.org/largest-rectangle-under-histogram/
+# https://leetcode.com/problems/largest-rectangle-in-histogram/
 # Question : Find the largest rectangular area possible in a given histogram where the largest
 # rectangle can be made of a number of contiguous bars. For simplicity, assume that all bars
 # have same width and the width is 1 unit.

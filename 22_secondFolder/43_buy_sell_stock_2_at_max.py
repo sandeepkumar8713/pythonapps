@@ -12,7 +12,7 @@
 #        For follow up question. Find the first max profit using above function get there start and end
 #        index also. Now find max profit from index 0 to start - 1 and end + 1 to len. Return max of
 #        two along with first max profit.
-#        Logic : def maxProfitTwoTranscation(prices):
+# Logic: def maxProfitTwoTranscation(prices):
 #        firstProfit, index = maxProfit(prices, 0, len(prices) - 1)
 #        if firstProfit == 0: return 0
 #        leftProfit, leftIndex = maxProfit(prices, 0, index[0] - 1)

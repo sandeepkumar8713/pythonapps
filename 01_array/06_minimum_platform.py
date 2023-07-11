@@ -5,12 +5,11 @@
 # Question Type : Generic
 # Used : Sort the arrival and departure array
 #        Now loop through them, if a new bus is arriving in i while another bus is not
-#        departed in j then, add new platform else remove one platform, and keep track of
-#        highest platform count till now.
+#        departed in j then, add new platform else remove one platform, and keep track
+#        of highest platform count till now.
 #        Note that if there is clash, i is inc (to show next arrival)
 #        else j is inc (to show last departure)
-#        Logic :
-#        findPlatform(arr, dep):
+# Logic: findPlatform(arr, dep):
 #        platformNeeded = 1
 #        result = 1
 #        i = 1, j = 0
@@ -18,8 +17,7 @@
 #           if arr[i] < dep[j]:
 #               platformNeeded += 1
 #               i += 1
-#               if platformNeeded > result:
-#                   result = platformNeeded
+#               result = max(result, platformNeeded)
 #           else:
 #               platformNeeded -= 1
 #               j += 1
@@ -42,9 +40,7 @@ def findPlatform(arr, dep):
         if arr[i] < dep[j]:
             platformNeeded += 1
             i += 1
-
-            if platformNeeded > result:
-                result = platformNeeded
+            result = max(result, platformNeeded)
         else:
             platformNeeded -= 1
             j += 1

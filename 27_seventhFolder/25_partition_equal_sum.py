@@ -11,8 +11,7 @@
 # Used : Calculate sum of array ele and divide by 2. This is our target.
 #        Do DP to find if this target can be achieved for choosing ele from array.
 #        This similar to knapsack problem.
-#        Logic :
-#        target = total_sum // 2
+# Logic: target = total_sum // 2
 #        dp = []
 #        for i in range(n + 1):
 #           dp.append([False] * (target + 1))

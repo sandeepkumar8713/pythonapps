@@ -11,7 +11,8 @@
 #        Sort each of the bucket individually.
 #        Index 0 bucket will contain value from 0.0 to 0.09, 1 -> 0.1 to 0.19, 2 -> 0.2 to 0.29
 #        Merge these buckets into the input array.
-# Complexity : O(10 * n * log n)
+# Complexity : average : O(n + n^2/k + k) where k is number of buckets
+#              worst : O(n^2)
 
 
 def bucketSort(arr, n):

@@ -15,12 +15,22 @@
 # Used : 1) If right subtree of node is not NULL, then nextNode lies in right subtree. Do
 #           following. Go to right subtree and return the node with minimum key value in
 #           right subtree. (By looping until node.left is not null and then return node)
-#        2) If right subtree of node is None, the loop while root is not None:
-#              if node.data < root.data: nextNode = root, root = root.left
-#              elif node.data > root.data: root = root.right
-#              else: break (node is matching)
-#           return nextNode
+#        2) If right subtree of node is None,
+#               Run the loop while root is not None:
+#                   if node.data < root.data: nextNode = root, root = root.left
+#                   elif node.data > root.data: root = root.right
+#                   else: break (node is matching)
+#               return nextNode
 #           Search for the given node in tree, when found print its immediate parent.
+# Logic: nextNode = None
+#        while root is not None:
+#           if node.data < root.data:
+#               nextNode = root
+#               root = root.left
+#           elif node.data > root.data:
+#               root = root.right
+#           else: break
+#        return nextNode
 # Complexity : O(h) h is height of tree
 
 
@@ -54,7 +64,7 @@ class BST:
         if root is None:
             return
         self.printInOrderUtil(root.left)
-        print(root.data,end=" ")
+        print(root.data, end=" ")
         self.printInOrderUtil(root.right)
 
     def printInOrder(self):

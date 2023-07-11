@@ -1,3 +1,4 @@
+# https://www.geeksforgeeks.org/kth-smallest-largest-element-in-unsorted-array/
 # Question : Given an array and a number k where k is smaller than size of array,
 # we need to find the k'th smallest element in the given array.
 # It is given that all array elements are distinct.
@@ -6,8 +7,7 @@
 # Used : We will use a recursive function. Within it use the partition function of quicksort,
 #        since it gives back position of pivot in sorted array, use it compare with k.
 #        Same logic can be used for kth largest element by passing n-k to the above function
-#        Logic :
-#        kthSmallest(arr, left, right, k):
+# Logic: kthSmallest(arr, left, right, k):
 #        if 0 < k <= right - left + 1:
 #           pos = partition(arr, left, right)
 #           if pos - left == k - 1:
@@ -15,9 +15,9 @@
 #           if pos - left > k - 1:
 #               return kthSmallest(arr, left, pos-1, k)
 #           else:
-#               return kthSmallest(arr, pos+1, right, k - pos + left - 1)
+#               return kthSmallest(arr, pos+1, right, k - (pos - left) - 1)
 #        return None
-# Complexity : O(n) , worst : O(n^2)
+# Complexity : average O(n), worst : O(n^2)
 #              We can even use min heap, form a min heap in O(n log n) and
 #              extract k times : O(n log n + k log n)
 
@@ -43,9 +43,9 @@ def kthSmallest(arr, left, right, k):
             return arr[pos]
         if pos - left > k - 1:
             # then go to left half of array
-            return kthSmallest(arr, left, pos-1, k)
+            return kthSmallest(arr, left, pos - 1, k)
         else:
-            return kthSmallest(arr, pos+1, right, k - pos + left - 1)
+            return kthSmallest(arr, pos + 1, right, k - (pos - left) - 1)
 
     return None
 
@@ -55,6 +55,6 @@ if __name__ == "__main__":
     print(sorted(arr))
     n = len(arr)
     k = 3
-    print("Kth Smallest :", kthSmallest(arr, 0, n-1, k))
+    print("Kth Smallest :", kthSmallest(arr, 0, n - 1, k))
     # kth largest
     print("Kth Largest :", kthSmallest(arr, 0, n - 1, n - k))

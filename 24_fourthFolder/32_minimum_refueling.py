@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/minimum-number-of-refueling-stops/
 # Question : A car travels from a starting position to a destination which is target miles east
 # of the starting position. Along the way, there are gas stations. Each station[i] represents
 # a gas station that is station[i][0] miles east of the starting position, and has station[i][1]
@@ -19,7 +20,7 @@
 #        gas station up ahead that we would rather refuel at. When we run out of fuel before
 #        reaching the next station, we'll retroactively fuel up: greedily choosing the largest
 #        gas stations first.
-#        Logic : minRefuelStops(target, tank, stations):
+# Logic: minRefuelStops(target, tank, stations):
 #        pq = []  # A maxheap is simulated using negative values
 #        stations.append((target, float('inf')))
 #        ans = prev = 0

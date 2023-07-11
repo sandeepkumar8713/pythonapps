@@ -1,5 +1,6 @@
 # CTCI : Q4_05_Validate_BST
 # http://www.geeksforgeeks.org/a-program-to-check-if-a-binary-tree-is-bst-or-not/
+# https://leetcode.com/problems/validate-binary-search-tree/
 # Question : A program to check if a binary tree is BST or not.
 #
 # A binary search tree (BST) is a node based binary tree data structure which has the

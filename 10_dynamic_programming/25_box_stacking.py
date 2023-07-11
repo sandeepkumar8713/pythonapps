@@ -18,7 +18,14 @@
 #        Run 2 loops from i : 1 to n and j : 0 to i
 #           if depth[j] > depth[i] and width[j] > width[i] and MSH[i] < MSH[j] + height[i]:
 #               MSH[i] = MSH[j] + height[i]
+#               marker[i] = j
 #        return max(MSH)
+#        To traces the selected boxes, make use of another array Marker. For each i it stores the j.
+#        i = MSH.index(max(MSH))
+#        while i >= 0 and marker[i] != i:
+#           result.append(i)
+#           i = marker[i]
+#           result.reverse()
 # Complexity : O(n^2)
 
 DIMENSION_SIZE = 3
@@ -64,16 +71,29 @@ def getMaxStackSize(inpMat):
         MSH.append(box.getHeight())
     n = len(allBoxList)
 
+    marker = [i for i in range(n)]
     # This is used in longest increasing sub sequence in dynamic programming approach
     for i in range(1, n):
         for j in range(0, i):
             if allBoxList[i].getDepth() < allBoxList[j].getDepth() and \
                     allBoxList[i].getWidth() < allBoxList[j].getWidth() and \
                     MSH[i] < MSH[j] + allBoxList[i].getHeight():
-                    MSH[i] = MSH[j] + allBoxList[i].getHeight()
+                MSH[i] = MSH[j] + allBoxList[i].getHeight()
+                marker[i] = j
 
     # MSH[i] now stores the maximum stake height ending with box i
-    return max(MSH)
+    max_height = max(MSH)
+
+    # We need to trace back the selected boxes.
+    result = []
+    i = MSH.index(max_height)
+    while i >= 0 and marker[i] != i:
+        result.append(i)
+        i = marker[i]
+    result.reverse()
+    boxes = [allBoxList[i].getHeight() for i in result]
+    boxes.sort(reverse=True)
+    return max_height, boxes
 
 
 if __name__ == "__main__":

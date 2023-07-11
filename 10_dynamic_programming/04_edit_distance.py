@@ -1,4 +1,5 @@
 # http://www.geeksforgeeks.org/dynamic-programming-set-5-edit-distance/
+# https://leetcode.com/problems/edit-distance/
 # Question : Given two strings str1 and str2 and below operations that can performed on str1.
 # Find minimum number of edits (operations) required to convert 'str1' into 'str2'.
 # Insert
@@ -16,7 +17,7 @@
 #               Replace: dp[i - 1][j - 1]
 #               dp[i][j] = 1 + min(dp(insert),dp(remove),dp(replace))
 #        return dp[m][n]
-#        editDist(str1, str2, m, n):
+# Logic: editDist(str1, str2, m, n):
 #        for i in range(m + 1):
 #           for j in range(n + 1):
 #               if i == 0: dp[i][j] = j

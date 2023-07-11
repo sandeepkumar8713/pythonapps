@@ -16,7 +16,7 @@
 # Question Type : Asked
 # Used : We will do post order traversal and keep saving the nodes as string sequence
 #        in hash table and comparing if already found before.
-#        dupSubUtil(root):
+# Logic: dupSubUtil(root):
 #        subStr = ""
 #        if root is None: return subStr + MARKER
 #        lStr = dupSubUtil(root.left)

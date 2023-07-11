@@ -14,14 +14,14 @@
 #        Add edges between the synonym node.
 #        Run DFS on each of the node which will give the total freq.
 #        Call this func on each node:
-#        getComponentFrequency(node, visitedDict):
-#           if visitedDict[node.name] is True:
-#               return 0
-#           visitedDict[node.name] = True
-#           totalFreq = node.freq
-#           for childNode in node.neighbor:
-#               totalFreq += getComponentFrequency(childNode, visitedDict)
-#           return totalFreq
+# Logic: getComponentFrequency(node, visitedDict):
+#        if visitedDict[node.name] is True:
+#           return 0
+#        visitedDict[node.name] = True
+#        totalFreq = node.freq
+#        for childNode in node.neighbor:
+#           totalFreq += getComponentFrequency(childNode, visitedDict)
+#        return totalFreq
 # Complexity : O(V+E) count of vertex and edges
 
 

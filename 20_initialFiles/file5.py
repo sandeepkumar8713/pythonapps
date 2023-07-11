@@ -9,7 +9,7 @@
 #
 # longest incraesing subsequence
 # Question Type : SimilarAdded
-# Used : sort based on 2d area in decreasing order and then the problem becomes LIS
+# Used : Sort based on 2d area in decreasing order and then the problem becomes LIS
 #        Logic : def boxStacking(array):
 #        height, twoDPlane = cubeDimension(array)
 #        height, twoDPlane = sortBasedOnArea(height, twoDPlane)
@@ -26,24 +26,24 @@
 
 
 def cubeDimension(array):
-    height = [0]*len(array)*2
-    twoDPlane = [[0]*2]*len(array)*2
+    height = [0] * len(array) * 2
+    twoDPlane = [[0] * 2] * len(array) * 2
     count = 0
     for i in range(0, len(array), 3):
-        subarray = array[i:i+3]
-        for j in range(0,3):
-            height[i*2 + j*2] = subarray[(0+j)%3]
-            height[i*2 + j*2 + 1] = subarray[(0 + j) % 3]
+        subarray = array[i:i + 3]
+        for j in range(0, 3):
+            height[i * 2 + j * 2] = subarray[(0 + j) % 3]
+            height[i * 2 + j * 2 + 1] = subarray[(0 + j) % 3]
 
-            twoDPlane[i*2 + j*2] = [subarray[(1 + j) % 3],subarray[(2 + j) % 3]]
-            twoDPlane[i*2 + j*2 + 1] = [subarray[(2 + j) % 3], subarray[(1 + j) % 3]]
+            twoDPlane[i * 2 + j * 2] = [subarray[(1 + j) % 3], subarray[(2 + j) % 3]]
+            twoDPlane[i * 2 + j * 2 + 1] = [subarray[(2 + j) % 3], subarray[(1 + j) % 3]]
         count += 1
 
     showDimension(height, twoDPlane)
-    return height,twoDPlane
+    return height, twoDPlane
 
 
-def showDimension(height,twoDPlane):
+def showDimension(height, twoDPlane):
     for i in range(len(height)):
         # print height[i],twoDPlane[i]
         pass
@@ -55,33 +55,33 @@ def showMatrix(matrix):
         pass
 
 
-def compareDimension(pair1,pair2):
-    if pair1[0]<pair2[0] and pair1[1]<pair2[1]:
-        #print pair1, pair2
+def compareDimension(pair1, pair2):
+    if pair1[0] < pair2[0] and pair1[1] < pair2[1]:
+        # print pair1, pair2
         return True
     return False
 
 
-def sortBasedOnArea(height,twoDPlane):
+def sortBasedOnArea(height, twoDPlane):
     arrayTobeSorted = []
     for item in twoDPlane:
-        arrayTobeSorted.append(item[0]*item[1])
+        arrayTobeSorted.append(item[0] * item[1])
 
-    sortedIndices=[i[0] for i in sorted(enumerate(arrayTobeSorted), key=lambda x: x[1])]
+    sortedIndices = [i[0] for i in sorted(enumerate(arrayTobeSorted), key=lambda x: x[1])]
 
-    #decreasing value
+    # decreasing value
     sortedtwoDplane = []
     sortedHeight = []
     for item in sortedIndices:
-        sortedtwoDplane.insert(0,twoDPlane[item])
-        sortedHeight.insert(0,height[item])
+        sortedtwoDplane.insert(0, twoDPlane[item])
+        sortedHeight.insert(0, height[item])
 
-    return sortedHeight,sortedtwoDplane
+    return sortedHeight, sortedtwoDplane
 
 
 def boxStacking(array):
-    height,twoDPlane = cubeDimension(array)
-    #print(twoDPlane)
+    height, twoDPlane = cubeDimension(array)
+    # print(twoDPlane)
     height, twoDPlane = sortBasedOnArea(height, twoDPlane)
 
     heightArray = []
@@ -98,9 +98,9 @@ def boxStacking(array):
 
 
 if __name__ == "__main__":
-    #dimension = [1,2,3,4,5,6,3,4,1]
-    dimension = [4,6,7,1,2,3,4,5,6,10,12,32]
-    #dimension = [1,2,3,4,5,6]
-    #dimension = [1,2,3]
-    #print(dimension)
+    # dimension = [1,2,3,4,5,6,3,4,1]
+    dimension = [4, 6, 7, 1, 2, 3, 4, 5, 6, 10, 12, 32]
+    # dimension = [1,2,3,4,5,6]
+    # dimension = [1,2,3]
+    # print(dimension)
     print(boxStacking(dimension))

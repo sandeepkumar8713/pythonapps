@@ -15,7 +15,7 @@
 #        If neither is found, then call findLCA over left and right child.
 #        Either of them won't be empty, return that. Since LCA might be present in either
 #        left or right child.
-#        findLCA(root, n1, n2):
+# Logic: findLCA(root, n1, n2):
 #        if root is None: return None
 #        if root.data == n1 or root.data == n2:
 #           return root

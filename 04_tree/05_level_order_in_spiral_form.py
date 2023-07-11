@@ -1,6 +1,7 @@
 # http://www.geeksforgeeks.org/level-order-traversal-in-spiral-form/
-# Question : Write a function to print spiral order traversal of a tree. For below tree, function should print
-# 1, 2, 3, 4, 5, 6, 7.
+# Similar : https://leetcode.com/problems/binary-tree-level-order-traversal/
+# Question : Write a function to print spiral order traversal of a tree. For below tree,
+# function should print 1, 2, 3, 4, 5, 6, 7.
 #            1
 #         /    \
 #        2      3
@@ -17,7 +18,7 @@
 #        stack for printing from right to left. In every iteration, we have nodes of one
 #        level in one of the stacks. We print the nodes, and push nodes of next level in
 #        other stack.
-#        Logic : def printSpiral(root):
+# Logic: def printSpiral(root):
 #        ltr = True
 #        for i in range(0, height(root)+1):
 #           printGivenLevel(root, i, ltr)
@@ -58,8 +59,7 @@ def height(node):
 def printGivenLevel(root, level, ltr):
     if root is None:
         return
-
-    if level is 1:
+    if level == 1:
         print(root.data,end=" ")
     else:
         if ltr:

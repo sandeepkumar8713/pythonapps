@@ -11,6 +11,19 @@
 # 	        Add all possible directions to it. If it is inside board and non visited
 # 	        push to queue
 # 	        If target reached then return distance
+# Logic: queue.append(Cell(knightPos[0], knightPos[1], 0))
+#        while queue:
+#        qe = queue.pop(0)
+#        if qe.posX is targetPos[0] and qe.posY is targetPos[1]:
+#           break
+#        for i in range(len(dI)):
+#           nextPosI = qe.posX + dI[i]
+#           nextPosJ = qe.posY + dJ[i]
+#           if isSafe(nextPosI, nextPosJ, N, visited):
+#               visited[nextPosI * N + nextPosJ] = True
+#               stepCount = qe.steps + 1
+#               queue.append(Cell(nextPosI, nextPosJ, stepCount))
+#        return qe.steps
 # Complexity : O(N) no. of cells
 
 
@@ -38,8 +51,6 @@ def getMinStep(N, knightPos, targetPos):
     dJ = [-1, -2, -2, -1, 1, 2, 2, 1]
 
     queue.append(Cell(knightPos[0], knightPos[1], 0))
-    qe = queue[0]
-
     while queue:
         qe = queue.pop(0)
         # Destination reached

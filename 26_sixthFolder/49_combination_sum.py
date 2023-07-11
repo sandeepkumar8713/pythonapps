@@ -7,8 +7,7 @@
 # Used : We will use recursion and dp here.
 #        Loop over the given input array, call recursive function over diff of target and ele.
 #        Save intermediate result in dp
-#        Logic :
-#        def combinations(target):
+# Logic: def combinations(target):
 #        if target in dp:
 #           return dp[target]
 #        if target == 0: return 1

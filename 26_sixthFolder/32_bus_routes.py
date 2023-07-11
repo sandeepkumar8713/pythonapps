@@ -20,8 +20,7 @@
 #        Keep looping while queue is not empty. Also keep count of busId's changed.
 #        When target is reached, return change count.
 #        Note : Here busId is treated as node while doing BFS, not bus stop.
-#        Logic :
-#        for i in range(len(routes)):
+# Logic: for i in range(len(routes)):
 #           route = routes[i]
 #           for node in route:
 #               graph[node] = graph.get(node, []) + [i]

@@ -12,8 +12,7 @@
 #        i.e. l and r, keep increasing l and decreasing r to find appropriate sum.
 #        Append i, l, r in res whose sum is 0.
 #        Return res.
-#        Logic:
-#        inpArr.sort()
+# Logic: inpArr.sort()
 #        for i in range(n):
 #           l = i + 1
 #           r = n - 1
@@ -30,7 +29,7 @@
 #               else:
 #                   l += 1
 #        return res
-# Complexity : O(n)
+# Complexity : O(n log n)
 
 
 def threeSum(inpArr):
@@ -41,14 +40,14 @@ def threeSum(inpArr):
     for i in range(n):
         l = i + 1
         r = n - 1
-        if i > 0 and inpArr[i] == inpArr[i-1]:
+        if i > 0 and inpArr[i] == inpArr[i - 1]:
             continue
 
         while l < r:
             if inpArr[i] + inpArr[l] + inpArr[r] == 0:
-                res.append([inpArr[i], inpArr[l],inpArr[r]])
+                res.append([inpArr[i], inpArr[l], inpArr[r]])
                 l += 1
-                while l < r and inpArr[l] == inpArr[l-1]:
+                while l < r and inpArr[l] == inpArr[l - 1]:
                     l += 1
             elif inpArr[i] + inpArr[l] + inpArr[r] > 0:
                 r -= 1
@@ -60,4 +59,4 @@ def threeSum(inpArr):
 
 if __name__ == "__main__":
     nums = [-1, 0, 1, 2, -1, -4]
-    print (threeSum(nums))
+    print(threeSum(nums))

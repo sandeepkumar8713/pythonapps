@@ -1,4 +1,5 @@
 # https://www.geeksforgeeks.org/rearrange-a-given-linked-list-in-place/
+# https://leetcode.com/problems/reorder-list/
 # Question : Given a singly linked list L0 -> L1 -> ... -> Ln-1 -> Ln. Rearrange the
 # nodes in the list so that the new formed list is : L0 -> Ln -> L1 -> Ln-1 -> L2 -> Ln-2 ...
 #
@@ -9,7 +10,7 @@
 # Used : Split the linked list in two halves using found middle point.
 #        Reverse the second half.
 #        Do alternate merge of first and second halves.
-#        mergeSecondHalf():
+# Logic: mergeSecondHalf():
 #        Calculate halfSize(n/2).
 #        If n is odd: midPoint = halfSize + 1. else : midPoint = halfSize.
 #        Call divideLink(first,midpoint) function which would set null at end of first

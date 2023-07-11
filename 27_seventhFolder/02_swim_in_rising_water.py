@@ -16,8 +16,7 @@
 #        Keep track of visited cells.
 #        It is BFS with special condition that pop is done for min cost.
 #        Return cost when target is reached.
-#        Logic :
-#        minHeap = [[grid[0][0], 0, 0]]
+# Logic: minHeap = [[grid[0][0], 0, 0]]
 #        while minHeap:
 #           h, i, j = heapq.heappop(minHeap)
 #           if i == endIdx and j == endIdx:
@@ -53,9 +52,13 @@ def swimInWater(grid):
 
 
 if __name__ == "__main__":
-    grid = [[0, 2], [1, 3]]
+    grid = [[0, 2],
+            [1, 3]]
     print(swimInWater(grid))
 
-    grid = [[0, 1, 2, 3, 4], [24, 23, 22, 21, 5], [12, 13, 14, 15, 16], [11, 17, 18, 19, 20],
+    grid = [[0, 1, 2, 3, 4],
+            [24, 23, 22, 21, 5],
+            [12, 13, 14, 15, 16],
+            [11, 17, 18, 19, 20],
             [10, 9, 8, 7, 6]]
     print(swimInWater(grid))
