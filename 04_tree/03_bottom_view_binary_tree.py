@@ -18,8 +18,7 @@
 #        each node. Push root element in queue, loop until queue is empty while pushing
 #        left and right nodes in queue. In each iteration, update the map with HD value
 #        and data. After the loop, sort the map based on keys and print its value.
-#        Logic :
-#        while len(queue) > 0:
+# Logic: while len(queue) > 0:
 #           temp = queue.pop(0)
 #           hd = temp.hd
 #           map[hd] = temp.data

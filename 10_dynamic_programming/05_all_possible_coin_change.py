@@ -1,4 +1,5 @@
 # CTCI : Q8_11_Coins
+# https://leetcode.com/problems/coin-change-ii/
 # Question : Given a value N, if we want to make change for N cents, and we have infinite
 # supply of each of S = { S1, S2, .. , Sm} valued coins, how many ways can we make the
 # change? The order of coins doesn't matter.
@@ -42,7 +43,12 @@ def count(coinList, targetSum):
 if __name__ == "__main__":
     coinList = [1, 2, 3]
     targetSum = 4
+    print("Possible ways to make change : " + str(count(coinList, targetSum)))
 
-    # coinList = {2, 5, 3, 6}
-    # targetSum = 10
+    coinList = {2, 5, 3, 6}
+    targetSum = 10
+    print("Possible ways to make change : " + str(count(coinList, targetSum)))
+
+    coinList = [1, 2, 5]
+    targetSum = 5
     print("Possible ways to make change : " + str(count(coinList, targetSum)))

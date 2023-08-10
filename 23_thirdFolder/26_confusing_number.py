@@ -31,6 +31,18 @@
 #        getCountUtils(n * 10 + 6, limit, count)
 #        getCountUtils(n * 10 + 8, limit, count)
 #        getCountUtils(n * 10 + 9, limit, count)
+#
+#        def isFancy(inpArr):
+#        leftIndex = 0
+#        rightIndex = len(inpArr) - 1
+#        while leftIndex <= rightIndex:
+#           leftElement = inpArr[leftIndex]
+#           rightElement = inpArr[rightIndex]
+#           if leftElement not in fancyMap or leftElement != fancyMap[rightElement]:
+#               return False
+#           leftIndex += 1
+#           rightIndex -= 1
+#        return True
 # Complexity : O(n)
 
 

@@ -15,8 +15,7 @@
 # Question Type : Generic
 # Used : Will do bfs. At each step will to move in 2 directions : fwd and backward.
 #        Loop will run until we hit the target. Through BFS we will get shortest path.
-#        Logic :
-#        while len(queue) != 0:
+# Logic: while len(queue) != 0:
 #        size = len(queue)
 #        while size != 0:
 #            currPair = queue.pop(0)

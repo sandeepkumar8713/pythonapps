@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/champagne-tower/
 # Question : There are some glasses with equal capacity as 1 litre. This is Pascal triangle.
 # The glasses are kept as follows:
 #                    1
@@ -15,8 +16,7 @@
 #        desired glass.
 #        Return the amount in desired glass. If value is more than 1 then distribute the
 #        remaining water in two half in 2 lower glasses.
-#        Logic :
-#        findWater(i, j, K):
+# Logic: findWater(i, j, K):
 #        glass = [0] * ((i+1)*(i+2) // 2)
 #        glass[0] = K, index = 0
 #        for row in range(1, i+1, 1):

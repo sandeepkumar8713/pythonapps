@@ -65,4 +65,4 @@ if __name__ == "__main__":
     arr = [2, 7, 6, 1, 4, 5]
     n = len(arr)
     k = 3
-    print("Maximum number of chocolates: ", maxNumOfChocolates(arr, n, k))
+    print("Maximum number of chocolates to each student: ", maxNumOfChocolates(arr, n, k))

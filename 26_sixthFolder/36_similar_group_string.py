@@ -18,8 +18,7 @@
 #        The similarity means a edge b/w 2 nodes.
 #        Now do parent and union on graph.
 #        Return len of disjoint set.
-#        Logic :
-#        def is_sim(s1, s2):
+# Logic: def is_sim(s1, s2):
 #        n = len(s1), diff = 0
 #        for i in range(n):
 #           if s1[i] != s2[i]: diff += 1

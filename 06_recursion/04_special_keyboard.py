@@ -1,4 +1,7 @@
 # https://www.geeksforgeeks.org/how-to-print-maximum-number-of-a-using-given-four-keys/
+# https://leetcode.com/problems/4-keys-keyboard/
+# https://www.jiakaobo.com/leetcode/651.%204%20Keys%20Keyboard.html
+# Similar : https://leetcode.com/problems/2-keys-keyboard/
 # Question : Imagine you have a special keyboard with the following keys:
 # Key 1:  Prints 'A' on screen
 # Key 2: (Ctrl-A): Select screen
@@ -22,8 +25,7 @@
 #        generate the optimal length. Here formula is : curr = (n-b-1)*screen[b-1]
 #        (b is the no. of keystrokes already entered before copy)
 #        This solved through dynamic programming.
-#        Logic :
-#        for n in range(7, N+1, 1):
+# Logic: for n in range(7, N+1, 1):
 #           screen[n-1] = 0
 #           for b in range(n-3, 0, -1):
 #               curr = (n-b-1) * screen[b-1]

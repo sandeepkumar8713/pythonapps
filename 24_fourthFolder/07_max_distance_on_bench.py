@@ -8,7 +8,6 @@
 #        these tell the left and right distance from current seat to previous seat.
 #        If the bench is empty place it on first index. Next time place it at last index.
 #        Now make a seat(0,n-1) and insert in max heap.
-#        When next person comes in,
 #        When next person comes in, pop top element from the max heap, result will be
 #        (left+right)/2 of popped element.
 #        Insert 2 nodes : seat(left,(left+right)/2) and seat((left+right)/2,right) in max

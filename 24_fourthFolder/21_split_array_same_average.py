@@ -1,13 +1,12 @@
 # https://massivealgorithms.blogspot.com/2019/03/leetcode-805-split-array-with-same.html
+# https://leetcode.com/problems/split-array-with-same-average/
 # https://leetcode.com/problems/split-array-with-same-average/discuss/120830/DP-with-bitset-over-size
 # Question : In a given integer array A, we must move every element of A to either list B or list C.
 # (B and C initially start empty.)
-# Return true if and only if after such a move, it is possible that the average value of B is equal to the average
-# value of C, and B and C are both non-empty.
+# Return true if and only if after such a move, it is possible that the average value of B is equal
+# to the average value of C, and B and C are both non-empty.
 #
-# Example :
-# Input:
-# [1,2,3,4,5,6,7,8]
+# Example : Input: [1,2,3,4,5,6,7,8]
 # Output: true
 #
 # Question Type : ShouldSee

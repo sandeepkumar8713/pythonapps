@@ -1,42 +1,53 @@
 # https://leetcode.com/problems/first-missing-positive/discuss/269453/0-ms-beat-100-java-submission-first-missing-positive
+# https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array-set-2/
 # Question : Given an unsorted integer array, find the smallest missing positive integer.
+# You must implement an algorithm that runs in O(n) time and uses O(1) auxiliary space.
 #
 # Example 1: Input: [1,2,0]
 # Output: 3
 #
-# Question Type : Easy
-# Used : Run a loop over the given elements. If this ele is positive and less than count of inpArr.
-#        Assign this in tempArr at same index. Later on run loop for the tempArr,
-#        return the index at which its value doesn't match.
-#        Logic :
-#        for ele in inpArr:
-#           if ele > 0 and ele <= n:
-#               if tempArr[ele] != ele: tempArr[ele] = ele
-#        j = 1
-#        while j < len(tempArr):
-#           if tempArr[j] != j: return j
-#           j += 1
-#        return j
+# Question Type : ShouldSee
+# Used : Run a while on the given array. Find correct index for the element assuming index starts from 0.
+#        c = inpArr[i] - 1.
+#        If the current element is +ve and not placed at its correct position, swap element at i and c.
+#        else increment i
+#        Now run another loop, to find the element which is not at it correct position.
+# Logic: while i < n:
+#           c = inpArr[i] - 1
+#           if inpArr[i] > 0 and c < n:
+#               if inpArr[i] != inpArr[c]:
+#                   inpArr[c], inpArr[i] = inpArr[i], inpArr[c]
+#                   continue
+#           i += 1
+#        for i in range(n):
+#           if inpArr[i] != i + 1:
+#               return i + 1
+#        return n + 1
 # Complexity : O(n)
 
 
 def firstMissingPositive(inpArr):
     n = len(inpArr)
-    tempArr = [0] * (n + 1)
-    for ele in inpArr:
-        if ele > 0 and ele <= n:
-            if tempArr[ele] != ele:
-                tempArr[ele] = ele
+    i = 0
+    while i < n:
+        c = inpArr[i] - 1
 
-    j = 1
-    while j < len(tempArr):
-        if tempArr[j] != j:
-            return j
-        j += 1
+        if inpArr[i] > 0 and c < n:
+            if inpArr[i] != inpArr[c]:
+                inpArr[c], inpArr[i] = inpArr[i], inpArr[c]
+                continue
+        i += 1
 
-    return j
+    for i in range(n):
+        if inpArr[i] != i + 1:
+            return i + 1
+
+    return n + 1
 
 
 if __name__ == "__main__":
     inpArr = [3, 4, -1, 1]
+    print(firstMissingPositive(inpArr))
+
+    inpArr = [2, 3, 7, 6, 8, -1, -10, 15]
     print(firstMissingPositive(inpArr))

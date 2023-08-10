@@ -20,6 +20,7 @@
 #        overall_pos = (max_val + 1) * col_count
 #        if overall_pos > screen_width: return False
 #        return True
+#
 #        print_ls(filenames, screen_width):
 #        left = 1, right = len(filenames)
 #        while left < right:

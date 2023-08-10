@@ -16,6 +16,10 @@
 #        Loop over the remaining elements, the count[i] would be sum of 3 previous counts
 #           as 1, 2, 3 steps are allowed.
 #        return count[n]
+# Logic: count[0] = 1, count[1] = 1, count[2] = 2
+#        for i in range(3, dist + 1):
+#           count[i] = (count[i - 1] + count[i - 2] + count[i - 3])
+#        return count[dist]
 # Complexity : O(n)
 
 

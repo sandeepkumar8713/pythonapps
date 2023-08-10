@@ -24,8 +24,7 @@
 #        The answer for a node is the same as the answer for it's parent (w) except it is one unit distance
 #        closer to all the members of its subtree (- weights[node]) and it is one unit farther away from
 #        every node in the graph that is not in its subtree (+ N - weights[node]).
-#        Logic :
-#        def dfs(adjMap, weights, depths, node, parent, depth):
+# Logic: def dfs(adjMap, weights, depths, node, parent, depth):
 #        ans = 1
 #        for neib in adjMap[node]:
 #           if neib != parent:

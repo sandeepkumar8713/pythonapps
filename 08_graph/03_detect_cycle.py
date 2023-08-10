@@ -1,4 +1,5 @@
 # https://www.geeksforgeeks.org/detect-cycle-in-a-graph/
+# Similar : https://leetcode.com/problems/course-schedule/description/
 # Question : Given a directed graph, check whether the graph contains a cycle or not.
 # Your function should return true if the given graph contains at least one cycle,
 # else return false. For example, the following graph contains three
@@ -14,8 +15,7 @@
 #        return True.
 #        While exiting a stack (recursive func call), mark that vertex in recStack as false.
 #        If we come out of above loop then return false. No cycle found.
-#        Logic :
-#        isCyclicUtils(self, v, visited, recStack):
+# Logic: isCyclicUtils(self, v, visited, recStack):
 #        visited[v] = True, recStack[v] = True
 #        for i in self.graph[v]:
 #           if visited[i] is False:
@@ -24,6 +24,16 @@
 #               elif recStack[i] is True:
 #                   return True
 #        recStack[v] = False
+#        return False
+#
+#        def isCyclic()
+#        visited = [False] * V
+#        recStack = [False] * V
+#        for i in self.graph.keys():
+#           if visited[i] is False:
+#               self.isCyclicUtils(i, visited, recStack)
+#           elif recStack[i] is True:
+#               return True
 #        return False
 # Complexity : O(V+E) count of vertex and edges
 

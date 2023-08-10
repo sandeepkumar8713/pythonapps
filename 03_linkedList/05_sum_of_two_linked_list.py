@@ -8,8 +8,30 @@
 # Used : If the size of two linked list is same then it is easy. Recur till the end
 #        and come back adding. If the size is different, move the current pointer of
 #        the larger list to the same size add like above.
-#        Now do recur from head to current for larger list till ens and come back
+#        Now do recur from head to current for larger list till end and come back
 #        adding carry.
+# Logic: def addSameSize(head1, head2, carry):
+#        if head1 is None: return None, 0
+#        resultNode = Node(0)
+#        resultNodeNext, carry = addSameSize(head1.getNext(), head2.getNext(), carry)
+#        sum = head1.data + head2.data + carry
+#        carry = sum / 10
+#        sum = sum % 10
+#        resultNode.setData(sum)
+#        resultNode.setNext(resultNodeNext)
+#        return resultNode, carry
+#
+#        def addCarryToRemaining(head1, curr, carry, resultNode):
+#        if head1 is not curr:
+#           resultNodeNext, carry = addCarryToRemaining(head1.getNext(), curr, carry, resultNode)
+#           sum = head1.data + carry
+#           carry = sum / 10
+#           sum = sum % 10
+#           resultNode = Node(sum)
+#           resultNode.setNext(resultNodeNext)
+#           return resultNode, carry
+#        else:
+#           return resultNode, carry
 # Complexity : O(n)
 
 

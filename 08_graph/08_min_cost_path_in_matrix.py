@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/minimum-path-sum/
 # Question : Given a two dimensional grid, each cell of which contains integer cost which
 # represents a cost to traverse through that cell, we need to find a path from top left cell
 # to bottom right cell by which total cost incurred is minimum.
@@ -14,6 +15,18 @@
 #           then remove its previous entry, as we got lesser cost to reach this cell.
 #           Now append this cell in queue and update the dist[nextCell] with lower cost.
 #        return dist[destination]
+# Logic: while len(queue) is not 0:
+#        cell = queue.pop(0)
+#        for i in range(len(dI)):
+#           nextI = cell.i + dI[i]
+#           nextJ = cell.j + dJ[i]
+#           if isSafe(grid, nextI, nextJ):
+#               if dist[nextI][nextJ] > dist[cell.i][cell.j] + grid[nextI][nextJ]:
+#                   if dist[nextI][nextJ] is not sys.maxsize:
+#                       removePrevious(queue, nextI, nextJ)
+#                   dist[nextI][nextJ] = dist[cell.i][cell.j] + grid[nextI][nextJ]
+#                   queue.append(Cell(nextI, nextJ))
+#        return dist[dest["i"]][dest["j"]]
 # Complexity : O(n^2)
 
 import sys
@@ -41,7 +54,7 @@ def removePrevious(queue, i, j):
             indexToBeDeleted = index
         index += 1
 
-    if indexToBeDeleted is not -1:
+    if indexToBeDeleted != -1:
         queue.pop(indexToBeDeleted)
 
 
@@ -61,7 +74,7 @@ def shortestPath(grid, src, dest):
     queue.append(Cell(src["i"], src["j"]))
     dist[src["i"]][src["j"]] = grid[src["i"]][src["j"]]
 
-    while len(queue) is not 0:
+    while len(queue) != 0:
         cell = queue.pop(0)
 
         for i in range(len(dI)):
@@ -94,4 +107,11 @@ if __name__ == "__main__":
 
     # src = {"i": 0, "j": 0}
     # dest = {"i": 0, "j": 0}
+    print(shortestPath(grid, src, dest))
+
+    grid = [[1, 3, 1],
+            [1, 5, 1],
+            [4, 2, 1]]
+    src = {"i": 0, "j": 0}
+    dest = {"i": 2, "j": 2}
     print(shortestPath(grid, src, dest))

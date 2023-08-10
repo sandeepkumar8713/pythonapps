@@ -12,8 +12,7 @@
 # Used : We have to use BFS with special node. Here node is tuple of nodeIndex
 #        and bit vector of visited nodes. Before running BFS, insert all nodes with cost 0
 #        in queue. During loop, return cost, when target visit bit vector is reached.
-#        Logic :
-#        for i in range(n):
+# Logic: for i in range(n):
 #           node = (i, (0 | 1 << i))
 #           queue.append((0, node))
 #           visited.add(node)

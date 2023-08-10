@@ -5,7 +5,7 @@
 # Input: str = "abcde"
 # Output: true
 #
-# Question Type : Easy
+# Question Type : Asked
 # Used : Take checker = 0, loop over each char: left shift 1 by the ascii value of char.
 #        If AND operation with checker is > 0 then return false
 #        else do OR operation shifted integer with checker.

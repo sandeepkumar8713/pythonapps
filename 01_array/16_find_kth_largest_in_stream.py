@@ -13,7 +13,16 @@
 # Used : For first k elements make a min heap
 #        Now loop through the remaining elements, if x is greater than top of heap
 #        replace and heapify.
-#        for each iteration top of the heap is kth largest element till now.
+#        for each iteration top of the heap is kth largest element till now.\
+# Logic: mh = MinHeap()
+#        mh.buildHeap(arr, k)
+#        result.append(mh.getMin())
+#        for i in range(k, len(arr)):
+#           x = arr[i]
+#           if x > mh.getMin():
+#               mh.replaceMin(x)
+#           result.append(mh.getMin())
+#        print(result)
 # Complexity : build heap = O(k) , heapify = O(log k), search and replace = O( n log k)
 #              total = O( k log k + n log k)
 

@@ -10,8 +10,7 @@
 #        multiplied digit.
 #        needs to be placed. Also take care of carry.
 #        After the loop, reverse the ans array and return.
-#        Logic:
-#        first_no = num1[::-1]
+# Logic: first_no = num1[::-1]
 #        second_no = num2[::-1]
 #        answer = [0] * (len(first_no) + len(second_no))
 #        for i2, digit2 in enumerate(second_no):

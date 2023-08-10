@@ -13,8 +13,10 @@
 #            Call the function again on it.
 #            Else median exist in arr1[0...mid] and arr2[mid...n-1]. Call function on it.
 #        While calling recursive function take care of n being odd or even.
-#        If n = 10 send 5 values to recursive function, i.e from index 0 to 4 and 5 to 9
-#        If n = 11 send 6 values to recursive function, i.e from index 0 to 5 and 5 to 10
+#        If n = 10 send 5 values each to recursive function,
+#           i.e from index 0 to 4 and 5 to 9
+#        If n = 11 send 6 values each to recursive function, mid will be sent in both
+#           i.e from index 0 to 5 and 5 to 10
 # Complexity : O(log n)
 
 

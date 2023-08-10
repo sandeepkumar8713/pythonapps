@@ -18,8 +18,7 @@
 #        only if its height higher than or equal to current cell's height.
 #        While doing so keep track of cells visited in two separate matrix.
 #        Our ans is intersection of these two visited matrix.
-#        Logic:
-#        def BFS(inputMat, m, n, queue, visited):
+# Logic: def BFS(inputMat, m, n, queue, visited):
 #        for i, j in queue: visited[i][j] = 1
 #        while queue:
 #           x, y = queue.pop()
@@ -75,6 +74,14 @@ def pacificAtlantic(heights):
 
     BFS(heights, m, n, atlanticQ, atVis)
     BFS(heights, m, n, pacificQ, pcVis)
+
+    print ("Atlantic")
+    for row in atVis:
+        print (row)
+
+    print("Pacific")
+    for row in pcVis:
+        print (row)
 
     for i in range(m):
         for j in range(n):

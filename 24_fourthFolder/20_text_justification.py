@@ -21,13 +21,12 @@
 #
 # Question Type : ShouldSee
 # Used : First calculate how many words with 1 space can be added in a row.
-#        Now calculate average and remainder space to filled in that row.
+#        Now calculate average and remainder space, to filled in that row.
 #        avg = (constLen - rowLen) / wordCount
 #        remainder = (constLen - rowLen) % wordCount
 #        For last row set avg = rem = 0
-#        Now after each word add avg space and 1 remainder space. That is how we will get justified line
-#        Logic :
-#        while i < n:
+#        Now after each word, add avg space and 1 remainder space. That is how we will get justified line
+# Logic: while i < n:
 #           j = i
 #           rowLen = len(words[i])
 #           while i < n-1 and rowLen + len(words[i+1]) + 1 <= constLen:

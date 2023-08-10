@@ -13,11 +13,17 @@
 #        Call areIdentical(T, S) and return True if they are same
 #        Else return isSubtree(T.left, S) or isSubtree(T.right, S)
 #        (We check by taking left and right subtree as root)
-#        isSubtree(T, S):
+# Logic: isSubtree(T, S):
 #        if S is None: return True
 #        if T is None: return True
 #        if areIdentical(T, S): return True
 #        return isSubtree(T.left, S) or isSubtree(T.right, S)
+#
+#        def areIdentical(root1, root2):
+#        if root1 is None and root2 is None: return True
+#        if root1 is None or root2 is None: return False
+#        return root1.data == root2.data and
+#        areIdentical(root1.left, root2.left) and areIdentical(root1.right, root2.right)
 # Complexity : O(n^2)
 
 

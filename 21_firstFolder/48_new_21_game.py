@@ -11,7 +11,7 @@
 #
 # Question Type : OddOne
 # Used : See the link for explanation.
-#        Logic : def new21Game(N, K, W):
+# Logic: def new21Game(N, K, W):
 #        dp = [0.0] * (N + W + 1)
 #        for k in xrange(K, N + 1): dp[k] = 1.0
 #        S = min(N - K + 1, W)

@@ -30,7 +30,7 @@
 #        For the tree valid question: A tree is a graph that doesn't have a cycle.
 #        So we can use the same logic here.
 #        There should not be redundant edges in tree.
-#        Logic : def findRedundantConnection(edges):
+# Logic: def findRedundantConnection(edges):
 #        def union(x, y):
 #           xset = find(x)
 #           yset = find(y)

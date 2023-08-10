@@ -27,7 +27,7 @@
 #        Else use the wordEdge, to find which all
 #        words had same similarity score (Our secret is among them).
 #        Repeat the above process. This way we would reduce the word list count.
-#        Logic : def findSecretWord(wordlist, master):
+# Logic: def findSecretWord(wordlist, master):
 #        wordEdge = defaultdict(lambda: defaultdict(list))
 #        for i in range(len(wordlist)):
 #           for j in range(i+1, len(wordlist)):
@@ -36,6 +36,7 @@
 #               simScore = similarity(word_1, word_2)
 #               wordEdge[word_1][simScore].append(word_2)
 #               wordEdge[word_2][simScore].append(word_1)
+#
 #        chance = 10
 #        while chance > 0 and wordlist:
 #           matched = master.guess(wordlist[0])

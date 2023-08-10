@@ -1,4 +1,6 @@
 # CTCI : Q1_06_String_Compression
+# https://leetcode.com/problems/encode-string-with-shortest-length/
+# https://leetcode.ca/all/471.html
 # Question : Implement a method to perform basic string compression using the counts
 # of repeated characters. For example, the string aabcccccaaa would become a2blc5a3. If the
 # "compressed" string would not become smaller than the original string, your method should return
@@ -33,5 +35,7 @@ def compress(inpStr):
 
 if __name__ == "__main__":
     inpStr = "aa"
+    print(compress(inpStr))
+
     inpStr = "aabcccccaaa"
     print(compress(inpStr))

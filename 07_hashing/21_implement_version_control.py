@@ -19,8 +19,9 @@
 # Question Type : ShouldSee
 # Used : Use dict here. Key/index should be used once. It should have list of values
 #        along with version for each key.
-#        This is for second question. key : index, value : [snapId, value]
-#        Logic : class SnapshotArray:
+#        This is for second question.
+#        Data structure Dict = key : index, value : [snapId, value]
+# Logic: class SnapshotArray:
 #        def __init__(self, length):
 #        self.record = [[[0, 0]] for i in range(length)]
 #        self.snap_ind = 0
@@ -29,6 +30,7 @@
 #           self.record[index][-1][1] = val
 #        else:
 #            self.record[index].append([self.snap_ind, val])
+#
 #        def snap(self):
 #        self.snap_ind += 1
 #        return self.snap_ind - 1

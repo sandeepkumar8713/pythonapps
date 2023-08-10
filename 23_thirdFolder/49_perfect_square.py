@@ -11,7 +11,7 @@
 #        squares using BFS. Insert the difference into queue and search for next square.
 #        By bfs we will make sure that we reach the zero fastest by keep counting the layers
 #        of square added in each path.
-#        Logic : def numSquares(n):
+# Logic: def numSquares(n):
 #        squares = []
 #        for i in range(1, n/2 + 1): squares.append(i ** 2)
 #        count = 1, queue = [n]

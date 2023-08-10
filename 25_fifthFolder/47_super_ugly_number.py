@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/super-ugly-number/
+# Similar : https://leetcode.com/problems/ugly-number-ii/
 # Question : A super ugly number is a positive integer whose prime factors are in the array primes.
 # Given an integer n and an array of integers primes, return the nth super ugly number.
 # The nth super ugly number is guaranteed to fit in a 32-bit signed integer.
@@ -20,8 +21,7 @@
 #              increment the value of p[i] by 1
 #              multiply prime number with ans element indexed at p[i]
 #        return ans[-1]
-#        Logic :
-#        p = [0] * len(primes), ans = [1], heap = []
+# Logic: p = [0] * len(primes), ans = [1], heap = []
 #        for i in range(len(primes)):
 #           heapq.heappush(heap, (primes[i] * ans[p[i]], i))
 #        for _ in range(n - 1):

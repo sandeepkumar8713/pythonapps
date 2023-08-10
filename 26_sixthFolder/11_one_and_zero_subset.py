@@ -12,8 +12,7 @@
 #        Now make all possible pairs by running 2 loops. Check if pairs can be merged and if count
 #        value can be increased. (like box stacking). While doing so keep track of max count.
 #        After the loop, return maxCount
-#        Logic :
-#        for i in range(1, n):
+# Logic: for i in range(1, n):
 #           for j in range(i):
 #               rightEle = dp[i]
 #               leftEle = dp[j]

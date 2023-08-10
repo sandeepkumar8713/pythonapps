@@ -2,7 +2,7 @@
 # Question : Given two strings str1 and str2, write a function that prints all inter leavings
 # of the given two strings. You may assume that all characters in both strings are different.
 #
-# Question Type : Easy
+# Question Type : Generic
 # Input: str1 = "AB",  str2 = "CD"
 # Output:
 #     ABCD
@@ -11,7 +11,6 @@
 #     CABD
 #     CADB
 #     CDAB
-#
 # Used : Use recursion, 2 ways choose either from s1 or s2
 #        printIlsRecur(str1, str2, iStr, m, n, i):
 #        if m == 0 and n == 0:

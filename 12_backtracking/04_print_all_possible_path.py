@@ -27,6 +27,22 @@
 #           the last element from path and mark the current cell unvisited.
 #        return res
 #        If findPath returns False to the driver function it means that no path is possible.
+# Logic: def findPath(grid, visited, path, m, n):
+#        if row - 1 == m and col - 1 == n:
+#           print(''.join(path))
+#           return True
+#        res = False
+#        for i in range(len(dI)):
+#           nextI = m + dI[i]
+#           nextJ = n + dJ[i]
+#           nextDir = dLabel[i]
+#           if isSafe(grid, visited, nextI, nextJ):
+#               visited[nextI][nextJ] = 1
+#               path.append(nextDir)
+#               res = findPath(grid, visited, path, nextI, nextJ) or res
+#               path.pop()
+#               visited[nextI][nextJ] = 0
+#        return res
 # Complexity : O(N!)
 
 dI = [0, 0, -1, 1]

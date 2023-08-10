@@ -1,5 +1,3 @@
-AP Formula : Sn = n/2(2a + (n-1)d)
-
 Total number of possible Binary Search Trees with n different keys
 Catalan number Cn = (2n)!/(n+1)!*n! : 2nCn / (n + 1)
 
@@ -83,8 +81,9 @@ return res
 INT_BIT = sys.getsizeof(int())
 
 ---------------------------------------------------------------------------------
+AP Formula : Sn = n/2(2a + (n-1)d)
 
-class TrieNode():
+class TrieNode:
     def __init__(self):
         self.children = dict()
         self.word = ''
@@ -101,21 +100,22 @@ def build_trie(words):
     return trie
 
 Merge sort
-# Auxiliary space
-# better for large data structure
+# Uses Auxiliary space
+# Better for large data structure
 
 Quick Sort
-# Worst case
+# Worst case is O(n^2) for already sorted
 # Locality of reference
 
 # Parent union
+# We cannot use union-find to detect cycles in a directed graph.
 def sample():
     def union(i, j, ids):
         ids[find(i, ids)] = find(j, ids)
 
     def find(i, ids):
         while i != ids[i]:
-            ids[i] = ids[ids[i]] # Set grandparent
+            ids[i] = ids[ids[i]] # Set grandparent to parent
             i = ids[i]
         return i
 
@@ -138,7 +138,7 @@ for node in route:
 # Sort in decreasing order based on area.
 allBoxList.sort(key=lambda x: x.getArea(), reverse=True)
 
-Use the sorted func with key as second element i.e. score
+# Use the sorted func with key as second element i.e. score
 result = sorted(inpArr, key=lambda x: x[1])
 
 import functools
@@ -152,8 +152,10 @@ sum of indices are same for diagonal (right to left)
 A set of n can have 2^n subsets. (power subset)
 
 To get sorted key in dict, loop from min(keys) to max(keys).
+We can get a sorted list by looping through it. Remember to increment while ele not found.
 
-It is known for a string of length n, there are a total of n*(n+1)/2 number of substrings.
+# It is known for a string of length n, there are a total of n*(n+1)/2 number of substrings.
+# n items make n*(n-1)/2 pairs
 
 import heapq
 heapq.heapify(pool)
@@ -171,6 +173,86 @@ import sys
 sys.maxsize
 
 while left < right:
-    mid = left + (right - left) / 2
+    mid = left + (right - left) // 2
 
+# To make all possible pairs without index
+for item_1,item_2 in zip(top, top[1:]):
+
+# To make all possible pairs with index
+for i,[x,y] in enumerate(sensors):
+    for I,[X,Y] in enumerate(sensors[i+1:],i+1):
+
+# binary representation
+print (bin(covered_skill))
+
+# math library example
+import math
+dist = math.sqrt(math.pow(x2 - x1, 2) + math.pow(y2 - y1, 2))
+
+class KStacks:
+    def __init__(self, k, n):
+        self.k = k  # Number of stacks.
+        self.n = n  # Total size of array holding all the 'k' stacks.
+
+if __name__ == "__main__":
+
+# Return a list as a string with no delimiter
+return "".join(digits)
+
+# round upto D digits
+return round(mid, D)
+
+# Revise : ACID, CAP, SOLID and SQL VS NOSQL
+# SQL : (ACID, structured data, constraints handled, slow query, DB design takes time, not changing data)
+# NOSQL : (no ACID, non structured data, constraints handled in code, fast query,
+#         DB design not required, lacking of reporting tool, easier scalabilty, used to store large data)
+
+# Fetch row using SQLAlchemy
+query = select(document).where(document.c.document_id == document_id)
+res = db_session.execute(query)
+return res.one_or_none()
+
+# LRU implementation https://www.geeksforgeeks.org/lru-cache-in-python-using-ordereddict/
+# OrderedDict is implemented using double linked list.
+from collections import OrderedDict
+cache = OrderedDict()
+cache[key] = value
+cache.move_to_end(key)     # Move recently used item to end.
+cache.popitem(last=False)  # Remove least recently used item from front.
+
+from datetime import datetime, timedelta
+past = datetime.now() - timedelta(days=1)
+present = datetime.now()
+past < present   # True
+datetime(3000, 1, 1) < present # False
+present - datetime(2000, 4, 4) = datetime.timedelta(days=8515, seconds=56256, microseconds=871972)
+
+return "".join(str(digits) for digits in reversed(answer))
+
+# Find index of element from list
+index = animals.index('dog')
+print(index)
+
+#error
+ValueError: 'dog' is not in list
+
+# Remove ele from list
+prime_numbers.remove(9)
+
+a=[1,2,3,4,5,6,7]
+a[:2] : [1, 2] ## first two elements
+a[2:] : [3, 4, 5, 6, 7] ## Print all elements from index 2
+a[2] : [1, 2] ## Second element
+
+# For minus, assume index from right as -1, -2, -3, -4
+a[-2] : 6 ## Second last element
+a[-2:] : [6, 7] ## last two elements
+a[:-2] : [1, 2, 3, 4, 5] ## Print all elements except last two
+
+a[:-2] + a[-2:] : [1, 2, 3, 4, 5, 6, 7] ## Partition the array at last 2
+
+a[::-1] : [7, 6, 5, 4, 3, 2, 1] ## Reverse the given array
+
+a[::] : [1,2,3,4,5,6,7] ## Copy of given array
+a[0:2] : [1, 2] ## end index is not included in the range.
 ---------------------------------------------------------------

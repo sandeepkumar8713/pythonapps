@@ -1,5 +1,6 @@
 # CTCI : Q8_08_Permutations_With_Dups
 # https://www.geeksforgeeks.org/print-all-permutations-of-a-string-with-duplicates-allowed-in-input-string/
+# Similar : https://leetcode.com/problems/permutations/
 # Question : Given a string that may contain duplicates, write a function to print all
 # permutations of given string such that no permutation is repeated in output.
 #

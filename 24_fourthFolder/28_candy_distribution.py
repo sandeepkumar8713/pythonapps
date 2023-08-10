@@ -14,7 +14,7 @@
 # Question Type : Easy
 # Used : Initially give 1 candy to each child. Make left and right loop, and increase
 #        candy count if neighbours have higher rating.
-#        Logic :
+# Logic: candies = [1] * n
 #        for i in range(1, n):
 #           if ratings[i] > ratings[i-1]: candies[i] = candies[i-1] + 1
 #        for i in range(n-2, 0, -1):

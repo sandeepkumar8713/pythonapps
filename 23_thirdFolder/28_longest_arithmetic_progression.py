@@ -1,4 +1,5 @@
 # https://massivealgorithms.blogspot.com/2019/04/leetcode-1027-longest-arithmetic.html
+# Similar : https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/
 # Question : Given an array A of integers, return the length of the longest arithmetic
 # subsequence in A. Recall that a subsequence of A is a list A[i_1], A[i_2], ..., A[i_k]
 # with 0 <= i_1 < i_2 < ... < i_k <= A.length - 1, and that a sequence B is arithmetic if
@@ -21,8 +22,7 @@
 #        Else, if not, then we can start a new chain of length 2 with this new difference
 #        d and (A[j], A[i]) as its elements.
 #        At the end, we can then return the maximum chain length that we have seen so far.
-#        Logic :
-#        def longestArithSeqLength(inpArr):
+# Logic: def longestArithSeqLength(inpArr):
 #        indexMap = dict(), res = 1, n = len(inpArr)
 #        diffMap = dict()
 #        diffMap[inpArr[0]] = 1

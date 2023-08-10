@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/word-ladder/
 # CTCI : Q17_22_Word_Transformer
 # Question : Given a dictionary, and two words 'start' and 'target' (both of same length).
 # Find length of the smallest chain from 'start' to 'target' if it exists, such that adjacent
@@ -18,6 +19,19 @@
 #        Find the words which are 1 distance away from temp. Add these element along with
 #        distance in the queue. Remove temp word from wordList. If temp is target, return
 #        distance covered.
+# Logic: item = QItem(start, 1)
+#        queue.append(item)
+#        while len(queue) > 0:
+#           curr = queue.pop(0)
+#           for word in wordList:
+#               temp = word
+#               if isadjacent(curr.word, temp):
+#                 item.word = temp
+#                 item.len = curr.len + 1
+#                 queue.append(item)
+#                 wordList.remove(temp) # Like marking visited
+#                 if temp == target:
+#                     return item.len
 # Complexity : O(n*2m) n is number of words and m is length of the string
 
 

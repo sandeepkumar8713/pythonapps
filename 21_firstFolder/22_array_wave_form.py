@@ -8,8 +8,7 @@
 # Question Type : ShouldSee
 # Used : Loop over the array and check only for even index following condition for
 #        i-1 > i < i + 1; else swap
-#        Logic:
-#        sortInWave(arr, n):
+# Logic: sortInWave(arr, n):
 #        for i in range(0, n, 2):
 #           if i > 0 and arr[i - 1] > arr[i]:
 #               arr[i], arr[i - 1] = arr[i - 1], arr[i]

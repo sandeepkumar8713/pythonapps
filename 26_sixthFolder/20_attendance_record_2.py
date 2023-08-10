@@ -21,8 +21,7 @@
 #        put 'L', late count increases, absent count continues
 #        put 'A', late count resets, absent count increases
 #        While doing DFS, save the sub solution in dp.
-#        Logic:
-#        def dfs(dp, n, lateCnt, absntCnt):
+# Logic: def dfs(dp, n, lateCnt, absntCnt):
 #        if lateCnt >= 3 or absntCnt >= 2: return 0
 #        if n == 0: return 1
 #        if (n,lateCnt, absntCnt) in dp: return dp[(n,lateCnt, absntCnt)]

@@ -17,8 +17,7 @@
 #        1. select current i and i + k elements.
 #        2. Skip current i, call dfs for i + 1 index
 #        We should compare sum returned by these 2 and update max in dp.
-#        Logic :
-#        dfs(dp, prefix_sum, i, subArrCount):
+# Logic: dfs(dp, prefix_sum, i, subArrCount):
 #        n = len(prefix_sum) - 1
 #        if subArrCount == 0: return [], 0
 #        if n - i < k * subArrCount: return None, -float("inf")

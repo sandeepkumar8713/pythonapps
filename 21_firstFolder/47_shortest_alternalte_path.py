@@ -16,8 +16,8 @@
 # Question Type : Generic
 # Used : Do BFS, continue with path only if next colour is different than previous color
 #        on this path. When an unvisited node is encountered, update its distance in the
-#        result array.
-#        Logic : def shortestAlternatingPaths(n, red_edges, blue_edges):
+#        result array. Note that visited set has tuple entry of color and node
+# Logic: def shortestAlternatingPaths(n, red_edges, blue_edges):
 #        graph = dict()
 #        for i, j in red_edges:
 #           if i not in graph: graph[i] = [('r', j)]

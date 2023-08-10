@@ -22,7 +22,7 @@
 #        We do dfs over the node, on entry we mark it as gray, if any of the neighbours is gray and
 #        that neighbour is not terminal safe, that means this node is also not terminal safe.
 #        We need to do dfs on each node.
-#        Logic : color = [WHITE] * nodeCount
+# Logic: color = [WHITE] * nodeCount
 #        def dfs(node):
 #        if color[node] != WHITE:
 #           return color[node] == BLACK

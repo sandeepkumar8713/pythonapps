@@ -16,8 +16,7 @@
 # Used : Loop over the given inputArr. At each index we try to make a partition from 0 to i,
 #        Calculate avg and recur for remaining ele with k-1 partition.
 #        Return ans which is max in loop.
-#        Logic :
-#        def find(idx, k):
+# Logic: def find(idx, k):
 #        nonlocal nums
 #        if idx == len(nums): return 0
 #        if k == 1:

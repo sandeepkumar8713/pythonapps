@@ -7,6 +7,7 @@ questionMap['arrayCreation'] = {'01_array/26_min_operation_to_make_same',
                                 '26_sixthFolder/48_min_inc_to_reach_target'}
 
 questionMap['hashing'] = {'07_hashing/05_longest_consecutive_subsequence',
+                          '07_hashing/07_find_all_pair_for_sum',
                           '07_hashing/23_find_possible_concatenation',
                           '12_backtracking/06_find_pattern_in_string',
                           '21_firstFolder/29_couple_holding_hands',
@@ -45,8 +46,6 @@ questionMap['kadane'] = {'21_firstFolder/04_max_submatrix',
                          '24_fourthFolder/10_max_diff_btw_subarray',
                          '27_seventhFolder/17_max_prod_array',
                          '27_seventhFolder/19_max_sub_array'}
-
-questionMap['LIS'] = {'01_array/04_longest_increasing_subsequnce', }
 
 questionMap['minPlatform'] = {'01_array/06_minimum_platform',
                               '23_thirdFolder/47_my_calendar_3'}
@@ -91,7 +90,8 @@ questionMap['heap'] = {'05_heap/01_median_in_stream',
 
 questionMap['mergeSort'] = {'11_divide_and_conquer/06_reverse_pair',
                             '24_fourthFolder/15_counting_inversion',
-                            '26_sixthFolder/01_count_range_sum', }
+                            '26_sixthFolder/01_count_range_sum',
+                            '27_seventhFolder/35_maximum_path_sum'}
 
 questionMap['kRemainder'] = {'01_array/02_find_subarray_for_sum',
                              '01_array/29_chocolate_distribution_consecutive',
@@ -145,7 +145,8 @@ questionMap['binarySearch'] = {'02_string/11_longest_common_prefix',
                                '26_sixthFolder/12_heaters_radius',
                                '26_sixthFolder/23_k_closest_elements',
                                '26_sixthFolder/26_kth_smallest_number',
-                               '26_sixthFolder/40_koko_banana'}
+                               '26_sixthFolder/40_koko_banana',
+                               '27_seventhFolder/40_square_root'}
 
 questionMap['lru'] = {'09_greedy/04_page_fault_in_LRU', }
 
@@ -171,7 +172,8 @@ questionMap['parentUnion'] = {'21_firstFolder/30_redundant_connection',
                               '24_fourthFolder/06_sensor_in_room',
                               '24_fourthFolder/24_largest_connected_component',
                               '25_fifthFolder/33_drop_off_center',
-                              '26_sixthFolder/36_similar_group_string'}
+                              '26_sixthFolder/36_similar_group_string',
+                              '27_seventhFolder/36_province_count'}
 
 questionMap['verticalDist'] = {'04_tree/02_diagonal_traversal', }
 
@@ -278,19 +280,28 @@ questionMap['dpDfs'] = {'02_string/07_longest_common_substring',
                         '26_sixthFolder/20_attendance_record_2',
                         '26_sixthFolder/22_shopping_offers',
                         '26_sixthFolder/45_stone_game_3',
-                        '26_sixthFolder/49_combination_sum', }
+                        '26_sixthFolder/49_combination_sum',
+                        '26_sixthFolder/27_max_sum_of_3_non_overlapping',
+                        '28_eighthFolder/10_paint_house',
+                        '28_eighthFolder/11_flip_game',
+                        '28_eighthFolder/13_android_lock_pattern',
+                        '28_eighthFolder/15_frog_jump'}
 
 questionMap['subMatrixof1'] = {'10_dynamic_programming/14_sub_matrix_with_all_1',
                                '10_dynamic_programming/36_square_submatrix_count',
                                '21_firstFolder/38_submatrix_count_with_all_1',
                                '23_thirdFolder/22_max_black_submatrix', }
 
-questionMap['dpBox'] = {'09_greedy/01_activity_selection',
+questionMap['dpBox'] = {'01_array/04_longest_increasing_subsequnce',
+                        '09_greedy/01_activity_selection',
+                        '09_greedy/01_activity_selection',
                         '09_greedy/08_max_len_chain',
                         '10_dynamic_programming/25_box_stacking',
                         '26_sixthFolder/03_largest_divisible_subset',
                         '26_sixthFolder/11_one_and_zero_subset',
-                        '26_sixthFolder/41_longest_string_chain', }
+                        '26_sixthFolder/41_longest_string_chain',
+                        '27_seventhFolder/37_weight_job_scheduling',
+                        '27_seventhFolder/39_small_team'}
 
 questionMap['subProblem'] = {'09_greedy/02_make_change_with_min_coin',
                              '10_dynamic_programming/05_all_possible_coin_change',
@@ -299,6 +310,7 @@ questionMap['subProblem'] = {'09_greedy/02_make_change_with_min_coin',
                              '10_dynamic_programming/09_minimum_sum_partition',
                              '10_dynamic_programming/12_optimal_game_strategy',
                              '10_dynamic_programming/17_gold_mine',
+                             '10_dynamic_programming/30_check_2_strings_are_interleaved',
                              '10_dynamic_programming/34_assembly_line',
                              '21_firstFolder/42_min_falling_path',
                              '10_dynamic_programming/21_wildcard_pattern_matching',
@@ -309,7 +321,8 @@ questionMap['subProblem'] = {'09_greedy/02_make_change_with_min_coin',
                              '25_fifthFolder/40_word_break_2',
                              '27_seventhFolder/09_min_subsequence_in_big_str',
                              '27_seventhFolder/16_max_steal_house_3',
-                             '27_seventhFolder/25_partition_equal_sum', }
+                             '27_seventhFolder/25_partition_equal_sum',
+                             '28_eighthFolder/07_scramble_string'}
 
 questionMap['minDiffPair'] = {'23_thirdFolder/07_smallest_diff',
                               '23_thirdFolder/17_word_distance', }

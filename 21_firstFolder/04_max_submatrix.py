@@ -18,7 +18,7 @@
 #        sum of all the columns in between for each row. Send that row to Kadane algorithm,
 #        which will return the max sum its corresponding start and end. Compare it with previously
 #        saved max value and update accordingly.
-#        findMaxSum(M):
+# Logic: findMaxSum(M):
 #        col = len(M[1]), row = len(M)
 #        maxSum = -9999
 #        for left in range(0, col):

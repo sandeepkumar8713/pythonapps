@@ -27,8 +27,7 @@
 #           inStart and endStart: iIndex + 1, inEnd for right,   inStart and endStart: inStart, iIndex - 1 for left
 #        Note that we are calling right first, because we reading node data from postOrder array.
 #        return node
-#        Logic :
-#        buildUtil(inOrder, postOrder, inStart, inEnd, postIndex):
+# Logic: buildUtil(inOrder, postOrder, inStart, inEnd, postIndex):
 #        if inStart > inEnd: return None
 #        node = Node(postOrder[postIndex[0]])
 #        postIndex[0] -= 1

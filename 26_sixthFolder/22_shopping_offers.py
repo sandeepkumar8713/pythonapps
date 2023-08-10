@@ -20,8 +20,7 @@
 # Used : We do DFS using DP. DP's index will be tuple of needs array.
 #        For each possible combination of need, check if special can be applied. If applied,
 #        call DFS on remaining needs. While recursive calls, save the sub solution in dp.
-#        Logic :
-#        def dfs(dp, price, specials, needs):
+# Logic: def dfs(dp, price, specials, needs):
 #        if sum(needs) == 0: return 0
 #        if tuple(needs) in dp: return dp[tuple(needs)]
 #        for i in range(len(needs)):

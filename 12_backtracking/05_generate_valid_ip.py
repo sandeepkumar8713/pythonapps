@@ -1,3 +1,4 @@
+# https://www.geeksforgeeks.org/program-generate-possible-valid-ip-addresses-given-string/
 # Question : Given a string containing only digits, restore it by returning all possible
 # valid IP address combinations.
 #
@@ -10,7 +11,7 @@
 #        a ip address. Check if ip is valid, if true then print it.
 #        Condition for valid ip: Spilt the ip in 4 parts can check for
 #           Sub part should not be of length more than 3. It should be between 0 to 255.
-#           It should be more than 0.
+#           It should not be 00 or 000.
 #           It should not have 0 as prefix.
 # Complexity : O(n^3)
 

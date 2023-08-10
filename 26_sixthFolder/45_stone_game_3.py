@@ -1,3 +1,4 @@
+# Similar : https://leetcode.com/problems/stone-game/
 # https://leetcode.com/problems/stone-game-iii/
 # Question : Alice and Bob continue their games with piles of stones. There are several stones
 # arranged in a row, and each stone has an associated value which is an integer given in the
@@ -22,8 +23,7 @@
 #        While doing DFS, keep updating dp dict.
 #        After the DFS, return dp[0]
 #        Alice's score should be +ve for her to win.
-#        Logic :
-#        def dfs(dp, stoneValue, index):
+# Logic: def dfs(dp, stoneValue, index):
 #        n = len(stoneValue)
 #        if index >= n: return 0
 #        if index in dp: return dp[index]

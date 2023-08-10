@@ -22,7 +22,7 @@
 # Question Type : Generic
 # Used : We are going to do binary search from 0 to maxInt, to check that each partition have minimum sum of mid.
 #        Do this while low <= high and return high.
-#        Logic : def splitArray(inpArr, k):
+# Logic: def splitArray(inpArr, k):
 #        low = 0, high = sys.maxint
 #        while low <= high:
 #           mid = low + (high - low) / 2
@@ -31,6 +31,7 @@
 #        maxTotal = [0]
 #        canSplit(inpArr, k, high, maxTotal)
 #        return high, maxTotal[0]
+#
 #        def canSplit(inpArr, k, minSum, maxTotal=None):
 #           partitionCount = 0, total = 0
 #           for i in range(len(inpArr)):

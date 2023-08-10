@@ -11,8 +11,7 @@
 #
 # Question Type : ShouldSee
 # Used : count(n,k) = summation 0 : min(k, n-1) of count(n-1,k-i)
-#        Logic :
-#        dp[][] = [0]
+# Logic: dp[][] = [0]
 #        for i in range(1, n + 1):
 #           for j in range(0, k + 1):
 #               if j == 0: dp[i][j] = 1

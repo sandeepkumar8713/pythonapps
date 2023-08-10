@@ -24,6 +24,26 @@
 #        return inpArr
 # Complexity : O(n)
 
+# Solution doesn't depend on the value of element
+def sortArr(arr):
+    low = 0
+    mid = 1
+    high = len(arr) - 1
+
+    while mid < high:
+        if arr[low] <= arr[mid]:
+            pass
+        else:
+            arr[low], arr[mid] = arr[mid], arr[low]
+            low += 1
+
+        if arr[mid] <= arr[high]:
+            pass
+        else:
+            arr[mid], arr[high] = arr[high], arr[mid]
+            high -= 1
+
+        mid += 1
 
 def sortColors(inpArr):
     low = 0

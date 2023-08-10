@@ -5,6 +5,7 @@
 # Input: str = "abcabcabc"
 # Output: true
 # The given string is 3 times repetition of "abc"
+# length = lps[n - 1] would be 6 in this case, (9 % (9-6)) == 0
 #
 # Question Type : Generic
 # Used : 1) Find length of the longest proper prefix of 'str' which is also a suffix.
@@ -12,6 +13,13 @@
 #           computed in O(n) time using pre-processing step of KMP string matching algorithm.
 #        2) If value of 'n - len' divides n (or 'n % (n-len)' is 0), then return true,
 #           else return false.
+# Logic: n = len(string), lps = [0] * n
+#        computeLPSArray(string, n, lps)
+#        length = lps[n - 1]
+#        if length > 0 and n % (n - length) == 0:
+#           return True
+#        else:
+#           return False
 # Complexity : O(n)
 
 
@@ -45,6 +53,7 @@ def isRepeat(string):
 
     length = lps[n - 1]
 
+    print (length)
     # repeats n/(n-len) times (Readers can print substring nd value of n/(n-len) for more clarity.
     if length > 0 and n % (n - length) == 0:
         return True

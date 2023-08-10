@@ -17,7 +17,7 @@
 #         track of the narrowing min and max allowed values as it goes, looking at each node
 #         only once. The initial values for min and max should be INT_MIN and INT_MAX.
 #         Note that empty tree is a BST.
-#         isBSTUtil(node, mini, maxi):
+# Logic : isBSTUtil(node, mini, maxi):
 #         if node is None: return True
 #         if node.data < mini or node.data > maxi:
 #           return False

@@ -1,4 +1,5 @@
 # https://practice.geeksforgeeks.org/problems/lazy-bartender-amazon-question
+# Similar : https://leetcode.com/problems/smallest-sufficient-team/description/
 # Question : There are N number of possible drinks.(n1,n2..)
 # Has C number of fixed customers.
 # Every customer has fixed favourite set of drinks.

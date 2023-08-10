@@ -1,5 +1,7 @@
 # https://www.geeksforgeeks.org/find-zeroes-to-be-flipped-so-that-number-of-consecutive-1s-is-maximized/
 # Similar : https://leetcode.com/problems/max-consecutive-ones/
+# Similar : https://leetcode.com/problems/maximize-the-confusion-of-an-exam/
+# Similar: https://leetcode.com/problems/max-consecutive-ones-ii/
 # Question : Given a binary array and an integer m, find the position of zeroes
 # flipping which creates maximum number of consecutive 1's in array.
 #

@@ -1,6 +1,6 @@
 # https://massivealgorithms.blogspot.com/2017/04/leetcode-562-longest-line-of.html
 # https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/
-# Question :  Given a 01 matrix M, find the longest line of consecutive one in the matrix.
+# Question : Given a 01 matrix M, find the longest line of consecutive one in the matrix.
 # The line could be horizontal, vertical, diagonal or anti-diagonal.
 #
 # Example: Input:
@@ -16,8 +16,7 @@
 #        If the cell has value 1, add the line length coming from all the 4 directions and
 #        choose max out of it.
 #        After the loop, when we reach the last cell of matrix, return maxLen.
-#        Logic:
-#        dirs = [(0, -1), (-1, -1), (-1, 0), (-1, 1)]
+# Logic: dirs = [(0, -1), (-1, -1), (-1, 0), (-1, 1)]
 #        for i in range(m):
 #           for j in range(n):
 #               if inpMat[i][j] == 0: continue

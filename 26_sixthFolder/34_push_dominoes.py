@@ -19,8 +19,7 @@
 # Used : Convert the given input array into -1, 0 and 1.
 #        Loop over the array, If current ele is 0, its final state is sum of left and right elem.
 #        After the loop, update the ans with char.
-#        Logic :
-#        tempArr = [0]
+# Logic: tempArr = [0]
 #        for item in dominoes:
 #           tempArr.append(map[item])
 #        tempArr.append(0)

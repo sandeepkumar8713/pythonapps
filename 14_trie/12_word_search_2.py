@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/word-search-ii/
+# Similar : https://leetcode.com/problems/word-search/
 # Question : Given an m x n board of characters and a list of strings words, return all words on the board.
 # Each word must be constructed from letters of sequentially adjacent cells, where adjacent cells are
 # horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
@@ -10,7 +11,23 @@
 # Question Type : Generic
 # Used : Make trie using the given word list. Now run 2 loops over the given matrix and check if
 #        that char is present in the trie. if yes, continue further until word is reached.
-#        Logic : walk(board, i, j, trie, m, n):
+#        Make use of # in matrix to denote used characters.
+# Logic: class TrieNode():
+#        def __init__(self):
+#           self.children = dict()
+#           self.word = ''
+#        def build_trie(words):
+#        trie = TrieNode()
+#        for word in words:
+#           temp = trie
+#           for ch in word:
+#               if ch not in temp.children:
+#                   temp.children[ch] = TrieNode()
+#               temp = temp.children[ch]
+#           temp.word = word
+#        return trie
+#
+#        walk(board, i, j, trie, m, n):
 #        if trie.word:
 #           res_list.append(trie.word)
 #           trie.word = ''

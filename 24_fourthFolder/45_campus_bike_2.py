@@ -20,7 +20,7 @@
 #        and bikes are no larger than 10, an integer (32 bits) should be enough to record it. Thus, we can use two
 #        integers to memorize the combination conditions between workers and bikes. In the following code, integer
 #        workersState is for workers, and integer bikesState for bikes.
-#        Logic : def dfs(i, workers, workersState, bikes, bikesState, dp):
+# Logic: def dfs(i, workers, workersState, bikes, bikesState, dp):
 #        if i == len(workers): return 0
 #        if dp[workersState][bikesState] != -1: return dp[workersState][bikesState]
 #        minDis = sys.maxint

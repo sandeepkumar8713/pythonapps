@@ -13,6 +13,18 @@
 #        If query is present and is end of word in Trie, print query.
 #        Else recursively print all nodes under subtree of last matching node for which
 #        isEndOfWord is True.
+# Logic: class TrieNode:
+#        def __init__(self):
+#           self.children = [None] * MAX_CHAR
+#           self.isEndOfWord = False
+#        def insert(self, insStr):
+#           temp = self.root
+#           for level in range(len(insStr)):
+#               index = charToIndex(insStr[level])
+#               if not temp.children[index]:
+#                   temp.children[index] = TrieNode()
+#               temp = temp.children[index]
+#        temp.isEndOfWord = True
 # Complexity : O(n * m) while inserting words in trie
 
 MAX_CHAR = 26

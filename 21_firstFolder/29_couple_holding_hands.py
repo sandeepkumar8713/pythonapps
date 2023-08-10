@@ -16,7 +16,8 @@
 # Question Type : Generic
 # Used : Make a location map. Loop the row, check adjacent elements. If not pair,
 #        use location map to search its pair and swap.
-#        Logic : def minSwapsCouples(row):
+#        Since pair can be 0,1 or 1,0 we are checking this by using mod operation.
+# Logic: def minSwapsCouples(row):
 #        location = {}
 #        for i in range(len(row)):
 #           location[row[i]] = i

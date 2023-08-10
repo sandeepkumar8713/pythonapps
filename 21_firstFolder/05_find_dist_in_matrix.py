@@ -1,4 +1,5 @@
 # https://www.geeksforgeeks.org/distance-nearest-cell-1-binary-matrix/
+# https://leetcode.com/problems/01-matrix/
 # Question : Given a matrix (m*n) filled with X and 0(zero). Calculate the distance from
 # nearest 0 for all cells marked with X. The distance of four neighboring cells
 # (top,bottom,right,left) will be 1. The distance is calculated as |i1 - i2| + |j1 - j2|,
@@ -19,13 +20,13 @@
 #        Do BFS and traverse the graph and keep updating the distance of all the adjacent nodes for
 #        the node which has been popped out.
 #        of queue.
-#        findMinDistance(mat):
+# Logic: findMinDistance(mat):
 #        dist = [9999] * (n*m+1)
 #        visit = [0] * (n*m+1)
 #        queue = [], k = 1
 #        for i in range(0, n):
 #           for j in range(0, m):
-#               if mat[i][j] == 1:
+#               if mat[i][j] == 0:
 #                   dist[k] = 0
 #                   visit[k] = 1
 #                   queue.append(k)
@@ -50,32 +51,31 @@ class Graph:
         self.n = n
         self.m = m
         self.g = []
-        for i in range(0, m*n+1):
+        for i in range(0, m * n + 1):
             self.g.append([])
 
     def createGraph(self):
         k = 1
 
-        for i in range(1, self.n+1):
-            for j in range(1, self.m+1):
+        for i in range(1, self.n + 1):
+            for j in range(1, self.m + 1):
 
                 if i == self.n:
-                    if j != self.m:      # If last row, then add edge on right side.
-                        self.g[k].append(k+1)
-                        self.g[k+1].append(k)
+                    if j != self.m:  # If last row, then add edge on right side.
+                        self.g[k].append(k + 1)
+                        self.g[k + 1].append(k)
 
-                elif j == self.m:        # If last column, then add edge toward down.
-                    self.g[k].append(k+self.m)
-                    self.g[k+self.m].append(k)
+                elif j == self.m:  # If last column, then add edge toward down.
+                    self.g[k].append(k + self.m)
+                    self.g[k + self.m].append(k)
 
-                else:                   # Else make edge in all four direction.
-                    self.g[k].append(k+1)
-                    self.g[k+1].append(k)
-                    self.g[k].append(k+self.m)
-                    self.g[k+self.m].append(k)
+                else:  # Else make edge in all four direction.
+                    self.g[k].append(k + 1)
+                    self.g[k + 1].append(k)
+                    self.g[k].append(k + self.m)
+                    self.g[k + self.m].append(k)
 
                 k += 1
-
 
     def bfs(self, visit, dist, queue):
         while len(queue) != 0:
@@ -84,8 +84,8 @@ class Graph:
 
             for i in range(0, len(self.g[temp])):
                 if visit[self.g[temp][i]] != 1:
-                    #print dist[self.g[temp][i]],dist[temp]+1
-                    dist[self.g[temp][i]] = min(dist[self.g[temp][i]], dist[temp]+1)
+                    # print dist[self.g[temp][i]],dist[temp]+1
+                    dist[self.g[temp][i]] = min(dist[self.g[temp][i]], dist[temp] + 1)
 
                     queue.append(self.g[temp][i])
                     visit[self.g[temp][i]] = 1
@@ -109,14 +109,14 @@ def findMinDistance(mat):
     graph = Graph(n, m)
     graph.createGraph()
 
-    dist = [9999] * (n*m+1)
-    visit = [0] * (n*m+1)
+    dist = [9999] * (n * m + 1)
+    visit = [0] * (n * m + 1)
     queue = []
     k = 1
 
     for i in range(0, n):
         for j in range(0, m):
-            if mat[i][j] == 1:
+            if mat[i][j] == 0:
                 dist[k] = 0
                 visit[k] = 1
                 queue.append(k)
@@ -130,4 +130,14 @@ if __name__ == "__main__":
     mat = [[0, 0, 0, 1],
            [0, 0, 1, 1],
            [0, 1, 1, 0]]
+    findMinDistance(mat)
+
+    mat = [[0, 0, 0],
+           [0, 1, 0],
+           [1, 1, 1]]
+    findMinDistance(mat)
+
+    mat = [[0, 0, 0],
+           [0, 1, 0],
+           [0, 0, 0]]
     findMinDistance(mat)

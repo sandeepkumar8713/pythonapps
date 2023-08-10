@@ -1,4 +1,5 @@
 # https://www.geeksforgeeks.org/print-nodes-distance-k-given-node-binary-tree/
+# https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/
 # Question : Given a binary tree, a target node in the binary tree, and an integer value k,
 # print all the nodes that are at distance k from the given target node.
 # No parent pointers are available.
@@ -18,7 +19,7 @@
 #        Make a function printKDistant(root, k) which print node data at distance k form node k.
 #        Call a recursive function printKDistanceNode(root, target, k).
 #        Return of printKDistanceNode is distance between root and target.
-#        printKDistanceNode(root, target, k):
+# Logic: printKDistanceNode(root, target, k):
 #        if root is None: return -1
 #        if root == target:
 #           printKDistant(root, k), return 0

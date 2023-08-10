@@ -20,6 +20,7 @@
 #        find max ultimate from either : max top or max ultimate
 #        return max top
 # Logic: findMaxUtil(root):
+#        if root is None: return 0
 #        l = findMaxUtil(root.left)
 #        r = findMaxUtil(root.right)
 #        max_single = max(max(l, r) + root.data, root.data)
