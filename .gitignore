@@ -8,3 +8,5 @@ all_questions*.txt
 allFilesComments*.txt
 fileList.txt
 __pycache__/
+.DS_Store
+comments_*.txt

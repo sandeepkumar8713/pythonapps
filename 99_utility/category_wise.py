@@ -207,6 +207,7 @@ questionMap['bfs'] = {'03_linkedList/13_rotten_orange',
                       '24_fourthFolder/37_shortest_distance_from_all_buildings',
                       '24_fourthFolder/42_min_diff_btw_path_and_array',
                       '24_fourthFolder/44_go_game',
+                      '24_fourthFolder/50_escape_large_maze',
                       '25_fifthFolder/12_bipartite_graph',
                       '25_fifthFolder/45_min_height_tree',
                       '26_sixthFolder/10_pacific_water_flow',
@@ -277,15 +278,19 @@ questionMap['dpDfs'] = {'02_string/07_longest_common_substring',
                         '24_fourthFolder/45_campus_bike_2',
                         '24_fourthFolder/47_coke_machine',
                         '25_fifthFolder/46_burst_ballons',
+                        '26_sixthFolder/19_beautiful_arrangement',
                         '26_sixthFolder/20_attendance_record_2',
                         '26_sixthFolder/22_shopping_offers',
+                        '26_sixthFolder/33_sum_of_dist_in_tree',
                         '26_sixthFolder/45_stone_game_3',
                         '26_sixthFolder/49_combination_sum',
                         '26_sixthFolder/27_max_sum_of_3_non_overlapping',
                         '28_eighthFolder/10_paint_house',
                         '28_eighthFolder/11_flip_game',
                         '28_eighthFolder/13_android_lock_pattern',
-                        '28_eighthFolder/15_frog_jump'}
+                        '28_eighthFolder/15_frog_jump',
+                        '28_eighthFolder/17_can_i_win',
+                        '28_eighthFolder/18_concatenated_string'}
 
 questionMap['subMatrixof1'] = {'10_dynamic_programming/14_sub_matrix_with_all_1',
                                '10_dynamic_programming/36_square_submatrix_count',
@@ -301,7 +306,8 @@ questionMap['dpBox'] = {'01_array/04_longest_increasing_subsequnce',
                         '26_sixthFolder/11_one_and_zero_subset',
                         '26_sixthFolder/41_longest_string_chain',
                         '27_seventhFolder/37_weight_job_scheduling',
-                        '27_seventhFolder/39_small_team'}
+                        '27_seventhFolder/39_small_team',
+                        '28_eighthFolder/16_arithmetic_slice_2'}
 
 questionMap['subProblem'] = {'09_greedy/02_make_change_with_min_coin',
                              '10_dynamic_programming/05_all_possible_coin_change',
@@ -322,7 +328,9 @@ questionMap['subProblem'] = {'09_greedy/02_make_change_with_min_coin',
                              '27_seventhFolder/09_min_subsequence_in_big_str',
                              '27_seventhFolder/16_max_steal_house_3',
                              '27_seventhFolder/25_partition_equal_sum',
-                             '28_eighthFolder/07_scramble_string'}
+                             '28_eighthFolder/07_scramble_string',
+                             '28_eighthFolder/19_match_stick_to_square',
+                             '28_eighthFolder/20_target_sum'}
 
 questionMap['minDiffPair'] = {'23_thirdFolder/07_smallest_diff',
                               '23_thirdFolder/17_word_distance', }

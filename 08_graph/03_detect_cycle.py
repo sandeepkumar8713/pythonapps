@@ -5,7 +5,7 @@
 # else return false. For example, the following graph contains three
 # cycles 0->2->0, 0->1->2->0 and 3->3, so your function must return true.
 #
-# Question Type : Generic
+# Question Type : Asked
 # Used : Recursion stack means the single depth while moving from first vertex to last vertex.
 #        While in this stack if we get a previously visited vertex then we can say that we
 #        have a cycle.
@@ -31,9 +31,8 @@
 #        recStack = [False] * V
 #        for i in self.graph.keys():
 #           if visited[i] is False:
-#               self.isCyclicUtils(i, visited, recStack)
-#           elif recStack[i] is True:
-#               return True
+#               if self.isCyclicUtils(i, visited, recStack):
+#                   return True
 #        return False
 # Complexity : O(V+E) count of vertex and edges
 
@@ -69,9 +68,8 @@ class Graph:
 
         for i in self.graph.keys():
             if visited[i] is False:
-                self.isCyclicUtils(i, visited, recStack)
-            elif recStack[i] is True:
-                return True
+                if self.isCyclicUtils(i, visited, recStack):
+                    return True
 
         return False
 

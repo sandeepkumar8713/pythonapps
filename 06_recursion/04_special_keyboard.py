@@ -24,7 +24,7 @@
 #        Use level 2 values, do Ctrl-A, Ctrl-C once and the only Ctrl-V's afterwards to
 #        generate the optimal length. Here formula is : curr = (n-b-1)*screen[b-1]
 #        (b is the no. of keystrokes already entered before copy)
-#        This solved through dynamic programming.
+#        This solved through dynamic programming(sub problem).
 # Logic: for n in range(7, N+1, 1):
 #           screen[n-1] = 0
 #           for b in range(n-3, 0, -1):

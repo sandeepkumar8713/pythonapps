@@ -1,4 +1,5 @@
 # https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/
+# https://leetcode.com/problems/reverse-nodes-in-k-group/
 # Question : Given a linked list, write a function to reverse every k nodes
 # (where k is an input to the function)
 #

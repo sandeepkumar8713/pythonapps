@@ -11,15 +11,16 @@
 #        that amount to maxDebit.
 #        So now maxDebit pays minAmount to maxCredit.
 #        Call the recursive function again.
-#        Logic :  for i in range(n):
-#                   for j in range(n):
-#                       # toGet(col) - toPay(row)
-#                       amount[i] += (graph[j][i] - graph[i][j])
+# Logic: for i in range(n):
+#           for j in range(n):
+#               # toGet(col) - toPay(row)
+#               amount[i] += (graph[j][i] - graph[i][j])
+#
 #        def minCashFlowRec(amount):
 #           maxCreditIndex = amount.index(max(amount))
 #           maxDebitIndex = amount.index(min(amount))
-#           if amount[maxCreditIndex] == 0 and amount[maxDebitIndex] == 0: return
-#
+#           if amount[maxCreditIndex] == 0 and amount[maxDebitIndex] == 0:
+#               return
 #           minAmount = min(-amount[maxDebitIndex], amount[maxCreditIndex])
 #           amount[maxCreditIndex] -= minAmount, amount[maxDebitIndex] += minAmount
 #           print ("maxDebitIndex pays minAmount to maxCreditIndex")

@@ -12,11 +12,10 @@
 # coins =  3*1*5    +   3*5*8   +  1*3*8  + 1*8*1 = 167
 #
 # Question Type : ShouldSee
-# Used : DP is used.
+# Used : DP with DFS is used.
 #        Call recursive function dfs, with start and end, which calculate max value using intermediate
 #        value of dfs().
-#        Logic :
-#        nums = [1] + nums + [1]
+# Logic: nums = [1] + nums + [1]
 #        dp = dict()
 #        def dfs(l, r):
 #           if l > r: return 0
@@ -28,6 +27,7 @@
 #                      dfs(l, i - 1) + dfs(i + 1, r))
 #               dp[(l, r)] = maximum
 #           return dp[(l, r)]
+#
 #        return dfs(1, len(nums) - 2)
 # Complexity : O(n^2)
 

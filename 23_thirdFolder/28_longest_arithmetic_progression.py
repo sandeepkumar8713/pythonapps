@@ -1,5 +1,6 @@
 # https://massivealgorithms.blogspot.com/2019/04/leetcode-1027-longest-arithmetic.html
 # Similar : https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/
+# Similar : https://leetcode.com/problems/arithmetic-slices-ii-subsequence/
 # Question : Given an array A of integers, return the length of the longest arithmetic
 # subsequence in A. Recall that a subsequence of A is a list A[i_1], A[i_2], ..., A[i_k]
 # with 0 <= i_1 < i_2 < ... < i_k <= A.length - 1, and that a sequence B is arithmetic if
@@ -73,3 +74,4 @@ if __name__ == "__main__":
 
     inpArr = [5, 7, 20, 9, 33]
     print(longestArithSeqLength(inpArr))
+

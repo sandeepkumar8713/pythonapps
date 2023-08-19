@@ -1,3 +1,4 @@
+# Similar : https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/
 # Question : Given a linked list where every node represents a linked list and contains
 # two pointers of its type:
 # (i) Pointer to next node in the main list (we call it 'right' pointer in below code)
@@ -19,10 +20,22 @@
 # Question Type : ShouldSee
 # Used : We use merge() to merge lists one by one. We recursively merge() the current list with
 #        already flattened list. The down pointer is used to link nodes of the flattened list.
-#        flatten(rootHead):
+# Logic: def flatten(rootHead):
 #        if rootHead is None: return rootHead
 #        if rootHead.right is None: return rootHead
 #        return merge(rootHead, flatten(rootHead.right.getHead()))
+#
+#        def merge(nodeA, nodeB):
+#        if nodeA is None: return nodeB
+#        if nodeB is None: return nodeA
+#        result = None
+#        if nodeA.data < nodeB.data:
+#           result = nodeA
+#           result.down = merge(nodeA.down, nodeB)
+#        else:
+#           result = nodeB
+#           result.down = merge(nodeA, nodeB.down)
+#        return result
 # Complexity : O(kn log n)
 
 

@@ -10,14 +10,16 @@
 # Output: 2
 #
 # Question Type : ShouldSee
-# Used : We have to use kind of backtracking. We have to permute all valid sequence.
+# Used : DP with DFS and backtracking
+#        We have to use kind of backtracking. We have to permute all valid sequence.
 #        First we pick 1, see at which all indices it can be placed. After placing it at
 #        a valid index, repeat the above process for 2. It may continue till n. At this
 #        point increment the counter by 1.
 #        After the backtracking is complete, return counter value.
-#        Logic :
-#        def calculate(n, num, visited, count):
-#        if num > n: count[0] += 1
+# Logic: def calculate(n, num, visited, count):
+#        if num > n:
+#           count[0] += 1
+#           return
 #        for i in range(1, n+1):
 #           if not visited[i] and (num % i == 0 or i % num == 0):
 #             visited[i] = True
@@ -25,12 +27,13 @@
 #             visited[i] = False
 #
 #        calculate(n, 1, [False] * (n + 1), [0])
-# Complexity : O(k) k is no. of valid permutation
+# Complexity : O(n * k) k is no. of valid permutation
 
 
 def calculate(n, num, visited, count):
     if num > n:
         count[0] += 1
+        return
 
     for i in range(1, n+1):
         if not visited[i] and (num % i == 0 or i % num == 0):

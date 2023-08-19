@@ -13,8 +13,7 @@
 #        Now loop the given array, while doing so maintain left max also.
 #        if left max is less than right min, increment count. (Already sorted)
 #        After the loop, return count
-#        Logic :
-#        cut, leftMax = 0, -1
+# Logic: cut, leftMax = 0, -1
 #        for i in range(len(inpArr) - 1):
 #           leftMax = max(leftMax, inpArr[i])
 #           if leftMax <= right_min[i]: cut += 1

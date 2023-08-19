@@ -3,25 +3,28 @@
 # Question : Given an array of words, print all anagrams together. For example, if the given array is
 # {"cat", "dog", "tac", "god", "act"}, then output may be "cat tac act dog god".
 #
-# Question Type : ShouldSee
+# Question Type : Asked
 # Used : In trie Node add two fields : children (list of size 26) and wordEndingID
 #        (list of id of words ending at this node)
 #        Loop over the given list of words. Sort the word and insert it in Trie and also insert its id,
 #        where the word ends.
 #        Now traverse the Trie again (DFS) and if there are id in wordEndingID: print them
-# Complexity : O(n * m * log m) + O(m)    m is MAX_CHAR and n is word count
-
-MAX_CHAR = 26
-
-
-def charToIndex(ch):
-    return ord(ch) - ord('a')
-
+# Logic: def traverseUtils(self, root, res, inp_strs):
+#        temp = root
+#        for child in temp.children.values():
+#           self.traverseUtils(child, res, inp_strs)
+#           res_2 = []
+#           for index in child.index_list:
+#               res_2.append(inp_strs[index])
+#           if len(res_2) > 0:
+#               res.append(res_2)
+#        return res
+# Complexity : O(n * m * log m) + O(m * n) m is MAX_CHAR and n is word count
 
 class TrieNode:
     def __init__(self):
-        self.children = [None] * MAX_CHAR
-        self.wordEndingID = []
+        self.children = dict()
+        self.index_list = []
 
 
 class Trie:
@@ -30,38 +33,42 @@ class Trie:
 
     def insert(self, inpStr, wordId):
         temp = self.root
-        inpStrLen = len(inpStr)
-        for level in range(inpStrLen):
-            index = charToIndex(inpStr[level])
-            if not temp.children[index]:
-                temp.children[index] = TrieNode()
-            temp = temp.children[index]
+        for ch in inpStr:
+            if ch not in temp.children:
+                temp.children[ch] = TrieNode()
+            temp = temp.children[ch]
 
-        temp.wordEndingID.append(wordId)
+        temp.index_list.append(wordId)
 
-    def traverseUtils(self,root):
+    def traverseUtils(self, root, res, inp_strs):
         temp = root
-        for child in temp.children:
-            # Do DFS here
-            if child is not None:
-                self.traverseUtils(child)
-                for wordId in child.wordEndingID:
-                    print (inpWords[wordId]),
+        for child in temp.children.values():
+            self.traverseUtils(child, res, inp_strs)
+            res_2 = []
+            for index in child.index_list:
+                res_2.append(inp_strs[index])
+            if len(res_2) > 0:
+                res.append(res_2)
 
-    def traverse(self):
-        self.traverseUtils(self.root)
+        return res
+
+    def traverse(self, inp_strs):
+        res = []
+        self.traverseUtils(self.root, res, inp_strs)
+        return res
 
 
-def printAllAnagramTogether(words):
+def group_similar(inp_strs):
     trie = Trie()
+
     wordId = 0
-    for word in words:
+    for word in inp_strs:
         trie.insert(sorted(word), wordId)
         wordId += 1
 
-    trie.traverse()
+    return trie.traverse(inp_strs)
 
 
 if __name__ == '__main__':
     inpWords = ["cat", "dog", "tac", "god", "act", "gdo"]
-    printAllAnagramTogether(inpWords)
+    print(group_similar(inpWords))

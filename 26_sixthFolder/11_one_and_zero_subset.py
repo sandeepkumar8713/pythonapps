@@ -7,10 +7,11 @@
 # Explanation: The largest subset with at most 5 0's and 3 1's is {"10", "0001", "1", "0"}, so the answer is 4.
 #
 # Question Type : ShouldSee
-# Used : Make dp array where dp[i] = [count,zeros,ones], count 1 means inpArr[i] satisfy the condition.
+# Used : DP with box stacking
+#        Make dp array where dp[i] = [count,zeros,ones], count 1 means inpArr[i] satisfy the condition.
 #        zeros and ones are 0 and 1 count of inpArr[i].
 #        Now make all possible pairs by running 2 loops. Check if pairs can be merged and if count
-#        value can be increased. (like box stacking). While doing so keep track of max count.
+#        value can be increased. While doing so keep track of max count.
 #        After the loop, return maxCount
 # Logic: for i in range(1, n):
 #           for j in range(i):

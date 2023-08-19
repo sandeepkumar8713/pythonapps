@@ -1,4 +1,5 @@
 # Similar : https://www.geeksforgeeks.org/reduce-the-string-by-removing-k-consecutive-identical-characters/
+# Similar : https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/
 # Question : Given a string, recursively remove adjacent duplicate characters from string.
 # The output string should not have any adjacent duplicates. See following examples.
 #
@@ -20,8 +21,7 @@
 #           c) Else, append the first character of the original string at the beginning of
 #              rem_str.
 #        4) Return rem_str.
-#        Logic :
-#        def removeUtil(string, last_removed):
+# Logic: def removeUtil(string, last_removed):
 #        if len(string) == 0 or len(string) == 1:
 #           return string
 #        if string[0] == string[1]:

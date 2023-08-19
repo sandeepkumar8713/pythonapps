@@ -15,7 +15,7 @@
 #        Return True when ans length is equal to ticket count.
 #        Our answer is ans list.
 #
-#        Logic : def dfs(u, current_route, current_num_tickets):
+# Logic: def dfs(u, current_route, current_num_tickets):
 #        nonlocal graph, tickets, ans
 #        if current_num_tickets == len(tickets):
 #           ans = current_route

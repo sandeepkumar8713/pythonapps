@@ -30,8 +30,7 @@
 #        largestBSTUtil(root, [sys.maxint], [-sys.maxint], maxSize, [False])
 #        and return maxSize[0].
 #        It returns the size of tree if it is BST else 0.
-#        Logic :
-#        largestBSTUtil() :
+# Logic: def largestBSTUtil():
 #        If root is null. set isBst[0] = True and return 0.
 #        set maxKey[0] = -sys.maxint and call largestBSTUtil() on left subtree
 #        if left subtree is bst and current node value is more than maxKey[0]:

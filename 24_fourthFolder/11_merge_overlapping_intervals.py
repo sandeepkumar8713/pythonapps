@@ -2,7 +2,7 @@
 # Question : Given a set of time intervals in any order, merge all overlapping intervals
 # into one and output the result which should have only mutually exclusive intervals.
 # Let the intervals be represented as pairs of integers for simplicity.
-# For example, let the given set of intervals be {{1,3}, {2,4}, {5,7}, {6,8} }. The
+# For example, let the given set of intervals be {{1,3}, {2,4}, {5,7}, {6,8}}. The
 # intervals {1,3} and {2,4} overlap with each other, so they should be merged and
 # become {1, 4}. Similarly {5, 7} and {6, 8} should be merged and become {5, 8}
 #
@@ -12,8 +12,8 @@
 #        Loop over sorted list, if start of index-1 is less than end of index,
 #        then merge it by setting max and min of start and end.
 #        for i in range(len(sortedL)):
-#           if index != 0 and sortedL[index-1].start <= sortedL[index].end:
-#               while index != 0 and sortedL[index-1].start <= sortedL[index].end:
+#           if index != 0 and sortedL[i].start <= sortedL[index-1].end:
+#               while index != 0 and sortedL[i].start <= sortedL[index-1].end:
 #                   sortedL[index - 1].end = max(sortedL[index - 1].end, sortedL[i].end)
 #                   sortedL[index - 1].start = min(sortedL[index - 1].start, sortedL[i].start)
 #                   index -= 1

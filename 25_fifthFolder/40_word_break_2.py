@@ -13,7 +13,7 @@
 #        already breakable (using map) and check if substring in right side is present in wordSet.
 #        keep extending the wordlist at given index.
 #        After the loop, return the word set from last index of map.
-#        Logic : def wordBreak(inpStr, wordSet):
+# Logic: def wordBreak(inpStr, wordSet):
 #        map[0] = [[]]
 #        for i in range(n + 1):
 #           if i not in map: continue

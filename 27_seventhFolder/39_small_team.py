@@ -12,7 +12,7 @@
 # Question Type : ShouldSee
 # Used : It is like box stacking. Please note that we use bit masking to reach the required team
 #        which is having lesser size.
-#
+# TODO :: add explanation
 
 
 def find_small_team(req_skills, people):

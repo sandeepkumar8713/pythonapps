@@ -1,15 +1,34 @@
 # https://www.geeksforgeeks.org/merge-k-sorted-linked-lists/
 # https://leetcode.com/problems/merge-k-sorted-lists/
+# https://leetcode.com/problems/merge-k-sorted-lists/solutions/368112/simple-python-heapq-with-custom-comparator-function/
 # Question : Given K sorted linked lists of size N each, merge them and print the sorted output.
 # merge k sorted list
 #
-# Question Type : Easy
-# Used : We already know that merging of two linked lists can be done in O(n) time and
-#        O(1) space (For arrays O(n)space is required). The idea is to pair up K lists
-#        and merge each pair in linear time using O(1) space. After first cycle, K/2
-#        lists are left each of size 2*N. After second cycle, K/4 lists are left each
-#        of size 4*N and so on. We repeat the procedure until we have only one list left.
-# Complexity : O(k * n * log K)
+# Question Type : Generic
+# Used : We will use min heap.
+#        Insert all the lists in the minheap using custom sort using setattr.
+#        Now keep popping nodes from the minheap until it is empty.
+# Logic: def merge_k_list(lists):
+#        setattr(Node, "__lt__", lambda self, other: self.data <= other.data)
+#        pq = []
+#        for l in lists:
+#           if l:
+#               heapq.heappush(pq, l)
+#        head = None, temp = None
+#        while pq:
+#           node = heapq.heappop(pq)
+#           if head is None:
+#               head = node
+#               temp = node
+#           else:
+#               temp.next = node
+#           temp = node
+#           if node and node.next:
+#               heapq.heappush(pq, node.next)
+#        return head
+# Complexity : O(k * n)
+
+import heapq
 
 
 class Node:
@@ -42,7 +61,7 @@ class LinkedList:
     def getHead(self):
         return self.head
 
-    def setHead(self,node):
+    def setHead(self, node):
         self.head = node
 
 
@@ -90,26 +109,57 @@ def insertValues(root, inp):
     root.printList()
 
 
+def merge_k_list(lists):
+    setattr(Node, "__lt__", lambda self, other: self.data <= other.data)
+    pq = []
+    for l in lists:
+        if l:
+            heapq.heappush(pq, l)
+
+    head = None
+    temp = None
+    while pq:
+        node = heapq.heappop(pq)
+        if head is None:
+            head = node
+            temp = node
+        else:
+            temp.next = node
+        temp = node
+        if node and node.next:
+            heapq.heappush(pq, node.next)
+
+    return head
+
+
+def insert_values(inp):
+    head = None
+    temp = None
+    for data in inp:
+        node = Node(data)
+        if head is None:
+            head = node
+            temp = node
+        else:
+            temp.next = node
+        temp = node
+
+    return head
+
+
 if __name__ == "__main__":
-    firstList = LinkedList()
     arr = [1, 3, 5, 7]
-    insertValues(firstList, arr)
+    first_list = insert_values(arr)
 
-    print('')
-    secondList = LinkedList()
     arr = [2, 4, 6, 8]
-    insertValues(secondList, arr)
+    second_list = insert_values(arr)
 
-    print('')
-    thirdList = LinkedList()
     arr = [0, 9, 10, 11]
-    insertValues(thirdList, arr)
+    third_list = insert_values(arr)
 
-    linkedListArray = [firstList, secondList, thirdList]
-    result = mergeKlist(linkedListArray)
+    linkedListArray = [first_list, second_list, third_list]
+    result = merge_k_list(linkedListArray)
 
-    print('')
-    # result = merge(firstList.getHead(), secondList.getHead())
     while result:
-        print(result.data,end=" ")
+        print(result.data, end=" ")
         result = result.next

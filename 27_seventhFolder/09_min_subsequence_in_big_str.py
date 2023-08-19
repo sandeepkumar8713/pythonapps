@@ -15,7 +15,9 @@
 #           else dp[i][j] = dp[i - 1][j]
 #        After 2d loop, find min len by running single loop on dp[0..i][p-1].
 #        Return substring from minIndex to minLen.
-# Logic: for i in range(s):
+# Logic: s = len(string)
+#        p = len(pattern)
+#        for i in range(s):
 #           if string[i] == pattern[0]:
 #               dp[i][0] = i
 #           else:
@@ -26,6 +28,7 @@
 #                   dp[i][j] = dp[i - 1][j - 1]
 #               else:
 #                   dp[i][j] = dp[i - 1][j]
+#
 #        for i in range(s):
 #           index = dp[i][p - 1]
 #           if index != -1:

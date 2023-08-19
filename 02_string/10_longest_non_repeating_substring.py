@@ -1,4 +1,5 @@
 # https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/
+# https://leetcode.com/problems/longest-substring-without-repeating-characters/
 # Question : Length of the longest substring without repeating characters
 # Given a string, find the length of the longest substring without repeating characters.
 # For example, the longest substrings without repeating characters for "ABDEFGABEF" are "BDEFGA"
@@ -12,8 +13,7 @@
 #           Remove all ch's whose pos is less than oldPos.
 #        Keep track of max size of dict while looping.
 #        After the loop return the maxLen.
-#        Logic :
-#        for i in range(len(inpStr)):
+# Logic: for i in range(len(inpStr)):
 #           item = inpStr[i]
 #           if item not in charSet:
 #               charSet[item] = i

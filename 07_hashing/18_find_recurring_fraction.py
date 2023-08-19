@@ -14,8 +14,7 @@
 # Question Type : ShouldSee
 # Used : Do normal division and keep track of remainder found with quotient index.
 #        If that remainder is found again, break and print from that index to end.
-#        Logic :
-#        fractionToDecimal(numerator, denominator):
+# Logic: fractionToDecimal(numerator, denominator):
 #        res = "", hashMap = dict()
 #        rem = numerator % denominator
 #        while rem != 0 and rem not in hashMap.keys():

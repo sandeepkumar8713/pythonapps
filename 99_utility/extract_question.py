@@ -2,7 +2,7 @@
 
 import os
 LINE_LIMIT = 99
-from categoryWise import getSelectedFilename
+from category_wise import getSelectedFilename
 
 def getFilenameList():
     filenameList = []

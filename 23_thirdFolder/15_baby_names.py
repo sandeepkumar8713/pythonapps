@@ -1,4 +1,5 @@
 # CTCI : Q17_07_Baby_Names
+# Similar : https://leetcode.com/problems/synonymous-sentences/ (https://leetcode.ca/all/1258.html)
 # Question : Each year, the government releases a list of the 10,000 most common baby names
 # and their frequencies (the number of babies with that name). The only problem with this is
 # that some names have multiple spellings. For example, "John" and ''.Jon" are essentially

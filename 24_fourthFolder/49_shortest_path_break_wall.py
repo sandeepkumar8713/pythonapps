@@ -1,4 +1,5 @@
 # https://leetcode.com/discuss/interview-question/353827
+# Similar : https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/
 # Question : Given a 2D grid of size r * c. 0 is walkable, and 1 is a wall. You can move up, down, left or right at
 # a time. Now you are allowed to break at most 1 wall, what is the minimum steps to walk from the upper left corner
 # (0, 0) to the lower right corner (r-1, c-1)? Follow-up:
@@ -17,7 +18,7 @@
 # Question Type : Generic, SimilarAdded
 # Used : Do normal bfs, whenever we hit a wall, break it. Keep the count to walls broken and push it along with distance
 #        in queue. Skip the nodes, where wall broken count is more than limit. If we reach target return length.
-#        Logic : def shortestPathBreakWalls(inpMat, K):
+# Logic: def shortestPathBreakWalls(inpMat, K):
 #        m, n = len(inpMat), len(inpMat[0])
 #        offsets = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 #        pq = [(0, 0, (0, 0))]

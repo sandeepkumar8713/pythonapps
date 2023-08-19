@@ -4,7 +4,7 @@
 # position. This is similar (infinite chess with forbidden cells) :
 # https://www.careercup.com/question?id=5711185563877376
 #
-# Question Type : Generic
+# Question Type : Asked
 # Used : Make a queue Push starting cell(x,y,distance) point in queue
 #        Loop (until queue is empty)
 # 	        Pop one cell from queue

@@ -10,7 +10,7 @@
 # Used : We will use divide and conquer. For every operator, divide in into left and right sub expression. Solve them
 #        first by calling the function again. It will return a list of possible results. Now use the earlier found
 #        operator in combination of all the possible results.
-#        Logic : def calculate(operator, n1, n2):
+# Logic: def calculate(operator, n1, n2):
 #        if operator=="+": return n1+n2
 #        elif operator=='-': return n1-n2
 #        elif operator=='*': return n1*n2

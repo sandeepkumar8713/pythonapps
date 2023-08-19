@@ -14,7 +14,7 @@
 # Question Type : ShouldSee
 # Used : Here we are maintaining a memory table. dp : size (n+1) * (m+1). Initialize all as False.
 #        dp[i][j] with value True means that str till i matches with patt with j.
-#        dp[0][0] = True
+# Logic: dp[0][0] = True
 #        Only '*' can match with empty string
 #        for j in range(1, ptrLen + 1):
 #           if pattern[j - 1] == '*': dp[0][j] = dp[0][j - 1]

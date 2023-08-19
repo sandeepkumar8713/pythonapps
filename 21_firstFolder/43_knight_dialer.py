@@ -13,12 +13,16 @@
 # Output: 20
 #
 # Question Type : ShouldSee
-# Used : By hand or otherwise, have a way to query what moves are available at each square.
+# Used : Run a loop to iterate through each hop.
+#           For this hop, consider all possible positions and its corresponding next position and keep adding the
+#           respective count.
+#        Remember to use two 1d arrays.
+#        By hand or otherwise, have a way to query what moves are available at each square.
 #        This implies the exact recursion for f.
 #        For example, from 1 we can move to 6, 8, so f(1, n) = f(6, n-1) + f(8, n-1).
 #        After, let's keep track of dp[start] = f(start, n), and update it for each n from 1, 2, ..., N.
 #        At the end, the answer is f(0, N) + f(1, N) + ... + f(9, N) = sum(dp).
-#        Logic : def knightDialer(N):
+# Logic: def knightDialer(N):
 #        dp = [1] * 10
 #        for hops in xrange(N-1):
 #           dp2 = [0] * 10

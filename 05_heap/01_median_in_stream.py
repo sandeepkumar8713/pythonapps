@@ -7,20 +7,38 @@
 #
 # Question Type : Generic
 # Used : Make a left max heap and right max heap. Iterate over the input elements.
-#       If the left heap has more elements
+#        If the left heap has more elements
 #           If new element is less than median then push in left, after moving top element
 #           to right
 #           else push in right
 #           get top from both the heaps and average out to get median
-#       If both heap have same number of elements
+#        If both heap have same number of elements
 #           If new element is less than median then push in left and get top element from
 #           it as median
 #           else push in right and get top element from it as median
-#       If the right heap has more elements
+#        If the right heap has more elements
 #           If new element is less median then push in left
 #           else push in right, after moving top element to left
 #           get top from both the heaps and average out to get median
-# Complexity : build heap = O(k) , heapify = O(log k),
+# Logic: def heapify(self, i):
+#        smallest = i
+#        left = 2*i + 1
+#        right = 2*i + 2
+#        if left < self.size and self.op(self.data[left], self.data[smallest]):
+#           smallest = left
+#        if right < self.size and self.op(self.data[right], self.data[smallest]):
+#           smallest = right
+#        if smallest is not i:
+#           self.data[i], self.data[smallest] = self.data[smallest], self.data[i]
+#           self.heapify(smallest)
+#
+#        def buildHeap(self, arr, n):
+#        self.size = n
+#        for i in range(n):
+#           self.data.append(arr[i])
+#        for i in range(n/2 - 1, -1, -1):
+#           self.heapify(i)
+# Complexity : build heap = O(n) , heapify = O(log n),
 #              total = O(n log n)
 
 import operator

@@ -10,7 +10,8 @@
 # Explanation: Only the array [1,2,3] which consists of numbers from 1 to 3 has exactly 0 inverse pair.
 #
 # Question Type : ShouldSee
-# Used : count(n,k) = summation 0 : min(k, n-1) of count(n-1,k-i)
+# Used : DFS with sub problem
+#        count(n,k) = summation 0 : min(k, n-1) of count(n-1,k-i)
 # Logic: dp[][] = [0]
 #        for i in range(1, n + 1):
 #           for j in range(0, k + 1):
