@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/longest-mountain-in-array/
+# Similar : https://leetcode.com/problems/peak-index-in-a-mountain-array/
 # You may recall that an array arr is a mountain array if and only if:
 # arr.length >= 3
 # There exists some index i (0-indexed) with 0 < i < arr.length - 1 such that:

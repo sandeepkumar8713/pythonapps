@@ -10,7 +10,7 @@
 # Used : First we read s from left to right and remove all the invalid ). Then we will get multiple
 #        candidate solutions and save them in candidates. Then we read each candidate from right
 #        to left (reversely) and remove all the invalid ( and we will get the final solutions.
-#        Logic : def dfs(inpStr, left, right, paranMap, sols):
+# Logic: def dfs(inpStr, left, right, paranMap, sols):
 #        bal = 0
 #        for j in range(right, len(inpStr)):
 #           bal += paranMap.get(inpStr[j], 0)
@@ -20,6 +20,7 @@
 #                       dfs(inpStr[:i] + inpStr[i + 1:], i, j, paranMap, sols)
 #               return
 #        sols.append(inpStr[::-1])   # Reverse the inpStr if balanced
+#
 #        def removeInvalidParentheses(inpStr):
 #        candidates = [], solutions = []
 #        paranMap = {"(": 1, ")": -1}

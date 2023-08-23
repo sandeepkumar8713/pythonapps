@@ -11,7 +11,7 @@
 # Used : Make a 2D dp matrix of size m*n. Initialize them as 0.
 #        Set second row and col of dp, equal to inpMat as we are not support to consider entry point.
 #        Run the 2 loops over dp while updating its value from left and up value with following condition.
-#        dp[i][j] = max( min(a[i][j], dp[i-1][j]), min(a[i][j], dp[i][j+1]))
+# Logic: dp[i][j] = max( min(a[i][j], dp[i-1][j]), min(a[i][j], dp[i][j+1]))
 #        maxScore2D(inpMat):
 #        dp[0][0] = sys.maxsize
 #        for i in range(1, m):
@@ -27,7 +27,7 @@
 #                   score2 = min(dp[i - 1][j], inpMat[i][j])
 #                   dp[i][j] = max(score1, score2)
 #        return dp[m-1][n-1]
-# Complexity : O(n)
+# Complexity : O(m * n)
 
 import sys
 

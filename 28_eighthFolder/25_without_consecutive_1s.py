@@ -13,3 +13,5 @@
 # 5 : 101
 # Among them, only integer 3 disobeys the rule (two consecutive ones) and the other 5 satisfy the rule.
 #
+# TODO :: add code
+#

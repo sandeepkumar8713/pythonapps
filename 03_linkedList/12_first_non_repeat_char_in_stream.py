@@ -7,8 +7,7 @@
 #        We also maintain two arrays: one array is to maintain characters that are already visited
 #        two or more times, we call it repeated[], the other array is array of pointers to linked list
 #        nodes, we call it inDLL[].
-#        Logic :
-#        findFirstNonRepeating(stream):
+# Logic: findFirstNonRepeating(stream):
 #        inDLL = [] * MAX_CHAR
 #        repeated = [False] * MAX_CHAR
 #        for i in range(len(stream)):

@@ -1,4 +1,5 @@
 # https://www.geeksforgeeks.org/rearrange-positive-and-negative-numbers-publish/
+# similar : https://www.geeksforgeeks.org/segregate-even-and-odd-numbers/
 # Question : An array contains both positive and negative numbers in random order. Rearrange the array
 # elements so that positive and negative numbers are placed alternatively. Number of positive and negative
 # numbers need not be equal. If there are more positive numbers they appear at the end of the array.
@@ -12,7 +13,7 @@
 #        To do this use, logic similar to quicksort partition. The idea is to consider 0 as pivot
 #        and divide the array around it.
 #        Now swap alternate negative numbers on left with positive ones in right.
-#        rearrange(arr, n):
+# Logic: rearrange(arr, n):
 #        i = -1
 #        for j in range(n):
 #           if arr[j] < 0:

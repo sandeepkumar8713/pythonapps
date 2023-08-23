@@ -17,8 +17,7 @@
 #        So take the list of indexes for this sum from the hashDict. Now iterate over this
 #        list and keep appending {index + 1: i} to the result.
 #           Now append i to list of sumSoFar in hashDict, i.e. hashDict[sumSoFar].append(i)
-#        Logic:
-#        findSubArray(arr):
+# Logic: findSubArray(arr):
 #        for i in range(len(arr)):
 #           sumSoFar += arr[i]
 #           if sumSoFar == 0:

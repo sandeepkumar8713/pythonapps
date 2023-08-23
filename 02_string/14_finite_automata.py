@@ -3,12 +3,13 @@
 # Question : Given a text txt[0..n-1] and a pattern pat[0..m-1], write a function
 # search(char pat[], char txt[]) that prints all occurrences of pat[] in txt[].
 # You may assume that n > m.
+# Similar : 27_seventhFolder/09_min_subsequence_in_big_str
 #
 # Input:  txt[] = "THIS IS A TEST TEXT"
 #         pat[] = "TEST"
 # Output: Pattern found at index 10
 #
-# Question Type : OddOne
+# Question Type : OddOne, SimilarAdded
 # Used : TODO :: add used
 # Complexity : computeTF() is O(m^3*NO_OF_CHARS) where m is length of the pattern and
 #              NO_OF_CHARS is 256, search(n)

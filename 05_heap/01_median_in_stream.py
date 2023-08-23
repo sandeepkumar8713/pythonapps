@@ -6,7 +6,7 @@
 # output = 5, 10, 5, 4
 #
 # Question Type : Generic
-# Used : Make a left max heap and right max heap. Iterate over the input elements.
+# Used : Make a left max heap and right xmax heap. Iterate over the input elements.
 #        If the left heap has more elements
 #           If new element is less than median then push in left, after moving top element
 #           to right

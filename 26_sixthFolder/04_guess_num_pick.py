@@ -17,8 +17,7 @@
 # Used : For each number, assume it is the root of the BST, call the function on left and right
 #        (take the max, because we want the worst case), and for each assumption (for each
 #        number as a root) take the min between all assumptions. (min of the max)
-#        Logic :
-#        def dfs(l, r):
+# Logic: def dfs(l, r):
 #        if l >= r - 1:
 #           return 0
 #        if (l, r) not in dp:

@@ -12,7 +12,7 @@
 #        as we have encountered same char and we should start making substring after first found character.
 #        While looping also check if diff b/w current index and currSubStrStart is equal to k.
 #        If yes, we found a substring, append this in the result set.
-#        subStringK(inpStr, k):
+# Logic: subStringK(inpStr, k):
 #        charMap = dict(), resultSet = set()
 #        currSubStrStart = 0
 #        for i in range(len(inpStr)):

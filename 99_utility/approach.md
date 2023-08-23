@@ -29,7 +29,7 @@
 | 7      | Mark Entry & Exit in map            | Pre order, level order         |
 | 8      | Topological sort                    | Sort interval based on 2nd ele |
 | 9      | Hash map with value being BST       | DP with DFS bitmask            |
-| 10     | Map with value point to ele in heap |                                |
+| 10     | Map with value point to ele in heap | Cumulative Sum                 |
 
 
 

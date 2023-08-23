@@ -7,3 +7,5 @@
 # should not join bricks at the same location, except at the ends of the wall.
 # Return the number of ways to build a sturdy wall. Since the answer may be very large,
 # return it modulo 109 + 7.
+# TODO :: add code
+#

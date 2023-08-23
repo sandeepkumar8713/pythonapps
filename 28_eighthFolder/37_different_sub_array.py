@@ -4,3 +4,14 @@
 # For example, [1,2,3,1,2] has 3 different integers: 1, 2, and 3.
 # A subarray is a contiguous part of an array.
 #
+# Example : Input: nums = [1,2,1,2,3], k = 2
+# Output: 7
+# Explanation: Subarrays formed with exactly 2 different integers:
+# [1,2], [2,1], [1,2], [2,3], [1,2,1], [2,1,2], [1,2,1,2]
+#
+# Question Type : OddOne
+# TODO :: add code
+
+if __name__ == "__main__":
+    nums = [1, 2, 1, 2, 3]
+    k = 2

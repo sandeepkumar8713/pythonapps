@@ -69,7 +69,7 @@ def bottomView(root):
             temp.right.hd = hd + 1
             queue.append(temp.right)
 
-    for key in sorted(map):
+    for key in sorted(map.keys()):
         print(map[key], end=" ")
 
 

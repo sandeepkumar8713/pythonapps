@@ -8,6 +8,7 @@
 # https://leetcode.ca/2019-05-27-1274-Number-of-Ships-in-a-Rectangle/
 # https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/
 # https://leetcode.com/problems/online-majority-element-in-subarray/
+# https://stackoverflow.com/questions/73971228/how-to-calculate-the-sum-of-every-possible-combinations-of-the-integer-array
 
 # https://leetcode.com/problems/dungeon-game/ (BFS)
 # https://leetcode.com/problems/number-of-digit-one/

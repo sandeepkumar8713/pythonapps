@@ -69,9 +69,13 @@ questionMap['slidingWindow'] = {'01_array/12_chocolate_distribution',
                                 '25_fifthFolder/22_amazon_fresh_secret_code',
                                 '24_fourthFolder/39_moving_product_from_data_stream',
                                 '26_sixthFolder/13_sliding_window_median',
-                                '27_seventhFolder/11_min_diff_bw_max_n_min'}
+                                '27_seventhFolder/11_min_diff_bw_max_n_min',
+                                '28_eighthFolder/43_perfect_substring',
+                                '29_ninthFolder/05_football_training'
+                                }
 
 questionMap['heap'] = {'05_heap/01_median_in_stream',
+                       '05_heap/03_basic_operation',
                        '05_heap/04_non_adjacent_character',
                        '05_heap/05_same_char_d_dist_apart',
                        '05_heap/07_connect_n_ropes',
@@ -86,7 +90,8 @@ questionMap['heap'] = {'05_heap/01_median_in_stream',
                        '25_fifthFolder/24_five_star_seller',
                        '25_fifthFolder/37_max_mutual_frnd',
                        '26_sixthFolder/42_max_value_of_equation',
-                       '27_seventhFolder/02_swim_in_rising_water', }
+                       '27_seventhFolder/02_swim_in_rising_water',
+                       '28_eighthFolder/49_median_of_top_k'}
 
 questionMap['mergeSort'] = {'11_divide_and_conquer/06_reverse_pair',
                             '24_fourthFolder/15_counting_inversion',
@@ -165,6 +170,7 @@ questionMap['shortestDist'] = {'08_graph/04_dijkstra',
 
 questionMap['ssc'] = {'08_graph/06_strongly_connect_component',
                       '08_graph/09_circle_of_string',
+                      '08_graph/20_minimum_cable_required',
                       '21_firstFolder/49_linked_list_components'}
 
 questionMap['parentUnion'] = {'21_firstFolder/30_redundant_connection',
@@ -197,6 +203,8 @@ questionMap['leftCount'] = {'04_tree_bst/03_kth_smallest_element_in_bst',
 questionMap['bfs'] = {'03_linkedList/13_rotten_orange',
                       '08_graph/12_snake_and_ladder',
                       '08_graph/13_knight_problem_min_step',
+                      '08_graph/19_reorder_routes',
+                      '08_graph/21_jump_game',
                       '21_firstFolder/05_find_dist_in_matrix',
                       '21_firstFolder/26_evaluate_division',
                       '21_firstFolder/45_race_car',
@@ -212,7 +220,9 @@ questionMap['bfs'] = {'03_linkedList/13_rotten_orange',
                       '25_fifthFolder/45_min_height_tree',
                       '26_sixthFolder/10_pacific_water_flow',
                       '26_sixthFolder/32_bus_routes',
-                      '27_seventhFolder/07_shortest_path_visiting_node', }
+                      '27_seventhFolder/07_shortest_path_visiting_node',
+                      '29_ninthFolder/04_file_transfer_time',
+                      }
 
 questionMap['dfs'] = {'08_graph/03_detect_cycle',
                       '08_graph/11_alien_dictionary',
@@ -272,9 +282,11 @@ questionMap['countDigits'] = {'23_thirdFolder/14_count_2s_in_0_to_n',
                               '26_sixthFolder/06_nth_digit'}
 
 questionMap['dpDfs'] = {'02_string/07_longest_common_substring',
+                        '08_graph/15_stepping_numbers',
                         '10_dynamic_programming/13_shortest_common_superSequece',
                         '10_dynamic_programming/15_count_possible_decoding',
                         '10_dynamic_programming/33_longest_consecutive_path_in_matrix',
+                        '22_secondFolder/38_invalid_parentheses',
                         '24_fourthFolder/45_campus_bike_2',
                         '24_fourthFolder/47_coke_machine',
                         '25_fifthFolder/46_burst_ballons',
@@ -307,7 +319,8 @@ questionMap['dpBox'] = {'01_array/04_longest_increasing_subsequnce',
                         '26_sixthFolder/41_longest_string_chain',
                         '27_seventhFolder/37_weight_job_scheduling',
                         '27_seventhFolder/39_small_team',
-                        '28_eighthFolder/16_arithmetic_slice_2'}
+                        '28_eighthFolder/16_arithmetic_slice_2',
+                        '29_ninthFolder/06_strange_pairs'}
 
 questionMap['subProblem'] = {'09_greedy/02_make_change_with_min_coin',
                              '10_dynamic_programming/05_all_possible_coin_change',
@@ -340,6 +353,14 @@ questionMap['fancy'] = {'23_thirdFolder/25_fancy_number',
 
 questionMap['segmentTree'] = {'24_fourthFolder/05_max_in_range',
                               '24_fourthFolder/18_lazy_propagation'}
+
+questionMap['commonDiff'] = {'29_ninthFolder/03_caesar_cipher_encryption'}
+
+questionMap['recursion'] = {'06_recursion/09_parentheses_combination'}
+
+questionMap['customSort'] = {'01_array/17_relative_sorting'}
+
+questionMap['cumulativeSum'] = {'01_array/21_sum_of_element_within_index'}
 
 
 def getSelectedFilename():

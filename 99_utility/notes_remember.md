@@ -48,18 +48,6 @@ pivot = arr[i + 1]
 josephus(n, k) = (josephus(n - 1, k) + k-1) % n + 1
 josephus(1, k) = 1
 
-level order
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.hd = sys.maxsize
-        self.left = None
-        self.right = None
-
-# dict sorted on keys
-for key in sorted(map):
-    print(map[key], end=" ")
-
 # BFS
 while queue:
     cost, node = queue.pop(0)
@@ -83,6 +71,7 @@ INT_BIT = sys.getsizeof(int())
 ---------------------------------------------------------------------------------
 **AP Formula** : Sn = n/2(2a + (n-1)d)
 
+```python
 class TrieNode:
     def __init__(self):
         self.children = dict()
@@ -98,6 +87,7 @@ def build_trie(words):
             temp = temp.children[ch]
         temp.word = word
     return trie
+```
 
 **Merge sort**
 1. Uses Auxiliary space
@@ -110,22 +100,21 @@ def build_trie(words):
 **Parent union**
 **We cannot use union-find to detect cycles in a directed graph.**
 
-```
-    def sample():
-        def union(i, j, ids):
-            ids[find(i, ids)] = find(j, ids)
-    
-        def find(i, ids):
-            while i != ids[i]:
-                ids[i] = ids[ids[i]] # Set grandparent to parent
-                i = ids[i]
-            return i
-    
-        # To be called after all unions to find grandfather as well.
-        for i in range(len(ids)):
-            find(i, ids)
-    
-        # complexity : O(e log v) where e is the number of edges in the graph and v is the number of vertices.
+```python
+def union(i, j, ids):
+    ids[find(i, ids)] = find(j, ids)
+
+def find(i, ids):
+    while i != ids[i]:
+        ids[i] = ids[ids[i]] # Set grandparent to parent
+        i = ids[i]
+    return i
+
+# To be called after all unions to find grandfather as well.
+for i in range(len(ids)):
+    find(i, ids)
+
+# complexity : O(e log v) where e is the number of edges in the graph and v is the number of vertices.
 ```
 
 **Eulerian Path** is a path in graph that visits every edge exactly once. Eulerian
@@ -143,11 +132,11 @@ allBoxList.sort(key=lambda x: x.getArea(), reverse=True)
 **Use the sorted func with key as second element i.e. score**
 result = sorted(inpArr, key=lambda x: x[1])
 
-```
-    import functools
-    def comparator(a, b):
-        return a-b
-    print(sorted(A1, key=functools.cmp_to_key(comparator)))
+```python
+import functools
+def comparator(a, b):
+    return a-b
+print(sorted(A1, key=functools.cmp_to_key(comparator)))
 ```
 
 1. For a matrix, diff of indices are same for **diagonal** (left to right)
@@ -171,18 +160,18 @@ heapq.heappush(pool, q) # Min heap
 heapq.heappush(pool, -q) # Max heap
 sumq += heapq.heappop(pool)
 
-```
-    def charToIndex(ch):
-        return ord(ch) - ord('a')
-    
-    def indexToChar(i):
-        return chr(i + ord('a'))
-    
-    import sys
-    sys.maxsize
-    
-    while left < right:
-        mid = left + (right - left) // 2
+```python
+def charToIndex(ch):
+    return ord(ch) - ord('a')
+
+def indexToChar(i):
+    return chr(i + ord('a'))
+
+import sys
+sys.maxsize
+
+while left < right:
+    mid = left + (right - left) // 2
 ```
 
 **To make all possible pairs without index**
@@ -196,16 +185,17 @@ for i,[x,y] in enumerate(sensors):
 print (bin(covered_skill))
 
 **math library example**
-```
-    import math
-    dist = math.sqrt(math.pow(x2 - x1, 2) + math.pow(y2 - y1, 2))
-    
-    class KStacks:
-        def __init__(self, k, n):
-            self.k = k  # Number of stacks.
-            self.n = n  # Total size of array holding all the 'k' stacks.
-    
-    if __name__ == "__main__":
+```python
+import math
+dist = math.sqrt(math.pow(x2 - x1, 2) + math.pow(y2 - y1, 2))
+
+class KStacks:
+    def __init__(self, k, n):
+        self.k = k  # Number of stacks.
+        self.n = n  # Total size of array holding all the 'k' stacks.
+
+if __name__ == "__main__":
+    pass
 ```
 
 **Return a list as a string with no delimiter**
@@ -213,11 +203,6 @@ return "".join(digits)
 
 **round upto D digits**
 return round(mid, D)
-
-1. Revise : ACID, CAP, SOLID and SQL VS NOSQL
-2. SQL : (ACID, structured data, constraints handled, slow query, DB design takes time, not changing data)
-3. NOSQL : (no ACID, non structured data, constraints handled in code, fast query, DB design not required, lacking of reporting 
-            tool, easier scalabilty, used to store large data)
 
 **Fetch row using SQLAlchemy**
 ```
@@ -228,12 +213,12 @@ return round(mid, D)
 
 1. LRU implementation https://www.geeksforgeeks.org/lru-cache-in-python-using-ordereddict/
 2. **OrderedDict** is implemented using double linked list.
-```
-    from collections import OrderedDict
-    cache = OrderedDict()
-    cache[key] = value
-    cache.move_to_end(key)     # Move recently used item to end.
-    cache.popitem(last=False)  # Remove least recently used item from front.
+```python
+from collections import OrderedDict
+cache = OrderedDict()
+cache[key] = value
+cache.move_to_end(key)     # Move recently used item to end.
+cache.popitem(last=False)  # Remove least recently used item from front.
 ```
 
 **Datetime**
@@ -299,10 +284,52 @@ So less number of arguments will be passed. So less **context switching**.
 setattr(Node, "__lt__", lambda self, other: self.data <= other.data)
 
 **Traversing** through all the nodes. A way to mark visited nodes in adjacency list.
-```
+```python
     for i in range(len(graph[u])):
         v = graph[u].pop(i)
         rt = dfs(v, current_route + [v], current_num_tickets + 1)
         graph[u].insert(i, v)
 ```
+
+
+Check if string consists only of **digits**
+if sub_str[1].isdigit():
+    self.is_digit = True
+
+**Delete last element in min heap**
+def delete_last_element(heap):
+    if len(heap) >= 2:
+        if heap[-1] < heap[-2]:
+            heap.pop(-2)
+            return
+    heap.pop(-1)
+
+
+**level order**
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.hd = sys.maxsize
+        self.left = None
+        self.right = None
+
+**dict sorted on keys**
+for key in sorted(map.keys()):
+    print(map[key], end=" ")
+
+**remove ele from dict**
+for ch in remove:
+    del charSet[ch]
+
+Asynchronous Server Gateway interface
+Web Server : Uvicorn(ASGI), Django, Tomcat
+Rest Framework : FastAPI, Flask
+Async and await in Python
+Memory management in Python
+Compare reactiveness in Java and Python
+data frame?
+python 3.11
+Data idmpotenecy
+why variable is infinite
+
 ---------------------------------------------------------------

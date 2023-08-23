@@ -1,5 +1,6 @@
 # https://www.geeksforgeeks.org/find-distance-between-two-nodes-of-a-binary-tree/
-# https://www.geeksforgeeks.org/print-path-between-any-two-nodes-in-a-binary-tree/
+# Similar : https://www.geeksforgeeks.org/print-path-between-any-two-nodes-in-a-binary-tree/
+# https://leetcode.com/problems/find-distance-in-a-binary-tree/ (https://leetcode.ca/all/1740.html)
 # Question : Find the distance between two keys in a binary tree, no parent pointers are given. Distance
 # between two nodes is the minimum number of edges to be traversed to reach one node from other.
 #
@@ -18,8 +19,7 @@
 #        d1 = findLevel(lca, a, 0)
 #        d2 = findLevel(lca, b, 0)
 #        return d1 + d2
-#        Logic :
-#        findLevel(root, data, level):
+# Logic: def findLevel(root, data, level):
 #        If root is None: return -1 (not found)
 #        If root.data == data: return level
 #        Call findLevel again on left subtree.
@@ -27,6 +27,7 @@
 #        if res != -1: return res
 #        Do the same as above for right subtree.
 #        return -1 (not found in left and right subtree)
+#
 #        Similarly we can print path also, by passing a list, appending the root data and
 #        popping it in last(if return -1).
 # Complexity : O(n)

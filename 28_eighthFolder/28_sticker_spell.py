@@ -12,3 +12,5 @@
 # We can use 2 "with" stickers, and 1 "example" sticker.
 # After cutting and rearrange the letters of those stickers, we can form the target "thehat".
 # Also, this is the minimum number of stickers necessary to form the target string.
+# TODO :: add code
+#

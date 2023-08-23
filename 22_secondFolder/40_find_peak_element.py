@@ -1,5 +1,4 @@
 # https://leetcode.com/problems/find-peak-element/
-# https://leetcode.com/problems/peak-index-in-a-mountain-array/
 # Question : A peak element is an element that is greater than its neighbors.
 # Given an input array nums, where nums[i] != nums[i+1], find a peak element and return its index.
 # The array may contain multiple peaks, in that case return the index to any one of the peaks is fine.
@@ -11,7 +10,7 @@
 #
 # Question Type : Easy
 # Used : Do binary search
-#        Logic : def findPeakElement(nums):
+# Logic: def findPeakElement(nums):
 #        l = 0
 #        r = len(nums) - 1
 #        while l < r:
@@ -26,7 +25,7 @@ def findPeakElement(nums):
     l = 0
     r = len(nums) - 1
     while l < r:
-        mid = (l + r) / 2
+        mid = (l + r) // 2
         if nums[mid] > nums[mid + 1]:
             r = mid
         else:
@@ -36,7 +35,11 @@ def findPeakElement(nums):
 
 if __name__ == "__main__":
     nums = [1, 2, 3, 1]
-    print(findPeakElement(nums))
+    print("index", findPeakElement(nums))
 
     nums = [1, 2, 1, 3, 5, 6, 4]
-    print(findPeakElement(nums))
+    print("index", findPeakElement(nums))
+
+    nums = [1, 6, 4, 10, 5, 9, 3]
+    print("index", findPeakElement(nums))
+

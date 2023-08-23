@@ -4,6 +4,12 @@
 # a weighted, connected and undirected graph is a spanning tree with weight less than or equal
 # to the weight of every other spanning tree.
 #
+# Similar : https://leetcode.com/discuss/interview-question/356981
+# Question : Given an undirected graph with n nodes labeled 1..n. Some of the nodes are already connected. The i-th
+# edge connects nodes edges[i][0] and edges[i][1] together. Your task is to augment this set of edges with additional
+# edges to connect all the nodes. Find the minimum cost to add new edges between the nodes such that all the nodes
+# are accessible from each other.
+#
 # Question Type : Generic
 # Used : Kruskal's Minimum Spanning Tree Algorithm
 #        Sort the given edges. Make a list of result, parent and rank. Result is empty.

@@ -11,11 +11,12 @@
 #        Given such huge contrast between the block size (0,200) and the grid size (1M, 1M), all we need to do is
 #        to check if there is any loops built by block on source and target b/w if there is a loop, we cannot
 #        explore outside of the loop. However, notice if target and source are in the same loop, then we are fine.
-#        Logic : def isEscapePossible(blocked, source, target):
+# Logic: def isEscapePossible(blocked, source, target):
 #        blockLookup = indexBlockedMatrixToSet(blocked)
 #        if isLoopAroundPoint(source, target, blockLookup): return False
 #        if isLoopAroundPoint(target, source, blockLookup): return False
 #        return True
+#
 #        def isLoopAroundPoint(source, target, blockLookup):
 #        count = 0, visited = set(), queue = []
 #        queue.append((source[0], source[1]))

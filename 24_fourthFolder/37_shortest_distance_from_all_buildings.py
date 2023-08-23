@@ -31,7 +31,7 @@
 #        After BFS, loop over the inpMat again, if empty space is found,
 #        check if all the buildings can be reached from
 #        it. If yes, get sum dist for all the buildings and update min.
-#        Logic : def bfs(inpMat, distMat, reachableBuildingCount, x, y):
+# Logic: def bfs(inpMat, distMat, reachableBuildingCount, x, y):
 #        dist = 0
 #        while len(queue) != 0:
 #           dist += 1, size = len(queue)
@@ -45,6 +45,7 @@
 #                           distMat[nextX][nextY] += dist
 #                           reachableBuildingCount[nextX][nextY] += 1
 #                           queue.append(Cell(nextX, nextY))
+#
 #        def shortestDist(inpMat):
 #        for i in range(row):
 #           for j in range(col):

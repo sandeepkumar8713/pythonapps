@@ -1,102 +1,80 @@
-#!/bin/python3
-
-# input str = 1102021222
-# k = 2
-# output : 6
-
-import math
-import os
-import random
-import re
-import sys
-
+# https://www.geeksforgeeks.org/number-substrings-count-character-k/
+# https://github.com/Zhouzhiling/leetcode/blob/master/MemDev%20Find%20Perfect%20Substring.md
+# Question : Given a string and an integer k, find the number of substrings in which all the different
+# characters occur exactly k times.
+# A String S compromised of digits from 0 to 9, contains a perfect substring if all the elements within
+# a substring occur exactly k times. Calculate the number of perfect strings in s.
 #
-# Complete the 'perfectSubstring' function below.
+# Examples: Input : s = "aabbcc", k = 2
+# Output : 6
+# The substrings are aa, bb, cc, aabb, bbcc and aabbcc.
 #
-# The function is expected to return an INTEGER.
-# The function accepts following parameters:
-#  1. STRING s
-#  2. INTEGER k
+# Examples: Input : s = "1102021222", k = 2
+# Output : 6
+# The substrings are 11, 11020, 102021, 0202, 22, 22
 #
+# Question Type : Asked
+# Used : Count the number of distinct characters (distinct_count).
+#        Now we will make all possible sliding window of (1 to distinct_count) * k
+#        Run loop for each window and find substring which satisfies the condition and increment result count.
+# Logic: distinct_count = len(set([i for i in inp_str]))
+#        for unique_count in range(1, distinct_count + 1):
+#           window_length = unique_count * k
+#           freq = defaultdict(int)
+#           left = 0, right = window_length - 1
+#           for i in range(left, min(right + 1, len(inp_str))):
+#               freq[inp_str[i]] += 1
+#           while right < len(inp_str):
+#               if have_same_frequency(freq, k):
+#                   count += 1
+#               freq[inp_str[left]] -= 1
+#               left += 1, right += 1
+#               if right < len(inp_str):
+#                   freq[inp_str[right]] += 1
+#        return count
+# Complexity : O(n * d) where d is count of distinct
 
 from collections import defaultdict
 
 
-def is_perfect(freq_dict, k):
-    for item, value in freq_dict.items():
-        if value != k:
-            return False
-    return True
+def have_same_frequency(freq, k):
+    return all([freq[i] == k or freq[i] == 0 for i in freq])
 
 
-def perfectSubstring(s, k):
-    # Write your code here
-    left = 0
-    right = 0
-    n = len(s)
-    freq_dict = defaultdict(int)
+def count_substrings(inp_str, k) -> int:
+    count = 0
 
-    res = 0
-    # while left < n and right < n:
-    #     ele = s[right]
-    #     freq_dict[ele] += 1
-    #     if is_perfect(freq_dict, k):
-    #         res += 1
-    #     else:
+    distinct_count = len(set([i for i in inp_str]))
+    for unique_count in range(1, distinct_count + 1):
+        window_length = unique_count * k
 
-    if k == 0:
-        return 0
+        freq = defaultdict(int)
+        left = 0
+        right = window_length - 1
+        for i in range(left, min(right + 1, len(inp_str))):
+            freq[inp_str[i]] += 1
 
-    dp = [[0] * n for _ in range(n)]
-    for left in range(n):
-        freq_dict = defaultdict(int)
-        for right in range(left, n):
-            ele = s[right]
-            freq_dict[ele] += 1
-            if is_perfect(freq_dict, k):
-                dp[left][right] = dp[left + 1][right - 1] + 1
+        while right < len(inp_str):
+            if have_same_frequency(freq, k):
+                count += 1
+            freq[inp_str[left]] -= 1
+            left += 1
+            right += 1
+            if right < len(inp_str):
+                freq[inp_str[right]] += 1
 
-    for item in dp:
-        print(item)
+    return count
 
-    res = 0
-    for i in range(n):
-        for j in range(n):
-            res += dp[i][j]
-    return res
-
-
-# 1102021222
-# k = 2
-
-# left = 0, rigth all possible posiitons
-# [0, 1, 0, 0, 0, 1, 0, 0, 0, 0]
-# [0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
-# [0, 0, 0, 0, 0, 1, 0, 0, 0, 0]
-# [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-# [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-# [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-# [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-# [0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
-# [0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
-# [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-
-# Adding all
-
-## 11 56778 22
-## k = 2
-## dp[0][1]
-## dp[n-2][n-1]
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    s = '1102021222'
+    k = 2
+    print(count_substrings(s, k))
 
-    s = input()
+    s = "aabbcc"
+    k = 2
+    print(count_substrings(s, k))
 
-    k = int(input().strip())
-
-    result = perfectSubstring(s, k)
-
-    fptr.write(str(result) + '\n')
-
-    fptr.close()
+    s = "114565722"
+    k = 2
+    print(count_substrings(s, k))

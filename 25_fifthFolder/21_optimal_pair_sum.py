@@ -15,16 +15,21 @@
 # Since 6 is the largest sum that does not exceed 7, [2, 1] is the optimal pair.
 #
 # Question Type : Easy
-# Used : Loop over the smaller array, add elements to the dict along with its value.
+# Used : We should loop from min_targe to target.
+#        Loop over the smaller array, add elements to the dict along with its value.
 #        Loop over the larger array, check if target - element is present in dict. Append in result if present.
 #        Repeat the above loop if result list is empty with target - 1.
-#        findAllPair(largerArr, hashDict, x, result, flipped):
+# Logic: findAllPair(largerArr, hashDict, x, result, flipped):
 #        for ele in largerArr:
 #           if x - ele[1] in hashDict:
-#               result.append([ele[0], hashDict[x - ele[1]]])
+#               if flipped:
+#                   result.append([ele[0], hashDict[x - ele[1]]])
+#               else:
+#                   result.append([hashDict[x - ele[1]], ele[0]])
 #
 #        findOptimalPairs(arr1, arr2, target):
 #        result = []
+#        minTarget = getMinValue(arr1) + getMinValue(arr2)
 #        for x in range(target, minTarget - 1, -1):
 #           if len(result) == 0:
 #               findAllPair(largeArr, hashDict, x, result, flipped)

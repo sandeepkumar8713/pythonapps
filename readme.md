@@ -13,3 +13,4 @@ Questions Type :
 1. [Top Questions](top_200.py)
 2. [Category Questions](99_utility/category_wise.py)
 3. [Python Notes](99_utility/notes_remember.md)
+4. [Problem Solving Approach](99_utility/approach.md)
