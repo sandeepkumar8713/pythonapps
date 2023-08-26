@@ -321,15 +321,24 @@ for key in sorted(map.keys()):
 for ch in remove:
     del charSet[ch]
 
+f = open(file_name, 'w+')
+f.write("Hello\n")
+f.close()
+
 Asynchronous Server Gateway interface
 Web Server : Uvicorn(ASGI), Django, Tomcat
 Rest Framework : FastAPI, Flask
 Async and await in Python
-Memory management in Python
+**Memory management** in Python
 Compare reactiveness in Java and Python
 data frame?
 python 3.11
 Data idmpotenecy
 why variable is infinite
+Docker, K8, pods, jobs
+Parquet metadata
+Python celeary
+How decorators work
+How to inherit class(multiple classes), method resolution, 
 
 ---------------------------------------------------------------

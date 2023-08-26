@@ -71,7 +71,8 @@ questionMap['slidingWindow'] = {'01_array/12_chocolate_distribution',
                                 '26_sixthFolder/13_sliding_window_median',
                                 '27_seventhFolder/11_min_diff_bw_max_n_min',
                                 '28_eighthFolder/43_perfect_substring',
-                                '29_ninthFolder/05_football_training'
+                                '29_ninthFolder/05_football_training',
+                                '29_ninthFolder/07_sliding_window_max',
                                 }
 
 questionMap['heap'] = {'05_heap/01_median_in_stream',

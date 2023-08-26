@@ -56,7 +56,7 @@ class BST:
                 return -1
             else:
                 rightSize = self.getRankUtils(root.right, x)
-                if rightSize is -1:
+                if rightSize == -1:
                     return rightSize
                 return root.leftSize + 1 + rightSize
 

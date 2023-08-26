@@ -9,6 +9,11 @@
 # https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/
 # https://leetcode.com/problems/online-majority-element-in-subarray/
 # https://stackoverflow.com/questions/73971228/how-to-calculate-the-sum-of-every-possible-combinations-of-the-integer-array
+# https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/
+# https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/
+# https://leetcode.com/problems/search-a-2d-matrix/ (binary search in 2d matrix)
+# https://leetcode.com/problems/number-of-music-playlists/
+# https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/
 
 # https://leetcode.com/problems/dungeon-game/ (BFS)
 # https://leetcode.com/problems/number-of-digit-one/

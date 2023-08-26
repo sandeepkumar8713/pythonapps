@@ -1,4 +1,5 @@
 # https://www.geeksforgeeks.org/partitioning-a-linked-list-around-a-given-value-and-keeping-the-original-order/
+# https://leetcode.com/problems/partition-list/
 # Question : Given a linked list and a value x, partition it such that all nodes less than
 # x come first, then all nodes with value equal to x and finally nodes with value greater
 # than or equal to x. The original relative order of the nodes in each of the three
@@ -14,8 +15,7 @@
 #        push in either of the queue. Now merge the queue. Note that new nodes are not
 #        created. We play with next pointer.
 #        While inserting in queues we just maintain front and rear pointer.
-#        Logic :
-#        def insertIntoQueue(pointers, node):
+# Logic: def insertIntoQueue(pointers, node):
 #        head = pointers[0]
 #        tail = pointers[1]
 #        if head is None:

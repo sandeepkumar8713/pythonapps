@@ -1,4 +1,5 @@
 # https://www.geeksforgeeks.org/find-given-string-can-represented-substring-iterating-substring-n-times/
+# https://leetcode.com/problems/repeated-substring-pattern/
 # Question : Given a string 'str', check if it can be constructed by taking a substring of it and appending
 # multiple copies of the substring together.
 #

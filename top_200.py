@@ -95,7 +95,8 @@ questionMap['Standard'] = {'01_array/04_longest_increasing_subsequnce',
                            '27_seventhFolder/40_square_root',
                            '27_seventhFolder/50_max_contiguous_sub_array',
                            '28_eighthFolder/14_wiggle_subsequence',
-                           '29_ninthFolder/05_football_training'
+                           '29_ninthFolder/05_football_training',
+                           '29_ninthFolder/07_sliding_window_max',
                            }
 
 questionMap['Important'] = {'01_array/01_find_missing_number',

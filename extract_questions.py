@@ -73,12 +73,26 @@ def get_remaining_questions(question_map):
 
     not_included = list(sorted(set(get_all_filename_list()) - set(top_questions)))
     new_question_map = dict()
-    new_question_map["remaining"] = not_included
+    new_question_map["Remaining"] = not_included
     return new_question_map
+
+
+def make_md_file(question_map, file_name='sample.md'):
+    f = open(file_name, 'w+')
+    for key, values in question_map.items():
+        f.write("\n\n## " + key + "\n\n")
+
+        count = 0
+        for item in sorted(list(values)):
+            count += 1
+            f.write(str(count) + ". " + "[" + item + "]" + "(" + item + ".py" + ")\n")
+
+    f.close()
 
 
 if __name__ == "__main__":
     question_map = topQuestionMap
+    make_md_file(topQuestionMap, 'top_questions.md')
 
     # Extract top questions
     fileName = fileName_top
@@ -88,6 +102,7 @@ if __name__ == "__main__":
 
     # Extract remaining questions
     new_question_map = get_remaining_questions(question_map)
+    make_md_file(new_question_map, 'remaining_questions.md')
     fileName = fileName_remaining
     if os.path.exists(fileName):
         os.remove(fileName)

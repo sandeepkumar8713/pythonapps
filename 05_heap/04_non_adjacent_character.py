@@ -1,4 +1,5 @@
-# # https://www.geeksforgeeks.org/rearrange-characters-string-no-two-adjacent/
+# https://www.geeksforgeeks.org/rearrange-characters-string-no-two-adjacent/
+# https://leetcode.com/problems/reorganize-string/
 # Question : Given a string with repeated characters, task is rearrange characters in a string
 # so that no two adjacent characters are same.
 # Input: aaabb
@@ -16,8 +17,7 @@
 #        Loop while maxHeap is not empty. Pop top element from maxHeap, append the char
 #        to the result string. If previous element freq is more than 0 again insert it
 #        in maxHeap. Make current element as previous after decrementing its frequency by 1.
-#        Logic :
-#        prev = Key('#', -1)
+# Logic: prev = Key('#', -1)
 #        resStr = ''
 #        while maxHeap.getCount() != 0:
 #           key = maxHeap.removeTop()
