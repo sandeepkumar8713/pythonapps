@@ -144,7 +144,7 @@ def ignored(*exceptions):
 with ignored(OSError):
     os.remove('somefile.txt')
 
-with open('help.txt', 'w') as f:
+with open('09_help.txt', 'w') as f:
     with contextlib.redirect_stdout(f):
         help(pow)
 

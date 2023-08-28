@@ -265,7 +265,9 @@ questionMap['trie'] = {'14_trie/02_find_palindrome_pair',
                        '14_trie/07_multi_search',
                        '14_trie/11_match_all_wild_card',
                        '14_trie/12_word_search_2',
-                       '23_thirdFolder/39_max_xor_in_array'}
+                       '23_thirdFolder/39_max_xor_in_array',
+                       '29_ninthFolder/08_suggestion_word',
+                       }
 
 questionMap['coordinate'] = {'16_coordinate/03_perfect_rectangle',
                              '16_coordinate/04_no_of_boomerang',

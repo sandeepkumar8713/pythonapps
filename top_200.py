@@ -45,6 +45,7 @@ questionMap['Asked'] = {'01_array/16_find_kth_largest_in_stream',
                         '28_eighthFolder/34_delete_duplicate_freq',
                         '28_eighthFolder/35_cache_with_time_limit',
                         '28_eighthFolder/43_perfect_substring',
+                        '29_ninthFolder/08_suggestion_word',
                         }
 
 questionMap['Standard'] = {'01_array/04_longest_increasing_subsequnce',

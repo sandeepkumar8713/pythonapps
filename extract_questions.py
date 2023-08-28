@@ -1,7 +1,8 @@
 import os
 from top_200 import questionMap as topQuestionMap
+from category_wise import questionMap as CategoryQuestionMap
 
-fileName_cat = "comments_category.txt"
+fileName_category = "comments_category.txt"
 fileName_top = "comments_top_200.txt"
 fileName_to_note = "comments_to_note.txt"
 fileName_remaining = "comments_remaining.txt"
@@ -52,7 +53,7 @@ def extract_comment(questionMap):
 def get_all_filename_list():
     filename_list = []
     for dirName in os.listdir('.'):
-        if dirName[0] != '.' and dirName != '99_utility' and os.path.isdir('./' + dirName):
+        if dirName[0] != '.' and dirName != 'utility' and os.path.isdir('./' + dirName):
             dirPath = './' + dirName
             for filename in os.listdir(dirPath):
                 if '00' in filename:
@@ -91,10 +92,16 @@ def make_md_file(question_map, file_name='sample.md'):
 
 
 if __name__ == "__main__":
-    question_map = topQuestionMap
-    make_md_file(topQuestionMap, 'top_questions.md')
+    # Extract category questions
+    # question_map = CategoryQuestionMap
+    # fileName = fileName_category
+    # if os.path.exists(fileName):
+    #     os.remove(fileName)
+    # extract_comment(question_map)
 
     # Extract top questions
+    question_map = topQuestionMap
+    make_md_file(topQuestionMap, 'top_questions.md')
     fileName = fileName_top
     if os.path.exists(fileName):
         os.remove(fileName)

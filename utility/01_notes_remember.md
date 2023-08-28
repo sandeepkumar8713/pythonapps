@@ -325,20 +325,45 @@ f = open(file_name, 'w+')
 f.write("Hello\n")
 f.close()
 
-Asynchronous Server Gateway interface
-Web Server : Uvicorn(ASGI), Django, Tomcat
-Rest Framework : FastAPI, Flask
-Async and await in Python
+---------------------------------------------------------------
+
+**Rest call Example**
+
+```python
+import requests
+
+# Fetch data from the API
+url = "https://jsonmock.hackerrank.com/api/articles?page=2"
+response = requests.get(url)
+data = response.json()
+
+# Filter out items with null titles and story titles
+filtered_data = [item for item in data["data"] if item["title"] or item["story_title"]]
+
+# Use story title if title is missing, and vice-versa
+for item in filtered_data:
+    if not item["title"]:
+        item["title"] = item["story_title"]
+    if not item["story_title"]:
+        item["story_title"] = item["title"]
+
+# Sort the data based on multiple item attributes
+sorted_data = sorted(filtered_data, key=lambda x: (x["title"], x["num_comments"]))
+```
+
+---------------------------------------------------------------
+
+**Asynchronous Server Gateway interface**
+Web Server : Uvicorn(ASGI), Tomcat
+Rest Framework : FastAPI, Flask, Django
 **Memory management** in Python
-Compare reactiveness in Java and Python
-data frame?
+data frame? in pandas
 python 3.11
-Data idmpotenecy
-why variable is infinite
-Docker, K8, pods, jobs
-Parquet metadata
-Python celeary
-How decorators work
-How to inherit class(multiple classes), method resolution, 
+Python celery
+Async and await in Python
+generators (yield)
+
+## Remaining
+1. Compare reactiveness in Java and Python
 
 ---------------------------------------------------------------

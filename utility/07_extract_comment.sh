@@ -58,7 +58,7 @@ getAllFilesCategory(){
 
 getAllFilesNotesSee(){
   fileName='notesSeeCopy.txt'
-  cp 'notesSee.txt' $fileName
+  cp '10_notesSee.txt' $fileName
   outputFile="allFilesComments_notesSee.txt"
   echo "" > $outputFile
   extract

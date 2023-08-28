@@ -47,6 +47,7 @@
 43. [28_eighthFolder/34_delete_duplicate_freq](28_eighthFolder/34_delete_duplicate_freq.py)
 44. [28_eighthFolder/35_cache_with_time_limit](28_eighthFolder/35_cache_with_time_limit.py)
 45. [28_eighthFolder/43_perfect_substring](28_eighthFolder/43_perfect_substring.py)
+46. [29_ninthFolder/08_suggestion_word](29_ninthFolder/08_suggestion_word.py)
 
 
 ## Standard
