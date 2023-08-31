@@ -113,10 +113,10 @@ print('Time taken in seconds -', end - start)
 
 asyncio provides a set of **high-level APIs** to:
 1. run Python coroutines concurrently and have full control over their execution;
-2. perform network IO and IPC;
-3. control subprocesses;
-4. distribute tasks via queues;
-5. synchronize concurrent code;
+2. **perform network IO and IPC**;
+3. **control subprocesses**;
+4. **distribute tasks via queues**;
+5. **synchronize concurrent code**;
 
 Additionally, there are **low-level APIs** for library and framework developers to:
 1. create and manage event loops, which provide asynchronous APIs for networking, running subprocesses, handling OS signals, etc;

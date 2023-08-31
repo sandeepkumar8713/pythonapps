@@ -118,7 +118,7 @@ def m(x):
     return y
 ```
 
-TODO :: more detials left out
+TODO :: more details left out
 
 ----------------------------------------------------------
 
@@ -163,56 +163,6 @@ for i in infinite_sequence():
     print(i, end=" ")
 ```
 
-TODO :: more detials left out
+TODO :: more details left out
 
 ----------------------------------------------------------
-
-## Python is dynamically typed. 
-
-In Python 3, there is only one type **“int” for all** type of integers. 
-In Python 2.7. there are two separate types **“int” (which is 32 bit)** and **“long int” that is same as “int”** of Python 3.x,
-
-Python is different in that it **dynamically adjusts the number of bits** based on the value to be stored.
-Python’s integers can keep growing in size as long as your **machine has memory** to support it. 
-This is referred to as **“arbitrary precision.”**
-
-The **sys.maxsize** property represents the max value of an integer that can be used as an **index** for Python’s 
-built-in data structures, such as **lists and strings**.
-The exact value of **sys.maxsize** is usually **2^31 – 1 on a 32-bit platform and 2^63 – 1** on a 64-bit platform. 
-
-```python
-positive_infinity = float('inf')
-
-import math
-positive_infinity = math.inf
-
-from decimal import Decimal
-positive_infinity = Decimal('Infinity')
-```
-
---------------------------------------------------------
-
-## Pytest 
-
-```python
-import pytest
-def add(a, b):
-    return a + b
-
-def test_always_passes():
-    assert True
-    
-def test_add():
-    assert add(4, 5) == 9
-    
-@pytest.fixture
-def example_fixture():
-    return 1
-
-def test_with_fixture(example_fixture):
-    assert example_fixture == 1
-```
-
-```bash
-pytest filename.py
-```

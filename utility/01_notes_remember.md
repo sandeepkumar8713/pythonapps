@@ -167,11 +167,30 @@ def charToIndex(ch):
 def indexToChar(i):
     return chr(i + ord('a'))
 
-import sys
-sys.maxsize
+def indexToChar2(i, start):
+    return chr(i + ord(start))
 
+char_set = set()
+for i in range(0,26):
+    char_set.add(indexToChar2(i, 'a'))
+
+import sys
+min_res = sys.maxsize
+
+## Binary search
+left = 0
+right = 10 - 1
 while left < right:
     mid = left + (right - left) // 2
+
+## Pattern search using regex
+import re
+regexp_1 = re.compile(r'^\*/([1-9]|[0-5][0-9])$') ## matches */45
+regexp = re.compile(r'^0?[0-9]$') ## 0-9, 00-09
+matched_1 = regexp.search('07')
+if matched_1:
+    sub_string = matched_1.group() ## Gets whole matching string
+    sub_string_2 = matched_1.group(1) ## Gets matching string from first bracket
 ```
 
 **To make all possible pairs without index**
@@ -222,13 +241,13 @@ cache.popitem(last=False)  # Remove least recently used item from front.
 ```
 
 **Datetime**
-```
-    from datetime import datetime, timedelta
-    past = datetime.now() - timedelta(days=1)
-    present = datetime.now()
-    past < present   # True
-    datetime(3000, 1, 1) < present # False
-    present - datetime(2000, 4, 4) = datetime.timedelta(days=8515, seconds=56256, microseconds=871972)
+```python
+from datetime import datetime, timedelta
+past = datetime.now() - timedelta(days=1)
+present = datetime.now()
+past < present   # True
+datetime(3000, 1, 1) < present # False
+present - datetime(2000, 4, 4) # datetime.timedelta(days=8515, seconds=56256, microseconds=871972)
 ```
 
 return "".join(str(digits) for digits in reversed(answer))
@@ -285,12 +304,11 @@ setattr(Node, "__lt__", lambda self, other: self.data <= other.data)
 
 **Traversing** through all the nodes. A way to mark visited nodes in adjacency list.
 ```python
-    for i in range(len(graph[u])):
-        v = graph[u].pop(i)
-        rt = dfs(v, current_route + [v], current_num_tickets + 1)
-        graph[u].insert(i, v)
+for i in range(len(graph[u])):
+    v = graph[u].pop(i)
+    rt = dfs(v, current_route + [v], current_num_tickets + 1)
+    graph[u].insert(i, v)
 ```
-
 
 Check if string consists only of **digits**
 if sub_str[1].isdigit():

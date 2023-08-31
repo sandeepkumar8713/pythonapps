@@ -3,12 +3,11 @@
 # efficiently store and match the custom regex string like "D*sk", where * represents any single
 # alphabet, and return the list of matched words?
 #
-# Question Type : Generic
+# Question Type : Asked
 # Used : Make a Trie for all the words in dictionary. Do iterative search of the given inpStr in trie.
 #        If * is encountered in inpStr then loop over all the characters at current level in trie and
 #        call the recursive search again. While doing so all keep track of matched words.
-#        Logic:
-#        getMatchedStringsUtils(temp, inpStr, stack, matchedWords, startLevel):
+# Logic: getMatchedStringsUtils(temp, inpStr, stack, matchedWords, startLevel):
 #        for level in range(startLevel, len(inpStr)):
 #           inpChar = inpStr[level]
 #           if inpChar == '*':

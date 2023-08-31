@@ -201,16 +201,17 @@ def do_twice(func):
 Technical Detail: The @functools.wraps decorator uses the function functools.update_wrapper() to update **special attributes** \
 like __name__ and __doc__ that are used in the introspection.
 
-# Real world example : https://realpython.com/primer-on-python-decorators/#a-few-real-world-examples
-1. Make a timer decorator: to print time spent in execution
-2. Debugging code: printing the input and output of the function
-3. Slow down code: you want to rate-limit a function that continuously checks whether a resource—like a web page—has changed. The 
+## Real world example : 
+Link : https://realpython.com/primer-on-python-decorators/#a-few-real-world-examples
+1. Make a **timer decorator**: to print time spent in execution
+2. **Debugging code**: printing the input and output of the function
+3. **Slow down code**: you want to rate-limit a function that continuously checks whether a resource—like a web page—has changed. The 
    @slow_down decorator will sleep one second before it calls the decorated function.
-4. Registering Plugins, They can also simply register(update entry in map) that a function exists and return it unwrapped. 
+4. **Registering Plugins**, They can also simply register(update entry in map) that a function exists and return it unwrapped. 
    This can be used, for instance, to create a light-weight plug-in architecture. (This is how globls() work)
-5. Check if user is logged in.
+5. Check if **user is logged** in.
 6. Adding Information About Units.
-7. Validating Jsons.
+7. **Validating Jsons**.
 
 ```python
 from flask import Flask, g, request, redirect, url_for
@@ -387,7 +388,7 @@ print(concatenate(a="Real", b="Python", c="Is", d="Great", e="!"))
 
 ```python
 my_list = [1, 2, 3]
-print(my_list) [1, 2, 3]
+print(my_list) # [1, 2, 3]
 print(*my_list) # 1 2 3
 
 my_first_dict = {"A": 1, "B": 2}
