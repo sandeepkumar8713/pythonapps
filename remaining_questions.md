@@ -530,4 +530,3 @@
 526. [29_ninthFolder/03_caesar_cipher_encryption](29_ninthFolder/03_caesar_cipher_encryption.py)
 527. [29_ninthFolder/04_file_transfer_time](29_ninthFolder/04_file_transfer_time.py)
 528. [29_ninthFolder/06_strange_pairs](29_ninthFolder/06_strange_pairs.py)
-529. [assingment/01_parse](assingment/01_parse.py)

@@ -14,6 +14,9 @@
 # https://leetcode.com/problems/search-a-2d-matrix/ (binary search in 2d matrix)
 # https://leetcode.com/problems/number-of-music-playlists/
 # https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/
+# https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden
+# https://leetcode.com/problems/minimum-replacements-to-sort-the-array/
+# https://leetcode.com/problems/minimum-penalty-for-a-shop/
 
 # https://leetcode.com/problems/dungeon-game/ (BFS)
 # https://leetcode.com/problems/number-of-digit-one/

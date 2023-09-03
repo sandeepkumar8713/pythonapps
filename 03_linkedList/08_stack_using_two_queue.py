@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/implement-stack-using-queues/
 # CTCI : Q3_04_Queue_via_Stacks
 # Question : Implement a Stack using 2 queue q1 and q2
 #

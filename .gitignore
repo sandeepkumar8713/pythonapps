@@ -10,3 +10,4 @@ fileList.txt
 __pycache__/
 .DS_Store
 comments_*.txt
+log.txt
