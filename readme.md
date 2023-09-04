@@ -19,9 +19,10 @@ Questions Type :
 
 ## Python Theory
 1. [Global Interpreter Lock](theory/01_GIL.md)
-2. [Memory Mangement](theory/02_memory_management.md)
+2. [Memory Management](theory/02_memory_management.md)
 3. [Inheritance](theory/03_inheritance.md)
 4. [Meta Class](theory/04_meta_class.md)
 5. [Decorators](theory/05_decorators.md)
 6. [Async IO](theory/06_async_io.md)
 7. [Miscellaneous](theory/07_miscellaneous.md)
+8. [Generic Class](theory/08_generic_class.md)

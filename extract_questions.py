@@ -51,7 +51,7 @@ def extract_comment(questionMap):
 
 
 def get_all_filename_list():
-    ignore_folders = ['utility', 'assignment']
+    ignore_folders = ['utility', 'assignment', 'fast_api_example']
     filename_list = []
     for dirName in os.listdir('.'):
         if dirName[0] != '.' and dirName not in ignore_folders and os.path.isdir('./' + dirName):
