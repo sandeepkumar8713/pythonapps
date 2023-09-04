@@ -189,7 +189,7 @@ NAME              READY   STATUS      RESTARTS   AGE
 countdown-dzrz8   0/1     Completed   0          55s
 ```
 
-K8s Orchestration functonalities
+K8s Orchestration functionalities
 1. Registry
 2. Networking
 3. Storage
@@ -256,10 +256,10 @@ The merge strategies available in Bitbucket are:
 1. **Merge commit** (--no-ff) DEFAULT: Always create a new merge commit and update the target branch to it, even 
    if the source branch is already up to date with the target branch.
 
-2. Fast-forward (--ff): If the source branch is out of date with the target branch, create a merge commit. 
+2. **Fast-forward** (--ff): If the source branch is out of date with the target branch, create a merge commit. 
    Otherwise, update the target branch to the latest commit on the source branch.
  
-3. Fast-forward only (--ff-only): If the source branch is out of date with the target branch, reject the merge 
+3. **Fast-forward only** (--ff-only): If the source branch is out of date with the target branch, reject the merge 
    request. Otherwise, update the target branch to the latest commit on the source branch.
  
 4. **Rebase, merge**  (rebase + merge --no-ff): Commits from the source branch onto the target branch, creating a 

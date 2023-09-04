@@ -148,7 +148,7 @@ class ParserFactory:
     def get_parser(parser_type):
         parser_obj = None
         if parser_type == ParserType.MINUTE:
-            parser_obj = TimeParser(atom_reg_exp='(0?[0-9]|[0-5][0-9])',
+            parser_obj = TimeParser(atom_reg_exp='(0?[0-9]|[1-5][0-9])',
                                     lower_limit=0,
                                     upper_limit=59,
                                     field=parser_type

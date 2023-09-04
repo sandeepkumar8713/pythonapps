@@ -6,10 +6,11 @@
 # Example 1: Input: [1,2,0]
 # Output: 3
 #
-# Question Type : ShouldSee
+# Question Type : Asked
 # Used : Run a while on the given array. Find correct index for the element assuming index starts from 0.
 #        c = inpArr[i] - 1.
-#        If the current element is +ve and not placed at its correct position, swap element at i and c.
+#        If the current element is +ve, c is less than n and not placed at its correct position,
+#           swap element at i and c.
 #        else increment i
 #        Now run another loop, to find the element which is not at it correct position.
 # Logic: while i < n:

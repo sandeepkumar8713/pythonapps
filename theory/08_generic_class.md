@@ -14,6 +14,8 @@ type is used in Python type hints. T and U are commonly used names in generics (
 standing for…. nothing. It’s just the next letter in the alphabet) similar to how i and x are used as 
 iteration variables.
 
+Example of **dependency injection**. 
+
 ```python
 from typing import Dict, Generic, TypeVar
 
