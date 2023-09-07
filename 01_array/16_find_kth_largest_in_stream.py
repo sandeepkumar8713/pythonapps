@@ -11,7 +11,8 @@
 # Output: {_,   _, 10, 11, 20, 40, 50,  50, ...}
 #
 # Question Type : Asked
-# Used : For first k elements make a min heap
+# Used : Maintain a min heap which saves top k elements at any given point of time.
+#        For first k elements make a min heap
 #        Now loop through the remaining elements, if x is greater than top of heap
 #        replace and heapify.
 #        for each iteration top of the heap is kth largest element till now.\

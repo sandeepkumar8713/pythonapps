@@ -33,6 +33,7 @@ class ParserType(Enum):
     DAY_OF_MONTH = "DAY_OF_MONTH"
     MONTH = "MONTH"
     DAY_OF_WEEK = "DAY_OF_WEEK"
+    YEAR = "YEAR"
     COMMAND = "COMMAND"
 
 
@@ -140,6 +141,7 @@ class CommandParser(Parser):
         self.label = label
 
     def parse(self, sub_str):
+        print(sub_str)
         return [sub_str]
 
 
@@ -177,6 +179,12 @@ class ParserFactory:
                                     upper_limit=6,
                                     field=parser_type
                                     )
+        elif parser_type == ParserType.YEAR:
+            parser_obj = TimeParser(atom_reg_exp='([2][0-9][0-9][0-9]|3000)',
+                                    lower_limit=2000,
+                                    upper_limit=3000,
+                                    field=parser_type
+                                    )
         elif parser_type == ParserType.COMMAND:
             parser_obj = CommandParser(label=parser_type)
         return parser_obj
@@ -195,7 +203,9 @@ class Parsed:
 
         result_str_list = []
         for result in self.result_list:
+            #if self.label.value == "COMMAND":
             result_str_list.append(str(result))
+
 
         result_str = " ".join(result_str_list)
         output_label_str = "".join(output_label)
@@ -205,21 +215,54 @@ class Parsed:
 def parse_cron_command(inp_str):
     sub_strs = inp_str.split(" ")
 
+    year_atom = sub_strs[5]
+    parser = ParserFactory.get_parser(ParserType.YEAR)
+    sixth_is_year = False
+    try:
+        parser.parse(year_atom)
+        sixth_is_year = True
+    except Exception as e:
+        sixth_is_year = False
+
+    print (sixth_is_year)
     field_len = 6
-    if len(sub_strs) != field_len:
+    time_char_index = 5
+    parser_types = [ParserType.MINUTE, ParserType.HOUR, ParserType.DAY_OF_MONTH,
+                    ParserType.MONTH, ParserType.DAY_OF_WEEK]
+
+    if sixth_is_year:
+        time_char_index += 1
+        field_len += 1
+        parser_types.append(ParserType.YEAR)
+
+    parser_types.append(ParserType.COMMAND)
+
+    sub_strs_new = sub_strs[:time_char_index]
+    combined_time = " ".join(sub_strs_new)
+    last_index = len(combined_time)
+    last_command = inp_str[last_index:]
+    combined_command = "".join(last_command)
+    combined_command = combined_command.lstrip(" ")
+    print (combined_command)
+
+    sub_strs_new.append(combined_command)
+
+    print (sub_strs_new)
+
+    if len(sub_strs_new) < field_len:
         raise InvalidFieldCountException(f"Input string should have {field_len} fields")
 
-    parser_types = [ParserType.MINUTE, ParserType.HOUR, ParserType.DAY_OF_MONTH,
-                    ParserType.MONTH, ParserType.DAY_OF_WEEK, ParserType.COMMAND]
+
     parsed_list = []
     error_list = []
-    for i in range(len(sub_strs)):
+
+    for i in range(len(sub_strs_new)):
         try:
             parser = ParserFactory.get_parser(parser_types[i])
-            result = parser.parse(sub_strs[i])
+            result = parser.parse(sub_strs_new[i])
             parsed_list.append(Parsed(parser_types[i], result))
         except Exception as e:
-            error_list.append("Exception occurred while parsing field [" + sub_strs[i] + "] : " + str(e))
+            error_list.append("Exception occurred while parsing field [" + sub_strs_new[i] + "] : " + str(e))
 
     if len(error_list) >= 1:
         return error_list
@@ -248,3 +291,14 @@ if __name__ == "__main__":
 
     # parse_and_print_cron_command("*/15 0 1,15 * 1-5 /usr/bin/find")
     # python cron_command_parser.py "*/15 0 1,15 * 1-5 /usr/bin/find"
+
+    # parse_and_print_cron_command("*/15 0 1,15 * 1-5 /usr/bin/find -v foo")
+    # parse_and_print_cron_command("*/15 0 1,15 * 1-5 /usr/bin/find -v 'Multiple   spaces'")
+
+    parse_and_print_cron_command("*/15 0 1,15 * 1-5 2023-2025 /usr/bin/find")
+
+    # */15 0 1,15 * FRI-MON /usr/bin/find
+    # 0-6
+    # MON-SAT
+    # FRI-MON
+    # {'MON' : 1, 'TUE' : 2}

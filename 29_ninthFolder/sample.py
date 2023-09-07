@@ -152,11 +152,16 @@ def find_missing_positive(nums):
 
 
 if __name__ == "__main__":
-    nums = [7, 8, 9, 11, 12]
-    print(find_missing_positive(nums))
-
-    nums = [1, 2, 0]
-    print(find_missing_positive(nums))
+    # nums = [7, 8, 9, 11, 12]
+    # print(find_missing_positive(nums))
     #
-    nums = [3, 4, -1, 1]
-    print(find_missing_positive(nums))
+    # nums = [1, 2, 0]
+    # print(find_missing_positive(nums))
+    # #
+    # nums = [3, 4, -1, 1]
+    # print(find_missing_positive(nums))
+    item_list = [1, 2, 4, 10]
+    x = [item for item in item_list if item > 5]
+    y = [item if item > 5 else -1 for item in item_list]
+    print (x)
+    print (y)

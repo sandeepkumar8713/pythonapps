@@ -343,6 +343,11 @@ f = open(file_name, 'w+')
 f.write("Hello\n")
 f.close()
 
+using **generator** to create a output list
+item_list = [1, 2, 4, 10]
+x = [item for item in item_list if item > 5]
+y = [item if item > 5 else -1 for item in item_list]
+
 ---------------------------------------------------------------
 
 **Rest call Example**

@@ -9,7 +9,7 @@
 # Subset2 = {11}, sum of Subset2 = 11
 #
 # Question Type : Generic
-# Used : Let us suppose total sum is 100, so ideal division would be 50-50. If not possible
+# Used : (Knapsack) Let us suppose total sum is 100, so ideal division would be 50-50. If not possible
 #        49-51, 48-52 and so on ... So to tell this, we should have array of boolean from 0
 #        to 100, specifying whether it is possible to make those sums using the given input
 #        elements by including or excluding.
@@ -23,24 +23,24 @@
 #               dp[i][j] |= dp[i - 1][j - arr[i - 1]]
 #        After the loop we will have dp[n][totalSum] array. Loop over this array from totalSum/2 to 0.
 #           If dp[n][j] is true then set diff = (totalSum - 2 * j) and break.
-#       return diff
-#       Logic : dp = []
-#       for i in range(n+1):
+#        return diff
+# Logic: dp = []
+#        for i in range(n+1):
 #           dp.append([False] * (totalSum + 1))
-#       for j in range(1, totalSum + 1):
+#        for j in range(1, totalSum + 1):
 #           dp[0][j] = False
-#       for i in range(0, n + 1):
+#        for i in range(0, n + 1):
 #           dp[i][0] = True
-#       for i in range(1, n+1):
+#        for i in range(1, n+1):
 #           for j in range(1, totalSum):
-#            dp[i][j] = dp[i - 1][j]
-#            if arr[i - 1] <= j:
-#               dp[i][j] |= dp[i - 1][j - arr[i - 1]]
-#       for j in range(totalSum // 2, -1, -1):
+#               dp[i][j] = dp[i - 1][j]
+#               if arr[i - 1] <= j:
+#                   dp[i][j] |= dp[i - 1][j - arr[i - 1]]
+#        for j in range(totalSum // 2, -1, -1):
 #           if dp[n][j]:
 #               diff = totalSum - 2 * j
 #               break
-#       return diff
+#        return diff
 # Complexity : O(n * totalSum) same amount of auxiliary space.
 
 import sys
