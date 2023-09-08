@@ -83,5 +83,7 @@ def findMinDiff(arr):
 
 if __name__ == "__main__":
     arr = [1, 6, 11, 5]
-    # arr = [3, 1, 4, 2, 2, 1]
+    print("Minimum difference between 2 sets:", findMinDiff(arr))
+
+    arr = [3, 1, 4, 2, 2, 1]
     print("Minimum difference between 2 sets:", findMinDiff(arr))

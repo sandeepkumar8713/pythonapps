@@ -7,7 +7,7 @@
 # Example : Input: nums = [1,3,-1,-3,5,3,6,7], k = 3
 # Output: [3,3,5,5,6,7]
 #
-# Question : Generic
+# Question : Asked
 # Used : Sliding window
 #        We will try to maintain a max queue, it should be sorted in descending order.
 #        While inserting in the max queue, we should keep popping lesser values.
@@ -23,10 +23,12 @@
 #               ans.append(top_ele)
 #        return ans
 # Complexity : O(n * k)
+# Using Binary search will give O(n * log k)
 
 def print_max_q(nums, max_q_index):
     res = [nums[index] for index in max_q_index]
     print(res)
+
 
 def binary_search(max_q_index, nums, target):
     res = [nums[index] for index in max_q_index]
@@ -41,6 +43,7 @@ def binary_search(max_q_index, nums, target):
         else:
             left = mid + 1
     return cut
+
 
 def get_max_window(nums, k):
     max_q_index = []
