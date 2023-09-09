@@ -19,11 +19,11 @@
 #    "justification.  "
 # ]
 #
-# Question Type : ShouldSee
+# Question Type : Asked
 # Used : First calculate how many words with 1 space can be added in a row.
 #        Now calculate average and remainder space, to filled in that row.
-#        avg = (constLen - rowLen) / wordCount
-#        remainder = (constLen - rowLen) % wordCount
+#        avg = (constLen - rowLen) / (wordCount - 1)
+#        remainder = (constLen - rowLen) % (wordCount - 1)
 #        For last row set avg = rem = 0
 #        Now after each word, add avg space and 1 remainder space. That is how we will get justified line
 # Logic: while i < n:
