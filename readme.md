@@ -26,3 +26,4 @@ Questions Type :
 6. [Async IO](theory/06_async_io.md)
 7. [Miscellaneous](theory/07_miscellaneous.md)
 8. [Generic Class](theory/08_generic_class.md)
+9. [Questions](theory/09_questions.md)

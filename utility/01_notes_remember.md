@@ -186,12 +186,19 @@ while left < right:
 ## Pattern search using regex
 import re
 regexp_1 = re.compile(r'^\*/([1-9]|[0-5][0-9])$') ## matches */45
+regexp = re.compile(r'inet [0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}')
 regexp = re.compile(r'^0?[0-9]$') ## 0-9, 00-09
+atom_reg_exp='(0?[1-9]|[12][0-9]|[3][0-1])' # 0-9, 00-31
+atom_reg_exp='(0?[1-9]|[0-9][0-9]|[1][0-9][0-9]|[2][0-5][0-5]|)' # 0-9, 00-255
 matched_1 = regexp.search('07')
 if matched_1:
     sub_string = matched_1.group() ## Gets whole matching string
     sub_string_2 = matched_1.group(1) ## Gets matching string from first bracket
 ```
+
+# who are the logged in user in linux
+# last logged in user
+# ls -R
 
 **To make all possible pairs without index**
 for item_1,item_2 in zip(top, top[1:]):
