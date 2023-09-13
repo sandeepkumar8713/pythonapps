@@ -13,7 +13,7 @@ class Trie:
     def search(self):
         pass
 
-# List all attributes and dunder menthods of the given object
+# List all attributes and dunder methods of the given object
 t = Trie()
 print (t.__dir__())
 # ['root', '__module__', '__init__', 'insert', 'subStringSearch', 'search', '__dict__', '__weakref__', '__doc__', 
@@ -75,7 +75,7 @@ the next iteration of the loop to run immediately.
 An **iterator has the whole sequence in memory** before it returns the first result. An iterator uses the "return". A generator 
 **calculates each result at the moment** it is called for. The next result is unknown. A generator uses "yield".
 
-Interpretor vs Compiler
+**Interpretor vs Compiler**
 A compiler translates code written in a **high-level programming language into a lower-level language** like assembly language, 
 object code and machine code (binary 1 and 0 bits). It **converts the code ahead of time** before the program runs.
 
@@ -133,6 +133,8 @@ Module == PyImport_ImportModule("<modulename>");
 1. **WSGI stands for Web Server Gateway Interface, and ASGI stands for Asynchronous Server Gateway interface.**
 2. Django provides a **default wsgi server**.
 3. The django server should be used for development. I personally use **nginx** and **gunicorn** to run my server.
+
+**Fast API** runs on **ASGI** server program like Uvicorn, Hypercorn, Daphne.
 
 PEP 8 is the Python **latest coding convention** and it is abbreviated as **Python Enhancement Proposal**. It is all about how to 
 format your Python code for maximum readability.

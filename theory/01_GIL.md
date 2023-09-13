@@ -3,7 +3,7 @@
 ## Thread
 1. A **thread** is a **stream of instructions** within a process. 
 2. Each thread has its own **instruction pointer, set of registers and stack memory**. 
-3. The virtual address space is process specific, or common to all threads within a process. 
+3. The **virtual address space** is process specific, or common to all threads within a process. 
 4. So, data on the heap can be readily accessed by all threads, for good or ill.
 5. Multi-threading is a more **light weight form of concurrency**: there is **less context** per thread than per process. 
 6. As a result thread lifetime, context switching and synchronisation **costs are lower**. The shared
@@ -52,7 +52,11 @@ sys.getrefcount(a) # Output 3, The list object was referenced by a, b and the ar
    performance overhead. But it effectively makes any **CPU-bound** Python program single-threaded.
 
 5. Python has been around since the days when operating systems did not have a concept of threads. Python was designed to be 
-   easy-to-use in order to make development quicker and more and more developers started using it.  A lot of extensions were being written for the **existing C libraries** whose features were needed in Python. To prevent inconsistent changes, these C extensions required a **thread-safe memory management** which the GIL provided. C libraries that were not thread-safe became easier to integrate. And these C extensions became one of the reasons why Python was readily adopted by different communities.
+   easy-to-use in order to make development quicker and more and more developers started using it.  A lot of extensions 
+   were being written for the **existing C libraries** whose features were needed in Python. To prevent inconsistent changes, 
+   these C extensions required a **thread-safe memory management** which the GIL provided. C libraries that were not
+   thread-safe became easier to integrate. And these C extensions became one of the reasons why Python was readily
+   adopted by different communities.
 
 ## Remove GIL
 1. The GIL does not have much impact on the performance of **I/O-bound** multi-threaded programs as the lock is shared
@@ -63,12 +67,13 @@ sys.getrefcount(a) # Output 3, The list object was referenced by a, b and the ar
 3. The GIL can obviously be removed and this has been done multiple times in the past by the developers and researchers but all 
    those attempts **broke the existing C extensions** which depend heavily on the solution that the GIL provides.
 4. Of course, there are other solutions to the problem that the GIL solves but some of them decrease the performance of 
-   single-threaded and multi-threaded I/O-bound programs and some of them are just too difficult. After all, you wouldn’t want your existing Python programs to run slower after a new version comes out, right?
+   single-threaded and multi-threaded I/O-bound programs and some of them are just too difficult. After all, 
+   you wouldn’t want your existing Python programs to run slower after a new version comes out, right?
 
 ## But Python 3 did bring a major improvement to the existing GIL—
 1. We discussed the impact of GIL on “only CPU-bound” and “only I/O-bound” multi-threaded programs but what about the programs 
    where some threads are I/O-bound and some are CPU-bound?
-2. In such programs, Python’s GIL was known to **starve** the I/O-bound threads by not giving them a chance to acquire the GIL 
+2. In such programs, Python’s GIL was known to **starve the I/O-bound threads** by not giving them a chance to acquire the GIL 
    from CPU-bound threads.
 3. This was because of a mechanism built into Python that forced threads to release the GIL after a **fixed interval** of 
    continuous use and if nobody else acquired the GIL, **the same thread** could continue its use.
@@ -127,11 +132,10 @@ Additionally, there are **low-level APIs** for library and framework developers 
    1. The Python language was changed to accommodate asyncio with the addition of expressions and types.
    2. More specifically, it was changed to support coroutines as first-class concepts. In turn, coroutines are the unit of 
       concurrency used in asyncio programs.
-   3. A coroutine is a function that can be suspended and resumed.
+   3. A coroutine is a function that can be **suspended and resumed**.
    4. **Coroutines** are a more generalized form of subroutines. Subroutines are entered at one point and exited at another 
        point. Coroutines can be entered, exited, and resumed **at many different points**. — Python Glossary
    5. A coroutine may suspend for many reasons, such as executing another coroutine, e.g. awaiting another task, or waiting
       for some external resources, such as a socket connection or process to return data.
    6. Many coroutines can be **created and executed at the same time**. They have control over when they will suspend and
       resume, allowing them to cooperate as to when concurrent tasks are executed.
-

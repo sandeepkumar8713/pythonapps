@@ -12,7 +12,7 @@ While working with Python, there are two types of memory:
 2. Dynamic Memory
 
 Python uses **dynamic memory allocation**, i.e. memory allocation occurs during runtime. The dynamic memory allocation
-uses a **Heap data structure** for implementation. Besides heap data structure, the Stack data structure is used to store
+uses a **Heap data structure** for implementation. Besides heap data structure, the **Stack data structure** is used to store
 the static memory. Here, static memory refers to the function call stack.
 
 When we declare a variable in Python, **it creates an object in the Private Heap Space** that stores the variable's value. While 
@@ -29,6 +29,8 @@ Heap in Python holds the objects and other data structures used in the program.
 So, when a variable (a reference to an object) is no longer in use, the Python memory manager frees up the space, i.e. it removes 
 the unnecessary object. This process of removing objects, which are no longer in use, is known as **Garbage Collection**. 
 This process runs on a regular basis and reclaims memory space from objects that are no longer needed by the program. 
+
+## Dir and Global
 
 As you know, the **dir()** method returns the all properties and methods of a specified object. Even when no object is 
 referenced, it returns a list of all the variables and built-in methods used in your program.
@@ -145,7 +147,7 @@ fixed-length contiguous chunk of memory that the OS uses. Python assumes the sys
        relevant data
     3. **allocated**: a portion of memory that actually contains relevant data
 
-2. The freeblock pointer points to a singly linked list of free blocks of memory. In other words, a list of available places to 
+2. The freeblock pointer points to a **singly linked list** of free blocks of memory. In other words, a list of available places to 
    put data. If more than the available free blocks are needed, the allocator will get some untouched blocks in the pool.
 
 3. As the memory manager makes blocks “free,” those now free blocks get added to the front of the freeblock list. The actual list 
