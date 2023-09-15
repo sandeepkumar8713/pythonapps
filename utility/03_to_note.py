@@ -7,6 +7,7 @@ questionMap['MicrosoftOA'] = {
     '29_ninthFolder/13_max_len_unique_len',
     '29_ninthFolder/14_find_valid_date',
     '29_ninthFolder/15_reduce_pollution',
+    '29_ninthFolder/16_assembly_line_no_switch'
 }
 
 questionMap['outerCheck1'] = {
