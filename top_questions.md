@@ -106,6 +106,7 @@
 47. [27_seventhFolder/50_max_contiguous_sub_array](27_seventhFolder/50_max_contiguous_sub_array.py)
 48. [28_eighthFolder/14_wiggle_subsequence](28_eighthFolder/14_wiggle_subsequence.py)
 49. [29_ninthFolder/05_football_training](29_ninthFolder/05_football_training.py)
+50. [29_ninthFolder/11_max_len_concat](29_ninthFolder/11_max_len_concat.py)
 
 
 ## Important

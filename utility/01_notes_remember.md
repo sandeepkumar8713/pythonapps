@@ -196,9 +196,10 @@ if matched_1:
     sub_string_2 = matched_1.group(1) ## Gets matching string from first bracket
 ```
 
-# who are the logged in user in linux
-# last logged in user
-# ls -R
+# who are the logged in user in linux : $who
+# last logged in user : $last
+# ls -R : check subdirectories
+# find, sed
 
 **To make all possible pairs without index**
 for item_1,item_2 in zip(top, top[1:]):
@@ -229,6 +230,7 @@ return "".join(digits)
 
 **round upto D digits**
 return round(mid, D)
+return abs(-12)
 
 **Fetch row using SQLAlchemy**
 ```

@@ -532,4 +532,7 @@
 528. [29_ninthFolder/10_extra_characters](29_ninthFolder/10_extra_characters.py)
 529. [29_ninthFolder/sample](29_ninthFolder/sample.py)
 530. [29_ninthFolder/sample_2](29_ninthFolder/sample_2.py)
-531. [29_ninthFolder/sample_test](29_ninthFolder/sample_test.py)
+531. [29_ninthFolder/sample_3](29_ninthFolder/sample_3.py)
+532. [29_ninthFolder/sample_4](29_ninthFolder/sample_4.py)
+533. [29_ninthFolder/sample_5](29_ninthFolder/sample_5.py)
+534. [29_ninthFolder/sample_test](29_ninthFolder/sample_test.py)
