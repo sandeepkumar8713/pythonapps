@@ -1,5 +1,14 @@
 questionMap = dict()
 
+questionMap['MicrosoftOA'] = {
+    '27_seventhFolder/14_jump_game_3',
+    '29_ninthFolder/11_max_len_concat',
+    '29_ninthFolder/12_swap_to_palindrome',
+    '29_ninthFolder/13_max_len_unique_len',
+    '29_ninthFolder/14_find_valid_date',
+    '29_ninthFolder/15_reduce_pollution',
+}
+
 questionMap['outerCheck1'] = {
     '01_array/26_min_operation_to_make_same',
     '01_array/27_min_operation_to_make_equal',

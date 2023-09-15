@@ -271,6 +271,9 @@ ValueError: 'dog' is not in list
 **Remove** ele from list
 prime_numbers.remove(9)
 
+**Reverse Loop from 10 to 0**
+for i in range(10,-1,-1): 
+
 ```
     a=[1,2,3,4,5,6,7]
     a[:2] : [1, 2] ## first two elements

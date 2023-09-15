@@ -75,3 +75,5 @@ if __name__ == "__main__":
     inpArr = [5, 7, 20, 9, 33]
     print(longestArithSeqLength(inpArr))
 
+    inpArr = [18, 26, 18, 24, 24, 20, 22]
+    print(longestArithSeqLength(sorted(inpArr)))

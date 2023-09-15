@@ -7,8 +7,7 @@
 # Question Type : Generic
 # Used : Do BFS from the start index. While push both fwd and back index in queue.
 #        During BFS if we get 0 return True. After the loop return False.
-#        Logic:
-#        while que:
+# Logic: while que:
 #           i = que.pop(0)
 #           if arr[i] == 0:
 #               return True

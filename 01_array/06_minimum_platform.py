@@ -2,6 +2,8 @@
 # Similar : 23_thirdFolder/47_my_calendar_3
 # Question : Given arrival and departure times of all trains that reach a railway station,
 # find the minimum number of platforms required for the railway station so that no train waits.
+# Similar : Given an array of meeting time intervals consisting of start and end
+# times[[s1,e1],[s2,e2],...](si< ei), find the minimum number of conference rooms required.
 #
 # Question Type : Generic
 # Used : Sort the arrival and departure array

@@ -62,3 +62,7 @@ if __name__ == "__main__":
     inp_arr = [4, 3, 2, 3, 5, 2, 1]
     k = 4
     print(is_possible(inp_arr, k))
+
+    inp_arr = [1, 2, 3, 4, 5]
+    k = 3
+    print(is_possible(inp_arr, k))
