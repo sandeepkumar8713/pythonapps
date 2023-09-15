@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/
 # Question : Find minimum number of delete to make the frequency of each element unique
 #
 # Example : Input : [1, 1, 1, 2, 2, 2]
