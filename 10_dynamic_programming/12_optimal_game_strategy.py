@@ -27,8 +27,7 @@
 #               So the current value should be:
 #               dp[i][j] = max(arr[i] + min(x, y), arr[j] + min(y, z))
 #        return dp[0][n-1]
-#        Logic :
-#        optimalStrategyOfGame(arr):
+# Logic: optimalStrategyOfGame(arr):
 #        n = len(arr), dp = []
 #        for i in range(n):
 #           dp.append([0] * n)

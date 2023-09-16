@@ -55,9 +55,6 @@ def max_cars(hours, x, y):
             return 0
 
         hour = hours[index]
-        if (x - hour) < 0 and (y - hour) < 0:
-            return 0
-
         if (index, x, y) in dp:
             return dp[(index, x, y)]
 
@@ -73,9 +70,9 @@ def max_cars(hours, x, y):
             y_val = 1 + dfs(index + 1, x, y - hour)
 
         # excluded
-        not_hour = dfs(index + 1, x, y)
+        not_included = dfs(index + 1, x, y)
 
-        dp[(index, x, y)] = max(max(x_val, y_val), not_hour)
+        dp[(index, x, y)] = max(max(x_val, y_val), not_included)
         return dp[(index, x, y)]
 
     return dfs(0, x, y)
@@ -100,4 +97,9 @@ if __name__ == "__main__":
     hours = [5, 5, 4, 6]
     x = 8
     y = 8
+    print(max_cars(hours, x, y))
+
+    hours = [9, 1, 1]
+    x = 1
+    y = 1
     print(max_cars(hours, x, y))
