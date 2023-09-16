@@ -35,7 +35,6 @@
 # https://leetcode.com/problems/island-perimeter/
 # https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/
 # https://leetcode.com/problems/find-the-duplicate-number/ (% n )
-# https://leetcode.com/problems/count-good-nodes-in-binary-tree/
 # https://www.geeksforgeeks.org/find-the-largest-alphabetic-character-present-in-the-string/
 # https://leetcode.com/problems/remove-digit-from-number-to-maximize-result/
 # https://leetcode.com/problems/minimum-time-to-make-rope-colorful/
