@@ -9,6 +9,8 @@ questionMap['MicrosoftOA'] = {
     '29_ninthFolder/15_reduce_pollution',
     '29_ninthFolder/16_assembly_line_no_switch'
     '29_ninthFolder/17_optimal_game_single',
+    '29_ninthFolder/18_stones_in_grid',
+    '29_ninthFolder/19_doctor_appointment',
 }
 
 questionMap['outerCheck1'] = {

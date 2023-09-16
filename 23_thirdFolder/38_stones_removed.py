@@ -19,7 +19,7 @@
 #        might me multiple disjoint sets in the graph. When it comes to removing stones,
 #        all stones except the last stone can be
 #        removed from a set. So it comes down to counting number of disjoint sets.
-#        Logic : def removeStones(stones):
+# Logic: def removeStones(stones):
 #        N = len(stones)
 #        dsu = DSU(20000)
 #        for x, y in stones:
