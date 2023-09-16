@@ -13,6 +13,12 @@ questionMap['MicrosoftOA'] = {
     '29_ninthFolder/19_doctor_appointment',
     '29_ninthFolder/20_group_cells',
     '29_ninthFolder/21_balanced_board',
+    '29_ninthFolder/22_minimum_insertion',
+    '29_ninthFolder/23_min_of_diff',
+    '29_ninthFolder/24_circle_of_string',
+    '29_ninthFolder/25_sort_using_permutation_array',
+    '29_ninthFolder/26_longest_happy_string',
+    '29_ninthFolder/27_merge_two_elements'
 }
 
 questionMap['outerCheck1'] = {
