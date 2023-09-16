@@ -11,6 +11,8 @@ questionMap['MicrosoftOA'] = {
     '29_ninthFolder/17_optimal_game_single',
     '29_ninthFolder/18_stones_in_grid',
     '29_ninthFolder/19_doctor_appointment',
+    '29_ninthFolder/20_group_cells',
+    '29_ninthFolder/21_balanced_board',
 }
 
 questionMap['outerCheck1'] = {

@@ -27,9 +27,6 @@ def can_assign(pref_a, pref_b, available_slots):
     pref_map = defaultdict(list)
     n = len(pref_a)
 
-    if n > available_slots:
-        return 0
-
     for i in range(n):
         pref_map[pref_a[i] - 1].append(i)
         pref_map[pref_b[i] - 1].append(i)
@@ -78,20 +75,20 @@ if __name__ == "__main__":
     A = [1, 1, 3]
     B = [2, 2, 1]
     S = 3
-    print(can_assign(A, B, S))
+    print(f"Ans = {can_assign(A, B, S)}")
 
     A = [3, 2, 3, 1]
     B = [1, 3, 1, 2]
     S = 3
-    print(can_assign(A, B, S))
+    print(f"Ans = {can_assign(A, B, S)}")
 
     A = [2, 5, 6, 5]
     B = [5, 4, 2, 2]
     S = 8
-    print(can_assign(A, B, S))
+    print(f"Ans = {can_assign(A, B, S)}")
 
     # patient with index id 4,5,6 have preference only solt id 6,7 which cannot be allocated
     A = [1, 2, 1, 6, 8, 7, 8]
     B = [2, 3, 4, 7, 7, 8, 7]
     S = 10
-    print(can_assign(A, B, S))
+    print(f"Ans = {can_assign(A, B, S)}")
