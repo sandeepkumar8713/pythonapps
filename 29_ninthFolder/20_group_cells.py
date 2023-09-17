@@ -10,6 +10,10 @@
 # that, given a matrix A of N rows and M columns containing integers from the range 0-9, returns the maximal
 # size of the group, fulfilling the above criteria.
 #
+# Example : Input :
+# matrix = [[3, 4, 6],
+#            2, 7, 6]]
+# Output : 6, 6, 7 make a group so output is 3
 # TODO :: add used
 
 def find_group_size(inp_mat):

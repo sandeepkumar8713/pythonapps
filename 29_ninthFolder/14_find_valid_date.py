@@ -17,6 +17,11 @@
 # 11 | November | 30
 # 12 | December | 31
 #
+# Example : Assuming date = "?1-31", the date is clearly from January (01) or November (11). Only January has 31 days, so the function should return "01-31".
+# Assuming date = "02-??", the date is clearly from February (02), which has 28 days. The function should return "28-02".
+# Assuming date = "??-4?", no month has at least 40 days. The function should return "XX-xx".
+# Assuming date = "09-31", the date is not valid. There are only 30 days in September, so the function should return "XX-Xx".
+#
 # TODO :: add used
 
 max_days_per_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]

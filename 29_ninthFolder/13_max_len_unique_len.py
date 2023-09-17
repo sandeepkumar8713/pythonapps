@@ -6,6 +6,8 @@
 #
 # Example : Input: arr = ["un","iq","ue"]
 # Output: 4
+# - "uniq" ("un" + "iq") OR
+# - "ique" ("iq" + "ue")
 #
 # TODO :: add used
 # DP + DFS used

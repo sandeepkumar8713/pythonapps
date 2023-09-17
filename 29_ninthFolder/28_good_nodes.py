@@ -2,6 +2,13 @@
 # Question : Given a binary tree root, a node X in the tree is named good if in the path from root to X
 # there are no nodes with a value greater than X. Return the number of good nodes in the binary tree.
 #
+# Example :
+#        3
+#     /     \
+#    1      4
+#   /      /  \
+#  3      1    5
+# Output : 4 (3, 3, 4, 5 are good nodes)
 # TODO : add used
 
 import sys

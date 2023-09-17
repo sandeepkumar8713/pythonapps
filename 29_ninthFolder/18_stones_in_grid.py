@@ -5,6 +5,15 @@
 # single cell. In one move, you can move a single stone from its current cell to any other cell if the
 # two cells share a side. Return the minimum number of moves required to place one stone in each cell.
 #
+# Example : Input: grid = [[1,1,0],[1,1,1],[1,2,1]]
+# Output: 3
+# Explanation: One possible sequence of moves to place one stone in each cell is:
+# 1- Move one stone from cell (2,1) to cell (2,2).
+# 2- Move one stone from cell (2,2) to cell (1,2).
+# 3- Move one stone from cell (1,2) to cell (0,2).
+# In total, it takes 3 moves to place one stone in each cell of the grid.
+# It can be shown that 3 is the minimum number of moves required to place one stone in each cell.
+#
 # TODO :: add used
 
 import sys

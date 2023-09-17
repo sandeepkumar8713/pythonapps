@@ -7,8 +7,8 @@
 # that, given array Y, returns the maximum number of common points between the horizontal line and our
 # line chart if we draw the line optimally.
 #
-# 1. Given Y = [1, 2, 1, 2, 1, 3, 2], the function should return 5. A horizontal line at y 1.5 intersects the
-# chart at points (0.5, 1.5), (1.5, 1.5), (2.5, 1.5), (3.5, 1.5) and (4.25, 1.5).
+# Example : Given Y = [1, 2, 1, 2, 1, 3, 2], the function should return 5. A horizontal line at y 1.5
+# intersects the chart at points (0.5, 1.5), (1.5, 1.5), (2.5, 1.5), (3.5, 1.5) and (4.25, 1.5).
 #
 # TODO : add used
 
