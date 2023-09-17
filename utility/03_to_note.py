@@ -20,7 +20,8 @@ questionMap['MicrosoftOA'] = {
     '29_ninthFolder/26_longest_happy_string',
     '29_ninthFolder/27_merge_two_elements',
     '29_ninthFolder/28_good_nodes',
-    '29_ninthFolder/29_max_string_build'
+    '29_ninthFolder/29_max_string_build',
+    '29_ninthFolder/30_max_intersection'
 }
 
 questionMap['outerCheck1'] = {

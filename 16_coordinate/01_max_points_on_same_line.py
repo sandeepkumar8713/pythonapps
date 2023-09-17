@@ -16,8 +16,7 @@
 #        their one point. For each point keep doing the same thing and update the maximum number of
 #        point count found so far. Make sure to keep separate count of overlapping and vertical
 #        points(xdiff will be 0).
-#        Logic :
-#        for i in range(0, len(points)-1):
+# Logic: for i in range(0, len(points)-1):
 #           curMax = overlapPoints = verticalPoints = 0
 #           slopeMap = dict()
 #           for j in range(i+1, len(points)):
