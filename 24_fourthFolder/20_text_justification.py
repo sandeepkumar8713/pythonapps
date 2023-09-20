@@ -63,12 +63,11 @@ def fullJustify(words, constLen):
         left = j == i or i == n-1
         if left:
             avg = 0
-        else:
-            avg = (constLen - rowLen) // (i - j)   # spaceCount / wordCount
-        if left:
             rem = 0
         else:
+            avg = (constLen - rowLen) // (i - j)   # spaceCount / wordCount
             rem = (constLen - rowLen) % (i - j)  # spaceCount % wordCount
+
         thisRow = list(words[j])
         while j < i:
             thisRow.extend(spaces[0:avg+1])
@@ -77,6 +76,7 @@ def fullJustify(words, constLen):
                 rem -= 1
             j += 1
             thisRow.extend(list(words[j]))
+
         thisRow.extend(spaces[0:constLen - len(thisRow)])
         string = ""
         resList.append(string.join(thisRow))

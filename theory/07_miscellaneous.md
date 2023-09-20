@@ -275,3 +275,19 @@ The merge strategies available in Bitbucket are:
 7. **Squash, fast-forward only** (--squash --ff-only): If the source branch is out of date with the 
    target branch, reject the merge request. Otherwise, combine all commits into one new non-merge commit
    on the target branch.
+
+## OOPS concept
+
+**Abstraction**
+```python
+from abc import ABC
+class ClassName(ABC):
+```
+
+**Encapsulation in OOPS** : (access modifiers, information hiding)
+public, protected (single _ variable name start), private(__ double underscore), 
+
+**Inheritance**
+
+**Polymorphism** (having many forms)
+same function in base and child class
