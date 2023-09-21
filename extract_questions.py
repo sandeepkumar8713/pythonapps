@@ -1,4 +1,5 @@
 import os
+import re
 from top_200 import questionMap as topQuestionMap
 from category_wise import questionMap as CategoryQuestionMap
 
@@ -51,10 +52,18 @@ def extract_comment(questionMap):
 
 
 def get_all_filename_list():
-    ignore_folders = ['utility', 'assignment', 'fast_api_example']
+    regex = re.compile(r'^[0-9][0-9]_')
+    ignore_folders = []
+    for dirName in os.listdir('.'):
+        if not os.path.isdir('./' + dirName):
+            ignore_folders.append(dirName)
+        else:
+            if not regex.search(dirName):
+                ignore_folders.append(dirName)
+
     filename_list = []
     for dirName in os.listdir('.'):
-        if dirName[0] != '.' and dirName not in ignore_folders and os.path.isdir('./' + dirName):
+        if dirName not in ignore_folders:
             dirPath = './' + dirName
             for filename in os.listdir(dirPath):
                 if '00' in filename:
