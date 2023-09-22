@@ -402,3 +402,7 @@ generators (yield)
 1. Compare reactiveness in Java and Python
 
 ---------------------------------------------------------------
+
+C++ tutorial video Link : https://www.youtube.com/watch?v=8jLOx1hD3_o
+
+---------------------------------------------------------------

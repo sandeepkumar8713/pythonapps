@@ -91,6 +91,7 @@ questionMap['Standard'] = {'01_array/04_longest_increasing_subsequnce',
                            '24_fourthFolder/19_hit_counter',
                            '24_fourthFolder/48_split_array_largest_sum',
                            '25_fifthFolder/18_rearrange_pos_neg',
+                           '25_fifthFolder/12_bipartite_graph',
                            '26_sixthFolder/04_guess_num_pick',
                            '27_seventhFolder/17_max_prod_array',
                            '27_seventhFolder/19_max_sub_array',
@@ -103,6 +104,7 @@ questionMap['Standard'] = {'01_array/04_longest_increasing_subsequnce',
                            '28_eighthFolder/14_wiggle_subsequence',
                            '29_ninthFolder/05_football_training',
                            '29_ninthFolder/11_max_len_concat',
+                           '29_ninthFolder/32_rehabilitation_session'
                            }
 
 questionMap['Important'] = {'01_array/01_find_missing_number',
