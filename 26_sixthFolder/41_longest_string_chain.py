@@ -18,8 +18,7 @@
 #        Loop over the words array. For each ele, break it into all possible sub words
 #        and check if sub words is already present in dp and update max len value.
 #        Insert the word in dp with max chain len.
-#        Logic:
-#        words = sorted(words, key=len)
+# Logic: words = sorted(words, key=len)
 #        dp = {}, overrallMax = 0
 #        for word in words:
 #           chainLen = 1

@@ -30,7 +30,7 @@ def minCandy(ratings):
         if ratings[i] > ratings[i-1]:
             candies[i] = candies[i-1] + 1
 
-    for i in range(n-2, 0, -1):
+    for i in range(n-2, -1, -1):
         if ratings[i] > ratings[i+1]:
             candies[i] = max(candies[i], candies[i+1] + 1)
 
@@ -38,6 +38,8 @@ def minCandy(ratings):
 
 
 if __name__ == "__main__":
-    # ratings = [1, 0, 2]
+    ratings = [1, 0, 2]
+    print(minCandy(ratings))
+
     ratings = [1, 2, 2]
     print(minCandy(ratings))

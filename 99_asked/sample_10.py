@@ -1,9 +1,16 @@
 # https://www.chegg.com/homework-help/questions-and-answers/need-soln-python-word-machine-system-performs-sequence-simple-operations-stack-integers-in-q87431322
-# def solution(S):
-# stack=[] l=S.split(" ") # Storing the operations in a list
-# for op in l: # Iterating through all the operations
-# if(op=="POP"): # If the operation is pop
-# if(stack==[]): # If stack is empty
+# Question : A word machine is a system that performs a sequence of simple operations on a stack of integers.
+# Initially the stack is empty. The sequence of operations is given as a string. Operations are separated by
+# single spaces. The following operations may be specified:
+# An integer X (from 0 to 220-1): the machine pushes X onto the stack;
+# "POP": the machine removes the topmost number from the stack;
+# "DUP": the machine pushes a duplicate of the topmost number onto the stack;
+# "+": the machine pops the two topmost elements from the stack, adds them together
+# and pushes the sum onto the stack;
+# "-": the machine pops the two topmost elements from the stack, subtracts the second one
+# from the first (topmost) one and pushes the difference onto the stack.
+# After processing all the operations, the machine returns the topmost value from the stack.
+
 
 import math
 

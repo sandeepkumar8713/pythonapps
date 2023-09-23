@@ -14,7 +14,6 @@
 #        While doing DFS, pop visited nodes and backtrack after dfs.
 #        Return True when ans length is equal to ticket count.
 #        Our answer is ans list.
-#
 # Logic: def dfs(u, current_route, current_num_tickets):
 #        nonlocal graph, tickets, ans
 #        if current_num_tickets == len(tickets):
@@ -32,8 +31,11 @@
 #        return ans
 # Complexity : O(n)
 
+from collections import defaultdict
+
+
 def findItinerary(tickets):
-    graph = dict()
+    graph = defaultdict(list)
 
     for u, v in tickets:
         if u in graph.keys():
@@ -42,6 +44,8 @@ def findItinerary(tickets):
             graph[u] = [v]
 
     for u in graph.keys():
+        # values = set(graph[u])
+        # graph[u] = sorted(list(values))
         graph[u].sort()
 
     ans = None
@@ -71,5 +75,24 @@ if __name__ == "__main__":
     tickets = [["MUC", "LHR"], ["JFK", "MUC"], ["SFO", "SJC"], ["LHR", "SFO"]]
     print(findItinerary(tickets))
 
-    tickets = [["JFK", "SFO"], ["JFK", "ATL"], ["SFO", "ATL"], ["ATL", "JFK"], ["ATL", "SFO"]]
+    tickets = [["JFK", "SFO"], ["JFK", "ATL"], ["JFK", "ATL"], ["ATL", "JFK"], ["SFO", "ATL"], ["ATL", "JFK"],
+               ["ATL", "SFO"]]
     print(findItinerary(tickets))
+
+    tickets = [["JFK", "KUL"], ["JFK", "NRT"], ["NRT", "JFK"]]
+    print(findItinerary(tickets))
+
+    # tickets = [["JFK", "SFO"], ["JFK", "ATL"], ["SFO", "JFK"], ["ATL", "AAA"], ["AAA", "BBB"], ["BBB", "ATL"],
+    #  ["ATL", "AAA"],
+    #  ["AAA", "BBB"], ["BBB", "ATL"], ["ATL", "AAA"], ["AAA", "BBB"], ["BBB", "ATL"], ["ATL", "AAA"], ["AAA", "BBB"],
+    #  ["BBB", "ATL"], ["ATL", "AAA"], ["AAA", "BBB"], ["BBB", "ATL"], ["ATL", "AAA"], ["AAA", "BBB"], ["BBB", "ATL"],
+    #  ["ATL", "AAA"], ["AAA", "BBB"], ["BBB", "ATL"], ["ATL", "AAA"], ["AAA", "BBB"], ["BBB", "ATL"], ["ATL", "AAA"],
+    #  ["AAA", "BBB"], ["BBB", "ATL"], ["ATL", "AAA"], ["AAA", "BBB"], ["BBB", "ATL"], ["ATL", "AAA"], ["AAA", "BBB"],
+    #  ["BBB", "ATL"], ["ATL", "AAA"], ["AAA", "BBB"], ["BBB", "ATL"], ["ATL", "AAA"], ["AAA", "BBB"], ["BBB", "ATL"],
+    #  ["ATL", "AAA"], ["AAA", "BBB"], ["BBB", "ATL"], ["ATL", "AAA"], ["AAA", "BBB"], ["BBB", "ATL"], ["ATL", "AAA"],
+    #  ["AAA", "BBB"], ["BBB", "ATL"], ["ATL", "AAA"], ["AAA", "BBB"], ["BBB", "ATL"], ["ATL", "AAA"], ["AAA", "BBB"],
+    #  ["BBB", "ATL"], ["ATL", "AAA"], ["AAA", "BBB"], ["BBB", "ATL"], ["ATL", "AAA"], ["AAA", "BBB"], ["BBB", "ATL"],
+    #  ["ATL", "AAA"], ["AAA", "BBB"], ["BBB", "ATL"], ["ATL", "AAA"], ["AAA", "BBB"], ["BBB", "ATL"], ["ATL", "AAA"],
+    #  ["AAA", "BBB"], ["BBB", "ATL"], ["ATL", "AAA"], ["AAA", "BBB"], ["BBB", "ATL"], ["ATL", "AAA"], ["AAA", "BBB"],
+    #  ["BBB", "ATL"], ["ATL", "AAA"], ["AAA", "BBB"], ["BBB", "ATL"]]
+    # print(findItinerary(tickets))

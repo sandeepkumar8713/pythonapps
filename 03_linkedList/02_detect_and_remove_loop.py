@@ -1,3 +1,4 @@
+# Similar : https://leetcode.com/problems/linked-list-cycle/
 # Question : Write a function detectAndRemoveLoop() that checks whether a given Linked List
 # contains loop and if loop is present then removes the loop and returns true. And if the
 # list doesn't contain loop then returns false. Below diagram shows a linked list with a loop.

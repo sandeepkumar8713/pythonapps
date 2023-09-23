@@ -1,3 +1,4 @@
+# Similar : https://leetcode.com/problems/find-the-duplicate-number/
 # CTCI : Q10_08_Find_Duplicates
 # Question : You have an array with all the numbers from 1 to N, where N is at most 32,000. The
 # array may have duplicate entries and you do not know what N is. With only 4 kilobytes of memory
@@ -43,4 +44,10 @@ def checkDuplicate(inpArr):
 if __name__ == "__main__":
     arr = [30, 24, 30, 10, 18, 27, 15, 26, 27, 14, 12, 15, 29, 21, 4, 3, 10, 5, 15, 15, 28, 20, 12, 14,
            21, 10, 1, 10, 27, 20]
+    checkDuplicate(arr)
+
+    arr = [1, 3, 4, 2, 2]
+    checkDuplicate(arr)
+
+    arr = [3, 1, 3, 4, 2]
     checkDuplicate(arr)
