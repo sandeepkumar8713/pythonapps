@@ -360,6 +360,8 @@ item_list = [1, 2, 4, 10]
 x = [item for item in item_list if item > 5]
 y = [item if item > 5 else -1 for item in item_list]
 
+**Bisect right**
+i = bisect.bisect_right(arr, key, start, end)
 ---------------------------------------------------------------
 
 **Rest call Example**

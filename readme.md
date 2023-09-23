@@ -16,6 +16,7 @@ Questions Type :
 4. [Python Notes](utility/01_notes_remember.md)
 5. [Problem-Solving Approach](utility/02_approach.md)
 6. [Fast API](fast_api_example/main.py)
+7. [Spark Tutorial](spark_tutorial/01_file.py)
 
 ## Python Theory
 1. [Global Interpreter Lock](theory/01_GIL.md)
