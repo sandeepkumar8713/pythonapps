@@ -21,7 +21,7 @@
 #        run another loop, i.e. window has all the amenities:
 #           keep removing elements from left side and update min window len.
 #        Return mid of left and right of window.
-#        Logic : def pickBlock(allAmenities, blocks):
+# Logic: def pickBlock(allAmenities, blocks):
 #        block = 0, minLen = sys.maxint, window = dict()
 #        lo = 0, hi = 0
 #        while hi < len(blocks):

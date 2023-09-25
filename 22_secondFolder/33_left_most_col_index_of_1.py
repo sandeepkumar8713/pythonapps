@@ -12,7 +12,7 @@
 # Question Type : ShouldSee
 # Used : We start from first row and last col. If 1 is found, we reduce col else inc row.
 #        Since it is sorted in ascending order we use this logic. We need to find first 1.
-#        Logic : def findLeftMostIndexOfOne(inpMat):
+# Logic: def findLeftMostIndexOfOne(inpMat):
 #        rows = len(inpMat)
 #        cols = len(inpMat[0])
 #        i = 0, j = cols - 1

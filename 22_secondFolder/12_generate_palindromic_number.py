@@ -9,7 +9,7 @@
 #        We need to call createPalindrome() twice for even and odd. Call createPalindrome with
 #        input inp = 1 and keep calling createPalindrome() (and doing inp++) in the loop
 #        until it returns value more than n.
-#        generatePaldindromes(n):
+# Logic: generatePaldindromes(n):
 #        for j in range(2):
 #           i = 1
 #           palindromicNum = createPalindrome(i, j % 2)

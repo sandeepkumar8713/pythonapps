@@ -33,7 +33,7 @@
 #
 # Question Type : Generic
 # Used : We will use DFS(with 4 direction), with use of arrow and backtracking.
-#        Logic : def dfs(robot, visited, x, y, arrow):
+# Logic: def dfs(robot, visited, x, y, arrow):
 #        path = str(x) + "-" + str(y)
 #        if path in visited: return
 #        visited.add(path)

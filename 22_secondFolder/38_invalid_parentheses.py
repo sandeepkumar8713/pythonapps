@@ -2,11 +2,12 @@
 # https://leetcode.com/problems/remove-invalid-parentheses/discuss/415004/Python-DFS
 # Question : Remove the minimum number of invalid parentheses in order to make the input string valid.
 # Return all possible results. Note: The input string may contain letters other than the parentheses ( and ).
+# 27_seventhFolder/38_longest_valid_parentheses
 #
 # Example :  Input: "()())()"
 # Output: ["()()()", "(())()"]
 #
-# Question Type : ShouldSee
+# Question Type : ShouldSee, SimilarAdded
 # Used : First we read s from left to right and remove all the invalid ). Then we will get multiple
 #        candidate solutions and save them in candidates. Then we read each candidate from right
 #        to left (reversely) and remove all the invalid ( and we will get the final solutions.

@@ -271,3 +271,15 @@
 39. [21_firstFolder/24_largest_rectangle_in_histogram](21_firstFolder/24_largest_rectangle_in_histogram.py)
 40. [21_firstFolder/26_evaluate_division](21_firstFolder/26_evaluate_division.py)
 41. [22_secondFolder/01_find_subarray_of_eql_0_1](22_secondFolder/01_find_subarray_of_eql_0_1.py)
+42. [22_secondFolder/12_generate_palindromic_number](22_secondFolder/12_generate_palindromic_number.py)
+43. [22_secondFolder/16_matrix_sum_of_all](22_secondFolder/16_matrix_sum_of_all.py)
+44. [22_secondFolder/18_sudoku_validator](22_secondFolder/18_sudoku_validator.py)
+45. [22_secondFolder/29_sub_sequence_count](22_secondFolder/29_sub_sequence_count.py)
+46. [22_secondFolder/30_min_dist_to_far_block](22_secondFolder/30_min_dist_to_far_block.py)
+47. [22_secondFolder/40_find_peak_element](22_secondFolder/40_find_peak_element.py)
+48. [22_secondFolder/42_guess_the_word](22_secondFolder/42_guess_the_word.py)
+
+
+## outerCheck2
+
+1. [23_thirdFolder/01_sorted_infinite_array](23_thirdFolder/01_sorted_infinite_array.py)

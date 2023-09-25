@@ -14,8 +14,7 @@
 #        Use these two position to do quicksort further.
 #        quickSort(array, start, pivotLeft[0] - 1)
 #        quickSort(array, pivotRight[0] + 1, end)
-#        Logic :
-#        partition(arr, left, right, pivotLeft, pivotRight):
+# Logic: partition(arr, left, right, pivotLeft, pivotRight):
 #        i = (left - 1)  # index of smaller element
 #        pivot = arr[right]  # pivot
 #        for j in range(left, right):

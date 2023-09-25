@@ -23,8 +23,7 @@
 #        To find the worse case scenario, find the max return value between these 2 scenarios
 #        Then, find the best case scenario out of all your choices of k, and hence the min.
 #        Note take we will be filling only upper part of matrix.
-#        Logic :
-#        for i in range(n + 1):
+# Logic: for i in range(n + 1):
 #           col = [0] * (n + 1)
 #           dp.append(col)
 #        for i in range(1, n + 1):

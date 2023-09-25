@@ -7,7 +7,7 @@
 #           return maxCount * (maxCount - 1) / 2
 #        return secondMaxCount
 #
-#        sum(a, n):
+# Logic: sum(a, n):
 #        maxVal = a[0], maxCount = 1
 #        secondMax = sys.maxsize
 #        for i in range(1, n):

@@ -17,7 +17,7 @@
 #        frequency mismatch which is taken into account by decrementing the same count variable. If, after
 #        the shifting of the window, the count evaluates to 26, it means all the characters match in frequency
 #        totally. So, we return a True in that case immediately.
-#        Logic : def checkInclusion(s1, s2):
+# Logic: def checkInclusion(s1, s2):
 #        if len(s1) > len(s2): return False
 #        s1Freq = [0] * 26, s2Freq = [0] * 26
 #        for i in range(len(s1)):

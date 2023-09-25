@@ -16,7 +16,7 @@
 # Question Type : ShouldSee
 # Used : Find min and max of input array.
 #        Do binary search in this range, see mid which satisfy the condition.
-#        Logic : def max_value(nums, val):
+# Logic: def max_value(nums, val):
 #        l = min(nums), r = max(nums)+1
 #        while l < r:
 #           mid = l + (r - l) // 2

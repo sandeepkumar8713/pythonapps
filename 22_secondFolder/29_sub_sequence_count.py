@@ -9,10 +9,10 @@
 # Explanation: There are three words in words that are a subsequence of S: "a", "acd", "ace".
 #
 # Question Type : ShouldSee
-# Used :  Try to use hashing here. Key : char, value : list of indices
-#         Loop over the input array. compare each char, see if present, fetch its index, next ele
+# Used : Try to use hashing here. Key : char, value : list of indices
+#        Loop over the input array. compare each char, see if present, fetch its index, next ele
 #           should be present at index after the previous index.
-#         Logic : def numMatchingSubseq(bigWord, words):
+# Logic: def numMatchingSubseq(bigWord, words):
 #         res = 0, N = len(words)
 #         pointers = [0] * N
 #         endset = dict()
