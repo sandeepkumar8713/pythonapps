@@ -4,7 +4,7 @@
 #
 # Question Type : Generic
 # Used : backtracking
-#        subSequenceInc(a, n, k, v, idx):
+# Logic: subSequenceInc(a, n, k, v, idx):
 #        if len(v) == k:
 #           print(v)
 #           return

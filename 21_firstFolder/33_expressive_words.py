@@ -18,7 +18,7 @@
 # Used : Make a function getCharCount() which returns unique chars and respective freq in tuple
 #        Now compare S with each word. If the unique char doesn't match skip it. Else each char
 #        count should be equal or more in S then increase count by 1.
-#        Logic : def expressiveWords(S, words):
+# Logic: def expressiveWords(S, words):
 #        uniqueCharTuple, count = getCharCount(S)
 #        ans = 0
 #        for word in words:

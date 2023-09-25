@@ -1,18 +1,15 @@
-# https://leetcode.com/articles/reverse-pairs/
 # https://leetcode.com/problems/reverse-pairs/
 # Question : Given an array nums, we call (i, j) an important reverse pair if i < j and
 # nums[i] > 2*nums[j]. You need to return the number of important reverse pairs in the
 # given array.
 #
-# Example:
-# Input: [1,3,2,3,1]
+# Example: Input: [1,3,2,3,1]
 # Output: 2
 #
 # Question Type : ShouldSee
 # Used : We modify the merge sort and before merging, we check the condition on left and right
 #        sub array and keep track of count.
-#        Logic :
-#        mergeSortAndCount(inpArr, start, end):
+# Logic: mergeSortAndCount(inpArr, start, end):
 #        if start >= end: return 0
 #        mid = (start + end) / 2
 #        count = mergeSortAndCount(inpArr, start, mid) +

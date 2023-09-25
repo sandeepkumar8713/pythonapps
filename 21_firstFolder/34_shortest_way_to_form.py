@@ -12,7 +12,7 @@
 # Question Type : Generic
 # Used : Make a function find() which match target with source as much as possible.
 #        After that call find() again from next index (to match remaining with source)
-#        Logic : def find(j, source, target):
+# Logic: def find(j, source, target):
 #        i = 0
 #        while i < len(source) and j < len(target):
 #           if source[i] == target[j]: j += 1

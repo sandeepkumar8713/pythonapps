@@ -15,7 +15,7 @@
 #        For the maximum without a deletion, it is purely Kadane's algorithm.
 #        For the maximum with a deletion, we can either discard current number, or, add current number to previous
 #        maximum with a deletion.
-#        Logic : maxi = modified = unmodified = -sys.maxsize
+# Logic: maxi = modified = unmodified = -sys.maxsize
 #        for n in arr:
 #           modified, unmodified = max(unmodified, modified + n), max(0, unmodified) + n
 #           maxi = max(maxi, modified, unmodified)

@@ -19,7 +19,7 @@
 #        do bfs where a is start and b is end.
 #        While traversing the graph, keep multiplying its weight and saving it back in queue.
 #        When end is found, return the corresponding product.
-#        Logic : def BFS(graph, numerator, denominator):
+# Logic: def BFS(graph, numerator, denominator):
 #        queue = [], visited = set()
 #        queue.append([numerator, 1])
 #        result = None

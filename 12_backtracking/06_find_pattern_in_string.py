@@ -14,7 +14,7 @@
 #        Maintain a map for key : character of pattern, value : subString from inpStr
 #        Make a call to recursive function patternMatchUtil(inpStr, n, i, pat, m, j, myMap).
 #        If it returns true, pattern is found, hence print the map.
-#        patternMatchUtil(inpStr, n, i, pat, m, j, myMap):
+# Logic: patternMatchUtil(inpStr, n, i, pat, m, j, myMap):
 #        if i == n and j == m: return True
 #        if i == n or j == m: return False
 #        ch = pat[j]

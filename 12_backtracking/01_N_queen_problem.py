@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/n-queens/
 # Question : The n-queens puzzle is the problem of placing n queens on an n*n chessboard such
 # that no two queens attack each other. Given an integer n, print all distinct solutions
 # to the n-queens puzzle. If queen is placed in a cell, no other queen should be placed in

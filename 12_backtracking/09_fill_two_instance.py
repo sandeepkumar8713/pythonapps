@@ -13,8 +13,7 @@
 #           place curr at i and i + curr + 1 and recurr for next curr - 1
 #           If recurr function return True, then return true else backtrack
 #        return False
-#        Logic:
-#        fillUtil(res, curr, n):
+# Logic: fillUtil(res, curr, n):
 #        if curr == 0: return True
 #        for i in range(2 * n - curr - 1):
 #           if res[i] == 0 and res[i + curr + 1] == 0:

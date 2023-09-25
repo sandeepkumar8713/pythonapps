@@ -13,7 +13,7 @@
 #        when the position == word length, update the list else, continuously backtracking
 #        if abbreviate, update current string, cnt = 0, pos+1
 #        if not abbreviate, current string not update, cnt+1, pos+1
-#        Logic : def generateHelper(start, word, resultList):
+# Logic: def generateHelper(start, word, resultList):
 #        if start >= len(word): return
 #        i = start
 #        while i < len(word):

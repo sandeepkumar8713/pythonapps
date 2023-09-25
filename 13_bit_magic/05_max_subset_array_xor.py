@@ -1,3 +1,4 @@
+# https://www.geeksforgeeks.org/find-maximum-subset-xor-given-set/
 # Question : Given an set of positive integers. find the maximum XOR subset value in the given set.
 # Expected time complexity O(n).
 #
@@ -15,8 +16,7 @@
 #           Do Xor operation of all the elements whose i'th bit is set with swapped maxIndex and update arr[j]
 #           Increment index by 1
 #        Do Xor over all the element, this will give the result
-#        Logic :
-#        index = 0
+# Logic: index = 0
 #        for i in range(INT_BITS-1, -1, -1):
 #           maxInd = index
 #           maxEle = -sys.maxint

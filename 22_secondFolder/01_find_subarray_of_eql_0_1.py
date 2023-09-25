@@ -10,8 +10,7 @@
 # Used : Convert all 0 to -1
 #        Keep updating sum in hash dict
 #        if the running sum is already in hash dict, get the diff b/w the two index.
-#        Logic :
-#        for i in range(len(arr)):
+# Logic: for i in range(len(arr)):
 #           arrSum += arr[i]
 #           if arrSum == 0:
 #               maxLen = i+1, endIndex = i

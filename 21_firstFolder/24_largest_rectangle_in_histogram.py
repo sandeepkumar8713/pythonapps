@@ -14,7 +14,7 @@
 #              item in stack and 'right index' is 'i' (current index).
 #        3) If the stack is not empty, then one by one remove all bars from stack and do step 2.b
 #           for every removed bar.
-#        updateMaxArea(stack, i, maxArea):
+# Logic: updateMaxArea(stack, i, maxArea):
 #        topIndex = stack.pop()
 #        width = 0
 #        if len(stack) == 0: width = i

@@ -9,7 +9,7 @@
 # Question Type : ShouldSee
 # Used : Traverse the inpStr in reverse and skip the characters succeeded by #.
 #        Now compare the two string after the above operation
-#        Logic : def getEndResult(inpStr):
+# Logic: def getEndResult(inpStr):
 #        pendingDelete = 0
 #        result = ""
 #        for i in range(len(inpStr) - 1, -1, -1):

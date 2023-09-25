@@ -14,7 +14,7 @@
 # Question Type : Generic
 # Used : Loop over the linked list. If the current element is in G and next element is not in G,
 #        then inc the count.
-#        Logic : def numComponents(head, G):
+# Logic: def numComponents(head, G):
 #        Gset = set(G)
 #        cur = head, ans = 0
 #        while cur.next:

@@ -17,7 +17,7 @@
 #        to make all of them equal. if num is not in either of array then return -1.
 #        Else return minimum rotation.
 #        Repeat the same by choosing first element from array B.
-#        Logic : def minDominoRotations(arrA, arrB):
+# Logic: def minDominoRotations(arrA, arrB):
 #        length = len(arrA)
 #        rotations = get_count(arrA[0], arrA, arrB, length)
 #        if rotations != -1 or arrA[0] == arrB[0]:

@@ -15,7 +15,7 @@
 #
 # Question Type : ShouldSee, SimilarAdded
 # Used : dp(r, c) = A[r][c] + min(dp(r+1, c-1), dp(r+1, c), dp(r+1, c+1)), and the answer is min of dp(0, c)
-#        Logic : def minFallingPathSum(A):
+# Logic: def minFallingPathSum(A):
 #        while len(A) >= 2:
 #           row = A.pop()
 #           for i in xrange(len(row)):

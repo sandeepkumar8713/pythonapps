@@ -17,7 +17,7 @@
 #        3. In the end, check if we are left with both of the seq types, eg "xy" and "yx", it would take 2 swaps more,
 #           hence return swaps+2, ...else if only 1 swap is left, we cannot achieve equal strings: return -1.
 #        4. if the set is empty at last, strings are made equal, return swaps.
-#        Logic : def minimumSwap(s1, s2):
+# Logic: def minimumSwap(s1, s2):
 #        seen = set(), swaps = 0
 #        for i in range(len(s1)):
 #           if s1[i] != s2[i]:

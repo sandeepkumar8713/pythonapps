@@ -43,7 +43,7 @@
 #        we have formed. So, for all elements in the top of the stack set, they are multiplied to the elements
 #        of the union list.
 #        If a character is an alphabet, we simply append it to all items in the current set.
-#        Logic : def braceExpansionII(expression):
+# Logic: def braceExpansionII(expression):
 #        if not expression: return []
 #        stack = [[""]]
 #        for c in expression:

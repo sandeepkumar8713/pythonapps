@@ -251,8 +251,16 @@ questionMap['outerCheck1'] = {'01_array/26_min_operation_to_make_same',
                               '09_greedy/05_largest_number_possible',
                               '09_greedy/06_min_diff_in_height',
                               '10_dynamic_programming/12_optimal_game_strategy',
+                              '11_divide_and_conquer/06_reverse_pair',
                               '12_backtracking/02_solve_sudoku',
+                              '13_bit_magic/10_convert_number',
+                              '21_firstFolder/08_subarray_sum_match_target',
+                              '21_firstFolder/10_form_the_largest_no',
                               '21_firstFolder/16_print_all_root_to_leaf',
+                              '21_firstFolder/17_get_freq_without_map',
+                              '21_firstFolder/24_largest_rectangle_in_histogram',
+                              '21_firstFolder/26_evaluate_division',
+                              '22_secondFolder/01_find_subarray_of_eql_0_1',
                               }
 
 if __name__ == "__main__":

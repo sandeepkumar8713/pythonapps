@@ -24,7 +24,7 @@
 # Used : We will use dp here. Make a indexDict of smallString.
 #        For each char in bigString, loop over its indices from
 #        the indexDict and increment the dp value at that index.
-#        Logic : def numDistinct(bigString, smallString):
+# Logic: def numDistinct(bigString, smallString):
 #        dp = [0] * (len(smallString) + 1)
 #        dp[-1] = 1  # String terminator count
 #        for i in range(len(smallString)):

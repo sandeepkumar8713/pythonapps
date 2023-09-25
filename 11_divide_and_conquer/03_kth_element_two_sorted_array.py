@@ -1,3 +1,4 @@
+# https://www.geeksforgeeks.org/k-th-element-two-sorted-arrays/
 # Question : Given two sorted arrays of size m and n respectively, you are tasked with
 # finding the element that would be at the k'th position of the final sorted array.
 #
@@ -16,8 +17,7 @@
 #        If arr1[i - 1] > arr2[j - 1]: then search in arr1[0:m-1] and arr2[j:n-1],
 #           since we have found out the lowest j
 #           else : search in arr1[i:m-1] and arr2[0:n-1], since we have found out the lowest i
-#        Logic :
-#        kthElement(arr1, m, arr2, n, k):
+# Logic: kthElement(arr1, m, arr2, n, k):
 #        if k > (m + n) or k < 1: return -1
 #        if m > n:
 #           return kthElement(arr2, n, arr1, m, k)

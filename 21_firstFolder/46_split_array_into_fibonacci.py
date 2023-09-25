@@ -20,7 +20,7 @@
 # Used : DFS and backtracking. We make a recursive function.
 #        It takes a substring and calls it self again to check if remaining strings fulfill
 #        the condition of fibonacci.
-#        Logic : def helper(inp, ans, beg=0):
+# Logic: def helper(inp, ans, beg=0):
 #        if len(inp) == beg:
 #           if len(ans) > 2: return True
 #           else: return False

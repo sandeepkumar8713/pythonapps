@@ -12,7 +12,7 @@
 #
 # Question Type : ShouldSee
 # Used : We will do DP here. At each row, will try to find max subset with all 1.
-#        Logic : maximalRectangle(inpMat)
+# Logic: maximalRectangle(inpMat)
 #        lefts = [0] * width
 #        rights = [width] * width
 #        heights = [0] * width

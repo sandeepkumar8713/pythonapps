@@ -1,3 +1,4 @@
+# https://www.geeksforgeeks.org/alone-in-couple/
 # Question : In a party everyone is in couple except one. People who are in couple have same numbers.
 # Find out the person who is not in couple.
 #
