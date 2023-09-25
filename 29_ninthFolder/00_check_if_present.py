@@ -41,3 +41,14 @@
 # https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/
 
 # https://leetcode.com/tag/dynamic-programming/ done till 877 (147/443)
+
+# External sorting https://www.geeksforgeeks.org/external-sorting/
+# https://www.youtube.com/watch?v=2qbZKZfs8aA
+# 1. Divide data into chunks of size
+# 2. Sort each chuck one by one save in HDD
+# 3. Apply technique of 11_merge_k_sorted_list.py. While merging on heap of size k will be loaded in memory.
+
+# https://www.geeksforgeeks.org/a-linked-list-with-next-and-arbit-pointer/ (without extra chars)
+# Create duplicate of a node and insert it in between that node and the node just next to it.
+# Now for a node X its duplicate will be X->next and the arbitrary pointer of the duplicate will point to X->arbit->next
+# [as that is the duplicate of X->arbit]

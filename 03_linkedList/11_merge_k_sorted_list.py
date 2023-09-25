@@ -26,7 +26,8 @@
 #           if node and node.next:
 #               heapq.heappush(pq, node.next)
 #        return head
-# Complexity : O(k * n)
+# Complexity : O(k * n * log k)
+# Space : O(k) heap size
 
 import heapq
 

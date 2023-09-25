@@ -1,6 +1,7 @@
 questionMap = dict()
 
 questionMap['MicrosoftOA'] = {
+    '04_tree/06_connect_node_level_order',
     '27_seventhFolder/14_jump_game_3',
     '29_ninthFolder/11_max_len_concat',
     '29_ninthFolder/12_swap_to_palindrome',
@@ -21,39 +22,8 @@ questionMap['MicrosoftOA'] = {
     '29_ninthFolder/27_merge_two_elements',
     '29_ninthFolder/28_good_nodes',
     '29_ninthFolder/29_max_string_build',
-    '29_ninthFolder/30_max_intersection'
-}
-
-questionMap['outerCheck1'] = {
-    '01_array/26_min_operation_to_make_same',
-    '01_array/27_min_operation_to_make_equal',
-    '02_string/27_substring_rotation',
-    '02_string/30_find_extra_character',
-    '03_linkedList/09_find_min_element_from_stack',
-    '03_linkedList/24_find_sum_pair',
-    '03_linkedList/28_partition_into_three',
-    '04_tree/02_diagonal_traversal',
-    '04_tree/23_max_level_sum',
-    '04_tree/25_boundary_traversal',
-    '04_tree/32_print_kth_sum_path',
-    '04_tree_bst/07_find_sum_pair_in_bst',
-    '04_tree_bst/11_correct_swapped_bst',
-    '04_tree_bst/13_rank_from_stream',
-    '05_heap/04_non_adjacent_character',
-    '05_heap/06_find_smallest_range',
-    '06_recursion/03_combination_sum',
-    '06_recursion/07_magic_index',
-    '06_recursion/09_parentheses_combination',
-    '07_hashing/02_pair_to_swap_from_2_array',
-    '07_hashing/07_find_all_pair_for_sum',
-    '07_hashing/17_sort_linked_list_as_array',
-    '07_hashing/20_cellphone_numpad',
-    '07_hashing/22_find_4_eles_for_given_sum',
-    '08_graph/05_min_swap',
-    '08_graph/15_stepping_numbers',
-    '08_graph/17_overall_array',
-    '09_greedy/05_largest_number_possible',
-    '09_greedy/06_min_diff_in_heigth',
+    '29_ninthFolder/30_max_intersection',
+    '29_ninthFolder/33_random_node_in_ll',
 }
 
 questionMap['Wayfair'] = {

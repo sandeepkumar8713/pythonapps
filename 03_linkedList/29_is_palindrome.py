@@ -9,8 +9,7 @@
 #        and node is the last node.
 #        This function calls again isPalindrome(node.next, listSize-2). If subList is
 #        palindrome and first and last node are same: return Result
-#        Logic :
-#        def isPalindrome(node, listSize):
+# Logic: def isPalindrome(node, listSize):
 #        if node is None or listSize <= 0:
 #           return Result(node, True)
 #        elif listSize is 1:
