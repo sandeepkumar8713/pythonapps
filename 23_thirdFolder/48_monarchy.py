@@ -9,7 +9,7 @@
 #        death we simply mark them as not alive. After the birth calls.
 #        We travel the n-ary in pre-order for order of succession. If a monarch
 #        is marked as dead, we don't print it while doing pre-order.
-#        Logic : def birth(self, child, parent):
+# Logic: def birth(self, child, parent):
 #        monarch = Monarch()
 #        monarch.name = child
 #        if parent is None and self.firstMonarch is None:

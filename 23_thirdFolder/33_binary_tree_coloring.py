@@ -17,7 +17,7 @@
 #        subtree count from the node selected by the first player. It also returns total number
 #        of nodes from given root. Now find max of left subtree, right subtree and remaining
 #        nodes(parent). If this max is more than n/2 return true.
-#        Logic : def btreeGameWinningMoveSecondPlayer(root, x):
+# Logic: def btreeGameWinningMoveSecondPlayer(root, x):
 #        totalNodes = count(root, x, leftSubtree, rightSubtree)
 #        parentNodes = totalNodes - leftSubtree[0] - rightSubtree[0] - 1
 #        maxSide = max(leftSubtree[0], rightSubtree[0])

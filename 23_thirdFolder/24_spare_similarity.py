@@ -5,6 +5,7 @@
 # because the intersection has size 2 and the union has size 5. We have a long list of documents
 # (with distinct values and each with an associated ID) where the similarity is believed to be
 # "sparse:'That is, any two arbitrarily selected documents are very likely to have similarity O.
+#
 # Design an algorithm that returns a list of pairs of document IDs and the associated similarity.
 # Print only the pairs with similarity greater than 0. Empty documents should not be printed at
 # all. For simplicity, you may assume each document is represented as an array of distinct
@@ -12,7 +13,7 @@
 #
 # Question Type : Easy
 # Used : Compare each document with other document and calculate similarity.
-#        Their are nC2 pairs for which similarity is to be calculated.
+#        There are nC2 pairs for which similarity is to be calculated.
 # Complexity : O(n^2 * m^2) n is count of documents m is size of document
 
 import functools

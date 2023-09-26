@@ -25,7 +25,7 @@
 # Used : Run a loop, keep track of index where lastNonZeroFoundAt index.
 #        When a non zero element is found, swap it with lastNonZeroFoundAt index
 #        and increment the index:
-#        Logic : def moveZeroes(inpArr):
+# Logic: def moveZeroes(inpArr):
 #        lastNonZeroFoundAt = 0
 #        for i in range(len(inpArr)):
 #           if inpArr[i] != 0:

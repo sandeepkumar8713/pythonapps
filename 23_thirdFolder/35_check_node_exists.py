@@ -25,7 +25,7 @@
 #        For follow up question, find the depth of tree. We would know low and high
 #        value of the last level. Now using the function defined in previous question
 #        do binary search over it(return high).
-#        Logic : def doesNodeExist(root, target):
+# Logic: def doesNodeExist(root, target):
 #        if root is None: return False
 #        path = getPathFromRootTo(target)
 #        return verifyPath(root, path)

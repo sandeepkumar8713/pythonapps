@@ -13,7 +13,7 @@
 #        After the insertion update maxXor.
 #        After the array loop return maxXor.
 #        Here we are creating xor while traversing the trie and then check if it is max.
-#        Logic : def findMaxXor(inpArr):
+# Logic: def findMaxXor(inpArr):
 #        root = Trie(), maxXor = 0
 #        for num in inpArr:
 #           curXor = 0, node = root, nodeXor = root

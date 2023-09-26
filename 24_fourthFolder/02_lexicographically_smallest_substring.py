@@ -7,12 +7,12 @@
 # Question Type : ShouldSee
 # Used : Make a running window of size k and make corresponding sub string.
 #           Compare it with min sub string and update if required.
-#     currStr = inpStr[:k]
-#     for i in range(k, len(inpStr)):
-#         currStr = currStr[1: k] + inpStr[i]
-#         if lexMax < currStr: lexMax = currStr
-#         if lexMin > currStr: lexMin = currStr
-#     return lexMin, lexMax
+# Logic: currStr = inpStr[:k]
+#        for i in range(k, len(inpStr)):
+#           currStr = currStr[1: k] + inpStr[i]
+#           if lexMax < currStr: lexMax = currStr
+#           if lexMin > currStr: lexMin = currStr
+#        return lexMin, lexMax
 # Complexity : O(n)
 
 

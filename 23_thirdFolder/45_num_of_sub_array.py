@@ -20,7 +20,7 @@
 #        into parts.
 #        Each sub sequence will either be all bigger than the first number or be all smaller than the first
 #        number. Otherwise, it won't be a result based on the 2nd observation above.
-#        Logic : def permutation_sequence(inpArr):
+# Logic: def permutation_sequence(inpArr):
 #        if len(inpArr) == 0: return 0
 #        if len(inpArr) == 1: return 1
 #        result = 1

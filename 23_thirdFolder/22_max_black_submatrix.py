@@ -8,7 +8,7 @@
 #        whose members are rightZeros and downZeros from the current cell.
 #        Now run one more loop from N to 1 (possible square size) and call findSqaureWithSize()
 #        to check if sub square of given size is possible.
-#        def findSqaureWithSize(processed, squareSize):
+# Logic: def findSqaureWithSize(processed, squareSize):
 #           count = len(processed) - squareSize + 1
 #           for row in range(0, count):
 #               for col in range(0, count):

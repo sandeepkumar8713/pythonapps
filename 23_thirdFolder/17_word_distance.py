@@ -9,8 +9,7 @@
 #        its locations in the file.
 #        From the map get 2 location lists for the given words.
 #        Now loop through the two list to find best pair(minimum distance).
-#        Logic :
-#        i = 0, j = 0
+# Logic: i = 0, j = 0
 #        bestPair = [locations1[0], locations2[0]]
 #        while i < len(locations1) and j < len(locations2):
 #           currentPair = [locations1[i], locations2[j]]

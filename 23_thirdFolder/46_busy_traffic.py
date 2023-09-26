@@ -18,7 +18,7 @@
 #        Sort the event list based on time. Now loop over the list, if it a open event,
 #        increment the total else decrement the total.
 #        If time is not equal to previous time, insert the timestamp along with average in result.
-#        Logic : def intervalAverages(intervals):
+# Logic: def intervalAverages(intervals):
 #        events = []
 #        for interval in intervals:
 #           events.append(Event('open', interval[0], interval[2]))

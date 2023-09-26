@@ -11,7 +11,7 @@
 #        Example: for the word 'dog' we add 'og', 'dg', 'do' into the hashmap.
 #        Then for the input word we do a similar thing: remove i-th letter and see if
 #        the resultant word is in the hashmap
-#        Logic : def preprocessDict(words):
+# Logic: def preprocessDict(words):
 #        hmap = set()
 #        for word in words:
 #           for i in range(len(word)):

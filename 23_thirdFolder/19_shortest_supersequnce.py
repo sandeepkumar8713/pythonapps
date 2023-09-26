@@ -15,8 +15,7 @@
 #        only once. But right side moves until the CountLookup is fulfilled i.e. all the
 #        shorter array elements have appeared at least once. While running loop, we keep track
 #        of smallest sliding window found till now.
-#        Logic :
-#        bestRange = [], rIndex = 0, countLookup.incrementIfFound(largerArr[rIndex])
+# Logic: bestRange = [], rIndex = 0, countLookup.incrementIfFound(largerArr[rIndex])
 #        for lIndex in range(len(largerArr)):
 #           index = rIndex + 1
 #           while not countLookup.areAllFulfilled() and index < len(largerArr):

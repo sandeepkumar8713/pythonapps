@@ -9,7 +9,7 @@
 # Used : Loop over the input nodes and its children. While doing so, keeping XORing the values
 #        to a temp val. After the loop, each element will be visited twice accept the root node.
 #        So temp value will be root value.
-#        Logic : def findRoot(nodes):
+# Logic: def findRoot(nodes):
 #        rootVal = 0
 #        for node in nodes:
 #           rootVal ^= node.val

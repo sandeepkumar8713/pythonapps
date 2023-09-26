@@ -15,7 +15,7 @@
 # Question Type : ShouldSee
 # Used : Run 2 loops in the matrix, from the current cell count the number of enemy hits
 #        until a wall hits (both row and col). Also keep track of max enemy hit.
-#        Logic : maxKilledEnemies(inpMat):
+# Logic: maxKilledEnemies(inpMat):
 #        for i in range(m):
 #           for j in range(n):
 #               if j == 0 or inpMat[i][j - 1] == 'W':

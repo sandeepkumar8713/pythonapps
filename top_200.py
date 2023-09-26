@@ -270,7 +270,17 @@ questionMap['outerCheck1'] = {'01_array/26_min_operation_to_make_same',
                               '22_secondFolder/42_guess_the_word',
                               }
 
-questionMap['outerCheck2'] = {'23_thirdFolder/01_sorted_infinite_array'
+questionMap['outerCheck2'] = {'23_thirdFolder/01_sorted_infinite_array',
+                              '23_thirdFolder/05_line_intersection',
+                              '23_thirdFolder/10_subarray_sort',
+                              '23_thirdFolder/17_word_distance',
+                              '23_thirdFolder/24_spare_similarity',
+                              '23_thirdFolder/27_bidirectional_bfs',
+                              '23_thirdFolder/36_bomb_enemy',
+                              '23_thirdFolder/42_small_diff_word_exist',
+                              '23_thirdFolder/44_move_zeroes',
+                              '23_thirdFolder/48_monarchy',
+                              '23_thirdFolder/49_perfect_square',
                               }
 
 if __name__ == "__main__":

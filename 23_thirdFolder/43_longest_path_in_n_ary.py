@@ -7,7 +7,7 @@
 #
 # Question Type : Easy
 # Used : Call a recursive function which return node, count in each of its children. Return maxCount + 1.
-#        Logic : def dfs(root):
+# Logic: def dfs(root):
 #        res = 0
 #        if root is None: return res
 #        else:

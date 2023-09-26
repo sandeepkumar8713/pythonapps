@@ -16,7 +16,7 @@
 #        So for a element in matrix, we make a union of its row and column.
 #        If 2 elements are on same row or col, they will have union and make a set.
 #        Remember elements sharing common row and col would form a disjoint set. So there
-#        might me multiple disjoint sets in the graph. When it comes to removing stones,
+#        might be multiple disjoint sets in the graph. When it comes to removing stones,
 #        all stones except the last stone can be
 #        removed from a set. So it comes down to counting number of disjoint sets.
 # Logic: def removeStones(stones):

@@ -283,3 +283,13 @@
 ## outerCheck2
 
 1. [23_thirdFolder/01_sorted_infinite_array](23_thirdFolder/01_sorted_infinite_array.py)
+2. [23_thirdFolder/05_line_intersection](23_thirdFolder/05_line_intersection.py)
+3. [23_thirdFolder/10_subarray_sort](23_thirdFolder/10_subarray_sort.py)
+4. [23_thirdFolder/17_word_distance](23_thirdFolder/17_word_distance.py)
+5. [23_thirdFolder/24_spare_similarity](23_thirdFolder/24_spare_similarity.py)
+6. [23_thirdFolder/27_bidirectional_bfs](23_thirdFolder/27_bidirectional_bfs.py)
+7. [23_thirdFolder/36_bomb_enemy](23_thirdFolder/36_bomb_enemy.py)
+8. [23_thirdFolder/42_small_diff_word_exist](23_thirdFolder/42_small_diff_word_exist.py)
+9. [23_thirdFolder/44_move_zeroes](23_thirdFolder/44_move_zeroes.py)
+10. [23_thirdFolder/48_monarchy](23_thirdFolder/48_monarchy.py)
+11. [23_thirdFolder/49_perfect_square](23_thirdFolder/49_perfect_square.py)
