@@ -13,7 +13,7 @@
 #        We do binary search on pair while y >= 1 and f(x,1) <= z. i.e. keep decreasing y and increasing x.
 #        Make function, which take either 1 argument as constant and other one as variable, so that we can interchange
 #        arguments when required.
-#        Logic : def binSearch(f, z, const, isXConst):  # find smallest t such that g(t) >= z
+# Logic: def binSearch(f, z, const, isXConst):  # find smallest t such that g(t) >= z
 #        low, high = 0, 1
 #        while withConstant(f, const, isXConst, high) < z: high *= 2
 #        while low < high:

@@ -21,8 +21,7 @@
 #        distance less than or equal to guess. We will focus on evaluating our
 #        possible function quickly. We will use a sliding window approach
 #        to count the number of pairs with distance <= guess.
-#        Logic :
-#        smallestDistancePair(nums, k):
+# Logic: smallestDistancePair(nums, k):
 #           nums.sort()
 #           lo = 0, hi = nums[-1] - nums[0]
 #           while lo < hi:

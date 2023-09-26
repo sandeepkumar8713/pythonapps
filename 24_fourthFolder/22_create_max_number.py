@@ -17,8 +17,7 @@
 #           choose max elements from array1 of size i and from array2 of size k - i
 #           Now merge these amx arrays
 #           Update maxArray found till now
-#         Logic:
-#         def maxNumber(inpArr1, inpArr2, k):
+# Logic: def maxNumber(inpArr1, inpArr2, k):
 #           i = max(k - len2, 0)
 #           limit = min(len1, k)
 #           while i <= limit:

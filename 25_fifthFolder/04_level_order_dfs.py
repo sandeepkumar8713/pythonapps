@@ -12,7 +12,7 @@
 # Question Type : ShouldSee
 # Used : Do pre-order traversal while calculating level for each node and adding the elements in
 #        map using level. After traversal, sort the map using keys and print the values
-#        def getLevelDFS(root, level, m):
+# Logic: def getLevelDFS(root, level, m):
 #        if root is None: return
 #        try:
 #           m[level].append(root.data)

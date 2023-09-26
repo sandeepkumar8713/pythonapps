@@ -19,7 +19,7 @@
 #        nextUniqNum as doing so might increase the last element value in the resultant array but we
 #        are just allowed to reduce the values not increase it. So we just repeat with value with i.
 #        Add i * count[i] in ans.
-#        maxSum(a, n):
+# Logic: maxSum(a, n):
 #        count = [0] * (n + 1)
 #        for i in range(0, n):
 #           count[min(a[i], n)] += 1

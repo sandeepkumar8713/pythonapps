@@ -7,11 +7,10 @@
 # Example : Input: [2,2,3,2]
 # Output: 3
 #
-# Question Type : Easy
+# Question Type : Easy, SimilarAdded
 # Used : Make a set of given inpArr. Sum it and multiply by 3. Subtract it with sum of inpArr.
 #        We will get the twice of missing number.
-#        Logic :
-#        sumOfSet = 3 * sum(set(inpArr))
+# Logic: sumOfSet = 3 * sum(set(inpArr))
 #        sumOfInpArr = sum(inpArr)
 #        return (sumOfSet - sumOfInpArr) // 2
 # Complexity : O(n)

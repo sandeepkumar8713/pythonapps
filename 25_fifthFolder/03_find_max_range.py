@@ -13,7 +13,7 @@
 # Question Type : Generic
 # Used : For each element in inpArr, find the left most index till which given element is max.
 #        Similarly do the same for right index.
-#        def getLeftRange(inpArr):
+# Logic: def getLeftRange(inpArr):
 #        maxNum = inpArr[0]
 #        leftIdx = [0] * len(inpArr), leftIdx[0] = 1
 #        for i in range(1, len(inpArr)):

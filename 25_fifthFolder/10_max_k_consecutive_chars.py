@@ -1,6 +1,7 @@
 # https://www.geeksforgeeks.org/lexicographically-largest-string-possible-consisting-of-at-most-k-consecutive-similar-characters/
-# Question : Given a string S and an integer K, the task is to generate lexicographically the largest string possible
-# from the given string, by removing characters also, that consists of at most K consecutive similar characters.
+# Question : Given a string S and an integer K, the task is to generate lexicographically the largest string
+# possible from the given string, by removing characters also, that consists of at most K consecutive similar
+# characters.
 #
 # Examples:
 # Input: S = “baccc”, K = 2
@@ -17,8 +18,7 @@
 #        from the map and append in ansStr. If not found, return the ansStr.
 #        After appending the next char, let the loop continue as normal.
 #        After loop return the ansStr.
-#        Logic:
-#        for i in range(MAX_CHAR-1, -1, -1):
+# Logic: for i in range(MAX_CHAR-1, -1, -1):
 #           count = 0
 #           while charset[i] > 0:
 #               newStrings += indexToChar(i)

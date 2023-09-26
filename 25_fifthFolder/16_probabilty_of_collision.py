@@ -12,7 +12,7 @@
 #
 # Question Type : ShouldSee
 # Used : Find total number of accident. Find truck collision count.
-#        count_of_accident(a, b):
+# Logic: count_of_accident(a, b):
 #        n = len(a), m = len(b)
 #        if n > m: return (m * (m + 1)) / 2
 #        else: return (n * (n + 1)) / 2 + (m - n) * n

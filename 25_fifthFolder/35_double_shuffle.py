@@ -11,8 +11,7 @@
 #        Loop over the given inpArr. If item and its half are present in map, append half in res array
 #        Also decrease the freq of item and its half in mop
 #        After the loop, if size of res is half of inpArr return res else return None
-#        Logic :
-#        for key in inpArr:
+# Logic: for key in inpArr:
 #           if map.get(key) == 0:
 #               continue
 #           half = key // 2

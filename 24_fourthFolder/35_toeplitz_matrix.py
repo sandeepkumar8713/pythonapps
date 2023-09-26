@@ -16,8 +16,7 @@
 #        It turns out two coordinates are on the same diagonal if and only if r1 - c1 == r2 - c2.
 #        This leads to the following idea: remember the value of that diagonal as groups[r-c].
 #        If we see a mismatch, the matrix is not Toeplitz otherwise it is.
-#        Logic :
-#        for i in range(len(inpMat)):
+# Logic: for i in range(len(inpMat)):
 #           row = inpMat[i]
 #           for j in range(len(row)):
 #               val = row[j], diff = i - j

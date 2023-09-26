@@ -12,7 +12,7 @@
 #        While doing bfs, for each node in queue, we try to find next node, which has the least
 #        difference from the node in given array. We return when resultant array length is equal
 #        to given array length.
-#        Logic : minDiffPath(G, path):
+# Logic: minDiffPath(G, path):
 #        n, pq, seen = len(path), [], {}
 #        for node in G.listAllNodes():
 #           diff = getDiffBetweenNodes(node, path[0])

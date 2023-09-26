@@ -20,7 +20,7 @@
 #          need to check if x[i] > x[i - 2].
 #        3. In the third case, it goes external squirrel first then go internal. In this case, the trick part is we
 #          may need to update the base of the internal squirrel.
-#        Logic : def isSelfCrossing(inpArr):
+# Logic: def isSelfCrossing(inpArr):
 #        if inpArr is None or len(inpArr) <= 3: return False
 #        i = 2, n = len(inpArr)
 #        while i < n and inpArr[i] > inpArr[i-2]: i += 1

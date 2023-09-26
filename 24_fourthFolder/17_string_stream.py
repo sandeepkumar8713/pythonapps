@@ -18,7 +18,7 @@
 #        is not there and return True
 #        If message is there and time difference is 10 or above, update timestamp and return
 #        True. Else return False.
-#        Logic : def shouldPrint(self, timestamp, message):
+# Logic: def shouldPrint(self, timestamp, message):
 #        if message not in self.map.keys():
 #           self.map[message] = timestamp
 #           return True

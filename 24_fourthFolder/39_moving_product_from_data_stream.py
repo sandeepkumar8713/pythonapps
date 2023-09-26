@@ -19,7 +19,7 @@
 #        Remove top element from queue, divide product with it if not zero.
 #        When getProduct is called, if zeroCount > 0: return 0 else return runningProduct
 #        For follow up question, maintain a list of cumulativeProduct. For product, divide index n by index n - k
-#        Logic : def add(self, val):
+# Logic: def add(self, val):
 #        previousProduct = 1
 #        if len(self.cumulativeProduct) > 0: previousProduct = self.cumulativeProduct[-1]
 #        if val == 0: self.recentZeroIndex = self.count, val = 1

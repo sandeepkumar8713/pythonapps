@@ -9,7 +9,7 @@
 # Used : Used bucket sort. Since the array is already sorted, we can just move from left to right
 #        as long as the first 28 bits are the same. Once we enter a different 28 bit set,
 #        we can dump what we have in our 16 buckets into the result and reset.
-#        Logic : sortPartialSorted28B(inpArr):
+# Logic: sortPartialSorted28B(inpArr):
 #        mask = ~0 << 4
 #        curr_28b = inpArr[0] & mask (first 28bits)
 #        buckets = [0] * 16 , results = list()

@@ -12,8 +12,7 @@
 #        Do and operation of bit mask of each pair.
 #        If ans is 0, then there is no overlap, so we can consider for product calculation.
 #        Compare it with maxProd and update if required.
-#        Logic:
-#        maxProd = 0
+# Logic: maxProd = 0
 #        for i in range(0, n - 1):
 #           for j in range(i + 1, n):
 #               if bitMaskList[i] & bitMaskList[j] == 0:

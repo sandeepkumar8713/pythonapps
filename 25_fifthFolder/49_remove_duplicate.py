@@ -15,8 +15,7 @@
 #          than curr ch, pop it from res and mark it as unvisited.
 #        push current ch in res and mark as visited
 #        return res
-#        Logic :
-#        visited = [False] * MAX_CHAR, res = []
+# Logic: visited = [False] * MAX_CHAR, res = []
 #        for i in range(n):
 #           index = charToIndex(inpStr[i])
 #           map[index] -= 1

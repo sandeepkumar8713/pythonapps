@@ -24,7 +24,7 @@
 # Question Type : ShouldSee
 # Used : We assume size of grid is given. We do binary search for closest row, from first column.
 #        Similarly, closest column, from first row.
-#        Logic : def rowBSearch(self, start, end):
+# Logic: def rowBSearch(self, start, end):
 #        while self.x_left_bound <= self.x_right_bound:
 #           mid = (start + end) // 2
 #           self.cur_x, self.cur_y = mid, 0

@@ -27,8 +27,7 @@
 #           else if maxHeap is empty,
 #              set curr_height = 0, append the x and curr_height in res_list
 #        return res_list
-#        Logic:
-#        for l, r, h in buildings:
+# Logic: for l, r, h in buildings:
 #           hs.append((l, 0, -h, i))
 #           hs.append((r, 1, h, i))
 #           i += 1

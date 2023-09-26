@@ -281,6 +281,12 @@ questionMap['outerCheck2'] = {'23_thirdFolder/01_sorted_infinite_array',
                               '23_thirdFolder/44_move_zeroes',
                               '23_thirdFolder/48_monarchy',
                               '23_thirdFolder/49_perfect_square',
+                              '24_fourthFolder/15_counting_inversion',
+                              '24_fourthFolder/33_find_single_number',
+                              '24_fourthFolder/37_shortest_distance_from_all_buildings',
+                              '24_fourthFolder/40_sort_partially_sorted',
+                              '25_fifthFolder/20_max_sum_by_selecting_k_ele',
+                              '25_fifthFolder/49_remove_duplicate',
                               }
 
 if __name__ == "__main__":

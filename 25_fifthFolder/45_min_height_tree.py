@@ -20,8 +20,7 @@
 #        add it to queue and reset the result list
 #        If temp is empty, then there nothing to process, come out of the loop
 #        and return result.
-#        Logic :
-#        for edge in edges:
+# Logic: for edge in edges:
 #           x = edge[0], y = edge[1]
 #           inDegrees[x] += 1, inDegrees[y] += 1
 #           map[x].add(y), map[y].add(x)

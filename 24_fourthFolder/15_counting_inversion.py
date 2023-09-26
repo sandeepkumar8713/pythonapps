@@ -10,12 +10,12 @@
 # Question Type : Generic
 # Used : We will do normal merge sort. While doing merge if second array has smaller element,
 #        increase invCount by no. of elements left in first array.
-#        Logic :  while i <= mid and j <= right:
-#                   if arr[i] <= arr[j]:
-#                       temp_arr[k] = arr[i], k += 1, i += 1
-#                   else:
-#                       inv_count += (mid - i + 1)
-#                       temp_arr[k] = arr[j], k += 1, j += 1
+# Logic: while i <= mid and j <= right:
+#        if arr[i] <= arr[j]:
+#           temp_arr[k] = arr[i], k += 1, i += 1
+#        else:
+#           inv_count += (mid - i + 1)
+#        temp_arr[k] = arr[j], k += 1, j += 1
 # Complexity : O(n log n)
 
 

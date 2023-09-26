@@ -10,8 +10,7 @@
 #        coins in the subtree, minus the number of nodes in the subtree. Then, the number of moves we make from
 #        this node to and from its children is abs(dfs(node.left)) + abs(dfs(node.right)). After, we have an
 #        excess of node.val + dfs(node.left) + dfs(node.right) - 1 coins at this node.
-#        Logic :
-#        def dfs(node, ans):
+# Logic: def dfs(node, ans):
 #        if node is None: return 0
 #        L, R = dfs(node.left, ans), dfs(node.right, ans)
 #        ans[0] += abs(L) + abs(R)
