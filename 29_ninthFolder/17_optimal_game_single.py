@@ -9,7 +9,12 @@
 # Output : 4 (1,12 and 6,7)
 #
 # TODO :: add used
-#
+# Used : DP with DFS
+#        We need to call DFS thrice for 3 possible combination of target.
+#        In DFS, pick two elements only if their sum matches target
+#        For all 3 possible pair, find the max result.
+#        For memory, use dict DP where key being (marker, left, right)
+#        marker being 0, 1, 2 signifying 3 possible targets.
 
 
 def max_remove(inp_arr):

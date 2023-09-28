@@ -15,6 +15,14 @@
 # It can be shown that 3 is the minimum number of moves required to place one stone in each cell.
 #
 # TODO :: add used
+# Used : DP with DFS
+#        Start DFS from first cell.
+#           DFS should run through all possible x and y position.
+#           If the current position value > 1, call DFS on next cell i.e. y + 1
+#           else, run 2 loop and place value in empty cell, calculate manhattan distance
+#           and add the same in candidate_res.
+#           When x,y reaches end return candidate_res
+
 
 import sys
 

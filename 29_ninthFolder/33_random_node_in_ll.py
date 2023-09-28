@@ -4,6 +4,10 @@
 # a node should be 1/N if there are N nodes in the list).
 #
 # TODO :: add used
+# Used : By default, result is first element in list.
+#        Run loop over the list of nodes.
+#        At each node, n being the index, find randon n.
+#           If random value is 0, pick this element as result
 
 import random
 

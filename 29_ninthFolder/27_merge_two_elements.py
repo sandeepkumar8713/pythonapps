@@ -9,6 +9,7 @@
 # of merges.
 #
 # TODO :: add used
+# Used : DP with sub problem
 
 def find_max_sum(inp_ar):
     n = len(inp_ar)

@@ -15,6 +15,8 @@
 #            2, 7, 6]]
 # Output : 6, 6, 7 make a group so output is 3
 # TODO :: add used
+# Used : Run BFS multiple times assuming element from 0 to 9 and find largest group.
+#        Try to form the largest group by making sure next ele is b/w a and a+1.
 
 def find_group_size(inp_mat):
     m = len(inp_mat)

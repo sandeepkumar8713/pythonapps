@@ -9,9 +9,21 @@
 # After 2nd swap: abcab
 # After 3rd swap: abcba
 #
+# Used : Take two pointers left and right.
+#        Run a loop for it.
+#           Within it run another run loop for l and r.
+#               dec r until values are diff.
+#               if l == r:
+#                  swap ele at r and r + 1
+#                  continue
+#                   inc count
+#               else:
+#                  while r < right:
+#                    swap ele at r and r + 1
+#                    inc count
+#        return count
 # TODO :: add used
 
-# Python implementation of program
 def minSwap(inp_arr):
     inp_arr = list(inp_arr)
     freq_dict = {}
@@ -32,14 +44,17 @@ def minSwap(inp_arr):
     while left < right:
         l = left
         r = right
+        # loop while element don't match
         while inp_arr[l] != inp_arr[r]:
             r -= 1
         if l == r:
+            # swap only once
             # When we found odd element move towards middle
             inp_arr[r], inp_arr[r + 1] = inp_arr[r + 1], inp_arr[r]
             result += 1
             continue
         else:
+            # swap till end
             # Normal element move towards right of string
             while r < right:
                 inp_arr[r], inp_arr[r + 1] = inp_arr[r + 1], inp_arr[r]

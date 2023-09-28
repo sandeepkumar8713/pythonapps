@@ -12,6 +12,14 @@
 # produced using the second line.
 #
 # TODO : add used
+# Used : Run DP with DFS.
+#        3 conditions are possible:
+#           Include the car in x line
+#           Include the car in y line
+#           Exclude the car
+#        Find max of the above three.
+#        For memory use dict dp with key being tuple (index, x, y)
+
 
 # def max_cars(inp_hours, x, y):
 #     if x > y:

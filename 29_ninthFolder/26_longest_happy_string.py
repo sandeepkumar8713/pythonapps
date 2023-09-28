@@ -14,6 +14,7 @@
 # Output: "ccaccbcc"
 #
 # TODO :: add used
+# Used : max heap, with top and 2nd top
 
 import heapq
 

@@ -8,6 +8,8 @@
 # [11,12]-the difference is 1.
 # The maximum difference equals 3, which is the minimum possible result
 
+# Used : Binary search on Diff
+
 def check(diff, inp_arr):
     i = 0
     j = -1

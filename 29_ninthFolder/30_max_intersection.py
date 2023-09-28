@@ -11,6 +11,8 @@
 # intersects the chart at points (0.5, 1.5), (1.5, 1.5), (2.5, 1.5), (3.5, 1.5) and (4.25, 1.5).
 #
 # TODO : add used
+#
+# Used : Run all possible y points, find max intersection.
 
 import sys
 

@@ -23,6 +23,9 @@
 # Assuming date = "09-31", the date is not valid. There are only 30 days in September, so the function should return "XX-Xx".
 #
 # TODO :: add used
+# Used : Make all possible dates and match with given pattern.
+#        If char is ?, ignore it.
+#        Note to convert number to string before matching and append 0 where required.
 
 max_days_per_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
@@ -54,9 +57,10 @@ def get_valid_date(inp_str):
     result = ["XX-xx"]
 
     for chk_month in range(12, 0, -1):
-        chk_day = max_days_per_month[chk_month - 1]
-        if is_matching(chk_month, chk_day, given_month, given_day, result):
-            return result
+        last_chk_day = max_days_per_month[chk_month - 1]
+        for chk_day in range(last_chk_day, 0, -1):
+            if is_matching(chk_month, chk_day, given_month, given_day, result):
+                return result
 
     return result
 
@@ -72,4 +76,7 @@ if __name__ == "__main__":
     print(get_valid_date(inp_str))
 
     inp_str = "09-31"
+    print(get_valid_date(inp_str))
+
+    inp_str = "09-20"
     print(get_valid_date(inp_str))

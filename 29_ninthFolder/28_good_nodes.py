@@ -9,7 +9,10 @@
 #   /      /  \
 #  3      1    5
 # Output : 4 (3, 3, 4, 5 are good nodes)
+#
 # TODO : add used
+# Used : Do preorder, Maintain a running max.
+#        If the current element is greater or equal to max, update count.
 
 import sys
 

@@ -18,6 +18,12 @@
 # make every field's neighborhood sustainable?
 #
 # TODO :: add used
+# Used : Take two pointers left and right.
+#        Run a loop and move towards each other.
+#           Check if current pollution around left (-1 and +1) is -ve
+#               if yes, add the same to result, and negative element as well
+#           if left == right: break
+#           Check the same around right as well.
 
 def add_min_tree(inp_arr):
     new_arr = [0] + inp_arr + [0]

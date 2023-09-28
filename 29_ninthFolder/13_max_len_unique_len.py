@@ -10,7 +10,9 @@
 # - "ique" ("iq" + "ue")
 #
 # TODO :: add used
-# DP + DFS used
+# Used : Run DP with DFS for both include and exclude.
+#        Return max of include and exclude.
+#        For memory save dict of dp, key being temp string
 
 def is_unique(str_1, str_2):
     hash_set_1 = set()
