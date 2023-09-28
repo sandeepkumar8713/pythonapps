@@ -190,6 +190,33 @@
 75. [28_eighthFolder/22_longest_palindromic_subsequence](28_eighthFolder/22_longest_palindromic_subsequence.py)
 
 
+## MicrosoftOA
+
+1. [04_tree/06_connect_node_level_order](04_tree/06_connect_node_level_order.py)
+2. [27_seventhFolder/14_jump_game_3](27_seventhFolder/14_jump_game_3.py)
+3. [29_ninthFolder/11_max_len_concat](29_ninthFolder/11_max_len_concat.py)
+4. [29_ninthFolder/12_swap_to_palindrome](29_ninthFolder/12_swap_to_palindrome.py)
+5. [29_ninthFolder/13_max_len_unique_len](29_ninthFolder/13_max_len_unique_len.py)
+6. [29_ninthFolder/14_find_valid_date](29_ninthFolder/14_find_valid_date.py)
+7. [29_ninthFolder/15_reduce_pollution](29_ninthFolder/15_reduce_pollution.py)
+8. [29_ninthFolder/16_assembly_line_no_switch](29_ninthFolder/16_assembly_line_no_switch.py)
+9. [29_ninthFolder/17_optimal_game_single](29_ninthFolder/17_optimal_game_single.py)
+10. [29_ninthFolder/18_stones_in_grid](29_ninthFolder/18_stones_in_grid.py)
+11. [29_ninthFolder/19_doctor_appointment](29_ninthFolder/19_doctor_appointment.py)
+12. [29_ninthFolder/20_group_cells](29_ninthFolder/20_group_cells.py)
+13. [29_ninthFolder/21_balanced_board](29_ninthFolder/21_balanced_board.py)
+14. [29_ninthFolder/22_minimum_insertion](29_ninthFolder/22_minimum_insertion.py)
+15. [29_ninthFolder/23_min_of_diff](29_ninthFolder/23_min_of_diff.py)
+16. [29_ninthFolder/24_circle_of_string](29_ninthFolder/24_circle_of_string.py)
+17. [29_ninthFolder/25_sort_using_permutation_array](29_ninthFolder/25_sort_using_permutation_array.py)
+18. [29_ninthFolder/26_longest_happy_string](29_ninthFolder/26_longest_happy_string.py)
+19. [29_ninthFolder/27_merge_two_elements](29_ninthFolder/27_merge_two_elements.py)
+20. [29_ninthFolder/28_good_nodes](29_ninthFolder/28_good_nodes.py)
+21. [29_ninthFolder/29_max_string_build](29_ninthFolder/29_max_string_build.py)
+22. [29_ninthFolder/30_max_intersection](29_ninthFolder/30_max_intersection.py)
+23. [29_ninthFolder/33_random_node_in_ll](29_ninthFolder/33_random_node_in_ll.py)
+
+
 ## Noted
 
 1. [01_array/20_flip_ele_to_1](01_array/20_flip_ele_to_1.py)

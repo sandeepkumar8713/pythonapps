@@ -36,3 +36,5 @@
 Focus on :
 1. **Problem Solving**
 2. **Implementation speed**
+3. **Focus on indexes i += 1**
+4. **Check limit of index in loop**
