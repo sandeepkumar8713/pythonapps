@@ -274,11 +274,26 @@ prime_numbers.remove(9)
 **Reverse Loop from 10 to 0**
 for i in range(10,-1,-1): 
 
+**Reverse the list or string**
+```python
+a = "kjsn"
+a = [1,2,3]
+b = a[::-1] ## slicing works for both
+b = "".join(reversed(a))
+
+# List reverse
+list1 = [1, 2, 3, 4, 1, 2, 6]
+list1.reverse()
+print(list1)
+```
+
+
 ```
     a=[1,2,3,4,5,6,7]
     a[:2] : [1, 2] ## first two elements
     a[2:] : [3, 4, 5, 6, 7] ## Print all elements from index 2
     a[2] : [1, 2] ## Second element
+    # Slicing
     
     1. For minus, assume index from right as -1, -2, -3, -4
     a[-2] : 6 ## Second last element
@@ -362,6 +377,10 @@ y = [item if item > 5 else -1 for item in item_list]
 
 **Bisect right**
 i = bisect.bisect_right(arr, key, start, end)
+
+bisect.bisect_left returns the **leftmost place** in the sorted list to insert the given element. 
+bisect.bisect_right returns the **rightmost place** in the sorted list to insert the given element.
+They are not equivalent when the element to be inserted is **present** in the list.
 ---------------------------------------------------------------
 
 **Rest call Example**

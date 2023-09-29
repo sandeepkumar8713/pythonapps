@@ -15,7 +15,7 @@
 # and compare path with words in dictionary in each call(DFS).
 #
 # Question Type : Asked
-# Used : Make a call to recursive function findPath(grid, visited, path, m, n) with visited
+# Used : (BFS) Make a call to recursive function findPath(grid, visited, path, m, n) with visited
 #        matrix of size n*n, path empty list and start point as 0,0.
 #        If m and n reach to target, print path.
 #        Loop over the 4 possible direction. Check if nextI and nextJ are safe.

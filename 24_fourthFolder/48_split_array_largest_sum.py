@@ -46,6 +46,17 @@
 
 import sys
 
+def canSplit(inpArr, k, minSum, maxTotal=None):
+    partitionCount = 0
+    total = 0
+    for i in range(len(inpArr)):
+        total += inpArr[i]
+        if total >= minSum:
+            if maxTotal is not None:
+                maxTotal[0] = max(maxTotal[0], total)
+            total = 0
+            partitionCount += 1
+    return partitionCount >= k
 
 def splitArray(inpArr, k):
     low = 0
@@ -61,19 +72,6 @@ def splitArray(inpArr, k):
     maxTotal = [0]
     canSplit(inpArr, k, high, maxTotal)
     return high, maxTotal[0]
-
-
-def canSplit(inpArr, k, minSum, maxTotal=None):
-    partitionCount = 0
-    total = 0
-    for i in range(len(inpArr)):
-        total += inpArr[i]
-        if total >= minSum:
-            if maxTotal is not None:
-                maxTotal[0] = max(maxTotal[0], total)
-            total = 0
-            partitionCount += 1
-    return partitionCount >= k
 
 
 if __name__ == "__main__":

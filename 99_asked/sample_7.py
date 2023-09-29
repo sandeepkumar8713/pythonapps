@@ -18,6 +18,7 @@ class ChargePointsETLJob:
     def extract(self):
         # print ("extracting")
         return self.spark_session.read.csv(self.input_path, header=True)
+        # df_pyspark = spark.read.csv('files/test2.csv', header=True, inferSchema=True)
 
     def transform(self, df):
         df = df.withColumn('PluginDuration', df['PluginDuration'].cast("double").alias('PluginDuration'))

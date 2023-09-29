@@ -10,6 +10,7 @@
 #
 # TODO :: add used
 # Used : DP with sub problem
+#        Pair formed or not formed, take both condition
 
 def find_max_sum(inp_ar):
     n = len(inp_ar)
