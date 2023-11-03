@@ -7,7 +7,8 @@
 # Output: ay
 #
 # Question Type : ShouldSee
-# Used : 1) Start from the leftmost character and remove duplicates at left corner if
+# Used : use Stack
+#        1) Start from the leftmost character and remove duplicates at left corner if
 #           there are any.
 #        2) The first character must be different from its adjacent now. Recur for string
 #           of length n-1 (string without first character).
